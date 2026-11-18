@@ -132,3 +132,7 @@
 #vials .wchip::after{content:' \270E';opacity:.6;font-size:11px}
 #vials .f2.stack{grid-template-columns:1fr}
 #vials .calc .emph{font-size:15px;color:#fff;padding:8px 10px;border-left:3px solid var(--s2);background:rgba(73,214,200,.08);border-radius:6px}
+#vials .tarebox{margin-top:12px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:rgba(7,14,36,.45);display:flex;flex-direction:column;gap:8px}
+#vials .tarebox b{color:#fff;font-size:15px}
+#vials .tarebox span{font-size:14px;color:var(--ink-2)}
+#vials .tarebox .btn.big{width:100%;justify-content:center}
