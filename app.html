@@ -18,8 +18,9 @@
   var URL0 = CFG.url.replace(/\/$/, ''), KEY = CFG.key, SKEY = 'qb-session';
 var RT = '?redirect_to=' + encodeURIComponent(location.origin + location.pathname);   // confirmation and reset links come back to this page (must be on the project's redirect allow-list)
   var session = null, user = null, readyRes, ready = new Promise(function(r){ readyRes = r; });
-  function load(){ try { session = JSON.parse(localStorage.getItem(SKEY) || 'null'); } catch(e){ session = null; } }
-  function save(s){ session = s; try { if (s) localStorage.setItem(SKEY, JSON.stringify(s)); else localStorage.removeItem(SKEY); } catch(e){} }
+  var store = localStorage;   // 'Keep me signed in on this device' -> localStorage; otherwise sessionStorage (cleared when the app is closed)
+  function load(){ session = null; try { var v = localStorage.getItem(SKEY); if (v) { store = localStorage; } else { v = sessionStorage.getItem(SKEY); if (v) store = sessionStorage; } session = JSON.parse(v || 'null'); } catch(e){ session = null; } }
+  function save(s){ session = s; try { if (s) { store.setItem(SKEY, JSON.stringify(s)); (store === localStorage ? sessionStorage : localStorage).removeItem(SKEY); } else { localStorage.removeItem(SKEY); sessionStorage.removeItem(SKEY); } } catch(e){} }
   function hdr(auth){ var h = { apikey: KEY, 'content-type': 'application/json' }; if (auth && session) h.authorization = 'Bearer ' + session.access_token; return h; }
   function j(r){ return r.text().then(function(t){ var d = null; try { d = t ? JSON.parse(t) : null; } catch(e){ d = { msg: t }; } if (!r.ok) { var e = new Error((d && (d.msg || d.message || d.error_description || d.error)) || ('HTTP ' + r.status)); e.status = r.status; e.body = d; throw e; } return d; }); }
   function setSession(d){ if (!d || !d.access_token) return; save({ access_token: d.access_token, refresh_token: d.refresh_token, expires_at: Math.floor(Date.now() / 1000) + (d.expires_in || 3600), user: d.user || (session && session.user) }); user = session.user; }
@@ -57,17 +58,19 @@ var RT = '?redirect_to=' + encodeURIComponent(location.origin + location.pathnam
   function esc(s){ return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){ return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
   var gate = null, mode = 'in';
   function gateHtml(){
-    var recovery = mode === 'reset';
-    return '<div class="qb-gate" id="qb-gate"><div class="qb-hero"><div class="qb-band"><span class="qb-brand">' + (window.QB_MARK || '') + '<b>Quadra Bio Tech</b></span></div>' +
-      '<div class="qb-holo"><h1>' + (recovery ? 'Set a new password' : (mode === 'up' ? 'Create your account' : 'Sign in')) + '</h1>' +
-      '<p>Your vials, doses and vitals sync to your account. Photos stay on this device.</p></div></div>' +
+    var recovery = mode === 'reset', up = mode === 'up';
+    return '<div class="qb-gate" id="qb-gate"><div class="qb-card">' +
+      '<div class="qb-logo">' + (window.QB_MARK || '') + '<b>Quadra <i>Bio Tech</i></b></div>' +
+      (recovery ? '<h1 class="qb-h">Set a new password</h1>' :
+        '<nav class="qb-seg"><a href="#" data-mode="in" class="' + (up ? '' : 'on') + '">Sign in</a><a href="#" data-mode="up" class="' + (up ? 'on' : '') + '">Create account</a></nav>') +
       '<form class="qb-form" id="qb-form" novalidate>' +
-      (recovery ? '' : '<label>Email<input id="qb-email" type="email" autocomplete="email" inputmode="email" required placeholder="you@example.com"></label>') +
-      '<label>' + (recovery ? 'New password' : 'Password') + '<input id="qb-pw" type="password" autocomplete="' + (mode === 'in' ? 'current-password' : 'new-password') + '" required minlength="8" placeholder="at least 8 characters"></label>' +
+      (recovery ? '' : '<label class="f"><span>Email</span><input id="qb-email" type="email" autocomplete="email" inputmode="email" required placeholder="you@example.com"></label>') +
+      '<label class="f"><span>' + (recovery ? 'New password' : 'Password') + '</span><input id="qb-pw" type="password" autocomplete="' + (mode === 'in' ? 'current-password' : 'new-password') + '" required minlength="8" placeholder="at least 8 characters"></label>' +
+      (recovery ? '' : '<label class="qb-keep"><input type="checkbox" id="qb-keep"' + (store === localStorage ? ' checked' : '') + '><span>Keep me signed in on this device</span></label>') +
       '<p class="qb-msg" id="qb-msg" hidden></p>' +
-      '<button type="submit" class="btn qb-primary" id="qb-go">' + (recovery ? 'Save password' : (mode === 'up' ? 'Create account' : 'Sign in')) + '</button>' +
-      (recovery ? '' : '<div class="qb-links">' + (mode === 'in' ? '<a href="#" data-mode="up">Create an account</a><a href="#" data-act="forgot">Forgot password</a>' : '<a href="#" data-mode="in">I already have an account</a>') + '</div>') +
-      '</form><p class="qb-foot">Educational tool · not medical advice · sells nothing</p></div>';
+      '<button type="submit" class="btn qb-primary" id="qb-go">' + (recovery ? 'Save password' : (up ? 'Create account' : 'Sign in')) + '</button>' +
+      (recovery || up ? '' : '<div class="qb-links"><a href="#" data-act="forgot">Forgot password?</a></div>') +
+      '</form></div><p class="qb-foot">Educational tool · not medical advice · sells nothing</p></div>';
   }
   function msg(t, kind){ var m = document.getElementById('qb-msg'); if (!m) return; m.textContent = t || ''; m.hidden = !t; m.className = 'qb-msg' + (kind ? ' ' + kind : ''); }
   function showGate(){ if (gate) gate.remove(); gate = el(gateHtml()); document.body.appendChild(gate); document.body.classList.add('qb-locked');
@@ -76,6 +79,7 @@ var RT = '?redirect_to=' + encodeURIComponent(location.origin + location.pathnam
       if (a.dataset.act === 'forgot') { var em = (document.getElementById('qb-email').value || '').trim(); if (!em) { msg('Type your email first, then tap Forgot password.', 'warn'); return; }
         A.recover(em).then(function(){ msg('Reset email sent to ' + em + '. Open the link, set a new password, then come back and sign in.', 'ok'); }).catch(function(err){ msg(err.message, 'err'); }); } });
     gate.querySelector('#qb-form').addEventListener('submit', function(e){ e.preventDefault(); var go = document.getElementById('qb-go'); go.disabled = true; msg('');
+      var keep = document.getElementById('qb-keep'); if (keep) store = keep.checked ? localStorage : sessionStorage;
       var pw = document.getElementById('qb-pw').value; var emEl = document.getElementById('qb-email'); var em = emEl ? emEl.value.trim() : '';
       var p;
       if (mode === 'reset') p = A.setPassword(pw).then(function(){ history.replaceState(null, '', location.pathname + location.search); done(); });
@@ -494,26 +498,31 @@ nav.tabs button[aria-selected="true"]{color:var(--accent)}
 
 /* ----- hosted build: account gate ----- */
 .qb-locked{overflow:hidden}
-.qb-gate{position:fixed;inset:0;z-index:1000;background:var(--bg);overflow:auto;-webkit-overflow-scrolling:touch;font-family:"Space Grotesk",var(--sans)}
-.qb-band{background:#0B1F1E;color:#F2F7F6;padding:calc(12px + env(safe-area-inset-top)) 20px 12px;display:flex;align-items:center}
-.qb-brand{display:inline-flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:13px}
-.qb-brand svg{width:26px;height:26px;display:block}
-.qb-holo{padding:30px 20px 32px;color:#0B1F1E;background:
-  radial-gradient(ellipse 60% 70% at 58% 48%, rgba(255,255,255,.78) 0%, rgba(255,255,255,.30) 38%, rgba(255,255,255,0) 72%),
-  repeating-conic-gradient(from 0deg at 58% 48%, rgba(255,255,255,.38) 0deg 1.1deg, rgba(255,255,255,0) 1.1deg 3.6deg),
-  conic-gradient(from 150deg at 58% 48%, #f6c4d8, #fbe4b9, #e3f6bf, #b9f0ea, #bfd5ff, #e0c8ff, #f6c4d8)}
-.qb-holo h1{margin:0;font-size:34px;font-weight:700;letter-spacing:-.025em;line-height:1;font-family:"Space Grotesk",var(--sans)}
-.qb-holo p{margin:10px 0 0;font-size:15px;line-height:1.45;color:#16211F;max-width:420px}
-.qb-form{padding:22px 20px 8px;display:flex;flex-direction:column;gap:14px;max-width:460px;margin:0 auto}
-.qb-form label{display:flex;flex-direction:column;gap:6px;font-weight:700;font-size:14px;color:var(--ink)}
-.qb-form input{font:16px var(--sans);padding:13px 14px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);width:100%}
-.qb-primary{width:100%;background:#0E6F68 !important;color:#fff !important;border:0;padding:15px;border-radius:10px;font-weight:700;font-size:16px;font-family:"Space Grotesk",var(--sans)}
+.qb-gate{position:fixed;inset:0;z-index:1000;overflow:auto;-webkit-overflow-scrolling:touch;font-family:"Space Grotesk",var(--sans);display:flex;flex-direction:column;align-items:center;padding:calc(18px + env(safe-area-inset-top)) 16px calc(16px + env(safe-area-inset-bottom));box-sizing:border-box;color:#0B1F1E;background:
+  radial-gradient(ellipse 55% 62% at 50% 46%, rgba(255,255,255,.45) 0%, rgba(255,255,255,.14) 42%, rgba(255,255,255,0) 72%),
+  conic-gradient(from 140deg at 50% 46%, #ef9ec4, #f7cf92, #c6ec96, #7fdfd6, #8fb6ff, #c69cff, #ef9ec4)}
+.qb-card{width:100%;max-width:400px;margin:auto;background:rgba(255,255,255,.92);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);border-radius:22px;box-shadow:0 24px 70px rgba(11,31,30,.24),0 1px 0 rgba(255,255,255,.7) inset;padding:30px 22px 22px;box-sizing:border-box}
+.qb-logo{display:flex;flex-direction:column;align-items:center;gap:12px;margin:0 0 24px}
+.qb-logo svg{width:52px;height:52px;display:block}
+.qb-logo b{font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:15px;color:#0B1F1E}
+.qb-logo b i{font-style:normal;color:#0E6F68}
+.qb-h{margin:0 0 18px;text-align:center;font-size:22px;font-weight:700;letter-spacing:-.01em}
+.qb-seg{display:flex;background:#E6EDEB;border-radius:13px;padding:4px;margin:0 0 18px}
+.qb-seg a{flex:1;text-align:center;padding:11px 8px;border-radius:10px;font-weight:700;font-size:14px;color:#3E5552;text-decoration:none;transition:background .15s}
+.qb-seg a.on{background:#fff;color:#0B1F1E;box-shadow:0 1px 3px rgba(0,0,0,.10)}
+.qb-form{display:flex;flex-direction:column;gap:13px;margin:0;padding:0}
+.qb-form label.f{display:flex;flex-direction:column;gap:6px;font-weight:700;font-size:13px;color:#16211F}
+.qb-form input[type=email],.qb-form input[type=password]{font:16px "Space Grotesk",var(--sans);padding:14px 14px;border:1px solid #D3DDDA;border-radius:12px;background:#fff;color:#0B1F1E;width:100%;box-sizing:border-box}
+.qb-form input:focus{outline:2px solid #4FC8BB;outline-offset:1px;border-color:#4FC8BB}
+.qb-keep{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:600;color:#16211F;margin:2px 0 0;cursor:pointer}
+.qb-keep input{width:20px;height:20px;margin:0;accent-color:#0E6F68;flex:none}
+.qb-primary{width:100%;background:#0B1F1E !important;color:#fff !important;border:0;padding:16px;border-radius:12px;font-weight:700;font-size:16px;font-family:"Space Grotesk",var(--sans);margin-top:4px}
 .qb-primary:disabled{opacity:.6}
-.qb-links{display:flex;justify-content:space-between;font-size:14px;font-weight:600}
+.qb-links{display:flex;justify-content:center;font-size:14px;font-weight:600;margin-top:2px}
 .qb-links a{color:#0E6F68;text-decoration:none}
-.qb-msg{margin:0;font-size:14px;line-height:1.4;padding:10px 12px;border-radius:8px;background:var(--surface-2);color:var(--ink)}
-.qb-msg.ok{background:var(--good-soft);color:var(--good)}.qb-msg.err{background:var(--crit-soft);color:var(--crit)}.qb-msg.warn{background:var(--warn-soft);color:var(--warn)}
-.qb-foot{text-align:center;font-size:11px;font-weight:700;color:var(--ink-3);letter-spacing:.08em;text-transform:uppercase;padding:14px 20px 36px;margin:0}
+.qb-msg{margin:0;font-size:14px;line-height:1.4;padding:10px 12px;border-radius:10px;background:#EEF3F2;color:#0B1F1E}
+.qb-msg.ok{background:#DDF5EF;color:#0B5A52}.qb-msg.err{background:#FBE3E3;color:#8E1E1E}.qb-msg.warn{background:#FFF1D6;color:#7A4B00}
+.qb-foot{text-align:center;font-size:10px;font-weight:700;color:rgba(11,31,30,.62);letter-spacing:.1em;text-transform:uppercase;padding:18px 16px 6px;margin:0}
 .qb-acct{margin-left:auto;display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:0;text-transform:none;color:var(--ink-3);max-width:62%;min-width:0;flex:0 1 auto}
 .qb-acct span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .qb-acct a{color:var(--accent);font-weight:700;text-decoration:none;white-space:nowrap}
@@ -1828,7 +1837,7 @@ function renderStatus(P){
       return '<li>' + esc(src.text) + (src.url ? ' <a href="' + esc(src.url) + '" target="_blank" rel="noopener">' + esc(host || 'link') + '</a>' : '') + '</li>';
     }).join('') + '</ol></div></details>';
   }
-  h += '<footer>Educational summary of published evidence. App version 47, built 17 Nov 2026. Not medical advice and not a guide to using any product. Talk to a doctor about any treatment decision.</footer>';
+  h += '<footer>Educational summary of published evidence. App version 48, built 17 Nov 2026. Not medical advice and not a guide to using any product. Talk to a doctor about any treatment decision.</footer>';
   return h;
 }
 
