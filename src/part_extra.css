@@ -318,3 +318,13 @@ details.sub.good{border-color:rgba(74,222,128,.4)} details.sub.warn{border-color
 details.sub.good>summary::before,details.sub.warn>summary::before,details.sub.crit>summary::before{content:"";width:8px;height:8px;border-radius:50%;flex:none;margin-right:-2px}
 details.sub.good>summary::before{background:var(--good);box-shadow:0 0 8px var(--good)} details.sub.warn>summary::before{background:var(--warn);box-shadow:0 0 8px var(--warn)} details.sub.crit>summary::before{background:var(--crit);box-shadow:0 0 8px var(--crit)}
 details.tile .row{gap:8px}
+
+/* animation never taller than a phone screen; on wide screens it sits beside the directions instead of under them */
+.syr-wrap svg{max-height:min(52vh,420px);width:auto;max-width:100%;height:auto}
+@media (min-width:760px){
+  #vl-wiz:has(.syr-slot:not(:empty)){display:grid;grid-template-columns:minmax(0,1fr) 260px;column-gap:22px;align-items:start}
+  #vl-wiz:has(.syr-slot:not(:empty))>*{grid-column:1}
+  #vl-wiz:has(.syr-slot:not(:empty))>.syr-slot{grid-column:2;grid-row:1 / span 8;margin-top:0;position:sticky;top:calc(var(--header-h) + 70px)}
+  #vl-wiz:has(.syr-slot:not(:empty))>.syr-slot svg{max-height:380px}
+  .syr-cap{font-size:12.5px}
+}
