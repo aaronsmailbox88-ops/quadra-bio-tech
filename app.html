@@ -86,7 +86,7 @@ var RT = '?redirect_to=' + encodeURIComponent(location.origin + location.pathnam
       else if (mode === 'up') p = A.signUp(em, pw).then(function(r){ if (r.signedIn) done(); else { mode = 'in'; showGate(); document.getElementById('qb-email').value = em; msg('Check your email and open the confirmation link. Then come back here and sign in.', 'ok'); } });
       else p = A.signIn(em, pw).then(done);
       p.catch(function(err){ var t = err.message || 'Something went wrong'; if (/not confirmed/i.test(t)) t = 'Email not confirmed yet — open the link in the email we sent, then sign in.'; if (/invalid login/i.test(t)) t = 'Wrong email or password.'; if (/rate limit/i.test(t)) t = 'Too many emails sent for now — try again in an hour.'; msg(t, 'err'); go.disabled = false; }); }); }
-  function done(){ user = session && session.user; if (gate) { gate.remove(); gate = null; } document.body.classList.remove('qb-locked'); readyRes(); paintHeader(); }
+  function done(){ user = session && session.user; if (gate) { gate.remove(); gate = null; } document.body.classList.remove('qb-locked'); readyRes(); paintHeader(); if (window.qbWalk) window.qbWalk.maybe(); }
   window.qbAcctHtml = function(){ return user ? '<span class="qb-acct"><span>' + esc(user.email || '') + '</span><a href="#" class="qb-out">Sign out</a></span>' : ''; };
   function paintHeader(){ var h = document.querySelector('.pep-wrap small.brandline'); if (!h || !user || h.querySelector('.qb-acct')) return; h.insertAdjacentHTML('beforeend', window.qbAcctHtml());
     var t = document.getElementById('mode-title'); if (t && t.querySelector('small.brandline') && !t.querySelector('.qb-acct')) t.querySelector('small.brandline').insertAdjacentHTML('beforeend', window.qbAcctHtml()); }
@@ -560,6 +560,33 @@ nav.tabs button[aria-selected="true"]{color:var(--accent)}
 .lv-line + .note{margin-top:-2px}
 p.lv-line{margin:0;font-size:14.5px;line-height:1.45;color:var(--ink)}
 
+/* ---- supplies: ticks and cart ---- */
+.sup-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.sup-cart{display:flex;flex-direction:column;align-items:center;gap:1px;text-decoration:none;padding:10px 14px;flex:1 1 200px}
+.sup-cart em{font-style:normal;font-size:10.5px;letter-spacing:.02em;opacity:.8}
+.sup-ck{flex:none;display:flex;flex-direction:column;align-items:center;gap:3px;width:58px;font-size:10.5px;color:var(--ink-3);text-align:center;line-height:1.15;cursor:pointer}
+.sup-ck input{width:22px;height:22px;margin:0;accent-color:var(--accent)}
+.sup-ck.on{color:var(--good)}
+/* ---- walkthrough ---- */
+body.wk-locked{overflow:hidden}
+.wk{position:fixed;inset:0;z-index:1100;background:rgba(11,31,30,.55);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);display:flex;align-items:flex-end;justify-content:center;padding:0;overflow:auto}
+@media (min-width:640px){.wk{align-items:center;padding:24px}}
+.wk-card{width:100%;max-width:520px;background:var(--surface);color:var(--ink);border-radius:22px 22px 0 0;padding:22px 22px calc(22px + env(safe-area-inset-bottom));box-shadow:0 -10px 40px rgba(0,0,0,.25);display:flex;flex-direction:column;gap:12px;font-family:"Space Grotesk",var(--sans)}
+@media (min-width:640px){.wk-card{border-radius:22px;padding-bottom:22px}}
+.wk-top{display:flex;justify-content:space-between;align-items:center;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.wk-card h2{margin:2px 0 0;font-size:26px;line-height:1.1;letter-spacing:-.02em;font-family:"Space Grotesk",var(--sans)}
+.wk-card p{margin:0;font-size:16px;line-height:1.5;color:var(--ink)}
+.wk-dots{display:flex;gap:6px;margin-top:4px}
+.wk-dots i{width:8px;height:8px;border-radius:50%;background:var(--line);display:block}
+.wk-dots i.past{background:var(--ink-3)}.wk-dots i.on{background:var(--accent);width:20px;border-radius:4px}
+.wk-nav{display:flex;gap:10px;justify-content:space-between;margin-top:6px}
+.wk-nav .btn{padding:14px 18px;font-size:16px;border-radius:12px}
+.wk-next{flex:1;background:#0B1F1E !important;color:#fff !important;border:0}
+.wk-again{flex-direction:row;align-items:center;gap:14px;margin-bottom:14px}
+.wk-again>div{flex:1;display:flex;flex-direction:column;gap:3px}
+.wk-again b{font-size:15px}.wk-again span{font-size:13px;color:var(--ink-2)}
+.wk-warn{background:var(--crit-soft);color:var(--crit);border-radius:12px;padding:12px 14px;font-weight:600;font-size:15.5px;line-height:1.45}
+
 #vials .sync{font-size:.74rem;color:var(--ink-2);display:inline-flex;align-items:center;gap:6px}
 #vials .sync::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--ink-2)}
 #vials .sync.on::before{background:var(--good)}
@@ -685,6 +712,8 @@ p.lv-line{margin:0;font-size:14.5px;line-height:1.45;color:var(--ink)}
 #vials .uin.u2 .uin-in input{padding-right:6.4em !important}
 #vials .uin.u3 .uin-in input{padding-right:3.8em !important}
 
+#vials .coa-note{margin:8px 0 0;font-size:13px;color:var(--crit);max-width:none}
+
 </style>
 
 <header class="top">
@@ -712,6 +741,8 @@ p.lv-line{margin:0;font-size:14.5px;line-height:1.45;color:var(--ink)}
     <h1 id="ln-h">How peptide drugs are studied, and how to read what you find here.</h1>
   </div>
   <p class="lede">Everything in the Peptides section comes from trials, product labels and regulators. This section explains the machinery behind those numbers: what a trial is, what the results mean, why half-life matters, what the side-effect tables are really saying, and why this app measures by weight.</p>
+
+  <div class="card wk-again" id="learn-start"><div><b>Before you mix or dose</b><span>The seven things to know, in two minutes. Shown once after sign-in; read it again any time.</span></div><button type="button" class="btn ghost" onclick="window.qbWalk&&window.qbWalk.open()">Read it</button></div>
 
   <div id="learn-trials">
     <h2>What a clinical trial is</h2>
@@ -1334,13 +1365,42 @@ var SUPPLIES = {
   ],
   foot: 'The peptide itself: buy from a supplier that gives you a lot-specific certificate of analysis (COA) tested by an independent third-party laboratory — RP-HPLC purity and mass-spec identity for your lot, not a generic sheet. Do not administer a peptide that has not been third-party tested. A pre-filled pen sold as a research product cannot be matched to a certificate; skip those. How to read a COA is under Learn → Status. This app does not sell peptides and does not recommend a supplier.'
 };
+/* ---- per-user documents (account sync when signed in; local otherwise) ---- */
+window.qbUserDoc = function(name){
+  if (!(window.claude && typeof window.claude.use === 'function')) return Promise.resolve(null);
+  return Promise.all([window.claude.use('db'), window.claude.use('user')]).then(function(r){ var db = r[0], user = r[1]; if (!db || !user) return null; return user.id().then(function(id){ return id ? db.doc('data/users/' + id + '/' + name) : null; }); }).catch(function(){ return null; });
+};
+
+/* ---- supplies: ordered ticks (synced), one-click Amazon cart, reorder ---- */
+var SUP_ASIN = function(u){ var m = /\/dp\/([A-Z0-9]{10})/.exec(u || ''); return m ? m[1] : null; };
+var SUP_IDS = SUPPLIES.items.map(function(s){ return SUP_ASIN(s[3]) || s[0].toLowerCase().replace(/[^a-z0-9]+/g, '-'); });
+var SUP_REORDER = SUP_IDS.slice(1, 6);   // consumables: syringes, pads, Luer-lock + needles, filters, vials (not the scale or the sharps bin)
+var ORD = { v: 1, ordered: {}, updated: '' }, ordDoc = null, ordWriting = false;
+try { var _o = JSON.parse(localStorage.getItem('qb-supplies') || 'null'); if (_o && _o.ordered) ORD = _o; } catch (e) {}
+function supCart(ids){ return 'https://www.amazon.ca/gp/aws/cart/add.html?' + ids.map(function(a, i){ return 'ASIN.' + (i + 1) + '=' + a + '&Quantity.' + (i + 1) + '=1'; }).join('&'); }
+function supDate(iso){ var d = new Date(iso); return isNaN(d) ? '' : d.toLocaleDateString(undefined, { month: 'short', day: 'numeric' }); }
+function supSave(){ ORD.updated = new Date().toISOString(); try { localStorage.setItem('qb-supplies', JSON.stringify(ORD)); } catch (e) {}
+  if (ordDoc) { ordWriting = true; ordDoc.set({ v: 1, ordered: ORD.ordered, updated: ORD.updated }).catch(function(){}).then(function(){ ordWriting = false; }); } }
+function supPaint(){ document.querySelectorAll('[data-sup]').forEach(function(ck){ var id = ck.getAttribute('data-sup'), on = !!ORD.ordered[id]; ck.checked = on; var lab = ck.closest('label'); if (lab) { lab.classList.toggle('on', on); lab.querySelector('span').textContent = on ? 'Ordered ' + supDate(ORD.ordered[id]) : 'Ordered?'; } }); }
 function suppliesCard(){
   return '<div class="card" id="proto-supplies"><h3>' + esc(SUPPLIES.h) + '</h3><p style="font-size:14px;color:var(--ink-2);margin-top:4px">' + esc(SUPPLIES.intro) + '</p>' +
-    '<div class="supplies">' + SUPPLIES.items.map(function(s){
-      return '<div class="sup"><div class="sup-t"><b>' + esc(s[0]) + '</b><span>' + esc(s[1]) + '</span><small>' + esc(s[2]) + '</small></div>' +
+    '<div class="sup-actions"><a class="btn sup-cart" href="' + supCart(SUP_IDS) + '" target="_blank" rel="noopener">Add the whole kit to your cart ↗<em>Amazon.ca · 7 items</em></a>' +
+    '<a class="btn ghost sup-cart" href="' + supCart(SUP_REORDER) + '" target="_blank" rel="noopener">Reorder consumables ↗<em>syringes · pads · filters · vials</em></a></div>' +
+    '<p class="small" style="margin:6px 0 0;color:var(--ink-3)">The cart links carry no account or name — anyone can use them. Check the two size choices (21 G needles, 3 mL vials) in the cart before you pay. Tick each item once it is on its way; the ticks follow your account.</p>' +
+    '<div class="supplies">' + SUPPLIES.items.map(function(s, i){ var id = SUP_IDS[i], on = !!ORD.ordered[id];
+      return '<div class="sup"><label class="sup-ck' + (on ? ' on' : '') + '"><input type="checkbox" data-sup="' + id + '"' + (on ? ' checked' : '') + '><span>' + (on ? 'Ordered ' + supDate(ORD.ordered[id]) : 'Ordered?') + '</span></label>' +
+        '<div class="sup-t"><b>' + esc(s[0]) + '</b><span>' + esc(s[1]) + '</span><small>' + esc(s[2]) + '</small></div>' +
         (s[3] ? '<a class="btn ghost sup-btn" href="' + s[3] + '" target="_blank" rel="noopener">Order ↗<em>' + esc(s[4]) + '</em></a>' : '') + '</div>'; }).join('') + '</div>' +
     '<p class="small" style="margin-top:10px;color:var(--ink-2)">' + esc(SUPPLIES.foot) + '</p></div>';
 }
+document.addEventListener('change', function(e){ var ck = e.target.closest && e.target.closest('input[data-sup]'); if (!ck) return; var id = ck.getAttribute('data-sup');
+  if (ck.checked) ORD.ordered[id] = new Date().toISOString(); else delete ORD.ordered[id]; supSave(); supPaint(); });
+(function initSupDb(){
+  window.qbUserDoc('supplies').then(function(doc){ if (!doc) return; ordDoc = doc;
+    return doc.get().then(function(snap){ var d = snap.exists && snap.data(); if (d && d.ordered && (!ORD.updated || (d.updated || '') > ORD.updated)) { ORD = { v: 1, ordered: d.ordered, updated: d.updated || '' }; try { localStorage.setItem('qb-supplies', JSON.stringify(ORD)); } catch (e) {} supPaint(); } else if (Object.keys(ORD.ordered).length && !(d && d.ordered)) supSave();
+      doc.onSnapshot(function(s2){ if (!s2.exists || s2.metadata.hasPendingWrites || ordWriting) return; var d2 = s2.data(); if (!d2 || !d2.ordered || (d2.updated || '') <= (ORD.updated || '')) return; ORD = { v: 1, ordered: d2.ordered, updated: d2.updated || '' }; try { localStorage.setItem('qb-supplies', JSON.stringify(ORD)); } catch (e) {} supPaint(); }); });
+  }).catch(function(){});
+})();
 /* one step per page: each section is a card that shows a single step with Back / Done — continue; the position is remembered per section */
 function psPos(id){ try { var v = parseInt(localStorage.getItem('proto-pos:' + id), 10); return isNaN(v) ? 0 : v; } catch(e){ return 0; } }
 function psSave(id, i){ try { localStorage.setItem('proto-pos:' + id, String(i)); } catch(e){} }
@@ -1868,7 +1928,7 @@ function renderStatus(P){
       return '<li>' + esc(src.text) + (src.url ? ' <a href="' + esc(src.url) + '" target="_blank" rel="noopener">' + esc(host || 'link') + '</a>' : '') + '</li>';
     }).join('') + '</ol></div></details>';
   }
-  h += '<footer>Educational summary of published evidence. App version 49, built 18 Nov 2026. Not medical advice and not a guide to using any product. Talk to a doctor about any treatment decision.</footer>';
+  h += '<footer>Educational summary of published evidence. App version 50, built 18 Nov 2026. Not medical advice and not a guide to using any product. Talk to a doctor about any treatment decision.</footer>';
   return h;
 }
 
@@ -2881,7 +2941,7 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
     var head=function(title,sub){ return '<div class="whead"><div class="row between"><button type="button" class="linkish" data-w="cancel">Cancel</button><span class="eyebrow">Step '+n+' of '+total+'</span></div><div class="wprog"><i style="width:'+Math.round(n/total*100)+'%"></i></div><h2>'+esc(title)+'</h2>'+(sub?'<p class="wsub2">'+esc(sub)+'</p>':'')+'</div>' };
     var done='Mark complete';
     if(key==='pep'){ var opts=PEPS.map(function(p){return '<option value="'+esc(p)+'"'+(d.name===p?' selected':'')+'>'+esc(p)+'</option>'}).join(''); var other=d.name&&PEPS.indexOf(d.name)<0;
-      h=head('Which peptide is in the vial?','Pick it from the list, or choose “Other” and type it.')+'<div class="wone"><label class="fl">Peptide<select id="wz-pep"><option value=""'+(!d.name?' selected':'')+'>Choose…</option>'+opts+'<option value="__other"'+(other?' selected':'')+'>Other (type it)</option></select></label><label class="fl" id="wz-otherwrap"'+(other?'':' hidden')+'>Name<input id="wz-other" value="'+esc(other?d.name:'')+'" placeholder="Peptide name"></label></div>'
+      h=head('Which peptide is in the vial?','Pick it from the list, or choose “Other” and type it.')+'<div class="wone"><label class="fl">Peptide<select id="wz-pep"><option value=""'+(!d.name?' selected':'')+'>Choose…</option>'+opts+'<option value="__other"'+(other?' selected':'')+'>Other (type it)</option></select></label><p class="note coa-note">Only mix a vial that has a current third-party COA naming this brand, the amount in the vial and the batch number. No COA, no dose.</p><label class="fl" id="wz-otherwrap"'+(other?'':' hidden')+'>Name<input id="wz-other" value="'+esc(other?d.name:'')+'" placeholder="Peptide name"></label></div>'
         +wNav(false,true,'Next',!wReady(key))+'<p class="small muted" style="margin-top:14px">Already have the numbers written down? <button type="button" class="linkish" data-vgo="new">Enter them directly</button>.</p>' }
     else if(key==='mg'){ h=head('How many milligrams does the label say?','The number printed on the '+esc(d.name||'peptide')+' vial, for example 15.')+'<div class="wone"><label class="fl">Amount on the label'+unitWrap('<input id="wz-mg" class="mono big-in" type="number" step="any" min="0" inputmode="decimal" value="'+esc(d.mg)+'" placeholder="15">','mg')+'</label><label class="fl">Vendor / lot (optional)<input id="wz-src" value="'+esc(d.src)+'" placeholder="Who made it, lot number"></label><label class="fl">Mixing with<select id="wz-dil">'+['Bacteriostatic water','Sterile water','Acetic acid 0.6%','Other'].map(function(o){return '<option'+(d.dil===o?' selected':'')+'>'+o+'</option>'}).join('')+'</select></label><div data-dilslot>'+dilNote(d.dil)+'</div></div>'+wNav(true,true,'Next',!wReady(key)) }
     else if(key==='check'){ h=head('Turn the scale on and test it with the 20 g weight','Hard, level surface, away from drafts and fans. Press ON with nothing on the pan and wait for 0.000. Put ONE 20 g weight in the middle of the pan and wait for the number to settle. Photograph it, or enter the number manually.')
@@ -3111,6 +3171,43 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
   }
   window.lvRender = render;
   var sec = document.querySelector('[data-panel="live"]'); if (sec && !sec.hidden) render();   // app.js may have shown the panel before this module loaded
+})();
+
+/* ===== First-run walkthrough: "Read this before mixing or dosing". Shown once per account after sign-in (or first open); reopenable from Learn. ===== */
+(function(){
+  'use strict';
+  var esc = function(s){ return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){ return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); };
+  var PAGES = [
+    { k: 'Before you start', h: 'Read this before mixing or dosing.', p: ['Five minutes now saves a vial later.', 'This app explains the published research on each peptide and keeps your records straight. It is an educational tool: not medical advice, and it sells nothing.'] },
+    { k: 'The peptide', h: 'No COA, no dose.', warn: 'If your supply does not have a current third-party Certificate of Analysis (COA) that references the brand, the amount in the vial and the batch number, you have an untested product, and you should not use it.', p: ['A COA is the independent lab\u2019s report for your exact lot: purity and identity, not a generic sheet from the seller.', 'A pre-filled pen sold as a research product cannot be matched to a COA.'] },
+    { k: 'The method', h: 'Everything is weighed.', p: ['Syringe marks lie; a 0.001 g scale does not. The water going in, every draw and what is left in the vial are all weighed, and the app does the arithmetic.', 'Say milligrams, never units. The kit you need is under Learn, with one-click ordering.'] },
+    { k: 'Mixing', h: 'Water, filter, look.', p: ['Bacteriostatic water only; plain sterile water makes a single-session vial.', 'Push the finished solution through a 0.22 µm filter into a new sterile vial, then hold it up to the light: perfectly clear, no floating particles, all powder dissolved. If not, do not use that vial.', 'The Mix a vial wizard walks you through it one step at a time.'] },
+    { k: 'Dosing', h: 'Low, slow, logged.', p: ['Start at the lowest step and stay there until your weekly weigh-in plateaus. Whether you can feel the drug is not the signal; the scale is.', 'Log each dose right after you draw it. Track → Levels then shows how much is in your blood at any moment.'] },
+    { k: 'Safety', h: 'Know the warning signs first.', p: ['Side effects cluster in the days after a dose step and usually ease. Each peptide page lists its own warning signs under Effects, with what to do and when to stop. Read it before the first dose.', 'If something feels seriously wrong, stop and get medical care. This app cannot judge that for you.'] },
+    { k: 'Where things live', h: 'Three tabs.', p: ['Peptides: the evidence, dose by dose.', 'Learn: setting up the scale, mixing, dosing, what to order.', 'Track: vitals, live levels, your vials and the mixing wizard.', 'You can read this again any time from Learn.'] }
+  ];
+  var box = null, i = 0, done = false, doc = null;
+  try { done = localStorage.getItem('qb-walk') === 'done'; } catch (e) {}
+  function html(){
+    var pg = PAGES[i], last = i === PAGES.length - 1;
+    return '<div class="wk-card" role="dialog" aria-modal="true" aria-labelledby="wk-h"><div class="wk-top"><span class="wk-k">' + esc(pg.k) + '</span><span class="wk-n">' + (i + 1) + ' / ' + PAGES.length + '</span></div>' +
+      '<h2 id="wk-h">' + esc(pg.h) + '</h2>' + (pg.warn ? '<p class="wk-warn">' + esc(pg.warn) + '</p>' : '') + pg.p.map(function(t){ return '<p>' + esc(t) + '</p>'; }).join('') +
+      '<div class="wk-dots">' + PAGES.map(function(_, j){ return '<i class="' + (j === i ? 'on' : '') + (j < i ? ' past' : '') + '"></i>'; }).join('') + '</div>' +
+      '<div class="wk-nav">' + (i > 0 ? '<button type="button" class="btn ghost" data-wk="back">Back</button>' : '<button type="button" class="btn ghost" data-wk="skip">Not now</button>') +
+      '<button type="button" class="btn wk-next" data-wk="' + (last ? 'done' : 'next') + '">' + (last ? 'I have read it' : 'Next') + '</button></div></div>';
+  }
+  function paint(){ if (box) { box.innerHTML = html(); box.scrollTop = 0; var n = box.querySelector('.wk-next'); if (n) try { n.focus({ preventScroll: true }); } catch (e) {} } }
+  function open(start){ i = start || 0; if (!box) { box = document.createElement('div'); box.className = 'wk'; document.body.appendChild(box); document.body.classList.add('wk-locked');
+      box.addEventListener('click', function(e){ var b = e.target.closest('[data-wk]'); if (!b) return; var a = b.getAttribute('data-wk');
+        if (a === 'next') { i = Math.min(PAGES.length - 1, i + 1); paint(); } else if (a === 'back') { i = Math.max(0, i - 1); paint(); } else if (a === 'skip') close(false); else if (a === 'done') close(true); }); }
+    paint(); }
+  function close(finished){ if (box) { box.remove(); box = null; } document.body.classList.remove('wk-locked');
+    if (finished) { done = true; try { localStorage.setItem('qb-walk', 'done'); } catch (e) {} if (doc) doc.set({ v: 1, done: new Date().toISOString() }).catch(function(){}); } }
+  function maybe(){ if (done || box) return; setTimeout(function(){ if (!done && !box && !document.getElementById('qb-gate')) open(0); }, 400); }
+  // account sync: a device that has not seen it checks the account first
+  if (window.qbUserDoc) window.qbUserDoc('walkthrough').then(function(d){ if (!d) return; doc = d; return d.get().then(function(snap){ if (snap.exists && snap.data() && snap.data().done) { done = true; try { localStorage.setItem('qb-walk', 'done'); } catch (e) {} if (box) close(false); } else if (done) d.set({ v: 1, done: new Date().toISOString() }).catch(function(){}); }); }).catch(function(){});
+  window.qbWalk = { open: function(){ open(0); }, maybe: maybe, reset: function(){ done = false; try { localStorage.removeItem('qb-walk'); } catch (e) {} } };
+  if (!window.QB_SB) maybe();   // no sign-in gate in this build: show on first open; the gated build calls maybe() after sign-in
 })();
 
 </script>
