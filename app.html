@@ -1750,7 +1750,9 @@ function renderTitration(P){
     for(var kx=108;kx<156;kx+=4) mk('line',{x1:kx,y1:148,x2:kx,y2:159,stroke:'#6f7b83','stroke-width':'.5',opacity:'.5'},vial);
     mk('circle',{cx:130,cy:161,r:9.5,fill:'#5b666f'},vial); mk('circle',{cx:130,cy:161,r:6,fill:'#434d55'},vial);
     mk('rect',{x:100,y:42,width:60,height:26,rx:2,fill:'#F5F7F5',stroke:'#c9d2d8','stroke-width':'.6'},vial);
-    txt(mk('text',{x:130,y:59,'text-anchor':'middle','font-size':'8.5','font-weight':'600',fill:'#16211F',transform:'rotate(180 130 55)'},vial),(o.name||'').slice(0,13));
+    // label reads upright even though the vial is inverted; the water vial says BAC / WATER, stacked, in capitals
+    if(o.liquid==='water'){ txt(mk('text',{x:130,y:53,'text-anchor':'middle','font-size':'8.5','font-weight':'700',fill:'#16211F','letter-spacing':'.06em'},vial),'BAC'); txt(mk('text',{x:130,y:64,'text-anchor':'middle','font-size':'8.5','font-weight':'700',fill:'#16211F','letter-spacing':'.06em'},vial),'WATER'); }
+    else txt(mk('text',{x:130,y:59,'text-anchor':'middle','font-size':'8.5','font-weight':'600',fill:'#16211F'},vial),(o.name||'').slice(0,13));
     txt(mk('text',{x:130,y:10,'text-anchor':'middle','font-size':'8',fill:'#5A6967'},vial),'vial upside down');
     // ---- syringe (group translates for in/out of the stopper)
     var syr=mk('g',{class:'syr-body',filter:'url(#syr-shadow)'},svg);
@@ -1769,11 +1771,11 @@ function renderTitration(P){
     for(var u=0;u<=U;u+=minor){ var y=L0+u*pxu, big=u%major===0, md=mid&&u%mid===0; mk('line',{x1:BX+BW-(big?12:md?8:5),y1:y,x2:BX+BW,y2:y,stroke:'#1b2328','stroke-width':big?'1.1':'.7',opacity:big?'.95':'.6'},syr); if(big&&u>0) txt(mk('text',{x:BX+BW+4,y:y+3.2,'font-size':'8.6','font-weight':'700',fill:'#1b2328','font-family':'var(--mono, ui-monospace, monospace)'},syr),String(u)) }
     txt(mk('text',{x:BX+BW+4,y:L0+3.2,'font-size':'7.5',fill:'#5A6967','font-family':'var(--mono, ui-monospace, monospace)'},syr),'0');
     txt(mk('text',{x:BX+BW+4,y:L0-5,'font-size':'5.6','font-weight':'700',fill:'#5A6967','letter-spacing':'.08em'},syr),'UNITS');
-    // plunger: rubber stopper (with a conical face), rod with ridges, thumb pad
+    // plunger: flat-faced rubber stopper whose needle-side edge sits exactly on the mark (that is where a dose is read), rod with ridges, thumb pad
     var stopG=mk('g',{},syr);
     var stopTip=mk('path',{d:'',fill:'#2b3238'},stopG);
-    var stop=mk('rect',{x:BX+1.2,y:L0-9,width:BW-2.4,height:10,rx:1.2,fill:'url(#syr-rubber)'},stopG);
-    var stopHi=mk('rect',{x:BX+5,y:L0-7.5,width:2.4,height:7,rx:1.2,fill:'#fff',opacity:'.22'},stopG);
+    var stop=mk('rect',{x:BX+1.2,y:L0,width:BW-2.4,height:10,rx:1.2,fill:'url(#syr-rubber)'},stopG);
+    var stopHi=mk('rect',{x:BX+5,y:L0+1.5,width:2.4,height:7,rx:1.2,fill:'#fff',opacity:'.22'},stopG);
     var rod=mk('rect',{x:CX-5.5,y:L0,width:11,height:262,fill:'url(#syr-rod)',stroke:'#9aa6ae','stroke-width':'.7'},syr);
     var rodL=mk('line',{x1:CX,y1:L0,x2:CX,y2:L0+262,stroke:'#aeb9c0','stroke-width':'.8'},syr);
     var thumb=mk('rect',{x:CX-19,y:L0+258,width:38,height:8,rx:3,fill:'url(#syr-flange)',stroke:'#98a5ae','stroke-width':'.7'},syr);
@@ -1804,7 +1806,7 @@ function renderTitration(P){
     row.querySelector('.syr-replay').addEventListener('click',function(){ play(st) });
     el.__syr=st; return st;
   }
-  function setPlunger(st,px){ var y=L0+px; st.stop.setAttribute('y',y-9); st.stopHi.setAttribute('y',y-7.5); st.stopTip.setAttribute('d','M'+(BX+1.2)+' '+(y-9)+' L'+CX+' '+(y-12.5)+' L'+(BX+BW-1.2)+' '+(y-9)+' Z'); st.rod.setAttribute('y',y); st.rodL.setAttribute('y1',y); st.rodL.setAttribute('y2',y+262); st.thumb.setAttribute('y',y+258) }
+  function setPlunger(st,px){ var y=L0+px; st.stop.setAttribute('y',y); st.stopHi.setAttribute('y',y+1.5); st.stopTip.setAttribute('d',''); st.rod.setAttribute('y',y+10); st.rodL.setAttribute('y1',y+10); st.rodL.setAttribute('y2',y+262); st.thumb.setAttribute('y',y+258) }
   function setLiquid(st,px){ px=Math.max(0,px); st.liq.setAttribute('height',px); var y=L0+px; st.men.setAttribute('d',px>0.5?'M'+BX+' '+(y-2.2)+' Q'+CX+' '+(y+1.2)+' '+(BX+BW)+' '+(y-2.2)+' L'+(BX+BW)+' '+y+' L'+BX+' '+y+' Z':'') }
   function setView(st,z,cy){ // zoom z about the target mark at (CX, cy)
     if(z<=1.001){ st.svg.setAttribute('viewBox','0 0 '+VW+' '+VH); return }
@@ -2118,7 +2120,7 @@ function renderStatus(P){
       return '<li>' + esc(src.text) + (src.url ? ' <a href="' + esc(src.url) + '" target="_blank" rel="noopener">' + esc(host || 'link') + '</a>' : '') + '</li>';
     }).join('') + '</ol></div></details>';
   }
-  h += '<footer>Educational summary of published evidence. App version 65, built 18 Nov 2026. Not medical advice and not a guide to using any product. Talk to a doctor about any treatment decision.</footer>';
+  h += '<footer>Educational summary of published evidence. App version 66, built 18 Nov 2026. Not medical advice and not a guide to using any product. Talk to a doctor about any treatment decision.</footer>';
   return h;
 }
 
