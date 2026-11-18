@@ -587,6 +587,18 @@ body.wk-locked{overflow:hidden}
 .wk-again b{font-size:15px}.wk-again span{font-size:13px;color:var(--ink-2)}
 .wk-warn{background:var(--crit-soft);color:var(--crit);border-radius:12px;padding:12px 14px;font-weight:600;font-size:15.5px;line-height:1.45}
 
+/* ---- COA push notice ---- */
+.qb-push{position:fixed;top:calc(10px + env(safe-area-inset-top));left:12px;right:12px;z-index:1200;max-width:520px;margin:0 auto;background:rgba(11,31,30,.97);color:#F2F7F6;border-radius:18px;padding:12px 12px 12px 14px;display:flex;gap:12px;align-items:flex-start;box-shadow:0 14px 40px rgba(0,0,0,.35);font-family:"Space Grotesk",var(--sans);animation:qbPushIn .4s cubic-bezier(.2,.8,.2,1)}
+.qb-push.out{animation:qbPushOut .3s ease forwards}
+@keyframes qbPushIn{from{transform:translateY(-120%);opacity:0}to{transform:none;opacity:1}}
+@keyframes qbPushOut{to{transform:translateY(-120%);opacity:0}}
+.qb-push-i{flex:none;width:36px;height:36px;border-radius:9px;overflow:hidden;display:block;margin-top:2px}
+.qb-push-i svg{width:36px;height:36px;display:block}
+.qb-push-t{flex:1;min-width:0;display:flex;flex-direction:column;gap:3px}
+.qb-push-t b{font-size:15px;color:#fff}
+.qb-push-t span{font-size:13px;line-height:1.4;color:#D5E3E0}
+.qb-push-x{flex:none;align-self:center;background:#4FC8BB;color:#0B1F1E;border:0;border-radius:10px;padding:9px 13px;font-weight:700;font-size:14px;font-family:inherit}
+
 #vials .sync{font-size:.74rem;color:var(--ink-2);display:inline-flex;align-items:center;gap:6px}
 #vials .sync::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--ink-2)}
 #vials .sync.on::before{background:var(--good)}
@@ -1928,7 +1940,7 @@ function renderStatus(P){
       return '<li>' + esc(src.text) + (src.url ? ' <a href="' + esc(src.url) + '" target="_blank" rel="noopener">' + esc(host || 'link') + '</a>' : '') + '</li>';
     }).join('') + '</ol></div></details>';
   }
-  h += '<footer>Educational summary of published evidence. App version 50, built 18 Nov 2026. Not medical advice and not a guide to using any product. Talk to a doctor about any treatment decision.</footer>';
+  h += '<footer>Educational summary of published evidence. App version 51, built 18 Nov 2026. Not medical advice and not a guide to using any product. Talk to a doctor about any treatment decision.</footer>';
   return h;
 }
 
@@ -3203,7 +3215,20 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
     paint(); }
   function close(finished){ if (box) { box.remove(); box = null; } document.body.classList.remove('wk-locked');
     if (finished) { done = true; try { localStorage.setItem('qb-walk', 'done'); } catch (e) {} if (doc) doc.set({ v: 1, done: new Date().toISOString() }).catch(function(){}); } }
-  function maybe(){ if (done || box) return; setTimeout(function(){ if (!done && !box && !document.getElementById('qb-gate')) open(0); }, 400); }
+  /* the COA notice: a push-style banner on every launch; on the first run the walkthrough follows it */
+  var push = null, pushed = false;
+  function notice(then){
+    if (push || pushed) { if (then) then(); return; } pushed = true;
+    push = document.createElement('div'); push.className = 'qb-push'; push.setAttribute('role', 'alert');
+    var ic = window.QB_MARK || (function(){ var m = document.querySelector('.pep-wrap .brandmark, .brandmark'); return m ? m.outerHTML : ''; })();
+    push.innerHTML = (ic ? '<span class="qb-push-i">' + ic + '</span>' : '') + '<div class="qb-push-t"><b>No COA, no dose.</b><span>Only use a peptide with a current third-party Certificate of Analysis naming the brand, the amount in the vial and the batch number. Anything else is untested. Do not use it.</span></div><button type="button" class="qb-push-x" aria-label="Dismiss">OK</button>';
+    document.body.appendChild(push);
+    var timer = null;
+    function off(){ if (!push) return; var el = push; push = null; el.classList.add('out'); setTimeout(function(){ el.remove(); }, 320); if (timer) clearTimeout(timer); if (then) then(); }
+    push.querySelector('.qb-push-x').addEventListener('click', off);
+    if (done) timer = setTimeout(off, 9000);   // a returning user: it fades by itself; a first-timer taps it, then the walkthrough starts
+  }
+  function maybe(){ if (box) return; setTimeout(function(){ if (document.getElementById('qb-gate')) return; notice(function(){ if (!done && !box) open(0); }); }, 400); }
   // account sync: a device that has not seen it checks the account first
   if (window.qbUserDoc) window.qbUserDoc('walkthrough').then(function(d){ if (!d) return; doc = d; return d.get().then(function(snap){ if (snap.exists && snap.data() && snap.data().done) { done = true; try { localStorage.setItem('qb-walk', 'done'); } catch (e) {} if (box) close(false); } else if (done) d.set({ v: 1, done: new Date().toISOString() }).catch(function(){}); }); }).catch(function(){});
   window.qbWalk = { open: function(){ open(0); }, maybe: maybe, reset: function(){ done = false; try { localStorage.removeItem('qb-walk'); } catch (e) {} } };
