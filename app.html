@@ -16,6 +16,7 @@
 (function(){
   var CFG = window.QB_SB; if (!CFG || !CFG.url || !CFG.key) return;
   var URL0 = CFG.url.replace(/\/$/, ''), KEY = CFG.key, SKEY = 'qb-session';
+var RT = '?redirect_to=' + encodeURIComponent(location.origin + location.pathname);   // confirmation and reset links come back to this page (must be on the project's redirect allow-list)
   var session = null, user = null, readyRes, ready = new Promise(function(r){ readyRes = r; });
   function load(){ try { session = JSON.parse(localStorage.getItem(SKEY) || 'null'); } catch(e){ session = null; } }
   function save(s){ session = s; try { if (s) localStorage.setItem(SKEY, JSON.stringify(s)); else localStorage.removeItem(SKEY); } catch(e){} }
@@ -26,9 +27,9 @@
     return fetch(URL0 + '/auth/v1/token?grant_type=refresh_token', { method: 'POST', headers: hdr(false), body: JSON.stringify({ refresh_token: session.refresh_token }) }).then(j).then(function(d){ setSession(d); return session; }); }
   function ensure(){ if (!session) return Promise.reject(new Error('signed out')); if (session.expires_at - Math.floor(Date.now() / 1000) > 90) return Promise.resolve(session); return refresh().catch(function(e){ save(null); user = null; throw e; }); }
   var A = {
-    signUp: function(email, password){ return fetch(URL0 + '/auth/v1/signup', { method: 'POST', headers: hdr(false), body: JSON.stringify({ email: email, password: password }) }).then(j).then(function(d){ if (d && d.access_token) { setSession(d); return { signedIn: true }; } return { signedIn: false, confirm: true }; }); },
+    signUp: function(email, password){ return fetch(URL0 + '/auth/v1/signup' + RT, { method: 'POST', headers: hdr(false), body: JSON.stringify({ email: email, password: password }) }).then(j).then(function(d){ if (d && d.access_token) { setSession(d); return { signedIn: true }; } return { signedIn: false, confirm: true }; }); },
     signIn: function(email, password){ return fetch(URL0 + '/auth/v1/token?grant_type=password', { method: 'POST', headers: hdr(false), body: JSON.stringify({ email: email, password: password }) }).then(j).then(function(d){ setSession(d); return session; }); },
-    recover: function(email){ return fetch(URL0 + '/auth/v1/recover', { method: 'POST', headers: hdr(false), body: JSON.stringify({ email: email }) }).then(j); },
+    recover: function(email){ return fetch(URL0 + '/auth/v1/recover' + RT, { method: 'POST', headers: hdr(false), body: JSON.stringify({ email: email }) }).then(j); },
     setPassword: function(password){ return ensure().then(function(){ return fetch(URL0 + '/auth/v1/user', { method: 'PUT', headers: hdr(true), body: JSON.stringify({ password: password }) }).then(j); }); },
     signOut: function(){ var s = session; save(null); user = null; if (s) fetch(URL0 + '/auth/v1/logout', { method: 'POST', headers: { apikey: KEY, authorization: 'Bearer ' + s.access_token } }).catch(function(){}); location.reload(); },
     user: function(){ return user; }
@@ -1827,7 +1828,7 @@ function renderStatus(P){
       return '<li>' + esc(src.text) + (src.url ? ' <a href="' + esc(src.url) + '" target="_blank" rel="noopener">' + esc(host || 'link') + '</a>' : '') + '</li>';
     }).join('') + '</ol></div></details>';
   }
-  h += '<footer>Educational summary of published evidence. App version 46, built 16 Nov 2026. Not medical advice and not a guide to using any product. Talk to a doctor about any treatment decision.</footer>';
+  h += '<footer>Educational summary of published evidence. App version 47, built 17 Nov 2026. Not medical advice and not a guide to using any product. Talk to a doctor about any treatment decision.</footer>';
   return h;
 }
 
