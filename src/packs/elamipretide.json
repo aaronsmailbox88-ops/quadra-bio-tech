@@ -1,0 +1,380 @@
+{
+  "id": "elamipretide",
+  "name": "Elamipretide",
+  "brands": "Forzinity",
+  "maker": "Stealth BioTherapeutics (Mighty Therapeutics)",
+  "group": "approved",
+  "pill": "Approved (US, Barth syndrome)",
+  "overview": {
+    "headline": "A four-amino-acid peptide that targets the inner membrane of mitochondria, approved for one ultra-rare disease.",
+    "lede": "Elamipretide, known in research as SS-31, is made by Stealth BioTherapeutics, now part of Mighty Therapeutics. The FDA granted Forzinity accelerated approval on 19 September 2025 for Barth syndrome, a genetic mitochondrial disease affecting a few hundred people worldwide. It failed larger trials in heart failure, mitochondrial myopathy and macular degeneration, and is approved nowhere else. Vials sold online as \"SS-31\" are not the approved drug.",
+    "stats": [
+      {
+        "num": "12",
+        "lbl": "patients in the placebo-controlled trial behind the approval",
+        "src": "TAZPOWER (SPIBA-201)"
+      },
+      {
+        "num": "0 of 2",
+        "lbl": "primary endpoints met against placebo; approval rested on open-label knee-strength data",
+        "src": "FDA label, Sept 2025"
+      },
+      {
+        "num": "3",
+        "lbl": "larger trials in other diseases that missed their primary endpoints",
+        "src": "MMPOWER-3 2019, PROGRESS-HF 2020, ReCLAIM-2 2022"
+      }
+    ],
+    "mechanism": {
+      "intro": "It sticks to cardiolipin, a fat found only in the mitochondrial inner membrane, where cells make energy.",
+      "parts": [
+        {
+          "name": "Cardiolipin",
+          "text": "Elamipretide binds cardiolipin and is thought to stabilise the folded inner membrane and the enzyme complexes that make ATP, improving energy output and reducing leakage of damaging oxygen radicals."
+        },
+        {
+          "name": "Barth syndrome",
+          "text": "A TAZ gene mutation leaves cardiolipin malformed, causing heart and skeletal muscle weakness, low neutrophils and growth delay, almost always in boys. That is the one setting with an approval."
+        }
+      ]
+    },
+    "more": {
+      "title": "More: a long road to a small approval",
+      "paras": [
+        "A decade of trials in heart failure, primary mitochondrial myopathy and geographic atrophy of the retina all missed their primary endpoints. The 12-patient Barth programme went through an advisory committee in October 2024 and a complete response letter in May 2025 before accelerated approval in September 2025, on a secondary measure (knee strength) from the open-label extension.",
+        "\"SS-31\" vials sold online trade on this history. Sources are under the Status tab."
+      ]
+    }
+  },
+  "results": {
+    "headline": "A tiny trial that missed its main goals, and a strength signal that carried the approval.",
+    "lede": "TAZPOWER enrolled 12 boys and men with Barth syndrome. In the 12-week placebo-controlled crossover, elamipretide was no better than placebo on walking distance or fatigue. Knee strength then rose during the open-label years, and that intermediate measure is what the FDA accepted.",
+    "chart": {
+      "metric": "other",
+      "unit": " N",
+      "legend": [
+        "Elamipretide 40 mg daily",
+        "Placebo"
+      ],
+      "rows": [
+        {
+          "name": "Knee-extensor strength, change at 12 weeks",
+          "meta": "TAZPOWER randomised crossover · 12 people · baseline median 124 N",
+          "drug": 4,
+          "placebo": -5,
+          "tip": "Median change: elamipretide +4 N vs placebo −5 N; not statistically significant"
+        }
+      ],
+      "max": 70,
+      "note": "The only placebo-controlled strength result. In the open-label extension the median gain from baseline was +34 N at 12 weeks (10 people), +68 N at 24 weeks (9) and +63 N at 168 weeks (8), with no placebo group."
+    },
+    "stats": [
+      {
+        "num": "+63 N",
+        "lbl": "median knee-extensor gain after 168 weeks of open-label drug, in the 8 patients still enrolled",
+        "src": "FDA label; baseline median 124 N"
+      },
+      {
+        "num": "71 / 218 / 176",
+        "lbl": "people in the failed heart-failure, mitochondrial-myopathy and macular-degeneration trials",
+        "src": "J Card Fail 2020; Stealth Dec 2019; Stealth May 2022"
+      }
+    ],
+    "beyond": {
+      "title": "What the other trials showed",
+      "items": [
+        {
+          "b": "Heart failure (PROGRESS-HF, 2020).",
+          "t": "71 people, 28 days of 4 or 40 mg daily. No change in heart chamber volume or ejection fraction versus placebo."
+        },
+        {
+          "b": "Mitochondrial myopathy (MMPOWER-3, 2019).",
+          "t": "218 people, Phase 3. Missed both primary endpoints: six-minute walk and fatigue score."
+        },
+        {
+          "b": "Dry macular degeneration (ReCLAIM-2, 2022).",
+          "t": "176 people, 48 weeks. Missed both primary endpoints; a secondary retinal-layer measure favoured the drug."
+        },
+        {
+          "b": "Barth syndrome, heart.",
+          "t": "Open-label data suggested better stroke volume on MRI; not a controlled result."
+        }
+      ]
+    },
+    "more": [
+      {
+        "title": "More: how a failed primary endpoint became an approval",
+        "paras": [
+          "Accelerated approval allows approval on an intermediate endpoint reasonably likely to predict benefit. Here that was knee-extensor strength: unchanged in the randomised phase, then up by 34, 68 and 63 N at 12, 24 and 168 weeks of open-label treatment. Without a placebo group, growth, training and expectation cannot be separated from the drug, so the FDA requires a confirmatory randomised trial, with the final report due in March 2030."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "Injection-site reactions in everyone, a rise in eosinophils, and rare serious allergy.",
+    "lede": "With a daily injection under the skin, every patient had redness, itching, hardening or pain at the site, versus two-thirds on placebo (also injected). The drug-specific laboratory signal is a rise in eosinophils, a type of white blood cell.",
+    "chart": {
+      "eyebrow": "TAZPOWER crossover · 12 patients · share affected",
+      "legend": [
+        "Elamipretide 40 mg daily",
+        "Placebo injection"
+      ],
+      "rows": [
+        {
+          "name": "Injection-site redness",
+          "drug": 100,
+          "placebo": 25
+        },
+        {
+          "name": "Injection-site pain",
+          "drug": 75,
+          "placebo": 42
+        },
+        {
+          "name": "Injection-site hardening",
+          "drug": 67,
+          "placebo": 17
+        },
+        {
+          "name": "Injection-site itching",
+          "drug": 67,
+          "placebo": 17
+        },
+        {
+          "name": "Injection-site bruising",
+          "drug": 25,
+          "placebo": 0
+        },
+        {
+          "name": "Injection-site hives",
+          "drug": 25,
+          "placebo": 0
+        }
+      ],
+      "max": 100,
+      "note": "Twelve people received each treatment in turn, so each 8 percentage points is one person. From Table 2 of the FDA label."
+    },
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "All 12 completed the randomised phase. In ReCLAIM-2, injection-site reactions were the most common adverse event and led some people to stop early (Stealth, 2022). The label gives no pooled discontinuation rate."
+    },
+    "unique": {
+      "title": "Eosinophilia and allergic reactions",
+      "text": "Eosinophil counts rose in most people treated for 30 days or more, peaking around day 90 (about 0.5–0.6 × 10⁹/L above baseline) and returning to normal after 6–12 months or on stopping, without symptoms. Separately, the label warns of serious allergic reactions needing emergency treatment, plus rashes, eczema-like dermatitis and cough appearing minutes to months after starting."
+    },
+    "more": [
+      {
+        "title": "More: what the trials monitor for",
+        "paras": [
+          "Allergy. After a serious hypersensitivity reaction the drug is stopped and not restarted.",
+          "Blood counts. Eosinophils are tracked; Barth syndrome itself causes low neutrophils.",
+          "Kidneys. Exposure more than doubles in severe kidney impairment, so the dose is halved.",
+          "Infants. The product contains benzyl alcohol and is not for newborns; the approval covers people of 30 kg or more."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "Open-label Barth data reported better stroke volume and patient-reported function, none of it placebo-controlled. The failed trials showed no consistent benefit on walking, fatigue, heart function or vision. There is no human evidence for the anti-aging, endurance or recovery claims made for \"SS-31\" online."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms trial teams treat as urgent",
+      "items": [
+        "Hives, facial or throat swelling, wheeze or faintness after an injection",
+        "A spreading rash, blistering or eczema that does not settle",
+        "Spreading redness, warmth or pus at an injection site",
+        "New or worsening cough or breathlessness",
+        "In Barth syndrome: fever (neutrophils are low) or swelling and breathlessness suggesting heart failure"
+      ],
+      "note": "Anyone with these symptoms should get medical care right away."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "The FDA label describes how elamipretide behaves (peak 0.5–1 hour after injection, about 92% absorbed, essentially the whole dose recovered in urine within 48 hours, minimal build-up with daily dosing) but does not publish a half-life, so the simulator cannot be drawn from a primary source. A once-daily 40 mg injection is the only approved regimen.",
+    "stats": [
+      {
+        "num": "0.5–1 h",
+        "lbl": "time to peak blood level after an injection under the skin",
+        "src": "FDA label"
+      },
+      {
+        "num": "~92%",
+        "lbl": "of a dose reaches the blood",
+        "src": "FDA label"
+      },
+      {
+        "num": "48 h",
+        "lbl": "by which about 100% of a dose has left in the urine",
+        "src": "FDA label"
+      }
+    ],
+    "explain": [
+      {
+        "b": "Why daily dosing.",
+        "t": "The drug is cleared within a day or two, so it is given every day; the label reports minimal accumulation."
+      },
+      {
+        "b": "Why kidney function matters.",
+        "t": "Exposure rises 39%, 75% and 125% with mild, moderate and severe kidney impairment; the dose is halved in severe impairment."
+      },
+      {
+        "b": "Why there is still no half-life here.",
+        "t": "The approval package may contain one, but the public label does not, and this page uses only primary-source numbers."
+      }
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: what is known about dose",
+        "paras": [
+          "Exposure rose in proportion to dose from 2 to 80 mg a day in studies; the approved dose is 40 mg (20 mg with severe kidney impairment). The 4 mg and 40 mg doses tested in heart failure produced no benefit over placebo."
+        ]
+      },
+      {
+        "title": "More: what this tab cannot tell you",
+        "paras": [
+          "Nothing here applies to \"SS-31\" vials sold online, whose content and strength are unverified. The approved product is a preserved solution made under drug rules for a disease affecting a few hundred people."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "How elamipretide was tested, and what Barth treatment looks like.",
+    "lede": "Forzinity is prescribed by specialists for a confirmed TAZ mutation. The FDA-required confirmatory trial is enrolling; the trials in other diseases have ended.",
+    "ladder": {
+      "title": "The approved regimen",
+      "text": "The label specifies 40 mg under the skin once a day for patients weighing at least 30 kg, reduced to 20 mg daily in adults with severe kidney impairment. There is no dose escalation.",
+      "steps": [
+        {
+          "d": "40 mg",
+          "t": "daily, from day one"
+        }
+      ],
+      "note": "Patients under 30 kg are not covered. A one-month safety and pharmacokinetic study in smaller children is planned for 2026 to support a 2027 label extension (Mighty Therapeutics, July 2026)."
+    },
+    "more": [
+      {
+        "title": "More: how side effects were handled inside the trials",
+        "paras": [
+          "Injection sites were rotated and inspected; skin reactions were treated with topical steroids or antihistamines, and persistent or severe reactions led to withdrawal. Blood counts were monitored for the eosinophil rise.",
+          "None of this is a plan for home use of an online product. The approved drug is dispensed under a specialist, with a hypersensitivity warning and a confirmatory trial still running because benefit is not yet proven."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials still running, and trials that ended",
+      "items": [
+        "4TAZPower: the FDA-required confirmatory Phase 4 trial in Barth syndrome, randomised and placebo-controlled, 72 weeks, ages 5 and up; first patient dosed July 2026; report due March 2030",
+        "Planned for 2026: a one-month safety and pharmacokinetic study in children under 30 kg",
+        "Ended without success: MMPOWER-3 (2019), PROGRESS-HF (2020), ReCLAIM-2 (2022)"
+      ]
+    },
+    "find": {
+      "text": "Barth syndrome families in the U.S. can ask their specialist about 4TAZPower or the company's expanded-access programme. Outside the U.S. the drug is not approved; access is through trials or named-patient routes where they exist.",
+      "term": "elamipretide",
+      "extra": {
+        "label": "Barth Syndrome Foundation",
+        "url": "https://www.barthsyndrome.org/"
+      }
+    }
+  },
+  "status": {
+    "headline": "Approved in the U.S. only, for Barth syndrome only, on a provisional basis. \"SS-31\" vials are not the drug.",
+    "items": [
+      {
+        "tag": "no",
+        "label": "Canada: not approved",
+        "text": "Health Canada has not authorised elamipretide for any use as of October 2026. Selling it for human use is illegal."
+      },
+      {
+        "tag": "ok",
+        "label": "U.S.: accelerated approval (Sept 2025)",
+        "text": "Forzinity was approved on 19 September 2025 to improve muscle strength in adults and children with Barth syndrome weighing at least 30 kg. Continued approval depends on a confirmatory trial due to report by March 2030."
+      },
+      {
+        "tag": "no",
+        "label": "EU and elsewhere: not approved",
+        "text": "The company stated in July 2026 that there are no EMA-approved therapies for Barth syndrome. No regulator outside the U.S. has approved elamipretide."
+      },
+      {
+        "tag": "no",
+        "label": "Every other use",
+        "text": "Not approved for heart failure, mitochondrial myopathy, macular degeneration, aging or performance anywhere; the trials in those conditions failed."
+      }
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "What the online product is, and is not",
+        "text": "Forzinity is a sterile, preserved solution supplied to a few hundred patients with a genetic diagnosis under specialist care. \"SS-31\" from research-peptide shops is a powder with unverified identity, purity and dose, marketed for energy, longevity or recovery.",
+        "items": [
+          "The only approved regimen is for Barth syndrome; nothing supports any dose in healthy people.",
+          "Serious allergic reactions have occurred with the approved product; an unregulated vial adds contamination and dosing risks.",
+          "Three well-run trials in common conditions showed no benefit; open-label Barth data are the whole positive evidence base."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "warn",
+        "title": "Symptoms to take to a doctor",
+        "text": "Anyone who has injected an \"SS-31\" product should stop and see a doctor, urgently for:",
+        "items": [
+          "Hives, swelling of the face or throat, wheeze, faintness",
+          "Spreading rash, blistering or dermatitis",
+          "Infected injection sites",
+          "Unexplained cough, fever or breathlessness"
+        ],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: what the FDA required at approval",
+        "paras": [
+          "The approval letter lists four postmarketing requirements: the confirmatory randomised trial (final report March 2030), a 26-week mouse and a 2-year rat carcinogenicity study (February 2026 and January 2030), and a drug-interaction study with metformin (September 2027). If the confirmatory trial fails, the FDA can withdraw the approval."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "text": "U.S. FDA, FORZINITY (elamipretide) prescribing information, September 2025 (indication, dosing, adverse reactions, pharmacokinetics, clinical studies).",
+        "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/215244s000lbl.pdf"
+      },
+      {
+        "text": "U.S. FDA, NDA 215244 accelerated approval letter to Stealth BioTherapeutics, September 19, 2025 (postmarketing requirements and due dates).",
+        "url": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2025/215244Orig1s000Approv.pdf"
+      },
+      {
+        "text": "U.S. FDA, Drug Trials Snapshot: FORZINITY (SPIBA-201 design, knee-extensor results by visit, injection-site reaction table).",
+        "url": "https://www.fda.gov/drugs/drug-trials-snapshots/drug-trials-snapshots-forzinity"
+      },
+      {
+        "text": "Mighty Therapeutics, First patient dosed in Phase 4 confirmatory study (4TAZPower) of elamipretide in Barth syndrome, July 8, 2026.",
+        "url": "https://www.biospace.com/press-releases/mighty-therapeutics-announces-first-patient-dosed-in-phase-4-confirmatory-study-of-elamipretide-in-barth-syndrome"
+      },
+      {
+        "text": "Reid Thompson W et al. A phase 2/3 randomized clinical trial followed by an open-label extension to evaluate the effectiveness of elamipretide in Barth syndrome (TAZPOWER). Genetics in Medicine, 2021.",
+        "url": ""
+      },
+      {
+        "text": "Butler J et al. Effects of elamipretide on left ventricular function in patients with heart failure with reduced ejection fraction: the PROGRESS-HF phase 2 trial. Journal of Cardiac Failure, 2020;26:429-437.",
+        "url": "https://scholars.duke.edu/publication/1433295"
+      },
+      {
+        "text": "Stealth BioTherapeutics, update on Phase 3 MMPOWER-3 trial in primary mitochondrial myopathy (218 patients; primary endpoints not met), December 20, 2019.",
+        "url": "https://www.biospace.com/stealth-biotherapeutics-provides-update-on-phase-3-trial-of-elamipretide-in-primary-mitochondrial-myopathy"
+      },
+      {
+        "text": "Stealth BioTherapeutics, ReCLAIM-2 Phase 2 results in geographic atrophy (176 patients; primary endpoints not met), May 2, 2022.",
+        "url": "https://jotup.co/node/1869477"
+      },
+      {
+        "text": "ClinicalTrials.gov NCT02788747 (PROGRESS-HF).",
+        "url": "https://clinicaltrials.gov/study/NCT02788747"
+      }
+    ]
+  }
+}

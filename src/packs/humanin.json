@@ -1,0 +1,185 @@
+{
+  "id": "humanin",
+  "name": "Humanin",
+  "brands": "",
+  "maker": "",
+  "group": "research",
+  "pill": "Unapproved",
+  "overview": {
+    "headline": "A tiny peptide encoded in your mitochondria, linked to longevity in blood tests, never given to people in a trial.",
+    "lede": "Humanin is a 24-amino-acid peptide first reported in 2001 from surviving brain tissue of a person with Alzheimer's disease. All human evidence is observational: measuring humanin in blood and relating it to age or disease. No trial has ever administered humanin or an analog to people, and nothing is approved.",
+    "stats": [
+      {"num": "0", "lbl": "clinical trials of administered humanin or its analogs", "src": "Alzheimer's Drug Discovery Foundation review, December 2020"},
+      {"num": "~2x", "lbl": "higher humanin levels in children of centenarians than in age-matched controls", "src": "ADDF review citing Conte 2018 and Yen 2020"},
+      {"num": "~1/3", "lbl": "lower circulating humanin in people over 80 than in the young", "src": "ADDF review, 2020"}
+    ],
+    "mechanism": {
+      "intro": "A survival signal released by stressed cells, read by receptors on the cell surface and by proteins inside it.",
+      "parts": [
+        {"name": "Mitochondrial origin", "text": "Humanin's code sits inside the mitochondrial 16S ribosomal RNA gene, an unusual place for a protein-coding sequence. Cells release it under stress."},
+        {"name": "Anti-death signalling", "text": "In cells and mice it blocks pro-death proteins and acts through a receptor complex that includes gp130, shared with the IL-6 cytokine family. Whether this occurs at useful levels in people is unknown."},
+        {"name": "Hormone links", "text": "Humanin tracks growth hormone and IGF-1 signalling. In an Ecuadorian cohort with growth hormone receptor deficiency, humanin was higher and cancer and diabetes rarer."}
+      ]
+    },
+    "more": {
+      "title": "More: what 'mitochondrial-derived peptide' means",
+      "paras": [
+        "Mitochondria carry a small genome long thought to code only for 13 energy-chain proteins. Humanin, MOTS-c and the SHLP peptides are short sequences hidden inside its RNA genes. The human work so far measures them; it does not administer them. Sources are listed under the Status tab."
+      ]
+    }
+  },
+  "results": {
+    "headline": "No human results. The human data are blood measurements, not treatments.",
+    "lede": "Associations between humanin levels and health are real and interesting. They cannot tell you what injecting humanin does, and no study has tried.",
+    "chart": null,
+    "stats": [
+      {"num": "14%", "lbl": "lower circulating humanin in carriers of a common mitochondrial variant, linked to faster cognitive aging in one cohort", "src": "Yen et al., Scientific Reports 2018 (via ADDF review)"}
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {"b": "Humans, observed.", "t": "Levels fall with age and are higher in centenarians and their children. Lower levels were found in type 2 diabetes (225 people) and impaired fasting glucose (81), in people with poor coronary artery function (40), and in the spinal fluid of Alzheimer's patients. Twelve weeks of resistance training raised muscle humanin 35% in 55 prediabetic men."},
+        {"b": "Mice.", "t": "The analog HNG improved memory tests in aged mice (Yen 2018), and humanin levels tracked lifespan across species and long-lived mouse strains (Yen 2020)."},
+        {"b": "Cells.", "t": "Humanin protected neurons from amyloid-beta toxicity in the original 2001 report."},
+        {"b": "Humans, treated.", "t": "None. Humanin appears in trials only as a blood biomarker."}
+      ]
+    },
+    "more": [
+      {
+        "title": "More: why a biomarker is not a treatment",
+        "paras": [
+          "High humanin in the long-lived could be a cause of health, a result of it, or a marker of something else such as exercise or genetics. Only a controlled trial of giving humanin could tell these apart."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "Unknown. No person has been dosed in a study.",
+    "lede": "There is no human safety data for humanin or its analogs. The concerns below come from animal and cell work.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "Not applicable. No human study has given humanin."
+    },
+    "unique": {
+      "title": "The theoretical risks: tumours, growth and sex differences",
+      "text": "The 2020 ADDF review notes preclinical data suggesting humanin may promote tumour progression or inflammatory, senescent cell behaviour in some settings, and that over-expression during development reduced growth and reproduction in animals. Its effects differ by sex and context. None of this has been tested in people, and the analog HNG is a modified molecule whose immune reactions in humans are unknown."
+    },
+    "more": [
+      {
+        "title": "More: what a trial would monitor for",
+        "paras": [
+          "Blood levels, immune reactions, blood sugar (humanin interacts with insulin signalling), hormones and, over time, cancer incidence. None of that exists."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "None reported in humans. The protective effects seen in cells and mice are the hypothesis a trial would test."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms doctors treat as urgent after any injected product",
+      "items": [
+        "Swelling of the face or throat, trouble breathing, hives",
+        "Fever, spreading redness or pus at an injection site",
+        "Confusion, shakiness or fainting (possible low blood sugar)",
+        "Dark urine, yellowing of the skin or eyes"
+      ],
+      "note": "Anyone with these symptoms should get medical care right away and bring the product with them."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "No human pharmacokinetic data exist. In mice the analog HNG had a half-life of about 30 minutes, and in rats injected humanin stayed mainly in plasma, with none detected in brain or heart (ADDF review). Whether an injected dose reaches any human tissue is unknown.",
+    "stats": [
+      {"num": "24", "lbl": "amino acids when made in mitochondria (21 if made in the cell's cytoplasm)", "src": "Chemical identity"},
+      {"num": "~30 min", "lbl": "half-life of the analog HNG in mice; no human figure exists", "src": "ADDF review, 2020"},
+      {"num": "0", "lbl": "human pharmacokinetic studies", "src": "ADDF review, 2020"}
+    ],
+    "explain": [
+      {"b": "Why there is no chart.", "t": "The simulator needs a human half-life and a tested dose range. Neither exists."},
+      {"b": "Why the mouse number matters.", "t": "A half-hour half-life suggests an injected peptide would be gone within hours, nothing like the steady levels seen in long-lived people. That gap is untested."}
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: what this page cannot tell you",
+        "paras": [
+          "Whether a vial sold as humanin contains humanin, whether it reaches the brain or muscle, or whether raising blood levels artificially mimics the natural pattern."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "No human trials have been run.",
+    "lede": "Humanin is measured in people, not given to them. Analogs such as HNG and colivelin are laboratory tools.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: why nobody has run one",
+        "paras": [
+          "A peptide with a half-life of minutes, an unclear dose, possible tumour-promoting signals in some models and no patent position is a hard candidate for a company. Academic groups study it as a biomarker and in animals."
+        ]
+      }
+    ],
+    "running": {
+      "title": "No human trials",
+      "items": [
+        "No trial has administered humanin or an analog (HNG, colivelin) to people; the 2020 ADDF review states humanin supplementation has not been tested in any well-controlled clinical trial, and none has been registered since.",
+        "Humanin features in human studies only as a blood or spinal-fluid biomarker."
+      ]
+    },
+    "find": {
+      "text": "If a trial is ever registered it will appear on the public registry. Today the term returns only studies that measure humanin.",
+      "term": "humanin",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "Not approved anywhere. Not reviewed by any regulator for human use.",
+    "items": [
+      {"tag": "no", "label": "Canada: not authorized", "text": "Health Canada has not authorized any humanin product. It treats injectable peptides as prescription drugs, said in April 2026 that unauthorized injectable peptide drugs are illegal in Canada, and in July 2026 obtained a permanent injunction against the Quebec seller Canlab Research."},
+      {"tag": "no", "label": "US: not approved", "text": "The FDA has never approved humanin, and it does not appear on the FDA's Category 2 or withdrawn-nomination lists for compounding (April 2026), so no pharmacy has a basis to compound it. Marketed for people it is an unapproved drug; the FDA's August 24, 2026 warning letters rejected 'research use only' disclaimers."},
+      {"tag": "no", "label": "Sport: prohibited", "text": "Not named on the 2026 WADA Prohibited List, but with no approval anywhere for human use it falls under the S0 clause, prohibited at all times."}
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "What 'research use only' means",
+        "text": "Vials sold as humanin carry 'for research use only' labels. That describes a product meant for laboratory work, not people. It does not mean the contents were tested, and it does not make the sale legal once the seller markets the product for human use.",
+        "items": [
+          "Health Canada: injectable peptides are prescription drugs; unauthorized ones are illegal to sell (2025 and 2026 notices).",
+          "FDA warning letters, August 24, 2026: the disclaimer does not control when a website shows the product is intended as a drug for people."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "warn",
+        "title": "Symptoms to take to a doctor",
+        "text": "Anyone who has injected a product sold as humanin should tell a doctor, especially with any of the following:",
+        "items": ["Fever, redness or pus at an injection site", "Hives, swelling or wheezing", "Shakiness, sweating or confusion", "Unexplained weight change or new lumps"],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: humanin's cousin in the regulatory system",
+        "paras": [
+          "Its relative MOTS-c was placed in FDA Category 2 in 2023, removed in April 2026 and recommended for compounding by the FDA's advisory committee in July 2026 (7 to 5); it is also named on the WADA list. Humanin has gone through none of this: no nomination, no review, no data."
+        ]
+      }
+    ],
+    "sources": [
+      {"text": "Alzheimer's Drug Discovery Foundation, Cognitive Vitality report: Humanin and humanin analogs (evidence review; no clinical trials), updated December 31, 2020.", "url": "https://www.AlzDiscovery.org/uploads/cognitive_vitality_media/Humanin-and-humanin-analogs.pdf"},
+      {"text": "Hashimoto Y et al. A rescue factor abolishing neuronal cell death by a wide spectrum of familial Alzheimer's disease genes and Abeta. PNAS 2001.", "url": "https://pubmed.ncbi.nlm.nih.gov/11371646"},
+      {"text": "Yen K et al. Humanin prevents age-related cognitive decline in mice and is associated with improved cognitive age in humans. Scientific Reports 2018.", "url": "https://pubmed.ncbi.nlm.nih.gov/30242290"},
+      {"text": "Yen K et al. The mitochondrial derived peptide humanin is a regulator of lifespan and healthspan. Aging (Albany NY) 2020.", "url": "https://pubmed.ncbi.nlm.nih.gov/32575074"},
+      {"text": "Conte M et al. Human aging and longevity are characterized by high levels of mitokines. Journals of Gerontology Series A, 2018.", "url": "https://doi.org/10.1093/gerona/gly153"},
+      {"text": "Smart & Biggar. Health Canada obtains permanent injunction against Canlab Research (April 2026 warning; July 29, 2026 injunction), August 25, 2026.", "url": "https://www.smartbiggar.ca/insights/publication/health-canada-obtains-permanent-injunction-to-prevent-illegal-sale-of-injectable-peptides-by-canlab-research"},
+      {"text": "U.S. FDA. Certain bulk drug substances for use in compounding that may present significant safety risks (humanin not listed), content current as of April 22, 2026; ArentFox Schiff on the August 24, 2026 warning letters.", "url": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks"},
+      {"text": "World Anti-Doping Agency. The 2026 Prohibited List (S0 non-approved substances; MOTS-c under S4).", "url": "https://pgtofindia.com/storage/app/anti_doping_link/pdf/Prohibited-List-2026.pdf"}
+    ]
+  }
+}

@@ -1,0 +1,287 @@
+{
+  "id": "semaglutide",
+  "name": "Semaglutide",
+  "brands": "Ozempic, Wegovy, Rybelsus",
+  "maker": "Novo Nordisk",
+  "group": "approved",
+  "pill": "Approved",
+  "overview": {
+    "headline": "The most-studied weight-loss peptide: one weekly injection (or a daily pill) that copies the gut hormone GLP-1.",
+    "lede": "Semaglutide is made by Novo Nordisk and has been approved since 2017, first for type 2 diabetes (Ozempic, Rybelsus) and since 2021 for weight management (Wegovy). It is prescription-only in Canada, the U.S. and the EU. Canada approved the first generic copies in 2026; anything sold without a prescription or as a \"research\" product is not the approved drug.",
+    "stats": [
+      {"num": "−14.9%", "lbl": "average weight loss at 68 weeks on 2.4 mg, counting everyone who started", "src": "STEP 1, adults without diabetes"},
+      {"num": "20%", "lbl": "fewer heart attacks, strokes and cardiovascular deaths over about three years", "src": "SELECT, 17,604 adults with heart disease"},
+      {"num": "May 2026", "lbl": "when the first generic semaglutide went on sale in Canada", "src": "Health Canada approvals, April to June 2026"}
+    ],
+    "mechanism": {
+      "intro": "One molecule, one receptor, built to last a week.",
+      "parts": [
+        {"name": "GLP-1", "text": "Semaglutide copies glucagon-like peptide-1, a hormone the gut releases after eating. It slows stomach emptying, tells the brain you are full, and raises insulin only when blood sugar is high. Tirzepatide adds a second hormone (GIP); retatrutide adds a third (glucagon)."},
+        {"name": "Albumin binding", "text": "A fatty-acid side chain lets the molecule ride on albumin, the main protein in blood. That protects it from being broken down, which is why it lasts about a week instead of minutes like natural GLP-1. It is cleared by being chopped into pieces and burned, not by the kidneys alone."}
+      ]
+    },
+    "more": {
+      "title": "More: the names and the forms",
+      "paras": [
+        "Ozempic is the weekly injection for type 2 diabetes (0.25 to 2 mg). Wegovy is the same molecule at weight-management doses (up to 2.4 mg weekly, and 7.2 mg in the EU, UK and U.S. since 2026). Rybelsus is a daily tablet for diabetes, and the Wegovy pill (25 mg daily) is the tablet for weight management, approved in the U.S. in December 2025.",
+        "Semaglutide acts on one receptor. Tirzepatide (Zepbound, Mounjaro) acts on two and retatrutide, still experimental, on three. In head-to-head and placebo-controlled trials the extra receptors bring more weight loss, and also more side effects at the top doses.",
+        "Everything on this page comes from the peer-reviewed trial papers, Novo Nordisk's press releases, the U.S. label and Canadian product monograph, and regulator notices. Sources are listed under the Status tab."
+      ]
+    }
+  },
+  "results": {
+    "headline": "What people in the trials lost.",
+    "lede": "Average weight change compared with placebo in the main Phase 3 trials. Everyone also received diet and activity counselling. The dose is 2.4 mg weekly unless a row says otherwise.",
+    "chart": {
+      "metric": "weight",
+      "legend": ["Semaglutide", "Placebo"],
+      "rows": [
+        {"name": "STEP UP (7.2 mg)", "meta": "72 weeks · obesity, no diabetes · 1,407 people · 7.2 mg dose", "drug": -18.7, "placebo": -3.9, "tip": "Semaglutide 7.2 mg: −18.7% (2.4 mg arm in the same trial: −15.6%)"},
+        {"name": "STEP 8", "meta": "68 weeks · obesity or overweight, no diabetes · 338 people · also tested liraglutide", "drug": -15.8, "placebo": -1.9, "tip": "Semaglutide 2.4 mg: −15.8% (−15.3 kg); liraglutide 3 mg daily: −6.4%"},
+        {"name": "STEP 5", "meta": "104 weeks · obesity or overweight, no diabetes · 304 people", "drug": -15.2, "placebo": -2.6, "tip": "Semaglutide 2.4 mg: −15.2% (−16.1 kg) at two years"},
+        {"name": "STEP 1", "meta": "68 weeks · obesity or overweight, no diabetes · 1,961 people", "drug": -14.9, "placebo": -2.4, "tip": "Semaglutide 2.4 mg: −14.9% (−15.3 kg)"},
+        {"name": "STEP 2", "meta": "68 weeks · obesity or overweight plus type 2 diabetes · 1,210 people", "drug": -9.6, "placebo": -3.4, "tip": "Semaglutide 2.4 mg: −9.6% (−9.7 kg); 1 mg arm: −7.0%"},
+        {"name": "SELECT", "meta": "104 weeks · overweight or obesity plus heart disease, no diabetes · 17,604 people", "drug": -9.4, "placebo": -0.9, "tip": "Semaglutide 2.4 mg: −9.39% at week 104 (an outcomes trial; weight was a secondary measure)"}
+      ],
+      "max": 22,
+      "note": "Figures are the trials' \"treatment-policy\" estimand: everyone randomized, including people who stopped the drug early. The \"trial-product\" estimand (people who stayed on treatment) runs higher: −16.9% in STEP 1, −16.7% in STEP 5, −20.7% for 7.2 mg in STEP UP."
+    },
+    "stats": [
+      {"num": "36%", "lbl": "of people on 2.4 mg lost a fifth of their body weight or more by two years (placebo: 2%)", "src": "STEP 5, 104 weeks"},
+      {"num": "31%", "lbl": "of people on 7.2 mg lost a quarter of their body weight or more (2.4 mg: 15%)", "src": "STEP UP, 72 weeks, treatment-policy estimand"}
+    ],
+    "beyond": {
+      "title": "Beyond the scale",
+      "items": [
+        {"b": "Blood sugar.", "t": "Semaglutide was a diabetes drug first. In STEP 2, A1C fell 1.6 percentage points on 2.4 mg and 1.5 on 1 mg, against 0.4 on placebo."},
+        {"b": "Heart.", "t": "SELECT followed 17,604 people with heart disease but no diabetes for about 3.3 years. Heart attack, stroke or cardiovascular death happened to 6.5% on semaglutide and 8.0% on placebo, a 20% relative reduction. Death from any cause: 4.3% versus 5.2%. Cardiovascular death alone (2.5% vs 3.0%) did not reach statistical significance."},
+        {"b": "Kidneys.", "t": "FLOW tested 1 mg weekly in 3,533 people with type 2 diabetes and kidney disease. Over a median 3.4 years, kidney failure, a halving of kidney function, or death from kidney or heart causes hit 18.7% versus 23.2% on placebo, a 24% reduction. The trial was stopped early because the benefit was clear."},
+        {"b": "Heart failure.", "t": "In STEP-HFpEF (529 people with heart failure and obesity), a standard symptom score improved 16.6 points on semaglutide versus 8.7 on placebo over a year, and six-minute walking distance rose 21.5 m versus 1.2 m."},
+        {"b": "Liver.", "t": "In ESSENCE (800 people with MASH, the inflammatory form of fatty liver, and scarring), 62.9% on semaglutide had the inflammation resolve at 72 weeks versus 34.3% on placebo, and scarring improved in 36.8% versus 22.4%. This earned a U.S. approval in August 2025 and a conditional Canadian one in late 2025."},
+        {"b": "Knee pain.", "t": "In STEP 9 (407 people with obesity and knee osteoarthritis), a 0–100 pain score fell 41.7 points on semaglutide versus 27.5 on placebo over 68 weeks."}
+      ]
+    },
+    "more": [
+      {
+        "title": "More: 2.4 mg versus 7.2 mg",
+        "paras": [
+          "STEP UP randomized 1,407 adults with obesity to 7.2 mg, 2.4 mg or placebo for 72 weeks. Counting everyone, weight fell 18.7% on 7.2 mg, 15.6% on 2.4 mg and 3.9% on placebo. Among people who stayed on treatment, the figures were 20.7%, 17.5% and 2.4%. One in three people on 7.2 mg lost a quarter of their body weight or more, against one in six on 2.4 mg.",
+          "The price was more stomach trouble and a new symptom: dysesthesia, odd skin sensations, in 22% of people on 7.2 mg versus 6% on 2.4 mg and none on placebo (U.S. label, pooled 72-week trials). Discontinuation for side effects was 5% on both active doses and 2% on placebo. In a companion trial in 512 people with type 2 diabetes, 7.2 mg produced 13.2% weight loss counting everyone, and 14.1% among those who stayed on it."
+        ]
+      },
+      {
+        "title": "More: the pill",
+        "paras": [
+          "The Wegovy pill (25 mg oral semaglutide, once daily) was tested in OASIS 4: 307 adults over 64 weeks. Counting everyone, weight fell 13.6% versus 2.2% on placebo (EMA's summary); among people who stayed on it, 16.6%. The FDA approved it on December 22, 2025, and EMA's committee recommended EU approval on May 22, 2026. Only 1% to 2% of a tablet dose is absorbed, which is why the tablet dose is so much larger than the injected one."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "Mostly stomach-related, mostly early, and dose-related.",
+    "lede": "Nausea, diarrhea, vomiting and constipation were the big four in every trial. They clustered in the weeks after each dose increase and usually faded while people kept taking the drug. Three in four people on semaglutide in STEP 1 reported some stomach symptom, against one in two on placebo.",
+    "chart": {
+      "eyebrow": "STEP 1 · 2.4 mg · share of people affected over 68 weeks",
+      "legend": ["Semaglutide 2.4 mg", "Placebo"],
+      "rows": [
+        {"name": "Nausea", "drug": 44.2, "placebo": 17.4},
+        {"name": "Diarrhea", "drug": 31.5, "placebo": 15.9},
+        {"name": "Vomiting", "drug": 24.8, "placebo": 6.6},
+        {"name": "Constipation", "drug": 23.4, "placebo": 9.5},
+        {"name": "Headache", "drug": 15.2, "placebo": 12.2},
+        {"name": "Abdominal pain", "drug": 10.0, "placebo": 5.5}
+      ],
+      "max": 50,
+      "note": "From Wilding et al., NEJM 2021. The U.S. label, pooling three 68-week trials, gives nearly identical figures (nausea 44% vs 16%, vomiting 24% vs 6%). At 7.2 mg, nausea was 39% and vomiting 22%, against 35% and 16% on 2.4 mg in the same trials."
+    },
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "In STEP 1, 7.0% of people on 2.4 mg stopped because of side effects, against 3.1% on placebo; stomach symptoms accounted for 4.5% versus 0.8%. The U.S. label's pooled figure is 6.8% versus 3.2%, led by nausea (1.8%), vomiting (1.2%) and diarrhea (0.7%). Over the three-plus years of SELECT, 16.6% stopped for side effects versus 8.2% on placebo."
+    },
+    "unique": {
+      "title": "NAION: a very rare eye emergency",
+      "text": "Non-arteritic anterior ischemic optic neuropathy is a sudden loss of blood flow to the optic nerve that can cause permanent vision loss in one eye. On June 6, 2025, the EU safety committee concluded it is a side effect of semaglutide, classed as \"very rare\" (up to 1 in 10,000 people); in adults with type 2 diabetes the risk was roughly double that of non-users, about one extra case per 10,000 person-years. EU product information for Ozempic, Rybelsus and Wegovy was updated on September 30, 2025, and the UK regulator followed on February 5, 2026 (three UK reports against about 10 million packs dispensed). The U.S. label (March 2026) and the Canadian monograph (December 2025) do not yet list it. The advice from regulators: sudden vision loss or rapidly worsening eyesight needs a doctor the same day, and if NAION is confirmed the drug is stopped."
+    },
+    "more": [
+      {
+        "title": "More: what the label warns about",
+        "paras": [
+          "Pancreatitis. Three people on semaglutide in STEP 1 developed acute pancreatitis (0.2%), none on placebo. In the much larger SELECT trial, confirmed cases were 0.2% on semaglutide and 0.3% on placebo. The label still carries the warning and trials stop the drug if it is suspected.",
+          "Gallbladder. Gallstones and related problems were 2.6% versus 1.2% in STEP 1 and 2.8% versus 2.3% in SELECT. Rapid weight loss itself raises gallstone risk.",
+          "Stomach and bowel. The U.S. label's warning on severe gastrointestinal reactions was strengthened in October 2025; postmarketing reports include ileus and intestinal obstruction, and the Canadian leaflet lists delayed stomach emptying (gastroparesis). Because the drug slows the stomach, the label also warns of food aspiration under anesthesia, and anesthetists ask about GLP-1 drugs before surgery.",
+          "Dehydration and kidneys. Vomiting or diarrhea that leads to dehydration can cause acute kidney injury; this warning was updated in August 2025.",
+          "Other label warnings: low blood sugar when combined with insulin or sulfonylureas; a faster resting heart rate; worsening of diabetic eye disease in people with type 2 diabetes; allergic reactions; and a thyroid-tumour signal seen in rodents, so people with a personal or family history of medullary thyroid cancer are excluded. Not for use in pregnancy.",
+          "At 7.2 mg, two extra signals appeared in the label: dysesthesia (odd skin sensations) in 22% and hair loss in 6%, versus 6% and 3% on 2.4 mg and 0% and 1% on placebo."
+        ]
+      },
+      {
+        "title": "More: suicidal thoughts, examined and set aside",
+        "paras": [
+          "After case reports in 2023, both major regulators reviewed the question. On April 12, 2024, the EU committee concluded the evidence does not support a causal link between GLP-1 drugs and suicidal or self-harming thoughts, and changed no labels. In January 2026 the FDA removed the \"suicidal behavior and ideation\" warning from the Wegovy label. Trials continue to screen participants for mood symptoms."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "Fewer deaths and hospital stays showed up in the outcome trials. In FLOW, cardiovascular death was 7.0% versus 9.6% and death from any cause 12.8% versus 15.8%. In STEP-HFpEF, serious adverse events of any kind were half as common on semaglutide (13.3% versus 26.7%), mostly because of fewer heart-failure events. In SELECT, death from any cause was 4.3% versus 5.2%."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms the label and regulators treat as urgent",
+      "items": [
+        "Severe, persistent abdominal pain, with or without vomiting, sometimes spreading to the back (pancreatitis)",
+        "Pain in the upper right abdomen, fever, or yellowing of the skin or eyes (gallbladder)",
+        "Vomiting or diarrhea that will not stop, or not being able to keep fluids down (dehydration, kidney injury)",
+        "Sudden loss of vision or rapidly worsening eyesight in one or both eyes (NAION)",
+        "Severe bloating or vomiting with inability to pass stool (bowel obstruction)",
+        "Swelling of the face or throat, trouble breathing, severe rash"
+      ],
+      "note": "Anyone with these symptoms, whatever the source of their semaglutide, should get medical care right away."
+    }
+  },
+  "levels": {
+    "pk": {
+      "half": 7,
+      "tmax": 2,
+      "ladder": [0.25, 0.5, 1.0, 1.7, 2.4, 7.2],
+      "stepDays": 28,
+      "tau": 7,
+      "maxDose": 7.2,
+      "refLabel": "7.2 mg weekly",
+      "source": "Wegovy U.S. prescribing information, March 2026: half-life about 1 week, peak 1 to 3 days after injection, steady-state level about 75 nmol/L on 2.4 mg and about 230 nmol/L on 7.2 mg; Health Canada monograph (Dec 2025): steady-state half-life 155 h, exposure proportional to dose. 7.2 mg is approved in the EU, UK and U.S., not in Canada."
+    },
+    "nopk": "",
+    "stats": [
+      {"num": "~1 week", "lbl": "half-life: the time for the level to fall by half", "src": "U.S. label; Canadian monograph gives 155 hours"},
+      {"num": "~2×", "lbl": "how far weekly dosing builds up compared with a single dose", "src": "From the one-week half-life and the 7-day interval"},
+      {"num": "5–7 wks", "lbl": "for the drug to leave the body after the last dose", "src": "U.S. label, section 12.3"}
+    ],
+    "explain": [
+      {"b": "Why steps are four weeks apart.", "t": "Four weeks is about four half-lives, so levels reach roughly 94% of a step's plateau before the next increase. The label's whole ladder, 0.25 to 2.4 mg, takes 16 weeks for that reason."},
+      {"b": "Why side effects cluster after a step.", "t": "Nausea and vomiting in the trials peaked in the weeks when levels were still rising, then eased as they flattened. The label allows a step to be delayed by four weeks if the current dose is not tolerated."},
+      {"b": "Why it matters that it lingers.", "t": "Half is gone in a week, but the label says the drug stays in circulation for five to seven weeks after the last dose. That is why surgical teams and pregnancy planning take the stop date into account."}
+    ],
+    "showTable": true,
+    "more": [
+      {
+        "title": "More: the model behind the chart",
+        "paras": [
+          "The chart uses a standard one-compartment pharmacokinetic model: the drug is absorbed from the injection site at one rate, cleared from the blood at another, and each weekly dose adds to what is still circulating. The numbers come from the label: a half-life of about one week, a peak one to three days after injection, and blood levels that rise in proportion to dose (the label's steady-state figures for 7.2 mg are about three times those for 2.4 mg).",
+          "The vertical axis is relative. 100% is the average level on 7.2 mg weekly once it has plateaued, so the standard 2.4 mg maintenance dose sits at about one third. Because the dosing interval equals the half-life, the level falls by about half between injections, which is the zigzag on the chart, and weekly dosing settles at about twice the level a single dose would give.",
+          "Real people differ. The label notes that body weight affects exposure, and the Canadian monograph reports roughly proportional exposure across doses with the usual between-person spread seen for this class."
+        ]
+      },
+      {
+        "title": "More: what this chart cannot tell you",
+        "paras": [
+          "It models the label's regimen, not a person. It measures nothing; only a blood test can.",
+          "It says nothing about compounded, counterfeit or \"research\" products sold as semaglutide. Their contents and strength are unverified, and FDA has warned that some use different salt forms and that dosing errors have been reported, so the model has no way to account for them.",
+          "Custom schedules are hypothetical. The chart can show what a schedule would do in the model, including where it goes past anything the label allows, but it cannot tell you how your body differs from the model or whether a schedule is safe. In the trials that question was answered with bloodwork, scheduled visits and medical supervision, which a curve on a screen cannot replace."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "How the semaglutide trials were run, and how the label turns them into a prescription.",
+    "lede": "Semaglutide is approved, so a prescription, not a trial, is the normal route. The dose ladder below is the one the trials used and the label now specifies. Trials are still recruiting for new uses and for the long-term liver study.",
+    "ladder": {
+      "title": "The dose ladder in the label (Wegovy injection)",
+      "text": "Everyone starts at 0.25 mg a week, a dose too low to do much except let the stomach adjust. The dose goes up one step every four weeks to the 2.4 mg maintenance dose at week 17. If a step is not tolerated, the label says escalation can be delayed by four weeks; for the liver indication, the dose can be lowered back to 1.7 mg and raised again later. Since 2026, adults in the EU, UK and U.S. who have tolerated 2.4 mg for at least four weeks and need more weight loss can be moved to 7.2 mg.",
+      "steps": [
+        {"d": "0.25 mg", "t": "start"},
+        {"d": "0.5 mg", "t": "week 5"},
+        {"d": "1 mg", "t": "week 9"},
+        {"d": "1.7 mg", "t": "week 13"},
+        {"d": "2.4 mg", "t": "week 17 (maintenance)"},
+        {"d": "7.2 mg", "t": "optional, after 4+ weeks at 2.4 mg (EU, UK, U.S.)"}
+      ],
+      "note": "The tablet has its own ladder: 1.5 mg daily for 30 days, then 4 mg, then 9 mg, then 25 mg from day 91. In the Phase 3 trials a placebo group followed the same schedule with inactive injections, and nobody, including the doctors, knew who had what until the trial ended."
+    },
+    "more": [
+      {
+        "title": "More: how side effects were handled inside the trials",
+        "paras": [
+          "The slow dose ladder is the main tool. Stomach symptoms tend to appear in the weeks after a step up and settle before the next one. The trial protocols, and now the label, allowed the study team to hold a step for four weeks or drop back a step when symptoms were a problem. In the 7.2 mg trials, of people who developed skin sensations, 23% had their dose reduced, 8% paused the drug for a while and 2% stopped.",
+          "Participants had a study clinician to call, and symptoms were treated the way a doctor would treat them in any patient. People whose symptoms did not settle left the drug; that is where the discontinuation figures on the Side effects tab come from.",
+          "None of this is a self-management plan. The ladder works because a prescriber is watching the response and deciding when to step up, which is exactly what is missing when someone uses a product bought online."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials still running, and one that ended",
+      "items": [
+        "ESSENCE, the liver trial, continues to 240 weeks to confirm that the biopsy improvements translate into fewer liver complications (the U.S. and Canadian MASH approvals are conditional on it)",
+        "EU and UK decisions on a single-dose 7.2 mg pen are expected in the second half of 2026; the EU decision on the Wegovy tablet follows the May 2026 committee recommendation",
+        "Regulators have required post-approval studies on NAION (the eye condition), obstructive sleep apnea and thyroid cancer risk",
+        "Alzheimer's disease: the two EVOKE trials (3,808 people, oral 14 mg) failed to slow decline, Novo Nordisk announced on November 24, 2025, and the extension was stopped"
+      ]
+    },
+    "find": {
+      "text": "Novo Nordisk and academic groups run semaglutide trials in Canada, the U.S. and elsewhere, often comparing it with newer drugs or testing new conditions. Search the public registry, then contact the nearest site listed on the study page.",
+      "term": "semaglutide",
+      "extra": {"label": "Novo Nordisk trials", "url": "https://www.novonordisk-trials.com/"}
+    }
+  },
+  "status": {
+    "headline": "Approved in Canada, the U.S. and the EU. Generics arrived in Canada in 2026; compounded copies lost their legal footing in the U.S. in 2025.",
+    "items": [
+      {"tag": "ok", "label": "Canada", "text": "Ozempic and Rybelsus (type 2 diabetes) and Wegovy (weight management, authorized November 23, 2021) are approved. Wegovy gained a heart-attack-prevention indication on November 25, 2024, a heart-failure symptom indication on April 8, 2025, and a conditional MASH indication in late 2025. The 7.2 mg dose is not in the Canadian monograph (December 2025 revision). Generic Ozempic equivalents from Dr. Reddy's (approved April 29, 2026) and Apotex (May 1, 2026) launched in mid-May 2026, and Apotex's Sevmia, the first generic for weight management, was approved June 29, 2026. Health Canada is reviewing further submissions, including Sandoz, Teva, Taro and Aspen."},
+      {"tag": "ok", "label": "United States", "text": "Semaglutide was first approved in 2017. Wegovy's March 2026 label covers cardiovascular risk reduction, weight management in adults and adolescents 12 and over, and MASH (accelerated approval, August 2025). The Wegovy pill was approved December 22, 2025 and launched in January 2026; Wegovy HD (7.2 mg) was approved March 19, 2026 under FDA's priority-voucher pilot, with launch in April 2026. No generic is on sale; semaglutide remains under patent in the U.S."},
+      {"tag": "ok", "label": "EU and UK", "text": "Wegovy was authorized in the EU on January 6, 2022. The 7.2 mg dose was approved by the European Commission on February 17, 2026 and is also approved in the UK. NAION was added to EU product information on September 30, 2025 and to UK information on February 5, 2026. EMA's committee recommended the Wegovy tablet on May 22, 2026, and EMA's product page now lists tablets among the authorized forms."},
+      {"tag": "soon", "label": "What is pending", "text": "A single-dose 7.2 mg pen in the EU and UK (decisions expected in the second half of 2026), more Canadian generic approvals, and the confirmatory liver results from ESSENCE. Semaglutide for Alzheimer's disease is off the table after the EVOKE failure in November 2025."}
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "Compounded and online semaglutide",
+        "text": "During the 2022–2024 shortage, U.S. pharmacies were allowed to compound copies of semaglutide. That window closed in 2025. Compounded products are not FDA-approved, their contents are not checked by any regulator, and products sold by \"research chemical\" shops, on social media or without a prescription are illegal to sell anywhere.",
+        "items": [
+          "FDA declared the semaglutide shortage resolved on February 21, 2025. Its grace period for compounding pharmacies ended April 22, 2025 and for large outsourcing facilities May 22, 2025; a Texas federal court refused the compounders' request to block the decision on April 24, 2025.",
+          "FDA says it may still act against compounders selling substandard or unsafe products, and that compounding of copies is only lawful during a shortage or for a documented patient-specific need.",
+          "In Canada, the lawful lower-cost route is a Health Canada-approved generic from a pharmacy, available since May 2026. A product that is not in a pharmacy pen and does not carry a Health Canada DIN is not an approved drug."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "warn",
+        "title": "If you are taking semaglutide from any source",
+        "text": "Regulators advise seeing a doctor the same day for:",
+        "items": ["Sudden loss of vision or rapidly worsening eyesight", "Severe or persistent abdominal pain, or vomiting that will not stop", "Yellowing of the skin or eyes, fever with upper-right abdominal pain", "Swelling of the face or throat, trouble breathing"],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch). Reports are how the NAION signal was found."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: how Canada got generics first",
+        "paras": [
+          "Novo Nordisk's Canadian compound patent lapsed after a maintenance fee went unpaid, and the company has not explained why beyond calling it a business decision. That left only regulatory data protection, which ended on January 4, 2026. By December 29, 2025 Health Canada had nine generic submissions in hand. Because the original was made biologically and the copies are made chemically, Health Canada treated them as complex synthetic products and asked each maker to show the differences do not affect safety or effectiveness; the first approvals came at the end of April 2026, about four months after exclusivity ended.",
+          "Dr. Reddy's and Apotex launched their Ozempic equivalents (type 2 diabetes) in mid-May 2026. Apotex's Sevmia, approved June 29, 2026, is the first generic indicated for weight management. Canada is the only country where the patent was allowed to lapse; in the U.S. and EU semaglutide stays under patent, and U.S. generic applications can only receive tentative approval for now."
+        ]
+      },
+      {
+        "title": "More: what changed on the labels in 2025 and 2026",
+        "paras": [
+          "The U.S. label was revised five times between August 2025 and March 2026: MASH indication (August 2025), a strengthened kidney-injury warning (August 2025), a strengthened severe-gastrointestinal-reaction warning (October 2025), the tablet (December 2025), removal of the suicidality warning (January 2026) and the 7.2 mg dose (March 2026). In the EU, the NAION side effect was added in September 2025 and the 7.2 mg dose in February 2026."
+        ]
+      }
+    ],
+    "sources": [
+      {"text": "Wilding JPH et al. Once-weekly semaglutide in adults with overweight or obesity (STEP 1). New England Journal of Medicine, 2021. Weight −14.9% vs −2.4% (treatment policy), −16.9% (trial product); adverse-event and discontinuation figures.", "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2032183"},
+      {"text": "Davies M et al. Semaglutide 2.4 mg once a week in adults with overweight or obesity and type 2 diabetes (STEP 2). The Lancet, 2021.", "url": "https://doi.org/10.1016/S0140-6736(21)00213-0"},
+      {"text": "Garvey WT et al. Two-year effects of semaglutide in adults with overweight or obesity: the STEP 5 trial. Nature Medicine, 2022. Rubino DM et al. Semaglutide 2.4 mg vs liraglutide 3.0 mg (STEP 8). JAMA, 2022 (doi 10.1001/jama.2021.23619).", "url": "https://pubmed.ncbi.nlm.nih.gov/36216945/"},
+      {"text": "Lincoff AM et al. Semaglutide and cardiovascular outcomes in obesity without diabetes (SELECT). New England Journal of Medicine, 2023.", "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2307563"},
+      {"text": "Perkovic V et al. Effects of semaglutide on chronic kidney disease in patients with type 2 diabetes (FLOW). New England Journal of Medicine, 2024.", "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2403347"},
+      {"text": "Kosiborod MN et al. Semaglutide in patients with heart failure with preserved ejection fraction and obesity (STEP-HFpEF). New England Journal of Medicine, 2023. Bliddal H et al. Once-weekly semaglutide in persons with obesity and knee osteoarthritis (STEP 9). New England Journal of Medicine, 2024.", "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2306963"},
+      {"text": "Sanyal AJ et al. Phase 3 trial of semaglutide in metabolic dysfunction-associated steatohepatitis (ESSENCE, part 1). New England Journal of Medicine, 2025.", "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2413258"},
+      {"text": "Novo Nordisk, STEP UP results and FDA filing for Wegovy 7.2 mg, November 26, 2025 (both estimands); Wegovy HD FDA approval, March 19, 2026; European Commission approval of 7.2 mg, February 17, 2026.", "url": "https://www.novonordisk.com/news-and-media/news-and-ir-materials/news-details.html?id=916464"},
+      {"text": "Novo Nordisk, Wegovy pill approved in the U.S. (OASIS 4), December 22, 2025. EMA, CHMP recommendation for Wegovy tablets, May 22, 2026.", "url": "https://www.novonordisk.com/news-and-media/news-and-ir-materials/news-details.html?id=916472"},
+      {"text": "Novo Nordisk, EVOKE and EVOKE+ Phase 3 trials did not show a reduction in Alzheimer's disease progression, November 24, 2025.", "url": "https://www.novonordisk.com/news-and-media/news-and-ir-materials/news-details.html?id=916462"},
+      {"text": "U.S. FDA, Wegovy (semaglutide) injection and tablets prescribing information, revised March 2026: dosing, pharmacokinetics, warnings, pooled adverse reactions, 7.2 mg safety table.", "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/215256Orig1s029,%20218316Orig1s005lbl.pdf"},
+      {"text": "Health Canada, Wegovy product monograph (Novo Nordisk Canada), dated December 10, 2025; Regulatory Decision Summaries for Wegovy, November 25, 2024 (cardiovascular) and April 8, 2025 (heart failure); patient information, December 2025.", "url": "https://pdf.hres.ca/dpd_pm/00082777.PDF"},
+      {"text": "EMA, PRAC meeting highlights 2–5 June 2025 (NAION a very rare side effect of semaglutide); Malta Medicines Authority circular relaying the PRAC risk estimate, July 15, 2025; Danish Medicines Agency note on the September 30, 2025 product-information update; MHRA press release, February 5, 2026. EMA PRAC highlights 8–11 April 2024 (no causal link to suicidal thoughts).", "url": "https://www.ema.europa.eu/en/news/meeting-highlights-pharmacovigilance-risk-assessment-committee-prac-2-5-june-2025"},
+      {"text": "U.S. FDA, FDA clarifies policies for compounders as national GLP-1 supply begins to stabilize (shortage resolved February 21, 2025; enforcement discretion end dates; court rulings), updated 2025.", "url": "https://www.fda.gov/drugs/drug-alerts-and-statements/fda-clarifies-policies-compounders-national-glp-1-supply-begins-stabilize"},
+      {"text": "Canadian generic semaglutide: Pearce IP reports on Health Canada approvals for Dr. Reddy's (April 29, 2026) and Apotex (May 1, 2026), launches (May 14–16, 2026) and Apotex's Sevmia for weight management (June 29, 2026); BNN Bloomberg / The Canadian Press, January 2, 2026, on the end of regulatory exclusivity.", "url": "https://www.pearceip.law/2026/06/29/apotex-secures-first-canadian-approved-generic-semaglutide-for-weight-loss/"}
+    ]
+  }
+}

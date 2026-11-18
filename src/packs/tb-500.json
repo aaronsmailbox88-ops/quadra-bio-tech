@@ -1,0 +1,205 @@
+{
+  "id": "tb-500",
+  "name": "TB-500",
+  "brands": "",
+  "maker": "",
+  "group": "research",
+  "pill": "Unapproved",
+  "overview": {
+    "headline": "A seven-amino-acid piece of a natural repair protein, sold online for injection, and never once given to a human in a published study.",
+    "lede": "TB-500 is a synthetic fragment (amino acids 17 to 23, sequence LKKTETQ) of thymosin beta-4, a 43-amino-acid protein found in nearly every human cell. It was first made in 2003 and reappeared in 2011 as a veterinary product for racehorses and greyhounds. No company is developing it as a medicine, no regulator has approved it, and the FDA's 2026 review found no study in which TB-500 was ever administered to a person. Full-length thymosin beta-4 has been in company-run human trials, but that is a different molecule.",
+    "stats": [
+      {"num": "0", "lbl": "human studies of TB-500 found in the medical literature", "src": "FDA briefing document, May 15, 2026"},
+      {"num": "7", "lbl": "amino acids: a fragment of the 43-amino-acid protein thymosin beta-4", "src": "FDA briefing document, 2026"},
+      {"num": "2003", "lbl": "year the fragment was first synthesized; a horse and greyhound product followed in 2011", "src": "Philp et al. 2003; Ho et al. 2012, cited by the FDA"}
+    ],
+    "mechanism": {
+      "intro": "The parent protein helps cells move and rebuild; the fragment copies the stretch that grips actin, the cell's internal scaffolding.",
+      "parts": [
+        {"name": "Actin binding", "text": "Thymosin beta-4 holds single actin units in reserve so cells can reshape their skeleton and migrate into a wound. The LKKTETQ stretch is the part that binds actin, which is why it was cut out and tested on its own."},
+        {"name": "What the full protein does in animals", "text": "Speeds skin closure, hair growth and new blood vessels, and protects heart muscle after injury in mice and rats. Whether a seven-amino-acid fragment does the same is unproven: a 2024 lab test found TB-500 did not speed wound closure in cultured skin cells."},
+        {"name": "The one result behind TB-500", "text": "In a 2003 study of aged mice, the non-acetylated fragment applied to skin wounds matched the full protein for closure and collagen at day 7. That study did not test TB-500 itself (the acetylated form sold online), and the FDA found no later animal study that did."}
+      ]
+    },
+    "more": {
+      "title": "More: TB-500 is not thymosin beta-4",
+      "paras": [
+        "Thymosin beta-4 (Tβ4) has a real clinical history. The U.S. company RegeneRx has run Phase 1 to Phase 3 trials of the full protein as eye drops for dry eye and neurotrophic keratopathy, as a gel for chronic wounds and epidermolysis bullosa, and as an intravenous infusion in healthy volunteers. None has led to an approved medicine anywhere that we could find.",
+        "Sellers borrow that history for TB-500, but the FDA's reviewers were explicit: evidence for the full protein cannot be assumed to apply to the fragment, and \"TB-500\" is a common name, not an official drug name, under which different substances (a free base and an acetate salt) are sold. Some vials seized in Canada were labelled as full-length thymosin beta-4 and some as the fragment.",
+        "Everything on this page comes from the FDA's 2026 review documents, regulators' notices and the published literature they cite. Sources are listed under the Status tab."
+      ]
+    }
+  },
+  "results": {
+    "headline": "What the studies actually showed.",
+    "lede": "There is no human trial of TB-500 to chart, placebo-controlled or otherwise. Below is what exists, with animal, human and full-protein findings kept apart.",
+    "chart": null,
+    "stats": [
+      {"num": "0", "lbl": "published human case reports or trials of TB-500, by any route", "src": "FDA literature search, 2026"},
+      {"num": "1–2 h", "lbl": "time to peak blood level after an under-the-skin dose in Thoroughbred horses; unmeasurable again by 6 to 10 hours", "src": "Ho et al. 2012, cited by the FDA"}
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {"b": "Fragment, in animals and cells.", "t": "One 2003 mouse study: the non-acetylated fragment on skin wounds improved closure and collagen at day 7, with no dose–response tested. One 2024 cell study: TB-500 at the concentration tested did not change wound closure in cultured fibroblasts, though a breakdown product had a small effect. One 2012 horse study measured blood levels for doping detection. That is the entire efficacy literature."},
+        {"b": "Fragment, in people.", "t": "Nothing. The FDA found no article in which TB-500 was given to humans for any purpose, no toxicology study in any species, and no pharmacokinetic study by the intramuscular route sellers describe."},
+        {"b": "Full protein, in people.", "t": "A Phase 2 randomized trial of thymosin beta-4 eye drops reported improved signs and symptoms of dry eye. Phase 2 trials of a thymosin beta-4 gel in pressure ulcers, venous leg ulcers and epidermolysis bullosa reported it was well tolerated and sped repair, according to a 2016 review by researchers connected to the programme. Later Phase 3 eye trials have not produced an approved product."},
+        {"b": "Why that does not transfer.", "t": "The protein is 43 amino acids, the fragment is 7, and in the one cell test the FDA reviewed, a breakdown product showed a small effect while TB-500 itself did not. Eye drops and wound gels also stay local; the online product is injected."}
+      ]
+    },
+    "more": [
+      {
+        "title": "More: why animal results rarely transfer",
+        "paras": [
+          "Most treatments that work in animals fail in people. Wound closure in a 26-month-old mouse, measured at day 7 with a topical dose, says little about an injected product in a human. The fragment has never had the basic animal toxicology (acute, repeat-dose, reproductive, carcinogenicity) that regulators require before a first human dose.",
+          "The horse study is the only measurement of TB-500 in a living body's bloodstream, and it was designed to catch dopers, not to show benefit. It found peak levels of a few hundredths of a nanogram per millilitre that disappeared within hours."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "No human study means no side-effect data. Here is what regulators found instead.",
+    "lede": "TB-500 has never been through a safety study in people or animals. The FDA searched its adverse-event database and the medical literature and found no reports for TB-500 alone, which reflects how little anyone has looked, not how safe it is.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "No data. There has never been a trial from which anyone could stop."
+    },
+    "unique": {
+      "title": "What has actually been reported",
+      "text": "The FDA's adverse-event system (searched to March 2025) held no TB-500 reports and no published case reports exist. Two complaints to the FDA's food-complaint system involved a blended TB-500 and BPC-157 product, with no safety assessment. One BPC-157 adverse-event report described skin and gum darkening in a woman who was also using TB-500. Australia's TGA said in June 2026 that unapproved peptide products, naming TB-500 among them, had been linked to liver damage and severe allergic reactions requiring hospital care; those are reports about the product category, not proof against TB-500."
+    },
+    "more": [
+      {
+        "title": "More: what regulators flagged",
+        "paras": [
+          "Immune reactions. The FDA says injected peptides \"may pose a significant risk\" of immunogenicity, made worse by aggregation (peptides clumping together, which can happen with chains as short as two amino acids) and by impurities. No immunogenicity or aggregation study exists for TB-500.",
+          "Quality. One certificate of analysis tested only appearance, identity and purity, with no assay, impurity, endotoxin or aggregate testing; another limited impurities but skipped identification, assay, aggregates and endotoxins. The nomination to the FDA listed a CAS number and formula that matched neither substance sold under the name.",
+          "No toxicology at all. The FDA found no acute, repeat-dose, genotoxicity, reproductive or carcinogenicity study in any species. Nothing is known about pregnancy, children, long-term use or drug interactions."
+        ]
+      },
+      {
+        "title": "More: the tumour question",
+        "paras": [
+          "Thymosin beta-4 drives cell migration and new blood-vessel growth, and some laboratory studies have found higher levels of the protein in certain tumours. Whether that matters for a fragment given to people is unknown in either direction, because no one has studied it. It is one reason regulators want carcinogenicity data before a first human dose."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms doctors treat as urgent after an unapproved injection",
+      "items": [
+        "Swelling of the face, lips or throat, trouble breathing, hives or a spreading rash",
+        "Fever, spreading redness, warmth, pus or severe pain at an injection site",
+        "Yellowing of the skin or eyes, dark urine, pale stools, unusual tiredness or itching",
+        "Severe or persistent abdominal pain",
+        "Fainting, a racing or irregular heartbeat, confusion"
+      ],
+      "note": "Anyone with these symptoms should get medical care right away and tell the clinician exactly what was injected."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "No human half-life has ever been measured for TB-500, so there is nothing honest to simulate. The only blood measurements are from horses, where levels peaked within one to two hours of an under-the-skin dose and were unmeasurable by six to ten hours.",
+    "stats": [
+      {"num": "none", "lbl": "human pharmacokinetic studies, by any route", "src": "FDA briefing document, May 2026"},
+      {"num": "1–2 h", "lbl": "time to peak in Thoroughbred horses after an under-the-skin dose; unmeasurable by 6 to 10 hours. No half-life was calculated", "src": "Ho et al. 2012, cited by the FDA"},
+      {"num": "unknown", "lbl": "half-life, peak and absorption in humans", "src": "No published human data as of October 2026"}
+    ],
+    "explain": [
+      {"b": "Why the horse numbers matter.", "t": "Peak levels were a few hundredths of a nanogram per millilitre and gone within hours. A product cleared that fast gives no basis for the weekly or twice-weekly patterns described online, and no one knows what a human blood level, or a human effect, would be."},
+      {"b": "Why 'no reports' is not 'no risk'.", "t": "Immune reactions, contamination and wrong-strength vials do not depend on the half-life. With no human study, no one has looked for them."}
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: what a proper study would require",
+        "paras": [
+          "Animal toxicology first, which TB-500 has never had. Then a Phase 1 trial in healthy volunteers with a blood assay sensitive enough for a peptide that peaks at a fraction of a nanogram, supervised single doses, timed blood draws, and antibody testing for an immune response. The full protein had a Phase 1 intravenous safety study published in 2010; the fragment has had none."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "No human trial of TB-500 has ever been run.",
+    "lede": "There is nothing to join. The trials people cite are of thymosin beta-4, the full protein, run by a company that does not make or sell TB-500.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: the thymosin beta-4 programme",
+        "paras": [
+          "RegeneRx (Maryland) and its partners have tested full-length thymosin beta-4 since the mid-2000s: RGN-259 eye drops for dry eye and neurotrophic keratopathy (Phase 2 and Phase 3), RGN-137 gel for epidermolysis bullosa and chronic wounds (Phase 2), and RGN-352, an intravenous form tested for safety in healthy volunteers (Phase 1, published 2010). The Phase 2 eye and wound studies reported benefit; the later Phase 3 dry-eye programme has not produced an approved product, and no regulator has approved any thymosin beta-4 medicine as of October 2026.",
+          "None of this involved TB-500. The FDA's reviewers found no compounding pharmacy, outsourcing facility or company that has ever made TB-500 for human use."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials that have been run",
+      "items": [
+        "TB-500 (the fragment): none, registered or published, in any country (FDA literature search, 2026)",
+        "Thymosin beta-4 eye drops, dry eye: Phase 2 randomized placebo-controlled trial, published 2015, improved signs and symptoms; Phase 3 trials followed without approval",
+        "Thymosin beta-4 eye drops, neurotrophic keratopathy: company-run trials reported improvement; not approved",
+        "Thymosin beta-4 gel: Phase 2 trials in pressure ulcers, venous leg ulcers and epidermolysis bullosa, reported as safe with faster repair in a 2016 review",
+        "Thymosin beta-4 intravenous: Phase 1 safety study in healthy volunteers, published 2010"
+      ]
+    },
+    "find": {
+      "text": "Search the registry for thymosin beta-4 to see the full-protein trials; a search for TB-500 returns nothing. The FDA's July 2026 briefing document is the most complete public review.",
+      "term": "thymosin beta 4",
+      "extra": {"label": "FDA briefing document on TB-500, May 2026", "url": "https://www.fda.gov/media/193349/download"}
+    }
+  },
+  "status": {
+    "headline": "Not approved anywhere. Illegal to sell for human use in Canada. Banned in sport.",
+    "items": [
+      {"tag": "no", "label": "Canada: unauthorized", "text": "Health Canada has never authorized TB-500 or thymosin beta-4. Injectable peptides are prescription drugs in Canada and no TB-500 product has a Drug Identification Number, so selling it is illegal. Health Canada seized vials labelled as thymosin beta-4 and as its 17–23 fragment from a Calgary clinic (April 2025) and from the online seller Canada Peptide (August 2025), and named TB-500 in a public advisory on April 9, 2026."},
+      {"tag": "no", "label": "U.S.: not approved, not compoundable", "text": "The FDA has approved no TB-500 product. On September 29, 2023 it placed \"thymosin beta-4 fragment (LKKTETQ)\" in Category 2 of its compounding list, citing immunogenicity, aggregation and impurity concerns and no human exposure data, which barred pharmacies from compounding it. In April 2026 the FDA removed it from Category 2 after the nominations were withdrawn; on July 23, 2026 an advisory committee voted 8 to 6 (one abstention) to recommend adding it to the compounding list, against the FDA's reviewers, who found no human data at all. As of mid-October 2026 the FDA has announced no decision."},
+      {"tag": "no", "label": "Sport: prohibited", "text": "WADA's Prohibited List names \"thymosin-β4 and its derivatives, e.g. TB-500\" under S2.3 (growth factors and growth factor modulators), prohibited at all times. WADA funded research on detecting TB-500 as early as 2013."},
+      {"tag": "no", "label": "Australia", "text": "On June 19, 2026 the TGA and Australia's Chief Medical Officer named TB-500 in a warning about unapproved peptides linked to liver damage, severe allergic reactions and hospitalisations. Unapproved peptides are not on the Australian Register of Therapeutic Goods, and possession of prescription-class peptides without a prescription is an offence."}
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "What \"research use only\" means",
+        "text": "The label is a legal shield for the seller, not a safety standard. Health Canada says it does not make a product legal to sell or use, and no regulator checks what is in the vial.",
+        "items": [
+          "The FDA found that certificates of analysis for TB-500 did not test for endotoxins or aggregates, and in one case not for impurities; the substance has no official name, so a vial labelled TB-500 may contain the free base, the acetate salt, full-length thymosin beta-4 or something else.",
+          "Health Canada warns the products may be contaminated, mislabelled, wrong-strength or contain unlisted ingredients; it has seized thymosin beta-4 products twice and obtained a court injunction against an online seller in June 2026.",
+          "TB-500 was first commercialised as a veterinary doping product for racehorses and greyhounds; the only blood-level data in any living animal come from anti-doping laboratories."
+        ],
+        "note": "No manufacturer anywhere makes TB-500 to pharmaceutical standards, so there is no verified product to compare a vial against."
+      },
+      {
+        "kind": "warn",
+        "title": "If someone has already used an unapproved product",
+        "text": "Health Canada and the TGA advise stopping, keeping the vial for identification, and seeing a doctor if any of these appear:",
+        "items": ["Unusual tiredness, yellow skin or eyes, dark urine, itching", "Swelling, hives, wheeze or trouble breathing", "Redness, heat, pus or severe pain at an injection site", "Unexplained bruising or bleeding"],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: the July 2026 advisory vote",
+        "paras": [
+          "The FDA's reviewers gave five reasons not to list TB-500 for compounding: poor characterisation, unclear historical use, no evidence of effectiveness for wound healing, no clinical or non-clinical safety data with an immunogenicity concern for injection, and the existence of approved wound therapies. The advisory committee, with eight new members appointed in 2026, voted 8 to 6 to recommend it anyway. Public Citizen and the Center for Science in the Public Interest have challenged the committee's conflicts of interest and process.",
+          "The vote is not binding. If the FDA accepts it, rulemaking with public comment would take one to two years, and a listing would only let pharmacies compound it on prescription. It would not be approval, and there would still be no proven dose, use or safety profile."
+        ]
+      }
+    ],
+    "sources": [
+      {"text": "FDA, Briefing document: evaluation of TB-500 (free base) and TB-500 acetate for the 503A bulk drug substances list, Pharmacy Compounding Advisory Committee, May 15, 2026.", "url": "https://www.fda.gov/media/193349/download"},
+      {"text": "FDA, Pharmacy Compounding Advisory Committee presentations, July 23, 2026 (BPC-157, KPV, TB-500, MOTS-c).", "url": "https://www.fda.gov/media/193773/download"},
+      {"text": "FDA, July 23–24, 2026 meeting of the Pharmacy Compounding Advisory Committee: agenda, roster and briefing materials.", "url": "https://www.fda.gov/advisory-committees/advisory-committee-calendar/july-23-24-2026-meeting-pharmacy-compounding-advisory-committee-07232026"},
+      {"text": "FDA, Certain bulk drug substances for use in compounding that may present significant safety risks (thymosin beta-4 fragment entry under 'nominated but withdrawn'), current as of April 22, 2026.", "url": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks"},
+      {"text": "Alliance for Pharmacy Compounding, 503A categories update for September 2023 (thymosin beta-4 fragment LKKTETQ moved to Category 2 on September 29, 2023).", "url": "https://join.a4pc.org/hubfs/PDFs/503A-Categories-Update-for-September-2023-FINAL.docx.pdf"},
+      {"text": "AJMC, FDA panel backs 6 peptides for compounding (vote counts), July 31, 2026.", "url": "https://www.ajmc.com/view/fda-panel-backs-6-peptides-for-compounding"},
+      {"text": "Goodwin, FDA signals potentially evolving stance toward compounding of certain peptides (April 15, 2026 removal from Category 2), May 2026.", "url": "https://www.goodwinlaw.com/en/insights/blogs/2026/05/fda-signals-potentially-evolving-stance-toward-compounding-of-certain-peptides"},
+      {"text": "Health Canada, Public advisory: Think twice before injecting peptides bought online, April 9, 2026; Unauthorized injectable peptide drugs seized from Canada Peptide, August 1, 2025; seizure at Optimum Wellness Centre, Calgary, April 1, 2025.", "url": "https://recalls-rappels.canada.ca/en/alert-recall/think-twice-injecting-peptides-bought-online-unauthorized-products-can-seriously-harm"},
+      {"text": "WADA, Prohibited List 2025, S2.3: thymosin-β4 and its derivatives, e.g. TB-500.", "url": "https://www.wada-ama.org/en/prohibited-list"},
+      {"text": "Australian Government Department of Health / TGA, Concerns regarding the public health risks associated with unapproved peptide products (names TB-500), June 19, 2026.", "url": "https://www.health.gov.au/news/concerns-regarding-the-public-health-risks-associated-with-unapproved-peptide-products"},
+      {"text": "Ho ENM et al., Doping control analysis of TB-500, a synthetic version of an active region of thymosin β4, in equine urine and plasma, Journal of Chromatography A, 2012 (horse pharmacokinetics; cited by the FDA).", "url": "https://pubmed.ncbi.nlm.nih.gov/23084823"},
+      {"text": "Kleinman HK, Sosne G, Thymosin β4 promotes dermal healing, Vitamins and Hormones, 2016 (review of Phase 2 wound trials of the full protein); Investigative Ophthalmology & Visual Science, 2015, thymosin beta-4 in dry eye and neurotrophic keratopathy (PMID 26241398).", "url": "https://pubmed.ncbi.nlm.nih.gov/27450738"},
+      {"text": "Ruff D et al., A randomized, placebo-controlled, single and multiple dose study of intravenous thymosin β4 in healthy volunteers, Annals of the New York Academy of Sciences, 2010.", "url": "https://pubmed.ncbi.nlm.nih.gov/20536453"},
+      {"text": "Wittert G, Peptide use in Australia: what GPs need to know (summary of TGA alerts of April 13 and June 19, 2026 and the FDA review), Healthed, July 29, 2026.", "url": "https://www.healthed.com.au/?p=2138140"}
+    ]
+  }
+}

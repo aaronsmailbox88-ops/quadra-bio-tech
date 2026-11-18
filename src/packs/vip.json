@@ -1,0 +1,348 @@
+{
+ "id": "vip",
+ "name": "VIP (vasoactive intestinal peptide, aviptadil)",
+ "brands": "Invicorp (aviptadil with phentolamine)",
+ "maker": "Natural hormone; Evolan Pharma (Invicorp); NRx Pharmaceuticals / Relief Therapeutics (intravenous Zyesami, not approved)",
+ "group": "approved",
+ "pill": "Approved (as aviptadil combo, some countries)",
+ "overview": {
+  "headline": "A natural gut-and-nerve hormone: approved as a penile injection for erectile dysfunction, failed as a COVID-19 drug, and sold as a nasal spray for 'mold illness' with no trials behind it.",
+  "lede": "Vasoactive intestinal peptide (VIP) is a 28-amino-acid hormone made in the gut, lungs and nervous system; the synthetic form is called aviptadil. With phentolamine, as Invicorp, it has held UK marketing authorisation since April 2015 for erectile dysfunction. Intravenous aviptadil did not beat placebo in the NIH's COVID-19 trial, and the FDA twice declined emergency authorisation. Nasal VIP for 'mold illness' rests on one 20-patient report with no control group.",
+  "stats": [
+   {
+    "num": "2015",
+    "lbl": "UK marketing authorisation for Invicorp (aviptadil with phentolamine), an injection into the penis for erectile dysfunction",
+    "src": "AWTTC appraisal report, May 2017"
+   },
+   {
+    "num": "38% vs 36%",
+    "lbl": "deaths by day 90 on intravenous aviptadil vs placebo in the NIH TESICO trial (461 people): no benefit",
+    "src": "Lancet Respiratory Medicine, 2023"
+   },
+   {
+    "num": "0",
+    "lbl": "placebo-controlled trials of nasal VIP for 'mold illness' or CIRS",
+    "src": "Only a 20-patient open-label report, 2013"
+   }
+  ],
+  "mechanism": {
+   "intro": "VIP relaxes smooth muscle and blood vessels, and damps inflammation in the lung.",
+   "parts": [
+    {
+     "name": "VPAC receptors",
+     "text": "VIP binds VPAC1 and VPAC2 receptors on smooth muscle, blood vessels and immune cells. In the penis that relaxes muscle and lets blood in; phentolamine adds a second relaxing signal."
+    },
+    {
+     "name": "Lung",
+     "text": "VIP is concentrated in the lung. The COVID-19 idea was to protect the cells lining the air sacs and reduce cytokine release. The NIH trial saw no effect on recovery or survival."
+    },
+    {
+     "name": "Short-lived in blood",
+     "text": "VIP is cleared from the bloodstream quickly, which is why the COVID-19 trials used 12-hour daily infusions and why Invicorp is injected where it acts."
+    }
+   ]
+  },
+  "more": {
+   "title": "More: one molecule, three very different products",
+   "paras": [
+    "Invicorp is a licensed medicine given by a clinician-taught injection. Zyesami was an experimental intravenous infusion for intensive-care patients. 'VIP nasal spray' is a compounded or grey-market product for a contested diagnosis. The first has approval evidence; the second failed; the third was never tested against placebo. Sources are under the Status tab."
+   ]
+  }
+ },
+ "results": {
+  "headline": "Works where it is injected; did not save lives in COVID-19; untested as a nasal spray.",
+  "lede": "The chart shows the one large placebo-controlled trial with a hard outcome: death by day 90 in the NIH TESICO study of intravenous aviptadil for COVID-19 respiratory failure. Lower is better.",
+  "chart": {
+   "metric": "other",
+   "legend": [
+    "Aviptadil (intravenous)",
+    "Placebo"
+   ],
+   "rows": [
+    {
+     "name": "TESICO (ACTIV-3b)",
+     "meta": "90 days · COVID-19 respiratory failure · 461 people · share who died",
+     "drug": 38,
+     "placebo": 36,
+     "tip": "Died by day 90: 38% vs 36% (hazard ratio 1.04, not significant)"
+    }
+   ],
+   "max": 50,
+   "note": "Modified intention-to-treat population. The primary outcome was a six-step recovery scale at day 90; the odds of a better outcome on aviptadil were 1.11 (95% CI 0.80 to 1.55, p=0.54), i.e. no difference. The aviptadil arm was stopped for futility in May 2022.",
+   "unit": "%",
+   "signed": false
+  },
+  "stats": [
+   {
+    "num": "OR 1.6",
+    "lbl": "odds of being alive and free of respiratory failure at day 60 on aviptadil vs placebo in the company's 196-patient trial: not statistically significant (95% CI 0.86 to 3.11)",
+    "src": "Youssef et al., Critical Care Medicine 2022"
+   },
+   {
+    "num": "84% vs 83%",
+    "lbl": "injections giving an erection firm enough for intercourse, Invicorp vs alprostadil, among men who responded to both",
+    "src": "AWTTC appraisal 2017, study VP 007"
+   }
+  ],
+  "beyond": {
+   "title": "What the studies actually showed",
+   "items": [
+    {
+     "b": "Erectile dysfunction (the approved use).",
+     "t": "Two placebo-controlled studies with 343 men in total supported the UK licence. Against alprostadil, 73% of men reached a firm erection with Invicorp in the dose-finding phase (83% with alprostadil), with far less penile pain (3 vs 28 reports per 100) but more facial flushing (17 vs 3 per 100 injections)."
+    },
+    {
+     "b": "COVID-19, company trial.",
+     "t": "196 intensive-care patients, randomised 2:1 to three days of intravenous aviptadil or placebo. The primary endpoint, alive and free of respiratory failure at day 60, was not met (OR 1.6, 95% CI 0.86 to 3.11). An adjusted analysis found better 60-day survival (OR 2.0, p=0.035); regulators did not accept this as proof."
+    },
+    {
+     "b": "COVID-19, NIH trial.",
+     "t": "461 patients at 28 US sites, placebo-controlled. No improvement on the recovery scale (OR 1.11, p=0.54); deaths 38% vs 36%; stopped for futility."
+    },
+    {
+     "b": "'Mold illness' nasal spray.",
+     "t": "One open-label report of 20 patients (Shoemaker 2013) with no placebo or control group, compared against historical values; the authors called it preliminary. No controlled trial has followed."
+    }
+   ]
+  },
+  "more": [
+   {
+    "title": "More: why the FDA said no to Zyesami",
+    "paras": [
+     "NRx sought emergency use authorisation on its 196-patient trial; the FDA declined on November 4, 2021, citing insufficient data, and again on July 1, 2022 for a narrower, post-hoc subgroup. The NIH's independent trial, stopped for futility in May 2022, settled the question."
+    ]
+   }
+  ]
+ },
+ "effects": {
+  "headline": "Flushing and low blood pressure, as expected from a vessel-relaxing hormone; diarrhea in the intravenous trial.",
+  "lede": "The rates below come from critically ill COVID-19 patients receiving three days of high-dose intravenous infusion. They say nothing about a nasal spray, and little about the small penile dose.",
+  "chart": {
+   "eyebrow": "NRx Phase 2b/3 (intravenous aviptadil, ICU) · share of people affected",
+   "legend": [
+    "Aviptadil (intravenous)",
+    "Placebo"
+   ],
+   "rows": [
+    {
+     "name": "Diarrhea",
+     "drug": 32.8,
+     "placebo": 1.5
+    },
+    {
+     "name": "Low blood pressure",
+     "drug": 26.0,
+     "placebo": 21.5
+    },
+    {
+     "name": "Acute kidney injury",
+     "drug": 23.7,
+     "placebo": 20.0
+    },
+    {
+     "name": "High potassium",
+     "drug": 12.2,
+     "placebo": 6.2
+    },
+    {
+     "name": "Atrial fibrillation",
+     "drug": 11.5,
+     "placebo": 4.6
+    }
+   ],
+   "max": 40,
+   "note": "196 people randomised 2:1, intravenous infusion for three days. Patients on aviptadil were sicker at baseline. Source: the investigators' CROI 2022 abstract."
+  },
+  "disc": {
+   "title": "Stopping because of side effects",
+   "text": "Not reported for the COVID-19 trials in the published abstracts. For Invicorp, about 10% of men have an adverse reaction, mostly bruising at the injection site and flushing; the UK appraisal gives no stopping rate."
+  },
+  "unique": {
+   "title": "Blood pressure, flushing and the lung trial's safety signal",
+   "text": "VIP widens blood vessels, so flushing and a fall in blood pressure are expected: facial flushing followed 17 of 100 Invicorp injections, and low blood pressure affected 26% of ICU patients on intravenous aviptadil (21.5% on placebo). In the NIH trial the composite safety outcome (death, serious adverse events, organ failure, serious infection or grade 3 to 4 events by day 5) was 63% on aviptadil vs 56% on placebo, not statistically significant (OR 1.40, p=0.10). Priapism is a rare risk of any penile injection."
+  },
+  "more": [
+   {
+    "title": "More: what the trials monitored for",
+    "paras": [
+     "The intensive-care trials tracked blood pressure, heart rhythm, kidney function, electrolytes and infections. Invicorp's monitoring is about the injection: bruising, pain, scarring and prolonged erection."
+    ]
+   },
+   {
+    "title": "More: the good side effects",
+    "paras": [
+     "Less penile pain than alprostadil is the one clear advantage documented for Invicorp. Lower IL-6 by day 3 in the intravenous trial did not translate into survival in the larger NIH trial."
+    ]
+   }
+  ],
+  "urgent": {
+   "title": "Symptoms doctors treat as urgent",
+   "items": [
+    "Fainting, or dizziness and a blood pressure fall that does not recover",
+    "An erection lasting for hours after a penile injection (priapism)",
+    "Severe or bloody diarrhea, or signs of dehydration",
+    "An irregular or racing heartbeat",
+    "Swelling of the face or throat, trouble breathing"
+   ],
+   "note": "Anyone with these symptoms should get medical care right away."
+  }
+ },
+ "levels": {
+  "pk": null,
+  "nopk": "Aviptadil is cleared from the blood quickly: the COVID-19 trials ran 12-hour daily infusions, and Invicorp is injected at its site of action. The published trials did not report a half-life, and no human study has measured blood levels after a nasal VIP spray, so there is nothing to model.",
+  "stats": [
+   {
+    "num": "28",
+    "lbl": "amino acids in VIP",
+    "src": "Chemical identity"
+   },
+   {
+    "num": "12 h x 3",
+    "lbl": "length of the daily intravenous infusions in the NIH trial, needed because VIP does not last in blood",
+    "src": "TESICO, Lancet Respir Med 2023"
+   },
+   {
+    "num": "0",
+    "lbl": "human studies measuring blood levels after nasal VIP",
+    "src": "Published literature"
+   }
+  ],
+  "explain": [
+   {
+    "b": "Why there is no chart.",
+    "t": "The simulator models a drug that builds up between doses. VIP is gone before the next dose, so only continuous infusion or local injection makes sense, and neither is a 'level' to track."
+   },
+   {
+    "b": "Why a nasal spray is a guess.",
+    "t": "Whether sprayed VIP reaches the blood, and in what amount, has never been measured in a published human study."
+   }
+  ],
+  "showTable": false,
+  "more": [
+   {
+    "title": "More: what this page cannot tell you",
+    "paras": [
+     "What a compounded or grey-market nasal VIP product contains, how much is absorbed or whether it does anything. The only approved product is a measured injection given for a different purpose."
+    ]
+   }
+  ]
+ },
+ "trials": {
+  "headline": "Approved for one use, failed for another, never tested for the third.",
+  "lede": "Aviptadil has a real clinical record, which makes the nasal-spray claims easy to check: none of the controlled trials studied them.",
+  "ladder": null,
+  "more": [
+   {
+    "title": "More: how the COVID-19 trials were run",
+    "paras": [
+     "Both trials gave intravenous aviptadil by 12-hour daily infusion for three days to hospitalised patients with respiratory failure, against a saline placebo, under intensive-care monitoring. The NIH trial also tested remdesivir; that arm closed early for slow enrolment."
+    ]
+   }
+  ],
+  "running": {
+   "title": "Trials that have been run",
+   "items": [
+    "Erectile dysfunction: two placebo-controlled studies (343 men) and a comparative study against alprostadil (187 men), supporting UK approval in 2015.",
+    "COVID-19, NRx/Relief Phase 2b/3 (NCT04311697): 196 ICU patients; primary endpoint not met; FDA declined emergency use twice (2021, 2022).",
+    "COVID-19, NIH ACTIV-3b/TESICO: 461 patients; no benefit on recovery or death; stopped for futility May 2022; published 2023.",
+    "Nasal VIP for CIRS: one 20-patient open-label report (2013), no placebo. No registered controlled trial."
+   ]
+  },
+  "find": {
+   "text": "No aviptadil trial for COVID-19 or CIRS is known to be recruiting. The registry term below shows the completed studies.",
+   "term": "aviptadil",
+   "extra": null
+  }
+ },
+ "status": {
+  "headline": "Approved only as Invicorp, a penile injection, in the UK and some other countries. Not approved in Canada or the US. Nasal VIP is unapproved everywhere.",
+  "items": [
+   {
+    "tag": "ok",
+    "label": "UK: approved (Invicorp)",
+    "text": "UK marketing authorisation granted April 21, 2015 to Evolan Pharma for Invicorp, an intracavernosal injection for erectile dysfunction; the Scottish Medicines Consortium accepted it in December 2017 for men who have failed oral and other non-injectable treatments. This approval says nothing about intravenous or nasal use."
+   },
+   {
+    "tag": "no",
+    "label": "Canada: not authorized",
+    "text": "Health Canada has not authorized any aviptadil or VIP product. Nasal 'VIP' sprays sold or compounded for mold illness are unauthorized drugs, which Health Canada said in April 2026 are illegal in Canada."
+   },
+   {
+    "tag": "no",
+    "label": "US: not approved",
+    "text": "The FDA has never approved aviptadil. It declined emergency use authorisation for intravenous Zyesami on November 4, 2021 and July 1, 2022. Nasal VIP is compounded or sold without approval."
+   },
+   {
+    "tag": "ok",
+    "label": "Sport: not listed",
+    "text": "Aviptadil is not named on the 2026 WADA Prohibited List, and because it holds a therapeutic approval the S0 'non-approved substances' clause does not apply. Athletes should still check with their anti-doping organisation."
+   }
+  ],
+  "cards": [
+   {
+    "kind": "crit",
+    "title": "What 'compounded VIP' and 'research use only' mean",
+    "text": "A nasal VIP spray from a compounding pharmacy is made to order without FDA or Health Canada review, for a condition (CIRS) with no controlled-trial evidence. Vials sold online as VIP under 'research use only' labels are unapproved products, and regulators have said the label does not protect sellers who market them for human use.",
+    "items": [
+     "FDA warning letters, August 24, 2026: 'research use only' disclaimers rejected where websites marketed products for people.",
+     "Health Canada: unauthorized injectable peptide drugs are illegal in Canada (April 2026)."
+    ],
+    "note": ""
+   },
+   {
+    "kind": "warn",
+    "title": "Symptoms to take to a doctor",
+    "text": "Anyone using a VIP product outside the approved use should tell a doctor, especially with any of the following:",
+    "items": [
+     "Fainting or persistent dizziness",
+     "Palpitations or an irregular heartbeat",
+     "Severe diarrhea or dehydration",
+     "An erection that will not subside after a penile injection"
+    ],
+    "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+   }
+  ],
+  "more": [
+   {
+    "title": "More: 'CIRS' and the evidence gap",
+    "paras": [
+     "'Chronic inflammatory response syndrome' from water-damaged buildings is a diagnosis defined by the clinicians who promote it. The 2013 VIP report came from that group, enrolled 20 patients and had no placebo. Thirteen years later no controlled trial has been published."
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "text": "All Wales Therapeutics and Toxicology Centre. Appraisal report: aviptadil/phentolamine (Invicorp), May 2017 (UK marketing authorisation April 21, 2015; trial evidence; adverse effects).",
+    "url": "https://awttc.nhs.wales/files/appraisals-asar-far/appraisal-report-aviptadil-phentolamine-invicorp-3435/"
+   },
+   {
+    "text": "Scottish Medicines Consortium. Aviptadil/phentolamine mesilate (Invicorp) advice, December 11, 2017.",
+    "url": "https://scottishmedicines.org.uk/medicines-advice/aviptadilphentolamine-mesilate-invicorp-fullsubmission-128417/"
+   },
+   {
+    "text": "Youssef JG et al. The use of IV vasoactive intestinal peptide (aviptadil) in patients with critical COVID-19 respiratory failure: results of a 60-day randomized controlled trial. Critical Care Medicine 2022;50(11):1545-1554.",
+    "url": "https://doi.org/10.1097/CCM.0000000000005660"
+   },
+   {
+    "text": "Youssef JG et al. Recovery and survival in COVID-19 respiratory failure when treated with aviptadil (adverse-event rates). CROI 2022 abstract.",
+    "url": "https://www.croiconference.org/abstract/recovery-and-survival-in-covid-19-respiratory-failure-when-treated-with-aviptadil/"
+   },
+   {
+    "text": "ACTIV-3b/TESICO Study Group. Intravenous aviptadil and remdesivir for treatment of COVID-19-associated hypoxaemic respiratory failure in the USA (TESICO): a randomised, placebo-controlled trial. Lancet Respiratory Medicine 2023;11(9):791-803.",
+    "url": "https://doi.org/10.1016/S2213-2600(23)00147-9"
+   },
+   {
+    "text": "Fierce Biotech. FDA rejects NRx filing for emergency use in COVID-19 (second refusal), July 1, 2022; Drugs.com Zyesami approval history (first refusal November 4, 2021).",
+    "url": "https://www.fiercebiotech.com/biotech/deja-vu-fda-rejects-nrx-filing-emergency-use-covid-19"
+   },
+   {
+    "text": "Shoemaker RC, House D, Ryan JC. Vasoactive intestinal polypeptide (VIP) corrects chronic inflammatory response syndrome (CIRS) acquired following exposure to water-damaged buildings. Health 2013;5(3) (open-label, 20 patients, no placebo).",
+    "url": "https://www.scirp.org/html/6-8202013_28586.htm"
+   },
+   {
+    "text": "ArentFox Schiff on FDA warning letters of August 24, 2026; Smart & Biggar on Health Canada's April 2026 warning and July 2026 Canlab injunction.",
+    "url": "https://www.afslaw.com/perspectives/alerts/ruo-ined-five-peptide-vendors-learn-research-use-only-not-legal-strategy"
+   }
+  ]
+ }
+}

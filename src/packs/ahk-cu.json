@@ -1,0 +1,181 @@
+{
+  "id": "ahk-cu",
+  "name": "AHK-Cu",
+  "brands": "",
+  "maker": "",
+  "group": "research",
+  "pill": "Unapproved",
+  "overview": {
+    "headline": "A copper-binding tripeptide marketed for hair growth. The evidence is one 2007 laboratory study on hair follicles in a dish.",
+    "lede": "AHK-Cu is the tripeptide alanine-histidine-lysine bound to a copper ion, a cousin of the better-known cosmetic copper peptide GHK-Cu. The only published human-tissue evidence is a Korean study from 2007 in which it lengthened plucked human hair follicles kept alive in culture and made dermal papilla cells multiply. No clinical trial on people has been published or registered. Nothing is approved, and the vials sold as AHK-Cu for injection or home-made serums are unregulated products.",
+    "stats": [
+      {"num": "0", "lbl": "human clinical trials of AHK-Cu", "src": "None published or registered as of October 2026"},
+      {"num": "1", "lbl": "peer-reviewed study on human tissue: follicles and cells in culture, not people", "src": "Pyo et al., Archives of Pharmacal Research 2007"},
+      {"num": "Not significant", "lbl": "the reduction in dermal papilla cell death at the top concentration tested in that study", "src": "Pyo et al. 2007"}
+    ],
+    "mechanism": {
+      "intro": "Copper peptides are thought to deliver copper to enzymes in skin and hair and to nudge growth signals.",
+      "parts": [
+        {"name": "Copper carrier", "text": "The tripeptide binds a copper ion and may help deliver it to copper-dependent enzymes involved in collagen cross-linking and tissue repair. This is the rationale for all copper peptides in cosmetics."},
+        {"name": "Dermal papilla", "text": "The dermal papilla is the cluster of cells at the base of a hair follicle that drives growth. In the 2007 study AHK-Cu made these cells multiply and raised the Bcl-2/Bax ratio, a sign of reduced cell death."},
+        {"name": "Fibroblasts", "text": "Earlier work on skin fibroblasts, cited as background in the 2007 paper, reported more VEGF (a vessel-growth factor) and less TGF-beta1 with the tripeptide-copper complex."}
+      ]
+    },
+    "more": {
+      "title": "More: AHK-Cu and GHK-Cu are not the same",
+      "paras": [
+        "GHK-Cu (glycine-histidine-lysine-copper) is a natural fragment found in human blood, with decades of cosmetic use and a few small human skin studies. AHK-Cu swaps the first amino acid and has no comparable record. Marketing routinely blurs the two. Sources are listed under the Status tab."
+      ]
+    }
+  },
+  "results": {
+    "headline": "No human results. One experiment on cultured hair follicles.",
+    "lede": "There is no trial of AHK-Cu in people, with or without placebo, so there is no chart.",
+    "chart": null,
+    "stats": [],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {"b": "Hair follicles in a dish (2007).", "t": "Human hair follicles kept alive in culture grew longer when AHK-Cu was added at very low concentrations (10^-12 to 10^-9 M)."},
+        {"b": "Cells in a dish (2007).", "t": "Cultured human dermal papilla cells multiplied faster; markers of programmed cell death (cleaved caspase-3 and PARP) fell and the Bcl-2/Bax ratio rose. The drop in the number of dying cells at the highest concentration was not statistically significant."},
+        {"b": "Animals.", "t": "No published hair-growth study in animals was found."},
+        {"b": "Humans.", "t": "None. No clinical trial of AHK-Cu, topical or injected, has been published or registered."}
+      ]
+    },
+    "more": [
+      {
+        "title": "More: why a dish result is a long way from a scalp",
+        "paras": [
+          "Cultured follicles respond to many substances that do nothing on a living head, because the culture removes blood supply, hormones, immune cells and the skin barrier. The approved hair-loss drugs earned their place through randomised trials with hair counts; AHK-Cu has not been through that step."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "Unknown. Never given to people in a study.",
+    "lede": "There is no human safety data for AHK-Cu by any route. What follows is what is known about copper peptides generally and about the risks of untested injectables.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "Not applicable. No human study has given AHK-Cu."
+    },
+    "unique": {
+      "title": "Copper, and the FDA's view of injected copper peptides",
+      "text": "On skin, copper peptides are widely used in cosmetics and reports are mainly of mild irritation; copper itself is toxic in excess. Injected AHK-Cu has never been studied. Reviewing the related GHK-Cu for injectable routes, the FDA cited a risk of immune reactions from peptide aggregation and impurities and limited human data (list current April 2026). Those concerns apply at least as strongly to AHK-Cu, which has less data still."
+    },
+    "more": [
+      {
+        "title": "More: what a trial would monitor for",
+        "paras": [
+          "A topical study would track scalp irritation and hair counts; an injection study would add immune reactions, copper levels and liver function. None of this has been done."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "None reported in humans. Longer follicles in culture are the hypothesis a trial would test."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms doctors treat as urgent after any injected product",
+      "items": [
+        "Swelling of the face or throat, trouble breathing, hives",
+        "Fever, spreading redness or pus at an injection site",
+        "Persistent nausea, vomiting or abdominal pain (possible copper excess)",
+        "Dark urine, yellowing of the skin or eyes"
+      ],
+      "note": "Anyone with these symptoms should get medical care right away and bring the product with them."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "No human pharmacokinetic data exist for AHK-Cu by any route. The only concentrations ever studied are those added to culture dishes, which say nothing about what reaches a follicle from a serum or an injection.",
+    "stats": [
+      {"num": "3", "lbl": "amino acids plus one copper ion", "src": "Chemical identity"},
+      {"num": "0", "lbl": "human pharmacokinetic studies", "src": "Published literature"},
+      {"num": "Dish", "lbl": "the only setting in which AHK-Cu's effects have been measured", "src": "Pyo et al. 2007"}
+    ],
+    "explain": [
+      {"b": "Why there is no chart.", "t": "The simulator needs a human half-life and a tested dose range. Neither exists."},
+      {"b": "Why 'worked at tiny concentrations' is not a dose.", "t": "The 2007 effects appeared at trillionths to billionths of a mole per litre in culture fluid. No one knows what concentration a scalp serum or an injection produces at the follicle, or whether more is better or worse."}
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: what this page cannot tell you",
+        "paras": [
+          "It cannot tell you whether a product sold as AHK-Cu contains the peptide, carries copper, penetrates the scalp, or grows hair. No human study has addressed any of these."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "No human trials have been run.",
+    "lede": "AHK-Cu has never been tested on people in a registered study, as a serum or an injection.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: how hair-growth treatments are normally proven",
+        "paras": [
+          "Approved treatments were tested in randomised, placebo-controlled trials lasting six months to a year, counting hairs in a marked patch of scalp. Nothing of the kind exists for AHK-Cu."
+        ]
+      }
+    ],
+    "running": {
+      "title": "No human trials",
+      "items": [
+        "None registered or published as of October 2026.",
+        "The sole peer-reviewed study (2007) used follicles and cells in culture."
+      ]
+    },
+    "find": {
+      "text": "If a trial is ever registered it will appear on the public registry. Searching today returns nothing.",
+      "term": "AHK-Cu",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "Not approved anywhere. Never reviewed by any regulator for human use.",
+    "items": [
+      {"tag": "no", "label": "Canada: not authorized", "text": "Health Canada has not authorized any AHK-Cu product. It treats injectable peptides as prescription drugs, said in April 2026 that unauthorized injectable peptide drugs are illegal in Canada, and in July 2026 obtained a permanent injunction against the Quebec seller Canlab Research."},
+      {"tag": "no", "label": "US: not approved", "text": "The FDA has never approved AHK-Cu, and it does not appear on the FDA's Category 2 or withdrawn-nomination lists for compounding (April 2026). Its relative GHK-Cu (injectable routes) left Category 2 in April 2026 and is due for advisory committee review by February 2027. Sold for people, AHK-Cu is an unapproved drug; the FDA's August 24, 2026 warning letters rejected 'research use only' disclaimers."},
+      {"tag": "no", "label": "Sport: prohibited", "text": "AHK-Cu is not named on the 2026 WADA Prohibited List, but with no approval anywhere for human use it falls under the S0 clause, prohibited at all times."}
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "What 'research use only' means",
+        "text": "Vials sold as AHK-Cu carry 'for research use only' labels. That describes a product meant for laboratory work, not people. It does not mean the contents were tested, and it does not make the sale legal once the seller markets the product for human use.",
+        "items": [
+          "Health Canada: injectable peptides are prescription drugs; unauthorized ones are illegal to sell (2025 and 2026 notices).",
+          "FDA warning letters, August 24, 2026: the disclaimer does not control when a website shows the product is intended as a drug for people."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "warn",
+        "title": "Symptoms to take to a doctor",
+        "text": "Anyone who has injected a product sold as AHK-Cu, or applied one to broken skin, should tell a doctor, especially with any of the following:",
+        "items": ["Fever, redness or pus at an injection site", "Hives, swelling or wheezing", "Persistent nausea, vomiting or abdominal pain", "Dark urine or yellow skin or eyes"],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: the copper-peptide market",
+        "paras": [
+          "Copper peptides are a legitimate cosmetic category in finished products that have passed a safety assessment. The 'research peptide' version sits outside that system and borrows the category's reputation without its controls."
+        ]
+      }
+    ],
+    "sources": [
+      {"text": "Pyo HK, Yoo HG, Won CH et al. The effect of tripeptide-copper complex on human hair growth in vitro. Archives of Pharmacal Research 2007;30(7):834-839.", "url": "https://doi.org/10.1007/BF02978833"},
+      {"text": "U.S. FDA. Certain bulk drug substances for use in compounding that may present significant safety risks (GHK-Cu injectable: immunogenicity and limited human data; AHK-Cu not listed). Content current as of April 22, 2026.", "url": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks"},
+      {"text": "Frier Levitt. FDA to remove 12 peptides from the Category 2 list (GHK-Cu injectable removed April 2026; PCAC review due by February 2027).", "url": "https://www.frierlevitt.com/articles/fda-peptides-do-not-compound-list-update-2026/"},
+      {"text": "Smart & Biggar. Health Canada obtains permanent injunction against Canlab Research (April 2026 warning; July 29, 2026 injunction), August 25, 2026.", "url": "https://www.smartbiggar.ca/insights/publication/health-canada-obtains-permanent-injunction-to-prevent-illegal-sale-of-injectable-peptides-by-canlab-research"},
+      {"text": "ArentFox Schiff. Five peptide vendors learn that 'research use only' is not a legal strategy (FDA warning letters of August 24, 2026), September 18, 2026.", "url": "https://www.afslaw.com/perspectives/alerts/ruo-ined-five-peptide-vendors-learn-research-use-only-not-legal-strategy"},
+      {"text": "World Anti-Doping Agency. The 2026 Prohibited List (S0 non-approved substances).", "url": "https://pgtofindia.com/storage/app/anti_doping_link/pdf/Prohibited-List-2026.pdf"}
+    ]
+  }
+}

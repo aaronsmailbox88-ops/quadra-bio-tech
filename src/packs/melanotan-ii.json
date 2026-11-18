@@ -1,0 +1,217 @@
+{
+  "id": "melanotan-ii",
+  "name": "Melanotan II",
+  "brands": "",
+  "maker": "University of Arizona (never commercialised)",
+  "group": "research",
+  "pill": "Unapproved",
+  "overview": {
+    "headline": "A synthetic copy of the skin-tanning hormone α-MSH, tested in 23 men in the 1990s and never approved anywhere.",
+    "lede": "Melanotan II was designed at the University of Arizona in the 1980s as a sunless tanning agent. Small pilot studies found it darkened skin and, unexpectedly, caused erections. The company that licensed it dropped it in favour of a derivative, bremelanotide (now Vyleesi), and no regulator has ever approved melanotan II. It is sold illegally online, in gyms and in salons as a \"tanning injection\" and, more recently, as a nasal spray.",
+    "stats": [
+      {"num": "0", "lbl": "approvals anywhere, ever", "src": "FDA, Health Canada, EMA, TGA"},
+      {"num": "23", "lbl": "men in all the published clinical studies combined, 1996 to 2000", "src": "Dorr 1996; Wessells 1998 and 2000"},
+      {"num": "2007–09", "lbl": "when regulators in Norway, Denmark, the UK, Ireland and the U.S. first warned the public against it", "src": "Agency notices and FDA warning letter"}
+    ],
+    "mechanism": {
+      "intro": "It switches on melanocortin receptors all over the body, not just in the skin, which is why its effects are so scattered.",
+      "parts": [
+        {"name": "MC1 receptor", "text": "On pigment cells in the skin. Activating it makes them produce more dark pigment, which is the tan. It also darkens moles and freckles, and it is the reason new or changing moles are the main safety signal."},
+        {"name": "MC4 receptor", "text": "In the brain. Activating it produced erections, higher reported desire, nausea, yawning and stretching in the trials. Bremelanotide (Vyleesi) was built to keep this effect."},
+        {"name": "MC3 and MC5 receptors", "text": "Also switched on. Their roles in energy balance, inflammation and glands are less clear, and melanotan II was never studied long enough in people to learn what that does."}
+      ]
+    },
+    "more": {
+      "title": "More: where it sits in the melanotan family",
+      "paras": [
+        "Melanotan I (afamelanotide) is a straight-chain version that did go through full development; it is approved as Scenesse for a rare light-sensitivity disorder. Melanotan II is a shorter, ring-shaped version that is far more potent and much less selective. Bremelanotide (PT-141, Vyleesi) is melanotan II with one chemical group changed, developed because of the erection effect seen in the melanotan II studies.",
+        "Only bremelanotide and afamelanotide have ever been approved, each for a narrow use. Melanotan II itself stopped at pilot studies, and its rights went back to the university's licensing agent in a 2008 legal settlement.",
+        "Everything on this page comes from the published Arizona studies, peer-reviewed case reports and regulator notices. Sources are listed under the Status tab."
+      ]
+    }
+  },
+  "results": {
+    "headline": "What the small 1990s studies found: tanning in two men, erections in most, nausea and yawning in nearly all.",
+    "lede": "There is no large or long trial of melanotan II. The whole published human record is one pilot study in three healthy men and two crossover studies in 20 men with erectile dysfunction, all run by one group at the University of Arizona between 1996 and 2000.",
+    "chart": null,
+    "stats": [
+      {"num": "8 of 10", "lbl": "men with psychogenic erectile dysfunction developed an erection after a dose, without sexual stimulation", "src": "Wessells 1998, J Urol"},
+      {"num": "38 min", "lbl": "of firm erection on melanotan II versus 3 minutes on placebo in that study, over 6 hours of monitoring", "src": "Wessells 1998, RigiScan"}
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {"b": "Tanning.", "t": "In the 1996 pilot, two of three men, both with skin that tans easily (type III), were visibly darker on the face, upper body and buttocks one week after five injections. The man with fair, type II skin did not tan. No study ever measured how long the tan lasted or compared it with placebo."},
+        {"b": "Erections.", "t": "Wessells 1998: 8 of 10 men with psychogenic erectile dysfunction developed erections; firm rigidity lasted 38 minutes against 3 on placebo. Wessells 2000: in 10 men with organic causes, erections followed 12 of 19 drug injections against 1 of 21 placebo injections, lasting 45 minutes against 2. Combined, 17 of 20 men responded."},
+        {"b": "Desire.", "t": "Men reported increased sexual desire after 13 of 19 melanotan II doses (68%) against 4 of 21 placebo doses (19%)."},
+        {"b": "Dose ceiling.", "t": "The pilot study stopped escalating at 0.025 mg per kg because the next step brought grade 2 fatigue and sleepiness, hours of yawning and stretching, and erections lasting 1 to 5 hours. That ceiling dose was the one used in the erectile-function studies."},
+        {"b": "Follow-up.", "t": "Six months after the pilot study, the three men reported no lasting symptoms. That is the only long-term follow-up ever published."}
+      ]
+    },
+    "more": [
+      {
+        "title": "More: why development stopped",
+        "paras": [
+          "The erection finding, not the tan, is what attracted a licence. Palatin Technologies took melanotan II forward for erectile dysfunction in the late 1990s, then replaced it with bremelanotide, a near-identical molecule with a carboxyl group in place of an amide that it could patent and develop as its own. Palatin and the university's licensing agent, Competitive Technologies, fought over who owned what; a January 2008 settlement left bremelanotide with Palatin and returned melanotan II to Competitive Technologies, which never developed it.",
+          "For tanning, the field moved to melanotan I (afamelanotide), which is more selective for the skin receptor. Clinuvel, its developer, considered selling melanotan II as a cosmetic and abandoned the idea in the 2000s over regulatory limits and concern about promoting tanning."
+        ]
+      },
+      {
+        "title": "More: what has never been studied",
+        "paras": [
+          "No placebo-controlled trial of tanning. No study in women. No study longer than two weeks of dosing. No measurement of blood levels in people. No monitoring of moles, kidneys, blood pressure or heart rhythm over time. Every claim about melanotan II beyond the three small studies above comes from people using unregulated products, which is where the case reports on the Side effects tab come from."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "Nausea, yawning, flushing and unwanted erections in the trials; melanoma, new moles, kidney injury, priapism and muscle breakdown in case reports since.",
+    "lede": "The trials were too small to give percentages you can rely on. What they do show is that side effects appeared at the same doses as the tan. The more serious signals come from doctors who treated people using black-market products.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "The studies were too small and short to measure this. In the 1996 pilot, dose escalation was stopped by fatigue and sleepiness (grade 2 in one of two men at the top dose), hours of yawning and stretching, nausea lasting up to six hours, and spontaneous erections. In the erectile-function studies, severe nausea followed 12.9% of doses at the study dose, and 4 of 19 injections in the organic-cause study."
+    },
+    "unique": {
+      "title": "Case reports from unregulated use",
+      "text": "Melanoma: a 2011 report in the British Journal of Dermatology, and a 2014 report of a 20-year-old woman who developed melanoma on the buttock three months after a three-to-four-week course of injections alongside sunbed use. New or changing moles: doctors in the UK reported changing moles in users in the BMJ in 2009, eruptive new moles the same year, and changes visible under a dermatoscope in 2012. Kidney: a 2020 report of a 45-year-old man with a renal infarction, with melanotan II judged a contributing cause. Priapism: erections needing emergency treatment in a 41-year-old man (UK, 2019) and a 55-year-old man (U.S., 2021). Muscle breakdown: a 2012 report of systemic toxicity and rhabdomyolysis after an overdose. Case reports cannot prove cause, and a 2013 systematic review found no conclusive evidence that melanotan II causes melanoma. But the drug acts directly on pigment cells, users combine it with heavy UV exposure, and no one is monitoring them, which is why dermatologists treat the mole signal as serious."
+    },
+    "more": [
+      {
+        "title": "More: what no one has monitored",
+        "paras": [
+          "Skin. The tan is real pigment made by stimulated melanocytes, and it darkens existing moles as well as skin, which can hide or mimic the warning signs of melanoma. No study has followed users' moles over time.",
+          "Blood pressure and kidneys. Melanotan II's close relative bremelanotide raises blood pressure for hours after each dose, enough to be contraindicated in heart disease. Melanotan II was never measured for this in people. The renal-infarction report and the rhabdomyolysis report are the only kidney-related data, and both come from emergency departments.",
+          "Everything else. Appetite loss, fatigue and sleepiness were seen in the trials. Effects on hormones, the heart, pregnancy or children are unknown."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "None are established for melanotan II itself. Its two effects, pigmentation and sexual response, were each taken forward in a different, more selective molecule: afamelanotide for people with a rare light-sensitivity disorder, and bremelanotide for low desire in premenopausal women. Both of those went through controlled trials; melanotan II did not, and the products on sale under its name have no verified content."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms doctors treat as urgent",
+      "items": [
+        "A new mole, or any mole that is growing, changing colour, itching, bleeding or has an irregular edge",
+        "An erection lasting more than four hours",
+        "Severe flank or abdominal pain, blood in the urine, very dark urine, or passing very little urine",
+        "Muscle pain or weakness together with dark urine",
+        "Severe headache, chest pain or a racing heartbeat",
+        "Vomiting that will not stop"
+      ],
+      "note": "Anyone with these symptoms should get medical care right away and say what was injected or sprayed, so the doctor can check the kidneys and skin."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "No human pharmacokinetic study of melanotan II has been published. The 1996 University of Arizona pilot study recorded effects, not blood levels, and the only half-life it reports is from rats (1.5 hours after an intravenous dose). A 1994 study compared assay methods, also in rats. Without a measured human half-life and time to peak, a blood-level chart would be invention, so none is shown.",
+    "stats": [
+      {"num": "No data", "lbl": "human half-life and time to peak have never been measured", "src": "Dorr 1996; Ugwu 1994 (rats only)"},
+      {"num": "1.5 h", "lbl": "half-life in rats after an intravenous dose, the only figure that exists", "src": "Dorr et al. 1996"},
+      {"num": "1–5 h", "lbl": "after a dose, when erections occurred in the pilot study: a clue to how long it acts, not a measurement", "src": "Dorr et al. 1996"}
+    ],
+    "explain": [
+      {"b": "Why there is no chart.", "t": "A blood-level model needs a human half-life and a time to peak. Neither exists for melanotan II. A rat half-life cannot be carried over to people."},
+      {"b": "Why the tan outlasts the drug.", "t": "Pigment made by stimulated skin cells stays in the skin for weeks after the molecule is gone. The pilot study measured darker skin a week after the last injection. Blood levels and visible effect are not the same thing."},
+      {"b": "Why that matters for the case reports.", "t": "Without blood-level data, no one can say what dose or what blood level is linked with renal infarction, priapism or rhabdomyolysis, and none of the case reports could measure the drug."}
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: what the animal data can and cannot say",
+        "paras": [
+          "In rats, melanotan II had a half-life of about 1.5 hours after an intravenous dose and only 4.6% was absorbed when given by mouth. That tells researchers it is a short-lived peptide that must be injected to work, which is consistent with the hours-long effects seen in men. It does not give a human half-life, and it says nothing about nasal sprays, for which no absorption data exist in any species."
+        ]
+      },
+      {
+        "title": "More: what this means for products sold online",
+        "paras": [
+          "The trial doses were weight-based, given in a hospital research unit, with saline control days and six-hour monitoring. Vials and sprays sold as \"MT-2\" carry no verified content or strength, so even the limited trial experience cannot be mapped onto them. There is no safe way to work out a blood level from a product of unknown content."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "Every human study of melanotan II was small, short and finished before 2001.",
+    "lede": "Three studies from one research group make up the entire clinical record. There is no ongoing trial to join, and no company is developing melanotan II.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: how the studies were run",
+        "paras": [
+          "The 1996 pilot was a single-blind study in three healthy men: on alternating days they received saline or melanotan II under the skin, starting at 0.01 mg per kg and rising in small steps, with skin colour measured by reflectance and side effects graded on the World Health Organization scale. Two men reached 0.03 mg per kg before fatigue, yawning and erections capped the dose at 0.025 mg per kg.",
+          "The two erectile-function studies were double-blind, placebo-controlled crossovers: each man received melanotan II and placebo on separate visits and spent six hours wired to a RigiScan, which records penile rigidity, with no sexual stimulation. Nausea, yawning and stretching were recorded at each visit.",
+          "None of this resembles how the product is used today. The trials involved a weighed dose, a sterile pharmaceutical preparation, continuous monitoring and a physician in the room."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials that have been run",
+      "items": [
+        "1996, Life Sciences (Dorr et al.): pilot dose-escalation in 3 healthy men. Tanning in 2 of 3, erections in all 3 at 0.025 mg per kg, nausea, yawning and fatigue; no symptoms at 6-month follow-up",
+        "1998, Journal of Urology (Wessells et al.): 10 men with psychogenic erectile dysfunction, double-blind crossover. Erections in 8 of 10; 38 vs 3 minutes of firm rigidity",
+        "2000, Urology (Wessells et al.): 10 men with organic erectile dysfunction, double-blind crossover. Erections after 12 of 19 drug injections vs 1 of 21 placebo; 45 vs 2 minutes; severe nausea after 4 of 19 injections",
+        "Since 2000: no published clinical trial. A 2021 literature search found only reviews and case reports; development moved to bremelanotide"
+      ]
+    },
+    "find": {
+      "text": "There is nothing to join. You can search the public registry yourself; we found no published melanotan II trial after 2000. The only melanocortin tanning peptide in regulated use is afamelanotide (Scenesse), for erythropoietic protoporphyria.",
+      "term": "melanotan",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "Never approved anywhere. Every melanotan II product on sale is unlicensed and untested.",
+    "items": [
+      {"tag": "no", "label": "Canada: not authorised", "text": "Health Canada has never authorised melanotan II, so no product containing it has a Drug Identification Number and none can legally be sold for human use in Canada. Products sold online or in salons as \"MT-2\" or \"tanning injections\" have not been checked for content, sterility or safety."},
+      {"tag": "no", "label": "United States: not approved", "text": "The FDA has never approved melanotan II. In a January 29, 2009 warning letter to an online seller, the FDA called melanotan II an unapproved new drug that could not legally be marketed. It is sold anyway by \"research chemical\" shops and some compounding websites."},
+      {"tag": "no", "label": "Australia: not approved", "text": "Australia's Therapeutic Goods Administration has never approved melanotan II. Supplying an unapproved medicine is illegal, and Australian media reported official warnings against the \"tanning drug\" as early as 2009."},
+      {"tag": "no", "label": "Europe: warnings since 2007", "text": "Norway's medicines agency warned against melanotan in December 2007 and again in 2009; Denmark's in 2008; the UK's MHRA in 2008 (\"'Tan jab' is an unlicensed medicine and may not be safe\"); and Ireland's medicines board in 2009. No European regulator has approved it."}
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "Illegal to sell, and nobody checks what is in the vial",
+        "text": "Melanotan II has never passed any regulator's review of manufacturing, purity or sterility. Products sold as MT-2, \"tanning injections\", \"Barbie peptide\" or tanning nasal sprays are made and shipped outside any licensed system.",
+        "items": [
+          "Regulators in at least five countries have said the same thing since 2007: unlicensed, untested, do not use. The FDA's 2009 letter called it an unapproved new drug.",
+          "The published case reports involve people who bought the product online or through gyms and salons and injected it themselves, often while using sunbeds.",
+          "The erection and desire effects that made melanotan II interesting were taken into bremelanotide (Vyleesi), which did go through controlled trials and still carries blood-pressure and skin-darkening warnings at a fixed, known dose. Melanotan II has no such data."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "warn",
+        "title": "If someone has already used melanotan II",
+        "text": "Stop, and see a doctor for a skin check. Dermatologists who published the case reports recommend urgent review if:",
+        "items": ["A new mole appears, or an existing mole grows, darkens unevenly, itches or bleeds", "An erection lasts more than four hours", "There is flank pain, blood in the urine or very dark urine", "There is muscle pain with dark urine, or persistent vomiting"],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect), FDA MedWatch (fda.gov/medwatch), or the UK Yellow Card scheme. Tell the doctor the product name and where it came from."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: how it relates to Vyleesi and Scenesse",
+        "paras": [
+          "People sometimes assume melanotan II is \"the same as\" an approved drug. It is not. Afamelanotide (Scenesse) is a different, more skin-selective molecule approved only for a rare light-sensitivity disorder, given as an implant under medical supervision. Bremelanotide (Vyleesi) is a modified melanotan II approved only for low sexual desire in premenopausal women, at a fixed dose, with contraindications for heart disease. Neither approval says anything about the safety of melanotan II, and both companies' trials excluded it."
+        ]
+      }
+    ],
+    "sources": [
+      {"text": "Dorr RT, Lines R, Levine N, Brooks C, Xiang L, Hruby VJ, Hadley ME. Evaluation of melanotan-II, a superpotent cyclic melanotropic peptide in a pilot phase-I clinical study. Life Sciences, 1996;58(20):1777–1784 (rat half-life 1.5 h; no human pharmacokinetics). Rat assay study: Ugwu SO et al., Biopharmaceutics & Drug Disposition, 1994;15(5):383–390.", "url": "https://experts.arizona.edu/en/publications/evaluation-of-melanotan-ii-a-superpotent-cyclic-melanotropic-pept/"},
+      {"text": "Wessells H, Fuciarelli K, Hansen J, Hadley ME, Hruby VJ, Dorr R, Levine N. Synthetic melanotropic peptide initiates erections in men with psychogenic erectile dysfunction: double-blind, placebo controlled crossover study. Journal of Urology, 1998;160(2):389–393.", "url": "https://pubmed.ncbi.nlm.nih.gov/9679884/"},
+      {"text": "Wessells H, Gralnek D, Dorr R, Hruby VJ, Hadley ME, Levine N. Effect of an alpha-melanocyte stimulating hormone analog on penile erection and sexual desire in men with organic erectile dysfunction. Urology, 2000;56(4):641–646. Pooled summary of both erectile-function studies (17 of 20 men; desire 68% vs 19%; severe nausea 12.9%): Wessells H et al., International Journal of Impotence Research, 2000;12(Suppl 4):S74–S79, https://www.nature.com/articles/3900582.pdf", "url": "https://experts.arizona.edu/en/publications/effect-of-an-alpha-melanocyte-stimulating-hormone-analog-on-penil/"},
+      {"text": "Hadley ME, Dorr RT. Melanocortin peptide therapeutics: historical milestones, clinical studies and commercialization. Peptides, 2006;27(4):921–930.", "url": "https://pubmed.ncbi.nlm.nih.gov/16412534/"},
+      {"text": "Hjuler KF, Lorentzen HF. Melanoma associated with the use of melanotan-II. Dermatology, 2014;228(1):34–36 (cites Paurobally 2011 melanoma, Cousen 2009 eruptive naevi, Mang 2012 dermoscopic changes).", "url": "https://karger.com/drm/article/228/1/34/114247"},
+      {"text": "Javed M, et al. Does melanotan injections (tan jab) cause melanoma? A systematic review of the effects of melanotan injections. International Journal of Surgery, 2013.", "url": "https://www.sciencedirect.com/science/article/pii/S174391911300647X"},
+      {"text": "Langan EA, Ramlogan D, Jamieson LA, Rhodes LE. Change in moles linked to use of unlicensed \"sun tan jab\". BMJ, 2009;338:b277.", "url": "https://pubmed.ncbi.nlm.nih.gov/19174439/"},
+      {"text": "BestBETs (Manchester Royal Infirmary emergency medicine), Melanotan II adverse reactions: evidence review to November 2021, summarising Peters 2020 (renal infarction), Dreyer 2019 and Mallory 2021 (priapism) and Habbema 2017 (review).", "url": "https://www.bestbets.org/?p=6703"},
+      {"text": "Reactions Weekly, Melanotan II overdose: rhabdomyolysis, case report (Nelson ME, Bryant SM, Aks SE, Clinical Toxicology 2012), November 3, 2012.", "url": "https://www.proquest.com/docview/1399549294"},
+      {"text": "U.S. FDA, warning letter to US Lab Research Inc. regarding melanotan II, January 29, 2009 (archived).", "url": "https://web.archive.org/web/20090710061631/https://www.fda.gov/ICECI/EnforcementActions/WarningLetters/ucm152426.htm"},
+      {"text": "UK Medicines and Healthcare products Regulatory Agency, press release: 'Tan jab' is an unlicensed medicine and may not be safe, 2008 (archived).", "url": "https://web.archive.org/web/20081218195906/http://www.mhra.gov.uk/NewsCentre/Pressreleases/CON031009"},
+      {"text": "Palatin Technologies, press release: Palatin Technologies announces litigation settlement with Competitive Technologies (melanotan II rights returned, bremelanotide retained), January 22, 2008.", "url": "https://web.archive.org/web/20170406204527/http://www.prnewswire.com/news-releases/palatin-technologies-announces-litigation-settlement-with-competitive-technologies-57107302.html"}
+    ]
+  }
+}

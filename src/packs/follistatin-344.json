@@ -1,0 +1,187 @@
+{
+  "id": "follistatin-344",
+  "name": "Follistatin 344 (FST-344)",
+  "brands": "",
+  "maker": "Natural protein; gene therapy developed at Nationwide Children's Hospital with Milo Biotechnology",
+  "group": "research",
+  "pill": "Unapproved",
+  "overview": {
+    "headline": "A natural muscle-growth regulator. The only human data come from a gene therapy in fifteen patients; the injectable protein sold online has never been tested.",
+    "lede": "Follistatin is a protein your body makes that binds and blocks myostatin and activins, the signals that limit muscle growth. FST-344 is the full-length form the gene produces. Between 2012 and 2017 a team at Nationwide Children's Hospital injected a virus carrying the follistatin gene into the thigh muscles of six men with Becker muscular dystrophy, six with inclusion body myositis and three boys with Duchenne. That is the sum of human exposure. Vendors sell a recombinant 'follistatin 344' protein for injection; no human has received it in a study, and WADA bans it by name.",
+    "stats": [
+      {"num": "15", "lbl": "people ever treated, all with a gene therapy injected into muscle, not with the protein", "src": "Mendell 2015 (6), Mendell 2017 (6), NCT02354781 (3)"},
+      {"num": "4 of 6", "lbl": "Becker patients whose six-minute walk distance improved, by 29 to 125 metres; two did not change", "src": "Mendell et al., Molecular Therapy 2015"},
+      {"num": "Banned", "lbl": "at all times by WADA, which names follistatin as a myostatin-binding protein", "src": "2026 Prohibited List, S4.3"}
+    ],
+    "mechanism": {
+      "intro": "Follistatin soaks up myostatin and activin, releasing the brake on muscle growth.",
+      "parts": [
+        {"name": "The myostatin brake", "text": "Myostatin tells muscle to stop growing; animals and rare humans born without it are heavily muscled. Follistatin binds myostatin and related activins so they cannot signal."},
+        {"name": "FST-344 and its relatives", "text": "The gene makes two splice forms. FST-344 is the precursor of the circulating form; the shorter FST-288 sticks to cell surfaces and acts on the ovaries, pituitary and other tissues. The trials used the 344 form specifically to limit off-target effects."},
+        {"name": "Protein versus gene", "text": "The trials never injected follistatin protein. They delivered its gene inside an AAV1 virus so the muscle made it continuously, in the muscle. An injected protein is a different thing: it would act body-wide and its fate in the body has never been measured."}
+      ]
+    },
+    "more": {
+      "title": "More: why 'blocking myostatin' is a hard target",
+      "paras": [
+        "Several drugs designed to block myostatin have been tested in muscle diseases and failed to show functional benefit. Follistatin is broader, hitting activins as well, which is why the gene therapy confined it to muscle. None of that nuance survives in a vial sold online. Sources are listed under the Status tab."
+      ]
+    }
+  },
+  "results": {
+    "headline": "Small, uncontrolled gene-therapy studies showed walking gains in some patients. Nothing exists for the injected protein.",
+    "lede": "No placebo-controlled trial has been run, so there is no chart. Here is what the three studies found.",
+    "chart": null,
+    "stats": [
+      {"num": "+56 vs -26 m/yr", "lbl": "change in six-minute walk distance per year, six treated inclusion body myositis patients vs eight untreated clinic patients (p=0.01)", "src": "Mendell et al., Molecular Therapy 2017"}
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {"b": "Becker muscular dystrophy (2015).", "t": "Six men, two dose groups, gene injected into both thigh muscles. Four improved their six-minute walk (by 58, 125, 108 and 29 metres); two did not. Biopsies showed less scarring and larger fibres, more so at the higher dose. No control group."},
+        {"b": "Inclusion body myositis (2017).", "t": "Six men compared with eight untreated clinic patients matched for age and walking ability. Treated patients gained a median 56 metres a year on the walk test while controls lost 26. All treated patients also took prednisone around the injections and followed an exercise programme, which the authors acknowledge could have contributed."},
+        {"b": "Duchenne muscular dystrophy (2015-2017).", "t": "Three boys treated (NCT02354781), completed November 2017, results posted to the registry in January 2020 and the programme listed as inactive. No peer-reviewed paper."},
+        {"b": "Injected follistatin protein.", "t": "No human study. The protein sold online is not what the trials gave."}
+      ]
+    },
+    "more": [
+      {
+        "title": "More: why these results are preliminary",
+        "paras": [
+          "Fifteen patients, no randomisation, no placebo, and in the myositis study a steroid and exercise programme running alongside. The walk-test gains cannot be separated from training, expectation and natural variation, and the programme never advanced to a controlled trial."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "No treatment-related side effects in fifteen gene-therapy patients. Nothing is known about the injected protein.",
+    "lede": "The gene-therapy studies reported no adverse effects attributed to treatment, under steroid cover and close monitoring. That tells you nothing about a recombinant protein from an unregulated source.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "None reported in the gene-therapy studies. Not applicable to the injected protein, which has never been studied."
+    },
+    "unique": {
+      "title": "Why blocking myostatin and activin is not free",
+      "text": "Follistatin also binds activins, which regulate the pituitary (FSH), ovaries and testes, liver and inflammation. The trials used the 344 form and injected it into muscle to keep it local. An injected protein acts everywhere, and one made without oversight can carry contaminants that provoke immune reactions. For athletes, the certain risk is a doping violation: follistatin is named on the WADA list."
+    },
+    "more": [
+      {
+        "title": "More: what the trials monitored for",
+        "paras": [
+          "Immune reactions to the vector and to follistatin, muscle enzymes, hormones and biopsies, with prednisone given around the injections. Follow-up ran six months to a year."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "Thicker muscle fibres and less scarring on biopsy in the Becker study. Whether any of that would follow an injected protein is unknown."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms doctors treat as urgent after any injected product",
+      "items": [
+        "Swelling of the face or throat, trouble breathing, hives",
+        "Fever, spreading redness or pus at an injection site",
+        "Muscle pain with dark or cola-coloured urine",
+        "Unusual tiredness, yellowing of the skin or eyes"
+      ],
+      "note": "Anyone with these symptoms should get medical care right away and bring the product with them."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "The trials delivered a gene, not a protein, so there is no half-life or dose ladder to model: the muscle made follistatin continuously after a single set of injections. No human has been given follistatin protein in a study, so no blood-level data exist for the product sold online.",
+    "stats": [
+      {"num": "344", "lbl": "amino acids in the precursor form that gives FST-344 its name", "src": "Chemical identity"},
+      {"num": "1", "lbl": "treatment session in each trial: a single set of muscle injections of the gene, not repeated doses", "src": "Mendell 2015; Mendell 2017"},
+      {"num": "0", "lbl": "human studies of injected follistatin protein", "src": "Published literature"}
+    ],
+    "explain": [
+      {"b": "Why there is no chart.", "t": "A gene therapy has no blood level to track, and the protein has never been measured in people."},
+      {"b": "Why the vial is not the trial.", "t": "The trials made follistatin inside muscle cells. A protein injected under the skin must survive in blood, reach muscle and avoid the ovaries, testes and pituitary. None of that has been shown."}
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: what this page cannot tell you",
+        "paras": [
+          "It cannot tell you whether a vial sold as follistatin 344 contains active protein, how much reaches muscle, or what it does to hormones. The gene-therapy data cannot be borrowed to answer those questions."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "Three small gene-therapy studies, finished by 2017. No trial of the protein.",
+    "lede": "Here is the full human record.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: how the gene-therapy trials were run",
+        "paras": [
+          "Patients received one set of injections of the AAV1 vector into both quadriceps (and, in the Duchenne study, other leg muscles), guided by imaging and EMG, with prednisone around the procedure, then walk tests, strength measures and biopsies for up to a year."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials that have been run",
+      "items": [
+        "Phase 1/2a, Becker muscular dystrophy, six men, Nationwide Children's Hospital / Milo Biotechnology (NCT01519349): four of six improved their six-minute walk; no adverse effects (Mendell et al., Molecular Therapy 2015).",
+        "Phase 1, sporadic inclusion body myositis, six men vs eight untreated controls: median +56 m/year vs -26 m/year; no treatment-related adverse events; prednisone and exercise given alongside (Mendell et al., Molecular Therapy 2017).",
+        "Phase 1/2, Duchenne muscular dystrophy, three boys (NCT02354781): completed November 2017, results posted January 2020, programme inactive.",
+        "No trial of injected follistatin protein has ever been registered."
+      ]
+    },
+    "find": {
+      "text": "No follistatin trial is known to be recruiting. The registry term below shows the completed gene-therapy studies.",
+      "term": "follistatin",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "Not approved anywhere. Banned in sport by name.",
+    "items": [
+      {"tag": "no", "label": "Canada: not authorized", "text": "Health Canada has not authorized any follistatin product. It regulates injectable peptides and proteins as prescription drugs, said in April 2026 that unauthorized injectable peptide drugs are illegal in Canada, and in July 2026 obtained a permanent injunction against the Quebec seller Canlab Research."},
+      {"tag": "no", "label": "US: not approved", "text": "The FDA has never approved follistatin or the follistatin gene therapy. Follistatin does not appear on the FDA's Category 2 or withdrawn-nomination lists for compounding (April 2026), so no pharmacy has a basis to compound it. Sold for people, it is an unapproved drug; the FDA's August 24, 2026 warning letters rejected 'research use only' disclaimers."},
+      {"tag": "no", "label": "Sport: prohibited at all times", "text": "The 2026 WADA Prohibited List names follistatin under S4.3, 'myostatin inhibitors: myostatin-binding proteins (e.g. follistatin, myostatin propeptide)'. Gene therapy to raise follistatin would also fall under M3, gene doping."}
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "What 'research use only' means",
+        "text": "Vials sold as follistatin 344 carry 'for research use only' labels. That describes a product meant for laboratory work, not people. It does not mean the contents were tested, and it does not make the sale legal once the seller markets the product for human use.",
+        "items": [
+          "Health Canada: injectable peptides are prescription drugs; unauthorized ones are illegal to sell (2025 and 2026 notices).",
+          "FDA warning letters, August 24, 2026: the disclaimer does not control when a website shows the product is intended as a drug for people.",
+          "Follistatin is a large, folded protein that is hard to make correctly; nobody independently checks what is in the vial."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "warn",
+        "title": "Symptoms to take to a doctor",
+        "text": "Anyone who has injected a product sold as follistatin should tell a doctor, especially with any of the following:",
+        "items": ["Fever, redness or pus at an injection site", "Hives, swelling or wheezing", "Changes in periods, libido or breast tissue", "Muscle pain with dark urine"],
+        "note": "Athletes should also know that use is a doping violation. Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: the gap between a gene therapy and a vial",
+        "paras": [
+          "The gene therapy was an academic programme in rare muscle diseases, run under FDA oversight. The 'follistatin 344' sold to bodybuilders is a recombinant protein of unverified origin, marketed on the back of those fifteen patients. The two share a name and nothing else that has been tested."
+        ]
+      }
+    ],
+    "sources": [
+      {"text": "Mendell JR, Sahenk Z, Malik V et al. A phase 1/2a follistatin gene therapy trial for Becker muscular dystrophy. Molecular Therapy 2015 (online October 2014).", "url": "https://www.sigmaaldrich.com/PL/en/tech-docs/paper/537310"},
+      {"text": "Mendell JR, Sahenk Z, Al-Zaidy S et al. Follistatin gene therapy for sporadic inclusion body myositis improves functional outcomes. Molecular Therapy 2017;25(4).", "url": "https://www.myositis.org/wp-content/uploads/2018/02/Follistatin_gene_therapy_for_IBM_-_2017.pdf"},
+      {"text": "ClinicalTrials.gov NCT02354781. Clinical intramuscular gene transfer of rAAV1.CMV.huFollistatin344 to patients with Duchenne muscular dystrophy (completed November 2017; results posted January 2020).", "url": "https://clinicaltrials.gov/study/NCT02354781"},
+      {"text": "Muscular Dystrophy News. New follistatin gene therapy improves function in Becker muscular dystrophy, October 31, 2014 (sponsor and trial description).", "url": "https://musculardystrophynews.com/news/new-follistatin-gene-therapy-improves-function-in-becker-muscular-dystrophy/"},
+      {"text": "World Anti-Doping Agency. The 2026 Prohibited List (S4.3 myostatin inhibitors, follistatin named; M3 gene doping).", "url": "https://pgtofindia.com/storage/app/anti_doping_link/pdf/Prohibited-List-2026.pdf"},
+      {"text": "Smart & Biggar. Health Canada obtains permanent injunction against Canlab Research (April 2026 warning; July 29, 2026 injunction), August 25, 2026.", "url": "https://www.smartbiggar.ca/insights/publication/health-canada-obtains-permanent-injunction-to-prevent-illegal-sale-of-injectable-peptides-by-canlab-research"},
+      {"text": "U.S. FDA. Certain bulk drug substances for use in compounding that may present significant safety risks (follistatin not listed), content current as of April 22, 2026; ArentFox Schiff on the August 24, 2026 warning letters.", "url": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks"}
+    ]
+  }
+}

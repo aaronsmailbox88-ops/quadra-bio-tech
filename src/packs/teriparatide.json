@@ -1,0 +1,389 @@
+{
+  "id": "teriparatide",
+  "name": "Teriparatide",
+  "brands": "Forteo (Forsteo in Europe), generics and biosimilars",
+  "maker": "Eli Lilly",
+  "group": "approved",
+  "pill": "Approved",
+  "overview": {
+    "headline": "A daily injection of a parathyroid hormone fragment that builds new bone in severe osteoporosis.",
+    "lede": "Teriparatide is the first 34 amino acids of human parathyroid hormone. Lilly's Forteo was approved by the FDA in 2002 and is approved in Canada and Europe; generics and biosimilars exist. It is a prescription pen injection. Vials sold online as teriparatide or \"PTH 1-34\" are not the approved drug.",
+    "stats": [
+      {
+        "num": "65%",
+        "lbl": "fewer new spinal fractures than placebo over about 19 months",
+        "src": "Fracture Prevention Trial, 1,637 women"
+      },
+      {
+        "num": "~1 hour",
+        "lbl": "half-life: gone from the blood within hours of each dose",
+        "src": "FDA label"
+      },
+      {
+        "num": "2002",
+        "lbl": "first approval (U.S.); boxed warning removed in 2020",
+        "src": "FDA; label revised Aug 2026"
+      }
+    ],
+    "mechanism": {
+      "intro": "A short daily pulse of parathyroid hormone tells bone-building cells to work harder.",
+      "parts": [
+        {
+          "name": "PTH receptor",
+          "text": "Brief daily pulses stimulate osteoblasts, the cells that lay down bone, more than the cells that remove it. Constantly high PTH does the opposite, which is why dose and timing matter."
+        },
+        {
+          "name": "Anabolic, not anti-resorptive",
+          "text": "Most osteoporosis drugs slow bone loss. Teriparatide builds bone: spine density rose about 9 percentage points more than placebo in the pivotal trial."
+        }
+      ]
+    },
+    "more": {
+      "title": "More: how it is used in practice",
+      "paras": [
+        "It is reserved for people at high fracture risk or who cannot take other treatments. The only approved regimen is 20 µg a day; a clinician teaches the pen and checks blood calcium. A bone-preserving drug usually follows, because gains are lost after stopping.",
+        "The U.S. lifted its two-year lifetime limit in 2020; Europe still caps a course at 24 months. Sources are under the Status tab."
+      ]
+    }
+  },
+  "results": {
+    "headline": "Fewer fractures, denser bone.",
+    "lede": "The Fracture Prevention Trial randomised 1,637 postmenopausal women with prior spinal fractures to teriparatide 20 µg or 40 µg daily or placebo. It was stopped early, after a median of 19 months of injections, because of a rat tumour finding, but the fracture result was already clear.",
+    "chart": {
+      "metric": "other",
+      "unit": "%",
+      "legend": [
+        "Teriparatide 20 µg daily",
+        "Placebo"
+      ],
+      "rows": [
+        {
+          "name": "New vertebral fractures",
+          "meta": "Fracture Prevention Trial · median 19 months · women with paired spine X-rays",
+          "drug": 5,
+          "placebo": 14,
+          "tip": "Teriparatide 20 µg: 5.0% vs placebo 14.3% (65% relative reduction)"
+        },
+        {
+          "name": "Non-vertebral fractures",
+          "meta": "Fracture Prevention Trial · median 19 months · osteoporotic fractures outside the spine",
+          "drug": 3,
+          "placebo": 6,
+          "tip": "Teriparatide 20 µg: 2.6% vs placebo 5.5% (53% relative reduction)"
+        }
+      ],
+      "max": 20,
+      "note": "Share of women with at least one new fracture. Vertebral fractures were read on X-rays in 892 women (444 on 20 µg, 448 on placebo). Relative risk 0.35 vertebral, 0.47 non-vertebral (NEJM 2001).",
+      "signed": false
+    },
+    "stats": [
+      {
+        "num": "+9 points",
+        "lbl": "extra lumbar spine bone density versus placebo on 20 µg; +3 at the femoral neck",
+        "src": "Neer et al., NEJM 2001"
+      },
+      {
+        "num": "40 µg",
+        "lbl": "built more bone but did not cut fractures further and caused more side effects; never approved",
+        "src": "Neer et al., NEJM 2001"
+      }
+    ],
+    "beyond": {
+      "title": "Beyond the spine",
+      "items": [
+        {
+          "b": "Men and steroid users.",
+          "t": "Separate trials led to approval for men with osteoporosis and for osteoporosis caused by long-term glucocorticoids."
+        },
+        {
+          "b": "Back pain.",
+          "t": "The pivotal trial reported less new or worsening back pain, in line with fewer spinal fractures."
+        },
+        {
+          "b": "After stopping.",
+          "t": "Bone gained is lost unless an anti-resorptive drug follows, which is now standard practice."
+        }
+      ]
+    },
+    "more": [
+      {
+        "title": "More: why the trial stopped early",
+        "paras": [
+          "The plan was three years. A rat study found bone tumours (osteosarcoma) in animals given daily teriparatide for most of their lives at doses well above the human dose, so the trial was halted after a median of 19 months. The fracture benefit had already emerged, and the FDA approved the drug in 2002 with a boxed warning."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "Mild and short-lived; the long-shadow question was bone cancer.",
+    "lede": "In the two main trials, side effects ran close to placebo. Trial teams watch for brief rises in blood calcium, light-headedness or fainting after a dose, and leg cramps.",
+    "chart": {
+      "eyebrow": "Two principal trials · share of people affected",
+      "legend": [
+        "Teriparatide 20 µg daily",
+        "Placebo"
+      ],
+      "rows": [
+        {
+          "name": "Joint pain (arthralgia)",
+          "drug": 10.1,
+          "placebo": 8.4
+        },
+        {
+          "name": "Nausea",
+          "drug": 8.5,
+          "placebo": 6.7
+        },
+        {
+          "name": "Dizziness",
+          "drug": 8.0,
+          "placebo": 5.4
+        },
+        {
+          "name": "Headache",
+          "drug": 7.5,
+          "placebo": 7.4
+        },
+        {
+          "name": "Leg cramps",
+          "drug": 2.6,
+          "placebo": 1.3
+        },
+        {
+          "name": "Fainting (syncope)",
+          "drug": 2.6,
+          "placebo": 1.4
+        }
+      ],
+      "max": 15,
+      "note": "691 people on teriparatide 20 µg and 691 on placebo, pooled in the FDA label. A transient high calcium reading 4–6 hours after a dose: 11% of women and 6% of men on teriparatide vs 2% and 0% on placebo."
+    },
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "The label gives no pooled figure. The NEJM paper reports that 40 µg caused side effects more often than 20 µg with similar fracture benefit, which is why only the lower dose was approved."
+    },
+    "unique": {
+      "title": "Osteosarcoma: the warning that was lifted",
+      "text": "Rats given lifelong daily teriparatide developed osteosarcoma, so Forteo launched in 2002 with a boxed warning and a two-year lifetime limit. Fifteen years of U.S. surveillance found 3 confirmed cases in users versus 4.2 expected, and a 75,000-patient registry found none. The FDA removed the boxed warning and the fixed cap on 16 November 2020, keeping a warning to avoid the drug in people with open growth plates, Paget's disease, prior skeletal radiation, bone metastases or hereditary cancer syndromes. Europe still limits a course to 24 months."
+    },
+    "more": [
+      {
+        "title": "More: what the trials monitor for",
+        "paras": [
+          "Calcium. A transient rise peaks 4–6 hours after a dose and settles within a day; the drug is avoided in people with high calcium or primary hyperparathyroidism, and weighed carefully after recent kidney stones.",
+          "Blood pressure. Brief drops on standing occurred in about 5% of healthy volunteers, usually within 4 hours of the first few doses.",
+          "Allergy. The label's hypersensitivity warning was revised in August 2026; serious allergic reactions have been reported since marketing."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "Fewer fractures, denser bone and less back pain. There is no weight, mood or energy effect; claims of injury-healing or anti-aging benefit come from sellers, not trials."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms trial teams treat as urgent",
+      "items": [
+        "Persistent nausea, vomiting, constipation, weakness or confusion (possible high calcium)",
+        "Fainting, or a fall after a dose",
+        "Severe pain in a bone, or a new lump or swelling over a bone",
+        "Severe flank pain or blood in the urine (kidney stone)",
+        "Swelling of the face or throat, hives, trouble breathing"
+      ],
+      "note": "Anyone with these symptoms, on a prescription or on a product bought online, should get medical care right away."
+    }
+  },
+  "levels": {
+    "pk": {
+      "half": 0.04,
+      "tmax": 0.02,
+      "ladder": [
+        0.02
+      ],
+      "stepDays": 1,
+      "tau": 1,
+      "maxDose": 0.02,
+      "refLabel": "20 µg daily",
+      "source": "FDA label (Aug 2026): peak about 30 minutes after a 20 µg injection, half-life about 1 hour, bioavailability about 95%"
+    },
+    "nopk": "",
+    "stats": [
+      {
+        "num": "~1 hour",
+        "lbl": "half-life: the time for the blood level to fall by half",
+        "src": "FDA label"
+      },
+      {
+        "num": "~30 min",
+        "lbl": "time to peak after an injection under the skin",
+        "src": "FDA label"
+      },
+      {
+        "num": "~5 hours",
+        "lbl": "to clear about 97% of a dose; the rest of the day has no drug in the blood",
+        "src": "Five half-lives"
+      }
+    ],
+    "explain": [
+      {
+        "b": "Why a pulse, not a steady level.",
+        "t": "Bone-building cells respond to a brief daily surge of PTH; a constant high level removes bone. The short half-life is the design."
+      },
+      {
+        "b": "Why calcium is checked hours after a dose.",
+        "t": "The calcium rise peaks 4–6 hours after injection and is back to baseline by the next day, tracking the drug."
+      },
+      {
+        "b": "Why there is no dose ladder.",
+        "t": "One fixed dose from day one. The 40 µg dose added side effects without cutting fractures further."
+      }
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: the model behind the chart",
+        "paras": [
+          "A one-compartment model with the label's numbers: peak at 30 minutes, half-life 1 hour, one injection a day. The interval is about 24 half-lives, so nothing accumulates and the curve is a series of identical spikes. 100% is the peak after 20 µg."
+        ]
+      },
+      {
+        "title": "More: what this chart cannot tell you",
+        "paras": [
+          "It models the approved regimen, not a person, and measures nothing. It says nothing about vials sold online as teriparatide or \"PTH 1-34\", whose content, strength and sterility are unverified."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "How teriparatide was tested, and what the approved treatment looks like.",
+    "lede": "Teriparatide is a prescription medicine, so trials are no longer the route to it. The labelled regimen is reported here as a fact, not as instructions.",
+    "ladder": {
+      "title": "The approved regimen",
+      "text": "The label specifies one dose: 20 µg under the skin once a day from a pre-filled pen, with calcium and vitamin D if dietary intake is low. There is no escalation. In the U.S., use beyond two years is considered only if fracture risk stays high; in Europe the course is capped at 24 months.",
+      "steps": [
+        {
+          "d": "20 µg",
+          "t": "daily, from day one"
+        }
+      ],
+      "note": "The pivotal trial also tested 40 µg daily, which raised bone density further but did not reduce fractures more and caused more side effects."
+    },
+    "more": [
+      {
+        "title": "More: how side effects were handled inside the trials",
+        "paras": [
+          "Blood calcium was measured after dosing and anyone with a sustained rise had the dose adjusted or stopped. Fracture outcomes were read from X-rays by radiologists blind to treatment.",
+          "None of this transfers to a product bought online. The approved drug is a calibrated pen; a powder mixed at home has none of its dose accuracy or sterility assurance."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials still running",
+      "items": [
+        "Registered studies now mostly compare sequences of osteoporosis drugs (teriparatide followed by or combined with anti-resorptive drugs) rather than test teriparatide against placebo",
+        "Studies in fracture healing and in groups such as glucocorticoid users continue to be registered; results are posted on ClinicalTrials.gov"
+      ]
+    },
+    "find": {
+      "text": "Teriparatide is available by prescription in Canada, the U.S. and Europe. For current research, search the public registry.",
+      "term": "teriparatide",
+      "extra": {
+        "label": "FDA label (Forteo)",
+        "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/021318s059lbl.pdf"
+      }
+    }
+  },
+  "status": {
+    "headline": "Approved for osteoporosis in Canada, the U.S. and Europe. Anything sold online as a \"research peptide\" is not the approved drug.",
+    "items": [
+      {
+        "tag": "ok",
+        "label": "Canada: approved",
+        "text": "Forteo is authorised by Health Canada for osteoporosis at high fracture risk, by prescription only."
+      },
+      {
+        "tag": "ok",
+        "label": "U.S.: approved",
+        "text": "FDA-approved since 2002. Boxed warning and two-year cap removed 16 November 2020; label last revised August 2026. Generic and follow-on products approved since 2019."
+      },
+      {
+        "tag": "ok",
+        "label": "Europe and elsewhere: approved",
+        "text": "Forsteo and biosimilars are approved in the EU; the EU label still limits treatment to one 24-month course in a lifetime."
+      },
+      {
+        "tag": "no",
+        "label": "Grey market",
+        "text": "Vials sold by \"research peptide\" shops as teriparatide or \"PTH 1-34\" are unapproved. Selling them for human use is illegal in Canada and the U.S."
+      }
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "What the online product is, and is not",
+        "text": "The approved drug is a sterile solution in a calibrated pen, 20 µg per dose, dispensed by prescription. The online product is a freeze-dried powder labelled \"teriparatide 2 mg\" or \"PTH 1-34\", sold \"for research only\".",
+        "items": [
+          "Content, purity and dose are unverified; a daily injection taken for months magnifies sterility and dosing errors.",
+          "Buyers skip the label's checks: blood calcium, kidney-stone history, and exclusion of people at higher osteosarcoma risk.",
+          "No human evidence that teriparatide heals injuries, changes body composition or slows aging."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "warn",
+        "title": "Symptoms to take to a doctor",
+        "text": "Anyone who has used a teriparatide product, prescribed or not, should seek care for:",
+        "items": [
+          "Persistent nausea, vomiting, constipation, weakness or confusion (high calcium)",
+          "Fainting or light-headedness after injections",
+          "New bone pain, a lump over a bone, or unexplained swelling",
+          "Hives, facial swelling or breathing difficulty"
+        ],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: the two-year question",
+        "paras": [
+          "The U.S. label changed in 2020 because surveillance found no excess bone cancer: 3 confirmed cases over 15 years versus 4.2 expected, no matches in a 75,247-patient registry, and no signal in Medicare or insurance-claims studies. Europe kept its 24-month cap. Both labels still exclude people whose baseline osteosarcoma risk is raised."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "text": "U.S. FDA, FORTEO (teriparatide injection) prescribing information, revised August 2026 (dosing, adverse reactions table, pharmacokinetics, fracture results).",
+        "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/021318s059lbl.pdf"
+      },
+      {
+        "text": "Neer RM et al. Effect of parathyroid hormone (1-34) on fractures and bone mineral density in postmenopausal women with osteoporosis. New England Journal of Medicine, 2001.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/11346808/"
+      },
+      {
+        "text": "Krege JH et al. Teriparatide and osteosarcoma risk: history, science, elimination of boxed warning, and other label updates. JBMR Plus, 2022.",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9465003"
+      },
+      {
+        "text": "U.S. FDA, original FORTEO label at approval, 2002 (boxed warning and 2-year limit as first issued).",
+        "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2002/21318_forteo_lbl.pdf"
+      },
+      {
+        "text": "Eli Lilly, FORTEO U.S. prescribing information (current online version).",
+        "url": "https://uspl.lilly.com/forteo/forteo.html"
+      },
+      {
+        "text": "Forsteo 20 micrograms/80 microlitres, EU Summary of Product Characteristics (24-month maximum course, half-life about 1 hour, undesirable effects).",
+        "url": "https://www.medicines.org.uk/emc/product/2215/smpc/print"
+      },
+      {
+        "text": "Lilly Medical, What is known about the pharmacokinetics of Forteo (teriparatide) injection.",
+        "url": "https://medical.lilly.com/us/products/assets/vaultpdf/en/cadb07d1caf804ad9a5bb8da9e952032b54055043ff5b88edc8817f27462ffec/what-is-known-about-the-pharmacokinetics-of-forteo-teriparatide-injection"
+      },
+      {
+        "text": "Cleveland Clinic Journal of Medicine, review of the teriparatide label update, 2021.",
+        "url": "https://www.ccjm.org/content/88/9/489.full.pdf"
+      }
+    ]
+  }
+}

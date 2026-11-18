@@ -1,0 +1,202 @@
+{
+  "id": "selank",
+  "name": "Selank",
+  "brands": "Selank 0.15% nasal drops (Russia)",
+  "maker": "Peptogen, from the Institute of Molecular Genetics, Russian Academy of Sciences",
+  "group": "approved",
+  "pill": "Approved (Russia only)",
+  "overview": {
+    "headline": "A Russian nasal-drop anxiety medicine built from a fragment of an immune peptide.",
+    "lede": "Selank is a seven-amino-acid peptide developed in Moscow and sold in Russia as over-the-counter nasal drops for anxiety and stress-related complaints. No regulator outside Russia and its neighbours has reviewed it. In Canada and the U.S. it is an unapproved drug, sold only by \"research chemical\" vendors.",
+    "stats": [
+      {"num": "2009", "lbl": "first registered in Russia as 0.15% nasal drops; re-registered July 2025", "src": "Russian drug register, via Vidal"},
+      {"num": "~60", "lbl": "patients in each of the three main Russian comparative trials", "src": "Zozulya 2008; Medvedev 2014 and 2015"},
+      {"num": "0", "lbl": "placebo-controlled or double-blind trials published in any language", "src": "Our review, October 2026"}
+    ],
+    "mechanism": {
+      "intro": "Selank is tuftsin, a four-amino-acid piece of an antibody, with three extra amino acids added to slow its breakdown.",
+      "parts": [
+        {"name": "Tuftsin core", "text": "Tuftsin is a natural fragment of immunoglobulin G that activates immune cells. Adding Pro-Gly-Pro to the end makes the molecule last longer in the body."},
+        {"name": "Brain chemistry", "text": "In rats, selank changes the activity of GABA, serotonin and enkephalin systems. These animal findings are the basis for calling it an anxiolytic. How much of this happens in people is not established."}
+      ]
+    },
+    "more": {
+      "title": "More: where it comes from",
+      "paras": [
+        "Selank (Thr-Lys-Pro-Arg-Pro-Gly-Pro) was designed at the Institute of Molecular Genetics in Moscow by the group of Nikolai Myasoedov, the same group that made semax. The company Peptogen holds the Russian registration.",
+        "The Russian label lists anxiety states including panic attacks, neurasthenia, mood instability, sleep problems and adjustment disorders, and states it is not for use under 18 or in pregnancy. Everything on this page comes from the Russian label, the published Russian trials, and regulator documents listed under Status."
+      ]
+    }
+  },
+  "results": {
+    "headline": "Three small Russian trials against benzodiazepines, none against placebo.",
+    "lede": "The human evidence is a handful of open comparisons published in Russian journals between 2008 and 2015. They report an anti-anxiety effect similar to a benzodiazepine, but no trial has included a placebo group, so the size of any real effect is unknown.",
+    "chart": null,
+    "stats": [
+      {"num": "62", "lbl": "patients with generalized anxiety disorder or neurasthenia in the 2008 trial, 30 on selank, 32 on medazepam, for 14 days", "src": "Zozulya 2008, Russian journal"},
+      {"num": "~1 week", "lbl": "how long the authors say the effect lasted after the last dose in the 2014 comparison with phenazepam", "src": "Medvedev 2014, 60 patients"}
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {"b": "Human, Russian-registered.", "t": "Zozulya 2008 (62 patients) found anxiety scores fell about as much on selank as on the benzodiazepine medazepam over two weeks, with less sedation. Medvedev 2014 (60 patients) and 2015 (70 patients) compared selank, alone or added on, with phenazepam and reported fewer benzodiazepine side effects when selank was added."},
+        {"b": "Immune markers.", "t": "A 2008 study in anxiety patients reported shifts in cytokine levels and lower IL-6 gene expression after 14 days. It is a mechanism study, not an outcome trial."},
+        {"b": "Animal only.", "t": "Claims about memory, learning, gene expression and antiviral effects come from rats and cell cultures."},
+        {"b": "Western review.", "t": "None. No trial has been registered or published outside Russia. The FDA put selank in its \"significant safety risk\" category in 2023, and no advisory committee has examined it since."}
+      ]
+    },
+    "more": [
+      {
+        "title": "More: why open comparisons are weak evidence",
+        "paras": [
+          "Anxiety improves on placebo in roughly a third of trial participants, so a study with no placebo group cannot separate a drug effect from expectation and time. Comparing against a benzodiazepine shows only that both groups improved. The Russian papers also do not report randomisation or blinding in their abstracts, and the full texts are in Russian."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "Few side effects reported, but no one has looked very hard.",
+    "lede": "The Russian label lists only allergic reactions and an unpleasant taste as the drops run to the throat. The trials did not collect side effects in a systematic, comparative way.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "Not reported. None of the published trials gives a discontinuation rate, and there is no placebo group to compare against."
+    },
+    "unique": {
+      "title": "What has actually been reported",
+      "text": "Allergic reactions in people with intolerance, a bad taste, and nasal irritation. The 2015 trial reported that adding selank reduced the sedation, memory and attention problems caused by phenazepam. No serious adverse events appear in the published trials, but with roughly 200 patients studied in total, rare harms would not have been detected."
+    },
+    "more": [
+      {
+        "title": "More: what the trials monitor for",
+        "paras": [
+          "The Russian trials used standard anxiety and depression rating scales and, in one, a side-effect scale (UKU). No blood tests, immune monitoring or long-term follow-up are described. The label excludes pregnancy, breastfeeding and anyone under 18.",
+          "Because selank acts on the immune system in animals, long-term immune effects in people are a reasonable question that no study has answered."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "The Russian authors describe a mild \"nootropic\" effect (better attention and verbal fluency on tests) and better quality-of-life scores. Both come from unblinded trials."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms trial teams treat as urgent",
+      "items": [
+        "Swelling of the face, lips or throat, hives, or trouble breathing after a dose",
+        "A panic attack or anxiety that is getting worse rather than better",
+        "Thoughts of self-harm",
+        "Fainting, chest pain or a racing heartbeat"
+      ],
+      "note": "Anyone with these symptoms should get medical care right away, whatever product they have used."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "No blood-level study of selank in people has been published in a peer-reviewed journal. The Russian label states that after a nasal dose the peptide appears in blood within about 30 seconds and is gone within about 5 minutes, broken down by tissue enzymes. There is no measured half-life or time to peak to model, so the simulator is switched off.",
+    "stats": [
+      {"num": "~5 min", "lbl": "how long the label says the peptide is detectable in blood after a nasal dose", "src": "Russian label (Peptogen), via Vidal"},
+      {"num": "92.8%", "lbl": "absolute bioavailability by the nasal route claimed on the label; no published study backs the figure", "src": "Russian label, via Vidal"},
+      {"num": "0", "lbl": "peer-reviewed human pharmacokinetic studies", "src": "Our review, October 2026"}
+    ],
+    "explain": [
+      {"b": "Why a minutes-long presence matters.", "t": "If the drug is gone from blood in minutes, any effect lasting hours or days must come from downstream changes in the brain, not from the peptide itself. That is plausible but untested in people."},
+      {"b": "Why the label figures are not enough.", "t": "They come from the manufacturer's registration file, which has not been published or reviewed. A chart built on them would look precise and be guesswork."},
+      {"b": "Why nothing here applies to products sold online.", "t": "Their content and strength are unverified, and most are sold as powders for injection, a route that has never been studied in people."}
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: why there is no chart",
+        "paras": [
+          "The simulator on other pages uses a measured half-life and time to peak from a published human study. Selank has neither. The only numbers are label statements from the Russian manufacturer, and they describe a peptide that disappears from blood within minutes."
+        ]
+      },
+      {
+        "title": "More: what a chart could not tell you anyway",
+        "paras": [
+          "Even with good numbers, a blood-level curve says nothing about whether the drug works or is safe. The trials that would answer that have not been done."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "What the Russian trials looked like.",
+    "lede": "All published human studies were run in Russian clinics with the nasal drops. None was placebo-controlled, none is registered on an international registry, and all but one conference abstract were published in Russian.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: how side effects were handled inside the trials",
+        "paras": [
+          "Patients were seen by psychiatrists and rated on standard scales at set visits over two to four weeks. The 2015 add-on trial used a side-effect rating scale to compare phenazepam alone with phenazepam plus selank. That is the extent of the published safety monitoring. None of this is a self-management plan."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials that have been run",
+      "items": [
+        "2008, Moscow: 62 patients with generalized anxiety disorder or neurasthenia, selank versus the benzodiazepine medazepam for 14 days. Anxiety scores fell similarly in both groups; selank caused less sedation (Zozulya et al.).",
+        "2008: a 14-day study of immune markers (cytokines, IL-6) in patients with anxiety-asthenic disorders (Uchakina et al.).",
+        "2012: a 20-patient uncontrolled study presented as a conference abstract; anxiety scores fell within 3 to 14 days (Medvedev et al., European Psychiatry supplement).",
+        "2014: 60 patients with anxiety-phobic or somatoform disorders, selank versus phenazepam. Effect described as comparable and lasting about a week after stopping (Medvedev et al.).",
+        "2015: 70 patients, phenazepam alone (30) versus phenazepam plus selank (40). Faster improvement and fewer benzodiazepine side effects in the combination group (Medvedev et al.).",
+        "No trial registered on ClinicalTrials.gov or the EU registry as of October 2026."
+      ]
+    },
+    "find": {
+      "text": "There are no selank trials open in Canada or the U.S. The public registry search below will show if that changes.",
+      "term": "selank",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "Legal as a nasal medicine in Russia. An unapproved drug everywhere else.",
+    "items": [
+      {"tag": "ok", "label": "Approved in Russia", "text": "Registered by Peptogen as 0.15% nasal drops (certificate LP-No(010951)-(RG-RU), 15 July 2025, replacing a 2009 registration) and sold without prescription for anxiety and stress-related disorders."},
+      {"tag": "no", "label": "Canada", "text": "No Health Canada authorisation (no entry in the Drug Product Database, October 2026). Anything sold as selank in Canada is an unauthorised drug."},
+      {"tag": "no", "label": "United States", "text": "Not approved. The FDA placed selank in Category 2 (\"significant safety risks\") of its compounding list in 2023 and removed it on 27 September 2024 when the nominator withdrew. As of the FDA list dated 14 May 2026 it sits in no category, so pharmacies may not compound it. A February 2026 HHS announcement said selank would move to Category 1; the FDA's April 2026 list changes did not do that."},
+      {"tag": "ok", "label": "Sport", "text": "Not on WADA's 2026 Prohibited List."}
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "What \"research use only\" means",
+        "text": "Vials and nasal sprays sold online as selank are labelled \"not for human consumption\" so the seller can avoid drug law. The label does not change what the product is: in Canada, the U.S., the EU, the UK, Australia and New Zealand it is an unapproved drug.",
+        "items": [
+          "No regulator checks the contents, strength or sterility. Most products are powders for injection, a route never studied in people.",
+          "New Zealand's regulator reported 56 parcels of peptides and SARMs stopped at the border in seven weeks of 2025 and proposed making tuftsin analogues such as selank prescription-only (Medsafe, June 2025).",
+          "The Russian product is a nasal drop made under Russian pharmaceutical rules. That is not what online vendors are selling."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "warn",
+        "title": "Symptoms to take to a doctor",
+        "text": "Anyone who has used a product sold as selank should see a doctor if they notice:",
+        "items": ["Hives, facial swelling or wheezing", "Worsening anxiety, panic or low mood", "Fever, redness or swelling at an injection site", "Any new symptom that does not settle"],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: the U.S. compounding saga",
+        "paras": [
+          "In 2023 the FDA placed about 19 peptides, selank among them, in Category 2 of its 503A bulk-substances list, citing safety concerns such as immunogenicity and lack of human data. Selank's nominator withdrew in 2024. In 2026 the HHS Secretary announced that most of the Category 2 peptides would move to Category 1 (allowed for compounding), but the FDA's April 2026 action only removed substances pending advisory-committee review, and selank was not among those scheduled. Its status could change; check the FDA list for the current entry."
+        ]
+      }
+    ],
+    "sources": [
+      {"text": "Vidal (Russian drug reference), Selank 0.15% nasal drops: registration LP-No(010951)-(RG-RU) of 15.07.2025, indications, contraindications, side effects, pharmacokinetics statements. Accessed October 2026.", "url": "https://www.vidal.ru/drugs/selank__21568"},
+      {"text": "Zozulya AA et al. Efficacy and possible mechanisms of action of a new peptide anxiolytic selank in the therapy of generalized anxiety disorders and neurasthenia. Zh Nevrol Psikhiatr Im S S Korsakova, 2008 (Russian; 62 patients, selank vs medazepam, 14 days).", "url": "https://pubmed.ncbi.nlm.nih.gov/?term=zozulya+selank+2008"},
+      {"text": "Uchakina ON et al. Immunomodulatory effects of selank in patients with anxiety-asthenic disorders. Zh Nevrol Psikhiatr Im S S Korsakova, 2008 (Russian).", "url": "https://pubmed.ncbi.nlm.nih.gov/18577961/"},
+      {"text": "Medvedev VE et al. A comparison of the anxiolytic effect and tolerability of selank and phenazepam in the treatment of anxiety disorders. Zh Nevrol Psikhiatr Im S S Korsakova, 2014;(7):17-22 (Russian; 60 patients).", "url": "https://repository.rudn.ru/en/records/article/record/5048"},
+      {"text": "Medvedev VE et al. Optimization of the treatment of anxiety disorders with selank. Zh Nevrol Psikhiatr Im S S Korsakova, 2015;(6):33-40 (Russian; 70 patients, phenazepam with or without selank).", "url": "https://repository.rudn.ru/en/records/article/record/4754"},
+      {"text": "Reed Smith, FDA removes certain peptide bulk drug substances from Category 2 (selank acetate, AOD-9604, CJC-1295, ipamorelin, thymosin alpha-1; nominations withdrawn), October 2024.", "url": "https://www.reedsmith.com/de/perspectives/2024/10/fda-certain-peptide-bulk-drug-substances-category-2-503a-bulks-pcac"},
+      {"text": "U.S. FDA, Bulk drug substances nominated for use in compounding under section 503A: category lists, updated 14 May 2026.", "url": "https://fda.gov/media/94155/download"},
+      {"text": "AJMC, 5 things to know about the FDA's peptide reversal (HHS announcement of 27 February 2026 naming selank and semax), 21 August 2026.", "url": "https://ajmc.com/view/5-things-to-know-about-the-fda-s-peptide-reversal"},
+      {"text": "Medsafe (New Zealand), Classification of unscheduled peptides: submission to the Medicines Classification Committee (tuftsin analogues including selank), June 2025.", "url": "https://medsafe.govt.nz/Profs/class/Agendas/Agen74/5.7Peptides.pdf"},
+      {"text": "World Anti-Doping Agency, 2026 Prohibited List (selank not listed).", "url": "https://www.wada-ama.org/en/prohibited-list"}
+    ]
+  }
+}

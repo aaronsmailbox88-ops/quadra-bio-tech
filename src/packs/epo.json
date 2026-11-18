@@ -1,0 +1,197 @@
+{
+  "id": "epo",
+  "name": "Erythropoietin (epoetin alfa)",
+  "brands": "Eprex (Canada, EU), Epogen, Procrit, Retacrit (biosimilar); related: Aranesp (darbepoetin), Mircera",
+  "maker": "Amgen, Janssen, Pfizer (Retacrit)",
+  "group": "approved",
+  "pill": "Approved (anemia only)",
+  "overview": {
+    "headline": "The kidney hormone that tells bone marrow to make red cells, given as a drug for anemia. Misused to thicken blood for endurance sport.",
+    "lede": "Epoetin alfa is recombinant human erythropoietin. Health Canada (Eprex), the FDA (Epogen, Procrit, Retacrit) and the EMA approve it for anemia from kidney disease, chemotherapy, HIV treatment and some surgery, under a boxed warning that it raises the risk of death, heart attack, stroke, clots and tumour growth. \"EPO\" sold online for performance is unapproved and, in sport, banned at all times.",
+    "stats": [
+      {"num": "1.9×", "lbl": "stroke risk when darbepoetin raised hemoglobin toward 13 g/dL in 4,038 patients with diabetes and kidney disease", "src": "TREAT, NEJM 2009 (5.0% vs 2.6%)"},
+      {"num": "1.34", "lbl": "hazard ratio for death, heart attack, heart-failure admission or stroke with a higher hemoglobin target in 1,432 kidney patients", "src": "CHOIR, NEJM 2006"},
+      {"num": "0", "lbl": "approved uses in healthy people, athletes or for \"recovery\"", "src": "Health Canada, FDA and EMA labels"}
+    ],
+    "mechanism": {
+      "intro": "More red cells means more oxygen carried, and thicker blood.",
+      "parts": [
+        {"name": "EPO receptor", "text": "Epoetin binds receptors on marrow precursor cells and drives them to mature into red cells over about a week. Hemoglobin rises over weeks."},
+        {"name": "Viscosity", "text": "Each extra red cell thickens the blood. Past a point, flow slows, clots form more easily and the heart works harder. The trials that pushed hemoglobin toward normal in kidney patients found more strokes, clots and deaths, not fewer."},
+        {"name": "Blood pressure", "text": "ESAs raise blood pressure, which the label requires controlling before and during treatment."}
+      ]
+    },
+    "more": {
+      "title": "More: why the label is so stern",
+      "paras": [
+        "Three large randomized trials set out to show that fully correcting anemia in kidney disease would protect the heart. All three found harm or no benefit: the Normal Hematocrit trial (1998) was stopped early for a trend toward more deaths and heart attacks, CHOIR (2006) found 34% more cardiovascular events at the higher target, and TREAT (2009) found nearly double the strokes. In 2011 the FDA rewrote the dosing guidance to the lowest dose that avoids transfusion.",
+        "Those were sick patients given measured doses with regular hemoglobin checks. A healthy athlete injecting an unknown vial to push hematocrit past 50% is doing the thing the trials showed to be dangerous, without the checks.",
+        "Sources are under the Status tab."
+      ]
+    }
+  },
+  "results": {
+    "headline": "It raises hemoglobin and oxygen capacity. In lab tests it improved endurance; in a real race it did not; in patients it caused harm when pushed.",
+    "lede": "The approved benefit is fewer transfusions. The performance claim has been tested rigorously exactly once.",
+    "chart": null,
+    "stats": [
+      {"num": "48", "lbl": "trained cyclists in the only placebo-controlled trial of EPO doping: higher lab oxygen capacity, no difference in a mountain race time", "src": "Heuberger et al., Lancet Haematology 2017"},
+      {"num": "Stopped early", "lbl": "the 1998 trial that raised hematocrit to normal in 1,233 dialysis patients with heart disease, for a trend toward more deaths and heart attacks", "src": "Besarab et al., NEJM 1998"}
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {"b": "Performance.", "t": "In 48 well-trained cyclists randomized to eight weeks of EPO or placebo, EPO raised hemoglobin and maximal oxygen uptake and improved a laboratory endurance test, but times in a real race up Mont Ventoux did not differ (Heuberger 2017)."},
+        {"b": "Kidney patients, higher target.", "t": "CHOIR: 1,432 people with chronic kidney disease, hemoglobin target 13.5 versus 11.3 g/dL with epoetin alfa. The composite of death, heart attack, heart-failure admission or stroke occurred in 17.5% versus 13.5%, hazard ratio 1.34, with no quality-of-life gain."},
+        {"b": "Diabetes and kidney disease.", "t": "TREAT: 4,038 people randomized to darbepoetin targeting hemoglobin 13 g/dL or placebo with rescue dosing. Strokes 5.0% versus 2.6% (hazard ratio 1.92), and more cancer deaths among those with a prior cancer."},
+        {"b": "Cancer patients.", "t": "Trials of ESAs in several cancers found shorter survival or faster tumour progression at higher hemoglobin targets, which is why the label restricts use to chemotherapy-related anemia when cure is not the goal."}
+      ]
+    },
+    "more": [
+      {
+        "title": "More: the Mont Ventoux study",
+        "paras": [
+          "Dutch researchers gave 48 cyclists weekly EPO or placebo for eight weeks, then had them race up Mont Ventoux. Hemoglobin and laboratory performance measures rose, but race times did not differ, and the authors concluded that the benefit in real competition was unproven while the risks were real. It remains the only randomized placebo-controlled test of EPO in athletes."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "Clots, stroke, heart attack, high blood pressure, and in rare cases the marrow stops making red cells.",
+    "lede": "The boxed warning summarizes the trials: ESAs increase the risk of death, myocardial infarction, stroke, venous thromboembolism, thrombosis of vascular access and tumour progression or recurrence.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "Not the relevant measure for this drug. In TREAT, 101 of 2,012 people on darbepoetin had a stroke versus 53 of 2,026 on placebo; in CHOIR, 125 versus 97 people had a major cardiovascular event at the higher hemoglobin target."
+    },
+    "unique": {
+      "title": "Pure red cell aplasia (PRCA)",
+      "text": "A rare immune reaction in which antibodies against EPO wipe out red-cell production, leaving a person dependent on transfusions. A cluster occurred between 1998 and 2003, mostly with subcutaneous Eprex in kidney patients, and led Health Canada and the maker to restrict that route. Manufacturing and storage changes were implicated, which is a specific worry for vials of unknown origin."
+    },
+    "more": [
+      {
+        "title": "More: what the label warns about",
+        "paras": [
+          "High blood pressure, including crises with brain swelling and seizures; clots in dialysis access and veins; stroke and heart attack when hemoglobin is pushed above 11 g/dL; faster tumour growth and shorter survival in some cancers; PRCA; and serious allergic and skin reactions. The label requires blood pressure control and regular hemoglobin checks, and says to use the lowest dose that avoids transfusion."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "Fewer transfusions in people with anemia from kidney disease or chemotherapy. That is the approved benefit, and it was never shown to extend life."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms trial teams treat as urgent",
+      "items": [
+        "Sudden weakness, a drooping face or trouble speaking (stroke)",
+        "Chest pain or pressure, shortness of breath",
+        "A painful swollen leg (deep vein clot)",
+        "Severe headache, confusion or a seizure (blood pressure crisis)",
+        "Unusual tiredness and pallor after months of use (PRCA)"
+      ],
+      "note": "Anyone with these symptoms, prescribed or not, should get emergency care."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "ESAs are dosed in international units per kilogram and adjusted to hemoglobin, so a milligram-based chart does not apply. The Epogen label gives an elimination half-life of about 4 to 13 hours after intravenous injection in kidney patients and a peak 5 to 24 hours after injection under the skin. The drug is gone within days; the red cells it produces last about four months, which is why EPO's effects and risks outlast the injection and why anti-doping tests look at blood values over time.",
+    "stats": [
+      {"num": "4–13 h", "lbl": "half-life after intravenous injection in kidney patients", "src": "Epogen label, section 12.3"},
+      {"num": "5–24 h", "lbl": "time to peak after subcutaneous injection", "src": "Epogen label, section 12.3"},
+      {"num": "~120 days", "lbl": "lifespan of the red cells it produces: the effect outlasts the drug by months", "src": "Normal red-cell physiology"}
+    ],
+    "explain": [
+      {"b": "Why the drug level is not what matters.", "t": "Hemoglobin, not the EPO concentration, drives both benefit and harm. The label adjusts the dose to hemoglobin every few weeks and caps the target."},
+      {"b": "Why stopping does not undo the risk.", "t": "Thickened blood persists for the life of the red cells, long after EPO is cleared."}
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: what this page cannot tell you",
+        "paras": [
+          "What is in a vial sold as EPO. Counterfeit Procrit and Epogen with a fraction of the labelled dose, or none, were found in the U.S. in 2002, and counterfeit biologics circulate internationally. EPO must be refrigerated; a protein shipped warm may be inactive or provoke antibodies."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "The approved regimen is for anemia, adjusted to blood counts. There is no approved regimen for sport.",
+    "lede": "ESA dosing is set per kilogram and changed every few weeks to keep hemoglobin in a narrow band, with blood pressure and iron monitored. None of this exists for a healthy person.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: how the outcome trials were run",
+        "paras": [
+          "CHOIR and TREAT randomized thousands of kidney patients to a higher or lower hemoglobin target, measured hemoglobin at least monthly, and tracked deaths, strokes and heart attacks for years. That is how the harm was found; it would be invisible in a gym."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials that have been run",
+      "items": [
+        "Performance: one randomized placebo-controlled trial in 48 cyclists (2017): better laboratory measures, no difference in a real race.",
+        "Kidney disease, higher hemoglobin targets: Normal Hematocrit (1998, 1,233 patients, stopped early), CHOIR (2006, 1,432), TREAT (2009, 4,038): more deaths, cardiovascular events or strokes, and no quality-of-life benefit.",
+        "Cancer: multiple trials showing shorter survival or tumour progression at higher targets, prompting label restrictions in 2007 and 2008."
+      ]
+    },
+    "find": {
+      "text": "Registry searches show hundreds of ESA trials in anemia. Search \"epoetin alfa\".",
+      "term": "epoetin alfa",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "Approved for anemia, with the strongest warning a label can carry. Banned in sport. Counterfeited.",
+    "items": [
+      {"tag": "ok", "label": "Canada", "text": "Eprex (epoetin alfa, Janssen) and Aranesp (darbepoetin, Amgen) are authorized prescription biologics for anemia of kidney disease and chemotherapy. Health Canada restricted Eprex's subcutaneous use in kidney patients after the PRCA cases of 2002 to 2005."},
+      {"tag": "ok", "label": "United States", "text": "Epogen (approved 1989), Procrit and the biosimilar Retacrit (2018) are approved for anemia indications under a boxed warning. FDA's June 2011 safety communication removed fixed hemoglobin targets in favour of the lowest dose that avoids transfusion. ESAs are not approved for any use in healthy people."},
+      {"tag": "no", "label": "Sport", "text": "Prohibited at all times under WADA's 2026 Prohibited List (S2.1: erythropoietins and all agents affecting erythropoiesis). Detected directly in urine and indirectly through the Athlete Biological Passport."}
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "\"EPO\" sold online",
+        "text": "Legitimate ESAs are refrigerated hospital and pharmacy biologics supplied by prescription. Vials from peptide sites and overseas pharmacies are unapproved and have a history of being counterfeit.",
+        "items": [
+          "FDA, 2002: counterfeit Procrit and Epogen in U.S. distribution contained a fraction of the labelled dose or were contaminated.",
+          "Any ESA sold without a prescription is an unapproved drug in Canada and the U.S.; Health Canada's April 2026 advisory on \"research use only\" injectables applies.",
+          "A protein shipped warm may be inactive, or may provoke antibodies that cause pure red cell aplasia."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "warn",
+        "title": "If someone has already used it",
+        "text": "See a doctor promptly and say so. Ask for:",
+        "items": [
+          "A blood count (hemoglobin, hematocrit) and a blood pressure check",
+          "Emergency care for any stroke, chest or leg-clot symptom",
+          "Iron studies: EPO without enough iron produces poor-quality red cells"
+        ],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: the doping history",
+        "paras": [
+          "EPO transformed endurance sport in the 1990s. Deaths of young cyclists in that era were widely attributed to it, though never proven. A urine test arrived in 2000; the Athlete Biological Passport, which tracks an athlete's blood values over time, followed in 2009. The health logic has not changed: the trials in patients show what thick blood does."
+        ]
+      }
+    ],
+    "sources": [
+      {"text": "Amgen, EPOGEN (epoetin alfa) prescribing information: boxed warning, indications, section 12.3 pharmacokinetics (IV half-life 4 to 13 hours; SC peak 5 to 24 hours).", "url": "https://www.pi.amgen.com/~/media/amgen/repositorysites/pi-amgen-com/epogen/epogen_pi_hcp_english.pdf"},
+      {"text": "Singh AK, Szczech L, Tang KL, et al. Correction of anemia with epoetin alfa in chronic kidney disease (CHOIR). New England Journal of Medicine 2006;355:2085–2098.", "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa065485"},
+      {"text": "Pfeffer MA, Burdmann EA, Chen CY, et al. A trial of darbepoetin alfa in type 2 diabetes and chronic kidney disease (TREAT). New England Journal of Medicine 2009;361:2019–2032.", "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa0907845"},
+      {"text": "Besarab A, Bolton WK, Browne JK, et al. The effects of normal as compared with low hematocrit values in patients with cardiac disease who are receiving hemodialysis and epoetin. New England Journal of Medicine 1998;339:584–590.", "url": "https://www.nejm.org/doi/full/10.1056/NEJM199808273390903"},
+      {"text": "Heuberger JAAC, Rotmans JI, Gal P, et al. Effects of erythropoietin on cycling performance of well trained cyclists: a double-blind, randomised, placebo-controlled trial. Lancet Haematology 2017;4:e374–e386.", "url": "https://www.thelancet.com/journals/lanhae/article/PIIS2352-3026(17)30105-9/fulltext"},
+      {"text": "FDA Drug Safety Communication: modified dosing recommendations to improve the safe use of erythropoiesis-stimulating agents in chronic kidney disease, June 24, 2011.", "url": "https://www.fda.gov/drugs/drug-safety-and-availability/fda-drug-safety-communication-modified-dosing-recommendations-improve-safe-use-erythropoiesis-stimulating"},
+      {"text": "FDA, counterfeit Procrit and Epogen alerts, 2002 (vials containing a fraction of the labelled strength or contaminated).", "url": ""},
+      {"text": "Health Canada, Eprex and pure red cell aplasia advisories and labelling changes, 2002 to 2005.", "url": ""},
+      {"text": "Health Canada, Think twice before injecting peptides bought online, April 9, 2026.", "url": "https://recalls-rappels.canada.ca/en/alert-recall/think-twice-injecting-peptides-bought-online-unauthorized-products-can-seriously-harm"},
+      {"text": "World Anti-Doping Agency, 2026 Prohibited List, effective January 1, 2026 (S2.1).", "url": "https://www.wada-ama.org/en/prohibited-list"}
+    ]
+  }
+}

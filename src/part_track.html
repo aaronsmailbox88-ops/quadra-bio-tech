@@ -1,0 +1,111 @@
+<!-- ============ TRACK ============ -->
+<section data-panel="track" aria-labelledby="tk-h" hidden>
+  <div>
+    <div class="kick"><div class="eyebrow">Track · Vitals</div><span class="tag2">Interactive</span></div>
+    <h1 id="tk-h">Blood pressure and blood sugar, day by day.</h1>
+  </div>
+  <p class="lede">Log a reading in a few seconds. The app keeps your weekly averages and shows which way things are heading.</p>
+  <p class="sync" id="tk-sync">Saved in this browser only</p>
+
+  <div class="card">
+    <div class="card-h"><h2>Blood pressure</h2><span class="unit">mmHg</span></div>
+    <form id="bp-form" class="entry" autocomplete="off" novalidate>
+      <label for="bp-s">Systolic<input type="number" id="bp-s" min="60" max="260" inputmode="numeric" placeholder="128"></label>
+      <label for="bp-d">Diastolic<input type="number" id="bp-d" min="30" max="160" inputmode="numeric" placeholder="82"></label>
+      <label for="bp-p">Pulse<input type="number" id="bp-p" min="30" max="220" inputmode="numeric" placeholder="optional"></label>
+      <label for="bp-date">Date<input type="date" id="bp-date"></label>
+      <label for="bp-time">Time<input type="time" id="bp-time"></label>
+      <p class="err" id="bp-err"></p>
+      <button type="submit" class="btn" id="bp-add">Add reading</button>
+    </form>
+    <div id="bp-summary"></div>
+    <div class="chart" id="bp-chartwrap" hidden>
+      <div class="legend"><span class="k1"><i></i>Systolic</span><span class="k3"><i></i>Diastolic</span><span class="k2" style="color:var(--ink-3)">lines: 7-day averages</span></div>
+      <div class="pk track-chart" id="bp-chart" aria-label="Blood pressure readings over the last eight weeks with 7-day averages"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"></svg><div class="tip" hidden></div></div>
+    </div>
+    <div id="bp-weeks"></div>
+    <details><summary>Recent readings</summary><div class="body" id="bp-list"></div></details>
+    <p class="note">Hypertension Canada (2025) counts an average of 130/80 or higher, at home or in clinic, as high blood pressure, with a treatment target below 130 systolic. One reading means little; the weekly average is what matters.</p>
+  </div>
+
+  <div class="card">
+    <div class="card-h"><h2>Blood sugar</h2>
+      <div class="seg small" role="group" aria-label="Unit"><button type="button" data-unit="mmol" aria-pressed="true" id="u-mmol">mmol/L</button><button type="button" data-unit="mgdl" aria-pressed="false" id="u-mgdl">mg/dL</button></div>
+    </div>
+    <form id="gl-form" class="entry" autocomplete="off" novalidate>
+      <label for="gl-v"><span id="gl-vl">Reading (mmol/L)</span><input type="number" id="gl-v" step="0.1" min="1" max="40" inputmode="decimal" placeholder="5.6"></label>
+      <label for="gl-c">When<select id="gl-c"><option value="fast">Fasting</option><option value="pre">Before a meal</option><option value="post">After a meal</option><option value="bed">Bedtime</option></select></label>
+      <label for="gl-date">Date<input type="date" id="gl-date"></label>
+      <label for="gl-time">Time<input type="time" id="gl-time"></label>
+      <p class="err" id="gl-err"></p>
+      <button type="submit" class="btn" id="gl-add">Add reading</button>
+    </form>
+    <div id="gl-summary"></div>
+    <div class="chart" id="gl-chartwrap" hidden>
+      <div class="legend"><span class="k1"><i></i>Fasting</span><span class="k4"><i></i>Other times</span><span class="k2" style="color:var(--ink-3)">line: 7-day average</span></div>
+      <div class="pk track-chart" id="gl-chart" aria-label="Blood sugar readings over the last eight weeks with a 7-day average"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"></svg><div class="tip" hidden></div></div>
+    </div>
+    <div id="gl-weeks"></div>
+    <details><summary>Recent readings</summary><div class="body" id="gl-list"></div></details>
+    <p class="note">Diabetes Canada: a fasting reading of 7.0 mmol/L (126 mg/dL) or higher on more than one day is in the diabetes range, and 6.1 to 6.9 is prediabetes. For people with diabetes the usual targets are 4.0 to 7.0 fasting and 5.0 to 10.0 two hours after a meal.</p>
+  </div>
+
+  <div class="card">
+    <div class="card-h"><h2>Weight</h2>
+      <div class="seg small" role="group" aria-label="Unit"><button type="button" data-wunit="kg" aria-pressed="true" id="w-kg">kg</button><button type="button" data-wunit="lb" aria-pressed="false" id="w-lb">lb</button></div>
+    </div>
+    <form id="wt-form" class="entry" autocomplete="off" novalidate>
+      <label for="wt-v"><span id="wt-vl">Weight (kg)</span><input type="number" id="wt-v" step="0.1" min="20" max="400" inputmode="decimal" placeholder="92.4"></label>
+      <label for="wt-date">Date<input type="date" id="wt-date"></label>
+      <label for="wt-time">Time<input type="time" id="wt-time"></label>
+      <p class="err" id="wt-err"></p>
+      <button type="submit" class="btn" id="wt-add">Add weigh-in</button>
+    </form>
+    <div id="wt-summary"></div>
+    <div class="chart" id="wt-chartwrap" hidden>
+      <div class="legend"><span class="k1"><i></i>Weigh-ins</span><span class="k2" style="color:var(--ink-3)">line: 7-day average</span></div>
+      <div class="pk track-chart" id="wt-chart" aria-label="Weight over the last eight weeks with a 7-day average"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"></svg><div class="tip" hidden></div></div>
+    </div>
+    <div id="wt-weeks"></div>
+    <details><summary>Recent weigh-ins</summary><div class="body" id="wt-list"></div></details>
+    <p class="note">Weight swings a kilogram or more day to day with water and food, so the 7-day average is the number to watch. Trial results are reported as percent change from the starting weight; the "since start" tile uses the same measure.</p>
+  </div>
+
+  <div class="card">
+    <div class="card-h"><h2>Heart rate</h2><span class="unit">resting · bpm</span></div>
+    <form id="hr-form" class="entry" autocomplete="off" novalidate>
+      <label for="hr-v">Resting heart rate<input type="number" id="hr-v" min="25" max="250" inputmode="numeric" placeholder="62"></label>
+      <label for="hr-date">Date<input type="date" id="hr-date"></label>
+      <p class="err" id="hr-err"></p>
+      <button type="submit" class="btn" id="hr-add">Add reading</button>
+    </form>
+    <div class="import" id="hr-import">
+      <div class="import-h"><b>Import from Apple Watch</b><span class="m">via Apple Health</span></div>
+      <p class="note">Your Watch measures resting heart rate every day and stores it in the Health app. Export it and drop the file here; the app reads only the heart-rate records, on your phone, and saves them with your other readings.</p>
+      <label class="btn ghost file-btn" for="hr-file">Choose export file (.zip, .xml or .csv)<input type="file" id="hr-file" accept=".zip,.xml,.csv,text/csv,text/xml,application/zip,application/xml"></label>
+      <p class="note" id="hr-import-status"></p>
+      <details><summary>How to export from the Health app</summary><div class="body">
+        <p><b>Full export (simplest).</b> Open Health, tap your picture (top right), scroll to Export All Health Data, then share the zip to this page. It can be large and take a minute to read; only the resting-heart-rate records are kept.</p>
+        <p><b>Quick export with a Shortcut (smaller file).</b> In the Shortcuts app, make a shortcut with these steps: Find Health Samples (type: Resting Heart Rate, sort by Start Date, limit 365) → Repeat with Each → Get Details of Health Sample (Start Date) and (Value) → Text: "Start Date, Value" → End Repeat → Combine Text with new lines → Save File (or Share). Run it, then choose the saved file here.</p>
+        <p>A web page cannot read Health data live; that needs a native iPhone app, which is the next step if this becomes an App Store app.</p>
+      </div></details>
+    </div>
+    <div id="hr-summary"></div>
+    <div class="chart" id="hr-chartwrap" hidden>
+      <div class="legend"><span class="k1"><i></i>Resting heart rate</span><span class="k2" style="color:var(--ink-3)">line: 7-day average</span></div>
+      <div class="pk track-chart" id="hr-chart" aria-label="Resting heart rate over the last eight weeks with a 7-day average"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"></svg><div class="tip" hidden></div></div>
+    </div>
+    <div id="hr-weeks"></div>
+    <details><summary>Recent readings</summary><div class="body" id="hr-list"></div></details>
+    <p class="note">In the trials, semaglutide, tirzepatide and retatrutide raised resting heart rate by about 2 to 6 beats a minute on average, most in the first months. A resting rate that stays above 100, or a sudden jump, is something to take to a doctor.</p>
+  </div>
+
+  <details>
+    <summary>About your data</summary>
+    <div class="body">
+      <p>When you open this app signed in, readings are saved privately to your account and show up on any device where you open it. Otherwise they stay in this browser only. Nobody else can see them, including the app's author.</p>
+      <p>The tracker is a notebook, not a diagnosis. A pattern of high readings is something to take to a doctor along with the log.</p>
+    </div>
+  </details>
+</section>
+

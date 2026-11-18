@@ -1,0 +1,294 @@
+{
+  "id": "liraglutide",
+  "name": "Liraglutide",
+  "brands": "Saxenda, Victoza",
+  "maker": "Novo Nordisk",
+  "group": "approved",
+  "pill": "Approved",
+  "overview": {
+    "headline": "A once-daily injection that copies one gut hormone to curb appetite; the first GLP-1 drug approved for weight loss.",
+    "lede": "Liraglutide is made by Novo Nordisk and sold as Saxenda (3.0 mg, for weight management) and Victoza (up to 1.8 mg, for type 2 diabetes). It has been approved in Canada, the U.S. and Europe for about a decade, is prescription-only, and since 2024 has had FDA-approved generic copies in the U.S. Newer drugs take off more weight, but liraglutide has the longest safety record in its class.",
+    "stats": [
+      {"num": "−8.0%", "lbl": "average weight loss at 3.0 mg after 56 weeks (placebo: −2.6%)", "src": "SCALE Obesity and Prediabetes, 3,731 adults"},
+      {"num": "13%", "lbl": "fewer heart attacks, strokes and cardiovascular deaths over 3.8 years at 1.8 mg in people with type 2 diabetes", "src": "LEADER, 9,340 people"},
+      {"num": "2015", "lbl": "year Saxenda was approved for weight management in Canada and the EU; U.S. generics followed in 2024 and 2025", "src": "Health Canada, EMA, FDA"}
+    ],
+    "mechanism": {
+      "intro": "One molecule copies one hormone your gut releases after a meal, rebuilt to last a day instead of minutes.",
+      "parts": [
+        {"name": "GLP-1", "text": "Slows stomach emptying, signals fullness to the brain, and raises insulin only when blood sugar is high. Natural GLP-1 is destroyed within minutes; liraglutide is the same hormone with small changes that let it survive."},
+        {"name": "The fatty-acid tail", "text": "A fatty acid attached to the peptide makes it bind to albumin in the blood and resist breakdown, stretching the half-life to about 13 hours. Long enough for one injection a day, not for one a week."},
+        {"name": "Two doses, two jobs", "text": "Victoza stops at 1.8 mg a day, the dose that controls blood sugar. Saxenda climbs to 3.0 mg, the dose the weight-loss trials were run at. Same molecule, different pens, and the label says not to use both."}
+      ]
+    },
+    "more": {
+      "title": "More: where it sits among the GLP-1 drugs",
+      "paras": [
+        "Liraglutide was the first GLP-1 drug approved for weight management and the first in its class shown to cut heart attacks and strokes in people with diabetes. Semaglutide (Wegovy, Ozempic) is a once-weekly cousin from the same company that roughly doubles the weight loss; tirzepatide (Zepbound, Mounjaro) adds a second hormone. In the one head-to-head trial, people on liraglutide lost 6.4% against 15.8% on semaglutide.",
+        "What liraglutide has that the newer drugs lack is time and price. It has been on the U.S. market since 2010 as a diabetes drug and since 2015 for weight in Canada and Europe, so its side-effect record covers more than fifteen years. Its patents have run out, and FDA-approved generic copies of both Victoza and Saxenda now exist in the U.S.",
+        "Everything on this page comes from peer-reviewed trial reports, the FDA label, the Health Canada product monograph and the European regulator. Sources are listed under the Status tab."
+      ]
+    }
+  },
+  "results": {
+    "headline": "Modest by today's standards: about five percentage points more than diet and exercise alone.",
+    "lede": "Average weight change on liraglutide 3.0 mg daily, compared with placebo. Everyone in these trials also got a reduced-calorie diet and activity counselling.",
+    "chart": {
+      "metric": "weight",
+      "legend": ["Liraglutide 3.0 mg", "Placebo"],
+      "rows": [
+        {"name": "SCALE Obesity and Prediabetes", "meta": "56 weeks · obesity or overweight, no diabetes · 3,731 people", "drug": -8.0, "placebo": -2.6, "tip": "Liraglutide 3.0 mg: −8.0% (−8.4 kg) vs placebo −2.6% (−2.8 kg)"},
+        {"name": "STEP 8", "meta": "68 weeks · obesity or overweight, no diabetes · 338 people (127 on liraglutide)", "drug": -6.4, "placebo": -1.9, "tip": "Liraglutide 3.0 mg: −6.4%. Semaglutide 2.4 mg in the same trial: −15.8%"},
+        {"name": "SCALE Maintenance", "meta": "56 weeks after a diet run-in that had already taken off 6% · 422 people", "drug": -6.2, "placebo": -0.2, "tip": "Additional loss after the run-in: −6.2% vs −0.2%"},
+        {"name": "SCALE 3-year", "meta": "160 weeks · prediabetes · 2,254 people", "drug": -6.1, "placebo": -1.9, "tip": "Liraglutide 3.0 mg at three years: −6.1%"},
+        {"name": "SCALE Diabetes", "meta": "56 weeks · type 2 diabetes · 846 people", "drug": -6.0, "placebo": -2.0, "tip": "Liraglutide 3.0 mg: −6.0%. The 1.8 mg arm: −4.7%"},
+        {"name": "SCALE Teens", "meta": "56 weeks · ages 12 to 17 · 251 people", "drug": -2.65, "placebo": 2.37, "tip": "Body weight: −2.65% vs +2.37% (teenagers are still growing). BMI: −4.29% vs +0.35%"}
+      ],
+      "max": 12,
+      "note": "The SCALE figures are from the published papers, which counted everyone randomized and carried the last recorded weight forward for people who dropped out (intention-to-treat with last observation carried forward). The FDA label re-analysed the same trials with multiple imputation and reports smaller gaps: −7.4% vs −3.0% in SCALE Obesity, −5.4% vs −1.7% in SCALE Diabetes, −4.9% vs +0.3% in SCALE Maintenance. STEP 8 and SCALE Teens use the treatment-policy estimand (everyone, whether or not they stayed on the drug)."
+    },
+    "stats": [
+      {"num": "−15.8% vs −6.4%", "lbl": "semaglutide 2.4 mg weekly against liraglutide 3.0 mg daily in the same 68-week trial", "src": "STEP 8, 338 adults"},
+      {"num": "−5.8%", "lbl": "BMI change in children aged 6 to 11 after 56 weeks (placebo: +1.6%)", "src": "SCALE Kids, 82 children"}
+    ],
+    "beyond": {
+      "title": "Beyond the scale",
+      "items": [
+        {"b": "Blood sugar.", "t": "In SCALE Diabetes, A1C fell 1.3 points on 3.0 mg against 0.3 on placebo, and 69% of people on the drug reached an A1C under 7%. In adults without diabetes the change was small: −0.30 versus −0.06."},
+        {"b": "Heart protection.", "t": "LEADER followed 9,340 people with type 2 diabetes and high heart risk for a median 3.8 years on Victoza 1.8 mg. Heart attack, stroke or cardiovascular death happened in 13.0% versus 14.9%, a 13% relative reduction (hazard ratio 0.87). Deaths from cardiovascular causes were 4.7% versus 6.0%, and deaths from any cause 8.2% versus 9.6%."},
+        {"b": "Preventing diabetes.", "t": "Among 2,254 adults with prediabetes followed for three years, 2% on liraglutide were diagnosed with type 2 diabetes versus 6% on placebo (hazard ratio 0.21). Only about half of each group completed the three years, which the authors flag as a limitation."},
+        {"b": "Teenagers and children.", "t": "In 251 adolescents aged 12 to 17, BMI fell 4.29% on liraglutide and rose 0.35% on placebo over 56 weeks. That trial led to approval for ages 12 and up in the U.S. (December 2020), Canada (February 2021) and the EU (2021). In 82 children aged 6 to 11, BMI fell 5.8% versus a 1.6% rise; the EU approved that age group in 2025."},
+        {"b": "Blood pressure and fats.", "t": "In SCALE Obesity, systolic blood pressure fell 4.2 mmHg versus 1.5, and triglycerides 13.3% versus 5.5%. Heart rate went the other way: up 2.5 beats a minute versus 0.1."}
+      ]
+    },
+    "more": [
+      {
+        "title": "More: how it compares with the newer drugs",
+        "paras": [
+          "STEP 8 is the only randomized head-to-head trial. Over 68 weeks, 25.6% of people on liraglutide 3.0 mg lost at least 10% of their weight, against 70.9% on semaglutide 2.4 mg and 15.4% on placebo. For 15% or more it was 12.0% versus 55.6%; for 20% or more, 6.0% versus 38.5%. Stomach side effects were about equally common on the two drugs (82.7% versus 84.1%), but four times as many people quit liraglutide because of them (12.6% versus 3.2%).",
+          "That trial is why guidelines and prescribers now treat liraglutide as a second-tier option for weight loss on its own. Its remaining advantages are the heart-outcome evidence in diabetes, a longer safety record, and, in the U.S., generic pricing."
+        ]
+      },
+      {
+        "title": "More: the two ways the same trials get counted",
+        "paras": [
+          "The SCALE papers came out before trial statisticians settled on the word 'estimand'. They analysed everyone randomized and, for the roughly one in three people who dropped out, carried the last weight recorded forward to week 56. That method tends to flatter the drug a little, because people who quit early often regain weight that is never measured.",
+          "When the FDA wrote the label it re-ran the numbers with multiple imputation, which models what dropouts probably weighed. The drug-minus-placebo gap shrinks from 5.4 to 4.5 percentage points in SCALE Obesity and from 4.0 to 3.7 in SCALE Diabetes. Both are honest answers to slightly different questions; the chart uses the published figures because that is what the other drugs on this site are compared against."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "Mostly stomach-related, mostly in the first weeks, and about two and a half times as many people quit as on placebo.",
+    "lede": "Nausea, diarrhea, constipation and vomiting were the big four in every trial. They clustered during the four-week climb to 3.0 mg and eased for most people who stayed on.",
+    "chart": {
+      "eyebrow": "SCALE Obesity and Prediabetes · share of people affected",
+      "legend": ["Liraglutide 3.0 mg", "Placebo"],
+      "rows": [
+        {"name": "Nausea", "drug": 40.2, "placebo": 14.7},
+        {"name": "Diarrhea", "drug": 20.9, "placebo": 9.3},
+        {"name": "Constipation", "drug": 20.0, "placebo": 8.7},
+        {"name": "Vomiting", "drug": 16.3, "placebo": 4.1},
+        {"name": "Dyspepsia (indigestion)", "drug": 9.5, "placebo": 3.1},
+        {"name": "Low blood sugar (self-reported)", "drug": 1.3, "placebo": 1.0}
+      ],
+      "max": 50,
+      "note": "Adults without diabetes. In people with type 2 diabetes the label's pooled count of confirmed low blood sugar was 12.6% versus 6.6%, and the label warns the risk is highest when liraglutide is combined with insulin or a sulfonylurea. The label's pooled figures across all three 56-week adult trials are almost identical to this chart: nausea 39.3% vs 13.8%, diarrhea 20.9% vs 9.9%, constipation 19.4% vs 8.5%, vomiting 15.7% vs 3.9%."
+    },
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "In SCALE Obesity and Prediabetes, 9.9% of people on liraglutide stopped because of side effects versus 3.8% on placebo; serious adverse events were 6.2% versus 5.0%. The FDA label's pooled adult figure is 9.8% versus 4.3%, with nausea (2.9%), vomiting (1.7%) and diarrhea (1.4%) the usual reasons. In the head-to-head STEP 8 trial, 12.6% quit liraglutide for side effects against 3.2% on semaglutide and 3.5% on placebo. Among teenagers it was 10.4% versus none."
+    },
+    "unique": {
+      "title": "Breast cancer: an imbalance the label still carries",
+      "text": "Across the adult weight-management trials, breast cancer was diagnosed in 17 of 2,379 women on liraglutide (0.7%) and 3 of 1,300 on placebo (0.2%), including 13 versus 2 invasive cancers. The label says there were too few cases to tell whether the drug played a part, and the NEJM report notes most occurred in women with above-average weight loss, when a breast lump can become easier to find. The note has stayed in the label since 2014 because the trials were too small and too short to settle it either way; it is the one line that makes Saxenda's label read differently from the rest of the class."
+    },
+    "more": [
+      {
+        "title": "More: what the trials monitor for",
+        "paras": [
+          "Gallbladder. Gallstones were reported in 2.2% versus 0.8% and gallbladder inflammation in 0.8% versus 0.4% in the adult weight trials; in LEADER, acute gallstone disease was 3.1% versus 1.9%. Fast weight loss raises gallstone risk on its own, and the drug appears to add to it.",
+          "Pancreas. Confirmed acute pancreatitis: 9 of 3,291 people on liraglutide (0.3%) versus 2 of 1,843 on placebo (0.1%) in the weight trials. In LEADER's 9,340 people over 3.8 years it was 18 cases versus 23, so no excess there. Trial protocols and the label stop the drug if pancreatitis is suspected.",
+          "Heart rate. Resting pulse rose 2 to 3 beats a minute on average in adults and 3 to 7 in adolescents. A rise of more than 10 beats at two consecutive visits happened in 34% versus 19%; more than 20 beats in 5% versus 2%. The label asks for resting heart rate to be checked at visits and the drug stopped if it stays high.",
+          "Kidneys. After the drug reached the market there were reports of acute kidney injury, some needing dialysis, nearly all in people dehydrated by vomiting or diarrhea.",
+          "Thyroid. Liraglutide caused thyroid C-cell tumours in rodents; whether that applies to people is unknown. The boxed warning rules it out for anyone with a personal or family history of medullary thyroid cancer or MEN 2.",
+          "Anesthesia. There have been rare reports of stomach contents entering the lungs during general anesthesia or deep sedation in people on GLP-1 drugs who had fasted as told. The label now asks patients to mention the drug before any procedure.",
+          "Mood. The Saxenda label carried a warning about suicidal thoughts and behaviour for years; the February 2026 revision removed it. Pregnancy: not studied, and the label says to stop if pregnancy is recognised."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "Lower blood pressure (systolic −4.2 mmHg versus −1.5 in SCALE Obesity), lower triglycerides (−13.3% versus −5.5%) and lower blood sugar were consistent. In people with type 2 diabetes, A1C fell a full percentage point more than placebo. The three-year prediabetes extension found two-thirds fewer new cases of diabetes. And LEADER is the reason this drug matters in cardiology: fewer cardiovascular deaths over nearly four years, something the weight-loss trials were never large enough to show."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms the label and trial teams treat as urgent",
+      "items": [
+        "Severe abdominal pain that does not ease, sometimes spreading to the back, with or without vomiting (possible pancreatitis)",
+        "Pain under the right ribs, fever, or yellowing of the skin or eyes (possible gallbladder disease)",
+        "Vomiting or diarrhea that will not stop, or not being able to keep fluids down (dehydration can injure the kidneys)",
+        "Shakiness, sweating, confusion or fainting in someone also taking insulin or a sulfonylurea (low blood sugar)",
+        "A racing heartbeat at rest that does not settle",
+        "A lump or swelling in the neck, hoarseness, trouble swallowing or breathing",
+        "Swelling of the face or throat, trouble breathing, severe rash"
+      ],
+      "note": "Anyone with these symptoms should get medical care right away. Reactions can be reported to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+    }
+  },
+  "levels": {
+    "pk": {
+      "half": 0.54,
+      "tmax": 0.46,
+      "ladder": [0.6, 1.2, 1.8, 2.4, 3.0],
+      "stepDays": 7,
+      "tau": 1,
+      "maxDose": 3.0,
+      "refLabel": "3.0 mg daily",
+      "source": "Saxenda U.S. prescribing information (revised Feb 2026): half-life about 13 hours, peak about 11 hours after injection, bioavailability about 55%, exposure proportional to dose from 0.6 to 3.0 mg"
+    },
+    "nopk": "",
+    "stats": [
+      {"num": "~13 h", "lbl": "half-life: the time for the level to fall by half", "src": "Saxenda label, section 12"},
+      {"num": "1.4×", "lbl": "how far daily dosing builds up compared with a single dose", "src": "From the half-life and the 24-hour interval"},
+      {"num": "~3 days", "lbl": "to reach a plateau after a dose change, and to clear about 97% after the last dose", "src": "Five half-lives"}
+    ],
+    "explain": [
+      {"b": "Why it is a daily injection.", "t": "With a half-life of about 13 hours, roughly 70% of a dose is gone by the next day. A weekly schedule would leave almost nothing in the blood for most of the week. The weekly drugs in this family manage it because their half-lives run to about a week."},
+      {"b": "Why the steps are one week apart.", "t": "Levels reach a new plateau within two to three days of a dose change, so each step is fully in effect well before the next. The rest of the week is for the stomach to settle: the label lets a prescriber hold a step for an extra week if symptoms are a problem."},
+      {"b": "Why a gap of more than three days means starting over.", "t": "After three days almost all of the drug has cleared. The label treats that as a fresh start: back to 0.6 mg and up the ladder again, rather than resuming at 3.0 mg, because the stomach symptoms return at full strength otherwise."}
+    ],
+    "showTable": true,
+    "more": [
+      {
+        "title": "More: the model behind the chart",
+        "paras": [
+          "The chart uses a standard one-compartment pharmacokinetic model: the drug is absorbed from the injection site at one rate, cleared from the blood at another, and each dose adds to what is still circulating. The numbers come from the FDA label: a half-life of about 13 hours, a peak about 11 hours after injection, and blood levels that rise in proportion to dose between 0.6 and 3.0 mg.",
+          "The vertical axis is relative. 100% is the average level on 3.0 mg daily once it has plateaued, so 1.8 mg (the Victoza top dose) sits at 60% and 0.6 mg at 20%. Because a day is nearly two half-lives, the level falls by well over half between one injection and the next; that is the daily sawtooth on the chart, finer-toothed than the weekly drugs because the doses come seven times as often.",
+          "Real people differ. The label reports lower exposure in people with reduced kidney function (19% to 35% lower) or liver impairment (11% to 42% lower), and body weight and injection site shift the level too. The published trials saw the same spread in response that any drug shows."
+        ]
+      },
+      {
+        "title": "More: what this chart cannot tell you",
+        "paras": [
+          "It models the label regimen, not a person. It measures nothing; only a blood test can.",
+          "It cannot show tolerance. The model says levels rebuild within days after a gap, yet the label still sends people back to 0.6 mg after more than three days off, because the stomach's adjustment to the drug is lost faster than the chart suggests and nausea comes back at the full dose.",
+          "It says nothing about products sold online as liraglutide. Their contents and strength are unverified, so a vial labelled 3 mg could hold any amount of anything. Approved liraglutide, brand or generic, comes only as a pre-filled pen from a pharmacy. Custom schedules drawn on this chart are hypothetical: the trials answered the safety question with bloodwork and clinic visits, which a curve on a screen cannot replace."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "How the liraglutide trials were run, and what the label took from them.",
+    "lede": "Liraglutide is a prescription drug, so trials are no longer the way in. But the schedule the trials used became the label, and the label's rules on stepping, pausing and stopping all trace back to them.",
+    "ladder": {
+      "title": "The dose ladder in the SCALE trials and on the label",
+      "text": "Everyone started at 0.6 mg a day and went up one step a week to 3.0 mg, which took four weeks. The 3.0 mg maintenance dose then continued for the rest of the trial. The label keeps this schedule and lets a prescriber hold a step for about an extra week if the stomach has not settled. Adults who cannot tolerate 3.0 mg come off the drug; adolescents may drop back a step, take up to eight weeks to climb, and stay at 2.4 mg.",
+      "steps": [
+        {"d": "0.6 mg", "t": "start"},
+        {"d": "1.2 mg", "t": "week 2"},
+        {"d": "1.8 mg", "t": "week 3"},
+        {"d": "2.4 mg", "t": "week 4"},
+        {"d": "3.0 mg", "t": "week 5 onward"}
+      ],
+      "note": "Injections are daily, at any time of day, with or without food. The label also sets a stopping rule: in the U.S., adults who have lost less than 4% of their weight after 16 weeks come off the drug (Canada's monograph says less than 5% after 12 weeks on the full dose); adolescents stop if BMI has not fallen at least 1% after 12 weeks on the maintenance dose. A missed dose is skipped, not doubled, and a gap of more than three days means restarting at 0.6 mg. In the diabetes trials (Victoza) the ladder stopped at 1.8 mg."
+    },
+    "more": [
+      {
+        "title": "More: how side effects were handled inside the trials",
+        "paras": [
+          "The weekly ladder is the main tool. In SCALE Teens, most stomach symptoms occurred during dose escalation, and the protocol allowed the climb to stretch to eight weeks and a step back when needed, which is now in the label for adolescents. SCALE Maintenance described its stomach effects as mostly transient and mild to moderate. The discontinuation figures on the Side effects tab are the people for whom they did not settle.",
+          "Participants had scheduled visits with weight, heart rate and, for those with diabetes, blood sugar checks, and could call the study team between visits. People on insulin or a sulfonylurea had those doses adjusted to limit low blood sugar, which is now a label instruction.",
+          "None of this is a self-management plan. What the trials show is what happens when trained staff adjust a known dose of a verified drug; a prescription filled at a pharmacy buys the same two things, and a vial bought online buys neither."
+        ]
+      }
+    ],
+    "running": {
+      "title": "What is still changing",
+      "items": [
+        "Children aged 6 to 11: the SCALE Kids trial (82 children, published September 2024) found BMI fell 5.8% versus a 1.6% rise on placebo over 56 weeks. The EU approved this age group in 2025; the U.S. label (February 2026) still says safety and effectiveness are not established under 12.",
+        "Generic competition in the U.S.: an authorized generic of Victoza launched June 24, 2024; Hikma's generic Victoza was approved December 23, 2024; Teva's generic Saxenda, the first generic GLP-1 for weight management, was approved and launched August 28, 2025. Further applications are pending, and no generic has yet been confirmed in Canada.",
+        "Label updates: a warning on stomach contents entering the lungs under anesthesia, revised wording on severe stomach reactions (October 2025), and removal of the suicidal-thoughts warning (February 2026)."
+      ]
+    },
+    "find": {
+      "text": "Liraglutide's main trials are complete, but studies of generics, new age groups and comparisons with newer drugs are still registered. Search the public registry for the term below and filter by status.",
+      "term": "liraglutide",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "Approved for a decade and now generic in the U.S. A pharmacy is the only source of the real thing.",
+    "items": [
+      {"tag": "ok", "label": "Canada", "text": "Health Canada approved Saxenda for adults on February 26, 2015 and for adolescents aged 12 to 17 in February 2021; the product monograph was last updated September 10, 2025. Victoza (1.8 mg) is approved for type 2 diabetes. No generic liraglutide was found in the Health Canada sources checked for this page as of October 2026."},
+      {"tag": "ok", "label": "United States", "text": "Liraglutide was first approved in 2010 (Victoza). Saxenda is approved for adults and, since December 2020, for ages 12 and up; its label was last revised February 2026. Generic copies: Teva's authorized generic of Victoza (June 24, 2024), Hikma's generic Victoza (approved December 23, 2024) and Teva's generic Saxenda (approved and launched August 28, 2025), all prescription pens carrying the brand labels. The FDA listed liraglutide as in shortage when the first generic was approved."},
+      {"tag": "ok", "label": "European Union", "text": "Saxenda has been authorised since March 23, 2015, extended to adolescents in 2021 and to children aged 6 to 11 in 2025 (CHMP opinion May 22, 2025; product information updated June 2025). It is the only region so far to approve the youngest age group."},
+      {"tag": "soon", "label": "Still pending", "text": "U.S. approval for children aged 6 to 11; further generic entrants in the U.S.; any generic liraglutide in Canada."}
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "Generics are real; 'research' vials are not",
+        "text": "An FDA-approved generic liraglutide is the same molecule in a pre-filled pen, dispensed by a pharmacy on a prescription, with the same boxed warning and dose schedule as the brand. Anything else sold as liraglutide, by online \"peptide\" shops, on social media, or as a powder to mix, sits outside that system, and buyers have no way to know what the vial holds or how much.",
+        "items": [
+          "Approved U.S. generics so far: Teva (Victoza authorized generic, 2024; Saxenda generic, 2025) and Hikma (Victoza generic, 2024). Others have applied.",
+          "In Canada, only Novo Nordisk's Saxenda and Victoza were found in the regulator's listings as of October 2026.",
+          "A product sold online as \"generic liraglutide\" without a prescription is not an approved generic. Approved copies reach patients through pharmacies, nowhere else."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "warn",
+        "title": "Before any procedure, and if symptoms appear",
+        "text": "The label asks people on liraglutide to tell any doctor or dentist before surgery or sedation, because of rare reports of stomach contents entering the lungs under anesthesia. It also lists symptoms that need prompt care:",
+        "items": [
+          "Severe abdominal pain that does not ease, with or without vomiting",
+          "Yellow skin or eyes, fever, pain under the right ribs",
+          "Vomiting or diarrhea that will not stop",
+          "A lump or swelling in the neck, hoarseness, trouble swallowing",
+          "Signs of low blood sugar in someone also on insulin or a sulfonylurea"
+        ],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: where liraglutide fits now",
+        "paras": [
+          "For weight loss it is no longer the strongest option. In STEP 8, semaglutide 2.4 mg weekly took off 15.8% against 6.4% for liraglutide 3.0 mg daily over 68 weeks, with a quarter as many people quitting for side effects. Where liraglutide holds up is in type 2 diabetes with heart disease, where LEADER showed fewer heart attacks, strokes and cardiovascular deaths, and in cost, now that generic versions exist in the U.S.",
+          "It also remains the GLP-1 drug with the widest approved age range: adults, adolescents from 12 everywhere it is sold, and children from 6 in the EU."
+        ]
+      },
+      {
+        "title": "More: generic, not biosimilar",
+        "paras": [
+          "In the U.S., copies of liraglutide are approved as generics under the same rules as ordinary pills, because the FDA regulates liraglutide as a drug rather than a biologic. A generic must show it delivers the same amount of the same molecule; it does not repeat the clinical trials. That is why the generics carry Saxenda's and Victoza's labels, warnings and dose schedules word for word, and why the FDA fast-tracked them while the brand was in shortage."
+        ]
+      },
+      {
+        "title": "More: label changes since 2024",
+        "paras": [
+          "The Saxenda label now warns about stomach contents entering the lungs under anesthesia (a class-wide addition based on post-marketing reports), updated its wording on severe stomach reactions in October 2025, and in February 2026 removed the warning about suicidal thoughts and behaviour that had been there for years. Health Canada's monograph added perioperative guidance in September 2025."
+        ]
+      }
+    ],
+    "sources": [
+      {"text": "Pi-Sunyer X et al. A randomized, controlled trial of 3.0 mg of liraglutide in weight management (SCALE Obesity and Prediabetes). New England Journal of Medicine, July 2, 2015; 373:11-22.", "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1411892"},
+      {"text": "Davies MJ et al. Efficacy of liraglutide for weight loss among patients with type 2 diabetes: the SCALE Diabetes randomized clinical trial. JAMA, August 18, 2015; 314(7):687-699.", "url": "https://pubmed.ncbi.nlm.nih.gov/26284720/"},
+      {"text": "Wadden TA et al. Weight maintenance and additional weight loss with liraglutide after low-calorie-diet-induced weight loss: the SCALE Maintenance randomized study. International Journal of Obesity, 2013; 37:1443-1451.", "url": "https://pubmed.ncbi.nlm.nih.gov/23812094/"},
+      {"text": "le Roux CW et al. 3 years of liraglutide versus placebo for type 2 diabetes risk reduction and weight management in individuals with prediabetes. The Lancet, April 2017; 389:1399-1409 (open-access accepted manuscript).", "url": "https://eprints.gla.ac.uk/163341"},
+      {"text": "Kelly AS et al. A randomized, controlled trial of liraglutide for adolescents with obesity (SCALE Teens). New England Journal of Medicine, May 2020; 382:2117-2128. Novo Nordisk release, April 1, 2020.", "url": "https://kyodonewsprwire.jp/release/202004018712"},
+      {"text": "Fox CK et al. Liraglutide for children 6 to <12 years of age with obesity: a randomized trial (SCALE Kids). New England Journal of Medicine, September 10, 2024.", "url": "https://pubmed.ncbi.nlm.nih.gov/39258838/"},
+      {"text": "Rubino DM et al. Effect of weekly subcutaneous semaglutide vs daily liraglutide on body weight in adults with overweight or obesity without diabetes: the STEP 8 randomized clinical trial. JAMA, January 11, 2022; 327(2):138-150.", "url": "https://doi.org/10.1001/jama.2021.23619"},
+      {"text": "Marso SP et al. Liraglutide and cardiovascular outcomes in type 2 diabetes (LEADER). New England Journal of Medicine, July 28, 2016; 375:311-322.", "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1603827"},
+      {"text": "Novo Nordisk, Saxenda (liraglutide) injection U.S. prescribing information, revised February 2026 (FDA, NDA 206321).", "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/206321s025lbl.pdf"},
+      {"text": "Novo Nordisk Canada, Saxenda product monograph, Health Canada, authorized September 10, 2025 (control no. 297198).", "url": "https://pdf.hres.ca/dpd_pm/00081736.PDF"},
+      {"text": "European Medicines Agency, Saxenda EPAR: authorised March 23, 2015; product information updated June 2025.", "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/saxenda"},
+      {"text": "European Medicines Agency, Saxenda extension of indication to children aged 6 to <12 years, CHMP positive opinion May 22, 2025.", "url": "https://www.ema.europa.eu/en/medicines/human/variation/saxenda"},
+      {"text": "U.S. FDA, press announcement: FDA approves first generic of once-daily GLP-1 injection to lower blood sugar in patients with type 2 diabetes (Hikma, generic Victoza), December 23, 2024.", "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-generic-once-daily-glp-1-injection-lower-blood-sugar-patients-type-2-diabetes"},
+      {"text": "Teva Pharmaceuticals, FDA approval and launch of generic Saxenda (liraglutide injection), first generic GLP-1 for weight management, August 28, 2025; reported by BioSpace, August 29, 2025.", "url": "https://www.biospace.com/fda/teva-brings-first-glp-1-generic-for-obesity-targets-novos-saxenda"},
+      {"text": "Healio, FDA approves a generic form of liraglutide to treat type 2 diabetes (Hikma approval; Teva authorized generic launched June 2024; shortage listing), December 2024.", "url": "https://www.healio.com/news/endocrinology/20250214/fda-approves-a-generic-form-of-liraglutide-to-treat-type-2-diabetes"}
+    ]
+  }
+}

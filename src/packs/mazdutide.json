@@ -1,0 +1,254 @@
+{
+  "id": "mazdutide",
+  "name": "Mazdutide",
+  "brands": "Xinermei (信尔美), China only",
+  "maker": "Eli Lilly (originator); Innovent Biologics (China)",
+  "group": "approved",
+  "pill": "Approved (China)",
+  "overview": {
+    "headline": "One weekly injection that works on two hormones: GLP-1 and glucagon.",
+    "lede": "Mazdutide was discovered by Eli Lilly and developed in China by Innovent Biologics, which holds the China rights. China's regulator approved it in 2025 for weight management and for type 2 diabetes under the brand name Xinermei. It is not approved in Canada, the U.S., Europe or Australia, so outside China the only legal way to receive it is inside a clinical trial.",
+    "stats": [
+      {"num": "14%", "lbl": "average weight loss on the 6 mg dose after 48 weeks", "src": "GLORY-1, 610 adults in China"},
+      {"num": "2", "lbl": "approved uses in China: weight management (June 2025) and type 2 diabetes (September 2025)", "src": "China NMPA"},
+      {"num": "0", "lbl": "approvals outside China as of October 2026", "src": "Health Canada, FDA, EMA, TGA"}
+    ],
+    "mechanism": {
+      "intro": "One molecule, modelled on the gut hormone oxyntomodulin, switches on two receptors your body already uses after a meal.",
+      "parts": [
+        {"name": "GLP-1", "text": "Slows stomach emptying, signals fullness to the brain, and raises insulin when blood sugar is high. The same target as semaglutide."},
+        {"name": "Glucagon", "text": "Thought to raise energy use and help the liver burn fat. It is the piece that separates mazdutide from the single-hormone drugs, and the likely reason liver fat fell so sharply in the trials."}
+      ]
+    },
+    "more": {
+      "title": "More: where it sits among the GLP-1 drugs",
+      "paras": [
+        "Semaglutide (Wegovy, Ozempic) acts on one receptor. Tirzepatide (Zepbound, Mounjaro) acts on GLP-1 plus GIP. Mazdutide acts on GLP-1 plus glucagon, and Innovent describes it as the first drug of that type approved anywhere. Retatrutide, still experimental, acts on all three.",
+        "Innovent's name for the molecule is OXM3, a long-acting analogue of oxyntomodulin. Lilly's code is LY3305677 and Innovent's is IBI362. It is given once a week as an injection under the skin, like the drugs it is compared with.",
+        "Everything on this page comes from the peer-reviewed trial papers (NEJM, JAMA, Nature), Innovent's announcements, China's regulator and public health notices. Sources are listed under the Status tab."
+      ]
+    }
+  },
+  "results": {
+    "headline": "What people in the trials lost.",
+    "lede": "Average weight change on the highest dose tested in each trial, compared with placebo or, where noted, with another diabetes drug. Every group also received diet and activity counselling. All the trials on this chart were run in China.",
+    "chart": {
+      "metric": "weight",
+      "legend": ["Mazdutide", "Placebo (or comparator, where noted)"],
+      "rows": [
+        {"name": "GLORY-2", "meta": "60 weeks · 9 mg · obesity (BMI 30 or more), 16% with diabetes · 462 people", "drug": -16.65, "placebo": -1.5, "tip": "Mazdutide 9 mg: −16.65% vs placebo −1.50%"},
+        {"name": "GLORY-1", "meta": "48 weeks · 6 mg · overweight or obesity · 610 people", "drug": -14.01, "placebo": 0.3, "tip": "Mazdutide 6 mg: −14.01% vs placebo +0.30% (4 mg: −11.00%)"},
+        {"name": "DREAMS-3", "meta": "32 weeks · 6 mg vs semaglutide 1 mg · type 2 diabetes plus obesity · 349 people", "drug": -10.29, "placebo": -6.0, "tip": "Mazdutide 6 mg: −10.29% vs semaglutide 1 mg −6.00%"},
+        {"name": "Adolescents (Phase 1b)", "meta": "12 weeks · 6 mg · ages 12 to 17 with obesity · 36 people", "drug": -9.93, "placebo": -1.19, "tip": "Mazdutide 6 mg: −9.93% vs placebo −1.19% (4 mg: −7.87%)"},
+        {"name": "DREAMS-2", "meta": "28 weeks · 6 mg vs dulaglutide 1.5 mg · type 2 diabetes on metformin · 731 people", "drug": -8.53, "placebo": -2.77, "tip": "Mazdutide 6 mg: −8.53% vs dulaglutide −2.77% (4 mg: −6.55%)"},
+        {"name": "DREAMS-1", "meta": "24 weeks · 6 mg · type 2 diabetes, no other drugs · 320 people", "drug": -7.34, "placebo": -1.15, "tip": "Mazdutide 6 mg: −7.34% vs placebo −1.15% (4 mg: −5.50%)"}
+      ],
+      "max": 20,
+      "note": "GLORY-1, DREAMS-1 and DREAMS-2 figures are the \"treatment-policy estimand\": everyone randomised, including people who stopped early. GLORY-2 is the JAMA paper's primary result. Counting only people who stayed on treatment (the \"efficacy estimand\"), results run higher: GLORY-1 6 mg was −14.84%, and Innovent's release for GLORY-2 reported −18.55% vs −3.02%. The DREAMS-3 and adolescent announcements did not state the estimand."
+    },
+    "stats": [
+      {"num": "48% vs 21%", "lbl": "reached both an A1C under 7% and at least 10% weight loss at 32 weeks, mazdutide 6 mg against semaglutide 1 mg", "src": "DREAMS-3, type 2 diabetes with obesity"},
+      {"num": "49.5%", "lbl": "of people on 6 mg lost 15% or more of their weight by 48 weeks, against 2.0% on placebo", "src": "GLORY-1"}
+    ],
+    "beyond": {
+      "title": "Beyond the scale",
+      "items": [
+        {"b": "Blood sugar.", "t": "In people with type 2 diabetes, A1C fell 2.0 percentage points on 6 mg over 24 weeks (placebo: 0.25) in DREAMS-1, and 1.66 points over 28 weeks against 1.36 on dulaglutide in DREAMS-2. Four in five people on 6 mg in DREAMS-1 reached an A1C under 7%."},
+        {"b": "Liver fat.", "t": "In GLORY-1, people who started with a fatty liver (10% fat or more on MRI) saw liver fat fall 80% on 6 mg at 48 weeks, against 5% on placebo. GLORY-2 reported a 72% drop on 9 mg while placebo rose 5%."},
+        {"b": "Blood pressure and lipids.", "t": "GLORY-1 (ADA 2024, both doses pooled) reported systolic blood pressure down 9.2 mmHg versus 2.5 on placebo, and triglycerides down 0.68 mmol/L versus 0.16. Total and LDL cholesterol also fell while they rose slightly on placebo."},
+        {"b": "Uric acid and liver enzymes.", "t": "Serum uric acid fell about 45 µmol/L on mazdutide while it rose about 6 on placebo, and the liver enzyme ALT fell 14.5 U/L versus 4.5. Both trials in obesity list uric acid among the measures that improved."}
+      ]
+    },
+    "more": [
+      {
+        "title": "More: the two ways the trials count weight loss",
+        "paras": [
+          "Each trial reports two numbers. The treatment-policy estimand counts everyone who was randomised, whatever happened next, and is the primary analysis in the NEJM, JAMA and Nature papers. The efficacy estimand counts what happened for people who stayed on their assigned dose. For GLORY-1 at 48 weeks the 6 mg figures were −14.01% and −14.84%; for placebo they were +0.30% and −0.47%.",
+          "The gap is wider in longer trials because more people stop. For GLORY-2 at 60 weeks, the JAMA paper's primary figure is −16.65% against −1.50% on placebo, while Innovent's November 2025 release reported −18.55% against −3.02%, and −20.08% among people without diabetes."
+        ]
+      },
+      {
+        "title": "More: how it compared with other drugs",
+        "paras": [
+          "DREAMS-2 pitted mazdutide against dulaglutide 1.5 mg in people with type 2 diabetes already on metformin. Both mazdutide doses lowered A1C more (−1.61 and −1.66 points versus −1.36) and weight much more (−6.55% and −8.53% versus −2.77%) over 28 weeks.",
+          "DREAMS-3 compared mazdutide 6 mg with semaglutide 1 mg in people with type 2 diabetes and obesity over 32 weeks. A1C fell 2.03 versus 1.84 points and weight 10.29% versus 6.00%. Note the comparison dose: 1 mg is semaglutide's diabetes dose, not the 2.4 mg used for weight loss. GLORY-3, still running, compares the two drugs in people with overweight or obesity and fatty liver disease.",
+          "No cardiovascular outcomes trial has been reported. Heart protection, which semaglutide has shown, is unproven for mazdutide."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "Mostly stomach-related, mostly during the dose climb, and rarely a reason to quit.",
+    "lede": "Nausea, vomiting and diarrhea were the big three in every trial. They were mostly mild or moderate and clustered in the weeks when the dose was being stepped up.",
+    "chart": {
+      "eyebrow": "GLORY-2 · 9 mg · share of people affected",
+      "legend": ["Mazdutide 9 mg", "Placebo"],
+      "rows": [
+        {"name": "Vomiting", "drug": 53.1, "placebo": 1.3},
+        {"name": "Nausea", "drug": 46.9, "placebo": 3.2},
+        {"name": "Diarrhea", "drug": 39.4, "placebo": 6.5}
+      ],
+      "max": 60,
+      "note": "GLORY-2 tested 9 mg, the highest dose studied and not yet approved. At the approved 4 mg and 6 mg doses (GLORY-1), the NEJM paper names the same three events as the most common, mostly mild or moderate, and the trial reported they mostly occurred during dose escalation."
+    },
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "In GLORY-1, 1.5% of people on 4 mg and 0.5% on 6 mg stopped the drug because of side effects, against 1.0% on placebo. In GLORY-2, on the higher 9 mg dose, 2.9% stopped versus none on placebo. In the 12-week adolescent study nobody stopped."
+    },
+    "unique": {
+      "title": "The glucagon question: blood sugar and heart rate",
+      "text": "Glucagon raises blood sugar on its own, so a drug that switches on the glucagon receptor had to show it would not worsen glucose control. In the diabetes trials A1C fell by about 2 points on 6 mg, no severe low blood sugar was reported on mazdutide, and mild episodes were about as common as on dulaglutide. Resting heart rate rose by an average of 2.6 beats per minute at 48 weeks in GLORY-1 on both doses, in line with other GLP-1 drugs. Trials track heart rate throughout."
+    },
+    "more": [
+      {
+        "title": "More: what the trials monitor for",
+        "paras": [
+          "Class risks. Drugs in this family carry warnings for pancreatitis, gallbladder problems, dehydration from vomiting or diarrhea (which can strain the kidneys), low blood sugar when combined with insulin or sulfonylureas, and a thyroid tumour signal seen in rodents. Trial participants are screened and monitored for these.",
+          "Serious events. GLORY-1 reported serious adverse events as low and comparable to placebo.",
+          "Pregnancy. Not studied. Trials exclude pregnancy and require contraception."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "Lower blood pressure, lower triglycerides and cholesterol, lower uric acid and lower liver enzymes were consistent across the obesity and diabetes trials. In GLORY-1, liver fat fell 80% on 6 mg in people who started with a fatty liver. In the diabetes trials, high blood sugar came down without the severe lows seen with insulin."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms trial teams treat as urgent",
+      "items": [
+        "Severe or persistent abdominal pain, with or without vomiting",
+        "Vomiting or diarrhea that will not stop, or not being able to keep fluids down",
+        "Yellowing of the skin or eyes, dark urine, pale stools",
+        "A racing or irregular heartbeat, fainting",
+        "Swelling of the face or throat, trouble breathing, severe rash"
+      ],
+      "note": "Anyone with these symptoms, in a trial or not, should get medical care right away."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "Mazdutide is a long-acting peptide with a fatty-acid side chain, built for once-weekly injection, and its blood levels were measured in Phase 1 studies in China. We could not confirm the published half-life or time-to-peak figures from a primary paper while compiling this page, so the simulator is switched off rather than run on a guess. What is sourced: every trial and the Chinese label use one injection a week, with at least four weeks on each dose step before the next.",
+    "stats": [
+      {"num": "7 days", "lbl": "between injections, the interval used in every trial and on the Chinese label", "src": "NMPA prescribing information, 2025"},
+      {"num": "4 weeks", "lbl": "minimum time on each dose step before the next increase", "src": "NMPA prescribing information, 2025"},
+      {"num": "3 steps", "lbl": "2 mg, then 4 mg, then 6 mg. A 9 mg step was tested in GLORY-2 and is under review in China", "src": "Label; GLORY-2, JAMA 2026"}
+    ],
+    "explain": [
+      {"b": "Why the steps are four weeks apart.", "t": "Both the trials and the label hold each dose for at least four weeks before stepping up. That gives blood levels time to settle and the stomach time to adapt before the next climb."},
+      {"b": "Why side effects cluster after a step.", "t": "The Nature papers on the diabetes trials describe stomach symptoms peaking during the dose climb and easing afterwards, which is the pattern seen with every drug in this class."},
+      {"b": "Why there is no curve on this page.", "t": "A level chart needs a measured half-life. Mazdutide has one, but we did not verify it from the source paper, and the rule for this site is that an unverified number is left out."}
+    ],
+    "showTable": true,
+    "more": [
+      {
+        "title": "More: what is known about how long it lasts",
+        "paras": [
+          "Mazdutide is an analogue of oxyntomodulin, a natural gut hormone that the body clears quickly. A fatty-acid chain was added so the molecule binds to proteins in the blood and is released slowly, which is what allows weekly dosing. The same trick is used in semaglutide and tirzepatide.",
+          "Innovent's Phase 1b study (Ji et al., eClinicalMedicine 2022) tested 9 mg and 10 mg doses with step-wise climbs and measured blood levels; its figures are the place to look for the half-life. In May 2026 China approved a multi-dose pen that holds the 2 mg, 4 mg and 6 mg strengths, so the climb can be done with one device."
+        ]
+      },
+      {
+        "title": "More: what a chart could not tell you",
+        "paras": [
+          "A level chart models the trial regimen, not a person. It measures nothing; only a blood test can.",
+          "It would say nothing about products sold online as mazdutide. Their contents and strength are unverified, so a vial labelled 10 mg could hold any amount of anything, and no model can account for that.",
+          "The trials answered the dosing question with bloodwork, scheduled visits and medical supervision, which no curve on a screen can replace."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "How the mazdutide trials were run, and what joining one looks like.",
+    "lede": "Outside China, clinical trials are the only legal route to mazdutide. Here is how the Phase 3 studies worked and what a participant goes through.",
+    "ladder": {
+      "title": "The dose ladder in the trials and on the Chinese label",
+      "text": "Everyone started at 2 mg a week. After four weeks the dose went to 4 mg, and after another four weeks to 6 mg for those assigned the higher dose. The label follows the same path and allows a step back from 6 mg to 4 mg if the higher dose is not tolerated. Each step was taken under the study team's supervision.",
+      "steps": [
+        {"d": "2 mg", "t": "start"},
+        {"d": "4 mg", "t": "week 4"},
+        {"d": "6 mg", "t": "week 8"}
+      ],
+      "note": "Approved maintenance doses in China are 4 mg and 6 mg. GLORY-2 climbed further to a 9 mg maintenance dose, which Innovent has asked the regulator to add. A placebo group followed the same schedule with inactive injections, and nobody, including the doctors, knew who had what until the trial ended."
+    },
+    "more": [
+      {
+        "title": "More: how side effects were handled inside the trials",
+        "paras": [
+          "The slow dose ladder is the main tool. Stomach symptoms tend to appear in the weeks after a step up and settle before the next one. The protocols allowed the team to hold a dose or step back, which is also written into the Chinese label.",
+          "Participants had a study clinician to call, and symptoms were treated the way a doctor would treat them in any patient. People whose symptoms did not settle could leave the drug; that is where the discontinuation figures on the Side effects tab come from.",
+          "None of this is a self-management plan. The point of a trial is that trained staff are watching, which is exactly what is missing when someone uses a product bought online."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials still running",
+      "items": [
+        "GLORY-3: mazdutide against semaglutide in adults with overweight or obesity and fatty liver disease (China, NCT06884293)",
+        "GLORY-OSA: obstructive sleep apnea with obesity (NCT06931028); a Phase 3 trial in adolescents with obesity, announced December 2025; a study in obesity with high blood pressure",
+        "Programs in MASH (fatty liver inflammation) and heart failure with preserved ejection fraction, and a head-to-head trial against tirzepatide announced in 2026",
+        "Lilly's own Phase 2 studies of LY3305677 in adults with overweight or obesity, run outside China (NCT06124807, NCT06143956)"
+      ]
+    },
+    "find": {
+      "text": "Innovent's trials run in China. Lilly's Phase 2 studies list their sites on the public registry. Search for \"mazdutide\" or \"LY3305677\", then contact the nearest site on the study page. Typical requirements: adult, a BMI above a set threshold, and no competing weight-loss medication.",
+      "term": "mazdutide",
+      "extra": {"label": "Lilly Trials", "url": "https://trials.lilly.com/"}
+    }
+  },
+  "status": {
+    "headline": "Approved in China only. Anything sold as mazdutide elsewhere is not an approved medicine.",
+    "items": [
+      {"tag": "ok", "label": "Approved in China", "text": "China's NMPA approved mazdutide (Xinermei, 信尔美) on June 27, 2025 for chronic weight management in adults with a BMI of 28 or more, or 24 or more with a weight-related condition, and in September 2025 for blood sugar control in type 2 diabetes. A multi-dose pen covering the 2, 4 and 6 mg doses was approved on May 8, 2026."},
+      {"tag": "soon", "label": "9 mg under review", "text": "Innovent's application to add a 9 mg dose for moderate to severe obesity, based on GLORY-2, was accepted by the NMPA in November 2025. We found no approval announcement as of October 2026."},
+      {"tag": "no", "label": "Not approved elsewhere", "text": "Health Canada, the U.S. FDA, the European EMA and Australia's TGA have not approved mazdutide. Lilly, which discovered it and keeps the rights outside China, has registered its own Phase 2 trials but has announced no filing. There is no public timeline for Canada."}
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "The black market",
+        "text": "Vials sold online, on social media and by \"research use only\" peptide shops as mazdutide are unapproved drugs. The genuine product is a prescription medicine available only through China's health system; it is not sold by Innovent or Lilly anywhere else, so buyers have no way to know what is in a vial or how much.",
+        "items": [
+          "The FDA has named mazdutide in warning letters to U.S. sellers: Prime Sciences (March 31, 2026, for a product labelled \"Mazdutide 10 mg\") and NuScience Peptides (August 24, 2026). The agency says these are unapproved new drugs and that \"not for human consumption\" labels do not change that when the sites quote the GLORY-1 results to sell them.",
+          "Australia's TGA announced escalated action against unapproved peptide products in July 2026, including border seizures and pressure on social media and e-commerce platforms to remove listings.",
+          "Products advertised to Canadians as Xinermei or mazdutide have not been reviewed by Health Canada, and there is no way to verify what a cross-border seller ships."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "warn",
+        "title": "If someone has already used an unapproved product",
+        "text": "Regulators advise stopping, disposing of it safely, and seeing a doctor. Get care promptly for any of these:",
+        "items": ["Severe abdominal pain or vomiting that will not stop", "Signs of dehydration: dizziness, very little urine", "Yellowing of the skin or eyes, dark urine", "A racing or irregular heartbeat"],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: the China-only licence",
+        "paras": [
+          "Lilly discovered mazdutide and in 2019 licensed the China rights to Innovent, which ran the entire Phase 3 program there and now sells the drug. Lilly kept the rest of the world. It has registered its own Phase 2 trials of LY3305677 in adults with obesity or overweight, but as of October 2026 has not announced Phase 3 plans or a filing with any regulator.",
+          "That split means the Chinese approval does not transfer. Health Canada and the FDA run their own reviews on data they receive from the sponsor, and no sponsor has submitted mazdutide to either."
+        ]
+      }
+    ],
+    "sources": [
+      {"text": "Ji L, Jiang H, Bi Y, et al. Once-Weekly Mazdutide in Chinese Adults with Obesity or Overweight (GLORY-1, NCT05607680). New England Journal of Medicine 2025;392:2215-2225.", "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2411528"},
+      {"text": "Innovent Biologics, GLORY-1 results published in NEJM (both estimands, liver fat, heart rate), press release, May 25, 2025.", "url": "https://www.biospace.com/press-releases/phase-3-clinical-study-of-mazdutide-in-chinese-adults-with-overweight-or-obesity-glory-1-published-in-the-new-england-journal-of-medicine-nejm"},
+      {"text": "Bariatric News, GLORY-1 full results presented at ADA 2024 (cardiometabolic measures, MRI-PDFF liver fat, discontinuations), June 25, 2024.", "url": "https://www.bariatricnews.net/post/innovent-s-glory-1-trial-assessing-mazdutide-meets-its-primary-endpoints"},
+      {"text": "Ji L, Gao L, Jiang H, et al. Treatment With 9-mg Mazdutide for Weight Reduction in Chinese Adults With Obesity: The GLORY-2 Randomized Clinical Trial (NCT06164873). JAMA, published online June 7, 2026.", "url": "https://doi.org/10.1001/jama.2026.8142"},
+      {"text": "Clinical Trials Arena, GLORY-2 topline results and plan to file the 9 mg dose in China, November 21, 2025; Bariatric News, NMPA acceptance of the 9 mg application, November 2025.", "url": "https://www.clinicaltrialsarena.com/news/innovent-boasts-another-pivotal-trial-success-for-obesity-drug/"},
+      {"text": "Innovent Biologics, NMPA approval of mazdutide for chronic weight management, press release, June 27, 2025.", "url": "https://www.biospace.com/press-releases/innovent-announces-mazdutide-first-dual-gcg-glp-1-receptor-agonist-received-approval-from-chinas-nmpa-for-chronic-weight-management"},
+      {"text": "Innovent Biologics, NMPA approval of mazdutide for glycemic control in type 2 diabetes (DREAMS-1 and DREAMS-2 data), press release, September 19, 2025.", "url": "https://www.biospace.com/press-releases/innovent-announces-mazdutide-received-approval-from-chinas-nmpa-for-glycemic-control-in-adults-with-type-2-diabetes"},
+      {"text": "Zhu D, Zhao J, Cai H, et al. Mazdutide versus placebo in Chinese adults with type 2 diabetes (DREAMS-1, NCT05628311). Guo L, Zhang B, Xue X, et al. Mazdutide versus dulaglutide in Chinese adults with type 2 diabetes (DREAMS-2, NCT05606913). Nature, 2025. Innovent press release on both papers, December 17, 2025.", "url": "https://www.biospace.com/press-releases/nature-two-phase-3-clinical-results-of-mazdutide-glp-1-gcg-dual-receptor-agonist-in-chinese-adults-with-type-2-diabetes-have-been-back-to-back-published-in-nature"},
+      {"text": "Innovent Biologics, DREAMS-3 head-to-head results against semaglutide (NCT06184568), press release, October 26, 2025.", "url": "https://www.prnewswire.com/news-releases/innovents-mazdutide-shows-superiority-in-glycemic-control-with-weight-loss-over-semaglutide-in-a-head-to-head-phase-3-clinical-trial-dreams-3-302594633.html"},
+      {"text": "Innovent Biologics, Phase 1b results in Chinese adolescents with obesity, press release, December 12, 2025.", "url": "https://www.utusan.com.my/pr-newswire-en/2025/12/mazdutide-demonstrates-significant-weight-loss-and-metabolic-benefits-in-phase-1b-clinical-trial-in-chinese-adolescents-with-obesity/"},
+      {"text": "Xinhua News, NMPA approval of the mazdutide multi-dose pen (2 mL : 24 mg, covering 2, 4 and 6 mg), May 9, 2026. Summary of the NMPA-approved prescribing information for Xinermei (dose ladder, maintenance doses), March 2026: sohu.com/a/1001237343_122255128.", "url": "https://www.news.cn/health/20260509/28031e6e985b4fcd85bce47bcbe1a8c1/c.html"},
+      {"text": "Ji L, et al. Safety and efficacy of mazdutide (IBI362) 9 mg and 10 mg in Chinese adults with overweight or obesity: a randomised, placebo-controlled, multiple-ascending-dose phase 1b trial. eClinicalMedicine, 2022.", "url": "https://pubmed.ncbi.nlm.nih.gov/36247927/"},
+      {"text": "U.S. FDA, warning letters naming mazdutide: Prime Sciences, March 31, 2026; NuScience Peptides LLC, August 24, 2026.", "url": "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/nuscience-peptides-llc-733652-08242026"},
+      {"text": "The Medical Republic, TGA escalates compliance action against unapproved peptide products, July 20, 2026. Reuters (via Yahoo), Innovent DREAMS-3 announcement and 2019 Lilly licence, October 2025.", "url": "https://www.medicalrepublic.com.au/?p=127458"},
+      {"text": "Trial registrations: NCT05607680 (GLORY-1), NCT06164873 (GLORY-2), NCT05628311 (DREAMS-1), NCT05606913 (DREAMS-2), NCT06184568 (DREAMS-3), NCT06124807 (Lilly, LY3305677 vs placebo, U.S.).", "url": "https://clinicaltrials.gov/study/NCT05607680"}
+    ]
+  }
+}

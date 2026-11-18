@@ -1,0 +1,185 @@
+{
+  "id": "kpv",
+  "name": "KPV",
+  "brands": "",
+  "maker": "",
+  "group": "research",
+  "pill": "Unapproved",
+  "overview": {
+    "headline": "A three-amino-acid fragment of a natural hormone, tested against gut inflammation in mice.",
+    "lede": "KPV (lysine-proline-valine) is the tail end of alpha-melanocyte-stimulating hormone, a hormone your body makes. University labs have studied it in mouse colitis since the 2000s. No company has taken it into human trials, no regulator has approved it, and the vials sold online as KPV are unapproved products.",
+    "stats": [
+      {"num": "0", "lbl": "human trials of KPV, registered or published", "src": "FDA compounding list, April 22, 2026: no human exposure data identified"},
+      {"num": "3", "lbl": "amino acids: the last three of alpha-MSH", "src": "Kannengiesser et al. 2008"},
+      {"num": "8 to 6", "lbl": "FDA advisory committee vote in July 2026 to allow pharmacy compounding (advisory only, no decision yet)", "src": "PCAC, July 23, 2026"}
+    ],
+    "mechanism": {
+      "intro": "Thought to calm inflammation from inside immune and gut cells.",
+      "parts": [
+        {"name": "Alpha-MSH tail", "text": "Alpha-MSH switches off inflammatory signalling. KPV is its last three amino acids and, in mice, kept an anti-inflammatory effect even when the hormone's usual receptor (MC1R) did not work."},
+        {"name": "PepT1 transport", "text": "Gut cells pull small peptides inside through a transporter called PepT1. In cell and mouse work, KPV entered this way and damped the inflammatory switch NF-kB."},
+        {"name": "What is unknown", "text": "Whether any of this happens in people. Nobody has measured KPV in human blood or compared it with a placebo."}
+      ]
+    },
+    "more": {
+      "title": "More: where KPV came from",
+      "paras": [
+        "Alpha-MSH is a 13-amino-acid hormone best known for tanning. Researchers in Germany and the United States found that its last three amino acids carried much of its anti-inflammatory activity without the pigment effect, and tested the fragment in mouse colitis. Sources are listed under the Status tab."
+      ]
+    }
+  },
+  "results": {
+    "headline": "No human results exist. The evidence is mouse colitis.",
+    "lede": "Two independent groups found that KPV reduced gut inflammation in mice. That is the whole evidence base.",
+    "chart": null,
+    "stats": [
+      {"num": "2", "lbl": "mouse colitis models in which KPV sped recovery (chemical DSS colitis and T-cell transfer colitis)", "src": "Kannengiesser et al., Inflamm Bowel Dis 2008"}
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {"b": "Mice.", "t": "In DSS colitis and a T-cell transfer model, KPV-treated mice regained weight sooner, had less inflammation on biopsy and lower colonic myeloperoxidase, an enzyme marker of inflammation. In mice lacking a working MC1 receptor, KPV rescued all treated animals from death during DSS colitis (Kannengiesser 2008)."},
+        {"b": "Cells and mice, gut transport.", "t": "Dalmasso and colleagues (2008) showed intestinal cells take KPV up through PepT1, that it lowered inflammatory cytokines, and that mice given it in drinking water had milder colitis."},
+        {"b": "Humans.", "t": "Nothing. The FDA's compounding review found no human exposure data for KPV by any route, and no clinical trial has been published or registered."}
+      ]
+    },
+    "more": [
+      {
+        "title": "More: why mouse colitis results rarely transfer",
+        "paras": [
+          "Chemical colitis in mice is a short injury that heals within days; human inflammatory bowel disease is a lifelong immune condition. Many compounds that worked in DSS mice have failed in people, which is why animal data are a reason to run a trial, not a substitute for one."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "Unknown in humans. No safety data exist.",
+    "lede": "No person has received KPV in a study, so there is no side-effect rate, no discontinuation rate and no list of common reactions.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "Not applicable. No human study has given KPV."
+    },
+    "unique": {
+      "title": "The specific risk: an unstudied peptide, usually injected",
+      "text": "KPV has not been linked to a particular toxicity, because nobody has looked. The FDA's stated concerns are immunogenicity (the immune system reacting to the peptide or to impurities) and the absence of any human exposure data. At the July 2026 advisory meeting its reviewers added that these peptides lack a settled chemical identity in commerce, so two products labelled KPV may not be the same substance."
+    },
+    "more": [
+      {
+        "title": "More: what a trial would monitor for",
+        "paras": [
+          "A Phase 1 study would track injection-site and allergic reactions, blood counts, liver and kidney tests, and blood levels of the peptide. None of that exists for KPV."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "None reported in humans. In mice the benefit was less gut inflammation."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms doctors treat as urgent after any injected product",
+      "items": [
+        "Swelling of the face or throat, trouble breathing, hives",
+        "Fever, spreading redness or pus at an injection site",
+        "New or worsening abdominal pain, or bloody diarrhea",
+        "Dark urine, yellowing of the skin or eyes"
+      ],
+      "note": "Anyone with these symptoms should get medical care right away and bring the product with them."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "No one has measured KPV in human blood after a dose, so there is no half-life, no peak time and nothing to model. Peptides this small are usually broken down quickly by enzymes in blood and gut, but for KPV even that has not been documented in people.",
+    "stats": [
+      {"num": "0", "lbl": "human pharmacokinetic studies", "src": "FDA compounding list, April 2026"},
+      {"num": "3", "lbl": "amino acids, one of the smallest peptides sold as a 'research chemical'", "src": "Chemical identity"},
+      {"num": "Mice", "lbl": "the only species in which KPV's effects have been measured", "src": "Kannengiesser 2008; Dalmasso 2008"}
+    ],
+    "explain": [
+      {"b": "Why there is no chart.", "t": "The simulator on other pages uses a measured human half-life. None exists for KPV."},
+      {"b": "Why vial labels tell you little.", "t": "A milligram figure on a label is the seller's claim. Nobody independently tests these vials, and the FDA has said products sold as KPV may not even be the same substance."}
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: what this page cannot tell you",
+        "paras": [
+          "What a dose of KPV does in a human body, how long it lasts or what level is safe. Those questions are answered by Phase 1 trials, and none has been run."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "No human trials have been run.",
+    "lede": "KPV has never been given to people in a registered study. The 2026 regulatory activity concerns whether pharmacies may compound it, and generated no clinical data.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: what the FDA's advisory committee actually decided",
+        "paras": [
+          "On July 23, 2026 the Pharmacy Compounding Advisory Committee voted 8 to 6, with one abstention, to recommend adding KPV to the list of substances pharmacies may compound under section 503A, against the advice of the FDA's own reviewers, who cited the lack of human data. The vote is advisory; the FDA must decide and, if it agrees, write a rule, which observers expect to take a year or more."
+        ]
+      }
+    ],
+    "running": {
+      "title": "No human trials",
+      "items": [
+        "None registered or published. The FDA found no human exposure data for KPV (list current April 22, 2026).",
+        "The July 2026 advisory vote concerns pharmacy compounding, not a trial."
+      ]
+    },
+    "find": {
+      "text": "If a trial is ever registered it will appear on the public registry. Searching today returns nothing for KPV as a treatment.",
+      "term": "KPV peptide",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "Not approved anywhere. Off the FDA's 'do not compound' category since April 2026, but still unapproved and not yet compoundable.",
+    "items": [
+      {"tag": "no", "label": "Canada: not authorized", "text": "Health Canada has not authorized any KPV product. It treats injectable peptides as prescription drugs, said in April 2026 that unauthorized injectable peptide drugs are illegal in Canada, and in July 2026 obtained a permanent injunction against the Quebec seller Canlab Research."},
+      {"tag": "no", "label": "US: not approved", "text": "The FDA has never approved KPV. In 2023 it placed KPV in 'Category 2' (significant safety concerns for compounding), citing no human exposure data. On April 15, 2026 the FDA announced its removal from that category; the list now shows the nomination as withdrawn."},
+      {"tag": "soon", "label": "US: compounding decision pending", "text": "On July 23, 2026 the FDA's advisory committee voted 8 to 6 to recommend KPV for the 503A bulks list. The FDA has not acted. Until it does, pharmacies have no clear legal basis to compound KPV, and no decision would make KPV an approved drug."},
+      {"tag": "no", "label": "Sport: prohibited", "text": "Not named on the 2026 WADA Prohibited List, but its S0 clause bans at all times any substance with no approval anywhere for human use. KPV falls under it."}
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "What 'research use only' means",
+        "text": "Vials sold as KPV carry 'for research use only' labels. That describes a product meant for laboratory work, not people. It does not mean the contents were tested, and it does not make the sale legal once the seller markets the product for human use.",
+        "items": [
+          "Health Canada: injectable peptides are prescription drugs; unauthorized ones are illegal to sell (2025 and 2026 notices).",
+          "FDA warning letters, August 24, 2026: the disclaimer does not control when a website shows the product is intended as a drug for people; selling bacteriostatic water and dose calculators alongside is evidence of intended human use."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "warn",
+        "title": "Symptoms to take to a doctor",
+        "text": "Anyone who has used a product sold as KPV should tell a doctor, especially with any of the following:",
+        "items": ["Fever, redness or pus at an injection site", "Hives, swelling or wheezing", "Persistent abdominal pain or bloody stools", "Dark urine, yellow skin or eyes"],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: Category 1, Category 2 and the 503A list",
+        "paras": [
+          "The FDA sorts nominated bulk substances into Category 1 (may be compounded while review continues), Category 2 (may not) and a formal 503A list set by rule. KPV left Category 2 in April 2026 but was not placed in Category 1. Even a place on the 503A list would only let licensed pharmacies compound it on prescription; it would not be approval and would not establish a safe or effective dose."
+        ]
+      }
+    ],
+    "sources": [
+      {"text": "Kannengiesser K et al. Melanocortin-derived tripeptide KPV has anti-inflammatory potential in murine models of inflammatory bowel disease. Inflammatory Bowel Diseases 2008;14(3):324-331.", "url": "https://academic.oup.com/ibdjournal/article/14/3/324/4653598"},
+      {"text": "Dalmasso G et al. PepT1-mediated tripeptide KPV uptake reduces intestinal inflammation. Gastroenterology 2008;134(1):166-178.", "url": "https://doi.org/10.1053/j.gastro.2007.10.026"},
+      {"text": "U.S. FDA. Certain bulk drug substances for use in compounding that may present significant safety risks (KPV: nomination withdrawn; no human exposure data). Content current as of April 22, 2026.", "url": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks"},
+      {"text": "Frier Levitt. FDA to remove 12 peptides from the Category 2 list (FDA notice of April 15, 2026; PCAC schedule).", "url": "https://www.frierlevitt.com/articles/fda-peptides-do-not-compound-list-update-2026/"},
+      {"text": "Hyman Phelps & McNamara, FDA Law Blog. PCAC approves four bulk drug substances for the 503A list (KPV vote 8-6-1), July 24, 2026.", "url": "https://www.thefdalawblog.com/2026/07/peptide-l-wave-pcac-approves-four-bulk-drug-substances-for-the-503a-list/"},
+      {"text": "Smart & Biggar. Health Canada obtains permanent injunction against Canlab Research (April 2026 warning; July 29, 2026 injunction), August 25, 2026; CP24 on Health Canada's August 1, 2025 advisory.", "url": "https://www.smartbiggar.ca/insights/publication/health-canada-obtains-permanent-injunction-to-prevent-illegal-sale-of-injectable-peptides-by-canlab-research"},
+      {"text": "ArentFox Schiff. Five peptide vendors learn that 'research use only' is not a legal strategy (FDA warning letters of August 24, 2026), September 18, 2026.", "url": "https://www.afslaw.com/perspectives/alerts/ruo-ined-five-peptide-vendors-learn-research-use-only-not-legal-strategy"},
+      {"text": "World Anti-Doping Agency. The 2026 Prohibited List (S0 non-approved substances).", "url": "https://pgtofindia.com/storage/app/anti_doping_link/pdf/Prohibited-List-2026.pdf"}
+    ]
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "id": "snap-8",
+  "name": "Snap-8 (acetyl octapeptide-3)",
+  "brands": "SNAP-8 (ingredient trade name)",
+  "maker": "Lipotec (Barcelona; now part of Lubrizol)",
+  "group": "research",
+  "pill": "Unapproved (cosmetic ingredient)",
+  "overview": {
+    "headline": "A face-cream ingredient marketed as 'Botox in a bottle'. Sold online as an injectable, which nobody has ever studied.",
+    "lede": "Acetyl octapeptide-3 is an eight-amino-acid synthetic peptide made by the Spanish ingredient company Lipotec as a longer version of its Argireline. In creams it is a legal cosmetic ingredient, listed in the EU's CosIng inventory as a humectant and skin conditioner. Its anti-wrinkle evidence is a test-tube assay and the manufacturer's own small in-use tests. It is not a drug anywhere, and injecting it has no evidence base at all.",
+    "stats": [
+      {"num": "63%", "lbl": "'maximum' wrinkle-depth reduction claimed by the maker after 28 days of a 10% cream; group size and placebo control not published", "src": "Lipotec, Personal Care Magazine, 2016"},
+      {"num": "0", "lbl": "peer-reviewed placebo-controlled trials of acetyl octapeptide-3, and 0 studies of injected use", "src": "Errante et al. 2020 and Zdrada-Nowak et al. 2025 reviews"},
+      {"num": "43%", "lbl": "inhibition of neurotransmitter release in a cell assay at 1.5 mM: a test-tube number", "src": "Errante et al., Frontiers in Chemistry 2020"}
+    ],
+    "mechanism": {
+      "intro": "It mimics a piece of SNAP-25, a protein nerves need to release the signal that contracts muscle.",
+      "parts": [
+        {"name": "SNARE mimic", "text": "Nerve endings release their chemical signal using a three-protein 'SNARE' complex; botulinum toxin works by cutting one of the three, SNAP-25. Snap-8 copies SNAP-25's tip and competes for its place, which in cell assays reduces neurotransmitter release."},
+        {"name": "The penetration problem", "text": "To relax a muscle the peptide must cross the skin and reach nerve endings beneath it. Reviews of the parent peptide Argireline find most of it stays in the outer skin layer and call transdermal muscle relaxation 'likely impossible'. Snap-8 is larger still. Whatever a cream does to fine lines, it is probably not paralysis."}
+      ]
+    },
+    "more": {
+      "title": "More: cosmetic ingredient versus drug",
+      "paras": [
+        "A cosmetic may claim to cleanse, moisturise or improve appearance; it may not claim to change how the body works. 'Botox-like' marketing walks that line: the maker's data are about wrinkle depth, not nerve function. Cosmetics need no trials before sale, which is why the only human numbers come from the company. Sources are listed under the Status tab."
+      ]
+    }
+  },
+  "results": {
+    "headline": "A test-tube effect and company-run cream tests. Nothing independent, nothing injected.",
+    "lede": "No placebo-controlled trial of acetyl octapeptide-3 has been published, so there is no chart.",
+    "chart": null,
+    "stats": [],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {"b": "Test tube.", "t": "In a cell assay, Snap-8 at 1.5 mM reduced neurotransmitter release by 43%; combined with another peptide (Leuphasyl) the effect was additive (Errante 2020, citing manufacturer data)."},
+        {"b": "Maker's in-use tests.", "t": "A cream with 10% Snap-8 applied by women volunteers twice a week for 28 days gave a 'maximum' 63% reduction in wrinkle depth; elsewhere the company cites a mean of 35% and a maximum of 62%. The number of volunteers and whether a placebo cream was used have not been published."},
+        {"b": "Independent human trials.", "t": "None found by reviews in 2020 and 2025. The parent peptide Argireline has a handful of small studies (10% creams reducing wrinkle depth 30% to 49% over about a month), with a placebo-controlled measurement showing no change in skin elasticity."},
+        {"b": "Injected.", "t": "No study of any kind."}
+      ]
+    },
+    "more": [
+      {
+        "title": "More: how to read a 'maximum 63%' claim",
+        "paras": [
+          "A maximum is the single best responder. Without the average, the group size, a placebo cream and an independent assessor, the figure cannot be compared with anything. Reviewers note that the Snap-8 wrinkle figures come from the manufacturer's own website."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "Safe enough on skin to be a listed cosmetic ingredient. Unknown in a syringe.",
+    "lede": "As a cream ingredient it has a cosmetic safety record. As an injection it has no record at all.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "Not applicable. No clinical trial has been run; cosmetic in-use tests do not report discontinuation."
+    },
+    "unique": {
+      "title": "A nerve-signal blocker with no injection data",
+      "text": "Topically, peptides of this family are reported to cause little more than occasional mild irritation, and the EU inventory lists acetyl octapeptide-3 without restriction. Injecting a cosmetic ingredient is a different exposure: cosmetic-grade material is not made to the sterility and purity standards of an injectable, and an injected SNARE mimic is designed to interfere with nerve signalling, the same end point as botulinum toxin, with none of the dose knowledge that makes botulinum toxin safe in trained hands."
+    },
+    "more": [
+      {
+        "title": "More: what a trial would monitor for",
+        "paras": [
+          "An injection study would have to watch for local muscle weakness, drooping, swallowing or breathing difficulty, infection and allergic reactions. None of this has been assessed."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "In creams, the peptide is also a humectant, so some of the smoothing reported may simply be hydration."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms doctors treat as urgent after any facial injection",
+      "items": [
+        "Drooping of an eyelid or one side of the face, double vision",
+        "Trouble swallowing, speaking or breathing",
+        "Fever, spreading redness, pus or severe pain at an injection site",
+        "Swelling of the face or throat, hives"
+      ],
+      "note": "Anyone with these symptoms should get medical care right away and bring the product with them."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "No human blood-level data exist, and for a cream none would be expected: the question for a topical is skin penetration, not blood levels. Studies of the parent peptide found anywhere from about 0.2% to 30% of a dose crossing into skin layers depending on the formulation, with the highest concentration in the outermost layer (Zdrada-Nowak 2025 review). Nothing is known about injected Snap-8 in people.",
+    "stats": [
+      {"num": "8", "lbl": "amino acids; Argireline, its parent, has 6", "src": "Errante et al. 2020"},
+      {"num": "10%", "lbl": "concentration of Snap-8 in the maker's test cream", "src": "Lipotec, 2016"},
+      {"num": "0", "lbl": "human studies of injected acetyl octapeptide-3", "src": "Reviews 2020 and 2025"}
+    ],
+    "explain": [
+      {"b": "Why there is no chart.", "t": "The simulator models a drug in the bloodstream. A cream ingredient is judged on skin penetration, and an injected version has never been measured."},
+      {"b": "Why skin penetration is the whole question.", "t": "If the peptide cannot reach nerve endings under the skin, the 'Botox-like' mechanism cannot operate, whatever the cream does to surface lines."}
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: what this page cannot tell you",
+        "paras": [
+          "It cannot tell you whether a cream containing Snap-8 does anything beyond moisturising, or what a vial sold as Snap-8 for injection contains and does."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "No clinical trials. Cosmetics do not need them.",
+    "lede": "The only human data are the manufacturer's in-use cosmetic tests, which were not published in peer-reviewed form.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: how cosmetic ingredients are assessed",
+        "paras": [
+          "In the EU, Canada and the US, a cosmetic must be safe for its intended topical use and the maker is responsible for that assessment; there is no pre-market approval of efficacy. Inventories such as CosIng record a substance's name and function, not evidence that it works."
+        ]
+      }
+    ],
+    "running": {
+      "title": "No human trials",
+      "items": [
+        "No registered clinical trial of acetyl octapeptide-3 exists; the only human data are the manufacturer's in-use tests (10% cream, 28 days), with no published group size or placebo arm.",
+        "No study of injected acetyl octapeptide-3 has ever been registered or published."
+      ]
+    },
+    "find": {
+      "text": "Searching the public registry for the term below returns no trial of this ingredient.",
+      "term": "acetyl octapeptide-3",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "A permitted cosmetic ingredient in creams. Not a drug anywhere. Injectable 'Snap-8' is an unapproved product.",
+    "items": [
+      {"tag": "no", "label": "Canada: cosmetic only", "text": "In a cream, acetyl octapeptide-3 is a cosmetic ingredient; cosmetics are notified to Health Canada, not approved. Sold for injection or with claims to change the body, it becomes an unauthorized drug, and Health Canada said in April 2026 that unauthorized injectable peptide drugs are illegal in Canada."},
+      {"tag": "no", "label": "US: cosmetic ingredient, not a drug", "text": "The FDA does not approve cosmetic ingredients. Acetyl octapeptide-3 has no drug approval and no compounding status. The FDA's August 24, 2026 warning letters to peptide sellers said 'research use only' labels do not protect products marketed for injection into people."},
+      {"tag": "ok", "label": "EU: listed cosmetic ingredient", "text": "CosIng lists acetyl octapeptide-3 (inventory reference 82188, added 2010) with the functions humectant and skin conditioning and no annex restrictions. The listing concerns use in cosmetics on skin, nothing else."},
+      {"tag": "no", "label": "Sport", "text": "Not named on the 2026 WADA Prohibited List. A cosmetic ingredient has no therapeutic approval, so injected use would fall under the S0 clause for non-approved substances."}
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "What 'research use only' means for a cosmetic ingredient",
+        "text": "Vials sold online as 'Snap-8' for injection carry 'for research use only' labels. The same peptide is legal in a cream; the vial is not a cream. It has not been made or tested as an injectable, and regulators have said the label does not protect sellers who market it for human use.",
+        "items": [
+          "FDA warning letters, August 24, 2026: a 'research use only' disclaimer does not control when a website shows the product is intended as a drug for people.",
+          "Health Canada: unauthorized injectable peptide drugs are illegal in Canada (April 2026)."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "warn",
+        "title": "Symptoms to take to a doctor",
+        "text": "Anyone who has injected a product sold as Snap-8 should tell a doctor, especially with any of the following:",
+        "items": ["Facial drooping, double vision or trouble swallowing", "Fever, redness or pus at an injection site", "Hives, swelling or wheezing"],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: why the 'Botox' comparison misleads",
+        "paras": [
+          "Botulinum toxin is an approved prescription drug injected by trained clinicians at doses established in controlled trials. Snap-8 is a cream ingredient whose mechanism was shown in cells and whose human data are company wrinkle measurements. Calling one 'the other in a bottle' borrows credibility the evidence does not support."
+        ]
+      }
+    ],
+    "sources": [
+      {"text": "Lipotec SAU. SNAP-8 peptide: an octapeptide to express yourself at ease (manufacturer article; 10% cream, 28 days, maximum 63% wrinkle depth reduction). Personal Care Magazine, January 18, 2016.", "url": "https://www.personalcaremagazine.com/story/15385/"},
+      {"text": "Errante F, Ledwon P, Latajka R, Rovero P, Papini AM. Cosmeceutical peptides in the framework of sustainable wellness economy. Frontiers in Chemistry 2020;8:572923 (SNAP-8 in vitro 43% inhibition; wrinkle figures from manufacturer).", "url": "https://frontiersin.org/journals/chemistry/articles/10.3389/fchem.2020.572923/full"},
+      {"text": "Zdrada-Nowak J, Surgiel-Gemza A, Szatkowska M. Acetyl hexapeptide-8 in cosmeceuticals: a review of skin permeability and efficacy. International Journal of Molecular Sciences 2025;26(12):5722.", "url": "https://www.mdpi.com/1422-0067/26/12/5722"},
+      {"text": "Blanes-Mira C et al. A synthetic hexapeptide (Argireline) with antiwrinkle activity. International Journal of Cosmetic Science 2002 (the parent peptide's original study).", "url": "https://portalinvestigacion.umh.es/documentos/5eb2cbcd29995223401a82a0?lang=en"},
+      {"text": "European Commission CosIng inventory record: Acetyl octapeptide-3 (reference 82188, October 15, 2010; functions humectant, skin conditioning).", "url": "https://cosingchecker.com/ingredients/82188-acetyl-octapeptide-3"},
+      {"text": "ArentFox Schiff. Five peptide vendors learn that 'research use only' is not a legal strategy (FDA warning letters of August 24, 2026), September 18, 2026.", "url": "https://www.afslaw.com/perspectives/alerts/ruo-ined-five-peptide-vendors-learn-research-use-only-not-legal-strategy"},
+      {"text": "Smart & Biggar. Health Canada obtains permanent injunction against Canlab Research (April 2026 warning; July 29, 2026 injunction), August 25, 2026.", "url": "https://www.smartbiggar.ca/insights/publication/health-canada-obtains-permanent-injunction-to-prevent-illegal-sale-of-injectable-peptides-by-canlab-research"}
+    ]
+  }
+}

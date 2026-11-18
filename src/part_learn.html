@@ -1,0 +1,77 @@
+<!-- ============ LEARN ============ -->
+<section data-panel="learn" aria-labelledby="ln-h" hidden>
+  <div>
+    <div class="kick"><div class="eyebrow">Learn</div><span class="tag2">Guides &amp; tools</span></div>
+    <h1 id="ln-h">How peptide drugs are studied, and how to read what you find here.</h1>
+  </div>
+  <p class="lede">Everything in the Peptides section comes from trials, product labels and regulators. This section explains the machinery behind those numbers: what a trial is, what the results mean, why half-life matters, what the side-effect tables are really saying, and why this app measures by weight.</p>
+
+  <div class="card wk-again" id="learn-start"><div><b>Before you mix or dose</b><span>The seven things to know, in two minutes. Shown once after sign-in; read it again any time.</span></div><button type="button" class="btn ghost" onclick="window.qbWalk&&window.qbWalk.open()">Read it</button></div>
+  <div class="card wk-again" id="learn-coa"><div><b>COA Checker</b><span>Type what is on your vial and what the certificate says; six checks, one verdict. Every check has an example certificate behind it.</span></div><button type="button" class="btn" data-coa="learn">Check a COA</button></div>
+
+  <div id="learn-trials">
+    <h2>What a clinical trial is</h2>
+    <p class="lede" style="font-size:15px;margin-top:6px">A drug reaches people in stages. Each stage asks one question, and a drug has to answer it before moving on.</p>
+    <div class="row two" style="margin-top:12px">
+      <div class="card"><h3>Phase 1 · Is it safe to give?</h3><p style="font-size:14px;color:var(--ink-2)">A few dozen people, often healthy volunteers. Single and rising doses, blood sampling around the clock to measure how the drug is absorbed and cleared (the half-life figures in this app), and close watching for side effects.</p></div>
+      <div class="card"><h3>Phase 2 · Does it work, and at what dose?</h3><p style="font-size:14px;color:var(--ink-2)">Hundreds of people with the condition, split across several doses and placebo for months. This is where a dose range is chosen and the first efficacy numbers appear.</p></div>
+      <div class="card"><h3>Phase 3 · Does it work in thousands?</h3><p style="font-size:14px;color:var(--ink-2)">Large trials, usually more than a year, against placebo or an existing drug, designed to be good enough for a regulator to approve the drug and write its label.</p></div>
+      <div class="card"><h3>Phase 4 · What happens at scale?</h3><p style="font-size:14px;color:var(--ink-2)">After approval: rare side effects, long-term outcomes, new uses. Labels are updated as this evidence arrives.</p></div>
+    </div>
+    <div class="card" style="margin-top:12px"><h3>Placebo and randomization</h3><p style="font-size:14px;color:var(--ink-2)">A trial result is never "people lost 20%." It is "people on the drug lost 20% and people on placebo, doing the same diet and visits, lost 2%." The difference between the two is the drug's effect, and that placebo-adjusted number is what this app reports first. Randomization (a computer assigning each person to a group) and blinding (nobody knowing who got what until the end) are what make that comparison fair.</p></div>
+    <div style="margin-top:14px"><h2>What a participant experiences</h2></div>
+    <ol class="steps" id="learn-steps"></ol>
+  </div>
+
+  <div id="learn-results">
+    <h2>Reading the Results tab</h2>
+    <div class="card" style="margin-top:10px">
+      <h3>Percent of body weight, not pounds</h3><p style="font-size:14px;color:var(--ink-2)">Weight trials report the percentage of starting weight lost, so the number means the same for a 90 kg and a 130 kg person. "−24% vs −2% placebo over 48 weeks" says the drug group lost 24% of their starting weight and the placebo group lost 2%; the drug accounts for about 22 points of the difference.</p>
+      <h3 style="margin-top:8px">Points versus percent</h3><p style="font-size:14px;color:var(--ink-2)">Some outcomes are measured in their own units: A1C in percentage points (from 8.0% to 6.5% is a 1.5-point drop, not a 19% drop), blood pressure in mmHg, scores on a questionnaire in points. The charts label the unit on each bar.</p>
+      <h3 style="margin-top:8px">Dropouts count</h3><p style="font-size:14px;color:var(--ink-2)">Every trial loses people, some because of side effects. A result that only counts the people who finished looks better than one that counts everyone who started. The Trials tab notes how each study handled this where the publication says.</p>
+      <h3 style="margin-top:8px">Not yet published means not yet known</h3><p style="font-size:14px;color:var(--ink-2)">Press releases report a headline number before the full paper. Until the paper is out, the side-effect tables, subgroup results and dropout reasons are missing, and the app says so rather than filling the gap.</p>
+    </div>
+  </div>
+
+  <div id="learn-levels">
+    <h2>Half-life, steady state and saturation</h2>
+    <div class="card" style="margin-top:10px">
+      <p style="font-size:14px;color:var(--ink-2)">Half-life is how long the body takes to clear half of a dose. A drug given on a schedule builds up until the amount cleared between doses equals the amount given; that plateau is steady state, and it takes four to five half-lives to reach it regardless of the dose. A weekly drug with a six-day half-life takes about a month to settle; a daily drug with a 13-hour half-life settles in three days. The Levels tab draws exactly this curve for each peptide, from the published half-life, and shows what happens to the level when a dose is stepped up, stepped down, missed or stopped.</p>
+      <p style="font-size:14px;color:var(--ink-2);margin-top:8px">Trials raise the dose in steps (titration) because the side effects track the climb, not the plateau. A missed weekly dose drops the level by roughly half before the next one restores it; stopping lets it fade over four to five half-lives, which is why effects persist for weeks after a long-acting drug is stopped.</p>
+    </div>
+    <div id="learn-hl" style="margin-top:12px"></div>
+  </div>
+
+  <div id="learn-effects">
+    <h2>Side effects: what the trials saw, and what the trials did</h2>
+    <div class="card" style="margin-top:10px">
+      <h3>The common ones are dose-dependent and front-loaded</h3><p style="font-size:14px;color:var(--ink-2)">For the GLP-1 family, nausea, vomiting, diarrhea and constipation affect a large share of participants, cluster in the weeks after each dose increase, and fade for most people as the dose holds steady. Trials managed them with slow escalation schedules, by holding a dose step until symptoms settled, and by stepping back down when they did not. The Effects tab shows each trial's actual rates against placebo.</p>
+      <h3 style="margin-top:8px">The ones the trials treated as stop-and-assess</h3><p style="font-size:14px;color:var(--ink-2)">Severe or persistent abdominal pain (pancreatitis and gallbladder disease appear in the labels of this whole class), vomiting that prevents keeping fluids down (dehydration and kidney injury follow), signs of an allergic reaction, a racing heart that does not settle, yellowing of the skin or eyes, and low blood sugar in people also taking insulin or sulfonylureas. In a trial each of these triggered a clinic assessment and usually a pause in dosing; outside a trial they are reasons to be seen, not to wait.</p>
+      <h3 style="margin-top:8px">What is monitored, and why</h3><p style="font-size:14px;color:var(--ink-2)">Trials measured heart rate (it rises a few beats per minute on these drugs), blood pressure (it usually falls with weight), kidney function during periods of vomiting, and in some studies lean mass and bone. The Track section exists so you can keep the same records at home.</p>
+      <h3 style="margin-top:8px">What the trials cannot tell you</h3><p style="font-size:14px;color:var(--ink-2)">Trial participants received a verified drug at a known dose with medical supervision and exclusion of people with certain conditions (a personal or family history of medullary thyroid cancer, pancreatitis, severe gastrointestinal disease, pregnancy). Rates and safety from a trial describe that situation and no other.</p>
+    </div>
+  </div>
+
+  <div id="learn-status">
+    <h2>Approved, in trials, or sold as a "research chemical"</h2>
+    <div class="row three" style="margin-top:10px">
+      <div class="card good"><h3>Approved</h3><p style="font-size:14px;color:var(--ink-2)">Health Canada or the FDA has reviewed the full trial record and written a label. The product in the pharmacy is manufactured under inspection, with verified content and sterility.</p></div>
+      <div class="card warn"><h3>In clinical trials</h3><p style="font-size:14px;color:var(--ink-2)">Efficacy and safety are still being established. The drug exists only inside trials; any vial sold with its name on it is made by someone else, unverified, and unlawful to sell for human use.</p></div>
+      <div class="card crit"><h3>Sold as "research"</h3><p style="font-size:14px;color:var(--ink-2)">No human trials, or trials abandoned. The "research use only" label is a legal formality; regulators in Canada and the U.S. moved against this market in 2026 because the products were sold and used as drugs.</p></div>
+    </div>
+    <div class="card" style="margin-top:12px"><h3>What a certificate of analysis does and does not prove</h3><p style="font-size:14px;color:var(--ink-2)">A COA from an independent lab shows purity (what fraction of the material is the intended peptide), identity (the mass spectrum matches) and sometimes net content (how many milligrams of actual peptide are in the vial, as opposed to salt and water). A purity figure alone does not say how much is in the vial, and a COA for one batch says nothing about another. A sealed vial cannot be checked on a scale; the powder's weight is not the peptide's weight.</p></div>
+  </div>
+
+  <div id="learn-units">
+    <h2>Units, millilitres and milligrams</h2>
+    <div id="learn-units-body" style="margin-top:10px"></div>
+  </div>
+
+  <div id="learn-weigh">
+    <h2>Why this app measures by weight, and exactly how</h2>
+    <div class="card" style="margin-top:10px">
+      <p style="font-size:14px;color:var(--ink-2)">Syringe marks measure volume by eye, on a tube a few millimetres wide, against a label that may not be true. A pocket scale measures the same liquid to a thousandth of a gram, and water weighs exactly one gram per millilitre. So each peptide’s Dosing tab and the Vial tracker in the Track section never ask for units or syringe marks: they ask what the scale showed, and do the arithmetic from there. The protocol below is the whole method, step by step.</p>
+    </div>
+    <div id="learn-protocol" style="margin-top:12px;display:flex;flex-direction:column;gap:12px"></div>
+  </div>
+</section>

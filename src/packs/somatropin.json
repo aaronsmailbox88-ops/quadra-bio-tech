@@ -1,0 +1,241 @@
+{
+  "id": "somatropin",
+  "name": "Somatropin (human growth hormone)",
+  "brands": "Genotropin, Humatrope, Norditropin, Omnitrope, Saizen, Zomacton",
+  "maker": "Several (Pfizer, Lilly, Novo Nordisk, Sandoz, Merck KGaA, Ferring)",
+  "group": "approved",
+  "pill": "Approved (deficiency only)",
+  "overview": {
+    "headline": "A copy of the body's own growth hormone, approved to replace it in people who lack it.",
+    "lede": "Somatropin is recombinant human growth hormone, the same 191-amino-acid protein the pituitary makes. Health Canada, the FDA and the EMA approve it only for growth hormone deficiency and a short list of growth disorders. Sold online as \"HGH 191AA\" for muscle, fat loss and \"anti-aging\", it is being used for purposes no regulator has approved and that U.S. law specifically forbids.",
+    "stats": [
+      {"num": "+2.1 kg", "lbl": "lean mass gained by healthy older adults after about 6 months, with no change in weight, strength or bone", "src": "Liu et al., Ann Intern Med 2007 (18 randomized populations)"},
+      {"num": "0", "lbl": "approved uses for muscle, fat loss, anti-aging or sport in Canada, the U.S. or the EU", "src": "Health Canada, FDA and EMA labels"},
+      {"num": "5 yrs", "lbl": "maximum U.S. prison term for distributing HGH for any non-medical use", "src": "21 U.S.C. 333(e)"}
+    ],
+    "mechanism": {
+      "intro": "Growth hormone works mostly through a second hormone, IGF-1, made in the liver.",
+      "parts": [
+        {"name": "GH receptor", "text": "Somatropin binds the same receptor as natural GH. In children this drives bone growth; in adults it maintains the balance of muscle, bone and fat."},
+        {"name": "IGF-1", "text": "Most of GH's effects come from IGF-1 released by the liver. Doctors adjust somatropin by measuring IGF-1 in blood, because GH itself is cleared within hours."},
+        {"name": "Metabolic effects", "text": "GH opposes insulin and raises blood sugar, shifts the body toward burning fat, and makes the kidneys hold salt and water. The water is why swelling, joint pain and tingling hands are the common side effects."}
+      ]
+    },
+    "more": {
+      "title": "More: what \"191AA\" means",
+      "paras": [
+        "Natural human growth hormone is a chain of 191 amino acids. Somatropin has exactly that sequence; an older product, somatrem, had 192. Vendors use \"191AA\" to imply their vial is the real thing. The label on a grey-market vial says nothing about what is inside it.",
+        "Approved somatropin is a prescription biologic made under licence and injected daily; newer long-acting forms (somapacitan, somatrogon, lonapegsomatropin) are weekly.",
+        "Everything on this page comes from product labels, peer-reviewed systematic reviews and regulators' notices. Sources are under the Status tab."
+      ]
+    }
+  },
+  "results": {
+    "headline": "In healthy adults: a little more lean mass, a little less fat, and no gain in strength.",
+    "lede": "The best evidence is two systematic reviews of randomized trials: one in healthy older adults (the \"anti-aging\" use) and one in young, fit people (the athletic use). Both pooled small, short trials.",
+    "chart": {
+      "metric": "other",
+      "unit": " kg",
+      "legend": ["Growth hormone", "Control"],
+      "rows": [
+        {"name": "Lean mass, older adults", "meta": "18 trial populations · 220 people on GH · mean 27 weeks at 14 µg/kg/day", "drug": 2.1, "placebo": 0, "tip": "+2.1 kg versus control (95% CI 1.3 to 2.9)"},
+        {"name": "Fat mass, older adults", "meta": "same review", "drug": -2.1, "placebo": 0, "tip": "−2.1 kg versus control (95% CI −2.8 to −1.35)"},
+        {"name": "Body weight, older adults", "meta": "same review", "drug": 0.1, "placebo": 0, "tip": "+0.1 kg, not significant (95% CI −0.7 to 0.8)"},
+        {"name": "Lean mass, young fit adults", "meta": "27 study samples · 303 people on GH · mean 20 days at 36 µg/kg/day", "drug": 2.1, "placebo": 0, "tip": "+2.1 kg versus control (95% CI 1.3 to 2.9)"}
+      ],
+      "max": 3,
+      "note": "Values are the pooled difference between GH and control groups, so control is drawn at 0. The reviewers note GH causes fluid retention, which body-composition scans count as lean tissue."
+    },
+    "stats": [
+      {"num": "No change", "lbl": "in strength or exercise capacity in young adults given GH; blood lactate during exercise was higher", "src": "Liu et al., Ann Intern Med 2008"},
+      {"num": "No change", "lbl": "in bone density in older adults; total cholesterol fell slightly but not after adjusting for body composition", "src": "Liu et al., Ann Intern Med 2007"}
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {"b": "Older adults.", "t": "About 2 kg of lean tissue gained and 2 kg of fat lost after six months, with no change in weight. Strength, fitness and bone density did not improve in the trials that measured them."},
+        {"b": "Young athletes.", "t": "Lean mass rose about 2 kg over three weeks, but strength and exercise capacity did not improve, and lactate during exercise was higher in two of the three studies that measured it."},
+        {"b": "People who lack GH.", "t": "In adults with true deficiency, the label's placebo-controlled trials showed improved body composition. That is what the approval rests on."}
+      ]
+    },
+    "more": [
+      {
+        "title": "More: the 1990 study that started it",
+        "paras": [
+          "The anti-aging idea traces to a 1990 study in which 12 men over 60 were given GH for six months and gained lean mass and lost fat. It was small, compared against untreated rather than placebo-treated men, and measured body composition, not strength or health. The randomized trials pooled in 2007 confirmed the body-composition change, found nothing else, and found more side effects. The 2007 authors concluded that GH \"cannot be recommended as an antiaging therapy\"."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "Swelling, joint pain, tingling hands, and higher blood sugar.",
+    "lede": "These are the effects of more growth hormone than the body needs. They appeared at replacement doses in deficient adults, and more often in healthy people given GH they did not lack.",
+    "chart": {
+      "eyebrow": "Adults with GH deficiency, first 6 months · share affected (Genotropin label)",
+      "legend": ["Somatropin", "Placebo"],
+      "rows": [
+        {"name": "Peripheral swelling", "drug": 17.5, "placebo": 5.1},
+        {"name": "Joint pain (arthralgia)", "drug": 17.3, "placebo": 4.2},
+        {"name": "Pain in arms or legs", "drug": 14.7, "placebo": 5.9},
+        {"name": "Peripheral edema", "drug": 10.8, "placebo": 2.6},
+        {"name": "Tingling (paresthesia)", "drug": 9.6, "placebo": 1.9},
+        {"name": "Stiff limbs", "drug": 7.9, "placebo": 1.6}
+      ],
+      "max": 25,
+      "note": "573 people on somatropin and 572 on placebo, pooled from the label's adult trials at weight-based replacement doses (the main study used 0.04 mg/kg/week for a month, then 0.08 mg/kg/week). The label calls these events early and transient, easing when the dose was lowered."
+    },
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "Not reported as a pooled rate in the label or in the two systematic reviews. In the 2007 review of healthy older adults, GH-treated people were significantly more likely to have soft-tissue swelling, joint pain, carpal tunnel syndrome and breast enlargement (in men), and somewhat more likely to develop diabetes or impaired fasting glucose."
+    },
+    "unique": {
+      "title": "Acromegaly: what chronic excess looks like",
+      "text": "People whose pituitary makes too much GH develop acromegaly: enlarged hands, feet and jaw, joint damage, sleep apnea, diabetes and heart enlargement. Those changes take years. They are the reason prescribers keep IGF-1 in the normal range, and the reason the label warns about glucose, fluid retention and tumours. Someone injecting unknown amounts for muscle has no such check."
+    },
+    "more": [
+      {
+        "title": "More: what the label warns about",
+        "paras": [
+          "Blood sugar: somatropin lowers insulin sensitivity and can unmask diabetes; the label asks for periodic glucose checks. Tumours: GH is not given with active cancer, and childhood cancer survivors treated with GH had more second tumours, most often meningiomas. Also listed: raised pressure in the head, pancreatitis, low thyroid and adrenal function, and serious allergic reactions."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "In people who are truly deficient, replacement restores normal body composition. In people who are not, the trials found a small shift in lean and fat mass and nothing on strength, fitness or bone."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms trial teams treat as urgent",
+      "items": [
+        "Severe headache with vision changes or vomiting",
+        "Rapid swelling of the hands, feet or face, or shortness of breath",
+        "Numbness or pain in the hands, especially at night (carpal tunnel)",
+        "Unusual thirst or urination (high blood sugar)",
+        "Severe abdominal pain (pancreatitis)",
+        "A new lump, or a mole that changes"
+      ],
+      "note": "Anyone with these symptoms, prescribed or not, should get medical care right away."
+    }
+  },
+  "levels": {
+    "pk": {
+      "half": 0.125,
+      "tmax": 0.25,
+      "ladder": [0.2],
+      "stepDays": 28,
+      "tau": 1,
+      "maxDose": 0.2,
+      "refLabel": "0.2 mg daily (label's adult starting dose)",
+      "source": "Genotropin label (Pfizer, revised July 2025), section 12.3: about 80% absorbed from a subcutaneous dose, mean peak at 5.9 h, terminal half-life about 3.0 h in GH-deficient adults. The label starts adults at about 0.2 mg/day and adjusts by IGF-1 every 1 to 2 months with no fixed top dose, so only the starting dose is drawn."
+    },
+    "nopk": "",
+    "stats": [
+      {"num": "~3 h", "lbl": "half-life after an injection under the skin", "src": "Genotropin label, GH-deficient adults"},
+      {"num": "~6 h", "lbl": "time to peak blood level after injection", "src": "Genotropin label (mean 5.9 h)"},
+      {"num": "~1 day", "lbl": "to clear almost all of a dose: about eight half-lives", "src": "From the label's half-life"}
+    ],
+    "explain": [
+      {"b": "Why there is no build-up.", "t": "With a 3-hour half-life, each day's dose is essentially gone before the next. Daily injection re-creates a pulse, not a steady level."},
+      {"b": "Why doctors measure IGF-1, not GH.", "t": "GH swings by the hour, so the label adjusts doses every 1 to 2 months using IGF-1, which is steadier, plus symptoms and blood sugar."},
+      {"b": "Why the chart shows only the starting dose.", "t": "The label gives a starting dose of about 0.2 mg a day and small increases guided by blood tests, with no fixed maintenance dose. There is no approved ladder to draw."}
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: the model behind the chart",
+        "paras": [
+          "A one-compartment model using the Genotropin label's figures: about 80% absorbed from under the skin, a peak near 6 hours, a half-life of about 3 hours. 100% is the average level on 0.2 mg daily once steady. Real levels vary with body weight, injection site and the person's own GH, which the model ignores."
+        ]
+      },
+      {
+        "title": "More: what this chart cannot tell you",
+        "paras": [
+          "It models an approved product in a deficient adult. A vial sold as \"HGH 191AA\" has no verified content, so no model applies to it. The relevant blood test is IGF-1, and only a doctor can order and interpret it."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "The approved regimen is for deficiency. There is no approved regimen for muscle, fat or aging.",
+    "lede": "Somatropin's trials were in children with growth failure and adults who cannot make GH. The dose is set by body weight or started at about 0.2 mg a day and adjusted by IGF-1. The trials in healthy adults were experiments, and the two systematic reviews are their summary.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: how the deficiency trials handled side effects",
+        "paras": [
+          "Fluid-related symptoms were managed by lowering the dose; the label describes them as early and transient. Glucose and IGF-1 were checked throughout, and the dose was cut if IGF-1 ran high. That monitoring is the part a grey-market buyer does not have."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials that have been run",
+      "items": [
+        "Healthy older adults (anti-aging): 18 randomized populations, 220 treated, about six months. +2.1 kg lean, −2.1 kg fat, no strength or bone benefit; more swelling, joint pain, carpal tunnel, breast enlargement and glucose problems (Liu 2007).",
+        "Young fit adults (performance): 27 study samples, 303 treated, about three weeks. +2.1 kg lean, no gain in strength or exercise capacity, higher lactate, more swelling and fatigue (Liu 2008).",
+        "Adults with GH deficiency (the approved use): 6-month placebo-controlled trials summarized in the label, followed by open-label treatment to 24 months."
+      ]
+    },
+    "find": {
+      "text": "Legitimate studies of somatropin are in deficiency, growth disorders and a few other conditions. Search the public registry for the generic name, and be wary of any \"study\" that sells you the product.",
+      "term": "somatropin",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "Approved for deficiency. Illegal to sell for anything else, and widely counterfeited.",
+    "items": [
+      {"tag": "ok", "label": "Canada", "text": "Somatropin brands such as Genotropin, Humatrope, Norditropin and Omnitrope are prescription drugs authorized for growth hormone deficiency and specific growth disorders. Unauthorized \"HGH\" is illegal to sell: Health Canada named HGH among injectables seized from the online seller Canada Peptide (August 1, 2025) and \"HGH Somatropin\" vials from a Vancouver gym (December 24, 2025)."},
+      {"tag": "ok", "label": "United States", "text": "Approved for pediatric growth disorders and adult GH deficiency (Genotropin label revised July 2025). Federal law makes distributing HGH for any other use a crime: up to 5 years in prison, 10 if a minor is involved. FDA Import Alert 66-71 (updated April 7, 2026) detains unapproved HGH at the border and notes counterfeit HGH has entered the U.S. supply chain."},
+      {"tag": "no", "label": "Sport", "text": "Prohibited at all times under WADA's 2026 Prohibited List (S2.2.3: growth hormone, its analogues and fragments)."},
+      {"tag": "no", "label": "Anti-aging and muscle", "text": "No regulator has approved GH for aging, body composition or performance. The 2007 systematic review concluded it \"cannot be recommended as an antiaging therapy\"."}
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "What is really in an \"HGH 191AA\" vial",
+        "text": "Approved somatropin reaches patients only by prescription through licensed pharmacies. Vials from peptide shops, gyms and overseas sites are unapproved, and regulators on three continents have found counterfeit or unauthorized HGH in circulation.",
+        "items": [
+          "Australia's TGA (late 2025): counterfeit \"Novartis-Bio Somatropin HGH 191aa\" vials with invalid batch numbers; Novartis makes no such product.",
+          "FDA Import Alert 66-71 (2026): unapproved and counterfeit HGH, including powders offered as \"compounding\" ingredients, is detained; HGH cannot be compounded or sold as a supplement because it is a biologic.",
+          "Health Canada (August and December 2025): HGH listed among unauthorized injectables seized from an online seller and a Vancouver gym; \"research use only\" labels do not make such products legal (April 2026 advisory)."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "warn",
+        "title": "If someone has already used it",
+        "text": "Stop, see a doctor, and mention the product. Ask about:",
+        "items": [
+          "Blood sugar (fasting glucose or A1C)",
+          "Swelling, joint pain or hand numbness that has not settled",
+          "Headaches with vision changes",
+          "Any new lump or changing mole"
+        ],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: why U.S. law singles out HGH",
+        "paras": [
+          "Most prescription drugs can be prescribed off-label. HGH cannot: since 1990, federal law allows its distribution for human use only to treat a disease or recognized medical condition that the FDA has authorized, on a physician's order. Anti-aging and body-building do not qualify, so the sale itself is the crime, with or without a prescription."
+        ]
+      }
+    ],
+    "sources": [
+      {"text": "Liu H, Bravata DM, Olkin I, et al. Systematic review: the safety and efficacy of growth hormone in the healthy elderly. Annals of Internal Medicine 2007;146:104–115.", "url": "https://pubmed.ncbi.nlm.nih.gov/17227934/"},
+      {"text": "Liu H, Bravata DM, Olkin I, et al. Systematic review: the effects of growth hormone on athletic performance. Annals of Internal Medicine 2008;148:747–758.", "url": "https://hcp.hms.harvard.edu/publication/systematic-review-effects-growth-hormone-athletic-performance"},
+      {"text": "Pfizer, GENOTROPIN (somatropin) prescribing information, revised July 2025 (indications, adult dosing, Table 1 adverse reactions, section 12.3 pharmacokinetics).", "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/020280s108lbl.pdf"},
+      {"text": "21 U.S.C. § 333(e), penalties for distribution of human growth hormone.", "url": "https://www.law.cornell.edu/uscode/text/21/333"},
+      {"text": "FDA, Import Alert 66-71: Detention without physical examination of unapproved human growth hormone, revised April 7, 2026.", "url": "https://www.accessdata.fda.gov/cms_ia/importalert_204.html"},
+      {"text": "Health Canada, public advisory: unauthorized injectable peptide drugs seized and sold by Canada Peptide, August 1, 2025.", "url": "https://recalls-rappels.canada.ca/en/alert-recall/unauthorized-injectable-peptide-drugs-seized-and-sold-canada-peptide-may-pose-serious"},
+      {"text": "Health Canada, public advisory: unauthorized health products sold online and seized from Rize Fitness, Vancouver, December 24, 2025.", "url": "https://recalls-rappels.canada.ca/en/alert-recall/unauthorized-health-products-sold-online-and-seized-rize-fitness-may-pose-serious"},
+      {"text": "Health Canada, Think twice before injecting peptides bought online, April 9, 2026.", "url": "https://recalls-rappels.canada.ca/en/alert-recall/think-twice-injecting-peptides-bought-online-unauthorized-products-can-seriously-harm"},
+      {"text": "Therapeutic Goods Administration (Australia), safety alert: counterfeit Novartis-Bio Somatropin HGH vials, late 2025.", "url": "https://www.tga.gov.au/node/284605"},
+      {"text": "World Anti-Doping Agency, 2026 Prohibited List, effective January 1, 2026 (S2.2.3).", "url": "https://www.wada-ama.org/en/prohibited-list"},
+      {"text": "Rudman D, et al. Effects of human growth hormone in men over 60 years old. New England Journal of Medicine 1990;323:1–6.", "url": ""}
+    ]
+  }
+}

@@ -1,0 +1,280 @@
+{
+  "id": "pancragen",
+  "name": "Pancragen",
+  "brands": "",
+  "maker": "St Petersburg Institute of Bioregulation and Gerontology (V. Khavinson)",
+  "group": "research",
+  "pill": "Unapproved",
+  "overview": {
+    "headline": "A four-amino-acid peptide named for the pancreas. Lowered blood sugar in diabetic rats; two small Russian and Ukrainian studies in people with diabetes.",
+    "lede": "Pancragen is the Khavinson institute's tetrapeptide Lys-Glu-Asp-Trp, patented in the U.S. in 2009 for regulating blood glucose in diabetes. It has more human data than its siblings: a 36-patient placebo-controlled report in the patent and a 33-patient study in elderly type 2 diabetics (2011), both small, short and from the institute's network. It is not a registered medicine anywhere.",
+    "stats": [
+      {
+        "num": "4",
+        "lbl": "amino acids: Lys-Glu-Asp-Trp",
+        "src": "US patent 7,491,703; Khavinson 2016"
+      },
+      {
+        "num": "36",
+        "lbl": "people with diabetes (23 type 1, 13 type 2) in the patent's ten-day placebo-controlled report; blinding not described",
+        "src": "US patent 7,491,703"
+      },
+      {
+        "num": "33",
+        "lbl": "elderly people with type 2 diabetes in the 2011 Kyiv study; no numbers in the abstract",
+        "src": "Korkushko et al. 2011"
+      }
+    ],
+    "mechanism": {
+      "intro": "A short peptide said to restore insulin production and insulin sensitivity.",
+      "parts": [
+        {
+          "name": "The bioregulator idea",
+          "text": "The 2016 computer model places Pancragen on the DNA sequence \"acct\" with \"very strong\" predicted binding. A docking calculation, not a measurement in pancreatic tissue."
+        },
+        {
+          "name": "What the animal work showed",
+          "text": "In rats made diabetic with alloxan, the peptide lowered blood glucose by 38% on average over 11 days, raised insulin almost fourfold for a week afterwards and cut mortality by day 84 from 70% to 36% (21 rats). A 2017 Russian-language paper is titled as correcting impaired glucose tolerance in old female rhesus monkeys; its abstract could not be retrieved."
+        }
+      ]
+    },
+    "more": {
+      "title": "More: the two human reports",
+      "paras": [
+        "Patent: 36 inpatients with poorly controlled diabetes, \"stratified randomly\" to peptide or saline placebo for ten days; blinding not described, group sizes inconsistent between tables. Kyiv 2011: 33 elderly type 2 diabetics and 30 healthy peers; glucose, insulin and an insulin-resistance index fell on Pancragen; the abstract gives no numbers, duration or design."
+      ]
+    }
+  },
+  "results": {
+    "headline": "Diabetic rats improved. Two small, short, thinly described human studies pointed the same way. No modern trial has followed.",
+    "lede": "Pancragen is the only peptide in this family with placebo-controlled human data, and that data is a ten-day report in a patent.",
+    "chart": null,
+    "stats": [
+      {
+        "num": "8 of 16 vs 0 of 16",
+        "lbl": "insulin users whose insulin dose could be reduced over ten days, peptide versus placebo",
+        "src": "US patent 7,491,703"
+      },
+      {
+        "num": "−38%",
+        "lbl": "average blood glucose over 11 days in 21 alloxan-diabetic rats",
+        "src": "US patent 7,491,703"
+      }
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {
+          "b": "In vitro.",
+          "t": "Little. The peptide served as a comparator in the institute's bronchial cell-culture work (Lung 2014). The DNA-binding claim is from computer docking."
+        },
+        {
+          "b": "Animals.",
+          "t": "Alloxan-diabetic rats (patent): glucose down 38% over 11 days (21 rats); mortality 36% versus 70% by day 84; insulin 3.9-fold higher for 8 days after dosing; better glucose tolerance 44 days later. Old rhesus monkeys (2017): correction of impaired glucose tolerance per the title. Toxicity is asserted in the patent but no data are shown."
+        },
+        {
+          "b": "Russian and Ukrainian human reports.",
+          "t": "Patent: 36 patients aged 16–83, ten days of peptide or saline; insulin dose fell in 8 of 16 treated versus 0 of 16 controls; blinding not described, group sizes inconsistent. Kyiv 2011: 33 elderly type 2 diabetics; glucose, insulin and insulin-resistance index fell on Pancragen; no numbers or design in the abstract."
+        }
+      ]
+    },
+    "more": [
+      {
+        "title": "More: why these reports would not pass a regulator",
+        "paras": [
+          "Ten days cannot show anything about diabetes control, which is judged over months by HbA1c, and without blinding the doctor adjusting insulin knows who got the peptide. Still, this is the one peptide in the family where a proper trial would answer a real question. Nobody has run one since 2009."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "Ten days of exposure in 16 people. No adverse-event reporting, and a blood-sugar claim that itself carries risk.",
+    "lede": "The patent's 36-patient report mentions no adverse events and the 2011 abstract does not address safety. A substance claimed to lower blood sugar in insulin users is, by its own claim, a substance that could cause hypoglycaemia.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "Not reported in either human study. The patent calls the peptide \"experimentally proved to be non-toxic\" without presenting data."
+    },
+    "unique": {
+      "title": "What is actually known",
+      "text": "Only the obvious inference: if the peptide does what its inventors claim in people on insulin or sulfonylureas, low blood sugar is the predictable hazard, and no study has measured how often it happened."
+    },
+    "more": [
+      {
+        "title": "More: what a trial would monitor for",
+        "paras": [
+          "Hypoglycaemia, especially in people on insulin (32 of the 36 patients in the patent); HbA1c and insulin requirements over months; immune reactions."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "In diabetic rats: lower glucose, more insulin, fewer deaths. In 16 treated patients over ten days: more insulin-dose reductions than on placebo. In 33 elderly diabetics: lower glucose and insulin-resistance values, numbers unpublished."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms a doctor should see promptly",
+      "items": [
+        "Spreading redness, swelling or pus at an injection site, or fever and chills after an injection",
+        "Hives, swelling of the face or throat, trouble breathing",
+        "Yellowing of the skin or eyes, dark urine",
+        "Shakiness, sweating, confusion or fainting: possible low blood sugar, especially with insulin or diabetes tablets"
+      ],
+      "note": "No trial has defined this peptide's own danger signs; these relate to an unverified product."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "No one has measured Pancragen in a person's blood; no half-life or absorption figure exists for it in any species. There is nothing to build a curve from.",
+    "stats": [
+      {
+        "num": "None",
+        "lbl": "human half-life; never measured",
+        "src": "No PK study found, Oct 2026"
+      },
+      {
+        "num": "4",
+        "lbl": "amino acids long (Lys-Glu-Asp-Trp)",
+        "src": "Khavinson 2016"
+      },
+      {
+        "num": "10 days",
+        "lbl": "length of the only placebo-controlled human exposure, in 16 treated patients",
+        "src": "US patent 7,491,703"
+      }
+    ],
+    "explain": [
+      {
+        "b": "Why there is no chart.",
+        "t": "The simulator on other pages needs a measured half-life; none exists for Pancragen."
+      },
+      {
+        "b": "Why the oral claim is contested.",
+        "t": "Pharmacologists expect peptides this short to be digested by gut and blood enzymes; the institute says they are absorbed intact. Nothing in people settles it."
+      },
+      {
+        "b": "Why the diabetes claim raises the stakes.",
+        "t": "A product that may or may not lower blood sugar, in an unknown amount, is a hazard for anyone on insulin."
+      }
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: what this page cannot tell you",
+        "paras": [
+          "What is in a product sold as Pancragen, or what repeated use does: no independent analysis exists, and no study has followed anyone beyond a few weeks."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "Two small human studies, neither registered, neither described as blinded. Nothing since 2011.",
+    "lede": "A ten-day placebo-controlled report in a 2009 patent and a 2011 paper in elderly diabetics from the Institute of Gerontology in Kyiv.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: how the human studies were run",
+        "paras": [
+          "Patent: 36 inpatients with decompensated diabetes, peptide or saline for ten days; insulin-dose changes, fasting glucose and three case histories reported; the two tables give 20 and 16 controls. Kyiv 2011: melatonin, glucose, insulin and an insulin-resistance index measured in 33 elderly diabetics and 30 healthy controls; a subgroup received Pancragen; directions of change only."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials that have been run",
+      "items": [
+        "Hospital diabetes study, 36 patients, ten days, saline placebo (patent, 2009): insulin dose reduced in 8 of 16 treated versus 0 of 16 controls; blinding not described.",
+        "Elderly type 2 diabetes, 33 patients plus 30 healthy controls, Kyiv (2011): glucose, insulin and insulin-resistance index fell on Pancragen; no numbers in the abstract.",
+        "No trial on ClinicalTrials.gov or any registry we could find (October 2026)."
+      ]
+    },
+    "find": {
+      "text": "Search the registry for \"Pancragen\" and its sequence \"KEDW\". We found no registered trial.",
+      "term": "Pancragen",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "Not approved anywhere, including Russia. A blood-sugar claim with no regulator behind it.",
+    "items": [
+      {
+        "tag": "no",
+        "label": "Canada",
+        "text": "Never authorised by Health Canada as a medicine or natural health product (October 2026)."
+      },
+      {
+        "tag": "no",
+        "label": "United States",
+        "text": "Not FDA-approved; absent from FDA's 503A compounding category list of 14 May 2026."
+      },
+      {
+        "tag": "no",
+        "label": "Russia",
+        "text": "Not a registered medicine; not among the institute's six licensed products, and no Russian registration of any kind found."
+      }
+    ],
+    "cards": [
+      {
+        "kind": "warn",
+        "title": "What a \"bioregulator\" claim rests on",
+        "text": "The claim is that a peptide copied from an organ extract reaches that organ and switches on its genes. For Pancragen the support is:",
+        "items": [
+          "Computer docking models, test-tube DNA work and cell cultures from one institute; no study has tracked one of these peptides into a human organ.",
+          "Pancragen's human reports are the most substantial in the family, and they are still a ten-day patent study and a 33-patient paper with no published numbers."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "crit",
+        "title": "What \"research use only\" means",
+        "text": "A \"research use only\" label is a legal device, not a safety rating. No regulator in Canada or the U.S. has checked what is in a vial sold as Pancragen, and no toxicology or purity data have been filed in the West.",
+        "items": [
+          "No regulator has verified that a vial sold as Pancragen contains Lys-Glu-Asp-Trp, in what amount, or anything that lowers blood sugar. People on insulin who use such a product are experimenting on themselves."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "soft",
+        "title": "Symptoms to take to a doctor",
+        "text": "If any of these appear after using such a product, see a doctor and bring the product:",
+        "items": [
+          "Fever, chills, or a hot, swollen injection site",
+          "Hives, swelling of the face or throat, trouble breathing",
+          "Yellowing of the skin or eyes, dark urine",
+          "Shakiness, sweating or confusion: check blood sugar"
+        ],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: the Khavinson peptide family",
+        "paras": [
+          "Vladimir Khavinson (1946–2024) directed the St Petersburg Institute of Bioregulation and Gerontology, which made animal-organ extracts from the 1970s and then designed two- to four-amino-acid peptides from each extract's amino-acid make-up, naming them after target organs. Six products became licensed medicines in the USSR or Russia: Thymalin (1982), Thymogen and Epithalamin (1990), Prostatilen (1992), Cortexin and Retinalamin (1999). The synthetic organ-named peptides sold online are not among them, and none appears in an international trial registry."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "text": "Khavinson VKh, Malinin VV, Grigoriev EI, Ryzhak GA. Tetrapeptide regulating blood glucose level in diabetes mellitus. US patent 7,491,703, 17 February 2009.",
+        "url": "https://patents.justia.com/patent/7491703"
+      },
+      {
+        "text": "Korkushko OV, Khavinson VK, Shatilo VB et al. Prospects of using Pancragen for correction of metabolic disorders in elderly people. Bull Exp Biol Med 2011;151(4):454–456.",
+        "url": "https://link.springer.com/article/10.1007/s10517-011-1354-4"
+      },
+      {
+        "text": "Correction of impaired glucose tolerance using tetrapeptide (Pancragen) in old female rhesus monkeys. Russian-language paper, PubMed 2017 (PMID 28509500; abstract not retrieved).",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28509500/"
+      },
+      {
+        "text": "Khavinson VKh, Lin'kova NS, Tarnovskaya SI. Short peptides regulate gene expression. Bull Exp Biol Med 2016;162(2): sequence table and modelled DNA binding sites.",
+        "url": "https://khavinson.info/assets/files/skan/2016-khavinson_lin_tarn.pdf"
+      },
+      {
+        "text": "U.S. FDA, 503A bulk drug substances category list, updated 14 May 2026.",
+        "url": "https://fda.gov/media/94155/download"
+      }
+    ]
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "id": "oxytocin",
+  "name": "Oxytocin",
+  "brands": "Pitocin, generic oxytocin injection; Syntocinon (outside North America)",
+  "maker": "Par Pharmaceutical (Pitocin); Fresenius Kabi and others (generics)",
+  "group": "approved",
+  "pill": "Approved (obstetric use)",
+  "overview": {
+    "headline": "The labour hormone. Approved as a hospital infusion to start or strengthen contractions and to control bleeding after birth.",
+    "lede": "Oxytocin is a nine-amino-acid hormone from the pituitary. As a drug (Pitocin and generics) it is approved in Canada, the U.S. and Europe for inducing or augmenting labour and for postpartum bleeding, given by trained staff with continuous monitoring. Nasal sprays sold online for \"bonding\", social anxiety, sexual function or weight loss are approved nowhere, and the large trials of intranasal oxytocin for social behaviour were negative.",
+    "stats": [
+      {"num": "290", "lbl": "children and teens with autism in the largest intranasal oxytocin trial: no difference from placebo after 24 weeks", "src": "Sikich et al., NEJM 2021"},
+      {"num": "1–6 min", "lbl": "half-life in blood after intravenous use", "src": "Pitocin label"},
+      {"num": "0", "lbl": "oxytocin nasal products approved in Canada or the U.S. today", "src": "Health Canada and FDA product listings"}
+    ],
+    "mechanism": {
+      "intro": "One receptor, in the uterus, the breast and the brain.",
+      "parts": [
+        {"name": "Uterus", "text": "Oxytocin makes the uterine muscle contract, strongly and rhythmically at term. That is the approved use, and the reason it is given by drip with the rate adjusted minute to minute."},
+        {"name": "Brain", "text": "Oxytocin made inside the brain is involved in bonding and social behaviour in animals. Whether a nasal spray delivers enough to the human brain to change behaviour is disputed, and the clinical trials have mostly said no."},
+        {"name": "Appetite", "text": "In animals and small human studies oxytocin reduced food intake. The one adequately sized randomized trial in adults with obesity found no weight loss."}
+      ]
+    },
+    "more": {
+      "title": "More: hospital drug, internet hormone",
+      "paras": [
+        "In obstetrics oxytocin carries a boxed warning: it is not for elective induction, because its risks (over-strong contractions, uterine rupture, fetal distress, water intoxication) need a medical indication to justify them. The sprays sold online are a different proposition: unapproved, unverified, and based on research that has not held up.",
+        "Oxytocin is a small peptide, not a biologic, so some compounding pharmacies prepare nasal sprays on prescription. They are still unapproved products with no label.",
+        "Sources are under the Status tab."
+      ]
+    }
+  },
+  "results": {
+    "headline": "For social behaviour and autism: no. For weight: not shown. For labour: yes, under monitoring.",
+    "lede": "Dozens of small intranasal studies produced hopeful signals. The large, well-run trials did not confirm them.",
+    "chart": null,
+    "stats": [
+      {"num": "−3.7 vs −3.5", "lbl": "change in the social-withdrawal score on oxytocin versus placebo in the 24-week autism trial: no meaningful difference", "src": "Sikich 2021, ABC modified social withdrawal subscale"},
+      {"num": "No weight loss", "lbl": "versus placebo in an 8-week randomized trial of intranasal oxytocin in adults with obesity", "src": "Plessow et al., NEJM Evidence 2024"}
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {"b": "Autism, children.", "t": "290 participants aged 3 to 17 took nasal oxytocin or placebo daily for 24 weeks. Both groups improved slightly and equally on the primary social measure, and secondary measures showed no benefit (Sikich 2021)."},
+        {"b": "Autism, adults.", "t": "A 6-week Japanese trial in adult men found no significant effect on its primary measure of social reciprocity (Yamasue 2020)."},
+        {"b": "Weight.", "t": "A small 2013 study in China reported weight loss with nasal oxytocin. The larger 2024 U.S. randomized trial found none versus placebo over 8 weeks."},
+        {"b": "Labour.", "t": "Decades of use and controlled studies underpin the approved indications. The issue there is safety, not whether it works."}
+      ]
+    },
+    "more": [
+      {
+        "title": "More: why the small studies looked positive",
+        "paras": [
+          "Early intranasal studies were short, often single-dose, and measured laboratory tasks such as reading emotions from eyes or trust games. Effects were small and replicated poorly. Trials that gave the spray for weeks and measured real-world behaviour found nothing. Whether nasal oxytocin reaches the brain in meaningful amounts is itself uncertain."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "In labour: over-contraction, fetal distress, water intoxication. In nasal trials: mostly mild, matching placebo.",
+    "lede": "The serious effects belong to the approved intravenous use, where the drug is powerful and monitored. The nasal trials reported few problems, which is also what you see when a drug has little effect.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "In the 24-week autism trial, adverse events were similar in the oxytocin and placebo groups and few participants left for that reason. No placebo-controlled side-effect rates exist for the sprays sold online."
+    },
+    "unique": {
+      "title": "Water intoxication",
+      "text": "Oxytocin is chemically close to vasopressin, the hormone that makes the kidneys hold water. At high or prolonged doses it can make the body retain water and dilute sodium, causing confusion, seizures and coma. The label warns about this specifically; it is why intravenous oxytocin is given with controlled fluids."
+    },
+    "more": [
+      {
+        "title": "More: what the label warns about",
+        "paras": [
+          "Boxed warning: not for elective induction of labour. Also: over-strong or continuous contractions and uterine rupture; fetal slow heart rate, low Apgar scores, jaundice and retinal bleeding; maternal irregular heartbeat, high blood pressure, bleeding in the brain, postpartum hemorrhage, allergic reactions, and death from water intoxication with excessive doses.",
+          "These are events of an intravenous drug in labour. Their relevance to nasal sprays is unknown because the sprays have not been studied for safety at the amounts and durations people use."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "None documented outside obstetrics. Helping milk let-down was a historic use of a nasal spray (Syntocinon), discontinued in North America."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms trial teams treat as urgent",
+      "items": [
+        "Confusion, severe headache or a seizure (low sodium from water retention)",
+        "Chest pain, or a racing or irregular heartbeat",
+        "Swelling of the face or throat, trouble breathing",
+        "In pregnancy: strong continuous contractions, bleeding, or reduced fetal movement"
+      ],
+      "note": "Anyone with these symptoms, prescribed or not, should get medical care right away."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "Oxytocin's label gives a half-life of about 1 to 6 minutes in blood, shorter in late pregnancy and during lactation, which is why it is given as a continuous drip adjusted minute by minute, in units rather than milligrams. A daily-dose chart does not apply. No label gives nasal-spray pharmacokinetics; how much reaches the blood or brain from a spray is not established.",
+    "stats": [
+      {"num": "1–6 min", "lbl": "plasma half-life (intravenous)", "src": "Pitocin label"},
+      {"num": "~1 h", "lbl": "that the uterine effect lasts after an intravenous dose; 2 to 3 hours after intramuscular", "src": "Pitocin label"},
+      {"num": "Unknown", "lbl": "how much of a nasal dose reaches the brain", "src": "No label value; disputed in the literature"}
+    ],
+    "explain": [
+      {"b": "Why a drip.", "t": "A drug gone in minutes can only be held steady by continuous infusion, with the rate changed as contractions respond."},
+      {"b": "Why nasal is a leap.", "t": "The nose offers a possible route to the brain, but human data on how much oxytocin crosses are thin and inconsistent, and the behavioural trials that would have proven the point were negative."}
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: what this page cannot tell you",
+        "paras": [
+          "Anything about a spray bought online: its oxytocin content, its stability (oxytocin is heat-sensitive) or its sterility. Approved oxytocin is refrigerated hospital stock."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "The approved regimen is a hospital infusion in labour. There is no approved regimen for nasal use.",
+    "lede": "Oxytocin's label regimen is an intravenous drip started low and increased until contractions are adequate, with continuous monitoring of mother and baby. It has nothing to do with sprays, and no spray has an approved regimen.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: how the nasal trials were run",
+        "paras": [
+          "The autism trial gave measured daily nasal doses for 24 weeks under a blinded protocol with safety labs and regular visits. The obesity trial did the same for 8 weeks. Both were negative. Both are the standard against which online use should be judged."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials that have been run",
+      "items": [
+        "Autism, children and adolescents: 290 participants, 24 weeks, negative on the primary social outcome (Sikich, NEJM 2021).",
+        "Autism, adult men: about 100 participants, 6 weeks, negative on the primary outcome (Yamasue, Molecular Psychiatry 2020).",
+        "Obesity: 61 adults, 8 weeks, no weight loss versus placebo (Plessow, NEJM Evidence 2024); an earlier small Chinese study had reported weight loss.",
+        "Many small single-dose studies of social cognition, trust and anxiety with inconsistent results."
+      ]
+    },
+    "find": {
+      "text": "Registry searches show hundreds of oxytocin studies, most in obstetrics. Search \"intranasal oxytocin\" for the behavioural trials.",
+      "term": "intranasal oxytocin",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "Approved for labour and postpartum bleeding. Nothing else.",
+    "items": [
+      {"tag": "ok", "label": "Canada", "text": "Oxytocin injection is an authorized prescription drug for induction and augmentation of labour and postpartum hemorrhage. No nasal oxytocin product is authorized. Sprays sold online are unauthorized drugs; Health Canada's April 2026 advisory says \"research use only\" labelling does not make such products legal."},
+      {"tag": "ok", "label": "United States", "text": "Pitocin and generics are approved for the same uses with a boxed warning against elective induction. The Syntocinon nasal spray was discontinued decades ago and no nasal oxytocin is approved. Some compounding pharmacies prepare nasal sprays on prescription; these are unapproved."},
+      {"tag": "ok", "label": "Sport", "text": "Not on WADA's 2026 Prohibited List."}
+    ],
+    "cards": [
+      {
+        "kind": "warn",
+        "title": "Sprays sold online",
+        "text": "\"Oxytocin nasal spray\" from peptide sites, wellness shops or overseas pharmacies is unapproved. Oxytocin is heat-sensitive, so content is unpredictable even if the label is honest, and the uses advertised (bonding, libido, anxiety, weight) failed in controlled trials.",
+        "items": [
+          "No regulator has approved intranasal oxytocin for any indication.",
+          "The two largest behavioural trials and the one adequate weight trial were negative.",
+          "Health Canada (April 9, 2026): unauthorized injectable and peptide products are illegal to sell, whatever the label says."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "soft",
+        "title": "If someone has already used it",
+        "text": "Serious harm from nasal oxytocin at the amounts studied was not seen in the trials. See a doctor if there is:",
+        "items": [
+          "Confusion, severe headache or a seizure",
+          "Palpitations or chest pain",
+          "Pregnancy, or trying to conceive: oxytocin can trigger uterine contractions"
+        ],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: the autism trial, in brief",
+        "paras": [
+          "The SOARS-B trial randomized 290 children and adolescents with autism to nasal oxytocin or placebo for 24 weeks. The primary measure, the modified social-withdrawal subscale of the Aberrant Behavior Checklist, improved by 3.7 points on oxytocin and 3.5 on placebo, a non-significant difference. Secondary measures of social function and cognition also showed no benefit."
+        ]
+      }
+    ],
+    "sources": [
+      {"text": "Par Pharmaceutical, PITOCIN (oxytocin injection) prescribing information: indications, boxed warning, clinical pharmacology (half-life 1 to 6 minutes), warnings and adverse reactions.", "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=pitocin"},
+      {"text": "Sikich L, Kolevzon A, King BH, et al. Intranasal oxytocin in children and adolescents with autism spectrum disorder. New England Journal of Medicine 2021;385:1462–1473.", "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2103583"},
+      {"text": "Yamasue H, Okada T, Munesue T, et al. Effect of intranasal oxytocin on the core social symptoms of autism spectrum disorder: a randomized clinical trial. Molecular Psychiatry 2020;25:1849–1858.", "url": "https://www.nature.com/articles/s41380-018-0097-2"},
+      {"text": "Plessow F, Kerem L, Wronski ML, et al. Intranasal oxytocin for obesity: a randomized, placebo-controlled trial. NEJM Evidence 2024.", "url": ""},
+      {"text": "Zhang H, Wu C, Chen Q, et al. Treatment of obesity and diabetes using oxytocin or analogs in patients and mouse models. PLoS ONE 2013;8:e61477.", "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0061477"},
+      {"text": "Health Canada, Think twice before injecting peptides bought online, April 9, 2026.", "url": "https://recalls-rappels.canada.ca/en/alert-recall/think-twice-injecting-peptides-bought-online-unauthorized-products-can-seriously-harm"},
+      {"text": "World Anti-Doping Agency, 2026 Prohibited List, effective January 1, 2026 (oxytocin not listed).", "url": "https://www.wada-ama.org/en/prohibited-list"}
+    ]
+  }
+}

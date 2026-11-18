@@ -1,0 +1,334 @@
+{
+  "id": "ara-290",
+  "name": "Cibinetide (ARA-290)",
+  "brands": "",
+  "maker": "Araim Pharmaceuticals",
+  "group": "research",
+  "pill": "Unapproved",
+  "overview": {
+    "headline": "An 11-amino-acid fragment modelled on erythropoietin, designed to repair tissue without raising red blood cells.",
+    "lede": "Cibinetide, better known as ARA-290, was developed by Araim Pharmaceuticals, a small U.S. company. It reached Phase 2 trials in sarcoidosis nerve pain, diabetic neuropathy and diabetic macular edema between 2010 and 2017, with modest results, and never entered Phase 3. It is approved nowhere, and no trial appears to be recruiting in 2026. Vials sold online as \"ARA-290\" are unapproved research chemicals.",
+    "stats": [
+      {
+        "num": "<200",
+        "lbl": "people who have received it in published trials, none for longer than 12 weeks",
+        "src": "Heij 2012, Dahan 2013, Brines 2015, Culver 2017, Belfast 2020"
+      },
+      {
+        "num": "0",
+        "lbl": "Phase 3 trials, approvals, or trials recruiting in 2026",
+        "src": "Trial registries and company records"
+      },
+      {
+        "num": "minutes",
+        "lbl": "how long it lasts in the blood; no human half-life has been published",
+        "src": "Heij et al., Mol Med 2012"
+      }
+    ],
+    "mechanism": {
+      "intro": "It targets the receptor erythropoietin uses to protect tissue, not the one that makes blood.",
+      "parts": [
+        {
+          "name": "Innate repair receptor",
+          "text": "Erythropoietin protects injured tissue through a receptor complex (EPO receptor plus CD131) separate from the one driving red-cell production. ARA-290 copies the part of erythropoietin that touches this complex."
+        },
+        {
+          "name": "Small nerve fibres",
+          "text": "In sarcoidosis and diabetes, thin nerve fibres in skin and cornea die back, causing burning pain and numbness. The trials counted corneal nerve fibres and asked patients to score symptoms."
+        }
+      ]
+    },
+    "more": {
+      "title": "More: why it stalled",
+      "paras": [
+        "ARA-290 produced signals in small trials: fewer symptoms and more corneal nerve fibres in sarcoidosis, better HbA1c in diabetes. But pain itself was not consistently better than placebo, the trials lasted only 28 days, and no Phase 3 followed. A 2016–17 study in nine people with diabetic macular edema found no improvement in vision, and a later Belfast trial was terminated.",
+        "Sources are under the Status tab. Vendor sites are cited for nothing except that a product is being sold."
+      ]
+    }
+  },
+  "results": {
+    "headline": "Fewer nerve symptoms in two small sarcoidosis trials; pain itself was not clearly better than placebo.",
+    "lede": "Four placebo-controlled Phase 2 trials, all four weeks long, make up the evidence. The chart shows the fall in a neuropathy symptom score in the two sarcoidosis trials that reported it.",
+    "chart": {
+      "metric": "other",
+      "unit": " pts",
+      "legend": [
+        "ARA-290",
+        "Placebo"
+      ],
+      "rows": [
+        {
+          "name": "Heij 2012: symptom score fall",
+          "meta": "4 weeks · 2 mg intravenously three times a week · 22 people with sarcoidosis",
+          "drug": 11.5,
+          "placebo": 2.9,
+          "tip": "SFNSL change: ARA-290 −11.5 vs placebo −2.9 points (p<0.05)"
+        },
+        {
+          "name": "Dahan 2013: symptom score fall",
+          "meta": "4 weeks · 4 mg under the skin daily · 38 people with sarcoidosis",
+          "drug": 12.2,
+          "placebo": 3.8,
+          "tip": "SFNSL change at week 5: ARA-290 −12.2 (about 28%) vs placebo −3.8 (about 9%) points (p=0.005)"
+        }
+      ],
+      "max": 20,
+      "note": "The Small Fiber Neuropathy Screening List is a symptom questionnaire; a bigger fall is better. Pain intensity scores improved in both arms of both trials with no significant difference between drug and placebo.",
+      "signed": false
+    },
+    "stats": [
+      {
+        "num": "+697 µm²",
+        "lbl": "placebo-corrected gain in corneal nerve fibre area at 4 mg a day in the 64-person trial (p=0.012); 1 mg and 8 mg did not differ from placebo",
+        "src": "Culver et al., IOVS 2017"
+      },
+      {
+        "num": "+18.7 vs −15.1 m",
+        "lbl": "six-minute walk change, ARA-290 vs placebo (p=0.049)",
+        "src": "Dahan et al., Mol Med 2013"
+      }
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {
+          "b": "Corneal nerves.",
+          "t": "Fibre area rose about 14.5% on drug versus a 5.3% fall on placebo in 2013, and 4 mg repeated this in 2017; skin biopsies showed smaller, mostly non-significant changes."
+        },
+        {
+          "b": "Diabetes.",
+          "t": "Four weeks of 4 mg daily improved HbA1c, lipids and a neuropathy questionnaire; corneal fibres rose only in people with low counts at baseline (Mol Med 2015)."
+        },
+        {
+          "b": "Eyes.",
+          "t": "In nine people with diabetic macular edema, 12 weeks of 4 mg daily did not improve vision or retinal thickness (J Clin Med 2020)."
+        },
+        {
+          "b": "Dose puzzle.",
+          "t": "In 2017 the middle dose worked on nerve fibres and the higher dose did not; no later trial resolved this."
+        }
+      ]
+    },
+    "more": [
+      {
+        "title": "More: how strong is this evidence?",
+        "paras": [
+          "The trials were small (22 to 64 people), short (four weeks), run mostly by one group in Leiden with company involvement, and their positive results were surrogate measures rather than pain or function. Pain fell in both groups in every trial. A biological signal without a clear clinical benefit is a common pattern for peptides that never reach Phase 3."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "Well tolerated in the trials, with no drug-specific signal, but exposure is tiny.",
+    "lede": "Across the published trials, adverse events were mild and no more common than on placebo, and no antibodies against the peptide were found. Fewer than 200 people have taken it in studies, none for longer than 12 weeks, so the picture is thin rather than reassuring.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "In the 2013 trial one placebo patient stopped for diarrhoea and no ARA-290 patient stopped for a drug effect; in 2012 three people withdrew because of the inconvenience of intravenous infusions. No serious adverse event was attributed to the drug in any trial, and the papers do not tabulate events by type, which is why there is no chart."
+    },
+    "unique": {
+      "title": "What a four-week trial cannot show",
+      "text": "Erythropoietin itself raises blood pressure and clotting risk; ARA-290 was designed to avoid that, and the trials found no rise in haemoglobin or blood pressure. But with 28-day exposures in a few dozen people, rare or delayed harms cannot be excluded, and nothing is known about months of use, the pattern sold online."
+    },
+    "more": [
+      {
+        "title": "More: what the trials monitor for",
+        "paras": [
+          "Blood counts and blood pressure (to confirm no erythropoietin-like effect), anti-drug antibodies, injection-site reactions and, in diabetes, glucose and HbA1c.",
+          "Not studied: pregnancy, children, people with cancer (erythropoietin-receptor signalling is a theoretical concern in tumours), or use beyond 12 weeks."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "Lower HbA1c and cholesterol in the diabetes trial; better walking distance and thermal sensation in sarcoidosis. None of these was confirmed in a second, larger trial."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms trial teams treat as urgent",
+      "items": [
+        "Hives, facial swelling or breathing difficulty after an injection",
+        "Spreading redness, warmth or pus at an injection site",
+        "Chest pain, sudden weakness or vision loss (clotting events are a theoretical class concern)",
+        "Severe headache with high blood pressure"
+      ],
+      "note": "Anyone with these symptoms should get medical care right away."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "No human half-life has been published. The Leiden investigators describe a short serum half-life of a few minutes, with peak levels around 50 ng/mL after a 2 mg intravenous dose in healthy volunteers, and report only area-under-curve values in their trials. Without a primary number the simulator cannot be drawn.",
+    "stats": [
+      {
+        "num": "minutes",
+        "lbl": "how long the peptide stays in the blood, per the investigators",
+        "src": "Heij et al., Mol Med 2012"
+      },
+      {
+        "num": "~50 ng/mL",
+        "lbl": "peak blood level after 2 mg intravenously in healthy volunteers",
+        "src": "Heij et al., Mol Med 2012"
+      },
+      {
+        "num": "28 days",
+        "lbl": "longest placebo-controlled exposure; 12 weeks in one open-label study",
+        "src": "Trial papers 2012–2020"
+      }
+    ],
+    "explain": [
+      {
+        "b": "Why a drug gone in minutes could still act.",
+        "t": "The investigators argue that a brief pulse triggers the repair receptor and the tissue response lasts days; the trials were too short to test this properly."
+      },
+      {
+        "b": "Why dose did not scale.",
+        "t": "In 2017, 4 mg beat placebo on nerve fibres and 8 mg did not, which is unexpected for a simple dose-response relationship."
+      },
+      {
+        "b": "Why routes differed.",
+        "t": "The 2012 trial infused 2 mg intravenously three times a week; later trials used 4 mg under the skin daily. No approved regimen exists."
+      }
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: what is known about dose",
+        "paras": [
+          "Doses tested in people: 2 mg intravenously three times a week (2012), 4 mg under the skin daily (2013, 2015, 2020) and 1, 4 or 8 mg daily (2017), each for 28 days, or 12 weeks in the eye study. None is an approved regimen."
+        ]
+      },
+      {
+        "title": "More: what this tab cannot tell you",
+        "paras": [
+          "It cannot describe products sold online as ARA-290, whose content and strength are unverified, or any schedule longer than the trials ran."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "The trials that were run, and why none is open.",
+    "lede": "Cibinetide has not been in a recruiting trial for years. This tab lists the completed studies as facts; there is no approved regimen.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: how side effects were handled inside the trials",
+        "paras": [
+          "Participants were seen weekly, with blood tests, blood pressure checks and antibody testing; the 2012 trial gave its infusions in a clinic. Anyone with a moderate event was reviewed and could stop; almost no one did.",
+          "No trial data exist for the self-injected, months-long use promoted by sellers."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials that were run",
+      "items": [
+        "Heij 2012 (Leiden): 22 people with sarcoidosis neuropathy, 2 mg IV three times a week for 4 weeks; symptom score fell more than placebo, pain did not",
+        "Dahan 2013 (Leiden): 38 people, 4 mg daily for 4 weeks; symptom score, corneal nerve fibres and walking distance improved; pain intensity did not",
+        "Brines 2015 (Leiden and Karolinska): type 2 diabetes with neuropathy, 4 mg daily for 4 weeks; HbA1c, lipids and neuropathy score improved",
+        "Culver 2017 (NCT02039687): 64 people, 1, 4 or 8 mg daily for 4 weeks; only 4 mg increased corneal nerve fibre area; pain not significantly better",
+        "Belfast 2016–17 (J Clin Med 2020): 9 people with diabetic macular edema, open-label 12 weeks; no improvement in vision. A later Belfast trial (NCT06626971) was terminated"
+      ]
+    },
+    "find": {
+      "text": "No cibinetide trial is listed as recruiting. If that changes it will appear on the registry under \"cibinetide\" or \"ARA 290\".",
+      "term": "cibinetide",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "Not approved anywhere, not in active trials, and sold only as an unregulated research chemical.",
+    "items": [
+      {
+        "tag": "no",
+        "label": "Canada: not approved",
+        "text": "Health Canada has never reviewed cibinetide. Selling it for human use is illegal."
+      },
+      {
+        "tag": "no",
+        "label": "U.S.: not approved",
+        "text": "Araim's programme never reached Phase 3 or a marketing application. The FDA has not evaluated it, and it is not eligible for pharmacy compounding."
+      },
+      {
+        "tag": "no",
+        "label": "EU and elsewhere: not approved",
+        "text": "Phase 2 trials in the Netherlands, Sweden and the UK are complete or terminated; no marketing application exists anywhere."
+      },
+      {
+        "tag": "no",
+        "label": "Pipeline",
+        "text": "No recruiting trial as of October 2026; the last registered study (diabetic macular edema, Belfast) was terminated. Only preclinical work, in China, is listed as active."
+      }
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "What the online product is",
+        "text": "There is no approved cibinetide product to compare with: it was only ever a trial drug. Vials labelled \"ARA-290\" from research-peptide shops have unverified identity, purity and dose, and no trial has tested the long self-injected courses they are sold for.",
+        "items": [
+          "Human exposure in trials totals fewer than 200 people, for four weeks each in the controlled studies.",
+          "Pain, the outcome that matters to patients, was not better than placebo in any trial.",
+          "Claims of nerve regeneration, anti-inflammatory healing or metabolic benefit rest on four-week surrogate measures never confirmed."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "warn",
+        "title": "Symptoms to take to a doctor",
+        "text": "Anyone who has injected an \"ARA-290\" product should see a doctor for:",
+        "items": [
+          "Hives, swelling or breathing difficulty",
+          "An infected injection site",
+          "Chest pain, sudden weakness, vision loss or severe headache",
+          "Any new or worsening nerve symptoms"
+        ],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: the erythropoietin connection",
+        "paras": [
+          "ARA-290 is the sequence pyroGlu-Glu-Gln-Leu-Glu-Arg-Ala-Leu-Asn-Ser-Ser, modelled on the surface of erythropoietin that contacts the tissue-protective receptor. Erythropoietin protects nerves in animals but raises red cells and clotting risk; ARA-290 was the attempt to keep one effect without the other. In humans it produced surrogate signals and no confirmed clinical benefit."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "text": "Heij L, Niesters M et al. Safety and efficacy of ARA 290 in sarcoidosis patients with symptoms of small fiber neuropathy: a randomized, double-blind pilot study. Molecular Medicine, 2012 (2 mg IV, 22 patients; serum half-life of a few minutes; peak about 50 ng/mL).",
+        "url": "https://www.ildcare.nl//Downloads/research/publicaties/2012_ARA.pdf"
+      },
+      {
+        "text": "Dahan A, Dunne A et al. ARA 290 improves symptoms in patients with sarcoidosis-associated small nerve fiber loss and increases corneal nerve fiber density. Molecular Medicine 2013;19:334-345.",
+        "url": "https://molmed.biomedcentral.com/articles/10.2119/molmed.2013.00135"
+      },
+      {
+        "text": "Heij L. ARA290: a novel treatment for neuropathic pain in sarcoidosis. Doctoral thesis, Leiden University, 2016 (chapter 6 reproduces the 2013 trial in full).",
+        "url": "https://scholarlypublications.universiteitleiden.nl/access/item%3A2891580/view"
+      },
+      {
+        "text": "Brines M, Dunne AN et al. ARA 290, a nonerythropoietic peptide engineered from erythropoietin, improves metabolic control and neuropathic symptoms in patients with type 2 diabetes. Molecular Medicine 2015;20:658-666.",
+        "url": "https://pure.eur.nl/en/publications/ara-290-a-nonerythropoietic-peptide-engineered-from-erythropoieti/"
+      },
+      {
+        "text": "Culver DA, Dahan A et al. Cibinetide improves corneal nerve fiber abundance in patients with sarcoidosis-associated small nerve fiber loss and neuropathic pain. Investigative Ophthalmology & Visual Science 2017;58:BIO52-BIO60.",
+        "url": "https://pure.eur.nl/en/publications/cibinetide-improves-corneal-nerve-fiber-abundance-in-patients-wit/"
+      },
+      {
+        "text": "ClinicalTrials.gov NCT02039687, Study of efficacy of ARA 290 on corneal nerve fiber density and neuropathic symptoms of subjects with sarcoidosis (Araim Pharmaceuticals; completed, results posted 2017).",
+        "url": "https://clinicaltrials.gov/study/NCT02039687"
+      },
+      {
+        "text": "A phase 2 clinical trial on the use of cibinetide for the treatment of diabetic macular edema. Journal of Clinical Medicine 2020;9:2225 (Belfast; 9 patients, 12 weeks).",
+        "url": "https://pure.qub.ac.uk/en/publications/a-phase-2-clinical-trial-on-the-use-of-cibinetide-for-the-treatme/"
+      },
+      {
+        "text": "ClinicalTrials.gov NCT06626971, The use of ARA290 for the treatment of diabetic macular oedema (Belfast Health and Social Care Trust; terminated).",
+        "url": "https://clinicaltrials.gov/study/NCT06626971"
+      },
+      {
+        "text": "Tracey KJ. Editorial on ARA 290 and tissue repair. Molecular Medicine 2013;19:333.",
+        "url": "https://molmed.biomedcentral.com/counter/pdf/10.2119/molmed.2013.00135.pdf"
+      }
+    ]
+  }
+}

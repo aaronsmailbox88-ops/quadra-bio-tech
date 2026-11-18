@@ -1,0 +1,291 @@
+{
+  "id": "thymalin",
+  "name": "Thymalin",
+  "brands": "Тималин (Thymalin)",
+  "maker": "Samson-Med, St Petersburg (licence holder); developed by V. Morozov and V. Khavinson, Military Medical Academy, Leningrad, 1974",
+  "group": "approved",
+  "pill": "Approved (Russia only)",
+  "overview": {
+    "headline": "A calf-thymus extract registered as an immune drug in the USSR in 1982 and still sold in Russia. Never reviewed by a Western regulator.",
+    "lede": "Thymalin is a mixture of small peptides extracted from calf thymus, first prepared in Leningrad in 1974, authorised by the USSR Ministry of Health in 1982, and still a registered prescription injection in Russia (Samson-Med) for immunodeficiency states. Health Canada, the FDA and the EMA have never evaluated it. The \"thymalin\" sold online by vendors is not the registered product.",
+    "stats": [
+      {
+        "num": "1982",
+        "lbl": "year the USSR Ministry of Health authorised it (order no. 1108, registration 82/1108/8); re-registered in Russia in 2010 and June 2024",
+        "src": "Khavinson et al. 2013; RLS registry"
+      },
+      {
+        "num": "92",
+        "lbl": "patients in the only randomised COVID-19 study, open-label with no placebo; no deaths in either group",
+        "src": "Stem Cell Rev Rep 2021"
+      },
+      {
+        "num": "0",
+        "lbl": "reviews by Health Canada, the FDA or the EMA; no filing on record",
+        "src": "October 2026"
+      }
+    ],
+    "mechanism": {
+      "intro": "An extract meant to restore T-cell numbers and function when cellular immunity is low.",
+      "parts": [
+        {
+          "name": "A mixture, not a molecule",
+          "text": "The Russian label lists the active substance as \"thymus extract\" from calves. The institute reports that the dipeptide Glu-Trp (sold separately as the drug Thymogen) and the short peptides Lys-Glu and Glu-Asp-Pro are minor components, and credits them with its activity. In human blood stem cells in culture (2021), Thymalin raised CD28, a mature T-cell marker, 6.8-fold."
+        },
+        {
+          "name": "What the label claims",
+          "text": "Immunodeficiency states in adults and children aged 6 months to 14 years with purulent-septic infections, impaired thymus function, viral and bacterial infections, poor tissue regeneration, and immune suppression after chemotherapy or radiotherapy. Longevity and anti-ageing are not among them."
+        }
+      ]
+    },
+    "more": {
+      "title": "More: what \"approved in Russia\" means here",
+      "paras": [
+        "The 1982 authorisation came from a Soviet system that did not require the randomised, placebo-controlled trials Western regulators demand. Re-registrations in 2010 and 2024 renewed the licence without adding modern trials. The supporting Russian studies are mostly small, open-label and from the developers' own group."
+      ]
+    }
+  },
+  "results": {
+    "headline": "Four decades of Russian reports, nearly all open-label and from one group. In COVID-19, faster falls in inflammation markers but no difference in survival.",
+    "lede": "Thymalin has far more human data than any synthetic peptide in this family, and almost none of it meets modern standards.",
+    "chart": null,
+    "stats": [
+      {
+        "num": "2.0–2.1×",
+        "lbl": "lower mortality over 6–8 years in elderly people given Thymalin courses versus controls, in the developers' 2003 report; design details sparse",
+        "src": "Khavinson and Morozov 2003"
+      },
+      {
+        "num": "5.5× vs 1.4×",
+        "lbl": "fall in the inflammation marker IL-6 with Thymalin plus standard COVID-19 care versus standard care alone, 42 vs 50 patients",
+        "src": "Stem Cell Rev Rep 2021"
+      }
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {
+          "b": "In vitro and animals.",
+          "t": "Human blood stem cells: CD28 up 6.8-fold, CD44 and CD117 down two- to threefold (2021). Irradiated mice and rats: about half as many tumours; no leukaemia versus 13.4% of controls (developers' 2013 review)."
+        },
+        {
+          "b": "Russian human reports, 1980s–2000s.",
+          "t": "Mostly uncontrolled series in the developers' 2014 review: 150 patients with chronic purulent infection (first clinical use), more than 550 with bone and soft-tissue infection, 106 elderly heart patients (mortality 6.6% versus 13.6%). The 2003 report followed 266 elderly people for 6–8 years: mortality 2.0–2.1-fold lower with Thymalin and 4.1-fold lower with Thymalin plus Epithalamin given every year; neither randomisation nor blinding is described and no death counts per group are given."
+        },
+        {
+          "b": "COVID-19, 2020–2022.",
+          "t": "92 patients with moderate or severe pneumonia, St Petersburg, 2020, randomised by envelope to standard care (50) or standard care plus Thymalin (42), open-label: IL-6 fell 5.5-fold versus 1.4-fold, C-reactive protein 9.7-fold versus 1.7-fold, D-dimer 5.7-fold versus 2.1-fold; CT progression 2 versus 5; no deaths in either group. Follow-up of 88 elderly patients (38 Thymalin, 50 control) at day 200: CD4 cells 3.73-fold and anti-SARS-CoV-2 IgG 4.25-fold higher; antibodies fell 21% versus 53% by day 104."
+        }
+      ]
+    },
+    "more": [
+      {
+        "title": "More: reading the COVID-19 results",
+        "paras": [
+          "The 2021 trial is the best-documented Thymalin study and still a weak one: single centre, no placebo, no blinding, 92 patients, unequal antiviral and steroid use between groups, most comparisons made within each group. Nobody died in either arm, so it says nothing about survival; faster falls in IL-6 and D-dimer are markers, not outcomes. A 2022 paper comparing Thymalin with tocilizumab calls it \"most effective\" for coagulation without giving group sizes."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "The Russian label lists only allergic reactions. No modern adverse-event dataset exists.",
+    "lede": "The label names allergic reactions as the only possible side effect and contraindicates Thymalin in pregnancy and breastfeeding. Four decades of Russian use have produced no published pharmacovigilance summary, and the COVID-19 trial reported no adverse-event table.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "Not reported in any Thymalin study we could find. The 2021 COVID-19 trial reports no discontinuations and no deaths."
+    },
+    "unique": {
+      "title": "What the label says",
+      "text": "Possible allergic reactions; caution with a history of allergy; contraindicated in pregnancy, breastfeeding and hypersensitivity; relative contraindications in pituitary adenoma or acromegaly. As an animal-tissue extract given by injection, immune reactions are the expected hazard. Vendor \"thymalin\" is a different, unverified substance and inherits none of this record."
+    },
+    "more": [
+      {
+        "title": "More: what a trial would monitor for",
+        "paras": [
+          "Allergic and injection reactions, the label's own concern; the effects of stimulating T cells in people with autoimmune disease, which the Russian studies do not address; and infection and cancer outcomes over years, which only a large blinded trial could separate from selection and reporting effects."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "Higher lymphocyte and T-cell counts, faster falls in inflammation and clotting markers and longer-lasting antibodies in the COVID-19 studies; fewer infections and lower mortality in the developers' long-term elderly series. All from one group, none blinded."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms a doctor should see promptly",
+      "items": [
+        "Hives, swelling of the face or throat, wheeze or trouble breathing (allergic reaction to an animal-tissue extract)",
+        "Spreading redness, swelling or pus at an injection site, or fever and chills after an injection",
+        "Yellowing of the skin or eyes, dark urine"
+      ],
+      "note": "For products bought online as \"thymalin\", these relate to injecting an unverified substance; the Russian label's warnings apply only to the registered product."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "No pharmacokinetic study of Thymalin has been published. It is a mixture of peptides of varying size, so there is no single molecule whose half-life could be measured, and the Russian label gives no absorption or clearance data. There is nothing to build a curve from.",
+    "stats": [
+      {
+        "num": "None",
+        "lbl": "half-life or blood-level data, for the extract or any component",
+        "src": "Russian label; PubMed search, Oct 2026"
+      },
+      {
+        "num": "1974",
+        "lbl": "year the extract was first prepared in Leningrad",
+        "src": "Khavinson et al., RMJ 2020"
+      },
+      {
+        "num": "2024",
+        "lbl": "year of the current Russian registration (21 June 2024, certificate ЛП-№(005867)-(РГ-RU), valid indefinitely)",
+        "src": "RLS registry"
+      }
+    ],
+    "explain": [
+      {
+        "b": "Why there is no chart.",
+        "t": "The simulator on other pages needs a measured half-life; Thymalin is an extract with no measured pharmacokinetics."
+      },
+      {
+        "b": "Why the extract and the online vials differ.",
+        "t": "The registered product is a freeze-dried calf-thymus extract made under a Russian licence. Vendor \"thymalin\" is usually described as a synthetic peptide with a single sequence; no data from one applies to the other."
+      }
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: what this page cannot tell you",
+        "paras": [
+          "What is in a vial sold online as thymalin (no independent analysis exists, and it is not the Russian medicine), or what years of courses do (the only long-term data are the developers' own unblinded series)."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "Russian studies since the 1970s; three small COVID-19 studies in 2020–2022; nothing registered internationally.",
+    "lede": "Open-label series from the developers' group, one 266-person longevity follow-up and small COVID-19 studies in St Petersburg. None appears on ClinicalTrials.gov or carries a registry number in its publication.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: how the COVID-19 trial was run",
+        "paras": [
+          "April–July 2020, St Petersburg City Hospital No. 2: patients with moderate or severe COVID-19 pneumonia, low lymphocytes and oxygen saturation of 95% or below were randomised by sealed envelope to standard therapy or standard therapy plus a short course of Thymalin injections. Blood markers were measured before and after, and elderly patients followed to day 200. No placebo, no blinding."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials that have been run",
+      "items": [
+        "COVID-19, moderate to severe, 92 patients (42 Thymalin, 50 control), open-label randomised, St Petersburg, 2020: faster falls in IL-6, CRP and D-dimer; CT progression 2 versus 5; no deaths in either group.",
+        "COVID-19, elderly follow-up to day 200, 88 patients (38 Thymalin, 50 control), 2021: higher lymphocyte, CD3 and CD4 counts and 4.25-fold higher anti-SARS-CoV-2 IgG; antibody decline 21% versus 53% at day 104.",
+        "COVID-19, severe, three arms (standard, plus tocilizumab, plus Thymalin), 2022: Thymalin reported as most favourable for coagulation; group sizes not in the abstract.",
+        "Elderly longevity series, 266 people, 6–8 years, 2003: mortality 2.0–2.1-fold lower with Thymalin; design thinly described.",
+        "Russian clinical series 1980s–2000s in infections, pneumonia, asthma, pregnancy and heart disease, summarised in the developers' 2014 review; mostly uncontrolled."
+      ]
+    },
+    "find": {
+      "text": "Searching the registry for \"thymalin\" returns nothing we could find; the Russian studies were not registered internationally. Anyone offered \"thymalin\" outside Russia is not being offered the registered medicine.",
+      "term": "thymalin",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "A licensed prescription injection in Russia, for immune deficiency. Unapproved and unreviewed everywhere else.",
+    "items": [
+      {
+        "tag": "ok",
+        "label": "Russia",
+        "text": "Registered prescription medicine. Current certificate ЛП-№(005867)-(РГ-RU), issued 21 June 2024 to Samson-Med, valid indefinitely, replacing ЛС-000267 (2010), which traced to the 1982 USSR authorisation (82/1108/8). Freeze-dried calf-thymus extract for intramuscular injection; indications: immunodeficiency states in adults and children aged 6 months to 14 years. Also sold in some former Soviet countries."
+      },
+      {
+        "tag": "no",
+        "label": "Canada",
+        "text": "Never authorised by Health Canada as a medicine or natural health product (October 2026)."
+      },
+      {
+        "tag": "no",
+        "label": "United States",
+        "text": "Not FDA-approved and not on FDA's compounding lists. The 503A category list of 14 May 2026 does not name thymalin; it does list \"thymulin acetate\", a different thymus peptide, in Category 3 (nominated without adequate support), and vendor sites often confuse the two."
+      },
+      {
+        "tag": "no",
+        "label": "Elsewhere",
+        "text": "No marketing authorisation in the EU, UK, Australia or Japan has ever been sought, as far as any public record shows (October 2026)."
+      }
+    ],
+    "cards": [
+      {
+        "kind": "warn",
+        "title": "What the Russian approval does and does not cover",
+        "text": "Thymalin is approved in Russia for immunodeficiency states, on the strength of Soviet-era and later open-label studies from its developers. It is not approved anywhere for longevity, anti-ageing, athletic recovery or \"rejuvenation\", and the Russian label does not mention them.",
+        "items": [
+          "The 1982 authorisation predates modern trial requirements; no blinded placebo-controlled trial has ever been published.",
+          "A Russian licence is not recognised by Health Canada or the FDA, and importing the product for personal use is not a legal route to it in either country."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "crit",
+        "title": "What \"research use only\" means",
+        "text": "Vials sold online as thymalin are not the Samson-Med product. Vendor pages often give a single peptide sequence, which the registered extract does not have, and sometimes describe thymulin, a different molecule. No regulator has reviewed what is in these vials.",
+        "items": [
+          "The Russian label's safety record, such as it is, applies only to the registered extract made under licence."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "soft",
+        "title": "Symptoms to take to a doctor",
+        "text": "If any of these appear after using such a product, see a doctor and bring the product:",
+        "items": [
+          "Fever, chills, or a hot, swollen injection site",
+          "Hives, swelling of the face or throat, trouble breathing",
+          "Yellowing of the skin or eyes, dark urine"
+        ],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: Thymalin and the synthetic peptides sold alongside it",
+        "paras": [
+          "Thymalin is the parent of this family. From its amino-acid composition the institute designed Thymogen (Glu-Trp, a licensed Russian drug since 1990), Vilon (Lys-Glu) and Crystagen (Glu-Asp-Pro), and applied the same method to other organ extracts to produce the organ-named peptides sold online. Thymalin's licence belongs to Thymalin alone; of the synthetic peptides only Thymogen has one."
+        ]
+      },
+      {
+        "title": "More: the Khavinson peptide family",
+        "paras": [
+          "Vladimir Khavinson (1946–2024) directed the St Petersburg Institute of Bioregulation and Gerontology, which made animal-organ extracts from the 1970s and then designed two- to four-amino-acid peptides from each extract's amino-acid make-up, naming them after target organs. Six products became licensed medicines in the USSR or Russia: Thymalin (1982), Thymogen and Epithalamin (1990), Prostatilen (1992), Cortexin and Retinalamin (1999). The synthetic organ-named peptides sold online are not among them, and none appears in an international trial registry."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "text": "RLS (rlsnet.ru), Тималин registration record: ЛП-№(005867)-(РГ-RU), registered 21 June 2024, holder Samson-Med, lyophilisate for intramuscular injection, active substance thymus extract; Vidal (vidal.ru/drugs/thymalin__23838) product entry for indications, contraindications, side effects and the previous registration ЛС-000267.",
+        "url": "https://www.rlsnet.ru/regdoc/timalin-lp-005867-rg-ru-91710"
+      },
+      {
+        "text": "Khavinson VKh, Kuznik BI, Trofimova SV et al. Results and prospects of using activator of hematopoietic stem cell differentiation in complex therapy for patients with COVID-19. Stem Cell Rev Rep 2021;17:285–290.",
+        "url": "https://link.springer.com/article/10.1007/s12015-020-10087-6"
+      },
+      {
+        "text": "Khavinson VK, Kuznik BI, Rukavishnikova SA et al. Impact of thymalin on the values of cells, humoral immunity and the life quality in elderly patients with COVID-19. Vrach 2021;32(6):51–55; and Khavinson V, Kuznik B, Volchkov V et al. Effect of thymalin on adaptive immunity in complex therapy for patients with COVID-19. Clinical Medicine (Russian Journal) 2021;98(8):593–599 (covid19.neicon.ru/publication/7196).",
+        "url": "https://journals.eco-vector.com/0236-3054/article/view/114441"
+      },
+      {
+        "text": "Khavinson V, Morozov V. Peptides of pineal gland and thymus prolong human life. Neuroendocrinology Letters 2003;24(3–4):233–240.",
+        "url": "https://www.nel.edu/peptides-of-pineal-gland-and-thymus-prolong-human-life-2142"
+      },
+      {
+        "text": "Khavinson VKh, Kuznik BI, Ryzhak GA. Peptide bioregulators: a new class of geroprotectors. Report 2: clinical trials. Adv Gerontol 2014;4(4):346–361.",
+        "url": "https://khavinson.info/assets/files/2014-Khavinson_Kuznik.pdf"
+      },
+      {
+        "text": "U.S. FDA, 503A bulk drug substances category list, updated 14 May 2026.",
+        "url": "https://fda.gov/media/94155/download"
+      }
+    ]
+  }
+}

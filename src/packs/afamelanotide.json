@@ -1,0 +1,386 @@
+{
+  "id": "afamelanotide",
+  "name": "Afamelanotide",
+  "brands": "Scenesse",
+  "maker": "Clinuvel Pharmaceuticals",
+  "group": "approved",
+  "pill": "Approved (as Scenesse implant)",
+  "overview": {
+    "headline": "A slow-release implant that darkens skin to protect people with a rare, painful light sensitivity.",
+    "lede": "Afamelanotide is a 13-amino-acid analogue of the hormone that drives melanin production. Clinuvel's Scenesse, a 16 mg implant placed under the skin every two months by a clinician, is approved for erythropoietic protoporphyria (EPP) in Europe (2014), the U.S. (2019), Australia (2020), Israel and, since July 2026, Canada. Vials sold online as \"Melanotan 1\" are not this product; no regulator has approved any injectable tanning peptide.",
+    "stats": [
+      {
+        "num": "6.0 vs 0.8 h",
+        "lbl": "median pain-free hours in direct sun over 9 months, afamelanotide vs placebo",
+        "src": "EU Phase 3, NEJM 2015"
+      },
+      {
+        "num": "5",
+        "lbl": "jurisdictions that have approved the implant for EPP",
+        "src": "Clinuvel, Oct 2025 and Jul 2026"
+      },
+      {
+        "num": "0",
+        "lbl": "approved injectable \"Melanotan\" products anywhere",
+        "src": "FDA, TGA, MHRA, HPRA notices"
+      }
+    ],
+    "mechanism": {
+      "intro": "It switches on the skin's own pigment pathway without sunlight.",
+      "parts": [
+        {
+          "name": "MC1R",
+          "text": "Afamelanotide binds the melanocortin-1 receptor on pigment cells, raising eumelanin, the brown-black pigment that absorbs light. It is a stabilised version of the body's alpha-melanocyte-stimulating hormone."
+        },
+        {
+          "name": "Why EPP",
+          "text": "In EPP, protoporphyrin builds up in the skin and reacts with visible light, causing burning pain within minutes outdoors. Extra melanin filters light before it reaches the porphyrin."
+        }
+      ]
+    },
+    "more": {
+      "title": "More: \"Melanotan 1\" versus Scenesse",
+      "paras": [
+        "\"Melanotan 1\" is the old research name for the same molecule. Vials sold under that name are unapproved products with no verified content, made for injection rather than slow release, and marketed for tanning, a use no regulator has approved for any melanocortin peptide.",
+        "Scenesse is a bioresorbable rod the size of a grain of rice, inserted by a company-trained clinician, with twice-yearly skin checks. Sources are under the Status tab."
+      ]
+    }
+  },
+  "results": {
+    "headline": "More time in the sun without pain.",
+    "lede": "Two randomised, placebo-controlled Phase 3 trials measured how many hours people with EPP could spend in direct sunlight on days with no pain. The chart shows the medians over each whole study.",
+    "chart": {
+      "metric": "other",
+      "unit": " h",
+      "legend": [
+        "Afamelanotide 16 mg implant",
+        "Placebo implant"
+      ],
+      "rows": [
+        {
+          "name": "EU trial (CUV029)",
+          "meta": "9 months · 5 implants · 74 people · hours 10am–3pm on pain-free days spent mostly in direct sun",
+          "drug": 6.0,
+          "placebo": 0.8,
+          "tip": "Afamelanotide 6.0 h vs placebo 0.8 h (p=0.005)"
+        },
+        {
+          "name": "U.S. trial (CUV039)",
+          "meta": "6 months · 3 implants · 93 people · hours 10am–6pm in direct sun on pain-free days",
+          "drug": 69.4,
+          "placebo": 40.8,
+          "tip": "Afamelanotide 69.4 h vs placebo 40.8 h (p=0.04)"
+        }
+      ],
+      "max": 80,
+      "note": "Medians from the NEJM paper. The trials counted sun exposure differently, so hours are not comparable across them. The FDA label gives the U.S. medians as 64.1 vs 40.5 h under its own analysis.",
+      "signed": false
+    },
+    "stats": [
+      {
+        "num": "77 vs 146",
+        "lbl": "phototoxic reactions in the EU trial, drug vs placebo (p=0.04); no difference in the U.S. trial (46 vs 43)",
+        "src": "NEJM 2015"
+      },
+      {
+        "num": "+15 points",
+        "lbl": "EPP quality-of-life score advantage at day 120 in the EU trial (78.8 vs 63.6)",
+        "src": "NEJM 2015"
+      }
+    ],
+    "beyond": {
+      "title": "Beyond the hours",
+      "items": [
+        {
+          "b": "Quality of life.",
+          "t": "EPP-specific scores improved in both trials; a general dermatology score did not change."
+        },
+        {
+          "b": "Not a cure.",
+          "t": "Porphyrin levels are unchanged. The implant raises the threshold before light causes pain, and protection fades as it wears off."
+        },
+        {
+          "b": "Other conditions.",
+          "t": "Clinuvel has run trials in vitiligo and other light-sensitive disorders; none has led to an approval beyond EPP."
+        }
+      ]
+    },
+    "more": [
+      {
+        "title": "More: why the two trials look so different",
+        "paras": [
+          "The EU trial counted only days spent mostly in direct sun between 10 a.m. and 3 p.m., giving small totals; the U.S. trial counted any direct sunlight between 10 a.m. and 6 p.m. on pain-free days, giving totals ten times larger. Both were statistically significant, but only the EU trial also cut phototoxic reactions."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "Mostly mild: nausea, headache, implant-site reactions and darker skin.",
+    "lede": "Side effects were common in both groups. The one specific to the drug is its purpose: skin darkening, including darker freckles and moles, which is why regular skin checks are built into treatment.",
+    "chart": {
+      "eyebrow": "Pooled Phase 3 trials · first 6 months · share of people affected",
+      "legend": [
+        "Afamelanotide implant",
+        "Placebo implant"
+      ],
+      "rows": [
+        {
+          "name": "Implant-site reaction",
+          "drug": 21,
+          "placebo": 10
+        },
+        {
+          "name": "Nausea",
+          "drug": 19,
+          "placebo": 14
+        },
+        {
+          "name": "Throat pain",
+          "drug": 7,
+          "placebo": 5
+        },
+        {
+          "name": "Cough",
+          "drug": 6,
+          "placebo": 3
+        },
+        {
+          "name": "Fatigue",
+          "drug": 6,
+          "placebo": 3
+        },
+        {
+          "name": "Skin hyperpigmentation",
+          "drug": 4,
+          "placebo": 0
+        }
+      ],
+      "max": 30,
+      "note": "125 people on afamelanotide, 119 on placebo (CUV029, CUV030, CUV039), from the FDA label. Headache was the most common event in the NEJM paper (34–40% vs 29–39%) but is not in the label's table. New moles: 4% vs 2%."
+    },
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "No pooled discontinuation rate is reported. No deaths occurred in the Phase 3 trials, and serious adverse events were judged unrelated to the drug (NEJM 2015)."
+    },
+    "unique": {
+      "title": "Pigmentation, moles and the melanoma question",
+      "text": "Afamelanotide darkens skin and can darken moles and freckles; 4% developed new moles in six months versus 2% on placebo. The label requires a full-body skin examination twice a year. Whether long-term melanocortin stimulation changes melanoma risk is not established either way, which is why unsupervised \"Melanotan\" injections, the same pigment response with no skin monitoring, worry dermatologists and regulators."
+    },
+    "more": [
+      {
+        "title": "More: what the trials monitor for",
+        "paras": [
+          "Skin. Twice-yearly full-body examinations; new or changing moles are biopsied.",
+          "Implant site. Pain, bruising, discolouration and rare infection or expulsion of the rod.",
+          "Not studied. Children, pregnancy and liver or kidney disease were excluded; the U.S. and Canadian approvals cover adults only."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "Less pain and more time outdoors are the intended effects. There is no evidence of weight, mood, libido or anti-aging effects; those claims belong to Melanotan II marketing, a different molecule with its own serious adverse-event reports."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms trial teams treat as urgent",
+      "items": [
+        "A mole that changes size, shape or colour, bleeds or itches",
+        "Spreading redness, pus or fever at the implant site",
+        "Severe or persistent nausea and vomiting",
+        "Hives, facial swelling or trouble breathing",
+        "Sudden vision change, chest pain or severe headache (reported with unregulated Melanotan products)"
+      ],
+      "note": "Anyone with these symptoms, with or without a prescription product, should get medical care right away."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "Scenesse is a slow-release implant placed under the skin by a clinician every two months, not an injection schedule, so the dose-by-dose simulator used for other peptides does not apply. The label reports an apparent half-life of about 15 hours as the implant releases the drug, with a median peak about 36 hours after insertion. Vials sold online as \"Melanotan 1\" have no measured human pharmacokinetics at all.",
+    "stats": [
+      {
+        "num": "~15 h",
+        "lbl": "apparent half-life as the implant releases the drug",
+        "src": "FDA label"
+      },
+      {
+        "num": "36 h",
+        "lbl": "median time to peak blood level after insertion",
+        "src": "FDA label"
+      },
+      {
+        "num": "60 days",
+        "lbl": "between implants; the pigment response outlasts the drug by weeks",
+        "src": "FDA label regimen"
+      }
+    ],
+    "explain": [
+      {
+        "b": "Why levels fall in days but protection lasts weeks.",
+        "t": "The drug is cleared within about a week, but it has already set pigment cells to work. Melanin builds over weeks and fades slowly, hence implants two months apart."
+      },
+      {
+        "b": "Why nausea comes early.",
+        "t": "Nausea and headache cluster in the first days after insertion, when blood levels are highest."
+      },
+      {
+        "b": "Why an injection is not the same.",
+        "t": "A vial injected under the skin gives a sharp spike; the implant releases slowly. Implant trials say nothing about injected vials."
+      }
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: why there is no level chart",
+        "paras": [
+          "The simulator on other pages models repeated injections. Scenesse is a slow-release rod, so the label's numbers (peak at 36 hours, apparent half-life about 15 hours, one implant every 60 days) describe release from the implant rather than an injection schedule. The drug is cleared within about a week of each insertion and does not accumulate."
+        ]
+      },
+      {
+        "title": "More: what the numbers cannot tell you",
+        "paras": [
+          "Blood level is not protection: pigment and light tolerance lag the drug by weeks. The label's figures describe the approved implant, not injected \"Melanotan 1\" products, which have unverified content, a different release profile and no measured human pharmacokinetics."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "How Scenesse was tested, and what treatment looks like.",
+    "lede": "Scenesse is given only in specialist clinics. There is no self-administered form and no trial route for healthy people.",
+    "ladder": {
+      "title": "The approved regimen",
+      "text": "One 16 mg implant is inserted under the skin above the hip every two months by a healthcare professional trained by the manufacturer, before and during the sunniest months. There is no dose escalation and no at-home version.",
+      "steps": [
+        {
+          "d": "16 mg implant",
+          "t": "every 60 days, clinic-inserted"
+        }
+      ],
+      "note": "Trial participants received three (U.S.) or five (EU) implants. In Europe it is prescribed through specialist porphyria centres."
+    },
+    "more": [
+      {
+        "title": "More: how side effects were handled inside the trials",
+        "paras": [
+          "Participants were examined at each implant visit; moles were documented and suspicious lesions biopsied. Nausea and headache were treated as in any patient and rarely led to withdrawal.",
+          "None of this exists for a vial bought online: the same molecule injected at home produces the same pigment changes with no one watching the skin."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials still running",
+      "items": [
+        "Clinuvel lists programmes in vitiligo and other light-sensitive disorders and studies in adolescents with EPP; none has produced an approval beyond adult EPP",
+        "Post-marketing safety follow-up, including skin monitoring, continues as a condition of the EU and U.S. approvals"
+      ]
+    },
+    "find": {
+      "text": "People with EPP in Canada, the U.S., Europe, Australia or Israel can be referred to a porphyria centre that offers Scenesse. Research in other skin conditions is on the registry.",
+      "term": "afamelanotide",
+      "extra": {
+        "label": "Clinuvel",
+        "url": "https://www.clinuvel.com/"
+      }
+    }
+  },
+  "status": {
+    "headline": "Approved as a clinic-administered implant for EPP, including in Canada since July 2026. \"Melanotan 1\" vials are not the drug.",
+    "items": [
+      {
+        "tag": "ok",
+        "label": "Canada: approved (2026)",
+        "text": "Health Canada issued a Notice of Compliance for Scenesse to prevent phototoxicity in adults with EPP; Clinuvel announced it on 13 July 2026 after a review that began in December 2024 and was extended in October 2025."
+      },
+      {
+        "tag": "ok",
+        "label": "U.S.: approved (2019)",
+        "text": "FDA-approved since October 2019 for adults with EPP. The implant is inserted only by trained providers; no injectable afamelanotide is approved."
+      },
+      {
+        "tag": "ok",
+        "label": "EU, Australia, Israel: approved",
+        "text": "EU authorisation since 2014, Australia since 2020, Israel listed by Clinuvel in 2025. No regulator has approved afamelanotide or any \"Melanotan\" for tanning."
+      },
+      {
+        "tag": "no",
+        "label": "Injectable \"Melanotan\" products",
+        "text": "Illegal to sell for human use in Canada, the U.S., the EU, the UK and Australia. The FDA's first warning letter dates to 2007; Ireland's HPRA (2022) and Australia's TGA (through 2025) have run takedown campaigns."
+      }
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "What the online product is, and is not",
+        "text": "Scenesse is a sterile 16 mg rod placed by a trained clinician with six-monthly skin checks. \"Melanotan 1\" is a powder sold for injection with unverified identity, purity and dose, marketed for tanning.",
+        "items": [
+          "Most \"tanning peptide\" products are actually Melanotan II, a different molecule linked in a 2018 TGA review to kidney damage, muscle breakdown, stroke-like syndromes, prolonged erections and rapidly changing moles.",
+          "Afamelanotide has never been tested or approved for tanning, in healthy people, or as an injection.",
+          "Nasal sprays and \"gummies\" sold for tanning are unauthorised everywhere regulators have looked."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "warn",
+        "title": "Symptoms to take to a doctor",
+        "text": "Anyone who has used an injectable or nasal \"Melanotan\" product should stop and see a doctor, especially for:",
+        "items": [
+          "Moles that have grown, darkened, changed shape or multiplied",
+          "Nausea, flushing and headache that do not settle",
+          "A painful or prolonged erection (reported with Melanotan II)",
+          "Chest pain, weakness on one side, vision loss or severe headache"
+        ],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: how the Canadian approval came about",
+        "paras": [
+          "Health Canada accepted Clinuvel's New Drug Submission in December 2024, asked for more time and information in October 2025, and issued the Notice of Compliance in July 2026. Canada is the fifth jurisdiction to approve the implant; the approval covers adults only."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "text": "U.S. FDA / Clinuvel, SCENESSE (afamelanotide) implant prescribing information (adverse reactions table, pharmacokinetics, clinical studies CUV029 and CUV039).",
+        "url": "https://www.clinuvel.com/wp-content/uploads/2022/03/scenesse®-prescribing-information.pdf"
+      },
+      {
+        "text": "Langendonk JG et al. Afamelanotide for erythropoietic protoporphyria. New England Journal of Medicine, 2015;373:48-59.",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4780255"
+      },
+      {
+        "text": "Clinuvel Pharmaceuticals, SCENESSE approved for EPP in Canada (Notice of Compliance), July 13, 2026.",
+        "url": "https://www.globenewswire.com/de/news-release/2026/07/13/3325896/0/en/SCENESSE-approved-for-EPP-in-Canada.html"
+      },
+      {
+        "text": "Clinuvel Pharmaceuticals, Health Canada requests additional time for SCENESSE review, October 16, 2025.",
+        "url": "https://www.clinuvel.com/wp-content/uploads/2025/10/20251016-health-canada-requests-additional-time-for-scenesse-review.pdf"
+      },
+      {
+        "text": "European Medicines Agency, Scenesse Summary of Product Characteristics (EU authorisation 2014).",
+        "url": "https://www.clinuvel.com/wp-content/uploads/2021/03/SCENESSE-SMPC-EN-1.pdf"
+      },
+      {
+        "text": "Therapeutic Goods Administration concerns on illegal melanotan tanning products and its 2018 safety review, reported by The Limbic, March 11, 2025.",
+        "url": "https://thelimbic.com/?p=8864666"
+      },
+      {
+        "text": "Health Products Regulatory Authority (Ireland), HPRA highlights serious health risk of Melanotan 2 self-tan products, June 27, 2022.",
+        "url": "https://hpra.ie/news-events/news/article/hpra-highlights-serious-health-risk-of--melanotan-2--self-tan-products"
+      },
+      {
+        "text": "U.S. FDA warning letter to Melanocorp on Melanotan II, reported by Drug Topics, September 7, 2007.",
+        "url": "https://www.drugtopics.com/view/fda-issues-warning-letter-melanocorp"
+      },
+      {
+        "text": "MHRA warning against melanotan tanning injections, reported by CosmeticsDesign Europe, September 4, 2013.",
+        "url": "https://cosmeticsdesign-europe.com/Article/2013/09/04/MHRA-warns-against-melanotan-tanning-injections"
+      },
+      {
+        "text": "Canadian Cancer Society statement that Health Canada has not approved any melanotan product for tanning, reported by CTV News British Columbia.",
+        "url": "https://bc.ctvnews.ca/unapproved-injectable-tanning-drug-being-used-in-b-c-1.807304"
+      }
+    ]
+  }
+}

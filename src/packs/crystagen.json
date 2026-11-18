@@ -1,0 +1,270 @@
+{
+  "id": "crystagen",
+  "name": "Crystagen",
+  "brands": "",
+  "maker": "St Petersburg Institute of Bioregulation and Gerontology (V. Khavinson)",
+  "group": "research",
+  "pill": "Unapproved",
+  "overview": {
+    "headline": "A three-amino-acid fragment of Thymalin sold for the immune system. Cell and rat data, and one small uncontrolled Russian report in elderly people.",
+    "lede": "Crystagen (also spelled Cristagen) is the tripeptide Glu-Asp-Pro, designed from the thymus extract Thymalin and later detected as a minor component of it. It was patented in the U.S. in 2011 as \"immunogeroprotective\". It is not a registered medicine anywhere.",
+    "stats": [
+      {
+        "num": "3",
+        "lbl": "amino acids: Glu-Asp-Pro, found in 2021 to be a minor component of Thymalin",
+        "src": "US patent 8,057,810; Khavinson 2021"
+      },
+      {
+        "num": "70",
+        "lbl": "elderly people (38 treated, 32 untreated) in the only human report, in a patent with no design details",
+        "src": "US patent 8,057,810"
+      },
+      {
+        "num": "0",
+        "lbl": "controlled or peer-reviewed human trials",
+        "src": "PubMed, patents, institute publications and registries, Oct 2026"
+      }
+    ],
+    "mechanism": {
+      "intro": "A short peptide said to restore an ageing thymus and the T cells it produces.",
+      "parts": [
+        {
+          "name": "The bioregulator idea",
+          "text": "The 2016 computer model places Crystagen on the DNA sequence \"agat\" with \"strong\" predicted binding. A docking calculation, not a measurement in tissue."
+        },
+        {
+          "name": "What the cell and animal work showed",
+          "text": "Thymus and spleen tissue from 24-month-old rats grew 24% and 28% more in culture; blood cells from 95 donors aged 75–88 showed more sister-chromatid exchanges (5.9 to 8.4 per cell), which the institute reads as reactivated chromatin. In 40 irradiated rats the thymus proliferation index was 55% versus about 26% in intact controls."
+        }
+      ]
+    },
+    "more": {
+      "title": "More: a fragment is not the drug",
+      "paras": [
+        "Thymalin is a licensed Russian medicine with four decades of use. Crystagen is a synthetic tripeptide the institute says it found inside Thymalin in 2021. A fragment detected in an extract does not inherit the extract's record."
+      ]
+    }
+  },
+  "results": {
+    "headline": "Old-rat thymus tissue, elderly blood cells in a dish, and 38 elderly patients with no described control analysis.",
+    "lede": "The \"immune rejuvenation\" claim rests on tissue-culture growth, a chromatin marker in donors' blood cells, and a 70-person report that appears only in a patent.",
+    "chart": null,
+    "stats": [
+      {
+        "num": "82% vs 56%",
+        "lbl": "elderly patients whose immune markers \"normalised\", treated versus untreated; markers, randomisation and blinding not described",
+        "src": "US patent 8,057,810"
+      }
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {
+          "b": "In vitro.",
+          "t": "Thymus (35 fragments) and spleen (45) explants from old rats grew 24% and 28% more by day 3; a thymus epithelial cell line proliferated more; blood cells from 95 donors aged 75–88 showed more sister-chromatid exchanges (patent, 2011)."
+        },
+        {
+          "b": "Animals.",
+          "t": "40 irradiated rats, a premature-ageing model: thymus proliferation index 55% versus about 26% in intact controls. Macrophages from aged mice made more lymphocyte-activating factor. Toxicity tests in 60 mice, 50 rats and 80 guinea pigs: none reported."
+        },
+        {
+          "b": "Russian human reports.",
+          "t": "38 treated and 32 untreated people aged 62–83: \"immune normalisation\" in 82% versus 56%. The patent does not say how people were assigned, which markers defined normalisation, or whether anyone was blinded. No peer-reviewed version exists."
+        }
+      ]
+    },
+    "more": [
+      {
+        "title": "More: why \"82% normalised\" is not a result",
+        "paras": [
+          "A share of people whose unspecified markers moved into an unspecified normal range, in groups formed by an unspecified method, cannot be checked. Nothing connects the chromatin work to immune function in a living person."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "No controlled safety data. Seventy elderly Russians without a described study design, and rodent toxicity tests in a patent.",
+    "lede": "The patent's 70-person report does not describe adverse events. Rodent testing reported no toxicity.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "Not measurable: no trial has been run, and the patent's report does not say whether anyone stopped."
+    },
+    "unique": {
+      "title": "What is actually known",
+      "text": "Nothing beyond the absence of data. A peptide meant to stimulate the immune system has never been tested in people for the obvious risk of over-stimulating it."
+    },
+    "more": [
+      {
+        "title": "More: what a trial would monitor for",
+        "paras": [
+          "Autoimmune flares and allergy in anything that pushes the thymus and T cells; blood counts and lymphocyte subsets, the claimed targets; immune reactions to the peptide itself."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "In old-rat tissue and elderly blood cells: more growth and a chromatin marker the institute reads as rejuvenation. In 38 elderly Russians: undefined \"normalised\" immune markers."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms a doctor should see promptly",
+      "items": [
+        "Spreading redness, swelling or pus at an injection site, or fever and chills after an injection",
+        "Hives, swelling of the face or throat, trouble breathing",
+        "Yellowing of the skin or eyes, dark urine",
+        "A new or worsening autoimmune symptom: joint swelling, rash, unexplained fever"
+      ],
+      "note": "No trial has defined this peptide's own danger signs; these relate to an unverified product."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "No one has measured Crystagen in a person's blood; no half-life or absorption figure exists for it in any species. There is nothing to build a curve from.",
+    "stats": [
+      {
+        "num": "None",
+        "lbl": "human half-life; never measured",
+        "src": "No PK study found, Oct 2026"
+      },
+      {
+        "num": "3",
+        "lbl": "amino acids long (Glu-Asp-Pro)",
+        "src": "Khavinson 2016"
+      },
+      {
+        "num": "95",
+        "lbl": "elderly blood donors whose cells were exposed to the peptide in a dish",
+        "src": "US patent 8,057,810"
+      }
+    ],
+    "explain": [
+      {
+        "b": "Why there is no chart.",
+        "t": "The simulator on other pages needs a measured half-life; none exists for Crystagen."
+      },
+      {
+        "b": "Why the oral claim is contested.",
+        "t": "Pharmacologists expect peptides this short to be digested by gut and blood enzymes; the institute says they are absorbed intact. Nothing in people settles it."
+      }
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: what this page cannot tell you",
+        "paras": [
+          "What is in a product sold as Crystagen, or what repeated use does: no independent analysis exists, and no study has followed anyone beyond a few weeks."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "One unregistered 70-person report in a patent. Nothing else.",
+    "lede": "A comparison of 38 treated and 32 untreated elderly people described in the 2011 U.S. patent. No peer-reviewed or registered trial exists.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: how the human report was run",
+        "paras": [
+          "People aged 62–83 were divided into a treated group of 38 and an untreated group of 32; immune markers were measured before and after and the share that \"normalised\" was reported. The patent omits group formation, blinding, the markers used and adverse events."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials that have been run",
+      "items": [
+        "Elderly immune study, 38 treated versus 32 untreated, aged 62–83 (patent, 2011): normalisation 82% versus 56%; no design details; not peer reviewed.",
+        "No trial on ClinicalTrials.gov or any registry we could find (October 2026)."
+      ]
+    },
+    "find": {
+      "text": "Search the registry for \"Crystagen\" and its sequence \"EDP\". We found no registered trial.",
+      "term": "Crystagen",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "Not approved anywhere. Not Thymalin, whatever the sales copy implies.",
+    "items": [
+      {
+        "tag": "no",
+        "label": "Canada",
+        "text": "Never authorised by Health Canada as a medicine or natural health product (October 2026)."
+      },
+      {
+        "tag": "no",
+        "label": "United States",
+        "text": "Not FDA-approved; absent from FDA's 503A compounding category list of 14 May 2026."
+      },
+      {
+        "tag": "no",
+        "label": "Russia",
+        "text": "Not a registered medicine; not among the institute's six licensed products, and no Russian registration of any kind found."
+      }
+    ],
+    "cards": [
+      {
+        "kind": "warn",
+        "title": "What a \"bioregulator\" claim rests on",
+        "text": "The claim is that a peptide copied from an organ extract reaches that organ and switches on its genes. For Crystagen the support is:",
+        "items": [
+          "Computer docking models, test-tube DNA work and cell cultures from one institute; no study has tracked one of these peptides into a human organ.",
+          "Thymalin is a licensed Russian medicine; Crystagen is a fragment the institute says it found inside it. The licence belongs to the extract."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "crit",
+        "title": "What \"research use only\" means",
+        "text": "A \"research use only\" label is a legal device, not a safety rating. No regulator in Canada or the U.S. has checked what is in a vial sold as Crystagen, and no toxicology or purity data have been filed in the West.",
+        "items": [
+          "Whether a supplement under the name Кристаген is currently registered in Russia we could not confirm."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "soft",
+        "title": "Symptoms to take to a doctor",
+        "text": "If any of these appear after using such a product, see a doctor and bring the product:",
+        "items": [
+          "Fever, chills, or a hot, swollen injection site",
+          "Hives, swelling of the face or throat, trouble breathing",
+          "Yellowing of the skin or eyes, dark urine",
+          "A new or worsening autoimmune symptom"
+        ],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: the Khavinson peptide family",
+        "paras": [
+          "Vladimir Khavinson (1946–2024) directed the St Petersburg Institute of Bioregulation and Gerontology, which made animal-organ extracts from the 1970s and then designed two- to four-amino-acid peptides from each extract's amino-acid make-up, naming them after target organs. Six products became licensed medicines in the USSR or Russia: Thymalin (1982), Thymogen and Epithalamin (1990), Prostatilen (1992), Cortexin and Retinalamin (1999). The synthetic organ-named peptides sold online are not among them, and none appears in an international trial registry."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "text": "Khavinson VKh et al. Peptide substance revealing an immunogeroprotective effect. US patent 8,057,810, 15 November 2011.",
+        "url": "https://patents.google.com/patent/US8057810"
+      },
+      {
+        "text": "Khavinson VK, Zhurkovich IK et al. Identification of short peptides: optimization of target therapeutic properties of the thymus medicine. Molekulyarnaya Meditsina 2021;19(3):32–37.",
+        "url": "https://journals.eco-vector.com/1728-2918/article/view/113416"
+      },
+      {
+        "text": "Khavinson VKh, Lin'kova NS, Tarnovskaya SI. Short peptides regulate gene expression. Bull Exp Biol Med 2016;162(2): sequence table and modelled DNA binding sites.",
+        "url": "https://khavinson.info/assets/files/skan/2016-khavinson_lin_tarn.pdf"
+      },
+      {
+        "text": "Khavinson VKh. Peptides, Genome, Aging. Russian Academy of Sciences, 2020: peptide table; the six institute products licensed as medicines.",
+        "url": "https://new.ras.ru/upload/iblock/333/b7wjz691315010b39o8ja61gl78y062c.pdf"
+      },
+      {
+        "text": "U.S. FDA, 503A bulk drug substances category list, updated 14 May 2026.",
+        "url": "https://fda.gov/media/94155/download"
+      }
+    ]
+  }
+}

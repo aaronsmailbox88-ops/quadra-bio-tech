@@ -1,0 +1,271 @@
+{
+  "id": "chonluten",
+  "name": "Chonluten",
+  "brands": "",
+  "maker": "St Petersburg Institute of Bioregulation and Gerontology (V. Khavinson)",
+  "group": "research",
+  "pill": "Unapproved",
+  "overview": {
+    "headline": "A three-amino-acid peptide sold for the lungs, though its inventors patented it as a stress-protective agent. One short Russian study in healthy volunteers.",
+    "lede": "Chonluten is the Khavinson institute's tripeptide Glu-Asp-Gly. Vendors sell it for the lungs; the institute's U.S. patent (2011) describes a stress protector acting on brain chemistry, a European patent covers Helicobacter stomach disease, and a 2020 review mentions chronic bronchitis. It is not a registered medicine anywhere.",
+    "stats": [
+      {
+        "num": "3",
+        "lbl": "amino acids: Glu-Asp-Gly",
+        "src": "US patent 8,071,556; Khavinson 2016"
+      },
+      {
+        "num": "80",
+        "lbl": "healthy men aged 20–22 in the only human study, a two-day altitude-tolerance test",
+        "src": "US patent 8,071,556"
+      },
+      {
+        "num": "0",
+        "lbl": "controlled studies in people with lung disease",
+        "src": "PubMed, patents, institute publications and registries, Oct 2026"
+      }
+    ],
+    "mechanism": {
+      "intro": "A short peptide said to steady the stress response and protect mucous membranes.",
+      "parts": [
+        {
+          "name": "The bioregulator idea",
+          "text": "The 2016 computer model places Chonluten on the DNA sequence \"tttt\" with only \"weak\" predicted binding, the lowest grade in the institute's table."
+        },
+        {
+          "name": "What the animal work showed",
+          "text": "In the patent, rats given the peptide for five days had more noradrenaline, dopamine and serotonin in the brain cortex and less in blood, and the stress gene c-Fos changed in stressed rats. The bronchitis claim rests on one sentence in a review; the group's bronchial cell paper tested Bronchogen, not Chonluten."
+        }
+      ]
+    },
+    "more": {
+      "title": "More: three stories for one peptide",
+      "paras": [
+        "Vendors: lungs. U.S. patent: stress protection and altitude tolerance. European patent EP 2667887: Helicobacter-related stomach disease. Institute review: chronic bronchitis. None has been shown in a controlled human study."
+      ]
+    }
+  },
+  "results": {
+    "headline": "Rat brain chemistry, one two-day volunteer study, and a bronchitis claim without data.",
+    "lede": "The only human data come from 80 healthy young men who sat in a low-pressure chamber for an hour after two days of the peptide or placebo.",
+    "chart": null,
+    "stats": [
+      {
+        "num": "80–90% vs 60%",
+        "lbl": "volunteers who tolerated simulated 5,000 m altitude well, peptide versus placebo; blinding not described",
+        "src": "US patent 8,071,556"
+      }
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {
+          "b": "In vitro.",
+          "t": "Serum from five donors: the peptide inhibited enkephalin-degrading enzymes about as well as two reference inhibitors; figure only (patent)."
+        },
+        {
+          "b": "Animals.",
+          "t": "27 rats: brain-cortex noradrenaline, dopamine and serotonin up after five days. 28 rats under restraint stress: c-Fos changes in the hypothalamus. Toxicity tests in 66 mice, 64 rats and 92 guinea pigs: no toxic reactions. Not in a journal."
+        },
+        {
+          "b": "Russian human reports.",
+          "t": "80 healthy men (20 placebo, 30 and 30 on the peptide) spent an hour at simulated 5,000 m: 80–90% tolerated it well versus 60%; anxiety scores 10–13% lower; work capacity 15–20% higher. Randomisation and blinding not described. The bronchitis statement has no reference, numbers or design."
+        }
+      ]
+    },
+    "more": [
+      {
+        "title": "More: why the volunteer study says nothing about lungs",
+        "paras": [
+          "Tolerating thin air for an hour is a stress-physiology outcome in fit young men, not a lung-disease outcome in patients, and the percentages come from an unreviewed patent."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "No patient safety data. Eighty volunteers for two days, and rodent toxicity tests in a patent.",
+    "lede": "The volunteer study reports no adverse events but was not designed to find them. Rodent testing reported no toxic reactions.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "Not measurable: no trial has been run."
+    },
+    "unique": {
+      "title": "What is actually known",
+      "text": "Almost nothing. In rats the peptide changed brain levels of noradrenaline, dopamine and serotonin, the chemicals mood and blood-pressure drugs act on. What that means in a person is unmeasured."
+    },
+    "more": [
+      {
+        "title": "More: what a trial would monitor for",
+        "paras": [
+          "Mood, sleep, heart rate and blood pressure, given the brain-amine changes in rats; lung function if the bronchitis claim were tested; immune reactions."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "In rats: changed brain chemistry under stress. In 80 young men: better tolerance of an hour of simulated altitude, by the inventors' account. In lung patients: nothing measured."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms a doctor should see promptly",
+      "items": [
+        "Spreading redness, swelling or pus at an injection site, or fever and chills after an injection",
+        "Hives, swelling of the face or throat, trouble breathing",
+        "Yellowing of the skin or eyes, dark urine",
+        "Worsening cough, breathlessness or wheeze"
+      ],
+      "note": "No trial has defined this peptide's own danger signs; these relate to an unverified product."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "No one has measured Chonluten in a person's blood; no half-life or absorption figure exists for it in any species. There is nothing to build a curve from.",
+    "stats": [
+      {
+        "num": "None",
+        "lbl": "human half-life; never measured",
+        "src": "No PK study found, Oct 2026"
+      },
+      {
+        "num": "3",
+        "lbl": "amino acids long (Glu-Asp-Gly)",
+        "src": "Khavinson 2016"
+      },
+      {
+        "num": "2 days",
+        "lbl": "length of the only human exposure on record, in healthy volunteers",
+        "src": "US patent 8,071,556"
+      }
+    ],
+    "explain": [
+      {
+        "b": "Why there is no chart.",
+        "t": "The simulator on other pages needs a measured half-life; none exists for Chonluten."
+      },
+      {
+        "b": "Why the oral claim is contested.",
+        "t": "Pharmacologists expect peptides this short to be digested by gut and blood enzymes; the institute says they are absorbed intact. Nothing in people settles it."
+      }
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: what this page cannot tell you",
+        "paras": [
+          "What is in a product sold as Chonluten, or what repeated use does: no independent analysis exists, and no study has followed anyone beyond a few weeks."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "One unregistered volunteer study in a patent. No trial in patients.",
+    "lede": "No trial in people with lung disease, stress disorders or stomach disease has been published or registered.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: how the volunteer study was run",
+        "paras": [
+          "Eighty men aged 20–22 were split into a placebo group of 20 and two peptide groups of 30, took the peptide or placebo for two days, and on day four sat for 60 minutes in a pressure chamber set to 5,000 metres while anxiety, heart rate, blood pressure and work capacity were recorded. Assignment and blinding are not described."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials that have been run",
+      "items": [
+        "Altitude-tolerance study, 80 healthy men, two days (patent, 2011): better tolerance and lower anxiety reported; design details missing; not peer reviewed.",
+        "Chronic bronchitis: mentioned in a 2020 institute review, with no study cited.",
+        "No trial on ClinicalTrials.gov or any registry we could find (October 2026)."
+      ]
+    },
+    "find": {
+      "text": "Search the registry for \"Chonluten\" and its sequence \"EDG\". We found no registered trial.",
+      "term": "Chonluten",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "Not approved anywhere. A \"research chemical\" with three competing marketing stories.",
+    "items": [
+      {
+        "tag": "no",
+        "label": "Canada",
+        "text": "Never authorised by Health Canada as a medicine or natural health product (October 2026)."
+      },
+      {
+        "tag": "no",
+        "label": "United States",
+        "text": "Not FDA-approved; absent from FDA's 503A compounding category list of 14 May 2026."
+      },
+      {
+        "tag": "no",
+        "label": "Russia",
+        "text": "Not a registered medicine; not among the institute's six licensed products, and no Russian registration of any kind found."
+      }
+    ],
+    "cards": [
+      {
+        "kind": "warn",
+        "title": "What a \"bioregulator\" claim rests on",
+        "text": "The claim is that a peptide copied from an organ extract reaches that organ and switches on its genes. For Chonluten the support is:",
+        "items": [
+          "Computer docking models, test-tube DNA work and cell cultures from one institute; no study has tracked one of these peptides into a human organ.",
+          "Chonluten is the weakest DNA binder in the institute's own model, and its patents describe a stress protector and a stomach treatment, not a lung peptide."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "crit",
+        "title": "What \"research use only\" means",
+        "text": "A \"research use only\" label is a legal device, not a safety rating. No regulator in Canada or the U.S. has checked what is in a vial sold as Chonluten, and no toxicology or purity data have been filed in the West.",
+        "items": [
+          "Whether a supplement under the name Хонлутен is currently registered in Russia we could not confirm."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "soft",
+        "title": "Symptoms to take to a doctor",
+        "text": "If any of these appear after using such a product, see a doctor and bring the product:",
+        "items": [
+          "Fever, chills, or a hot, swollen injection site",
+          "Hives, swelling of the face or throat, trouble breathing",
+          "Yellowing of the skin or eyes, dark urine",
+          "Worsening cough, breathlessness or wheeze"
+        ],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: the Khavinson peptide family",
+        "paras": [
+          "Vladimir Khavinson (1946–2024) directed the St Petersburg Institute of Bioregulation and Gerontology, which made animal-organ extracts from the 1970s and then designed two- to four-amino-acid peptides from each extract's amino-acid make-up, naming them after target organs. Six products became licensed medicines in the USSR or Russia: Thymalin (1982), Thymogen and Epithalamin (1990), Prostatilen (1992), Cortexin and Retinalamin (1999). The synthetic organ-named peptides sold online are not among them, and none appears in an international trial registry."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "text": "Khavinson VKh et al. Peptide substance revealing a stress protective effect. US patent 8,071,556, 6 December 2011.",
+        "url": "https://patents.justia.com/patent/8071556"
+      },
+      {
+        "text": "Khavinson V et al. Peptides: prospects for use in the treatment of COVID-19. Molecules 2020;25(19):4389.",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7583759"
+      },
+      {
+        "text": "Khavinson institute patent list, including EP 2667887 (Glu-Asp-Gly for Helicobacter pylori gastroduodenal disease, 2015).",
+        "url": "https://khavinson.info/patents"
+      },
+      {
+        "text": "Khavinson VKh, Lin'kova NS, Tarnovskaya SI. Short peptides regulate gene expression. Bull Exp Biol Med 2016;162(2): sequence table and modelled DNA binding sites.",
+        "url": "https://khavinson.info/assets/files/skan/2016-khavinson_lin_tarn.pdf"
+      },
+      {
+        "text": "U.S. FDA, 503A bulk drug substances category list, updated 14 May 2026.",
+        "url": "https://fda.gov/media/94155/download"
+      }
+    ]
+  }
+}

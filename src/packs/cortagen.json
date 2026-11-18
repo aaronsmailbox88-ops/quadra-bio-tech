@@ -1,0 +1,274 @@
+{
+  "id": "cortagen",
+  "name": "Cortagen",
+  "brands": "",
+  "maker": "St Petersburg Institute of Bioregulation and Gerontology (V. Khavinson)",
+  "group": "research",
+  "pill": "Unapproved",
+  "overview": {
+    "headline": "A four-amino-acid peptide copied from the brain-extract drug Cortexin. Nerve-repair data in rats; no human trial.",
+    "lede": "Cortagen is the Khavinson institute's tetrapeptide Ala-Glu-Asp-Pro, designed from the amino-acid make-up of Cortexin, a cattle-brain extract licensed in Russia in 1999. Cortagen itself is not a registered medicine anywhere; its published work is in rats and in elderly donors' blood cells.",
+    "stats": [
+      {
+        "num": "4",
+        "lbl": "amino acids: Ala-Glu-Asp-Pro",
+        "src": "Khavinson 2016, 2020"
+      },
+      {
+        "num": "+27% / +40%",
+        "lbl": "growth rate and conduction speed of regenerating fibres in rats with a repaired sciatic nerve",
+        "src": "Turchaninova et al. 2000, abstract"
+      },
+      {
+        "num": "0",
+        "lbl": "human studies of any design",
+        "src": "PubMed, patents, institute publications and registries, Oct 2026"
+      }
+    ],
+    "mechanism": {
+      "intro": "A short peptide said to help nerve cells survive injury and regrow.",
+      "parts": [
+        {
+          "name": "The bioregulator idea",
+          "text": "The 2016 computer model places Cortagen on the DNA sequence \"aacc\" with \"strong\" predicted binding. In blood cells from people aged 75–88 it was one of five peptides reported to activate ribosomal genes. Neither is a measurement in brain tissue."
+        },
+        {
+          "name": "What the animal work showed",
+          "text": "Rats with a cut and sutured sciatic nerve regrew fibres 27% faster with 40% higher conduction speed (2000). Rats with experimental brain ischaemia recovered behaviour over seven days with less lipid peroxidation (institute review 2013; Zarubina and Shabanov 2011, 2016)."
+        }
+      ]
+    },
+    "more": {
+      "title": "More: Cortagen versus Cortexin",
+      "paras": [
+        "Cortexin is a licensed Russian extract widely prescribed there for stroke and brain injury, though never reviewed by a Western regulator. Cortagen is a single synthetic tetrapeptide built from Cortexin's average composition. Results for one do not transfer to the other."
+      ]
+    }
+  },
+  "results": {
+    "headline": "Nerve regrowth in rats, gene changes in old blood cells, nothing in people.",
+    "lede": "A handful of rat experiments from St Petersburg laboratories and one test-tube study on elderly donors' blood cells.",
+    "chart": null,
+    "stats": [
+      {
+        "num": "7 days",
+        "lbl": "period over which rats with brain ischaemia were reported to recover behaviour",
+        "src": "Khavinson, Kuznik, Ryzhak 2013"
+      }
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {
+          "b": "In vitro.",
+          "t": "Blood cells from people aged 75–88: Cortagen was one of five peptides that activated ribosomal genes, a change the institute reads as \"rejuvenation\" (2004). The 2013 review also says it drove \"more than 45%\" of pluripotent tissue to become epidermis, without naming the tissue or species."
+        },
+        {
+          "b": "Animals.",
+          "t": "Rats, sciatic nerve cut and sutured: fibres grew 27% faster and conducted 40% faster (2000; abstract only). Rats, cerebral ischaemia: behaviour restored over 7 days. Mice: altered heart gene expression (Anisimov 2004). Young and old rats: more resistance to immobilisation stress."
+        },
+        {
+          "b": "Russian human reports.",
+          "t": "None found. The 2014 clinical review does not mention Cortagen, and no patent with human data exists for it."
+        }
+      ]
+    },
+    "more": [
+      {
+        "title": "More: why the rat nerve result is not a forecast",
+        "paras": [
+          "Rats regrow peripheral nerves far better than humans do. The 2000 paper is three pages, gives no animal numbers in its abstract and has not been repeated by another group."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "No human safety data, and no patent toxicity data either.",
+    "lede": "Nobody has given Cortagen to people in a study. We found no published toxicity testing for this peptide, only the institute's general statement that its peptides have no side effects.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "Not measurable: no trial has been run and no human report exists."
+    },
+    "unique": {
+      "title": "What is actually known",
+      "text": "Nothing beyond the absence of data. A peptide sold for the brain has never had any effect measured in a human."
+    },
+    "more": [
+      {
+        "title": "More: what a trial would monitor for",
+        "paras": [
+          "Mood, sleep, seizures and cognition, since the rat data show it changes brain chemistry; immune reactions to an injected peptide of uncertain purity."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "In rats: faster peripheral nerve regrowth and better recovery from experimental brain ischaemia. In people: nothing measured."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms a doctor should see promptly",
+      "items": [
+        "Spreading redness, swelling or pus at an injection site, or fever and chills after an injection",
+        "Hives, swelling of the face or throat, trouble breathing",
+        "Yellowing of the skin or eyes, dark urine",
+        "New confusion, seizures, severe headache or one-sided weakness"
+      ],
+      "note": "No trial has defined this peptide's own danger signs; these relate to an unverified product."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "No one has measured Cortagen in a person's blood; no half-life or absorption figure exists for it in any species. There is nothing to build a curve from.",
+    "stats": [
+      {
+        "num": "None",
+        "lbl": "human half-life; never measured",
+        "src": "No PK study found, Oct 2026"
+      },
+      {
+        "num": "4",
+        "lbl": "amino acids long (Ala-Glu-Asp-Pro)",
+        "src": "Khavinson 2016"
+      },
+      {
+        "num": "0",
+        "lbl": "toxicity or pharmacokinetic studies in any species",
+        "src": "PubMed, patents, institute publications and registries, Oct 2026"
+      }
+    ],
+    "explain": [
+      {
+        "b": "Why there is no chart.",
+        "t": "The simulator on other pages needs a measured half-life; none exists for Cortagen."
+      },
+      {
+        "b": "Why the oral claim is contested.",
+        "t": "Pharmacologists expect peptides this short to be digested by gut and blood enzymes; the institute says they are absorbed intact. Nothing in people settles it."
+      }
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: what this page cannot tell you",
+        "paras": [
+          "What is in a product sold as Cortagen, or what repeated use does: no independent analysis exists, and no study has followed anyone beyond a few weeks."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "No clinical trial, registered or unregistered, could be found.",
+    "lede": "The Russian clinical literature vendors gesture at concerns Cortexin, the brain extract, not this peptide.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: how the existing studies were run",
+        "paras": [
+          "Rats had a nerve cut and repaired, or a period of brain ischaemia, and were compared with untreated animals; elderly donors' blood cells were exposed to the peptide in a dish."
+        ]
+      }
+    ],
+    "running": {
+      "title": "No registered trials",
+      "items": [
+        "No clinical trial of Cortagen on ClinicalTrials.gov or any registry we could find (October 2026).",
+        "No Russian clinical report of Cortagen, controlled or uncontrolled, was found."
+      ]
+    },
+    "find": {
+      "text": "Search the registry for \"Cortagen\" and its sequence \"AEDP\". We found no registered trial.",
+      "term": "Cortagen",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "Not approved anywhere, including Russia. Do not confuse it with Cortexin.",
+    "items": [
+      {
+        "tag": "no",
+        "label": "Canada",
+        "text": "Never authorised by Health Canada as a medicine or natural health product (October 2026)."
+      },
+      {
+        "tag": "no",
+        "label": "United States",
+        "text": "Not FDA-approved; absent from FDA's 503A compounding category list of 14 May 2026."
+      },
+      {
+        "tag": "no",
+        "label": "Russia",
+        "text": "Not a registered medicine; not among the institute's six licensed products, and no Russian registration of any kind found."
+      }
+    ],
+    "cards": [
+      {
+        "kind": "warn",
+        "title": "What a \"bioregulator\" claim rests on",
+        "text": "The claim is that a peptide copied from an organ extract reaches that organ and switches on its genes. For Cortagen the support is:",
+        "items": [
+          "Computer docking models, test-tube DNA work and cell cultures from one institute; no study has tracked one of these peptides into a human organ.",
+          "Cortexin, the extract Cortagen was copied from, is a licensed Russian medicine. That licence covers a different product."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "crit",
+        "title": "What \"research use only\" means",
+        "text": "A \"research use only\" label is a legal device, not a safety rating. No regulator in Canada or the U.S. has checked what is in a vial sold as Cortagen, and no toxicology or purity data have been filed in the West.",
+        "items": [
+          "Cortagen is not even registered as a food supplement in Russia as far as we could find."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "soft",
+        "title": "Symptoms to take to a doctor",
+        "text": "If any of these appear after using such a product, see a doctor and bring the product:",
+        "items": [
+          "Fever, chills, or a hot, swollen injection site",
+          "Hives, swelling of the face or throat, trouble breathing",
+          "Yellowing of the skin or eyes, dark urine",
+          "New confusion, seizures or severe headache"
+        ],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: the Khavinson peptide family",
+        "paras": [
+          "Vladimir Khavinson (1946–2024) directed the St Petersburg Institute of Bioregulation and Gerontology, which made animal-organ extracts from the 1970s and then designed two- to four-amino-acid peptides from each extract's amino-acid make-up, naming them after target organs. Six products became licensed medicines in the USSR or Russia: Thymalin (1982), Thymogen and Epithalamin (1990), Prostatilen (1992), Cortexin and Retinalamin (1999). The synthetic organ-named peptides sold online are not among them, and none appears in an international trial registry."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "text": "Turchaninova LN, Kolosova LI, Malinin VV et al. Effect of tetrapeptide cortagen on regeneration of sciatic nerve. Bull Exp Biol Med 2000;130:1172–1174.",
+        "url": "https://link.springer.com/article/10.1007/BF02682018"
+      },
+      {
+        "text": "Khavinson VK, Lezhava TA, Malinin VV. Effects of short peptides on lymphocyte chromatin in senile subjects. Bull Exp Biol Med 2004;137:78–81.",
+        "url": "https://link.springer.com/article/10.1023/B:BEBM.0000024393.40560.05"
+      },
+      {
+        "text": "Khavinson VKh, Kuznik BI, Ryzhak GA. Peptide bioregulators: a new class of geroprotectors. Message 1: experimental studies. Adv Gerontol 2013;3(3):225–235.",
+        "url": "https://khavinson.info/assets/files/2013-Khavinson_Kuznik.pdf"
+      },
+      {
+        "text": "Zarubina IV, Shabanov PD. Cortexin and cortagen in chronic brain ischemia (rats), Eksp Klin Farmakol 2011; Bull Exp Biol Med 2016 (titles as indexed; not retrieved).",
+        "url": ""
+      },
+      {
+        "text": "Khavinson VKh, Lin'kova NS, Tarnovskaya SI. Short peptides regulate gene expression. Bull Exp Biol Med 2016;162(2): sequence table and modelled DNA binding sites.",
+        "url": "https://khavinson.info/assets/files/skan/2016-khavinson_lin_tarn.pdf"
+      },
+      {
+        "text": "U.S. FDA, 503A bulk drug substances category list, updated 14 May 2026.",
+        "url": "https://fda.gov/media/94155/download"
+      }
+    ]
+  }
+}

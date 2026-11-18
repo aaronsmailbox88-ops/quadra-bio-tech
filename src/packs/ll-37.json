@@ -1,0 +1,187 @@
+{
+  "id": "ll-37",
+  "name": "LL-37",
+  "brands": "",
+  "maker": "Pergamum AB / Promore Pharma (topical ropocamptide; company liquidated 2023)",
+  "group": "research",
+  "pill": "Unapproved",
+  "overview": {
+    "headline": "Your body's own antimicrobial peptide: tested as a wound gel in people, sold without any basis as an injectable.",
+    "lede": "LL-37 is the active fragment of human cathelicidin, a peptide your skin, gut and white blood cells release to kill microbes and summon immune cells. A Swedish company tested an LL-37 gel (ropocamptide) on venous leg ulcers through Phase 2b, then entered liquidation in 2023. No LL-37 product is approved anywhere, and the injectable 'research' vials sold online have never been studied in people.",
+    "stats": [
+      {"num": "144", "lbl": "patients in the largest trial, a Phase 2b of LL-37 gel on leg ulcers: no significant difference overall", "src": "HEAL LL-37, Promore Pharma, November 2020"},
+      {"num": "0", "lbl": "human studies of LL-37 injected under the skin or into muscle", "src": "Only topical and into-tumour routes have been tested"},
+      {"num": "Feb 2027", "lbl": "deadline for the FDA advisory committee to review LL-37 for pharmacy compounding", "src": "FDA notice, April 2026"}
+    ],
+    "mechanism": {
+      "intro": "A natural defence peptide that kills microbes directly and also stirs up inflammation.",
+      "parts": [
+        {"name": "Antimicrobial", "text": "LL-37 inserts into bacterial membranes and breaks them. Skin cells and neutrophils release it as part of innate immunity."},
+        {"name": "Immune signalling", "text": "It attracts immune cells, presents the body's own DNA and RNA to immune sensors, and promotes new blood vessels. In a wound that may help healing; in the wrong place it drives inflammation."},
+        {"name": "Disease link", "text": "Skin with psoriasis or rosacea contains abnormally high cathelicidin, and injecting rosacea-type fragments into mouse skin produced inflammation (Yamasaki 2007). In psoriasis, LL-37 is itself a target of the immune attack."}
+      ]
+    },
+    "more": {
+      "title": "More: how a defence peptide became a 'research chemical'",
+      "paras": [
+        "The clinical idea was narrow: chronic leg ulcers have low cathelicidin, so a gel might restart healing. Online sellers took the word 'antimicrobial' and market LL-37 injections for infections, gut problems and 'biofilms'. No study supports any of that. Sources are listed under the Status tab."
+      ]
+    }
+  },
+  "results": {
+    "headline": "Tested on wounds, not injected. Mixed results.",
+    "lede": "Three human studies exist, all applying LL-37 to a leg ulcer or injecting it into a melanoma. The chart is blank because the only placebo-controlled trial found no overall difference and reported numbers only for a subgroup chosen afterwards.",
+    "chart": null,
+    "stats": [
+      {"num": "28% vs 8%", "lbl": "complete healing of large ulcers (10 cm2 or more) on the low dose vs placebo: a subgroup not planned in advance", "src": "HEAL LL-37, 2020"}
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {"b": "Phase 1/2, 34 patients (2013).", "t": "Three gel strengths (0.5, 1.6 and 3.2 mg/mL) against placebo on venous leg ulcers. The weakest gel healed wounds about six times faster than placebo (p=0.003); the middle one about three times (p=0.088, not significant); the strongest showed no benefit and caused more local reactions."},
+        {"b": "Phase 2b, 144 patients (2020).", "t": "Twice-weekly gel for 13 weeks at two strengths against placebo. Across all patients, no statistically significant difference. In the roughly 46% with ulcers of 10 cm2 or more, complete healing was 28.1% on 0.5 mg/mL against 8.1% on placebo; the company itself noted this analysis was not pre-specified. No Phase 3 followed."},
+        {"b": "Melanoma, injected into tumours.", "t": "MD Anderson ran a Phase 1/2 study of LL-37 injected directly into melanoma lesions (NCT02225366): completed, four participants, no results reported."},
+        {"b": "Injected under the skin or into muscle.", "t": "Never studied in people. Everything claimed for 'LL-37 injections' online is extrapolated from test-tube and animal work."}
+      ]
+    },
+    "more": [
+      {
+        "title": "More: why the wound results are hard to read",
+        "paras": [
+          "The two leg-ulcer trials agree at the lowest strength and reverse at the highest, which suggests a narrow window in which the peptide helps rather than irritates. The Phase 2b's overall result was null and its positive finding came from a subgroup defined after the fact. The company that would have run a confirmatory trial dissolved in 2023."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "Locally irritating at higher strengths, and pro-inflammatory by nature.",
+    "lede": "The trials report tolerability only for a gel on a wound. Nothing is known about what injected LL-37 does in a person.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "Not reported in the published summaries. The Phase 2b press release said no serious adverse events were judged related to the drug; in the Phase 1/2, the strongest gel caused more local reactions."
+    },
+    "unique": {
+      "title": "Inflammation, and the cancer question",
+      "text": "LL-37 is one of the molecules that drives the inflammation of psoriasis and rosacea. The FDA's compounding list notes an immunogenicity risk for certain routes and, in its 2023 review, nonclinical findings suggesting harm to male reproduction and possible tumour-promoting effects in some tissues. In the laboratory LL-37 kills some tumour cells and promotes the growth or spread of others, including melanoma cells, which is why the melanoma trial injected it only into tumours."
+    },
+    "more": [
+      {
+        "title": "More: what the trials monitored for",
+        "paras": [
+          "The wound trials watched local reactions, infection and wound size. A trial of injected LL-37 would have to add immune reactions and organ tests, and face the open question of what a pro-inflammatory peptide does when spread through the body."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "Faster closure of large leg ulcers in one subgroup is the only human benefit reported. There is no human evidence for infection control, gut repair or any other marketed use."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms doctors treat as urgent",
+      "items": [
+        "Spreading redness, warmth, pus or fever around an injection or wound site",
+        "Hives, swelling of the face or throat, trouble breathing",
+        "A new or rapidly worsening rash, especially on the face",
+        "Unusual tiredness, dark urine, yellow skin or eyes"
+      ],
+      "note": "Anyone with these symptoms should get medical care right away."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "LL-37 has only been applied to wounds and injected into tumours in trials, and those studies did not report blood levels. No human half-life for injected LL-37 exists because it has never been injected into people in a study. Your body already makes LL-37 locally, in amounts that rise with infection and in inflamed skin.",
+    "stats": [
+      {"num": "37", "lbl": "amino acids; the name comes from its two leading leucines and its length", "src": "Chemical identity"},
+      {"num": "0", "lbl": "human studies measuring LL-37 in blood after a dose", "src": "Published trials"},
+      {"num": "3", "lbl": "gel strengths tested on wounds; the strongest did worst", "src": "Pergamum AB, 2013"}
+    ],
+    "explain": [
+      {"b": "Why there is no chart.", "t": "The simulator needs a measured human half-life and a tested dose range. Neither exists for injected LL-37."},
+      {"b": "Why more was not better.", "t": "In the Phase 1/2 trial the strongest gel irritated wounds and did not speed healing. For a peptide that is also an inflammatory signal, strength matters, and no one has mapped it for injections."}
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: what this page cannot tell you",
+        "paras": [
+          "What a vial sold as LL-37 contains, what level it reaches in the body or what level is safe. The trials answered those questions for a gel on a leg ulcer only."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "Three human studies, all topical or into tumours, none since 2020.",
+    "lede": "Here is what was run, and why it stopped.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: why development ended",
+        "paras": [
+          "Promore Pharma's Phase 2b finished in 2020 with a null overall result and a promising subgroup. The company then lost its other lead candidate (ensereptide failed a Phase 2 in 2023), could not raise money, and shareholders approved voluntary liquidation on October 5, 2023. No new sponsor has registered a trial."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials that have been run",
+      "items": [
+        "Phase 1/2, venous leg ulcers, 34 patients, Pergamum AB: 0.5 mg/mL gel healed faster than placebo; the strongest gel gave no benefit and more local reactions (final data October 2013; Gronberg et al. 2014).",
+        "Phase 2b HEAL LL-37, venous leg ulcers, 144 patients, Promore Pharma: no significant difference across all patients; benefit only in a post-hoc subgroup of large ulcers (November 19, 2020). No Phase 3; company liquidated October 2023.",
+        "Phase 1/2, LL-37 injected into melanoma lesions, MD Anderson (NCT02225366): completed, four participants, results not reported."
+      ]
+    },
+    "find": {
+      "text": "No LL-37 trial is known to be recruiting. The registry term below will show any new study.",
+      "term": "ropocamptide",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "Not approved anywhere. Under FDA review for compounding; named by Health Canada as an illegal injectable product.",
+    "items": [
+      {"tag": "no", "label": "Canada: not authorized", "text": "Health Canada's August 1, 2025 advisory named LL-37 among 42 unauthorized injectable peptide products sold by a Canadian website, and said injectable peptides are prescription drugs. In April 2026 it repeated that unauthorized injectable peptides are illegal in Canada, and in July 2026 obtained a permanent injunction against the seller Canlab Research."},
+      {"tag": "no", "label": "US: not approved", "text": "The FDA has never approved LL-37. In 2023 it placed cathelicidin LL-37 in 'Category 2' (significant safety concerns for compounding). On April 15, 2026 the FDA announced its removal from that category; the list now shows the nomination as withdrawn and still notes an immunogenicity risk for certain routes."},
+      {"tag": "soon", "label": "US: advisory review due", "text": "The FDA's Pharmacy Compounding Advisory Committee is to consider LL-37 at a meeting before the end of February 2027. Until the FDA decides, pharmacies have no clear legal basis to compound it, and no outcome would make LL-37 an approved drug."},
+      {"tag": "no", "label": "Sport: prohibited", "text": "Not named on the 2026 WADA Prohibited List, but with no approval anywhere for human use it falls under the S0 clause, prohibited at all times."}
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "What 'research use only' means",
+        "text": "Vials sold as LL-37 carry 'for research use only' labels. That describes a product meant for laboratory work, not people. It does not mean the contents were tested, and it does not make the sale legal once the seller markets the product for human use.",
+        "items": [
+          "Health Canada: injectable peptides are prescription drugs; unauthorized ones are illegal to sell (2025 and 2026 notices).",
+          "FDA warning letters, August 24, 2026: the disclaimer does not control when a website shows the product is intended as a drug for people."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "warn",
+        "title": "Symptoms to take to a doctor",
+        "text": "Anyone who has injected a product sold as LL-37 should tell a doctor, especially with any of the following:",
+        "items": ["Fever, redness or pus at an injection site", "A new facial rash, flushing, or worsening psoriasis or rosacea", "Hives, swelling or wheezing", "Unusual tiredness, dark urine, yellow skin or eyes"],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: compounding categories explained",
+        "paras": [
+          "The FDA sorts nominated bulk substances into Category 1 (may be compounded while review continues), Category 2 (may not) and a formal 503A list set by rule. LL-37 left Category 2 in April 2026 but was not placed in Category 1. Even a favourable advisory review would only let licensed pharmacies compound it on prescription; it would not be approval."
+        ]
+      }
+    ],
+    "sources": [
+      {"text": "Promore Pharma. Positive results from Phase IIb study of ropocamptide in venous leg ulcers (HEAL LL-37), press release, November 19, 2020.", "url": "https://storage.mfn.se/ce27b894-962d-4628-bada-a8baa109c0fb/promore-pharma-announces-positive-results-from-phase-iib-study-of-ropocamptide-in-the-treatment-of-venous-leg-ulcers.pdf"},
+      {"text": "Promore Pharma. Clarification of outcome in the clinical trial HEAL LL-37 (subgroup analysis not pre-specified), November 20, 2020.", "url": "https://storage.mfn.se/a9041841-95d2-40fa-8919-9cb79e748aef/clarification-of-outcome-in-the-clinical-trial-heal-ll-37.pdf"},
+      {"text": "Pergamum AB. Final data from Phase I/II study of LL-37 in venous leg ulcers (34 patients), October 10, 2013; published as Gronberg A et al., Wound Repair and Regeneration 2014;22:613-621.", "url": "https://www.technologynetworks.com/biopharma/news/pergamum-announces-final-data-from-phase-iii-study-of-ll37-204989"},
+      {"text": "Promore Pharma initiates voluntary liquidation, October 12, 2023.", "url": "https://www.biospace.com/promore-pharma-initiates-voluntary-liquidation"},
+      {"text": "ClinicalTrials.gov NCT02225366. Intratumoral injections of LL37 for melanoma, MD Anderson Cancer Center (completed; four participants).", "url": "https://clinicaltrials.gov/study/NCT02225366"},
+      {"text": "Yamasaki K et al. Increased serine protease activity and cathelicidin promotes skin inflammation in rosacea. Nature Medicine 2007;13:975-980. See also Lande R et al., The antimicrobial peptide LL37 is a T-cell autoantigen in psoriasis, Nature Communications 2014;5:5621.", "url": "https://www.nature.com/articles/nm1616"},
+      {"text": "U.S. FDA. Certain bulk drug substances for use in compounding that may present significant safety risks (LL-37: nomination withdrawn; immunogenicity note), content current as of April 22, 2026; Frier Levitt summary of the April 15, 2026 notice and PCAC schedule.", "url": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks"},
+      {"text": "CP24. Health Canada warns of risks associated with unauthorized bodybuilding drugs (42 products including LL-37), August 3, 2025.", "url": "https://www.cp24.com/news/canada/2025/08/03/health-canada-warns-of-risks-associated-with-unauthorized-bodybuilding-drugs"}
+    ]
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "id": "bpc-157",
+  "name": "BPC-157",
+  "brands": "",
+  "maker": "",
+  "group": "research",
+  "pill": "Unapproved",
+  "overview": {
+    "headline": "A 15-amino-acid peptide from one Croatian lab, healing almost everything in rats and tested properly in nobody.",
+    "lede": "BPC-157 (\"Body Protection Compound\") was first described in 1993 by Predrag Sikirić's group at the University of Zagreb, who say it is a fragment of a protein in human gastric juice. The Croatian company Pliva tested it as an enema for ulcerative colitis in the early 2000s and dropped it. No company is developing it today, no regulator anywhere has approved it, and the vials sold online as \"research chemicals\" are unapproved drugs in Canada and the United States.",
+    "stats": [
+      {"num": "0", "lbl": "placebo-controlled human trials with fully published results", "src": "FDA review, May 2026: the only randomized trial exists as a 2005 meeting abstract"},
+      {"num": "5", "lbl": "small human studies the FDA could find, 2 to about 50 people each, none longer than two weeks", "src": "FDA briefing document, May 11, 2026"},
+      {"num": "35 of 36", "lbl": "studies in a 2025 systematic review that were in rodents or cells, not people", "src": "Systematic review cited by McMaster University analysis, May 2026"}
+    ],
+    "mechanism": {
+      "intro": "Nobody knows how it would work in a person. No receptor has been found and no dose–response relationship has been shown.",
+      "parts": [
+        {"name": "No known receptor", "text": "Most medicines act on an identified receptor. After three decades, none has been found for BPC-157, and the FDA's 2026 review calls the mechanism unknown."},
+        {"name": "Proposed pathways", "text": "The Zagreb group proposes it works through the nitric-oxide system and growth-factor signalling, and that it promotes new blood vessels in injured tissue. These are findings in rats and in cells."},
+        {"name": "Is it even human?", "text": "A 2026 investigation found that genetic material coding for BPC-157 has not been identified in the human genome or gut bacteria, and the parent protein's sequence was never published, so outside scientists cannot check the original isolation."}
+      ]
+    },
+    "more": {
+      "title": "More: where the research comes from",
+      "paras": [
+        "The Zagreb group has published more than 150 papers on BPC-157 and supervised about 100 doctorates on it. Most are rat experiments: cut tendons, muscle and ligament injuries, gut damage, drug toxicities, brain injury. By Sikirić's own count about 30 papers come from groups outside Croatia. A 2025 systematic review of the musculoskeletal literature screened 544 papers and found 36 that met its criteria; 35 were in rodents or cells and one involved people.",
+        "The name is not an official drug name. The FDA notes that \"BPC-157\" is not a recognised USAN or INN, that the free base and the acetate salt sold under the name are different substances, and that neither is well characterised.",
+        "Everything on this page comes from the FDA's 2026 review documents, regulators' notices and the published literature they cite. Sources are listed under the Status tab."
+      ]
+    }
+  },
+  "results": {
+    "headline": "What the studies actually showed.",
+    "lede": "There is no placebo-controlled human trial with published results to chart. Below is what exists, with animal and human findings kept apart.",
+    "chart": null,
+    "stats": [
+      {"num": "−3.2 vs −1.6", "lbl": "change in a colitis activity score after two weeks of BPC-157 or placebo enemas; the difference was not statistically significant", "src": "Ruenzi et al. 2005 abstract, as reported in the FDA review"},
+      {"num": "<20", "lbl": "people in the largest injection study: a knee-pain case series with no comparison group", "src": "Lee & Padgett 2021; FDA review"}
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {"b": "In rats.", "t": "Faster healing of cut tendons, muscles, ligaments, bone and gut, and protection against ulcers and several drug toxicities, mostly from one lab. The FDA's reviewers found no established dose–response and no studies by the oral, under-the-skin, nasal or skin routes that online products use."},
+        {"b": "In people, ulcerative colitis.", "t": "One randomized, placebo-controlled trial of a daily BPC-157 enema for two weeks (Pliva, reported as a 2005 meeting abstract). A colitis score fell 3.2 points on BPC-157 and 1.6 on placebo; the confidence interval included zero, so no benefit was shown. The full results were never published and the programme stopped."},
+        {"b": "In people, everything else.", "t": "A case series of knee injections in fewer than 20 patients with no control group, a 12-woman pilot for bladder pain, a two-person intravenous safety study, and an enema safety study in 24 healthy volunteers. None was designed to measure benefit."},
+        {"b": "Never studied in people.", "t": "Injection under the skin, the way the online vials are used. The FDA found no human study of that route for any condition."}
+      ]
+    },
+    "more": [
+      {
+        "title": "More: why rodent results rarely transfer",
+        "paras": [
+          "Most treatments that work in animals fail when tested in people; the McMaster analysis puts the attrition at more than 20 to one. Rats heal differently, the doses used per kilogram are usually far higher than anything a person would receive, and injuries in a lab are made cleanly and treated immediately.",
+          "BPC-157 has extra problems. Nearly all the positive results come from a single group with patents on the molecule, independent replication is thin, and no receptor or dose–response has been found, which makes it hard to design a human trial that could confirm or refute the claims. The one randomized human trial that was run did not show a benefit."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "No trial has measured side effects. Here is the little that has been reported.",
+    "lede": "The five human studies lasted two weeks or less and together involved fewer than 120 people, most of them receiving an enema rather than an injection. They reported no serious adverse events, which is what you would expect from studies that small and short, and tells you almost nothing.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "No data. No study has run long enough, or been large enough, to count how many people stop because of side effects."
+    },
+    "unique": {
+      "title": "What has actually been reported",
+      "text": "Healthy volunteers given enemas reported headache and flatulence. The FDA found three adverse-event reports for injected BPC-157: injection-site reactions in a woman also using a thymosin peptide, shortness of breath in a man after under-the-skin use, and darkening of the skin and gums in a woman that returned when she used it again (she was also using TB-500). None can be pinned on BPC-157 with confidence. In 28-day studies of injected BPC-157 in rats and dogs, the FDA noted changes in a clotting time (aPTT) and in liver-related blood markers such as triglycerides."
+    },
+    "more": [
+      {
+        "title": "More: what regulators flagged",
+        "paras": [
+          "Immune reactions. The FDA says a peptide given by injection or nasal spray \"may pose a significant risk\" of immunogenicity, meaning the body may form antibodies to it, and that clumped (aggregated) peptide and manufacturing impurities make this more likely. No immunogenicity study has ever been done.",
+          "Impurities. The certificates of analysis submitted for BPC-157 did not identify impurities and did not test for bacteria, endotoxins or residual solvents. The FDA concluded it \"lacks sufficient information to know whether the drug would cause harm when administered to humans.\"",
+          "Harm reports in Australia. In June 2026 the TGA and Australia's Chief Medical Officer said reports and hospital data had linked unapproved peptide products, including BPC-157, to liver damage, severe allergic reactions needing hospital treatment, and inflammation. These are reports about the product category, not proof that BPC-157 itself caused them."
+        ]
+      },
+      {
+        "title": "More: what has never been studied",
+        "paras": [
+          "Cancer risk (no carcinogenicity study exists in any species), pregnancy and fertility beyond one rat study, long-term use, interactions with other medicines, and any effect in children or older adults. BPC-157 promotes blood-vessel growth in animal studies, and with no receptor known there is no way to predict what sustained exposure does."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms doctors treat as urgent after an unapproved injection",
+      "items": [
+        "Swelling of the face, lips or throat, trouble breathing, hives or a spreading rash",
+        "Fever, spreading redness, warmth, pus or severe pain at an injection site",
+        "Yellowing of the skin or eyes, dark urine, pale stools, unusual tiredness or itching",
+        "Severe or persistent abdominal pain",
+        "Fainting, a racing or irregular heartbeat, confusion"
+      ],
+      "note": "Anyone with these symptoms should get medical care right away and tell the clinician exactly what was injected."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "No human half-life has ever been measured for BPC-157, by any route, so there is nothing honest to simulate. After rectal enemas in volunteers, blood levels were undetectable.",
+    "stats": [
+      {"num": "none", "lbl": "human pharmacokinetic studies; blood levels were undetectable after rectal enemas", "src": "FDA briefing document, May 2026"},
+      {"num": "5–15 min", "lbl": "half-life after an intravenous dose in dogs (5.3 minutes) and rats (15.2 minutes)", "src": "He et al. 2022, cited in the FDA review"},
+      {"num": "unknown", "lbl": "half-life, peak time and absorption in humans by any route", "src": "No published human data as of October 2026"}
+    ],
+    "explain": [
+      {"b": "Why the animal numbers matter.", "t": "In the only animal measurements, BPC-157 disappeared from the blood within minutes. Only 18% (rats) to 39% (dogs) of an intramuscular dose reached the bloodstream. A molecule that vanishes that fast would need very different dosing from anything described online, and nobody knows what it does in a person."},
+      {"b": "Why 'undetectable' is not 'harmless'.", "t": "Absence of the peptide in blood after an enema does not tell you what happens after an injection, and it says nothing about impurities, contaminants or immune reactions, which do not depend on the peptide's half-life."}
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: what a proper study would require",
+        "paras": [
+          "A Phase 1 trial in healthy volunteers: a validated blood test sensitive enough to detect a peptide that clears in minutes, single doses given under supervision, blood drawn over hours, then the half-life, peak and bioavailability for each route. Antibody testing would check for an immune response. None of this has been done for BPC-157, and the FDA's 2026 review found no company planning to do it."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "Five small human studies, one abstract, and no trial that could answer the question.",
+    "lede": "There is no BPC-157 trial you can join today in Canada or the U.S., and no regulator-approved product. Here is what has been run.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: the Pliva programme",
+        "paras": [
+          "In the early 2000s Pliva, then Croatia's largest drug company, developed BPC-157 under the code PL 14736 for inflammatory bowel disease. A multicentre, randomized, placebo-controlled Phase 2 trial of a daily enema in mild-to-moderate ulcerative colitis was reported only as a 2005 conference abstract (Ruenzi et al.). The FDA's reviewers could not find the primary endpoint, entry criteria or statistical plan, and the score difference was not significant. There was no Phase 3.",
+          "A Phase 1 trial of BPC-157 tablets in healthy volunteers was registered in Mexico (NCT02637284, planned enrolment 42). No results were ever posted and no publication exists."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials that have been run",
+      "items": [
+        "Ulcerative colitis, rectal enema, randomized and placebo-controlled, two weeks, roughly 26 to 53 people (sources differ): no significant benefit; 2005 abstract only",
+        "Healthy volunteers, rectal enema, 8 days, 24 people: safety only; headache and flatulence reported",
+        "Knee pain, injection into the joint, fewer than 20 people, no control group, 2021: authors reported improvement; cannot show benefit",
+        "Interstitial cystitis (bladder pain), instilled into the bladder, 12 women, pilot with no control",
+        "Healthy volunteers, intravenous infusion, 2 people: safety pilot",
+        "Registered but unreported: oral tablets Phase 1 in Mexico (NCT02637284); a placebo-controlled hamstring-strain trial registered in 2025"
+      ]
+    },
+    "find": {
+      "text": "Search the public registry for any new trial. As of October 2026 none is recruiting in Canada or the U.S. The FDA's July 2026 advisory-committee materials are the most complete public review of the human evidence.",
+      "term": "BPC-157",
+      "extra": {"label": "FDA advisory committee, July 2026", "url": "https://www.fda.gov/advisory-committees/advisory-committee-calendar/july-23-24-2026-meeting-pharmacy-compounding-advisory-committee-07232026"}
+    }
+  },
+  "status": {
+    "headline": "Not approved anywhere. Illegal to sell for human use in Canada. Banned in sport.",
+    "items": [
+      {"tag": "no", "label": "Canada: unauthorized", "text": "Health Canada has never authorized BPC-157. Injectable peptides are prescription drugs in Canada, and no BPC-157 product has a Drug Identification Number, so selling it is illegal. Health Canada seized BPC-157 from a Calgary clinic (April 2025) and from the online seller Canada Peptide (August 2025), obtained a court injunction against another seller in June 2026, and named BPC-157 in a public advisory on April 9, 2026."},
+      {"tag": "no", "label": "U.S.: not approved, not compoundable", "text": "The FDA has approved no BPC-157 product. On September 29, 2023 it placed BPC-157 in Category 2 of its compounding list (\"significant safety risks\"), citing immune-reaction and impurity concerns, which barred pharmacies from compounding it. In April 2026 the FDA removed it from Category 2 after the nominations were withdrawn, and on July 23, 2026 an advisory committee voted 8 to 6 (one abstention) to recommend adding it to the compounding list, against the FDA's own reviewers. As of mid-October 2026 the FDA has announced no decision, and it says removal from Category 2 does not by itself make a substance eligible for compounding."},
+      {"tag": "no", "label": "Sport: prohibited", "text": "WADA names BPC-157 as an example under S0 (non-approved substances), prohibited at all times in and out of competition, with effect from January 1, 2022."},
+      {"tag": "no", "label": "Australia and UK", "text": "In Australia BPC-157 is a Schedule 4 (prescription-only) substance with no registered product; possession without a prescription is an offence. On June 19, 2026 the TGA and Chief Medical Officer named it in a warning after reports of liver damage and severe allergic reactions linked to unapproved peptides. In the UK the MHRA opened an investigation in April 2026 into clinics making medicinal claims for peptides including BPC-157."}
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "What \"research use only\" means",
+        "text": "The label is a legal shield for the seller, not a safety standard. Health Canada says it does not make a product legal to sell or use, and no regulator checks what is in the vial.",
+        "items": [
+          "The FDA found that certificates of analysis for BPC-157 did not identify impurities and did not test for bacteria, endotoxins or residual solvents, and that two different chemical forms are sold under the same name.",
+          "Health Canada warns the products may be contaminated, mislabelled, under- or over-strength, and may contain unlisted ingredients; it has seized BPC-157 twice and works with border services to stop shipments.",
+          "Australia's TGA reported in June 2026 that unapproved peptide products have been linked to liver damage and severe allergic reactions requiring hospital treatment."
+        ],
+        "note": "No manufacturer anywhere makes BPC-157 to pharmaceutical standards, so there is no verified product to compare a vial against."
+      },
+      {
+        "kind": "warn",
+        "title": "If someone has already used an unapproved product",
+        "text": "Health Canada and the TGA advise stopping, keeping the vial for identification, and seeing a doctor if any of these appear:",
+        "items": ["Unusual tiredness, yellow skin or eyes, dark urine, itching", "Swelling, hives, wheeze or trouble breathing", "Redness, heat, pus or severe pain at an injection site", "Unexplained bruising or bleeding"],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: the July 2026 advisory vote",
+        "paras": [
+          "The FDA's career reviewers concluded that BPC-157 is poorly characterised, has no evidence of effectiveness, carries an immunogenicity risk and has almost no human safety data, and recommended against listing it for compounding. The advisory committee, reconstituted with eight new members earlier in 2026, voted the other way for six of seven peptides. Public Citizen and the Center for Science in the Public Interest have objected that several members have financial ties to peptide businesses and that the process bypassed the FDA's own listing criteria.",
+          "The vote is not binding. If the FDA accepts it, formal rulemaking with public comment would follow, which typically takes one to two years. Even a listing would allow prescription compounding, not approval: there would still be no proven dose, indication or safety profile."
+        ]
+      }
+    ],
+    "sources": [
+      {"text": "FDA, Briefing document: evaluation of BPC-157 (free base) and BPC-157 acetate for the 503A bulk drug substances list, Pharmacy Compounding Advisory Committee, May 11, 2026.", "url": "https://www.fda.gov/media/193343/download"},
+      {"text": "FDA, Pharmacy Compounding Advisory Committee presentations, July 23, 2026 (BPC-157, KPV, TB-500, MOTS-c).", "url": "https://www.fda.gov/media/193773/download"},
+      {"text": "FDA, July 23–24, 2026 meeting of the Pharmacy Compounding Advisory Committee: agenda, roster and briefing materials.", "url": "https://www.fda.gov/advisory-committees/advisory-committee-calendar/july-23-24-2026-meeting-pharmacy-compounding-advisory-committee-07232026"},
+      {"text": "FDA, Certain bulk drug substances for use in compounding that may present significant safety risks (Category 2 list, with BPC-157 entry under 'nominated but withdrawn'), current as of April 22, 2026.", "url": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks"},
+      {"text": "Alliance for Pharmacy Compounding, 503A categories update for September 2023 (19 substances, including BPC-157, moved to Category 2 on September 29, 2023).", "url": "https://join.a4pc.org/hubfs/PDFs/503A-Categories-Update-for-September-2023-FINAL.docx.pdf"},
+      {"text": "AJMC, FDA panel backs 6 peptides for compounding (vote counts), July 31, 2026.", "url": "https://www.ajmc.com/view/fda-panel-backs-6-peptides-for-compounding"},
+      {"text": "Goodwin, FDA signals potentially evolving stance toward compounding of certain peptides (April 15, 2026 removal from Category 2), May 2026.", "url": "https://www.goodwinlaw.com/en/insights/blogs/2026/05/fda-signals-potentially-evolving-stance-toward-compounding-of-certain-peptides"},
+      {"text": "Public Citizen, Testimony before the Pharmacy Compounding Advisory Committee about BPC-157, July 23, 2026.", "url": "https://www.citizen.org/article/testimony-before-the-pharmacy-compounding-advisory-committee-about-bpc-157/"},
+      {"text": "Health Canada, Public advisory: Think twice before injecting peptides bought online, April 9, 2026; Unauthorized injectable peptide drugs seized from Canada Peptide, August 1, 2025.", "url": "https://recalls-rappels.canada.ca/en/alert-recall/think-twice-injecting-peptides-bought-online-unauthorized-products-can-seriously-harm"},
+      {"text": "WADA, Prohibited List 2025 (S0 names BPC-157); UK Anti-Doping, Major changes to the 2022 Prohibited List (BPC-157 added, effective January 1, 2022).", "url": "https://www.wada-ama.org/en/prohibited-list"},
+      {"text": "Sport Integrity Australia, BPC-157 substance page (WADA S0; Schedule 4 in Australia); Australian Government Department of Health / TGA, Concerns regarding the public health risks associated with unapproved peptide products, June 19, 2026.", "url": "https://sportintegrity.gov.au/substances/bpc-157"},
+      {"text": "Phillips SM, The peptide problem: hype is outrunning the evidence (2025 systematic review figures; human study citations PMID 34324435, 39325560, 40131143), McMaster University / The Conversation, May 7, 2026.", "url": "https://news.mcmaster.ca/analysis-the-peptide-problem-hype-is-outrunning-the-evidence/"},
+      {"text": "Chemistry World, Croatian researchers thrust into limelight as their 1990s peptide discovery goes mainstream in the US, 2026; American Peptide Society, The BPC-157 question (summary of the STAT/Undark investigation), June 1, 2026.", "url": "https://www.chemistryworld.com/news/croatian-researchers-thrust-into-limelight-as-their-1990s-peptide-discovery-goes-mainstream-in-the-us/4023660.article"},
+      {"text": "Aesthetics Journal, MHRA investigates clinics following peptide claims, April 15, 2026.", "url": "https://aestheticsjournal.com/news/mhra-investigates-clinics-following-peptide-claims/"}
+    ]
+  }
+}

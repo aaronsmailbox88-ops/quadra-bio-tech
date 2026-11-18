@@ -1,0 +1,263 @@
+{
+  "id": "pt-141",
+  "name": "Bremelanotide (PT-141)",
+  "brands": "Vyleesi",
+  "maker": "Palatin Technologies (now owned by Cosette Pharmaceuticals)",
+  "group": "approved",
+  "pill": "Approved (US)",
+  "overview": {
+    "headline": "An as-needed injection for low sexual desire in premenopausal women that works on brain signalling, not hormones or blood flow.",
+    "lede": "Bremelanotide was developed by Palatin Technologies and approved by the U.S. FDA in June 2019 under the brand name Vyleesi. Palatin sold the product to Cosette Pharmaceuticals in December 2023. It is a prescription medicine in the United States only; Health Canada and the European regulator have not approved it. Anything sold online as \"PT-141\" is not Vyleesi.",
+    "stats": [
+      {"num": "0.3–0.4", "lbl": "points more improvement in desire score than placebo, on a scale that runs from 1.2 to 6", "src": "RECONNECT trials, 24 weeks"},
+      {"num": "40%", "lbl": "of women had nausea, against 1.3% on placebo", "src": "Vyleesi label, pooled Phase 3"},
+      {"num": "8", "lbl": "doses a month is the label's maximum; it is used as needed, not on a schedule", "src": "Vyleesi label"}
+    ],
+    "mechanism": {
+      "intro": "It mimics a small brain hormone (α-MSH) and switches on melanocortin receptors. Exactly how that raises desire is not known.",
+      "parts": [
+        {"name": "MC4 receptor", "text": "Found in brain circuits that handle appetite and sexual response. This is the target thought to matter for desire. The label says the mechanism in HSDD is unknown."},
+        {"name": "MC1 receptor", "text": "Found on pigment cells in the skin. Activating it is why some women developed dark patches of skin, and why its parent molecule, melanotan II, was first studied as a tanning agent."},
+        {"name": "Not a blood-flow drug", "text": "Unlike sildenafil-type medicines, it does not act on blood vessels in the genitals. It also contains no estrogen or testosterone."}
+      ]
+    },
+    "more": {
+      "title": "More: where it sits among desire treatments",
+      "paras": [
+        "Vyleesi is the second medicine the FDA has approved for hypoactive sexual desire disorder (HSDD) in premenopausal women. The first, flibanserin (Addyi, 2015), is a daily pill. Vyleesi is an injection under the skin taken only when needed, at least 45 minutes before sex, from a single-use autoinjector.",
+        "It was built from melanotan II, a synthetic tanning peptide tested at the University of Arizona in the 1990s that unexpectedly caused erections. Palatin first developed bremelanotide as a nasal spray for men and women, but the FDA halted those trials in 2007 over blood-pressure rises, and the company switched to a lower-dose injection.",
+        "Everything on this page comes from the FDA-approved label, the FDA's approval documents, the published Phase 3 papers and company announcements. Sources are listed under the Status tab."
+      ]
+    }
+  },
+  "results": {
+    "headline": "Small average gains in desire and distress scores, and no change in the number of satisfying sexual events.",
+    "lede": "Two identical 24-week trials (RECONNECT 301 and 302) randomised 1,267 premenopausal women with acquired, generalised HSDD to bremelanotide 1.75 mg or placebo, used as needed. The two main measures were a desire score and a distress score, both from questionnaires.",
+    "chart": {
+      "metric": "other",
+      "legend": ["Bremelanotide 1.75 mg", "Placebo"],
+      "rows": [
+        {"name": "Desire score · Study 301", "meta": "24 weeks · FSFI desire domain, scale 1.2 to 6 · 628 women", "drug": 0.5, "placebo": 0.2, "tip": "Bremelanotide: +0.5 points (placebo +0.2), p = 0.0002"},
+        {"name": "Desire score · Study 302", "meta": "24 weeks · FSFI desire domain, scale 1.2 to 6 · 570 women", "drug": 0.6, "placebo": 0.2, "tip": "Bremelanotide: +0.6 points (placebo +0.2), p < 0.0001"},
+        {"name": "Distress score · Study 301", "meta": "24 weeks · FSDS-DAO item 13, scale 0 to 4 (lower is better) · 627 women", "drug": -0.7, "placebo": -0.4, "tip": "Bremelanotide: −0.7 points (placebo −0.4), p = 0.0001"},
+        {"name": "Distress score · Study 302", "meta": "24 weeks · FSDS-DAO item 13, scale 0 to 4 (lower is better) · 567 women", "drug": -0.7, "placebo": -0.4, "tip": "Bremelanotide: −0.7 points (placebo −0.4), p = 0.0053"}
+      ],
+      "max": 1,
+      "note": "Values are score points, not percentages. Both trials used a modified intention-to-treat analysis: everyone randomised who took at least one dose and completed a follow-up questionnaire. The differences are statistically significant but small. On the desire scale the integrated gap was 0.35 points; the study authors' own threshold for a change a woman would notice is 0.6."
+    },
+    "stats": [
+      {"num": "0.0", "lbl": "change in satisfying sexual events per month on bremelanotide, the same as placebo", "src": "Vyleesi label, Studies 1 and 2"},
+      {"num": "25% vs 17%", "lbl": "of women whose desire score rose by at least 1.2 points (bremelanotide vs placebo); for distress, 35% vs 31%", "src": "FDA approval announcement, June 2019"}
+    ],
+    "beyond": {
+      "title": "Beyond the two main scores",
+      "items": [
+        {"b": "Satisfying sexual events.", "t": "The number of satisfying sexual events per month did not change: 0.0 vs −0.1 in Study 1 (p = 0.76) and 0.0 vs 0.0 in Study 2 (p = 0.70). The FDA accepted the questionnaire scores as the main measures instead."},
+        {"b": "Who left early.", "t": "About 40% of women on bremelanotide left the 24-week studies before the end, against 13% (Study 1) and 25% (Study 2) on placebo. Side effects were the main reason on the drug."},
+        {"b": "After the blinded phase.", "t": "684 women entered a 52-week open-label extension; 40% completed it. Women who stayed on bremelanotide improved further (desire score up 1.25 to 1.30 from the original baseline), but with no placebo group the drug's share of that change cannot be separated from time and expectation."},
+        {"b": "Men and postmenopausal women.", "t": "Not covered. The label says Vyleesi is not indicated for men, for postmenopausal women, or to enhance sexual performance."}
+      ]
+    },
+    "more": [
+      {
+        "title": "More: how the two scores work",
+        "paras": [
+          "The desire score is the two-question desire part of the Female Sexual Function Index (FSFI-D). It asks how often, and how strongly, a woman felt sexual desire over the past four weeks. The lowest possible score is 1.2 and the highest 6.0. Women entered the trials averaging about 2.0 to 2.1.",
+          "The distress score is one question (item 13) from the Female Sexual Distress Scale, revised for desire, arousal and orgasm (FSDS-DAO): how often she was bothered by low sexual desire, scored 0 (never) to 4 (always). A one-point drop means moving one step, for example from \"always\" to \"frequently\"."
+        ]
+      },
+      {
+        "title": "More: what critics said",
+        "paras": [
+          "A 2023 review in the Journal of Sex Research, titled \"Small effects, questionable outcomes\", argued that the gains over placebo were modest and that the trials leaned on questionnaire scores after the event-count measure failed to separate from placebo. A 2019 commentary in Ob.Gyn. News carried the headline \"New drug improves sex drive, at least on paper\", noting the authors' financial ties to the sponsors. The FDA, for its part, judged the benefit meaningful enough for approval with warnings."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "Nausea in four out of ten women, flushing in two out of ten, and a short rise in blood pressure after every dose.",
+    "lede": "Most side effects began within an hour of the injection and faded within a few hours. Nausea was the main reason women stopped. Because the drug is used as needed, side effects came with each dose rather than building up.",
+    "chart": {
+      "eyebrow": "RECONNECT 301 + 302 pooled · share of women affected",
+      "legend": ["Bremelanotide 1.75 mg", "Placebo"],
+      "rows": [
+        {"name": "Nausea", "drug": 40.0, "placebo": 1.3},
+        {"name": "Flushing", "drug": 20.3, "placebo": 0.3},
+        {"name": "Injection-site reactions", "drug": 13.2, "placebo": 8.4},
+        {"name": "Headache", "drug": 11.3, "placebo": 1.9},
+        {"name": "Vomiting", "drug": 4.8, "placebo": 0.2},
+        {"name": "Cough", "drug": 3.3, "placebo": 1.3}
+      ],
+      "max": 50,
+      "note": "627 women on bremelanotide and 620 on placebo. Nausea was worst after the first dose (21%) and fell to about 3% with later doses. 13% of women used anti-nausea medicine; taking ondansetron beforehand did not help in a separate study."
+    },
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "18% of women on bremelanotide stopped because of side effects, against 2% on placebo. Nausea accounted for 8%, headache 2%, and vomiting, flushing and injection-site reactions about 1% each. Counting every reason, about 40% of women on the drug left the 24-week studies early."
+    },
+    "unique": {
+      "title": "Dark patches of skin (focal hyperpigmentation)",
+      "text": "Bremelanotide also switches on the pigment-cell receptor its parent molecule was designed for. In the Phase 3 trials, 1% of women using up to 8 doses a month developed focal darkening of the skin, including the face, gums and breasts, against none on placebo. In a separate study of daily dosing, 38% developed it after 8 days in a row and another 14% with 8 more days. Women with darker skin were at higher risk, and the patches did not fade in everyone after stopping. The label advises considering stopping if it appears."
+    },
+    "more": [
+      {
+        "title": "More: what the label warns about",
+        "paras": [
+          "Blood pressure. In a 24-hour monitoring study of 127 women, average daytime blood pressure rose about 2 mmHg after a dose, with the largest rises (6 mmHg systolic, 3 mmHg diastolic) 2 to 4 hours after injection, while heart rate fell by up to 5 beats a minute. Both returned to normal within about 12 hours. Because of this, Vyleesi must not be used by women with uncontrolled high blood pressure or known cardiovascular disease, and is not recommended for women at high cardiovascular risk.",
+          "Liver. One woman in the open-label extension developed acute hepatitis after 10 doses over a year, with liver enzymes more than 40 times the upper limit of normal. Her tests normalised four months after stopping. The label says the drug's role could not be ruled out, and the FDA required three years of quarterly liver-injury reports after approval.",
+          "Other medicines. Bremelanotide slows stomach emptying, which can blunt the absorption of oral drugs. The label says to avoid it with oral naltrexone (used for alcohol and opioid dependence) because naltrexone levels can fall enough for treatment to fail, and to consider the delay for drugs that need to work quickly.",
+          "Pregnancy and breastfeeding. The label says to use effective contraception and stop if pregnancy is suspected; fetal harm was seen in dogs at 16 times the human exposure. Whether it passes into breast milk is unknown. The FDA ordered a pregnancy registry (final report due 2030) and a breastfeeding study."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "None are established. Bremelanotide acts on the MC4 receptor, the same brain target as the obesity drug setmelanotide, and a 2022 analysis of two small Phase 1 studies reported lower calorie intake and some weight loss in women with obesity. That has not been tested in a controlled trial, and the label lists no benefit beyond the approved use."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms the label and trial teams treat as urgent",
+      "items": [
+        "Vomiting that will not stop, or not being able to keep fluids down",
+        "A severe headache, chest pain, shortness of breath or vision changes after a dose (possible blood-pressure rise)",
+        "Fainting, or a very slow or irregular heartbeat",
+        "Yellowing of the skin or eyes, dark urine, pale stools, or pain under the right ribs",
+        "Swelling of the face or throat, trouble breathing, severe rash"
+      ],
+      "note": "Anyone with these symptoms should get medical care right away. Dark patches of skin that appear and do not fade should be shown to the prescriber."
+    }
+  },
+  "levels": {
+    "pk": {
+      "half": 0.11,
+      "tmax": 0.04,
+      "ladder": [1.75],
+      "stepDays": 1,
+      "tau": 1,
+      "maxDose": 1.75,
+      "refLabel": "1.75 mg, single dose",
+      "source": "Vyleesi label (section 12.3): mean half-life about 2.7 h (range 1.9–4.0 h), median peak about 1 h, peak level 72.8 ng/mL, about 100% absorbed from under the skin"
+    },
+    "nopk": "",
+    "stats": [
+      {"num": "~2.7 h", "lbl": "half-life: the time for the blood level to fall by half", "src": "Vyleesi label"},
+      {"num": "~1 h", "lbl": "to reach the peak level after an injection under the skin", "src": "Vyleesi label"},
+      {"num": "~14 h", "lbl": "to clear about 97% of a dose", "src": "Five half-lives"}
+    ],
+    "explain": [
+      {"b": "Why it is taken at least 45 minutes before.", "t": "Blood levels peak about an hour after the injection. The label's timing puts the peak close to when it is wanted."},
+      {"b": "Why no more than one dose in 24 hours.", "t": "The drug itself is almost gone in about 14 hours, but the blood-pressure rise it causes lasts up to 12 hours. The label caps use at one dose a day and eight a month."},
+      {"b": "Why the daily curve on this chart is hypothetical.", "t": "Vyleesi is not taken daily. The chart models what daily dosing would look like only because that is the simulator's format. With a 2.7-hour half-life nothing carries over from one day to the next, so each dose stands alone."}
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: the model behind the chart",
+        "paras": [
+          "The chart uses a standard one-compartment model: the drug is absorbed from under the skin at one rate and cleared from the blood at another. The numbers come from the FDA label: a half-life of about 2.7 hours, a peak about one hour after injection, and about 100% of the dose reaching the blood.",
+          "Daily dosing is not how Vyleesi is used, and the chart should not be read as a schedule. The label allows a dose when needed, no more than one in 24 hours and no more than eight a month. The one study that did give it daily for 8 days in a row is the study in which 38% of women developed dark patches of skin, which is part of why daily use was never pursued.",
+          "Real people differ. The label reports that women with moderate kidney impairment had about 1.5 times the exposure, and those with severe impairment about twice; moderate liver impairment raised exposure about 1.7 times."
+        ]
+      },
+      {
+        "title": "More: what this chart cannot tell you",
+        "paras": [
+          "It models the labelled dose from the labelled autoinjector. It measures nothing; only a blood test can.",
+          "It says nothing about vials, nasal sprays or dissolving tablets sold as \"PT-141\". Their content and strength are unverified, and a nasal spray in particular revives a route Palatin abandoned in 2008 after the FDA stopped its trials over blood-pressure rises. The blood-pressure warning on the label assumes a known 1.75 mg dose under the skin.",
+          "It cannot tell you how your body differs from the average, or whether the drug is safe for you. The label's contraindications for high blood pressure and heart disease exist because trials measured what a curve cannot."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "How the Vyleesi trials were run, and what is still being studied after approval.",
+    "lede": "The approval rests on two identical Phase 3 trials, RECONNECT 301 and 302, each with a 24-week blinded phase and a 52-week open-label extension. Here is how they worked and what the FDA asked for afterwards.",
+    "ladder": {
+      "title": "One fixed dose, no escalation",
+      "text": "The label and both Phase 3 trials used a single 1.75 mg dose from a pre-filled autoinjector, injected under the skin of the abdomen or thigh when needed, at least 45 minutes before sexual activity. Trial participants could use up to 12 doses a month; the approved label sets the limit at 8, with no more than one in any 24 hours.",
+      "steps": [
+        {"d": "1.75 mg", "t": "as needed · no more than 1 per 24 h · no more than 8 per month"}
+      ],
+      "note": "There is no dose ladder because bremelanotide is not taken on a schedule and does not build up. The label also says to stop after 8 weeks if a woman reports no improvement."
+    },
+    "more": [
+      {
+        "title": "More: how side effects were handled inside the trials",
+        "paras": [
+          "Nausea was expected and tracked dose by dose. It was most common after the first injection (21% of women) and fell to about 3% with later doses. Women could use anti-nausea medicine, and 13% did. A separate study tested giving ondansetron 30 minutes beforehand; it did not reduce nausea.",
+          "Blood pressure and heart rate were measured around dosing, including a dedicated 24-hour monitoring study. Women with uncontrolled hypertension or cardiovascular disease were excluded, which is why those conditions are contraindications on the label.",
+          "Women whose symptoms did not settle could leave the drug; 18% did so because of side effects. None of this is a self-management plan. The trial dose, device and monitoring are what the label's safety statements assume."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Studies the FDA required after approval",
+      "items": [
+        "A pregnancy registry comparing outcomes in exposed and unexposed pregnancies, with infants followed for at least a year (final report due December 2030)",
+        "A claims-database study of pregnancy exposures, and a clinical study of bremelanotide levels in breast milk (completion was scheduled for 2025)",
+        "Three years of quarterly liver-injury reporting, prompted by one case of acute hepatitis in the open-label extension"
+      ]
+    },
+    "find": {
+      "text": "No trial is needed to receive Vyleesi in the U.S.; it is a prescription medicine. For registered studies, search the public registry. The two pivotal trials were NCT02333071 and NCT02338960.",
+      "term": "bremelanotide",
+      "extra": {"label": "FDA Drug Trials Snapshot: Vyleesi", "url": "https://www.fda.gov/drugs/drug-safety-and-availability/drug-trials-snapshots-vyleesi"}
+    }
+  },
+  "status": {
+    "headline": "Approved in the United States only. Products sold as \"PT-141\" outside a pharmacy are not Vyleesi.",
+    "items": [
+      {"tag": "ok", "label": "Approved (US)", "text": "The FDA approved Vyleesi on June 21, 2019 (NDA 210557, applicant AMAG Pharmaceuticals) for premenopausal women with acquired, generalised HSDD. It is prescription-only, supplied as a single-use 1.75 mg autoinjector, and has been marketed by Cosette Pharmaceuticals since it bought the product from Palatin in December 2023."},
+      {"tag": "no", "label": "Not approved in Canada", "text": "Health Canada has not approved bremelanotide, and no Canadian product monograph exists. AMAG held North American rights from 2017 to 2020, but no Canadian approval was announced before the rights went back to Palatin."},
+      {"tag": "no", "label": "Not approved in Europe", "text": "The European Medicines Agency has not approved bremelanotide. Palatin licensed European rights to Gedeon Richter in 2014; the agreement ended in 2016 and no European application has been made public."},
+      {"tag": "soon", "label": "Ownership and other markets", "text": "Palatin sold Vyleesi to Cosette Pharmaceuticals on December 20, 2023 for $12 million up front and up to $159 million in sales milestones. Palatin had earlier licensed the drug for China (Fosun) and South Korea (Kwangdong); no approval in either country has been announced as of October 2026."}
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "Compounded and black-market \"PT-141\"",
+        "text": "Bremelanotide is sold online, through some compounding and telehealth services, and by \"research use only\" peptide shops under its old code name PT-141, as vials for injection, nasal sprays and dissolving tablets. None of these is the approved product.",
+        "items": [
+          "Vyleesi is the only form the FDA has reviewed for safety, effectiveness and manufacturing quality: a sealed single-use autoinjector with a fixed 1.75 mg dose, dispensed by prescription.",
+          "Nasal bremelanotide was tested by Palatin and dropped in 2008 after the FDA halted trials over blood-pressure rises. Today's \"PT-141 nasal sprays\" revive a route the developer abandoned, at unverified doses.",
+          "Vials sold \"for research\" carry no independent check on content or strength. The label's warnings on blood pressure, skin darkening and nausea all assume a known 1.75 mg dose under the skin, used at most eight times a month."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "warn",
+        "title": "If someone has used a PT-141 product",
+        "text": "See a doctor, and tell them what was used, if any of these appear:",
+        "items": ["A severe headache, chest pain or vision changes after a dose", "Vomiting that does not stop", "Dark patches on the skin, gums or breasts that do not fade", "Yellowing of the skin or eyes, dark urine, unusual tiredness"],
+        "note": "Report a reaction to FDA MedWatch (fda.gov/medwatch) or, in Canada, MedEffect Canada (canada.ca/medeffect)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: the drug's path to market",
+        "paras": [
+          "Bremelanotide grew out of melanotan II, a University of Arizona tanning peptide that caused erections in a 1990s pilot study. Palatin licensed the chemistry, found that a metabolite-like variant with a carboxyl group kept the sexual effect, and named it PT-141. A nasal spray reached Phase 2 in men and women before the FDA halted the trials in 2007 over blood pressure; Palatin stopped the nasal programme in 2008 and reformulated the drug as a lower-dose injection.",
+          "AMAG Pharmaceuticals licensed North American rights in January 2017 for $60 million up front, filed the application in 2018 and won approval in June 2019. AMAG returned the rights to Palatin in 2020, and Palatin sold the product outright to Cosette, a privately held New Jersey company, in December 2023. The current label carries Cosette's name; the dose, the one-a-day and eight-a-month limits and the eight-week stopping rule are unchanged from approval."
+        ]
+      }
+    ],
+    "sources": [
+      {"text": "Vyleesi (bremelanotide injection) prescribing information, DailyMed, U.S. National Library of Medicine (current labeler Cosette Pharmaceuticals).", "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9146ae05-918b-483e-b86d-933485ce36eb"},
+      {"text": "Vyleesi prescribing information, full text (sections 1–17: dosing, warnings, adverse reactions, pharmacokinetics, clinical studies), DrugCentral label viewer.", "url": "https://drugcentral.org/label/8c9607a2-5b57-4a59-b159-cf196deebdd9/view"},
+      {"text": "U.S. FDA, NDA 210557 approval letter to AMAG Pharmaceuticals, including postmarketing requirements (pregnancy registry, lactation study, liver reporting), June 21, 2019.", "url": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/2019/210557Orig1s000Approv.pdf"},
+      {"text": "U.S. FDA, Drug Trials Snapshot: Vyleesi (1,267 women, efficacy tables, adverse reactions), 2019.", "url": "https://www.fda.gov/drugs/drug-safety-and-availability/drug-trials-snapshots-vyleesi"},
+      {"text": "U.S. FDA, press announcement: FDA approves new treatment for hypoactive sexual desire disorder in premenopausal women (responder analysis: 25% vs 17% desire, 35% vs 31% distress), June 21, 2019.", "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-new-treatment-hypoactive-sexual-desire-disorder-premenopausal-women"},
+      {"text": "Kingsberg SA, Clayton AH, Portman D, et al. Bremelanotide for the treatment of hypoactive sexual desire disorder: two randomized Phase 3 trials (RECONNECT). Obstetrics & Gynecology, 2019;134(5):899–908.", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6819021/"},
+      {"text": "Simon JA, Kingsberg SA, Portman D, et al. Long-term safety and efficacy of bremelanotide for hypoactive sexual desire disorder (52-week open-label extension). Obstetrics & Gynecology, 2019.", "url": "https://pubmed.ncbi.nlm.nih.gov/31599847/"},
+      {"text": "Spielmans GI, Ellefson EM. Small effects, questionable outcomes: bremelanotide for hypoactive sexual desire disorder. Journal of Sex Research, 2023.", "url": "https://doi.org/10.1080/00224499.2023.2175192"},
+      {"text": "Ob.Gyn. News (MDedge), New drug improves sex drive, at least on paper, October 25, 2019.", "url": "https://mdedge.com/content/new-drug-improves-sex-drive-least-paper"},
+      {"text": "Oregon State University Drug Use Research & Management, abbreviated drug review: bremelanotide (trial populations and endpoint tables), February 2020.", "url": "https://www.orpdl.org/durm/meetings/meetingdocs/2020_02_06/archives/2020_02_06_bremelanotide_ADR.pdf"},
+      {"text": "Palatin Technologies, press release: Palatin completes sale of Vyleesi to Cosette Pharmaceuticals for up to $171 million, December 20, 2023 (via BioSpace).", "url": "https://www.biospace.com/palatin-completes-sale-of-vyleesi-to-cosette-pharmaceuticals-for-up-to-171-million"},
+      {"text": "Fierce Pharma, Cosette buys female libido drug Vyleesi from Palatin, December 20, 2023.", "url": "https://www.fiercepharma.com/pharma/palatin-sells-female-libido-drug-vyleesi-cosette-12m-front"},
+      {"text": "The Pharma Letter, AMAG Pharma closes deal for North America rights to Rekynda (bremelanotide), 2017.", "url": "https://www.thepharmaletter.com/article/amag-pharma-closes-deal-for-north-america-rights-to-rekynda"},
+      {"text": "Palatin Technologies, Form 10-K for the fiscal year ended June 30, 2015 (bremelanotide development history: intranasal trials halted 2007, subcutaneous reformulation, Gedeon Richter European licence), U.S. SEC EDGAR.", "url": "https://www.sec.gov/Archives/edgar/data/911216/000135448815004334/ptn_10k.htm"},
+      {"text": "Trial registrations: NCT02333071 (RECONNECT 301) and NCT02338960 (RECONNECT 302), ClinicalTrials.gov.", "url": "https://clinicaltrials.gov/study/NCT02333071"}
+    ]
+  }
+}

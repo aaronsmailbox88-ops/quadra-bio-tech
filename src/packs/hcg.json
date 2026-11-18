@@ -1,0 +1,196 @@
+{
+  "id": "hcg",
+  "name": "Human chorionic gonadotropin (hCG)",
+  "brands": "Pregnyl, Novarel, generic chorionic gonadotropin; Ovidrel (recombinant)",
+  "maker": "Organon, Ferring, Fresenius Kabi, EMD Serono",
+  "group": "approved",
+  "pill": "Approved (fertility)",
+  "overview": {
+    "headline": "A pregnancy hormone used as a drug to trigger ovulation, and to make the testes work when the pituitary cannot.",
+    "lede": "hCG is purified from the urine of pregnant women (Pregnyl, Novarel) or made by recombinant technology (Ovidrel). Health Canada and the FDA approve it for ovulation induction, undescended testes in boys and male hypogonadism caused by pituitary failure. It is sold online for weight loss, which its own label says it does not produce, and alongside testosterone to protect fertility, an off-label use with small studies behind it.",
+    "stats": [
+      {"num": "24", "lbl": "studies of the \"hCG diet\" reviewed in 1995: no evidence it helps weight loss, fat distribution or hunger", "src": "Lijesen et al., Br J Clin Pharmacol 1995"},
+      {"num": "26 men", "lbl": "in the largest published series of hCG used alongside testosterone to preserve sperm production", "src": "Hsieh et al., J Urol 2013 (retrospective)"},
+      {"num": "Mar 2020", "lbl": "when hCG became a \"biologic\" in the U.S., ending pharmacy compounding", "src": "FDA notice to compounders"}
+    ],
+    "mechanism": {
+      "intro": "hCG mimics luteinizing hormone (LH), the pituitary's signal to the ovaries and testes.",
+      "parts": [
+        {"name": "LH receptor", "text": "In women, one injection triggers ovulation of a ripened egg. In men, it tells the testes' Leydig cells to make testosterone, and keeps them doing so when the pituitary's own LH is missing or suppressed."},
+        {"name": "No metabolic role", "text": "The label states hCG has no known effect on fat mobilization, appetite or body-fat distribution. Weight lost on the \"hCG diet\" comes from its 500-calorie-a-day plan."}
+      ]
+    },
+    "more": {
+      "title": "More: why it is paired with testosterone",
+      "paras": [
+        "Testosterone injections switch off the pituitary's LH, so the testes shrink and sperm production falls. hCG replaces the LH signal. Small studies show it can keep testosterone inside the testes and sperm counts up during testosterone therapy. Urologists and endocrinologists prescribe it for that purpose; it is off-label.",
+        "hCG is a urine-derived biologic. In March 2020 that classification removed it from U.S. compounding pharmacies, which is why many clinics switched to gonadorelin or kisspeptin, and why grey-market \"hCG\" appeared.",
+        "Sources are under the Status tab."
+      ]
+    }
+  },
+  "results": {
+    "headline": "For weight loss: nothing beyond the diet. For fertility: it works, in the right patient.",
+    "lede": "Two very different claims. The weight-loss one has been tested since the 1950s and failed. The fertility uses are the approved ones.",
+    "chart": null,
+    "stats": [
+      {"num": "12 of 24", "lbl": "trials were of acceptable quality, all controlled; none showed hCG beats placebo for weight, fat distribution, hunger or well-being", "src": "Lijesen 1995"},
+      {"num": "0 of 26", "lbl": "men on testosterone plus hCG lost all sperm production over a mean of 6 months; 9 contributed to a pregnancy", "src": "Hsieh 2013"}
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {"b": "Weight loss.", "t": "The 1995 meta-analysis found 24 studies of the Simeons \"hCG diet\": 8 controlled, 16 uncontrolled, most of poor quality. The adequate ones showed no effect of hCG on weight loss, fat distribution, hunger or well-being. The FDA and Health Canada labels say the same."},
+        {"b": "Fertility during testosterone therapy.", "t": "In 29 healthy men given testosterone injections, adding low-dose hCG kept testosterone inside the testes near normal (Coviello 2005). In 26 men on testosterone therapy plus hCG, semen quality did not fall over 6 months and none became azoospermic (Hsieh 2013). A 4-man study in 1985 using a much larger hCG dose saw sperm counts fall. All are small, and none is randomized."},
+        {"b": "Approved uses.", "t": "Triggering ovulation after follicle stimulation, descent of undescended testes in boys, and testosterone production in men with pituitary failure are the label indications, backed by decades of controlled fertility data."}
+      ]
+    },
+    "more": [
+      {
+        "title": "More: the hCG diet's history",
+        "paras": [
+          "In 1954 the physician Albert Simeons proposed hCG injections with a 500-calorie diet. Later placebo-controlled trials gave saline injections with the same diet and found the same weight loss. The 1995 meta-analysis closed the question. The FDA's 2011 action against \"homeopathic hCG\" drops and Health Canada's 2017 advisory dealt with the clinics and websites still selling it."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "Headache, irritability, fluid retention and breast tissue in men; ovarian overstimulation and clots in fertility use.",
+    "lede": "The label lists side effects from decades of fertility use. There are no placebo-controlled rates for the weight-loss or testosterone-adjunct uses.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "Not reported as a rate in the label or in the small testosterone-adjunct studies."
+    },
+    "unique": {
+      "title": "Ovarian hyperstimulation syndrome",
+      "text": "In women undergoing fertility treatment, hCG can trigger OHSS: painful enlarged ovaries, fluid in the abdomen and chest, and in severe cases blood clots and dangerous shifts in blood volume. Labels require monitoring for at least two weeks after the injection. It is the reason hCG is a specialist drug."
+    },
+    "more": [
+      {
+        "title": "More: what the label warns about",
+        "paras": [
+          "Headache, irritability, restlessness, depression, fatigue, swelling, breast enlargement in men, pain at the injection site, and allergic reactions including anaphylaxis with urine-derived products. In boys, early puberty; in men, extra androgen can worsen heart, kidney, epilepsy, migraine or asthma conditions. Arterial clots have been reported in fertility use. hCG also gives a false-positive pregnancy test for about ten days.",
+          "Men on hCG can develop antibodies that reduce its effect over time, which the Canadian monograph notes."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "In its approved uses, hCG produces ovulation and restores testosterone and sperm production in pituitary failure. In men on testosterone therapy it can prevent testicular shrinkage and preserve sperm, according to small studies."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms trial teams treat as urgent",
+      "items": [
+        "Severe abdominal pain or bloating, trouble breathing, rapid weight gain from fluid (OHSS)",
+        "Chest pain, leg swelling, sudden shortness of breath or weakness (blood clot or stroke)",
+        "Swelling of the face or throat, rash, wheezing (allergic reaction)",
+        "Severe headache or a marked mood change"
+      ],
+      "note": "Anyone with these symptoms, prescribed or not, should get medical care right away."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "The approved regimens are single or twice- to thrice-weekly injections measured in international units, so the daily-dose chart used for other peptides does not apply. The Canadian Pregnyl monograph gives the pharmacokinetics: after an intramuscular injection, blood levels rise within about 2 hours, peak around 6 hours, stay raised for about 36 hours, and then fall with an initial half-life of 5.6 to 11 hours and a terminal half-life of 23 to 37 hours.",
+    "stats": [
+      {"num": "~6 h", "lbl": "to peak after an intramuscular injection", "src": "Pregnyl product monograph (Canada), March 2021"},
+      {"num": "23–37 h", "lbl": "terminal half-life", "src": "Pregnyl product monograph (Canada), March 2021"},
+      {"num": "~10 days", "lbl": "during which hCG can cause a false-positive pregnancy test", "src": "Pregnyl product monograph (Canada), March 2021"}
+    ],
+    "explain": [
+      {"b": "Why men get it two or three times a week.", "t": "With a terminal half-life of about a day, a dose is largely gone within a few days, so the label's male regimens repeat injections across the week."},
+      {"b": "Why one injection triggers ovulation.", "t": "The trigger needs a single surge, like the body's own LH peak. The 36-hour plateau covers it."}
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: what this page cannot tell you",
+        "paras": [
+          "What is in a vial sold online as hCG. Approved hCG is a sterile biologic with tested potency; grey-market vials have no verified content, and \"homeopathic hCG\" drops contain no meaningful hormone at all."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "Approved regimens exist for fertility and pituitary failure. None exists for weight loss or as a testosterone add-on.",
+    "lede": "The label's regimens are set by fertility specialists and endocrinologists for specific diagnoses, with blood tests and ultrasound. There is no approved regimen for the uses vendors advertise.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: how fertility clinics use it",
+        "paras": [
+          "In ovulation induction, hCG is one injection timed after follicle stimulation and followed by at least two weeks of monitoring for OHSS. In male hypogonadism it is repeated injections over weeks to months with testosterone and semen checks. Neither is a self-managed protocol."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials that have been run",
+      "items": [
+        "Weight loss: 24 studies from the 1950s to 1990s, pooled in 1995 (Lijesen): no effect beyond the diet. No credible trial since.",
+        "Testosterone add-on: a 29-man dose study of testosterone inside the testes (Coviello 2005), a 26-man retrospective series (Hsieh 2013) and a 4-man 1985 study with conflicting results. No randomized trial of fertility outcomes.",
+        "Approved uses: decades of controlled fertility data behind the label; hCG is a standard ovulation trigger in IVF."
+      ]
+    },
+    "find": {
+      "text": "Registry searches turn up IVF trigger studies and male infertility studies. Search \"chorionic gonadotropin\" or \"hCG\".",
+      "term": "chorionic gonadotropin",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "Approved for fertility. Not for weight loss. No longer compoundable in the U.S.",
+    "items": [
+      {"tag": "ok", "label": "Canada", "text": "Pregnyl (Organon) is authorized for ovulation induction, cryptorchidism and male hypogonadotropic hypogonadism (monograph revised March 30, 2021). Health Canada's January 2017 advisory states hCG is not authorized or proven for weight loss and says it wrote to medical, naturopathic and pharmacy regulators about clinics advertising it."},
+      {"tag": "ok", "label": "United States", "text": "Novarel (Ferring), Pregnyl and generic chorionic gonadotropin are approved for the same uses; the label states in capitals that hCG is not effective for obesity. Since March 23, 2020 hCG is regulated as a biologic and is not eligible for compounding under sections 503A or 503B (FDA notice, March 2020). In late 2011 FDA and FTC sent seven joint warning letters to sellers of \"homeopathic hCG\" weight-loss drops."},
+      {"tag": "no", "label": "Sport", "text": "Prohibited at all times in males under WADA's 2026 Prohibited List (S2.2.1: chorionic gonadotrophin). Not prohibited in females."}
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "\"hCG\" sold online: what it is and is not",
+        "text": "Approved hCG comes from licensed makers through pharmacies and fertility clinics, by prescription. \"Homeopathic hCG\" drops are not hCG and were declared illegal by FDA in 2011. Injectable \"hCG\" from peptide sites and overseas pharmacies is unapproved, and since 2020 any U.S. pharmacy offering compounded hCG is outside the law.",
+        "items": [
+          "FDA/FTC, November–December 2011: seven joint warning letters. \"HCG is not considered a homeopathic drug ingredient\", and the weight-loss claims were unsubstantiated.",
+          "FDA, March 2020: hCG moved to biologic status and lost eligibility for the compounding exemptions.",
+          "Health Canada, 2017: clinics advertising hCG for weight loss were told it is unauthorized and unproven for that use."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "warn",
+        "title": "If someone has already used it",
+        "text": "See a doctor, especially if any of these apply:",
+        "items": [
+          "Pelvic or abdominal pain and bloating (women)",
+          "Chest pain, calf pain or sudden breathlessness",
+          "Breast tenderness or growth (men)",
+          "Weeks on a 500-calorie \"hCG diet\": ask about gallstones, electrolytes and heart rhythm"
+        ],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: the 500-calorie problem",
+        "paras": [
+          "The \"hCG diet\" is really a near-starvation diet. FDA notes that such diets raise the risk of gallstones, electrolyte imbalance and irregular heartbeat and can be fatal without medical supervision. In FDA's words, \"any loss is from severe calorie restriction. Not from the HCG.\""
+        ]
+      }
+    ],
+    "sources": [
+      {"text": "Ferring Pharmaceuticals, NOVAREL (chorionic gonadotropin for injection) prescribing information, revised May 2023.", "url": "https://ferringusa.com/PI/Novarel"},
+      {"text": "Organon Canada, PREGNYL product monograph, revised March 30, 2021 (indications, pharmacokinetics, obesity statement, warnings).", "url": "https://pdf.hres.ca/dpd_pm/00071523.PDF"},
+      {"text": "Lijesen GK, Theeuwen I, Assendelft WJ, Van Der Wal G. The effect of human chorionic gonadotropin (HCG) in the treatment of obesity by means of the Simeons therapy: a criteria-based meta-analysis. British Journal of Clinical Pharmacology 1995;40:237–243.", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1365103"},
+      {"text": "FDA, consumer update: HCG diet products are illegal (statement by Carolyn Becker, CDER), 2011, updated 2020.", "url": "https://www.fda.gov/ForConsumers/ConsumerUpdates/ucm281333.htm"},
+      {"text": "FDA and FTC, joint warning letter concerning homeopathic HCG weight-loss products, November 28, 2011.", "url": "https://www.ftc.gov/sites/default/files/documents/public_statements/joint-fda/ftc-warning-letter-concerning-product-labeling-human-chrorionic-gonadotropin-hcg-drugs/ucm281554.pdf"},
+      {"text": "FDA, Notice to compounders: changes that affect compounding on March 23, 2020 (human chorionic gonadotropin transitions to biologic status).", "url": "https://www.fda.gov/drugs/human-drug-compounding/notice-compounders-changes-affect-compounding-march-23-2020"},
+      {"text": "Health Canada, advisory: the drug hCG is not authorized or proven effective for weight loss, January 19, 2017.", "url": "https://recalls-rappels.canada.ca/en/alert-recall/health-canada-advises-drug-hcg-not-authorized-or-proven-effective-weight-loss"},
+      {"text": "Hsieh TC, Pastuszak AW, Hwang K, Lipshultz LI. Concomitant intramuscular human chorionic gonadotropin preserves spermatogenesis in men undergoing testosterone replacement therapy. Journal of Urology 2013;189:647–650.", "url": "https://pubmed.ncbi.nlm.nih.gov/23260550/"},
+      {"text": "Herati AS, Kohn TP, Kassiri B. New frontiers in fertility preservation: a hypothesis on fertility optimization in men with hypergonadotrophic hypogonadism. Translational Andrology and Urology 2020;9(Suppl 2):S171–S177 (summarizes Coviello 2005 and Matsumoto 1985).", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7108987"},
+      {"text": "World Anti-Doping Agency, 2026 Prohibited List, effective January 1, 2026 (S2.2.1).", "url": "https://www.wada-ama.org/en/prohibited-list"}
+    ]
+  }
+}

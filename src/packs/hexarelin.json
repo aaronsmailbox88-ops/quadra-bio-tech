@@ -1,0 +1,308 @@
+{
+  "id": "hexarelin",
+  "name": "Hexarelin (examorelin)",
+  "brands": "",
+  "maker": "Mediolanum Farmaceutici (development stopped at Phase II)",
+  "group": "research",
+  "pill": "Unapproved",
+  "overview": {
+    "headline": "A more potent cousin of GHRP-6 that an Italian company took into mid-stage trials in the 1990s, then dropped.",
+    "lede": "Hexarelin (examorelin, EP-23905) was developed by Mediolanum Farmaceutici for growth hormone deficiency and heart failure and reached Phase II. It was never approved anywhere and no trial is registered today. Its best-known finding is that the body gets used to it: after weeks of daily use the GH response roughly halves.",
+    "stats": [
+      {
+        "num": "0",
+        "lbl": "approvals anywhere, for any use",
+        "src": "Development stopped at Phase II"
+      },
+      {
+        "num": "−45%",
+        "lbl": "fall in the GH response after 16 weeks of twice-daily injections in 12 healthy older adults",
+        "src": "Rahim et al., JCEM 1998"
+      },
+      {
+        "num": "2×",
+        "lbl": "GH released by a single intravenous dose compared with GHRH itself",
+        "src": "Ghigo et al., JCEM 1994"
+      }
+    ],
+    "mechanism": {
+      "intro": "A six-amino-acid ghrelin mimic, with an extra action on the heart that is not about GH at all.",
+      "parts": [
+        {
+          "name": "Ghrelin receptor (GHS-R1a)",
+          "text": "In the pituitary it triggers a large, short GH burst, bigger than GHRH produces; repeated exposure dampens the receptor's response within days to weeks."
+        },
+        {
+          "name": "Heart receptors",
+          "text": "A single intravenous dose briefly raised the heart's pumping fraction in small studies, even in GH-deficient men whose GH did not rise, pointing to separate receptors on heart muscle."
+        },
+        {
+          "name": "Other pituitary hormones",
+          "text": "Like other GHRPs it produces a small, short rise in ACTH, cortisol and prolactin after each dose."
+        }
+      ]
+    },
+    "more": {
+      "title": "More: where hexarelin came from",
+      "paras": [
+        "Hexarelin is GHRP-6 with one amino acid chemically modified for stability. Most human data come from Ezio Ghigo's group in Turin and Stephen Shalet's group in Manchester in the mid-1990s. Development ended without a product; it is now made by contract chemical plants and sold online as a \"research chemical\"."
+      ]
+    }
+  },
+  "results": {
+    "headline": "What human studies measured: GH surges, a fading response, and a brief lift in heart pumping.",
+    "lede": "Hexarelin has never been tested in a placebo-controlled trial for body composition, strength, fat loss or ageing. The human record is single-dose pharmacology, one 16-week study in healthy older adults, short nasal-spray studies in children, and acute heart studies in a few dozen patients.",
+    "chart": null,
+    "stats": [
+      {
+        "num": "12",
+        "lbl": "healthy older adults in the longest human study (16 weeks): IGF-1, body fat, lean mass and bone density did not change",
+        "src": "Rahim et al., JCEM 1998"
+      },
+      {
+        "num": "+7 points",
+        "lbl": "ejection fraction after a single intravenous dose (50% to 57% in GH-deficient men; 63% to 70% in controls), short-lived",
+        "src": "Bisi et al., Eur J Pharmacol 1999"
+      }
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {
+          "b": "GH release (human).",
+          "t": "In 12 healthy young volunteers a single dose released GH dose-dependently by every route; the intravenous response was about twice GHRH's, and about 77% of an injected dose was absorbed (Ghigo 1994)."
+        },
+        {
+          "b": "Fading response (human).",
+          "t": "In 12 healthy older adults on twice-daily injections for 16 weeks, the GH response fell from 19.1 to 10.5 µg/L·h, a third of it in the first week; IGF-1, body fat, lean mass and bone density did not change, and the response recovered four weeks after stopping (Rahim 1998)."
+        },
+        {
+          "b": "Heart (human, single dose).",
+          "t": "One intravenous dose briefly raised the ejection fraction in healthy and GH-deficient men without changing blood pressure or heart rate (Bisi 1999; Broglio 2001); in 13 heart-failure patients it rose only in the ischemic group (Imazio 2002). No repeated-dose or outcome study exists."
+        },
+        {
+          "b": "Children (human).",
+          "t": "Short nasal-spray courses in short children in Israel and Italy in the mid-1990s showed GH release and some growth signal, with the same loss of response. None led to a treatment."
+        },
+        {
+          "b": "Muscle, fat, healing, anti-ageing.",
+          "t": "The only multi-month human study found no change in body composition. Nothing else has been measured in people."
+        }
+      ]
+    },
+    "more": [
+      {
+        "title": "More: why the fading response matters",
+        "paras": [
+          "A GH secretagogue is supposed to deliver sustained GH and IGF-1. Hexarelin gave the opposite: a big response that shrank by almost half over 16 weeks while IGF-1 never moved; laboratory work later showed the receptor desensitises within minutes (Orkin 2003)."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "Short hormone surges, a response that fades, and no long-term safety data in healthy people.",
+    "lede": "The human studies were small and mostly single-dose. The 16-week study reported hormones in detail but published no side-effect table. Nobody has followed healthy adults on hexarelin for longer than four months.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "Not reported. The 16-week study in 12 older adults does not describe dropouts for side effects in its published abstract, and no larger or longer study exists."
+    },
+    "unique": {
+      "title": "Desensitisation, plus cortisol and prolactin",
+      "text": "Hexarelin's distinctive effect is on itself: the GH response roughly halves with repeated use and recovers after a few weeks off. Each dose also produces a small, short rise in ACTH, cortisol and prolactin (Arvat 1997). The acute heart effect shows it acts on tissues outside the pituitary, a reason for caution in anyone with heart disease."
+    },
+    "more": [
+      {
+        "title": "More: what a GH-raising drug can do over time",
+        "paras": [
+          "Sustained GH can cause fluid retention, joint pain, carpal-tunnel-type tingling and higher blood sugar; GH-axis trials monitor for these and exclude active cancer because GH and IGF-1 can promote tumour growth. Hexarelin was never nominated to FDA's compounding lists, so it has had no regulator's safety review at all."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "Reliable GH release after a single dose, and a brief rise in heart pumping in small acute studies. Neither has been shown to translate into a lasting benefit."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms that need a doctor",
+      "items": [
+        "Chest pain, a racing or irregular heartbeat, or fainting",
+        "Spreading redness, pus or fever at an injection site; hives, facial swelling or trouble breathing",
+        "Marked thirst, frequent urination or blurred vision",
+        "Tingling hands, swollen hands or feet, or new joint pain that does not settle"
+      ],
+      "note": "Get medical care and say exactly what product was used."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "A 1994 dose-response study reported hexarelin's blood kinetics (Imbimbo et al.), but we could not read its half-life figure in the original paper, so no simulator is shown rather than copy a number second-hand. What is documented: about 77% of an injected dose reaches the blood, the GH burst is over within hours, and with twice-daily dosing the response shrinks rather than accumulates.",
+    "stats": [
+      {
+        "num": "~77%",
+        "lbl": "of an injected dose reaches the blood",
+        "src": "Ghigo et al., 1994"
+      },
+      {
+        "num": "−45%",
+        "lbl": "GH response after 16 weeks of twice-daily dosing",
+        "src": "Rahim et al., 1998"
+      },
+      {
+        "num": "4 weeks",
+        "lbl": "off the drug for the GH response to recover",
+        "src": "Rahim et al., 1998"
+      }
+    ],
+    "explain": [
+      {
+        "b": "A spike, not a plateau.",
+        "t": "Hexarelin is cleared within hours; each dose makes one GH burst and nothing builds up between doses."
+      },
+      {
+        "b": "More doses gave less, not more.",
+        "t": "The receptor desensitises; in the 16-week study the GH response was down a third after one week."
+      }
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: why there is no chart",
+        "paras": [
+          "The level charts need a verified half-life and a trial dosing schedule; hexarelin has no approved regimen and we did not verify its half-life from the primary paper. A curve would also mislead for a drug whose main feature is a shrinking response to a constant dose."
+        ]
+      },
+      {
+        "title": "More: what blood levels could not tell you anyway",
+        "paras": [
+          "Products sold as hexarelin are unverified; analyses of black-market \"GH-releasing\" products have found wrong peptides, no peptide, and chemically modified analogues (see Status)."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "No trial is recruiting for hexarelin; its human record ended in the early 2000s.",
+    "lede": "Hexarelin's human studies were company-sponsored pharmacology and small academic studies between 1994 and 2002. Nothing registered today would change its status.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: how the human studies were run",
+        "paras": [
+          "Participants were healthy volunteers, GH-deficient adults or heart-failure patients studied in hospital, mostly after one intravenous dose with frequent blood sampling and, in the heart studies, a nuclear scan of the heart. None of this resembles unsupervised home use."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials that have been run",
+      "items": [
+        "Healthy volunteers, 1994: single doses by vein, injection, nose and mouth in 12 people; dose-dependent GH release, twice GHRH's (Ghigo et al.); a company dose-response and kinetics study (Imbimbo et al.).",
+        "Healthy older adults, 1998: 16 weeks of twice-daily injections in 12 people; GH response fell 45%, IGF-1 and body composition unchanged, response recovered after 4 weeks off (Rahim et al.).",
+        "Heart, 1999–2002: single intravenous doses in GH-deficient men, healthy controls and 25 cardiomyopathy patients (Bisi; Broglio; Imazio); brief rise in ejection fraction except in dilated cardiomyopathy, no outcomes measured.",
+        "Children, 1995–1997: short nasal-spray studies in short children in Israel and Italy; GH release with loss of response over time.",
+        "Not run: any placebo-controlled trial for muscle, fat, healing, heart-failure outcomes or ageing."
+      ]
+    },
+    "find": {
+      "text": "Searching the public registry for \"hexarelin\" or \"examorelin\" returns no recruiting treatment trial.",
+      "term": "hexarelin",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "Not approved anywhere. No legal route to it in Canada or the U.S. Banned in sport.",
+    "items": [
+      {
+        "tag": "no",
+        "label": "Canada",
+        "text": "No hexarelin product holds a Health Canada DIN. Health Canada's April 2026 advisory treats injectable peptides as prescription drugs and says a \"research use only\" label does not make them legal; it reports border seizures and won a permanent injunction against a Québec online seller in July 2026."
+      },
+      {
+        "tag": "no",
+        "label": "United States",
+        "text": "Never FDA-approved and never nominated for FDA's compounding lists: hexarelin appears in no 503A category (May 2026) and has no USP monograph, so there is no legal way to compound it. FDA's August 24, 2026 warning letters to five online peptide sellers rejected \"research use only\" labelling."
+      },
+      {
+        "tag": "no",
+        "label": "Sport",
+        "text": "Prohibited at all times under WADA's 2026 Prohibited List (S2, GH-releasing peptides; named as \"examorelin (hexarelin)\")."
+      }
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "What \"research use only\" really means",
+        "text": "Regulators judge a product by how it is sold, not its label: human-dose vials, bacteriostatic water, dosing calculators and health claims count as intended human use. Testing shows why that matters:",
+        "items": [
+          "Australia's sports drug testing laboratory analysed 200+ black-market peptide products: about 25% matched the label, 25% contained no peptide, and one \"growth hormone\" product contained pig insulin (Sport Integrity Australia).",
+          "Norway's doping laboratory tested 21 seized vials sold as growth hormone: only 5 were; the rest included CJC-1295, GHRP-6, sermorelin and ipamorelin (Henninge 2011).",
+          "A German anti-doping laboratory found chemically modified GHRP analogues never tested in humans in black-market products (Krug 2018)."
+        ],
+        "note": "No regulator has checked any online hexarelin product for identity, strength, sterility or endotoxin."
+      },
+      {
+        "kind": "warn",
+        "title": "If someone has already used a product sold as hexarelin",
+        "text": "See a doctor if any of these appear, and bring the vial:",
+        "items": [
+          "Chest pain, palpitations or fainting",
+          "Fever, or redness and pus at an injection site",
+          "Marked thirst, frequent urination, or shakiness and confusion",
+          "Swelling of hands, feet or face; new joint pain or tingling hands"
+        ],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: U.S. peptide policy is moving, but hexarelin is not part of it",
+        "paras": [
+          "In July 2026 an FDA advisory committee recommended six other peptides for the compounding list, and on October 14–15, 2026 HHS sent a peptide \"Interim Access Policy\" to the White House; its terms are not public. Hexarelin has never been nominated, reviewed or scheduled for review."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "text": "Ghigo E, Arvat E, Gianotti L, Imbimbo BP, Lenaerts V, Deghenghi R, Camanni F. Growth hormone-releasing activity of hexarelin after intravenous, subcutaneous, intranasal and oral administration in man. JCEM 1994;78:693–698.",
+        "url": "https://iris.unito.it/handle/2318/31184"
+      },
+      {
+        "text": "Imbimbo BP, Mant T, Edwards M et al. Growth hormone-releasing activity of hexarelin in humans: a dose-response study. European Journal of Clinical Pharmacology 1994;46:421–425.",
+        "url": "https://doi.org/10.1007/bf00191904"
+      },
+      {
+        "text": "Rahim A, O'Neill PA, Shalet SM. Growth hormone status during long-term hexarelin therapy. JCEM 1998;83:1644–1649. Rahim A, Shalet SM. Does desensitization to hexarelin occur? Growth Hormone & IGF Research 1998;8 Suppl B:141–143.",
+        "url": "https://academic.oup.com/jcem/article/83/5/1644/2865542"
+      },
+      {
+        "text": "Arvat E, Di Vito L, Maccagno B, Broglio F, Boghen MF, Deghenghi R et al. Hexarelin and GHRP-2: effects on GH, prolactin, ACTH and cortisol in man. Peptides 1997;18(6):885–891.",
+        "url": "https://doi.org/10.1016/s0196-9781(97)00016-8"
+      },
+      {
+        "text": "Bisi G, Podio V, Valetto MR, Broglio F et al. Cardiac effects of hexarelin in hypopituitary adults. European Journal of Pharmacology 1999;381:31–38.",
+        "url": "https://research.uniupo.it/it/publications/cardiac-effects-of-hexarelin-in-hypopituitary-adults/"
+      },
+      {
+        "text": "Broglio F, Benso A, Valetto MR et al. GH-independent cardiotropic activities of GH-releasing peptides. Endocrine 2001;14:105–108. Imazio M, Bobbio M, Broglio F et al. GH-independent cardiotropic activities of hexarelin in severe left ventricular dysfunction. European Journal of Heart Failure 2002;4:185–191.",
+        "url": "https://iris.unito.it/handle/2318/41406"
+      },
+      {
+        "text": "Orkin RD, New DI, Norman D et al. Rapid desensitisation of the GH secretagogue (ghrelin) receptor to hexarelin in vitro. Journal of Endocrinological Investigation 2003;26:743–747.",
+        "url": "https://link.springer.com/article/10.1007/BF03347357"
+      },
+      {
+        "text": "U.S. FDA. Bulk Drug Substances Nominated for Use in Compounding Under Section 503A (hexarelin absent from all categories), updated May 14, 2026. FDA warning letter to Tex Peptides, August 24, 2026.",
+        "url": "https://fda.gov/media/94155/download"
+      },
+      {
+        "text": "Health Canada. Public advisory: Think twice before injecting peptides bought online, updated April 9, 2026. Fasken, Health Canada permanent injunction against Canlab Research, July 29, 2026.",
+        "url": "https://recalls-rappels.canada.ca/en/alert-recall/think-twice-injecting-peptides-bought-online-unauthorized-products-can-seriously-harm"
+      },
+      {
+        "text": "German Sport University Cologne. WADA Prohibited List 2026, S2 growth hormone-releasing factors (examorelin/hexarelin named). Sport Integrity Australia, black-market peptide testing. Henninge J et al., Recent Advances in Doping Analysis 2011. Krug O et al., Growth Hormone & IGF Research 2018.",
+        "url": "https://www.dshs-koeln.de/en/universitaet/organisation/institute-einrichtungen/department-of-biochemistry/doping-substances/prohibited-classes-of-substances-and-methods/s2-peptide-hormones-growth-factors-etc"
+      }
+    ]
+  }
+}

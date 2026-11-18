@@ -1,0 +1,273 @@
+{
+  "id": "cardiogen",
+  "name": "Cardiogen",
+  "brands": "",
+  "maker": "St Petersburg Institute of Bioregulation and Gerontology (V. Khavinson)",
+  "group": "research",
+  "pill": "Unapproved",
+  "overview": {
+    "headline": "A four-amino-acid peptide named for the heart. Rat and guinea-pig data from its inventors' patent; no human study.",
+    "lede": "Cardiogen is the Khavinson institute's tetrapeptide Ala-Glu-Asp-Arg, patented in the U.S. in 2010 for \"restoring myocardium function\". The institute's own 2014 review of its clinical results does not mention it. It is not registered as a medicine, or as far as we could find as a supplement, anywhere.",
+    "stats": [
+      {
+        "num": "4",
+        "lbl": "amino acids: Ala-Glu-Asp-Arg",
+        "src": "US patent 7,662,789; Khavinson 2016"
+      },
+      {
+        "num": "15% vs 45%",
+        "lbl": "24-hour deaths after an induced heart attack, 20 treated versus 20 untreated rats",
+        "src": "US patent 7,662,789"
+      },
+      {
+        "num": "0",
+        "lbl": "human studies of any design",
+        "src": "PubMed, patents, institute publications and registries, Oct 2026"
+      }
+    ],
+    "mechanism": {
+      "intro": "A short peptide said to protect heart-muscle cells and their energy supply.",
+      "parts": [
+        {
+          "name": "The bioregulator idea",
+          "text": "The 2016 computer model places Cardiogen on the DNA sequence \"agtc\" with \"very strong\" predicted binding. A docking calculation, not a measurement in heart tissue."
+        },
+        {
+          "name": "What the animal work showed",
+          "text": "Rats with a tied-off coronary artery had smaller areas of dead muscle and better mitochondrial energy efficiency a day later; isolated guinea-pig hearts regained more blood flow after 30 minutes without oxygen (10.8 versus 8.5 ml/min). A 2009 institute paper found it slowed a transplanted sarcoma in old rats by damaging the tumour's blood vessels."
+        }
+      ]
+    },
+    "more": {
+      "title": "More: where the heart data come from",
+      "paras": [
+        "Nearly all of it sits in a patent, written by the applicant and never peer reviewed; several experiments say their results are \"in the tables\" without printing them."
+      ]
+    }
+  },
+  "results": {
+    "headline": "Rodent heart-injury models in a patent, one rat tumour paper, nothing in people.",
+    "lede": "The \"heart repair\" claims trace to animal experiments the inventors ran two decades ago and published only in patent filings.",
+    "chart": null,
+    "stats": [
+      {
+        "num": "0",
+        "lbl": "mentions of Cardiogen in the institute's own 2014 review of its clinical results",
+        "src": "Khavinson, Kuznik, Ryzhak 2014"
+      }
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {
+          "b": "In vitro.",
+          "t": "Heart explants and isolated heart cells under low oxygen were tested in the patent; results referred to but not printed. Isolated guinea-pig hearts (60 animals) regained more coronary flow after ischaemia."
+        },
+        {
+          "b": "Animals.",
+          "t": "Rats with a ligated coronary artery: 24-hour mortality 15% versus 45% (20 per group). Rats with induced arrhythmia: fewer deaths. Old rats with M-1 sarcoma: slower tumour growth, more tumour-cell death (Levdik and Knyazkin 2009). Toxicity tests in 66 mice, 60 rats and 96 guinea pigs: none reported."
+        },
+        {
+          "b": "Russian human reports.",
+          "t": "None found. The 2014 clinical review covers Thymalin and Epithalamin only; the 2020 monograph lists Cardiogen in a table without data."
+        }
+      ]
+    },
+    "more": [
+      {
+        "title": "More: why rodent heart models are not a forecast",
+        "paras": [
+          "Countless agents that shrink infarcts in rats have failed in people, and these experiments were small, run by the patent holders and never replicated. The sarcoma finding means Cardiogen altered a tumour's blood supply, a reason for caution until someone understands how."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "No human safety data. The only toxicity testing is in the inventors' patent.",
+    "lede": "Nobody has given Cardiogen to people in a study. The patent reports no rodent toxicity, with a rise in guinea-pig white-cell counts at 3 and 6 months the authors did not treat as harmful.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "Not measurable: no trial has been run and no human report exists."
+    },
+    "unique": {
+      "title": "What is actually known",
+      "text": "Nothing beyond the absence of data. A peptide marketed for the heart has never had its effect on human heart rhythm, blood pressure or cardiac enzymes measured."
+    },
+    "more": [
+      {
+        "title": "More: what a trial would monitor for",
+        "paras": [
+          "Heart rhythm and blood pressure (the patent reports rhythm effects in rats); blood-vessel and tumour effects (the 2009 sarcoma finding); immune reactions."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "In rodents: fewer early deaths after an induced heart attack, smaller infarcts. In people: nothing measured."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms a doctor should see promptly",
+      "items": [
+        "Spreading redness, swelling or pus at an injection site, or fever and chills after an injection",
+        "Hives, swelling of the face or throat, trouble breathing",
+        "Yellowing of the skin or eyes, dark urine",
+        "New palpitations, breathlessness or ankle swelling"
+      ],
+      "note": "No trial has defined this peptide's own danger signs; these relate to an unverified product."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "No one has measured Cardiogen in a person's blood; no half-life or absorption figure exists for it in any species. There is nothing to build a curve from.",
+    "stats": [
+      {
+        "num": "None",
+        "lbl": "human half-life; never measured",
+        "src": "No PK study found, Oct 2026"
+      },
+      {
+        "num": "4",
+        "lbl": "amino acids long (Ala-Glu-Asp-Arg)",
+        "src": "Khavinson 2016"
+      },
+      {
+        "num": "0",
+        "lbl": "pharmacokinetic studies in any species",
+        "src": "PubMed, patents, institute publications and registries, Oct 2026"
+      }
+    ],
+    "explain": [
+      {
+        "b": "Why there is no chart.",
+        "t": "The simulator on other pages needs a measured half-life; none exists for Cardiogen."
+      },
+      {
+        "b": "Why the oral claim is contested.",
+        "t": "Pharmacologists expect peptides this short to be digested by gut and blood enzymes; the institute says they are absorbed intact. Nothing in people settles it."
+      }
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: what this page cannot tell you",
+        "paras": [
+          "What is in a product sold as Cardiogen, or what repeated use does: no independent analysis exists, and no study has followed anyone beyond a few weeks."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "No clinical trial, registered or unregistered, could be found.",
+    "lede": "Even within this family Cardiogen stands out: no Russian clinical report of any size. Its evidence is preclinical and mostly unpublished outside a patent.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: how the existing studies were run",
+        "paras": [
+          "Rats and guinea pigs were given the peptide before or after an induced heart injury and compared with untreated animals; old rats carrying a transplanted tumour were treated for ten days. None of this says anything about a person."
+        ]
+      }
+    ],
+    "running": {
+      "title": "No registered trials",
+      "items": [
+        "No clinical trial of Cardiogen on ClinicalTrials.gov or any registry we could find (October 2026).",
+        "No Russian clinical report, controlled or uncontrolled, in the institute's reviews or PubMed."
+      ]
+    },
+    "find": {
+      "text": "Search the registry for \"Cardiogen\" and its sequence \"AEDR\". We found no registered trial.",
+      "term": "Cardiogen",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "Not approved anywhere, including Russia.",
+    "items": [
+      {
+        "tag": "no",
+        "label": "Canada",
+        "text": "Never authorised by Health Canada as a medicine or natural health product (October 2026)."
+      },
+      {
+        "tag": "no",
+        "label": "United States",
+        "text": "Not FDA-approved; absent from FDA's 503A compounding category list of 14 May 2026."
+      },
+      {
+        "tag": "no",
+        "label": "Russia",
+        "text": "Not a registered medicine; not among the institute's six licensed products, and no Russian registration of any kind found."
+      }
+    ],
+    "cards": [
+      {
+        "kind": "warn",
+        "title": "What a \"bioregulator\" claim rests on",
+        "text": "The claim is that a peptide copied from an organ extract reaches that organ and switches on its genes. For Cardiogen the support is:",
+        "items": [
+          "Computer docking models, test-tube DNA work and cell cultures from one institute; no study has tracked one of these peptides into a human organ."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "crit",
+        "title": "What \"research use only\" means",
+        "text": "A \"research use only\" label is a legal device, not a safety rating. No regulator in Canada or the U.S. has checked what is in a vial sold as Cardiogen, and no toxicology or purity data have been filed in the West.",
+        "items": [
+          "Unlike Pinealon or Bronchogen, Cardiogen is not even registered as a food supplement in Russia as far as we could find."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "soft",
+        "title": "Symptoms to take to a doctor",
+        "text": "If any of these appear after using such a product, see a doctor and bring the product:",
+        "items": [
+          "Fever, chills, or a hot, swollen injection site",
+          "Hives, swelling of the face or throat, trouble breathing",
+          "Yellowing of the skin or eyes, dark urine",
+          "New palpitations, breathlessness or ankle swelling"
+        ],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: the Khavinson peptide family",
+        "paras": [
+          "Vladimir Khavinson (1946–2024) directed the St Petersburg Institute of Bioregulation and Gerontology, which made animal-organ extracts from the 1970s and then designed two- to four-amino-acid peptides from each extract's amino-acid make-up, naming them after target organs. Six products became licensed medicines in the USSR or Russia: Thymalin (1982), Thymogen and Epithalamin (1990), Prostatilen (1992), Cortexin and Retinalamin (1999). The synthetic organ-named peptides sold online are not among them, and none appears in an international trial registry."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "text": "Khavinson VKh et al. Peptide substance restoring myocardium function. US patent 7,662,789, 16 February 2010.",
+        "url": "https://patents.google.com/patent/US7662789"
+      },
+      {
+        "text": "Levdik NV, Knyazkin IV. Tumor-modifying effect of cardiogen peptide on M-1 sarcoma in senescent rats. Bull Exp Biol Med 2009;148:433–436.",
+        "url": "https://link.springer.com/article/10.1007/s10517-010-0730-9"
+      },
+      {
+        "text": "Khavinson VKh, Lin'kova NS, Tarnovskaya SI. Short peptides regulate gene expression. Bull Exp Biol Med 2016;162(2): sequence table and modelled DNA binding sites.",
+        "url": "https://khavinson.info/assets/files/skan/2016-khavinson_lin_tarn.pdf"
+      },
+      {
+        "text": "Khavinson VKh. Peptides, Genome, Aging. Russian Academy of Sciences, 2020: peptide table; the six institute products licensed as medicines.",
+        "url": "https://new.ras.ru/upload/iblock/333/b7wjz691315010b39o8ja61gl78y062c.pdf"
+      },
+      {
+        "text": "Khavinson VKh, Kuznik BI, Ryzhak GA. Peptide bioregulators: a new class of geroprotectors. Report 2: clinical trials. Adv Gerontol 2014;4(4):346–361.",
+        "url": "https://khavinson.info/assets/files/2014-Khavinson_Kuznik.pdf"
+      },
+      {
+        "text": "U.S. FDA, 503A bulk drug substances category list, updated 14 May 2026.",
+        "url": "https://fda.gov/media/94155/download"
+      }
+    ]
+  }
+}

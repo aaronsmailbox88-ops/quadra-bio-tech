@@ -1,0 +1,197 @@
+{
+  "id": "p21",
+  "name": "P21 (P021)",
+  "brands": "",
+  "maker": "Invented at the New York State Institute for Basic Research (Khalid Iqbal's group); licensed to Phanes Biotech",
+  "group": "research",
+  "pill": "Unapproved",
+  "overview": {
+    "headline": "A tiny piece of a nerve growth factor that improves memory in mice. It has never been given to a person.",
+    "lede": "P21, written P021 in the papers, was designed by Khalid Iqbal's laboratory on Staten Island, with Julie Blanchard among its co-developers, as an oral, brain-penetrating fragment of ciliary neurotrophic factor (CNTF). Since 2010 it has been tested only in mice and rats. No human study has been published or registered, and it is approved nowhere. Vials sold online as P21 are unapproved products with no human safety record.",
+    "stats": [
+      {"num": "0", "lbl": "human studies or registered trials", "src": "ClinicalTrials.gov and literature, checked 2025 to 2026"},
+      {"num": "~10", "lbl": "peer-reviewed rodent studies since 2010, nearly all from the inventing lab", "src": "ADDF Cognitive Vitality report, May 2025"},
+      {"num": "87% vs 41%", "lbl": "survival to week 71 in Alzheimer-model mice fed P21 from 3 months of age, versus untreated model mice", "src": "Baazaoui & Iqbal 2017"}
+    ],
+    "mechanism": {
+      "intro": "P21 imitates the active loop of CNTF, a protein that keeps neurons alive, without being a protein itself.",
+      "parts": [
+        {"name": "CNTF fragment", "text": "Four amino acids (Asp-Gly-Gly-Leu) copied from CNTF residues 148 to 151, the part that binds its receptor. Full-length CNTF failed as a drug because it caused weight loss and immune reactions."},
+        {"name": "Adamantylated glycine", "text": "A bulky chemical group added to the end to resist digestion and help the molecule reach the brain. The compound survives stomach acid in the test tube and was active when mixed into mouse food."},
+        {"name": "Downstream", "text": "In rodents it raises the growth factor BDNF, boosts the birth of new neurons in the hippocampus, and lowers abnormal tau. These are the proposed reasons memory improved."}
+      ]
+    },
+    "more": {
+      "title": "More: where it comes from",
+      "paras": [
+        "The Iqbal lab first published a longer version, Peptide 6, in 2010, then shortened it to P021 (Ac-DGGL-adamantylated Gly-NH2, about 578 daltons). The work was funded in part by the U.S. National Institutes of Health. A small company, Phanes Biotech, lists it as a candidate for Alzheimer's disease; it has announced no human trial.",
+        "Everything on this page comes from the peer-reviewed mouse and rat papers and an independent evidence review by the Alzheimer's Drug Discovery Foundation, listed under Status."
+      ]
+    }
+  },
+  "results": {
+    "headline": "Consistent benefits in mice bred to develop Alzheimer's changes. Nothing in people.",
+    "lede": "In the 3xTg-AD mouse, which carries three human Alzheimer mutations, P21 mixed into the food improved memory tests, restored new-neuron formation and reduced tau and amyloid changes. In aged rats it partly restored memory. The results come almost entirely from one laboratory and have not been replicated independently.",
+    "chart": null,
+    "stats": [
+      {"num": "6-12 mo", "lbl": "duration of feeding in the 2014 study that started treatment at 9 to 10 months of age, when the mice already had disease", "src": "Kazim et al. 2014, Neurobiology of Disease"},
+      {"num": "88 days", "lbl": "of oral dosing in aged rats restored hippocampal neurogenesis and improved, but did not normalise, water-maze performance", "src": "Bolognin et al. 2014"}
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {"b": "Alzheimer-model mice.", "t": "Treatment begun before disease (3 months) prevented memory loss and synapse loss and roughly doubled survival to 71 weeks (2017). Treatment begun after disease onset (9 to 10 months) still improved memory and lowered abnormal tau, but reduced soluble amyloid only late (2014)."},
+        {"b": "Down syndrome model.", "t": "In Ts65Dn mice, prenatal and early-life treatment rescued developmental delays and some memory deficits (2017)."},
+        {"b": "A negative result.", "t": "In CDKL5-deficiency model mice (2024), P21 did not restore memory, social behaviour or motor function."},
+        {"b": "Human.", "t": "None. No safety study, no dose-finding study, no trial. The inventors themselves write that more pharmacokinetic and pharmacodynamic work is needed before testing in patients."}
+      ]
+    },
+    "more": [
+      {
+        "title": "More: why mouse results so rarely survive the trip to people",
+        "paras": [
+          "Dozens of compounds have cured Alzheimer's-like changes in 3xTg-AD mice; none has become a treatment. The mice carry mutations that cause a rare inherited form of the disease, develop it in months rather than decades, and are tested with mazes rather than daily life. A promising mouse result is a reason to run a human trial, not a substitute for one."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "No human side-effect data exist. Mouse data look clean but are not a substitute.",
+    "lede": "The published rodent studies report no weight loss, tumours, pain behaviour or changes in anxiety or movement over up to 18 months of feeding. Unlike full-length CNTF, treated mice gained weight normally. Nothing is known about effects in humans.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "Not applicable. No person has received P21 in a study."
+    },
+    "unique": {
+      "title": "What has actually been reported",
+      "text": "Only the absence of obvious toxicity in rodents. Two theoretical concerns stand out: CNTF-like molecules can trigger immune reactions, and the inventors note that antibody formation has not been studied; and a compound meant to drive new neuron growth has not been checked for effects on cell growth elsewhere over a human lifespan. Neither has been tested."
+    },
+    "more": [
+      {
+        "title": "More: what the trials monitor for",
+        "paras": [
+          "If a human trial is ever run, regulators would expect animal toxicology at high doses first, then a small volunteer study tracking blood levels, antibodies to the peptide, weight, appetite, liver and kidney tests, and mood. None of this has been done or announced."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "In mice: better memory, more new neurons, more BDNF, less abnormal tau, longer survival. These are the intended effects, in the species studied."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms trial teams treat as urgent",
+      "items": [
+        "Swelling of the face or throat, hives or trouble breathing after a dose",
+        "Fever, spreading redness or pus at an injection site",
+        "Confusion, severe headache or a seizure",
+        "Unexplained weight change, persistent nausea or loss of appetite"
+      ],
+      "note": "Anyone with these symptoms should get medical care right away, whatever product they have used."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "P21 has never been measured in human blood. In mice, the inventors report a plasma half-life of more than 3 hours and stability in artificial stomach and gut fluid; that is why it could be given in food. How much reaches the human brain, or at what dose, is unknown, so the simulator is switched off.",
+    "stats": [
+      {"num": ">3 h", "lbl": "plasma half-life in mice, the only pharmacokinetic figure that exists", "src": "ADDF Cognitive Vitality report, citing the inventing lab"},
+      {"num": ">90%", "lbl": "of the compound still intact after 30 minutes in artificial gastric juice", "src": "Baazaoui & Iqbal 2017"},
+      {"num": "0", "lbl": "human pharmacokinetic measurements", "src": "Literature check, October 2026"}
+    ],
+    "explain": [
+      {"b": "Why mouse numbers do not transfer.", "t": "Mice clear most drugs far faster than people, and brain penetration differs by species. A human half-life could be shorter or much longer."},
+      {"b": "Why the mouse dose cannot be scaled.", "t": "The studies give P21 in feed at a fixed concentration, and the papers use inconsistent units. There is no agreed animal dose to convert, and conversion would in any case be a guess."},
+      {"b": "Why nothing here applies to products sold online.", "t": "They are sold as powders for injection. Every published study used oral dosing, and no analysis confirms what the powders contain."}
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: why there is no chart",
+        "paras": [
+          "The simulator needs a human half-life and time to peak. P21 has mouse figures only, and even those are reported in summary form by the inventors rather than in a dedicated pharmacokinetic paper."
+        ]
+      },
+      {
+        "title": "More: what a chart could not tell you anyway",
+        "paras": [
+          "Blood levels do not show whether a compound helps or harms. For P21 that question has only ever been asked in rodents."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "No human trial has been run, registered or announced.",
+    "lede": "The Alzheimer's Drug Discovery Foundation's May 2025 review found no human studies and no active ClinicalTrials.gov entry. An NIH-funded mouse study (R01AG057602) was the only ongoing research it identified.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: what a first human study would need",
+        "paras": [
+          "Formal toxicology in two species, a stable manufactured form, and FDA clearance of an investigational application. Then single rising doses in healthy volunteers under hospital monitoring, then a dose-finding study in patients with biomarker-confirmed early Alzheimer's disease, which the inventors say is the stage where a neurotrophic compound would most plausibly help. None of these steps has been publicly started."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials that have been run",
+      "items": [
+        "None in humans.",
+        "2010: Peptide 6, the longer precursor, improved memory and neurogenesis in normal adult mice (Li et al.).",
+        "2014: P21 in food from 9 to 10 months of age in 3xTg-AD mice improved memory, restored neurogenesis and lowered tau pathology (Kazim et al.); 88-day oral dosing in aged rats partly restored memory and BDNF (Bolognin et al.).",
+        "2017: P21 from 3 months to about 21 months in 3xTg-AD mice prevented synaptic and memory deficits and raised survival (Baazaoui & Iqbal); prenatal treatment rescued deficits in Down-syndrome-model mice (Kazim et al.).",
+        "2020 to 2021: prenatal and neonatal treatment in 3xTg-AD mice reduced later pathology and cognitive deficits (Wei et al.).",
+        "2024: no significant benefit in CDKL5-knockout mice (Mottolese et al.)."
+      ]
+    },
+    "find": {
+      "text": "There are no P21 trials anywhere. The registry search below will show if that changes; note that \"P21\" also matches unrelated studies, so look for CNTF or P021 in the title.",
+      "term": "P021",
+      "extra": {"label": "ADDF evidence review", "url": "https://www.alzdiscovery.org/uploads/cognitive_vitality_media/P021.pdf"}
+    }
+  },
+  "status": {
+    "headline": "Preclinical only. Approved nowhere, and not in any regulator's review process.",
+    "items": [
+      {"tag": "no", "label": "Canada", "text": "No Health Canada authorisation (no entry in the Drug Product Database, October 2026). Anything sold as P21 in Canada is an unauthorised drug."},
+      {"tag": "no", "label": "United States", "text": "Not approved and not under investigational review as far as public records show. P21 is not on the FDA's compounding bulk-substances list in any category (14 May 2026 version). Products sold for human use are unapproved new drugs."},
+      {"tag": "no", "label": "Elsewhere", "text": "No application, approval or trial in the EU, UK, Australia, New Zealand or Russia. Not named on WADA's 2026 Prohibited List."}
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "What \"research use only\" means",
+        "text": "P21 is a genuine research compound: its only legitimate use today is in laboratory animals. Vials sold online with a \"not for human consumption\" label are aimed at people who intend to inject them, and the label is a legal device, not a safety statement.",
+        "items": [
+          "No regulator checks the contents, purity or sterility. No published analytical method exists for buyers to verify a product.",
+          "There is no human dose, because no human has been dosed. Anyone using it is the first-in-human study, without the monitoring.",
+          "The inventors have said human testing must wait for further pharmacokinetic and safety work."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "warn",
+        "title": "Symptoms to take to a doctor",
+        "text": "Anyone who has used a product sold as P21 should see a doctor if they notice:",
+        "items": ["Hives, facial swelling or wheezing", "Fever, redness or swelling at an injection site", "Headache, confusion or mood change that does not settle", "Unexplained weight loss or gain"],
+        "note": "Bring the vial. Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: how a university compound ends up in vials online",
+        "paras": [
+          "Peptide sequences are published in papers and patents, and contract synthesis is cheap. Once a short peptide shows a striking result in mice, grey-market vendors can make and sell it within months, long before, and regardless of whether, anyone tests it in people. P21 is a textbook case: the published mouse work is real and careful; the products sold on its back have no connection to the inventing laboratory."
+        ]
+      }
+    ],
+    "sources": [
+      {"text": "Baazaoui N, Iqbal K. Prevention of dendritic and synaptic deficits and cognitive impairment with a neurotrophic compound. Alzheimer's Research & Therapy, 2017;9:45 (3xTg-AD mice fed P021 from 3 months; survival 87% vs 41% at week 71).", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5488423"},
+      {"text": "Iqbal K, Kazim SF, Bolognin S, Blanchard J. Shifting balance from neurodegeneration to regeneration of the brain: a novel therapeutic approach to Alzheimer disease and related neurodegenerative conditions. Neural Regeneration Research, 2014;9(16):1518-1519 (summarises Kazim et al. 2014, Neurobiology of Disease, and Bolognin et al. 2014).", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4192968"},
+      {"text": "Alzheimer's Drug Discovery Foundation, Cognitive Vitality report: P021 (independent evidence review; no human studies; mouse half-life; developer Phanes Biotech), updated 12 May 2025.", "url": "https://www.alzdiscovery.org/uploads/cognitive_vitality_media/P021.pdf"},
+      {"text": "SUNY Open Access Repository / Alzheimer's Research & Therapy, Prevention of dendritic and synaptic deficits and cognitive impairment with a neurotrophic compound (open-access record).", "url": "https://soar.suny.edu/entities/publication/9d312211-0969-4fdf-98cf-a9f002f6410b"},
+      {"text": "U.S. FDA, Bulk drug substances nominated for use in compounding under section 503A: category lists, updated 14 May 2026 (P021 not listed).", "url": "https://fda.gov/media/94155/download"},
+      {"text": "World Anti-Doping Agency, 2026 Prohibited List.", "url": "https://www.wada-ama.org/en/prohibited-list"}
+    ]
+  }
+}

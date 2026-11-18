@@ -1,0 +1,309 @@
+{
+  "id": "semax",
+  "name": "Semax",
+  "brands": "Semax 0.1% and 1% nasal drops (Russia)",
+  "maker": "Peptogen, from the Institute of Molecular Genetics, Russian Academy of Sciences",
+  "group": "approved",
+  "pill": "Approved (Russia only)",
+  "overview": {
+    "headline": "A Russian prescription nasal drop for stroke and cognitive complaints, built from a fragment of the stress hormone ACTH.",
+    "lede": "Semax is a seven-amino-acid peptide developed in Moscow. In Russia it is a prescription medicine: 1% drops for the acute phase of ischemic stroke and 0.1% drops for cognitive and other neurological complaints. No Western regulator has approved it. In July 2026 a U.S. FDA advisory committee voted to let pharmacies compound it, against the advice of FDA scientists; that has not yet changed its legal status.",
+    "stats": [
+      {
+        "num": "2",
+        "lbl": "Russian registrations: 0.1% drops (March 2025 certificate) and 1% drops (June 2025 certificate), both prescription-only",
+        "src": "Russian drug register, via Vidal"
+      },
+      {
+        "num": "~1,000",
+        "lbl": "stroke patients across 13 Russian studies from 1997 to 2023, none described as double-blind",
+        "src": "Spirin et al. 2024 review"
+      },
+      {
+        "num": "8 to 5",
+        "lbl": "FDA advisory committee vote on 24 July 2026 to recommend it for U.S. compounding; FDA staff advised against",
+        "src": "PCAC meeting, July 2026"
+      }
+    ],
+    "mechanism": {
+      "intro": "Semax copies a four-amino-acid piece of ACTH that has no hormone effect, with three amino acids added to slow its breakdown.",
+      "parts": [
+        {
+          "name": "ACTH(4-7)",
+          "text": "The Met-Glu-His-Phe core comes from adrenocorticotropic hormone but does not raise cortisol. It acts on melanocortin receptors in the brain."
+        },
+        {
+          "name": "Growth factors",
+          "text": "In rats, semax raises BDNF and other nerve growth factors in the hippocampus and changes gene activity after a stroke. These animal findings are the rationale for its use in people."
+        }
+      ]
+    },
+    "more": {
+      "title": "More: where it comes from",
+      "paras": [
+        "Semax (Met-Glu-His-Phe-Pro-Gly-Pro) was designed in the 1980s and 1990s at the Institute of Molecular Genetics in Moscow by Igor Ashmarin and Nikolai Myasoedov. Peptogen holds the Russian registrations. The 0.1% label covers cognitive problems after cerebrovascular disease, head injury or surgery, transient ischemic attacks, optic nerve atrophy and, in children aged 7 and over, attention deficit disorder. The 1% label covers moderate-to-severe ischemic stroke in the first days, alongside standard care.",
+        "Everything on this page comes from the Russian labels, Russian trial publications and reviews, and FDA and WADA documents listed under Status."
+      ]
+    }
+  },
+  "results": {
+    "headline": "Russian stroke studies report benefit. None was blinded.",
+    "lede": "Thirteen Russian studies in stroke, published between 1997 and 2023, compared semax drops plus standard care with standard care alone. They report faster recovery of neurological function. The studies were small, unblinded and published in Russian journals, and a Russian meta-analysis in 2018 called for a proper double-blind trial that has not happened.",
+    "chart": null,
+    "stats": [
+      {
+        "num": "3",
+        "lbl": "studies (181 patients) with comparable outcomes that could be pooled in the 2018 Russian meta-analysis",
+        "src": "Shmonin et al. 2018"
+      },
+      {
+        "num": "30 vs 80",
+        "lbl": "semax and control patients in the first published stroke study, 1997, which was not randomised or blinded",
+        "src": "Gusev et al. 1997"
+      }
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {
+          "b": "Stroke, human, Russian.",
+          "t": "The pooled analysis found lower neurological severity scores (NIHSS) at 10 to 21 days in moderate and severe stroke and better mobility scores, but gave no mortality data. A 2024 review by the drug's academic advocates lists 13 studies in 1,011 patients across four Russian cities and claims lower 30-day mortality, without describing randomisation or blinding."
+        },
+        {
+          "b": "Cognition and children.",
+          "t": "The 0.1% indications (memory complaints, attention deficit in children, optic nerve disease) rest on small Russian clinical series. We found no controlled trial for any of them."
+        },
+        {
+          "b": "Animal and lab.",
+          "t": "Claims about BDNF, neurogenesis, memory and anxiety come mostly from rat studies by the same Moscow institute."
+        },
+        {
+          "b": "Western review.",
+          "t": "In July 2026 FDA scientists concluded the data were insufficient to judge safety or effectiveness for cerebral ischemia, migraine or trigeminal neuralgia, and flagged immunogenicity concerns. The advisory committee voted the other way, 8 to 5."
+        }
+      ]
+    },
+    "more": [
+      {
+        "title": "More: why unblinded stroke trials mislead",
+        "paras": [
+          "Stroke recovery is measured with rating scales applied by clinicians. When the clinician knows who received the drug, scores drift in its favour; this is why every stroke drug approved in the West has had to show benefit in large double-blind trials. Semax has never been tested that way. The 2018 meta-analysis pooled only 181 patients and its authors themselves asked for a multicentre double-blind study."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "The label lists almost nothing. The trials barely looked.",
+    "lede": "The Russian labels name one side effect, mild nasal irritation with prolonged use, and a long list of exclusions: anxiety disorders, acute psychosis, a history of seizures, pregnancy and breastfeeding. No trial has compared side-effect rates against placebo.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "Not reported. The Russian stroke studies state that no patient worsened and tolerability was good, without giving rates."
+    },
+    "unique": {
+      "title": "What has actually been reported",
+      "text": "Nasal irritation on the label. The exclusions for anxiety, psychosis and seizures suggest the developers saw agitation or excitation in some patients, though no published data describe this. FDA staff in 2026 raised the possibility of an immune reaction to the peptide (immunogenicity), which has not been studied. People using injectable products sold online are using a route never tested in humans."
+    },
+    "more": [
+      {
+        "title": "More: what the trials monitor for",
+        "paras": [
+          "The stroke studies tracked neurological scales (NIHSS, Rankin, Barthel), EEG and evoked potentials, and in some cases blood pressure, heart rate and BDNF levels. No study reports systematic adverse-event collection, laboratory safety monitoring or follow-up beyond a few months."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "Russian reviews report improved mood and cognition scores alongside neurological recovery in stroke patients. These come from unblinded comparisons and cannot be separated from expectation."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms trial teams treat as urgent",
+      "items": [
+        "Sudden weakness, facial droop, trouble speaking or severe headache: stroke symptoms need emergency care, not a nasal spray",
+        "A seizure",
+        "Severe agitation, panic or psychotic symptoms",
+        "Swelling of the face or throat, hives or trouble breathing"
+      ],
+      "note": "Anyone with these symptoms should get medical care right away, whatever product they have used."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "No human blood-level study of semax has been published. The Russian label says 60 to 70% of a nasal dose is absorbed, that the peptide crosses into the brain within about 4 minutes and is broken down quickly, and that one dose acts for 20 to 24 hours through its breakdown fragments. None of these is a measured half-life or time to peak, so the simulator is switched off.",
+    "stats": [
+      {
+        "num": "60-70%",
+        "lbl": "share of a nasal dose the label says is absorbed",
+        "src": "Russian label (Peptogen), via Vidal"
+      },
+      {
+        "num": "20-24 h",
+        "lbl": "duration of effect claimed on the label, attributed to active fragments, not to the peptide itself",
+        "src": "Russian label, via Vidal"
+      },
+      {
+        "num": "0",
+        "lbl": "peer-reviewed human pharmacokinetic studies",
+        "src": "Our review, October 2026"
+      }
+    ],
+    "explain": [
+      {
+        "b": "Why the label numbers cannot drive a chart.",
+        "t": "They come from the manufacturer's registration file and have not been published. A half-life for the peptide itself in humans has never been reported."
+      },
+      {
+        "b": "Why \"active fragments\" matter.",
+        "t": "If the effect comes from breakdown products, blood levels of semax would say little about what is happening in the brain. That is the manufacturer's claim, not a tested finding."
+      },
+      {
+        "b": "Why nothing here applies to products sold online.",
+        "t": "The Russian studies used nasal drops at known strengths. Online powders are of unknown content and are usually injected."
+      }
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: why there is no chart",
+        "paras": [
+          "The simulator elsewhere in this app needs a measured half-life and time to peak from a published human study. Semax has neither. What exists is a set of label statements and rat data."
+        ]
+      },
+      {
+        "title": "More: what a chart could not tell you anyway",
+        "paras": [
+          "A blood-level curve does not show whether a drug works or is safe. For semax, the controlled trials that would show that have not been run."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "What the Russian trials looked like.",
+    "lede": "All published human studies were run in Russian hospitals with the nasal drops, mostly in acute stroke. None was double-blind, none used a placebo spray, and none is registered on an international registry.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: how side effects were handled inside the trials",
+        "paras": [
+          "Stroke patients were in hospital under neurologists, receiving standard care plus the drops for 5 to 21 days, with repeated neurological scoring. Side effects were noted clinically rather than collected on a schedule. None of this is a self-management plan, and nothing in these studies applies to injecting a product bought online."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials that have been run",
+      "items": [
+        "1997, Moscow: 30 acute stroke patients on semax plus standard care versus 80 on standard care. Faster recovery of motor function reported; not randomised or blinded (Gusev et al.).",
+        "2018 meta-analysis: 8 Russian studies (654 patients) identified; 3 (181 patients) pooled. Lower NIHSS at 10 to 21 days in moderate and severe stroke; better mobility; no mortality data; authors call for a double-blind trial (Shmonin et al.).",
+        "2024 review: 13 Russian studies, 1,011 patients, 1997 to 2023, in acute and recovery-phase stroke. All compared semax plus usual care with usual care; none described as double-blind (Spirin et al.).",
+        "No trial registered on ClinicalTrials.gov or the EU registry as of October 2026."
+      ]
+    },
+    "find": {
+      "text": "There are no semax trials open in Canada or the U.S. The public registry search below will show if that changes.",
+      "term": "semax",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "A prescription medicine in Russia. Unapproved everywhere else, with a U.S. compounding decision pending.",
+    "items": [
+      {
+        "tag": "ok",
+        "label": "Approved in Russia",
+        "text": "Peptogen holds two prescription-only registrations: 0.1% nasal drops (LP-No(009449)-(RG-RU), 26 March 2025) for cognitive and neurological indications, and 1% drops (LP-No(010596)-(RG-RU), 18 June 2025) for acute ischemic stroke."
+      },
+      {
+        "tag": "no",
+        "label": "Canada",
+        "text": "No Health Canada authorisation (no entry in the Drug Product Database, October 2026). Anything sold as semax in Canada is an unauthorised drug."
+      },
+      {
+        "tag": "soon",
+        "label": "United States: under review",
+        "text": "Not approved. The FDA placed semax in Category 2 of its compounding list in 2023, removed it from Category 2 in April 2026 pending advisory review, and on 24 July 2026 the Pharmacy Compounding Advisory Committee voted 8 to 5 (one abstention) to recommend adding it to the list of substances pharmacies may compound, for cerebral ischemia, migraine and trigeminal neuralgia. FDA scientists had recommended against. The vote is advisory; rulemaking could take a year or more, and as of October 2026 semax is in no category and may not be compounded."
+      },
+      {
+        "tag": "ok",
+        "label": "Sport",
+        "text": "Not on WADA's 2026 Prohibited List. Claims that it sits on WADA's Monitoring Program could not be confirmed."
+      }
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "What \"research use only\" means",
+        "text": "Vials and sprays sold online as semax are labelled \"not for human consumption\" so the seller can avoid drug law. The label does not change what the product is: outside Russia and a few neighbouring countries it is an unapproved drug.",
+        "items": [
+          "No regulator checks the contents, strength or sterility. Many products are powders for injection, a route never studied in people.",
+          "An advisory-committee vote in the U.S. is not an approval and does not make these products legal. If the FDA eventually lists semax, only licensed pharmacies could compound it on a doctor's prescription.",
+          "New Zealand's regulator proposed making ACTH analogues including semax prescription-only after parcels were intercepted at the border (Medsafe, June 2025)."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "warn",
+        "title": "Symptoms to take to a doctor",
+        "text": "Anyone who has used a product sold as semax should see a doctor if they notice:",
+        "items": [
+          "New or worsening anxiety, agitation or insomnia",
+          "A seizure or unexplained blackout",
+          "Hives, facial swelling or wheezing",
+          "Fever, redness or swelling at an injection site"
+        ],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: the July 2026 FDA advisory vote",
+        "paras": [
+          "The FDA's own reviewers told the committee that semax was not well characterised, that human safety and effectiveness data were insufficient, and that an immune reaction to the peptide was a plausible risk. Supporters pointed to years of use by practitioners and argued a listed substance would at least come from authorised suppliers; public-health groups opposed listing. The FDA now decides whether to start rulemaking; a follow-on meeting on five other peptides is due before the end of February 2027."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "text": "Vidal (Russian drug reference), Semax 0.1% nasal drops: registration LP-No(009449)-(RG-RU) of 26.03.2025, indications, contraindications, pharmacokinetics statements. Accessed October 2026.",
+        "url": "https://www.vidal.ru/drugs/semax__28676"
+      },
+      {
+        "text": "Vidal, Semax 1% nasal drops: registration LP-No(010596)-(RG-RU) of 18.06.2025, indication acute ischemic stroke. Accessed October 2026.",
+        "url": "https://www.vidal.ru/drugs/semax__37577"
+      },
+      {
+        "text": "Gusev EI, Skvortsova VI et al. Usage of neurospecific peptide substance semax in the acute period of ischemic insult. Neurology Bulletin (Kazan), 1997;29(3-4):32-38 (30 semax vs 80 control patients).",
+        "url": "https://journal.hep.com.cn/1027-4898/EN/10.17816/nb80150"
+      },
+      {
+        "text": "Shmonin AA et al. Meta-analysis: efficacy of semax in the acute period of ischemic stroke. Bulletin of Rehabilitation Medicine, 2018;(2):84 (8 studies identified, 3 pooled, n=181).",
+        "url": "https://www.vvmr.ru/en/archives/2018/2-84-aprel-2018/tekhnologii-vosstanovitelnoy-meditsiny-i-meditsinskoy-reabilitatsii/2018-84-metaanaliz-effektivnost-semaksa-v-ostrom-periode-ishemicheskogo-insulta.html"
+      },
+      {
+        "text": "Spirin NN, Fedorov VN, Vdovichenko VP. Place of the oligopeptide Met-Glu-His-Phe-Pro-Gly-Pro in the therapy and rehabilitation of patients with ischemic stroke (review of 13 Russian studies, 1,011 patients). Zh Nevrol Psikhiatr Im S S Korsakova, 2024;124(8-2):56-63.",
+        "url": "https://www.mediasphera.ru/issues/zhurnal-nevrologii-i-psikhiatrii-im-s-s-korsakova-2/2024/8-2/1199772982024082056"
+      },
+      {
+        "text": "Bass, Berry & Sims, FDA advisory committee recommends six peptides for compounding (PCAC votes and FDA staff findings on semax and emideltide), July 2026.",
+        "url": "https://bassberry.com/news/fda-advisory-committee-recommends-six-peptides-for-compounding-what-the-evaluation-criteria-tell-us-about-the-road-ahead/"
+      },
+      {
+        "text": "McDermott Will & Schulte, PCAC backs majority of peptides in two-day public meeting (vote counts, next steps), July 2026.",
+        "url": "https://www.mcdermottlaw.com/insights/bulk-list-bound-pcac-backs-majority-of-peptides-in-two-day-public-meeting/"
+      },
+      {
+        "text": "U.S. FDA, Bulk drug substances nominated for use in compounding under section 503A: category lists, updated 14 May 2026.",
+        "url": "https://fda.gov/media/94155/download"
+      },
+      {
+        "text": "Medsafe (New Zealand), Classification of unscheduled peptides: submission to the Medicines Classification Committee (ACTH analogues including semax and adamax), June 2025.",
+        "url": "https://medsafe.govt.nz/Profs/class/Agendas/Agen74/5.7Peptides.pdf"
+      },
+      {
+        "text": "World Anti-Doping Agency, 2026 Prohibited List (semax not listed).",
+        "url": "https://www.wada-ama.org/en/prohibited-list"
+      }
+    ]
+  }
+}

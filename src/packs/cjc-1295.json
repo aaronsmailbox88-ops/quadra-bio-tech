@@ -1,0 +1,214 @@
+{
+  "id": "cjc-1295",
+  "name": "CJC-1295",
+  "brands": "",
+  "maker": "ConjuChem",
+  "group": "research",
+  "pill": "Unapproved",
+  "overview": {
+    "headline": "A week-long copy of the hormone that tells the pituitary to make growth hormone.",
+    "lede": "CJC-1295 was built by ConjuChem, a Montreal biotech, by attaching a modified fragment of growth hormone-releasing hormone (GHRH) to a chemical anchor that binds blood albumin, so one injection keeps working for days. Early human studies showed large, lasting rises in GH and IGF-1. Development stopped in 2006 after a participant died in a Phase 2 trial, and it has never been approved anywhere. It is now sold online as a \"research chemical\", usually blended with ipamorelin.",
+    "stats": [
+      {"num": "5.8–8.1 d", "lbl": "half-life measured in healthy adults, against minutes for natural GHRH", "src": "Teichman et al., JCEM 2006"},
+      {"num": "0", "lbl": "approvals anywhere; the only Phase 2 trial was halted in July 2006", "src": "ConjuChem, 2006"},
+      {"num": "2005", "lbl": "year the molecule was first described, in rats", "src": "Jetté et al., Endocrinology 2005"}
+    ],
+    "mechanism": {
+      "intro": "It is GHRH with two changes: a tougher backbone and an anchor to albumin.",
+      "parts": [
+        {"name": "GHRH (1-29)", "text": "The first 29 amino acids of growth hormone-releasing hormone are enough to switch on the GHRH receptor in the pituitary. Four amino acids are swapped so the peptide resists the enzymes that destroy natural GHRH within minutes."},
+        {"name": "Drug Affinity Complex (DAC)", "text": "A reactive group on the end of the peptide bonds permanently to albumin, the most abundant protein in blood, after injection. The peptide then circulates for as long as albumin does, which is why its half-life is measured in days rather than minutes."},
+        {"name": "GH and IGF-1", "text": "Continuous stimulation raised average GH 2- to 10-fold and IGF-1 1.5- to 3-fold in healthy adults. A separate study found GH still came out in pulses, the pattern the body normally uses."}
+      ]
+    },
+    "more": {
+      "title": "More: the name confusion",
+      "paras": [
+        "Vendors sell two different things under this name. \"CJC-1295 with DAC\" is the ConjuChem molecule described on this page. \"CJC-1295 without DAC\" or \"Mod GRF 1-29\" is the modified GHRH fragment alone, with no albumin anchor; it lasts minutes, not days, and has no published human trials under either name.",
+        "ConjuChem's development name was DAC:GRF. The company tested it for fat accumulation in people with HIV and listed growth hormone deficiency as a second target, then stopped. ConjuChem later wound down, and no company has taken the molecule forward.",
+        "Everything on this page comes from the peer-reviewed papers, contemporary news reports of the trial halt, and regulators' documents listed under the Status tab. Vendor websites were not used for anything except the fact that the product is being sold."
+      ]
+    }
+  },
+  "results": {
+    "headline": "It did what it was designed to do to hormone levels. Whether that helps anyone was never shown.",
+    "lede": "Three published human studies, all in healthy volunteers, measured hormones after one or a few injections. The only trial that asked a clinical question, fat loss in people with HIV, was stopped before it produced results.",
+    "chart": null,
+    "stats": [
+      {"num": "2–10×", "lbl": "rise in average GH, lasting 6 days or more after a single injection", "src": "Teichman 2006, healthy adults aged 21–61"},
+      {"num": "up to 28 d", "lbl": "how long IGF-1 stayed above baseline after two or three weekly or fortnightly doses", "src": "Same paper, second study"}
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {"b": "In people: hormones.", "t": "Two placebo-controlled dose-ranging studies (28 and 49 days) found dose-dependent GH increases lasting at least 6 days, and IGF-1 increases of 1.5- to 3-fold lasting 9 to 11 days after one injection. The authors called 30 and 60 μg/kg \"relatively well tolerated\", wording that implies the higher doses were less so."},
+        {"b": "In people: pulses preserved.", "t": "In a 2006 study in healthy volunteers, GH kept its normal pulsatile pattern during continuous stimulation, with a higher baseline and larger pulses rather than a flat line."},
+        {"b": "In people: no clinical outcome.", "t": "The Phase 2 trial in 192 people with HIV-related abdominal fat was halted in July 2006 and never reported fat, metabolic or quality-of-life results."},
+        {"b": "In animals: growth.", "t": "In mice lacking GHRH, once-daily CJC-1295 normalised growth (2006). In rats it raised GH and IGF-1 for days (2005). None of this was tested for muscle, fat or ageing outcomes in people."},
+        {"b": "Never studied in people.", "t": "Fat loss in healthy adults, muscle gain, sleep, injury recovery and \"anti-ageing\" use have no human trial data."}
+      ]
+    },
+    "more": [
+      {
+        "title": "More: what the Phase 2 trial was testing",
+        "paras": [
+          "People with HIV on long-term treatment can build up fat deep in the abdomen. GH-axis drugs reduce it, and a related GHRH analogue, tesamorelin, later won approval for exactly this use. ConjuChem's trial randomised 192 participants at sites in North and South America to weekly injections on a low-dose schedule (60, 90, then 120 μg/kg), a high-dose schedule (60, 120, then 240 μg/kg) or placebo, with three weeks of escalation and nine more weeks of treatment.",
+          "The trial stopped on July 17, 2006 after a participant died at a site in Argentina. No efficacy results were released. The question it asked was answered instead by tesamorelin, which has its own page."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "No placebo-controlled side-effect rates exist. One death ended the program.",
+    "lede": "The published volunteer studies reported no serious adverse reactions and described the lower doses as better tolerated than the higher ones, without a rate table. The Phase 2 trial was stopped after a death. Long-term safety has never been studied.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "Not reported. The volunteer studies lasted up to 49 days with at most three doses, and the Phase 2 trial ended before analysis."
+    },
+    "unique": {
+      "title": "The 2006 death",
+      "text": "In July 2006 a participant in ConjuChem's Phase 2 trial died after enrolling at a site in Argentina. The company halted the study and in August 2006 released its investigation: the attending physician considered the most likely cause to be undiagnosed coronary artery disease, with a ruptured plaque blocking an artery, and judged it unrelated to the drug. ConjuChem nevertheless did not restart development. Whether CJC-1295 contributed is unknown, and no later trial has tested the drug in anyone."
+    },
+    "more": [
+      {
+        "title": "More: what the trials monitored for",
+        "paras": [
+          "The volunteer studies tracked GH, IGF-1, blood chemistry, vital signs and injection sites after each dose, over 28 to 49 days.",
+          "Class effects. Drugs that raise GH and IGF-1 for days at a time can cause fluid retention (swelling, joint and muscle aches, carpal tunnel symptoms), higher blood sugar and insulin resistance, headache and flushing. The approved GHRH analogue tesamorelin carries label warnings for fluid retention, glucose intolerance, raised IGF-1 and hypersensitivity, and is contraindicated in active cancer because IGF-1 promotes cell growth. CJC-1295 produces larger and longer IGF-1 rises than tesamorelin, and nobody has measured what that does over months.",
+          "A week-long half-life cuts both ways: a dose cannot be undone. If a side effect appears, the drug keeps acting for weeks."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "None established. The hormone rises were real, but no trial measured body composition, strength, sleep or any health outcome. The animal growth data cannot be carried over to adults."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms that need urgent care",
+      "items": [
+        "Chest pain or pressure, shortness of breath, a racing or irregular heartbeat, fainting",
+        "Swelling of the face, lips or throat, hives, trouble breathing after an injection",
+        "Rapid swelling of the hands, feet or legs, or sudden weight gain",
+        "Unusual thirst, frequent urination, blurred vision",
+        "Fever, spreading redness or pus at an injection site"
+      ],
+      "note": "Anyone with these symptoms should get medical care right away. Because the drug lasts for days, tell the clinician what was used and when."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "CJC-1295 has a measured human half-life, 5.8 to 8.1 days, from ConjuChem's 2006 volunteer studies. But the published abstract does not give the time to peak concentration, and the full dataset was never released after development stopped, so the simulator is not run. The numbers that are known are below.",
+    "stats": [
+      {"num": "5.8–8.1 d", "lbl": "half-life in healthy adults, thanks to the albumin anchor", "src": "Teichman et al., JCEM 2006"},
+      {"num": "≥6 d", "lbl": "how long average GH stayed raised after one injection", "src": "Same paper"},
+      {"num": "~5 wks", "lbl": "to clear about 97% after the last dose, at an 8-day half-life", "src": "Five half-lives"}
+    ],
+    "explain": [
+      {"b": "Why one dose lasts a week.", "t": "Natural GHRH is destroyed within minutes. Bonded to albumin, CJC-1295 is protected and is cleared only as albumin itself turns over, which takes weeks."},
+      {"b": "Why weekly doses build up.", "t": "With a half-life near the dosing interval, each injection lands on top of roughly half the previous one. In the second study, IGF-1 stayed above baseline for up to 28 days after the last of two or three doses."},
+      {"b": "Why there is no absorption curve.", "t": "The paper's abstract reports the half-life but not the time to peak, and the full data were never published. Without them, the shape of the first days after an injection is unknown."}
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: what the 2006 studies measured",
+        "paras": [
+          "Healthy adults aged 21 to 61 received single subcutaneous injections at four ascending dose levels in one study, and two or three weekly or fortnightly injections in a second. Blood was sampled for CJC-1295, GH and IGF-1 over 28 and 49 days. The half-life estimate came from the decline in drug concentration; GH and IGF-1 rose in proportion to dose.",
+          "A separate study sampled GH repeatedly around the clock before and after a single dose and found the pulsatile pattern intact."
+        ]
+      },
+      {
+        "title": "More: what this tab cannot tell you",
+        "paras": [
+          "It cannot describe products sold online as CJC-1295. Testing of seized products in Norway (2010) and Denmark (2007 to 2013) found CJC-1295 in unlabelled or mislabelled vials, and vendors mix it with ipamorelin at ratios no trial has used. A 2025 recall of compounded CJC-1295 syringes for lack of sterility assurance shows the quality problem is not limited to anonymous sellers.",
+          "A hormone level is not a benefit, and with this molecule it is also not reversible on a day's notice. The trials that would have shown what weeks of raised IGF-1 do were never finished."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "Three published volunteer studies, one halted Phase 2 trial, and nothing since 2006.",
+    "lede": "CJC-1295's entire human record was produced by ConjuChem in the mid-2000s. No trial has been registered in the twenty years since.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: how the volunteer studies were run",
+        "paras": [
+          "Both dose-ranging studies were randomised, double-blind and placebo-controlled, run at two research sites. Participants were healthy adults aged 21 to 61. The first gave a single injection at one of four ascending doses and followed people for 28 days; the second gave two or three injections a week or two apart and followed people for 49 days. Hormone sampling, blood tests and adverse-event checks were scheduled through the follow-up.",
+          "The Phase 2 trial followed the pattern of other GH-axis trials in HIV: a three-week dose escalation, then a fixed weekly dose for nine weeks, with a placebo group and blinding. It was stopped for safety review and never resumed. None of this describes a regimen for use outside a trial."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials that were run",
+      "items": [
+        "ConjuChem, two placebo-controlled dose-ranging studies in healthy adults (published Teichman et al., 2006). Outcome: GH up 2- to 10-fold for 6 or more days, IGF-1 up 1.5- to 3-fold for 9 to 11 days, half-life 5.8 to 8.1 days, no serious adverse reactions.",
+        "ConjuChem, GH-pulsatility study in healthy volunteers (published Ionescu and Frohman, 2006). Outcome: GH pulses preserved during continuous stimulation.",
+        "ConjuChem, Phase 2 in HIV-associated abdominal fat accumulation (2006): 192 participants, 12-week design. Outcome: halted July 17, 2006 after a participant death; no results released; development ended.",
+        "Growth hormone deficiency was listed as a second target; no trial result was ever reported. No trial of CJC-1295 has been registered since 2006."
+      ]
+    },
+    "find": {
+      "text": "No trials are recruiting and none is planned. Registry searches return only the historical record.",
+      "term": "CJC-1295",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "Development ended in 2006. Not approved anywhere, not legal to compound, banned in sport.",
+    "items": [
+      {"tag": "no", "label": "Canada", "text": "Health Canada has never authorized a product containing CJC-1295. ConjuChem, the Montreal company that invented it, stopped development in 2006. Any injectable sold in Canada as CJC-1295 is an unauthorized drug (status as of October 2026)."},
+      {"tag": "no", "label": "United States", "text": "Not FDA-approved. In September 2023 the FDA placed CJC-1295 in category 2 of its compounding bulk-substances list, for substances that may present significant safety risks, so licensed pharmacies cannot legally compound it; it remained ineligible in 2026. In 2025 a Colorado pharmacy's compounded CJC-1295 syringes were recalled for lack of sterility assurance (Class II, June 2025)."},
+      {"tag": "no", "label": "Sport", "text": "Prohibited at all times under WADA's S2 class, which names GHRH analogues including CJC-1295. 2026 Prohibited List. Anti-doping laboratories have identified it in seized products since 2010."},
+      {"tag": "no", "label": "Pipeline", "text": "None. No company has taken over the molecule since ConjuChem stopped in 2006."}
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "What \"research use only\" means",
+        "text": "The label is a legal disclaimer, not a quality standard. Sellers use it to argue the product is not a drug. It means nobody has checked what is in the vial, how strong it is, whether it is sterile, or which molecule it actually contains.",
+        "items": [
+          "Most online products are \"CJC-1295/ipamorelin\" blends. No human study has ever tested the two together, and the FDA placed both in the same risk category in 2023.",
+          "\"CJC-1295 without DAC\" is a different, short-acting molecule. Buyers often do not know which they have, and neither has completed a clinical program.",
+          "Testing of confiscated vials in Norway (2010) and Denmark (2007 to 2013) found CJC-1295 in products sold without labels or under other names."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "warn",
+        "title": "If someone has already used an unapproved product",
+        "text": "Stop, keep the vial and packaging, and see a doctor. Ask for a check of blood sugar and IGF-1, and mention any of these:",
+        "items": [
+          "Chest pain, shortness of breath, a racing or irregular heartbeat",
+          "Swelling in the hands, feet or face, or new joint pain",
+          "Thirst, frequent urination, blurred vision",
+          "Fever or a hot, red, painful injection site"
+        ],
+        "note": "Because the drug acts for weeks, give the date of the last injection. Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: why tesamorelin succeeded where CJC-1295 stopped",
+        "paras": [
+          "Both are GHRH analogues tested for the same HIV-related fat problem at the same time. Theratechnologies' tesamorelin, which lasts under an hour in the blood and is injected daily, completed two Phase 3 trials and was approved by the FDA in 2010. ConjuChem's week-long molecule never got past Phase 2. That is not evidence that one is safer than the other; it is that one finished its trials and the other did not, which is exactly the information a buyer of either \"research\" product does not have."
+        ]
+      }
+    ],
+    "sources": [
+      {"text": "Teichman SL et al. Prolonged stimulation of growth hormone (GH) and insulin-like growth factor I secretion by CJC-1295, a long-acting analog of GH-releasing hormone, in healthy adults. Journal of Clinical Endocrinology & Metabolism 2006;91(3):799–805 (half-life 5.8–8.1 days; GH 2- to 10-fold for 6+ days; IGF-1 1.5- to 3-fold for 9–11 days).", "url": "https://pubmed.ncbi.nlm.nih.gov/16352683/"},
+      {"text": "Ionescu M, Frohman LA. Pulsatile secretion of growth hormone (GH) persists during continuous stimulation by CJC-1295, a long-acting GH-releasing hormone analog. Journal of Clinical Endocrinology & Metabolism 2006;91(12):4792–4797.", "url": "https://pubmed.ncbi.nlm.nih.gov/17018654/"},
+      {"text": "Jetté L et al. Human growth hormone-releasing factor (hGRF)1-29-albumin bioconjugates activate the GRF receptor on the anterior pituitary in rats: identification of CJC-1295 as a long-lasting GRF analog. Endocrinology 2005;146(7):3052–3058.", "url": "https://pubmed.ncbi.nlm.nih.gov/15817669/"},
+      {"text": "Alba M et al. Once-daily administration of CJC-1295, a long-acting growth hormone-releasing hormone (GHRH) analog, normalizes growth in the GHRH knockout mouse. American Journal of Physiology: Endocrinology and Metabolism 2006;291(6):E1290–E1294.", "url": "https://pubmed.ncbi.nlm.nih.gov/16822960/"},
+      {"text": "aidsmap, Lipodystrophy study halted after patient death (ConjuChem Phase 2, 192 participants, weekly dosing schedules, stopped July 17, 2006). July 2006.", "url": "https://www.aidsmap.com/news/jul-2006/lipodystrophy-study-halted-after-patient-death"},
+      {"text": "ConjuChem, statement on the investigation into the patient death in the DAC:GRF (CJC-1295) lipodystrophy study, August 2006 (reproduced by NATAP); FDAnews, ConjuChem reveals findings of patient death investigation, August 10, 2006.", "url": "https://www.fdanews.com/articles/61624-conjuchem-reveals-findings-of-patient-death-investigation"},
+      {"text": "FDA, Bulk drug substances nominated for use in compounding under section 503A (CJC-1295 and ipamorelin placed in category 2, September 2023).", "url": "https://www.fda.gov/drugs/human-drug-compounding/bulk-drug-substances-nominated-use-compounding-under-section-503a-federal-food-drug-and-cosmetic-act"},
+      {"text": "World Anti-Doping Agency, The 2026 Prohibited List, section S2 (GHRH analogues, e.g. CJC-1295, sermorelin, tesamorelin).", "url": "https://www.wada-ama.org/en/prohibited-list"},
+      {"text": "Pharmacy Learning Network (HMP Global), FDA recalls CJC-1295 injectable due to sterility concerns: Thrive Health Solutions, Colorado, recall initiated May 21, 2025, Class II June 20, 2025. July 2, 2025.", "url": "https://www.hmpgloballearningnetwork.com/site/pln/news/fda-recalls-cjc-1295-injectable-due-sterility-concerns"},
+      {"text": "Henninge J et al. Identification of CJC-1295, a growth-hormone-releasing peptide, in an unknown pharmaceutical preparation. Drug Testing and Analysis 2010. Hartvig RA et al. Identification of peptide and protein doping related drug compounds confiscated in Denmark between 2007–2013. Scandinavian Journal of Forensic Science 2014.", "url": "https://pubmed.ncbi.nlm.nih.gov/21204297/"}
+    ]
+  }
+}

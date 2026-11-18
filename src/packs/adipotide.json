@@ -1,0 +1,187 @@
+{
+  "id": "adipotide",
+  "name": "Adipotide (FTTP, prohibitin-TP01)",
+  "brands": "",
+  "maker": "MD Anderson Cancer Center (Arap and Pasqualini labs); licensed to Ablaris Therapeutics, an Arrowhead subsidiary",
+  "group": "research",
+  "pill": "Unapproved",
+  "overview": {
+    "headline": "A peptide designed to starve fat tissue of its blood supply. It melted fat in monkeys, strained their kidneys, and its only human trial was stopped without results.",
+    "lede": "Adipotide is a 'peptidomimetic' from MD Anderson Cancer Center: a homing sequence that sticks to the blood vessels feeding white fat, joined to a cell-killing sequence. In 2011 it caused obese rhesus monkeys to lose about 11% of their body weight in four weeks. A Phase 1 trial in men with advanced prostate cancer and obesity opened in 2012 and was terminated; no results were published and development was discontinued by 2019. Nothing is approved, and the powder sold online as adipotide is an unapproved product.",
+    "stats": [
+      {"num": "~11%", "lbl": "average weight loss in obese monkeys after 28 daily injections (individual range -7.4% to -14.7%)", "src": "Barnhart et al., Science Translational Medicine 2011; MD Anderson release"},
+      {"num": "1", "lbl": "human trial, Phase 1, terminated; no results published", "src": "NCT01262664; AdisInsight, January 2019"},
+      {"num": "Kidney", "lbl": "the main side effect in monkeys: dose-dependent injury to the kidney's tubules, mostly reversible", "src": "Barnhart et al. 2011"}
+    ],
+    "mechanism": {
+      "intro": "A homing peptide finds the blood vessels of fat; a second peptide kills them.",
+      "parts": [
+        {"name": "Targeting half", "text": "A short cyclic sequence binds two proteins, prohibitin and annexin A2, that are displayed on the blood vessels serving white fat. It aims at the vessels, not the fat cells."},
+        {"name": "Killing half", "text": "A proapoptotic sequence, D(KLAKLAK)2, disrupts mitochondria inside the vessel cell and triggers its death. Starved of blood, the fat tissue shrinks."},
+        {"name": "The catch", "text": "Prohibitin and annexin A2 are not unique to fat vessels, and the kidney's tubules reabsorb peptides. In the monkey studies the kidneys took dose-dependent damage."}
+      ]
+    },
+    "more": {
+      "title": "More: from cancer lab to 'fat zapper'",
+      "paras": [
+        "The approach came from cancer research on targeting tumour blood vessels. The same labs showed in 2004 that fat vessels carry a distinct marker, built a peptide to attack them, and reported about 30% weight loss in obese mice. The 2011 monkey study was the step before people. Sources are listed under the Status tab."
+      ]
+    }
+  },
+  "results": {
+    "headline": "Fat loss in monkeys. No human result was ever reported.",
+    "lede": "There is no placebo-controlled human trial, so there is no chart. The 2011 primate study is the only efficacy evidence beyond mice.",
+    "chart": null,
+    "stats": [
+      {"num": "-38.7%", "lbl": "total body fat by DEXA scan in treated monkeys over the study (controls -14.8%)", "src": "Barnhart et al. 2011"},
+      {"num": "-36%", "lbl": "insulin response during a glucose test relative to controls, i.e. better insulin sensitivity", "src": "Barnhart et al. 2011"}
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {"b": "Mice (2004).", "t": "Obese mice lost about 30% of body weight over four weeks as the vessels in their fat were destroyed (Kolonin et al., cited in the 2011 paper)."},
+        {"b": "Monkeys (2011).", "t": "Ten obese rhesus monkeys treated daily for 28 days lost 7.4% to 14.7% of body weight (five controls: +1.0% to -3.5%); abdominal fat on MRI fell 27% by the end of a four-week recovery period; insulin sensitivity improved; fasting glucose was normal throughout. Weight kept falling for three weeks after the last dose, then began to rebound."},
+        {"b": "Humans.", "t": "The Phase 1 trial (NCT01262664) at MD Anderson enrolled men with metastatic, castration-resistant prostate cancer and obesity for a single 28-day cycle, with weight change as a secondary aim. It started in May 2012, was later terminated at the investigators' request, and no results were published."}
+      ]
+    },
+    "more": [
+      {
+        "title": "More: why the human trial was in cancer patients",
+        "paras": [
+          "A first-in-human study of a cell-killing peptide with known kidney effects could not ethically start in healthy people. Men with advanced prostate cancer, in whom obesity worsens outcomes, were chosen so that any benefit would be weighed against a serious disease. Arrowhead's 2014 annual report said MD Anderson was funding the trial and seeking up to 39 patients; Arrowhead itself had stopped spending on the programme."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "Kidney injury in every monkey study. Human tolerability was never reported.",
+    "lede": "Adipotide is built to kill cells. Its side-effect profile in primates was dominated by the kidney, and the human trial that would have tested this ended without publishing.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "Unknown. The Phase 1 trial never reported, and the reason for its termination has not been published beyond 'at the principal investigators' request'."
+    },
+    "unique": {
+      "title": "Kidney toxicity",
+      "text": "In monkeys, adipotide raised serum creatinine in a dose-dependent way, caused glucose and protein to leak into the urine, lowered blood phosphate and potassium, and produced cell death and regeneration in kidney tubules on microscopy, scored minimal to moderate at the highest dose. Most changes reversed within 28 days of stopping, but some animals had residual creatinine rises and glucose in urine. The investigators called it 'relatively mild, predictable and reversible renal injury'. Whether that holds in humans is exactly what the Phase 1 trial was meant to establish, and it never reported."
+    },
+    "more": [
+      {
+        "title": "More: what the trial monitored for",
+        "paras": [
+          "The Phase 1 trial aimed to find a maximum tolerated dose over five dose levels, with pharmacokinetics, weight change and cancer progression as outcomes; kidney function would have been the central safety measure. None of the results have been made public."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "In monkeys, better insulin sensitivity accompanied the fat loss, without a change in fasting glucose. No human equivalent exists."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms doctors treat as urgent",
+      "items": [
+        "Swelling of the ankles, legs or face, or a sharp drop in urine output",
+        "Foamy urine, or urine that is dark or bloody",
+        "Nausea, vomiting, confusion or extreme tiredness (possible kidney failure)",
+        "Fever, spreading redness or pus at an injection site",
+        "Swelling of the face or throat, trouble breathing"
+      ],
+      "note": "Anyone with these symptoms should get medical care right away and ask for kidney blood and urine tests."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "No human pharmacokinetic data exist. The Phase 1 trial listed pharmacokinetics among its aims but never reported. In monkeys the effect outlasted treatment by about three weeks, which reflects the time fat tissue takes to shrink after its vessels die, not the peptide's persistence in blood.",
+    "stats": [
+      {"num": "0", "lbl": "human pharmacokinetic results published", "src": "NCT01262664 aims; no publication"},
+      {"num": "28 days", "lbl": "planned treatment cycle in the Phase 1 trial, mirroring the monkey study", "src": "Arrowhead release; Barnhart 2011"},
+      {"num": "3 wks", "lbl": "how long monkeys kept losing weight after the last dose before rebounding", "src": "MD Anderson release, November 2011"}
+    ],
+    "explain": [
+      {"b": "Why there is no chart.", "t": "The simulator needs a human half-life and a tested dose range. Neither exists."},
+      {"b": "Why 'reversible in monkeys' is not reassurance.", "t": "The monkeys had daily blood and urine checks and a fixed stopping point. Someone injecting an unverified powder at home has neither."}
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: what this page cannot tell you",
+        "paras": [
+          "It cannot tell you what a vial sold as adipotide contains, what dose damages a human kidney, or whether weight loss would occur at a dose the kidneys tolerate. Those are the questions the terminated trial left open."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "One human trial, started 2012, terminated, never reported.",
+    "lede": "Adipotide's development ended in Phase 1. Here is what is known.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: what happened to the programme",
+        "paras": [
+          "Arrowhead Research announced the first patient treated in 2012; its 2014 annual report described recruitment as ongoing, funded by MD Anderson. Drug-pipeline databases recorded no activity after 2016, the trial's termination at the investigators' request, and development discontinued in January 2019. No company has picked it up."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials that have been run",
+      "items": [
+        "Phase 1, NCT01262664, MD Anderson Cancer Center: 'A first-in-man, Phase I evaluation of a single cycle of prohibitin targeting peptide 1 in patients with metastatic prostate cancer and obesity'. Dose escalation over up to five levels; started May 2012; terminated at the investigators' request; no results published; development discontinued (recorded January 2019).",
+        "No other human study has been registered."
+      ]
+    },
+    "find": {
+      "text": "No adipotide trial exists to join. The registry term below shows the terminated study record.",
+      "term": "prohibitin targeting peptide",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "Not approved anywhere. Development abandoned in Phase 1.",
+    "items": [
+      {"tag": "no", "label": "Canada: not authorized", "text": "Health Canada has not authorized any adipotide product. It regulates injectable peptides as prescription drugs, said in April 2026 that unauthorized injectable peptide drugs are illegal in Canada, and in July 2026 obtained a permanent injunction against the Quebec seller Canlab Research."},
+      {"tag": "no", "label": "US: not approved", "text": "The FDA has never approved adipotide. The only legal human use was the MD Anderson Phase 1 trial, now terminated. Adipotide does not appear on the FDA's Category 2 or withdrawn-nomination lists for compounding (April 2026), so no pharmacy has a basis to compound it. Sold for people, it is an unapproved drug; the FDA's August 24, 2026 warning letters rejected 'research use only' disclaimers."},
+      {"tag": "no", "label": "Sport: prohibited", "text": "Adipotide is not named on the 2026 WADA Prohibited List, but as a substance with no approval anywhere for human use it falls under the S0 clause, prohibited at all times."}
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "What 'research use only' means",
+        "text": "Vials sold as adipotide carry 'for research use only' labels. That describes a product meant for laboratory work, not people. It does not mean the contents were tested, and it does not make the sale legal once the seller markets the product for human use.",
+        "items": [
+          "Health Canada: injectable peptides are prescription drugs; unauthorized ones are illegal to sell (2025 and 2026 notices).",
+          "FDA warning letters, August 24, 2026: the disclaimer does not control when a website shows the product is intended as a drug for people.",
+          "Adipotide is a cell-killing drug whose human dose was never found, and one of the few peptides sold online with a documented organ toxicity in primates."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "warn",
+        "title": "Symptoms to take to a doctor",
+        "text": "Anyone who has injected a product sold as adipotide should see a doctor and ask for kidney function tests, especially with any of the following:",
+        "items": ["Swollen ankles or face, or passing much less urine", "Foamy, dark or bloody urine", "Nausea, confusion or severe tiredness", "Fever, redness or pus at an injection site"],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: why a failed drug is still for sale",
+        "paras": [
+          "Grey-market sellers copy sequences from published papers, and a primate study with photographs is ideal marketing. The sequence is public, the synthesis routine, and no regulator has approved the product, which is precisely why nobody checks what is in the vial."
+        ]
+      }
+    ],
+    "sources": [
+      {"text": "Barnhart KF, Christianson DR, Hanley PW et al. A peptidomimetic targeting white fat causes weight loss and improved insulin resistance in obese monkeys. Science Translational Medicine 2011;3(108):108ra112.", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3666164/"},
+      {"text": "MD Anderson Cancer Center. Obese monkeys lose weight on drug that attacks blood supply of fat cells (news release), November 9, 2011.", "url": "https://www.mdanderson.org/newsroom/obese-monkeys-lose-weight-on-drug-that-attacks-blood-supply-of-f.h00-158676579.html"},
+      {"text": "ClinicalTrials.gov NCT01262664. A first-in-man, Phase I evaluation of a single cycle of prohibitin targeting peptide 1 in patients with metastatic prostate cancer and obesity.", "url": "https://clinicaltrials.gov/study/NCT01262664"},
+      {"text": "Arrowhead Research Corporation. Announcement of first patient dosed with Adipotide in a Phase 1 trial (trial design), 2012.", "url": "https://www.fiercebiotech.com/biotech/arrowhead-announces-dosing-of-first-patient-anti-obesity-treatment-adipotide%C2%AE-a-phase-1"},
+      {"text": "Arrowhead Research Corporation. Form 10-K for fiscal year ended September 30, 2014 (Adipotide: recruitment ongoing, MD Anderson funding, no internal spending).", "url": "https://www.sec.gov/Archives/edgar/data/0000879407/000156459014005961/arwr-10k_20140930.htm"},
+      {"text": "AdisInsight (Springer). Prohibitin targeting peptide 1 (Adipotide): Phase I trial terminated at investigators' request; development discontinued, January 2019.", "url": "https://adisinsight.springer.com/drugs/800035229"},
+      {"text": "Smart & Biggar on Health Canada's April 2026 warning and the July 2026 Canlab injunction; ArentFox Schiff on the FDA warning letters of August 24, 2026.", "url": "https://www.smartbiggar.ca/insights/publication/health-canada-obtains-permanent-injunction-to-prevent-illegal-sale-of-injectable-peptides-by-canlab-research"},
+      {"text": "World Anti-Doping Agency. The 2026 Prohibited List (S0 non-approved substances).", "url": "https://pgtofindia.com/storage/app/anti_doping_link/pdf/Prohibited-List-2026.pdf"}
+    ]
+  }
+}

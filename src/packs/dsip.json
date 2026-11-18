@@ -1,0 +1,312 @@
+{
+  "id": "dsip",
+  "name": "DSIP (delta sleep-inducing peptide)",
+  "brands": "",
+  "maker": "",
+  "group": "research",
+  "pill": "Unapproved",
+  "overview": {
+    "headline": "A peptide pulled from sleeping rabbits in 1977 that never became a sleep medicine.",
+    "lede": "DSIP, generic name emideltide, is a nine-amino-acid peptide isolated in Switzerland from the blood of rabbits in induced sleep. Small human studies in the 1980s tested it for insomnia, chronic pain and alcohol or opioid withdrawal. The results were inconsistent, no company developed it, and it is approved nowhere. In July 2026 a U.S. FDA advisory committee voted against letting pharmacies compound it.",
+    "stats": [
+      {
+        "num": "1977",
+        "lbl": "isolated and sequenced by Schoenenberger and Monnier in Basel",
+        "src": "PNAS, 1977"
+      },
+      {
+        "num": "<20",
+        "lbl": "patients in the largest placebo-controlled insomnia study (16 in 1992; 14 in 1987)",
+        "src": "Bes 1992; Schneider-Helmert 1987"
+      },
+      {
+        "num": "6 to 7",
+        "lbl": "FDA advisory committee vote on 24 July 2026 against recommending it for U.S. compounding",
+        "src": "PCAC meeting, July 2026"
+      }
+    ],
+    "mechanism": {
+      "intro": "Nobody knows how DSIP works, or whether it reliably does anything in people.",
+      "parts": [
+        {
+          "name": "The original idea",
+          "text": "Injected into rabbits it increased slow-wave (delta) EEG activity, the deep-sleep pattern, which gave it its name. Later animal work was mixed, and no receptor for it has been identified."
+        },
+        {
+          "name": "Other proposed actions",
+          "text": "Animal and small human studies suggested effects on stress hormones, pain and opioid withdrawal. A 2006 review by sleep researchers concluded that the sleep-inducing effect itself had not been reliably reproduced."
+        }
+      ]
+    },
+    "more": {
+      "title": "More: where it comes from",
+      "paras": [
+        "DSIP (Trp-Ala-Gly-Gly-Asp-Ala-Ser-Gly-Glu) was found by a Basel group led by Guido Schoenenberger and Marcel Monnier, who filtered the blood of rabbits whose brains were being electrically stimulated into sleep. Synthetic DSIP was made soon after and tried in small clinical studies in Switzerland, Germany, Uruguay and the Netherlands between 1981 and 1992. Interest then faded.",
+        "Everything on this page comes from those peer-reviewed studies and from U.S. FDA documents listed under Status."
+      ]
+    }
+  },
+  "results": {
+    "headline": "Early open studies looked striking. The controlled ones did not.",
+    "lede": "Human DSIP research is a dozen small papers from 1981 to 1992. The uncontrolled series in withdrawal and pain reported dramatic benefits; the double-blind sleep-laboratory studies found small effects that their own authors called clinically unimportant. Nothing has been published since.",
+    "chart": null,
+    "stats": [
+      {
+        "num": "16",
+        "lbl": "chronic insomniacs in the 1992 double-blind study: slightly better sleep efficiency, no difference in how well people felt they slept",
+        "src": "Bes et al. 1992, Neuropsychobiology"
+      },
+      {
+        "num": "107",
+        "lbl": "inpatients in the largest withdrawal series, which had no control group",
+        "src": "Dick et al. 1984, European Neurology"
+      }
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {
+          "b": "Insomnia, controlled.",
+          "t": "A 1987 double-blind study in 14 severe chronic insomniacs reported better sleep over seven nights. A 1987 double-blind crossover by an independent group found improvements \"of little clinical significance\". The 1992 Dutch study (16 patients, intravenous DSIP versus glucose) found modest objective gains, no subjective ones, and concluded short-term treatment was \"not likely to be of major therapeutic benefit\"."
+        },
+        {
+          "b": "Withdrawal, uncontrolled.",
+          "t": "Swiss open series in 67 (1983) and 107 (1984) patients withdrawing from alcohol or opioids reported rapid relief in nearly all cases, with headache in a few. Without a placebo group these results cannot be interpreted; withdrawal symptoms also improve with time and nursing care."
+        },
+        {
+          "b": "Chronic pain, uncontrolled.",
+          "t": "A 1984 pilot in 7 patients reported less pain in 6, with no controls."
+        },
+        {
+          "b": "Western review.",
+          "t": "In July 2026 FDA scientists found no safety data for the injected-under-the-skin route, insufficient intravenous safety data, an unstudied immune-reaction risk, and approved alternatives for insomnia. The advisory committee voted 6 to 7 against listing it."
+        }
+      ]
+    },
+    "more": [
+      {
+        "title": "More: why the 1980s evidence stalled",
+        "paras": [
+          "The sleep studies measured people in laboratories for a few nights after intravenous doses. Effects were small and inconsistent, and some authors suspected the placebo groups drove the differences. No one ran a larger trial, the Basel group's work was not independently reproduced, and newer sleep drugs took the field. The 2006 review in the Journal of Neurochemistry calls the sleep claim unconfirmed after a thousand publications."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "Few side effects were recorded, in a few dozen people, decades ago.",
+    "lede": "The small studies reported headache in some withdrawal patients and no daytime sedation in insomnia patients. None collected adverse events systematically against placebo, and no study followed anyone for longer than a few weeks.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "Not reported in any study."
+    },
+    "unique": {
+      "title": "What has actually been reported",
+      "text": "Headaches in a few patients in the 1984 withdrawal series; no daytime hangover in the 1981 and 1987 sleep studies; nothing else. Every human study gave DSIP intravenously in hospital. The FDA noted in 2026 that there are no human safety data at all for the subcutaneous injections sold online, and that an immune reaction to the peptide has never been studied."
+    },
+    "more": [
+      {
+        "title": "More: what the trials monitor for",
+        "paras": [
+          "The sleep studies used overnight polysomnography (EEG, eye and muscle recordings) plus morning questionnaires. The withdrawal series rated symptoms clinically. No blood tests, hormone panels or long-term follow-up are described in any of them."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "Some 1980s papers reported better daytime alertness after treatment nights and lower depressive symptoms in pain patients. These are small, mostly uncontrolled observations."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms trial teams treat as urgent",
+      "items": [
+        "Excessive drowsiness, confusion or slowed breathing, especially with alcohol, opioids or sleeping pills",
+        "Swelling of the face or throat, hives or trouble breathing after a dose",
+        "Seizures, severe tremor or hallucinations in anyone withdrawing from alcohol or opioids: these are emergencies in their own right",
+        "Fever, redness or swelling at an injection site"
+      ],
+      "note": "Anyone with these symptoms should get medical care right away, whatever product they have used."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "No measured human half-life or time to peak for DSIP has been published in a peer-reviewed study. The 1980s papers describe it as short-acting and gave it intravenously; vendor pages quote a half-life of minutes without a source. With no primary measurement, the simulator is switched off.",
+    "stats": [
+      {
+        "num": "0",
+        "lbl": "published human pharmacokinetic studies",
+        "src": "Literature check, October 2026"
+      },
+      {
+        "num": "9",
+        "lbl": "amino acids, making it small enough to be broken down within minutes by blood enzymes",
+        "src": "Schoenenberger & Monnier 1977"
+      },
+      {
+        "num": "IV",
+        "lbl": "the route used in every human study; nobody has studied the under-the-skin injections sold online",
+        "src": "FDA review, July 2026"
+      }
+    ],
+    "explain": [
+      {
+        "b": "Why there is no number to model.",
+        "t": "Small natural peptides are usually cleared in minutes, which is consistent with the brief effects described in the 1980s, but no one measured it in people."
+      },
+      {
+        "b": "Why the route matters.",
+        "t": "Intravenous doses in a sleep laboratory tell you nothing about what an injection under the skin of an unverified powder does."
+      },
+      {
+        "b": "Why the vendor half-life is not evidence.",
+        "t": "It has no traceable source. A chart built on it would be a drawing, not data."
+      }
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: why there is no chart",
+        "paras": [
+          "The simulator needs a measured half-life and time to peak from a human study. DSIP has neither. The FDA's 2026 review likewise found no pharmacokinetic basis for the nominated uses."
+        ]
+      },
+      {
+        "title": "More: what a chart could not tell you anyway",
+        "paras": [
+          "Blood levels say nothing about whether a drug works. For DSIP the controlled studies that exist suggest it does little for sleep, and nothing controlled exists for withdrawal or pain."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "A short burst of small studies, 1981 to 1992, then nothing.",
+    "lede": "All human work was done in European and South American hospital sleep and addiction units with intravenous synthetic DSIP. No study has been registered on a modern trial registry.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: how the studies were run",
+        "paras": [
+          "Insomnia patients slept in a laboratory for several nights with and without an intravenous dose given in the afternoon or evening, with EEG recorded all night. Withdrawal patients were inpatients given DSIP alongside usual care and rated daily. These were research settings with physicians present. None of this is a self-management plan, and none of it involved the products now sold online."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials that have been run",
+      "items": [
+        "1981, Basel: small placebo comparisons in volunteers and poor sleepers; median total sleep time rose 59% within about two hours of dosing in one report (Schneider-Helmert et al.).",
+        "1983 and 1984, Geneva: open series of 67 and then 107 inpatients withdrawing from alcohol or opioids; rapid improvement reported in nearly all; headaches in a few; no control group (Dick et al.).",
+        "1984, Tübingen: open pilot in 7 chronic pain patients; pain reduced in 6 (Larbig et al.).",
+        "1987: double-blind placebo-controlled study, 14 severe chronic insomniacs, 7 nights; improved sleep reported (Schneider-Helmert).",
+        "1987, Montevideo: independent double-blind crossover in insomniacs; sleep changes \"of little clinical significance\" (Monti et al.).",
+        "1992, Netherlands: double-blind matched-pairs study, 16 chronic insomniacs, intravenous DSIP versus glucose; modest objective gains, no subjective benefit; \"not likely to be of major therapeutic benefit\" (Bes et al.).",
+        "No human study since; no registered trial as of October 2026."
+      ]
+    },
+    "find": {
+      "text": "There are no DSIP trials anywhere. The registry search below will show if that changes.",
+      "term": "emideltide",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "Never approved anywhere. Voted down for U.S. compounding in July 2026.",
+    "items": [
+      {
+        "tag": "no",
+        "label": "Canada",
+        "text": "No Health Canada authorisation (no entry in the Drug Product Database, October 2026). Anything sold as DSIP in Canada is an unauthorised drug."
+      },
+      {
+        "tag": "no",
+        "label": "United States",
+        "text": "Not approved. The FDA placed emideltide (DSIP) in Category 2 of its compounding list in 2023 and removed it in April 2026 for advisory review. On 24 July 2026 the Pharmacy Compounding Advisory Committee voted 6 to 7 (one abstention) against adding it to the list of substances pharmacies may compound, agreeing with FDA scientists. As of October 2026 it is in no category and may not be compounded; selling it for human use is selling an unapproved drug."
+      },
+      {
+        "tag": "no",
+        "label": "Europe and elsewhere",
+        "text": "No marketing authorisation in the EU, UK, Switzerland (where it was discovered), Australia, New Zealand or Russia has been identified."
+      },
+      {
+        "tag": "ok",
+        "label": "Sport",
+        "text": "Not named on WADA's 2026 Prohibited List."
+      }
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "What \"research use only\" means",
+        "text": "Vials sold online as DSIP are labelled \"not for human consumption\" so the seller can avoid drug law. The label does not change what the product is: an unapproved drug in every country.",
+        "items": [
+          "No regulator checks the contents, strength or sterility. The FDA noted in 2026 that the forms being sold and compounded could not even be identified.",
+          "The only human data are for intravenous use in hospital, decades ago. Nothing is known about injecting it under the skin.",
+          "A U.S. advisory committee has now said no. If the FDA follows that advice, licensed pharmacies will not be able to compound it either."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "warn",
+        "title": "Symptoms to take to a doctor",
+        "text": "Anyone who has used a product sold as DSIP should see a doctor if they notice:",
+        "items": [
+          "Unusual drowsiness, confusion or slowed breathing",
+          "Hives, facial swelling or wheezing",
+          "Fever, redness or swelling at an injection site",
+          "Worsening insomnia, anxiety or low mood"
+        ],
+        "note": "Anyone using it to manage alcohol or opioid withdrawal should seek medical care: withdrawal can be dangerous and has proven treatments. Report a reaction to MedEffect Canada (canada.ca/medeffect) or FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: the July 2026 FDA advisory vote",
+        "paras": [
+          "DSIP was reviewed for opioid withdrawal, chronic insomnia and narcolepsy. FDA scientists told the committee the substance was poorly characterised, that there were no human safety data for the subcutaneous route and insufficient data for the intravenous route, that an immune reaction was a plausible risk, and that approved treatments exist for insomnia. It was the only one of seven peptides the committee declined to recommend. A fresh nomination with new evidence could be reconsidered, but no company has announced one."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "text": "Schoenenberger GA, Monnier M. Characterization of a delta-electroencephalogram (-sleep)-inducing peptide. Proceedings of the National Academy of Sciences, 1977 (isolation from rabbit cerebral venous blood).",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/265572/"
+      },
+      {
+        "text": "Schneider-Helmert D et al. Acute and delayed effects of DSIP on human sleep behavior. International Journal of Clinical Pharmacology, 1981 (placebo comparison; median total sleep time up 59%); and Schneider-Helmert D, double-blind placebo-controlled study in 14 severe chronic insomniacs over 7 nights, 1987 (PubMed 3622582).",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/6895513/"
+      },
+      {
+        "text": "Dick P et al. DSIP in alcohol and opiate withdrawal: open series of 67 patients, Neuropsychobiology, 1983 (PubMed 6328354), and of 107 inpatients, European Neurology, 1984 (headaches in a few).",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/6548969/"
+      },
+      {
+        "text": "Larbig W et al. Therapeutic effects of delta-sleep-inducing peptide (DSIP) in patients with chronic, pronounced pain episodes: a clinical pilot study. European Neurology, 1984 (7 patients, open).",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/6548970/"
+      },
+      {
+        "text": "Monti JM et al. Study of delta sleep-inducing peptide efficacy in improving sleep on short-term administration to chronic insomniacs. International Journal of Clinical Pharmacology Research, 1987 (double-blind crossover).",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/3583493/"
+      },
+      {
+        "text": "Bes F, Hofman W, Schuur J, Van Boxtel C. Effects of delta sleep-inducing peptide on sleep of chronic insomniac patients: a double-blind study. Neuropsychobiology, 1992;26(4):193-197 (16 patients; \"not likely to be of major therapeutic benefit\").",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/1299794/"
+      },
+      {
+        "text": "Kovalzon VM, Strekalova TV. Delta sleep-inducing peptide (DSIP): a still unresolved riddle. Journal of Neurochemistry, 2006 (critical review).",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/16539679/"
+      },
+      {
+        "text": "McDermott Will & Schulte, PCAC backs majority of peptides in two-day public meeting (vote table: emideltide 6 yes, 7 no, 1 abstention; nominated uses; next steps), July 2026; FDA staff findings as reported by Bass, Berry & Sims, July 2026.",
+        "url": "https://www.mcdermottlaw.com/insights/bulk-list-bound-pcac-backs-majority-of-peptides-in-two-day-public-meeting/"
+      },
+      {
+        "text": "U.S. FDA, Bulk drug substances nominated for use in compounding under section 503A: category lists (emideltide no longer in any category), updated 14 May 2026.",
+        "url": "https://fda.gov/media/94155/download"
+      },
+      {
+        "text": "World Anti-Doping Agency, 2026 Prohibited List.",
+        "url": "https://www.wada-ama.org/en/prohibited-list"
+      }
+    ]
+  }
+}

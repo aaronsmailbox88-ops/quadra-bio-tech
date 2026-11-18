@@ -1,0 +1,436 @@
+{
+ "id": "tesamorelin",
+ "name": "Tesamorelin",
+ "brands": "Egrifta, Egrifta SV, Egrifta WR",
+ "maker": "Theratechnologies",
+ "group": "approved",
+ "pill": "Approved",
+ "overview": {
+  "headline": "A daily injection that makes the body release its own growth hormone, approved for one narrow job.",
+  "lede": "Tesamorelin (Egrifta) is made by Theratechnologies of Montreal. The U.S. FDA approved it in 2010 to reduce excess abdominal fat in adults with HIV who have lipodystrophy, a side effect of older HIV drugs. It is not approved for weight loss, body building or ageing. Health Canada approved it for the same use in 2014. Compounded and \"research\" versions sold for those purposes sit outside the evidence.",
+  "stats": [
+   {
+    "num": "−18%",
+    "lbl": "change in visceral (deep belly) fat at 26 weeks in the first Phase 3 trial; placebo rose 2%",
+    "src": "Egrifta label, Study 1, 410 people"
+   },
+   {
+    "num": "2010",
+    "lbl": "FDA approval of Egrifta for HIV-associated lipodystrophy, still its only approved use",
+    "src": "FDA, November 10, 2010"
+   },
+   {
+    "num": "26–38 min",
+    "lbl": "half-life of the drug itself; its effect runs through GH and IGF-1, which last longer",
+    "src": "Egrifta prescribing information"
+   }
+  ],
+  "mechanism": {
+   "intro": "It is the body's own GHRH, reinforced to last a little longer.",
+   "parts": [
+    {
+     "name": "GHRH analogue",
+     "text": "Tesamorelin is the full 44-amino-acid growth hormone-releasing hormone with a small chemical group added at one end, which protects it from the enzyme that destroys natural GHRH within minutes."
+    },
+    {
+     "name": "GH in pulses",
+     "text": "It prompts the pituitary to release GH in the body's normal pulsatile way, rather than supplying GH from outside. GH then acts on the liver to raise IGF-1."
+    },
+    {
+     "name": "Fat breakdown",
+     "text": "GH and IGF-1 increase lipolysis, the release of stored fat. In the trials the loss was concentrated in visceral fat around the organs, with little change in fat under the skin."
+    }
+   ]
+  },
+  "more": {
+   "title": "More: the problem it was built for, and its relatives",
+   "paras": [
+    "Some older HIV medicines caused lipodystrophy: fat lost from the face and limbs and gained deep in the abdomen. Growth hormone itself shrinks that fat but causes too many side effects at the doses needed. A GHRH analogue was a gentler way to raise GH, and tesamorelin became the first approved treatment for the abdominal part of the problem.",
+    "Sermorelin, a 29-amino-acid fragment of GHRH, was approved earlier as Geref for diagnosing GH deficiency and treating it in children. Its maker stopped selling it in 2008 for commercial reasons, and in March 2013 the FDA formally determined it was not withdrawn for safety or effectiveness reasons. Because it was once an approved drug ingredient, U.S. pharmacies can compound sermorelin, which is why it is widely prescribed off-label by \"anti-ageing\" clinics despite having no adult trial program behind it.",
+    "CJC-1295 is a third GHRH analogue, engineered to last a week; its development stopped in 2006 and it has its own page. Everything on this page comes from the Egrifta prescribing information, the peer-reviewed Phase 3 papers and regulators' documents listed under the Status tab."
+   ]
+  }
+ },
+ "results": {
+  "headline": "Less deep belly fat in people with HIV, for as long as they kept injecting.",
+  "lede": "Two 26-week Phase 3 trials in adults with HIV and excess abdominal fat compared tesamorelin 2 mg daily with placebo. The chart shows the percent change in visceral adipose tissue measured by CT scan.",
+  "chart": {
+   "metric": "other",
+   "unit": "%",
+   "legend": [
+    "Tesamorelin 2 mg daily",
+    "Placebo"
+   ],
+   "rows": [
+    {
+     "name": "Phase 3 study 1",
+     "meta": "26 weeks · HIV with abdominal fat accumulation · 410 people",
+     "drug": -18,
+     "placebo": 2,
+     "tip": "Tesamorelin: −18% visceral fat (−27 cm²); placebo +2% (+4 cm²)"
+    },
+    {
+     "name": "Phase 3 study 2",
+     "meta": "26 weeks · HIV with abdominal fat accumulation · 396 people",
+     "drug": -14,
+     "placebo": -2,
+     "tip": "Tesamorelin: −14% visceral fat (−21 cm²); placebo −2% (0 cm²)"
+    }
+   ],
+   "max": 20,
+   "note": "Percent change in visceral adipose tissue measured by CT at week 26, as printed in the Egrifta label (treatment difference −20 and −12 percentage points). Body weight barely changed: the loss was deep belly fat, not total weight."
+  },
+  "stats": [
+   {
+    "num": "52 wks",
+    "lbl": "people who continued for a year kept the fat loss; those switched to placebo regained it within 26 weeks",
+    "src": "Phase 3 extension phases"
+   },
+   {
+    "num": "Not for weight",
+    "lbl": "body weight changed little; tesamorelin is not approved or shown to work for general weight loss",
+    "src": "Egrifta label; Phase 3 papers"
+   }
+  ],
+  "beyond": {
+   "title": "Beyond the scan",
+   "items": [
+    {
+     "b": "Waist and trunk fat.",
+     "t": "Waist circumference and trunk fat fell alongside visceral fat; fat under the skin and in the limbs was largely unchanged, which matters for people who have already lost limb fat to lipodystrophy."
+    },
+    {
+     "b": "Blood fats.",
+     "t": "Triglycerides fell in both Phase 3 trials, and the ratio of total to HDL cholesterol improved."
+    },
+    {
+     "b": "Blood sugar.",
+     "t": "Went the wrong way for some. The label reports that more people developed diabetes-range blood sugar on tesamorelin than on placebo (see Side effects)."
+    },
+    {
+     "b": "Liver fat.",
+     "t": "In separate trials in people with HIV and fatty liver, tesamorelin reduced liver fat and slowed the progression of liver scarring markers over 6 to 12 months (Stanley et al., JAMA 2014 and Lancet HIV 2019). This is not an approved use."
+    },
+    {
+     "b": "How people felt.",
+     "t": "Patients reported their belly looked better and distress about it fell; the FDA accepted this as supporting evidence. Function, fitness and survival were not measured."
+    }
+   ]
+  },
+  "more": [
+   {
+    "title": "More: did it help the heart?",
+    "paras": [
+     "Unknown. Visceral fat is linked to heart disease, and tesamorelin reduced it along with triglycerides, but no trial has counted heart attacks or strokes. The FDA asked for post-approval safety studies when it approved the drug, including on diabetic eye disease, because GH can worsen retinopathy. No cardiovascular outcome has been shown either way."
+    ]
+   }
+  ]
+ },
+ "effects": {
+  "headline": "Mostly injection-site reactions and the aches of fluid retention, plus a watch on blood sugar.",
+  "lede": "In the two 26-week trials, 543 people received tesamorelin and 263 placebo. The most frequent effects were joint pain, redness and itching where the needle went in, limb pain and swollen ankles. Most were mild or moderate.",
+  "chart": {
+   "eyebrow": "Phase 3 trials, 26 weeks · share of people affected",
+   "legend": [
+    "Tesamorelin (543 people)",
+    "Placebo (263 people)"
+   ],
+   "rows": [
+    {
+     "name": "Injection-site reactions (redness, itching, pain, bruising)",
+     "drug": 17,
+     "placebo": 6
+    },
+    {
+     "name": "Joint pain (arthralgia)",
+     "drug": 13,
+     "placebo": 11
+    },
+    {
+     "name": "Pain in arms or legs",
+     "drug": 6,
+     "placebo": 5
+    },
+    {
+     "name": "Muscle pain (myalgia)",
+     "drug": 6,
+     "placebo": 2
+    },
+    {
+     "name": "Swelling of the limbs (peripheral edema)",
+     "drug": 6,
+     "placebo": 2
+    },
+    {
+     "name": "Tingling or numbness (paresthesia)",
+     "drug": 5,
+     "placebo": 2
+    }
+   ],
+   "max": 20,
+   "note": "From the Egrifta label (revised March 2025): reactions in at least 1% of people on tesamorelin and more often than on placebo, pooled from both 26-week Phase 3 trials. Rash (4% vs 2%) and vomiting (3% vs 0%) were also listed."
+  },
+  "disc": {
+   "title": "Stopping because of side effects",
+   "text": "The current label does not print an overall discontinuation rate for the 26-week phases. It reports hypersensitivity reactions (itching, redness, flushing, hives, rash) in about 4% of people on tesamorelin, and new diabetes-range blood sugar (A1C of 6.5% or more) in 5% on tesamorelin versus 1% on placebo, a 3.3-fold hazard."
+  },
+  "unique": {
+   "title": "IGF-1 goes up, and stays up while you inject",
+   "text": "Tesamorelin raises IGF-1, the growth factor that carries GH's effects, and in the trials a substantial share of patients had IGF-1 above the normal range. Because IGF-1 promotes cell growth, the label tells doctors to measure it regularly and to consider stopping if it stays high, and the drug is contraindicated in anyone with active cancer. Blood sugar also needs watching: in the Phase 3 trials, 4.5% of people on tesamorelin developed diabetes-range blood sugar versus 1.3% on placebo. These two monitoring needs are the main reason the drug is meant to be used with regular blood tests, not bought in a vial."
+  },
+  "more": [
+   {
+    "title": "More: what the label warns about",
+    "paras": [
+     "Contraindicated: active cancer; disruption of the hypothalamic-pituitary axis (pituitary tumour or surgery, head irradiation, hypopituitarism); pregnancy; known hypersensitivity to tesamorelin or mannitol.",
+     "Fluid retention. Swelling, joint pain, carpal tunnel symptoms (numb, tingling hands) and muscle aches are the GH-axis signature and usually ease on stopping.",
+     "Blood sugar. Tesamorelin can cause glucose intolerance; the label advises checking blood sugar before and during treatment and weighing the risk carefully in people with diabetes, where GH can also worsen eye disease (retinopathy).",
+     "Hypersensitivity. Rash, hives, flushing and itching; the drug should be stopped if these occur.",
+     "Critical illness. GH is linked to higher death rates in intensive-care settings; the label says to weigh whether to continue in acutely critically ill patients."
+    ]
+   },
+   {
+    "title": "More: the good side effects",
+    "paras": [
+     "Lower triglycerides, a smaller waist and, in separate trials, less liver fat. None of these has been shown to prevent heart disease or liver failure, and all reversed when the drug was stopped."
+    ]
+   }
+  ],
+  "urgent": {
+   "title": "Symptoms the label treats as urgent",
+   "items": [
+    "Swelling of the face or throat, hives, trouble breathing",
+    "Rapid swelling of the legs or sudden weight gain",
+    "Severe or worsening headache, vision changes",
+    "Unusual thirst, frequent urination, extreme tiredness (high blood sugar)",
+    "A new lump, unexplained bleeding or any other possible sign of cancer"
+   ],
+   "note": "Anyone with these symptoms, on the approved drug or a compounded or \"research\" version, should get medical care right away."
+  }
+ },
+ "levels": {
+  "pk": {
+   "half": 0.018,
+   "tmax": 0.006,
+   "ladder": [
+    2
+   ],
+   "stepDays": 28,
+   "tau": 1,
+   "maxDose": 2,
+   "targets": [
+    2
+   ],
+   "refLabel": "2 mg daily",
+   "source": "Egrifta label: elimination half-life 26 minutes (healthy volunteers) to 38 minutes (people with HIV) for the 2 mg dose; 11 minutes for the 1.28 mg Egrifta WR dose, with a median peak at 0.15 hours; absolute bioavailability under 4%"
+  },
+  "nopk": "",
+  "stats": [
+   {
+    "num": "11–38 min",
+    "lbl": "half-life: minutes, not days; the drug acts by triggering a pulse of growth hormone, whose effects on IGF-1 last longer",
+    "src": "Egrifta label (2 mg and WR formulations)"
+   },
+   {
+    "num": "<4%",
+    "lbl": "of a dose under the skin reaches the bloodstream intact; the rest is broken down",
+    "src": "Egrifta prescribing information"
+   },
+   {
+    "num": "~3 h",
+    "lbl": "to clear about 97% of a dose; nothing carries over to the next day",
+    "src": "Five half-lives"
+   }
+  ],
+  "explain": [
+   {
+    "b": "Why the drug level does not build up.",
+    "t": "With a half-life under 40 minutes and one dose a day, the blood is clear of tesamorelin for most of every day. There is no accumulation and no plateau."
+   },
+   {
+    "b": "Why the effect lasts anyway.",
+    "t": "Each dose triggers a GH pulse, and GH raises IGF-1, which lasts many hours and stays elevated with daily dosing. The fat change in the trials took months to appear and reversed over months when dosing stopped."
+   },
+   {
+    "b": "Why there is one dose.",
+    "t": "The label specifies a single fixed dose, 2 mg once daily, for everyone. There is no escalation ladder because the trials did not test one."
+   }
+  ],
+  "showTable": false,
+  "more": [
+   {
+    "title": "More: the model behind the chart",
+    "paras": [
+     "The chart uses the same one-compartment model as the other pages: absorption from the injection site, then first-order clearance, with the label's half-life of 38 minutes in people with HIV and a peak within the first quarter-hour. 100% is the peak level on the labelled 2 mg daily dose. Because the drug is gone within hours, the chart is a series of daily spikes rather than a rising curve.",
+     "Egrifta WR, approved in 2025, uses a different formulation with a different labelled daily amount; the chart models the original 2 mg regimen on which the trials and the label's safety data are based."
+    ]
+   },
+   {
+    "title": "More: what this chart cannot tell you",
+    "paras": [
+     "It models the labelled regimen, not a person, and it measures nothing. The clinically relevant level, IGF-1, is not on the chart; only a blood test shows it.",
+     "It says nothing about compounded or \"research\" tesamorelin. Those products are not tested for strength or purity against the approved drug, and the label's monitoring advice assumes a known dose of a known product."
+    ]
+   }
+  ]
+ },
+ "trials": {
+  "headline": "How tesamorelin was tested, and what the label specifies.",
+  "lede": "The approval rests on two Phase 3 trials in adults with HIV and abdominal fat accumulation, each with a 26-week placebo-controlled phase and a 26-week extension. Every participant on the drug received the same fixed dose.",
+  "ladder": {
+   "title": "The regimen used in the trials and on the label",
+   "text": "Tesamorelin 2 mg, injected under the skin of the abdomen once a day, from the first day. There was no starting dose and no step-up; the same dose was used for the full 52 weeks of the trials and is the dose on the label.",
+   "steps": [
+    {
+     "d": "2 mg daily",
+     "t": "day 1 onward, no escalation"
+    }
+   ],
+   "note": "The original Egrifta used two 1 mg vials per dose; Egrifta SV (2019) is a single 2 mg vial; Egrifta WR (2025) is a vial mixed once a week with a labelled daily dose of 1.28 mg of a more concentrated formulation. All are once-daily injections. This describes the label; it is not an instruction."
+  },
+  "more": [
+   {
+    "title": "More: how side effects were handled inside the trials",
+    "paras": [
+     "Participants had study visits with CT scans, IGF-1 and glucose testing and symptom checks. People whose IGF-1 climbed too high or whose blood sugar deteriorated could be taken off the drug, and the discontinuation figures on the Side effects tab include them.",
+     "After 26 weeks, people on tesamorelin were re-randomised to continue or switch to placebo for another 26 weeks, which is how the trials showed that the fat returns when dosing stops. Placebo participants were switched to tesamorelin for the extension.",
+     "The label's monitoring advice, IGF-1 and glucose checks and a stop if IGF-1 stays elevated, comes directly from how the trials were run. None of it is possible with a product bought without a prescriber."
+    ]
+   }
+  ],
+  "running": {
+   "title": "Trials beyond the approved use",
+   "items": [
+    "Fatty liver disease in people with HIV: Phase 2 trials (2014, 2019) showed less liver fat and slower fibrosis progression. Theratechnologies planned a Phase 3 program in fatty liver disease but announced in 2023 that it would not proceed with it.",
+    "Cognition in older adults: a 20-week trial (2012) reported modest gains on some cognitive tests; there was no follow-up program.",
+    "No Phase 3 trial of tesamorelin for any new indication was known to be recruiting as of October 2026."
+   ]
+  },
+  "find": {
+   "text": "Egrifta is a prescription medicine in the U.S.; trials are not the route to it. Registry searches are useful for the fatty-liver and cognition studies.",
+   "term": "tesamorelin",
+   "extra": {
+    "label": "Theratechnologies",
+    "url": "https://www.theratech.com/"
+   }
+  }
+ },
+ "status": {
+  "headline": "Approved in the U.S. (2010) and Canada (2014) for one narrow use. Widely sold outside the label.",
+  "items": [
+   {
+    "tag": "ok",
+    "label": "Canada",
+    "text": "Health Canada approved Egrifta on April 30, 2014 for excess abdominal fat in adults with HIV and lipodystrophy, the same narrow use as in the U.S. It is a prescription product; tesamorelin sold by peptide vendors or compounders for fat loss, muscle or anti-ageing is outside that approval and is not the licensed product."
+   },
+   {
+    "tag": "ok",
+    "label": "United States",
+    "text": "FDA-approved November 10, 2010 (Egrifta, two 1 mg vials daily). Egrifta SV, a single 2 mg vial, was approved in 2019. Egrifta WR, mixed once a week for daily injection, was approved in March 2025. Indication: reduction of excess abdominal fat in adults with HIV and lipodystrophy. Not approved for weight loss, body composition or anti-ageing."
+   },
+   {
+    "tag": "no",
+    "label": "Europe and sport",
+    "text": "Not approved in Europe: Theratechnologies withdrew its European marketing application in 2012 after the EMA's committee questioned the long-term benefit. Not approved in Australia. Prohibited at all times in sport by WADA, whose S2 class names tesamorelin as a GHRH analogue (2026 Prohibited List); athletes with a medical need require a therapeutic use exemption."
+   },
+   {
+    "tag": "ok",
+    "label": "Company and supply",
+    "text": "Egrifta SV supply was interrupted from late 2024 into spring 2025 after problems at the contract manufacturer, then restored. In 2025 Theratechnologies agreed to be acquired by Future Pak, a Michigan pharmaceutical company, through its affiliate CB Biotechnology, and was taken private. Egrifta remains on the U.S. market under the new owner."
+   }
+  ],
+  "cards": [
+   {
+    "kind": "warn",
+    "title": "Compounded and \"research\" tesamorelin",
+    "text": "Because tesamorelin is the ingredient of an FDA-approved drug, U.S. compounding pharmacies may legally make it on prescription, and many longevity and weight-loss clinics prescribe it off-label for belly fat in people without HIV. That use has no Phase 3 evidence, the label's IGF-1 and glucose monitoring still applies, and compounded versions are not checked by the FDA for strength or purity. Vials sold online \"for research\" are unapproved drugs with no quality assurance at all.",
+    "items": [
+     "Off-label does not mean tested: the only completed trials in people without HIV are small studies of liver fat and cognition.",
+     "The Phase 3 trials excluded people with cancer, pituitary disease and uncontrolled diabetes; a clinic prescribing off-label should screen for the same.",
+     "The same molecule is sold by anonymous vendors next to CJC-1295 and ipamorelin, neither of which has an approval or a completed trial program."
+    ],
+    "note": ""
+   },
+   {
+    "kind": "warn",
+    "title": "If someone is using tesamorelin from any source",
+    "text": "The label's monitoring is the minimum: IGF-1 and blood sugar before starting and at intervals, and a stop if IGF-1 stays high. See a doctor promptly for:",
+    "items": [
+     "Swelling in the legs, hands or face; numb or tingling hands",
+     "Thirst, frequent urination, blurred vision",
+     "Rash, hives or flushing after injections",
+     "Any new lump or unexplained symptom, given the cancer contraindication"
+    ],
+    "note": "Report reactions to FDA MedWatch (fda.gov/medwatch) or, in Canada, MedEffect Canada (canada.ca/medeffect)."
+   }
+  ],
+  "more": [
+   {
+    "title": "More: sermorelin, the withdrawn cousin",
+    "paras": [
+     "Sermorelin (Geref, Serono) was FDA-approved in the 1990s to diagnose GH deficiency and to treat it in children. Sales stopped in 2008; the FDA determined in March 2013 that the withdrawal was not for safety or effectiveness reasons, which keeps sermorelin eligible for pharmacy compounding. It is now one of the most prescribed \"peptides\" at anti-ageing clinics, for adult uses it was never approved or tested for in a Phase 3 trial. Its half-life is minutes, like tesamorelin's, and its effect, like tesamorelin's, depends on raising GH and IGF-1 and carries the same monitoring needs."
+    ]
+   },
+   {
+    "title": "More: the 2024–2025 supply problem",
+    "paras": [
+     "Egrifta SV is made by a contract manufacturer. Regulatory problems at that site interrupted supply from late 2024 into the spring of 2025, leaving patients without the drug for months before shipments resumed and Egrifta WR launched. Supply interruptions of an approved drug are one of the things that push patients toward compounders, where the product is not the one the trials tested."
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "text": "Egrifta WR prescribing information (FDA label, revised March 2025): adverse reactions table, glucose findings, pharmacokinetics and Phase 3 visceral fat results.",
+    "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/022505s020lbl.pdf"
+   },
+   {
+    "text": "Theratechnologies, Health Canada approves EGRIFTA (tesamorelin for injection), April 30, 2014.",
+    "url": "https://www.globenewswire.com/news-release/2014/04/30/1473874/0/en/Health-Canada-Approves-EGRIFTA-TM-tesamorelin-for-injection-and-Theratechnologies-Regains-Canadian-Commercialization-Rights-to-EGRIFTA-TM.html"
+   },
+   {
+    "text": "Egrifta / Egrifta SV / Egrifta WR (tesamorelin for injection) prescribing information, Theratechnologies; Drugs@FDA, NDA 022505 (approved November 10, 2010).",
+    "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022505"
+   },
+   {
+    "text": "DailyMed, current Egrifta labels (adverse reactions table, pharmacokinetics, warnings).",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=tesamorelin"
+   },
+   {
+    "text": "Falutz J et al. Metabolic effects of a growth hormone-releasing factor in patients with HIV. New England Journal of Medicine 2007;357(23):2359–2370 (Phase 3 study 1: VAT −15.2% vs +5.0%).",
+    "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa072375"
+   },
+   {
+    "text": "Falutz J et al. Effects of tesamorelin, a growth hormone-releasing factor, in HIV-infected patients with abdominal fat accumulation: a randomized placebo-controlled trial with a safety extension. JAIDS 2010;53(3):311–322 (Phase 3 study 2: VAT −10.9% vs −0.6%).",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20101189/"
+   },
+   {
+    "text": "Falutz J et al. Effects of tesamorelin on HIV-associated abdominal fat: pooled analysis of two multicenter, double-blind placebo-controlled phase 3 trials with safety extension data. Journal of Clinical Endocrinology & Metabolism 2010;95(9):4291–4304.",
+    "url": ""
+   },
+   {
+    "text": "Stanley TL et al. Effect of tesamorelin on visceral fat and liver fat in HIV-infected patients with abdominal fat accumulation: a randomized clinical trial. JAMA 2014;312(4):380–389. Stanley TL et al. Effects of tesamorelin on non-alcoholic fatty liver disease in HIV: a randomised, double-blind, multicentre trial. Lancet HIV 2019;6(12):e821–e830.",
+    "url": ""
+   },
+   {
+    "text": "Baker LD et al. Effects of growth hormone-releasing hormone on cognitive function in adults with mild cognitive impairment and healthy older adults. Archives of Neurology 2012;69(11):1420–1429.",
+    "url": ""
+   },
+   {
+    "text": "Dhillon S. Tesamorelin: a review of its use in the management of HIV-associated lipodystrophy. Drugs 2011;71(8):1071–1091.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/21668043/"
+   },
+   {
+    "text": "Theratechnologies, news releases: FDA approval of EGRIFTA WR (March 2025); EGRIFTA SV supply updates (2024–2025); arrangement agreement with Future Pak / CB Biotechnology (2025).",
+    "url": "https://www.theratech.com/"
+   },
+   {
+    "text": "FDA, Federal Register: Determination that Geref (sermorelin acetate) injection was not withdrawn from sale for reasons of safety or effectiveness. March 4, 2013.",
+    "url": "https://www.federalregister.gov/documents/2013/03/04/2013-04827/determination-that-geref-sermorelin-acetate-injection-05-milligrams-basevial-and-10-milligrams"
+   },
+   {
+    "text": "World Anti-Doping Agency, The 2026 Prohibited List, section S2 (GHRH analogues, e.g. CJC-1295, sermorelin and tesamorelin).",
+    "url": "https://www.wada-ama.org/en/prohibited-list"
+   }
+  ]
+ }
+}

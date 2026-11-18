@@ -1,0 +1,397 @@
+{
+  "id": "thymosin-alpha-1",
+  "name": "Thymosin alpha-1",
+  "brands": "Zadaxin (thymalfasin)",
+  "maker": "SciClone Pharmaceuticals",
+  "group": "approved",
+  "pill": "Approved (outside N. America)",
+  "overview": {
+    "headline": "A 28-amino-acid immune-modulating peptide approved for hepatitis B in parts of Asia and Europe, but not in Canada or the U.S.",
+    "lede": "Thymosin alpha-1, sold as Zadaxin (thymalfasin) by SciClone, is a synthetic copy of a thymus peptide. It is approved in more than 30 countries, including China and Italy, mainly for chronic hepatitis B and as a vaccine adjuvant, but never by the FDA or Health Canada. Its largest trial, in sepsis, found no survival benefit in 2025. Vials sold online as \"thymosin alpha-1\" or \"Tα1\" are unapproved products.",
+    "stats": [
+      {
+        "num": "23.4% vs 24.1%",
+        "lbl": "28-day death rate in sepsis, thymosin alpha-1 vs placebo: no difference",
+        "src": "TESTS trial, BMJ 2025, 1,089 adults"
+      },
+      {
+        "num": "40.6% vs 9.4%",
+        "lbl": "complete hepatitis B response 18 months after a 6-month course vs no treatment",
+        "src": "Chien et al., Hepatology 1998, 98 patients"
+      },
+      {
+        "num": "17–4",
+        "lbl": "FDA advisers' vote against letting pharmacies compound it",
+        "src": "PCAC, 4 December 2024"
+      }
+    ],
+    "mechanism": {
+      "intro": "It nudges the immune system's first responders rather than attacking a virus directly.",
+      "parts": [
+        {
+          "name": "Toll-like receptors",
+          "text": "Thymosin alpha-1 acts on dendritic cells through TLR2 and TLR9, boosting their ability to present antigens and to activate T cells."
+        },
+        {
+          "name": "T cells and NK cells",
+          "text": "Downstream it increases T-helper and natural-killer activity and interferon production. In hepatitis B the aim is to help clear infected liver cells; in sepsis it was to reverse the immune exhaustion that follows the initial storm."
+        }
+      ]
+    },
+    "more": {
+      "title": "More: a drug with a long, uneven record",
+      "paras": [
+        "Isolated in 1977 and marketed since the 1990s, thymosin alpha-1 was tested in hepatitis B and C, cancers, HIV, COVID-19 and sepsis, mostly in small or observational studies. Antiviral tablets have made the hepatitis B use largely obsolete outside China, and the one large rigorous trial (sepsis, 1,106 patients) was negative.",
+        "In the U.S. it holds orphan designations but no approval, and in December 2024 FDA advisers voted against letting compounding pharmacies make it. Sources are under the Status tab."
+      ]
+    }
+  },
+  "results": {
+    "headline": "A clear negative in sepsis, old positives in hepatitis B, mixed observational data in COVID-19.",
+    "lede": "The best evidence is the 2025 TESTS trial: large, double-blind and placebo-controlled. The hepatitis B evidence is older and smaller; the COVID-19 evidence is mostly retrospective.",
+    "chart": {
+      "metric": "other",
+      "unit": "%",
+      "legend": [
+        "Thymosin alpha-1",
+        "Placebo / no treatment"
+      ],
+      "rows": [
+        {
+          "name": "Sepsis: death within 28 days",
+          "meta": "TESTS · 22 Chinese ICUs · 1,089 adults · 1.6 mg twice daily for 7 days",
+          "drug": 23.4,
+          "placebo": 24.1,
+          "tip": "Thymosin α1 23.4% vs placebo 24.1% (hazard ratio 0.99, p=0.93)"
+        },
+        {
+          "name": "Hepatitis B: complete response at 18 months",
+          "meta": "Chien 1998 · Taiwan · 98 patients · 1.6 mg twice weekly for 6 months vs untreated",
+          "drug": 40.6,
+          "placebo": 9.4,
+          "tip": "6-month course 40.6% vs untreated 9.4% (p=0.004); a 12-month course did no better (26.5%)"
+        }
+      ],
+      "max": 50,
+      "note": "For sepsis, lower is better; the trial found no difference. The hepatitis B trial was randomised but had no placebo; complete response meant loss of HBV DNA and HBeAg from the blood.",
+      "signed": false
+    },
+    "stats": [
+      {
+        "num": "RR 0.59",
+        "lbl": "pooled COVID-19 mortality in a 2023 meta-analysis of 8 mostly observational studies, with very high heterogeneity (I² 84%)",
+        "src": "Inflammopharmacology 2023"
+      },
+      {
+        "num": "13 vs 16 days",
+        "lbl": "viral shedding in a 1,388-patient retrospective COVID-19 cohort; no effect on progression or death",
+        "src": "Frontiers in Medicine 2021"
+      }
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {
+          "b": "Sepsis.",
+          "t": "No difference in 28-day death. Exploratory subgroups hinted at benefit over age 60 and in diabetics, and harm in younger patients; the authors call these unproven."
+        },
+        {
+          "b": "Hepatitis B.",
+          "t": "Responses appeared months after treatment ended; 12 months did no better than 6; no responder lost HBsAg."
+        },
+        {
+          "b": "Vaccine adjuvant.",
+          "t": "Labelled in some countries to improve vaccine antibody responses in people with weak immune systems, from older trials not reviewed here."
+        },
+        {
+          "b": "COVID-19.",
+          "t": "Retrospective cohorts conflicted; the pooled mortality signal came mainly from small studies and is low-certainty."
+        }
+      ]
+    },
+    "more": [
+      {
+        "title": "More: why the sepsis trial matters",
+        "paras": [
+          "Sepsis was the strongest rationale for the drug after an earlier promising Chinese trial (ETASS, 2013). TESTS was built to confirm it: 22 hospitals, 1,106 adults, double-blind, standardised care in both arms. Deaths at 28 days were 127 of 542 on thymosin alpha-1 and 132 of 547 on placebo; serious adverse events were similar (26.8% vs 29.3%). The drug was safe, but it did not work for its main purpose."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "Mild, mostly at the injection site; the large trial found no safety signal.",
+    "lede": "Across decades of use the main reported effects are redness, discomfort or irritation where it is injected. TESTS, the only large placebo-controlled dataset, found adverse-event rates no different from placebo.",
+    "chart": {
+      "eyebrow": "TESTS sepsis trial · within 90 days · share affected",
+      "legend": [
+        "Thymosin alpha-1 1.6 mg twice daily",
+        "Placebo"
+      ],
+      "rows": [
+        {
+          "name": "Any adverse event",
+          "drug": 66.4,
+          "placebo": 67.6
+        },
+        {
+          "name": "Any serious adverse event",
+          "drug": 26.8,
+          "placebo": 29.3
+        }
+      ],
+      "max": 80,
+      "note": "Critically ill patients have many events regardless of treatment, hence the high rates in both groups. 542 vs 547 patients; neither difference was significant (p=0.70, p=0.38)."
+    },
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "Not reported separately in TESTS. The 1998 hepatitis B trial and later reviews report no significant side effects beyond local injection reactions; with interferon co-treatment, fever, fatigue, aches, nausea and low neutrophils are attributed mainly to the interferon."
+    },
+    "unique": {
+      "title": "The immune-boosting paradox",
+      "text": "Because it stimulates immune responses, the Zadaxin label says it should not be given to deliberately immunosuppressed people, such as transplant recipients, unless benefit clearly outweighs risk. In hepatitis B a temporary liver-enzyme flare can occur as the immune system attacks infected cells. In the sepsis trial younger patients did worse in an exploratory analysis: stimulating immunity is not automatically safe."
+    },
+    "more": [
+      {
+        "title": "More: what the trials monitor for",
+        "paras": [
+          "Liver enzymes in hepatitis B, for flares. Blood counts and fever when combined with interferon. In sepsis, organ function and secondary infections in both arms.",
+          "Not studied: long-term daily use in healthy people, the pattern promoted online. Labelled regimens are twice weekly for 6–12 months (hepatitis) or, in the sepsis trial, twice daily for a week."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "Beyond the hepatitis B response and shorter viral shedding in some COVID-19 cohorts, no trial has shown benefit on energy, infections in healthy people, cancer survival or aging. Those claims come from sellers and small uncontrolled studies."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms trial teams treat as urgent",
+      "items": [
+        "Yellowing of the skin or eyes, dark urine or severe fatigue (liver flare)",
+        "High fever, chills or confusion (infection)",
+        "Hives, facial swelling or breathing difficulty after an injection",
+        "Spreading redness, warmth or pus at an injection site"
+      ],
+      "note": "Anyone with these symptoms should get medical care right away."
+    }
+  },
+  "levels": {
+    "pk": {
+      "half": 0.09,
+      "tmax": 0.055,
+      "ladder": [
+        1.6
+      ],
+      "stepDays": 1,
+      "tau": 3.5,
+      "maxDose": 1.6,
+      "refLabel": "1.6 mg twice weekly (Zadaxin label)",
+      "source": "Rost et al., Int J Clin Pharmacol Ther 1999 (healthy volunteers, single subcutaneous dose of 900 µg/m²): elimination half-life 1.8–2.6 h, peak at 1.2–1.5 h, as reported in later pharmacokinetic reviews"
+    },
+    "nopk": "",
+    "stats": [
+      {
+        "num": "~2 h",
+        "lbl": "half-life after an injection under the skin",
+        "src": "Rost 1999, as cited in later PK papers"
+      },
+      {
+        "num": "1.2–1.5 h",
+        "lbl": "time to peak blood level",
+        "src": "Rost 1999"
+      },
+      {
+        "num": "3.5 days",
+        "lbl": "between doses on the labelled hepatitis B regimen; the drug is gone within half a day",
+        "src": "Zadaxin product information"
+      }
+    ],
+    "explain": [
+      {
+        "b": "Why twice weekly works despite a 2-hour half-life.",
+        "t": "The drug acts as a trigger on immune cells whose response lasts days, so blood level is not what matters. Levels return to zero within about 12 hours of each dose."
+      },
+      {
+        "b": "Why the sepsis trial dosed twice daily.",
+        "t": "In acute illness the investigators wanted continuous stimulation for a week; the trial still found no survival benefit."
+      },
+      {
+        "b": "Why there is no ladder.",
+        "t": "The labelled dose is fixed at 1.6 mg (900 µg/m²), adjusted only for body weight under 40 kg."
+      }
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: the model behind the chart",
+        "paras": [
+          "A one-compartment model with a 2.2-hour half-life, peak at 1.3 hours and a dose every 3.5 days. 100% is the peak after 1.6 mg. Each dose clears long before the next, so the chart is a series of spikes. The half-life comes from a 1999 healthy-volunteer study cited by later papers; the original is not freely available online."
+        ]
+      },
+      {
+        "title": "More: what this chart cannot tell you",
+        "paras": [
+          "It does not show immune activity, which outlasts the drug. It models the labelled product, not online vials of unverified content, and says nothing about the daily or \"cycled\" schedules promoted by sellers, which no trial has tested."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "How thymosin alpha-1 was tested, and where the trials stand.",
+    "lede": "Studied for 40 years, mostly in small trials in China, Italy and Taiwan. One large modern trial now exists, and it was negative.",
+    "ladder": {
+      "title": "The labelled regimen (hepatitis B)",
+      "text": "Zadaxin's product information specifies 1.6 mg (900 µg/m²) under the skin twice a week for 6 to 12 months, alone or with interferon, with 40 µg/kg for people under 40 kg. There is no escalation. The sepsis trial's regimen, 1.6 mg twice daily for 7 days, is not an approved use.",
+      "steps": [
+        {
+          "d": "1.6 mg",
+          "t": "twice weekly, 6–12 months"
+        }
+      ],
+      "note": "Regimens differ by country and indication; this page reports the Singapore product information and the TESTS protocol as published facts."
+    },
+    "more": [
+      {
+        "title": "More: how side effects were handled inside the trials",
+        "paras": [
+          "Hepatitis B trials monitored liver enzymes and continued through mild flares unless liver failure threatened. TESTS, run in intensive care units, tracked adverse events for 90 days.",
+          "The twice-weekly regimen was designed as a 6–12 month course under a liver specialist, not open-ended use."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials that were run, and what is still registered",
+      "items": [
+        "TESTS (sepsis, BMJ 2025): 1,106 adults, no reduction in 28-day mortality (23.4% vs 24.1%)",
+        "Hepatitis B (Hepatology 1998): 98 patients, higher complete response at 18 months after a 6-month course; later combination trials gave mixed results",
+        "COVID-19 (2020–2023): retrospective cohorts and one meta-analysis; no large randomised trial",
+        "Smaller studies in cancer supportive care and infection continue, mainly in China"
+      ]
+    },
+    "find": {
+      "text": "Trials are concentrated in China and Europe. Search the registry under both names; in North America there is no approved product and no trial that provides it to healthy volunteers.",
+      "term": "thymalfasin",
+      "extra": {
+        "label": "BMJ: the TESTS trial",
+        "url": "https://doi.org/10.1136/bmj-2024-082583"
+      }
+    }
+  },
+  "status": {
+    "headline": "Approved in some 30-plus countries, never in Canada or the U.S., and barred from U.S. compounding. Online vials are unapproved.",
+    "items": [
+      {
+        "tag": "no",
+        "label": "Canada: not approved",
+        "text": "Health Canada has never authorised thymosin alpha-1 (thymalfasin) as a drug. Selling it for human use is illegal."
+      },
+      {
+        "tag": "no",
+        "label": "U.S.: not approved; compounding blocked",
+        "text": "No FDA approval despite orphan designations (liver cancer, melanoma, DiGeorge anomaly, chronic hepatitis B). Put in Category 2 of the compounding bulks list in September 2023, removed in September 2024 after the nominator withdrew; on 4 December 2024 the Pharmacy Compounding Advisory Committee voted 17–4 against adding it. Not among the peptides advisers endorsed in July 2026, so it still cannot lawfully be compounded."
+      },
+      {
+        "tag": "ok",
+        "label": "Approved elsewhere",
+        "text": "Zadaxin is approved in Italy, China and more than 30 other countries, mainly for chronic hepatitis B (and hepatitis C with interferon) and as a vaccine adjuvant. The EU granted an orphan designation for liver cancer in 2002 but no EU-wide approval."
+      },
+      {
+        "tag": "no",
+        "label": "Grey market",
+        "text": "Vials sold online as \"thymosin alpha-1\", \"Tα1\" or \"Zadaxin\" are unapproved; buyers cannot verify identity, purity or dose."
+      }
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "What the online product is, and is not",
+        "text": "Zadaxin is a 1.6 mg sterile vial made in Italy under drug rules and prescribed by liver specialists where it is approved. \"Thymosin alpha-1\" from research-peptide shops is a powder with unverified content, sold for \"immune support\" or \"anti-aging\".",
+        "items": [
+          "No trial supports use in healthy people, daily dosing, or the \"cycles\" promoted online.",
+          "FDA reviewers and advisers concluded in 2024 that there was no compelling evidence of clinical effectiveness and safety for compounded use.",
+          "In the one large modern trial, the drug did not save lives in the condition it was most expected to help."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "warn",
+        "title": "Symptoms to take to a doctor",
+        "text": "Anyone who has injected a thymosin alpha-1 product should see a doctor for:",
+        "items": [
+          "Yellow skin or eyes, dark urine, or unusual fatigue",
+          "Fever, chills or an infected injection site",
+          "Hives, swelling or breathing difficulty",
+          "Any new symptom in someone with an autoimmune disease or a transplant"
+        ],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: the U.S. compounding fight",
+        "paras": [
+          "Compounding pharmacies sold thymosin alpha-1 widely before 2023. The FDA's Category 2 listing stopped that; a compounders' lawsuit led to a settlement and advisory committee reviews in late 2024, where the committee sided with the FDA on thymosin alpha-1 (17–4 against). In July 2026 advisers endorsed six other peptides (BPC-157, TB-500, KPV, MOTS-c, Semax, Epitalon); thymosin alpha-1 was not on that agenda and remains off the list pending any final rule."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "text": "Wu J et al. The efficacy and safety of thymosin α1 for sepsis (TESTS): multicentre, double blinded, randomised, placebo controlled, phase 3 trial. BMJ 2025;388:e082583.",
+        "url": "https://doi.org/10.1136/bmj-2024-082583"
+      },
+      {
+        "text": "Chien RN, Liaw YF et al. Efficacy of thymosin α1 in patients with chronic hepatitis B: a randomized, controlled trial. Hepatology 1998;27:1383-1387.",
+        "url": "https://pure.lib.cgu.edu.tw/en/publications/efficacy-of-thymosin-%CE%B1sub1sub-in-patients-with-chronic-hepatitis--3/"
+      },
+      {
+        "text": "Health Sciences Authority Singapore, ZADAXIN injection product information (indications, 1.6 mg twice-weekly regimen, contraindications).",
+        "url": "https://www.ndf.gov.sg/about-drugs/product-information/SIN07483P/"
+      },
+      {
+        "text": "U.S. FDA, Pharmacy Compounding Advisory Committee, final summary minutes of the December 4, 2024 meeting (thymosin alpha-1 votes 4 yes / 17 no).",
+        "url": "https://fda.gov/media/185642/download"
+      },
+      {
+        "text": "U.S. FDA, December 4, 2024 PCAC meeting page (agenda, briefing documents, uses evaluated).",
+        "url": "https://www.fda.gov/advisory-committees/advisory-committee-calendar/december-4-2024-meeting-pharmacy-compounding-advisory-committee-12042024"
+      },
+      {
+        "text": "Reed Smith, FDA removes certain peptide bulk drug substances, including thymosin alpha-1, from 503A Category 2 (effective September 27, 2024), October 2024.",
+        "url": "https://www.reedsmith.com/de/perspectives/2024/10/fda-certain-peptide-bulk-drug-substances-category-2-503a-bulks-pcac"
+      },
+      {
+        "text": "FDA Law Blog, FDA's peptide rally: Category 2 removals and July 23-24, 2026 PCAC meeting, April 21, 2026.",
+        "url": "https://thefdalawblog.com/2026/04/fdas-peptide-rally-what-compounders-and-industry-need-to-know-post-1-of-2"
+      },
+      {
+        "text": "Holland & Knight, FDA advisory committee endorses compounding of certain peptides (July 2026 PCAC outcome), August 4, 2026.",
+        "url": "https://www.hklaw.com/en/insights/publications/2026/08/fda-advisory-committee-endorses-compounding-of-certain-peptides"
+      },
+      {
+        "text": "Binder U, Skerra A. PASylated thymosin α1: a long-acting immunostimulatory peptide. Int J Mol Sci 2021;22:124 (cites Rost et al. 1999 human pharmacokinetics; marketed in more than 30 countries).",
+        "url": "https://www.mdpi.com/1422-0067/22/1/124"
+      },
+      {
+        "text": "Dominari A et al. Thymosin alpha 1: a comprehensive review of the literature. World Journal of Virology 2020;9:67-78 (approvals, orphan designations, safety profile).",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7747025/"
+      },
+      {
+        "text": "Huang C et al. Efficacy evaluation of thymosin alpha 1 in non-severe patients with COVID-19: a retrospective cohort study based on propensity score matching. Frontiers in Medicine 2021;8:664776.",
+        "url": "https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2021.664776/full"
+      },
+      {
+        "text": "Systematic review and meta-analysis of thymosin alpha-1 in moderate to critical COVID-19. Inflammopharmacology 2023;31:3317-3325.",
+        "url": "https://link.springer.com/article/10.1007/s10787-023-01354-2"
+      },
+      {
+        "text": "SciClone Pharmaceuticals, FDA orphan drug designation for thymalfasin in stage IIb-IV malignant melanoma, March 20, 2006.",
+        "url": "https://www.biospace.com/article/releases/sciclone-pharmaceuticals-inc-s-zadaxin-granted-orphan-drug-designation-for-malignant-melanoma-in-united-states-"
+      },
+      {
+        "text": "European Medicines Agency, orphan designation EU/3/02/110, thymosin alpha-1 for hepatocellular carcinoma, 2002.",
+        "url": "https://www.ema.europa.eu/en/medicines/human/orphan-designations/eu302110"
+      }
+    ]
+  }
+}

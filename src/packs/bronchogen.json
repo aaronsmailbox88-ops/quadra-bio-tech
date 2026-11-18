@@ -1,0 +1,273 @@
+{
+  "id": "bronchogen",
+  "name": "Bronchogen",
+  "brands": "",
+  "maker": "St Petersburg Institute of Bioregulation and Gerontology (V. Khavinson)",
+  "group": "research",
+  "pill": "Unapproved",
+  "overview": {
+    "headline": "A four-amino-acid peptide named for the lungs. Tested in bronchial cells and rats; never in a controlled human trial.",
+    "lede": "Bronchogen is the Khavinson institute's tetrapeptide Ala-Glu-Asp-Leu, patented in the U.S. in 2009 for \"restoring respiratory organs function\". In Russia it is a dietary supplement, not a medicine. In Canada and the U.S. it is sold only by \"research peptide\" vendors.",
+    "stats": [
+      {
+        "num": "4",
+        "lbl": "amino acids: Ala-Glu-Asp-Leu (written Ala-Asp-Glu-Leu in the group's 2014 paper)",
+        "src": "US patent 7,625,870; Lung 2014"
+      },
+      {
+        "num": "240",
+        "lbl": "rats in the two lung-injury experiments, published only in the patent",
+        "src": "US patent 7,625,870"
+      },
+      {
+        "num": "0",
+        "lbl": "controlled human trials in any language",
+        "src": "PubMed, patents, institute publications and registries, Oct 2026"
+      }
+    ],
+    "mechanism": {
+      "intro": "A short peptide said to enter lung cells and switch on genes that keep the airway lining renewing.",
+      "parts": [
+        {
+          "name": "The bioregulator idea",
+          "text": "The institute's 2016 computer model places Bronchogen on the DNA sequence \"ctcc\" with \"strong\" predicted binding. A docking calculation, not a measurement in tissue."
+        },
+        {
+          "name": "What the cell study showed",
+          "text": "In a human embryonic bronchial cell line the peptide raised the division marker Ki67 1.5- to 3.4-fold, lowered the stress protein p53 by about a third and increased lung-development genes (FOXA2 up to 15-fold). Whether it reaches a human lung has never been measured."
+        }
+      ]
+    },
+    "more": {
+      "title": "More: two spellings of one sequence",
+      "paras": [
+        "The patent and the 2016 table give Ala-Glu-Asp-Leu; the group's main cell paper (Lung, 2014) calls the same product ADEL, Ala-Asp-Glu-Leu, a different molecule. The inconsistency has never been explained."
+      ]
+    }
+  },
+  "results": {
+    "headline": "Cell cultures and rats from one institute; a Russian claim of use in lung disease with no numbers.",
+    "lede": "The only peer-reviewed data are changes in a cell line. The animal work is in the inventors' patent; the human claim is one sentence in a review.",
+    "chart": null,
+    "stats": [
+      {
+        "num": "3.4×",
+        "lbl": "rise in the division marker Ki67 in \"old\" bronchial cell cultures",
+        "src": "Lung 2014"
+      }
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {
+          "b": "In vitro.",
+          "t": "Human bronchial cells (FLECH line) at three passage ages: Ki67 up 1.55- to 3.42-fold; p53 down 28–38%; lung-development and surfactant genes up. Three samples per group, one laboratory."
+        },
+        {
+          "b": "Animals.",
+          "t": "Patent, 2009: 120 rats with staphylococcal lung infection repaired faster; 120 rats given bleomycin had less fibrosis (phagocytic indices 75.6 and 78.6 versus 46.3 and 57.6). Toxicity tests in 60 mice, 60 rats and 100 guinea pigs: none reported. Never peer reviewed."
+        },
+        {
+          "b": "Russian human reports.",
+          "t": "A 2020 institute review calls oral Bronchogen \"effective\" in bronchopulmonary conditions, with no patient numbers, design or outcomes and no underlying paper we could find."
+        }
+      ]
+    },
+    "more": [
+      {
+        "title": "More: why the cell results are not a forecast",
+        "paras": [
+          "A cell line has no immune system or airway and cannot show whether the peptide survives the trip from a capsule or injection site. The paper also reports a fall in the enzyme NOS-3 that its own table does not show."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "No human safety data. The only toxicity testing is in the inventors' patent.",
+    "lede": "Nobody has given Bronchogen to people in a controlled study. The patent reports no rodent toxicity; the institute states generally that its peptides have no side effects. Neither replaces trial data.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "Not measurable: no trial has been run."
+    },
+    "unique": {
+      "title": "What is actually known",
+      "text": "Nothing beyond the absence of data. The peptide makes bronchial cells divide more and switches off p53, a tumour-suppressor protein, a signal a trial would follow for years."
+    },
+    "more": [
+      {
+        "title": "More: what a trial would monitor for",
+        "paras": [
+          "Immune reactions to an injected peptide of uncertain purity, and long-term effects of a cell-growth signal in airway tissue."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "In cells: more division. In rats: faster recovery from infection and less fibrosis, per the patent. In people: nothing measured."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms a doctor should see promptly",
+      "items": [
+        "Spreading redness, swelling or pus at an injection site, or fever and chills after an injection",
+        "Hives, swelling of the face or throat, trouble breathing",
+        "Yellowing of the skin or eyes, dark urine",
+        "Worsening cough, breathlessness or wheeze"
+      ],
+      "note": "No trial has defined this peptide's own danger signs; these relate to an unverified product."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "No one has measured Bronchogen in a person's blood; no half-life or absorption figure exists for it in any species. There is nothing to build a curve from.",
+    "stats": [
+      {
+        "num": "None",
+        "lbl": "human half-life; never measured",
+        "src": "No PK study found, Oct 2026"
+      },
+      {
+        "num": "4",
+        "lbl": "amino acids long (Ala-Glu-Asp-Leu)",
+        "src": "Khavinson 2016"
+      },
+      {
+        "num": "0",
+        "lbl": "pharmacokinetic studies in any species",
+        "src": "PubMed, patents, institute publications and registries, Oct 2026"
+      }
+    ],
+    "explain": [
+      {
+        "b": "Why there is no chart.",
+        "t": "The simulator on other pages needs a measured half-life; none exists for Bronchogen."
+      },
+      {
+        "b": "Why the oral claim is contested.",
+        "t": "Pharmacologists expect peptides this short to be digested by gut and blood enzymes; the institute says they are absorbed intact. Nothing in people settles it."
+      }
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: what this page cannot tell you",
+        "paras": [
+          "What is in a product sold as Bronchogen, or what repeated use does: no independent analysis exists, and no study has followed anyone beyond a few weeks."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "No registered trial anywhere. The human claim is a single sentence.",
+    "lede": "The institute's reviews say Bronchogen has been used in Russian lung patients; no paper with patient numbers, a control group or outcomes could be found.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: how the existing studies were run",
+        "paras": [
+          "A bronchial cell line was exposed to the peptide and compared with untreated cells; rats were treated after a lung injury and compared with untreated animals. The Russian supplement is not required to run trials."
+        ]
+      }
+    ],
+    "running": {
+      "title": "No registered trials",
+      "items": [
+        "No clinical trial of Bronchogen on ClinicalTrials.gov or any registry we could find (October 2026).",
+        "The 2020 review's bronchopulmonary claim cites no published study."
+      ]
+    },
+    "find": {
+      "text": "Search the registry for \"Bronchogen\" and its sequence \"AEDL\". We found no registered trial.",
+      "term": "Bronchogen",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "Not approved anywhere. A dietary supplement in Russia, a \"research chemical\" everywhere else.",
+    "items": [
+      {
+        "tag": "no",
+        "label": "Canada",
+        "text": "Never authorised by Health Canada as a medicine or natural health product (October 2026)."
+      },
+      {
+        "tag": "no",
+        "label": "United States",
+        "text": "Not FDA-approved; absent from FDA's 503A compounding category list of 14 May 2026."
+      },
+      {
+        "tag": "no",
+        "label": "Russia",
+        "text": "Not a registered medicine. The Russian drug directory RLS lists Бронхоген as a food supplement (БАД) from Firma-Vita, description approved October 2012. Supplements are registered on safety paperwork, not proof of effect."
+      }
+    ],
+    "cards": [
+      {
+        "kind": "warn",
+        "title": "What a \"bioregulator\" claim rests on",
+        "text": "The claim is that a peptide copied from an organ extract reaches that organ and switches on its genes. For Bronchogen the support is:",
+        "items": [
+          "Computer docking models, test-tube DNA work and cell cultures from one institute; no study has tracked one of these peptides into a human organ."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "crit",
+        "title": "What \"research use only\" means",
+        "text": "A \"research use only\" label is a legal device, not a safety rating. No regulator in Canada or the U.S. has checked what is in a vial sold as Bronchogen, and no toxicology or purity data have been filed in the West.",
+        "items": [
+          "In Russia the same name is a food supplement; that says nothing about what is in a vial sold abroad under it."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "soft",
+        "title": "Symptoms to take to a doctor",
+        "text": "If any of these appear after using such a product, see a doctor and bring the product:",
+        "items": [
+          "Fever, chills, or a hot, swollen injection site",
+          "Hives, swelling of the face or throat, trouble breathing",
+          "Yellowing of the skin or eyes, dark urine",
+          "Worsening cough, breathlessness or wheeze"
+        ],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: the Khavinson peptide family",
+        "paras": [
+          "Vladimir Khavinson (1946–2024) directed the St Petersburg Institute of Bioregulation and Gerontology, which made animal-organ extracts from the 1970s and then designed two- to four-amino-acid peptides from each extract's amino-acid make-up, naming them after target organs. Six products became licensed medicines in the USSR or Russia: Thymalin (1982), Thymogen and Epithalamin (1990), Prostatilen (1992), Cortexin and Retinalamin (1999). The synthetic organ-named peptides sold online are not among them, and none appears in an international trial registry."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "text": "Khavinson VK, Tendler SM, Vanyushin BF et al. Peptide regulation of gene expression and protein synthesis in bronchial epithelium. Lung 2014;192:781–791.",
+        "url": "https://khavinson.info/assets/files/2014-Khavinson_Tendler1.pdf"
+      },
+      {
+        "text": "Khavinson VKh et al. Peptide substance restoring respiratory organs function. US patent 7,625,870, 1 December 2009.",
+        "url": "https://patents.google.com/patent/US7625870"
+      },
+      {
+        "text": "Khavinson V et al. Peptides: prospects for use in the treatment of COVID-19. Molecules 2020;25(19):4389.",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7583759"
+      },
+      {
+        "text": "RLS drug directory, Бронхоген: food supplement (БАД), Firma-Vita, description approved 17 October 2012.",
+        "url": "https://www.rlsnet.ru/baa/bronxogen-32631"
+      },
+      {
+        "text": "Khavinson VKh, Lin'kova NS, Tarnovskaya SI. Short peptides regulate gene expression. Bull Exp Biol Med 2016;162(2): sequence table and modelled DNA binding sites.",
+        "url": "https://khavinson.info/assets/files/skan/2016-khavinson_lin_tarn.pdf"
+      },
+      {
+        "text": "U.S. FDA, 503A bulk drug substances category list, updated 14 May 2026.",
+        "url": "https://fda.gov/media/94155/download"
+      }
+    ]
+  }
+}

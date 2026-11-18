@@ -1,0 +1,281 @@
+{
+  "id": "tirzepatide",
+  "name": "Tirzepatide",
+  "brands": "Mounjaro, Zepbound",
+  "maker": "Eli Lilly",
+  "group": "approved",
+  "pill": "Approved",
+  "overview": {
+    "headline": "One weekly injection that works on two hunger and blood-sugar hormones.",
+    "lede": "Tirzepatide is made by Eli Lilly and sold as Mounjaro (type 2 diabetes) and Zepbound (weight management and sleep apnea). It is approved in Canada, the United States and the European Union, and is available only with a prescription. Anything sold as tirzepatide outside a pharmacy, including compounded copies and \"research\" vials, is not the approved product.",
+    "stats": [
+      {"num": "20.9%", "lbl": "average weight loss on 15 mg after 72 weeks, counting everyone randomized", "src": "SURMOUNT-1, adults without diabetes"},
+      {"num": "20.2% vs 13.7%", "lbl": "weight loss head-to-head against semaglutide 2.4 mg", "src": "SURMOUNT-5, 72 weeks"},
+      {"num": "4", "lbl": "approved uses in the U.S.: type 2 diabetes, weight, sleep apnea, heart risk", "src": "FDA, 2022 to Aug 2026"}
+    ],
+    "mechanism": {
+      "intro": "One molecule switches on two receptors your body already uses after a meal.",
+      "parts": [
+        {"name": "GLP-1", "text": "Slows stomach emptying, signals fullness to the brain, and raises insulin when blood sugar is high. The same target as semaglutide (Ozempic, Wegovy)."},
+        {"name": "GIP", "text": "Works alongside GLP-1 on appetite and insulin. Lilly calls tirzepatide a dual GIP and GLP-1 receptor agonist; in trials the pair produced more weight loss than GLP-1 alone."}
+      ]
+    },
+    "more": {
+      "title": "More: where it sits among the GLP-1 drugs",
+      "paras": [
+        "Semaglutide (Wegovy, Ozempic) acts on one receptor. Tirzepatide acts on two. Retatrutide, still experimental, acts on three. The only direct comparison so far, SURMOUNT-5, found tirzepatide beat semaglutide 2.4 mg on weight by about 6.5 percentage points over 72 weeks.",
+        "The same molecule is sold under two names. Mounjaro is approved for type 2 diabetes (and, in the U.S. since August 2026, for lowering heart risk in type 2 diabetes). Zepbound is approved for weight management and for moderate to severe obstructive sleep apnea in adults with obesity. In the EU everything sits under the Mounjaro name.",
+        "Everything on this page comes from Lilly's published trial announcements, peer-reviewed papers, the U.S. label, Health Canada documents and regulator notices. Sources are listed under the Status tab."
+      ]
+    }
+  },
+  "results": {
+    "headline": "What people in the trials lost.",
+    "lede": "Average weight change at the top dose (15 mg weekly, or the highest dose a person tolerated), compared with placebo. Every group also received diet and activity counselling.",
+    "chart": {
+      "metric": "weight",
+      "legend": ["Tirzepatide 15 mg or max tolerated", "Placebo (SURMOUNT-5: semaglutide)"],
+      "rows": [
+        {"name": "SURMOUNT-1", "meta": "72 weeks · obesity or overweight, no diabetes · 2,539 people", "drug": -20.9, "placebo": -3.1, "tip": "Tirzepatide 15 mg: −20.9% (efficacy estimand −22.5%, about 24 kg)"},
+        {"name": "SURMOUNT-5", "meta": "72 weeks · head-to-head, grey bar is semaglutide 2.4 mg · 751 people", "drug": -20.2, "placebo": -13.7, "tip": "Tirzepatide: −20.2% (−22.8 kg) vs semaglutide −13.7% (−15.0 kg)"},
+        {"name": "SURMOUNT-3", "meta": "72 weeks after a 12-week diet lead-in · 579 people", "drug": -18.4, "placebo": 2.5, "tip": "Tirzepatide max tolerated: −18.4% more after the lead-in; placebo regained 2.5%. Total from study start: −24.3%"},
+        {"name": "SURMOUNT-OSA", "meta": "52 weeks · sleep apnea plus obesity, not on CPAP · 234 people", "drug": -17.7, "placebo": -1.6, "tip": "Tirzepatide 10 or 15 mg: −17.7%. In the parallel trial of people on CPAP (235 people): −19.6% vs −2.3%"},
+        {"name": "SURMOUNT-2", "meta": "72 weeks · obesity plus type 2 diabetes · 938 people", "drug": -14.7, "placebo": -3.2, "tip": "Tirzepatide 15 mg: −14.7% (efficacy estimand −15.7%, −15.6 kg)"},
+        {"name": "SURMOUNT-4", "meta": "52-week withdrawal after 36 weeks on drug · 670 people", "drug": -5.5, "placebo": 14.0, "tip": "After losing 21.1% on tirzepatide, those who continued lost another 5.5%; those switched to placebo regained 14.0%"}
+      ],
+      "max": 25,
+      "note": "Figures are the trials' \"treatment-regimen estimand\": everyone randomized, whether or not they stayed on the drug. This is the figure the U.S. label and Health Canada use. The \"efficacy estimand\" (people who stayed on treatment) runs higher, e.g. −22.5% vs −2.4% in SURMOUNT-1. In SURMOUNT-5 the comparator was semaglutide, not placebo, and the trial was open-label."
+    },
+    "stats": [
+      {"num": "−19.7%", "lbl": "after 176 weeks (3.4 years) on 15 mg in people with pre-diabetes, counting everyone", "src": "SURMOUNT-1 extension; −22.9% for those who stayed on"},
+      {"num": "57%", "lbl": "of people on 15 mg lost a fifth or more of their body weight (placebo: 3%)", "src": "SURMOUNT-1, 72 weeks"}
+    ],
+    "beyond": {
+      "title": "Beyond the scale",
+      "items": [
+        {"b": "Blood sugar.", "t": "In type 2 diabetes, A1C fell 2.0 to 2.3 percentage points over 40 weeks on 5 to 15 mg, against 1.9 on semaglutide 1 mg (SURPASS-2, 1,879 people). In SURMOUNT-2, A1C fell 2.1 points on either dose versus 0.5 on placebo."},
+        {"b": "Sleep apnea.", "t": "In SURMOUNT-OSA, breathing interruptions fell by 25 to 29 an hour versus 5 to 6 on placebo, and 42% to 50% of people reached remission or mild symptom-free disease (placebo 14% to 16%). Approved for this use in the U.S. (Dec 2024) and Canada (June 2026)."},
+        {"b": "Heart attacks and strokes.", "t": "SURPASS-CVOT followed 13,299 people with type 2 diabetes and heart disease for a median four years against dulaglutide, an older GLP-1 drug. Heart attack, stroke or cardiovascular death was 8% less likely (hazard ratio 0.92, 95.3% CI 0.83 to 1.01): as good as, not proven better than, the comparator. Death from any cause was 16% lower (0.84), a result not adjusted for multiple testing."},
+        {"b": "Heart failure.", "t": "In SUMMIT (731 people with heart failure with preserved ejection fraction and obesity), worsening heart failure or cardiovascular death was 38% less likely (hazard ratio 0.62) and symptom scores improved. Regulators were not satisfied: see the Status tab."},
+        {"b": "Preventing diabetes.", "t": "Among 1,032 SURMOUNT-1 participants with pre-diabetes, 1.3% on tirzepatide progressed to type 2 diabetes over 176 weeks versus 13.3% on placebo (hazard ratio 0.07). In the 17 weeks after stopping, the gap narrowed: 2.4% versus 13.7%."},
+        {"b": "Liver.", "t": "In the Phase 2 SYNERGY-NASH trial (190 people, 52 weeks), fatty liver disease with inflammation (MASH) resolved without worsening scarring in 44%, 56% and 62% on 5, 10 and 15 mg versus 10% on placebo."}
+      ]
+    },
+    "more": [
+      {
+        "title": "More: did it protect the heart?",
+        "paras": [
+          "Partly answered. SURPASS-CVOT did not use a placebo. It compared tirzepatide with dulaglutide, which had already been shown to cut heart events in its own placebo trial. Tirzepatide met the pre-set test for being no worse (the upper limit of the confidence interval stayed below 1.05) but the 8% advantage on heart attack, stroke and cardiovascular death did not reach statistical significance (p = 0.086). On that basis the FDA approved Mounjaro on August 28, 2026 to reduce cardiovascular risk in adults with type 2 diabetes. Lilly's modelled comparison against placebo (using dulaglutide's trial as a bridge) estimated 28% fewer events, but that is an indirect calculation.",
+          "Secondary results were clearer: A1C fell 1.73 points versus 0.90, weight fell 12.1% versus 5.0% at three years, and kidney function declined more slowly in people with kidney disease. Side effects led 13.3% of tirzepatide users to stop, versus 10.2% on dulaglutide.",
+          "A separate outcomes trial in people with obesity but without diabetes (Lilly calls it the morbidity and mortality in obesity study) is still running, as is a chronic kidney disease study."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "Mostly stomach-related, mostly during the dose climb, and milder than you might expect from the weight loss.",
+    "lede": "Nausea, diarrhea, vomiting and constipation were the big four in every trial. The U.S. label notes that most nausea, vomiting and diarrhea happened during dose escalation and decreased over time.",
+    "chart": {
+      "eyebrow": "SURMOUNT-1 · share of people affected",
+      "legend": ["Tirzepatide 15 mg", "Placebo"],
+      "rows": [
+        {"name": "Nausea", "drug": 31.0, "placebo": 9.5},
+        {"name": "Diarrhea", "drug": 23.0, "placebo": 7.3},
+        {"name": "Vomiting", "drug": 12.2, "placebo": 1.7},
+        {"name": "Constipation", "drug": 11.7, "placebo": 5.8},
+        {"name": "Indigestion (dyspepsia)", "drug": 11.3, "placebo": 4.2},
+        {"name": "Abdominal pain", "drug": 4.9, "placebo": 3.3}
+      ],
+      "max": 40,
+      "note": "Lower doses were not always gentler: on 5 mg, nausea was 24.6% and constipation 16.8%. Dyspepsia and abdominal pain are calculated from Lilly's reported counts (71 and 31 of 630 people on 15 mg; 27 and 21 of 643 on placebo). In people with diabetes (SURMOUNT-2) rates were lower: nausea 21.9% on 15 mg versus 6.3%."
+    },
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "In SURMOUNT-1, 4.3% of people on 5 mg, 7.1% on 10 mg and 6.2% on 15 mg stopped because of adverse events, against 2.6% on placebo. Pooling SURMOUNT-1 and -2, the label gives 4.8%, 6.3% and 6.7% versus 3.4%. The highest rate was 10.5% (versus 2.1%) in SURMOUNT-3, where people had already dieted for 12 weeks. Head-to-head, 6.1% stopped tirzepatide and 8.0% stopped semaglutide in SURMOUNT-5."
+    },
+    "unique": {
+      "title": "Injection-site reactions and hair loss",
+      "text": "Two things show up on the label beyond the stomach. Injection-site reactions (redness, itching, a lump) affected 8% of people on 10 or 15 mg versus 2% on placebo. Hair loss affected about 5% versus 1%, and 7.1% of women versus 0.5% of men; the trials cannot say whether the drug or the rapid weight loss is responsible. Gallbladder problems were slightly more common (gallstones 1.1% vs 1.0%, gallbladder inflammation 0.7% vs 0.2%), and adjudicated acute pancreatitis was rare and equal (0.2% in each group) in the weight trials."
+    },
+    "more": [
+      {
+        "title": "More: what the trials monitor for",
+        "paras": [
+          "Class risks. The label carries a boxed warning for thyroid C-cell tumours seen in rodents (people with a personal or family history of medullary thyroid cancer or MEN 2 must not take it), plus warnings for pancreatitis, gallbladder disease, kidney injury from dehydration after vomiting or diarrhea, low blood sugar when combined with insulin or sulfonylureas, worsening of diabetic eye disease in type 2 diabetes, and severe allergic reactions including anaphylaxis.",
+          "Anesthesia. Because the drug slows stomach emptying, the U.S. label was updated in October 2024 with a warning about stomach contents being inhaled during general anesthesia or deep sedation, based on rare post-marketing reports. Patients are told to inform clinicians before any planned procedure.",
+          "Gut blockage. Post-marketing reports include ileus, intestinal obstruction and severe constipation with fecal impaction. The label says it is not recommended for people with severe gastroparesis, and that warning was expanded in February 2026.",
+          "Mood. A suicidal-thoughts warning carried on the Zepbound label from launch was removed in early 2026 after the FDA reviewed 91 placebo-controlled trials (107,910 people) and claims data on 2.2 million users and found no increased risk.",
+          "Eyes (NAION). A rare optic-nerve stroke has been linked to semaglutide. The EMA listed it as a very rare semaglutide side effect in June 2025. Australia's TGA added a class-wide caution in July 2026 that covers Mounjaro, while noting its expert committee found evidence for a signal with semaglutide but not tirzepatide. The U.S. Zepbound label (April 2026) does not list it.",
+          "Pregnancy. Trials excluded pregnancy. Health Canada's 2022 decision summary lists pregnancy and breastfeeding as contraindications for Mounjaro."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "Blood pressure fell 7.6 mmHg more than placebo in the sleep apnea trial. In SUMMIT, the inflammation marker hsCRP fell 43% versus 3.5%, and six-minute walking distance improved by 38 metres versus 8. In SURPASS-CVOT, lipids and blood pressure improved more than on dulaglutide and kidney function declined more slowly. Fewer people developed type 2 diabetes, and sleep apnea went into remission in up to half of people with obesity."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms trial teams treat as urgent",
+      "items": [
+        "Severe or persistent abdominal pain, with or without vomiting (possible pancreatitis or gallbladder disease)",
+        "Vomiting or diarrhea that will not stop, or not being able to keep fluids down",
+        "Severe constipation with bloating and vomiting (possible bowel blockage)",
+        "Yellowing of the skin or eyes, dark urine, pale stools, fever",
+        "Swelling of the face or throat, trouble breathing, severe rash",
+        "Shakiness, confusion or sweating in someone also taking insulin or a sulfonylurea; sudden vision changes"
+      ],
+      "note": "Anyone with these symptoms, in a trial or not, should get medical care right away."
+    }
+  },
+  "levels": {
+    "pk": {
+      "half": 5,
+      "tmax": 1,
+      "ladder": [2.5, 5, 7.5, 10, 12.5, 15],
+      "stepDays": 28,
+      "tau": 7,
+      "maxDose": 15,
+      "refLabel": "15 mg weekly",
+      "source": "Zepbound U.S. label (rev. 04/2026) and Health Canada product monographs: half-life about 5 days (U.S. label: 5 to 6), peak at a median 24 h (range 8 to 72 h), steady state after 4 weeks, 80% bioavailability"
+    },
+    "nopk": "",
+    "stats": [
+      {"num": "~5 days", "lbl": "half-life: the time for the level to fall by half", "src": "U.S. label and Health Canada monograph"},
+      {"num": "1.6×", "lbl": "how far weekly dosing builds up compared with a single dose", "src": "From the half-life and the 7-day interval"},
+      {"num": "4 weeks", "lbl": "to reach a steady level after each dose step", "src": "U.S. label, clinical pharmacology"}
+    ],
+    "explain": [
+      {"b": "Why steps are four weeks apart.", "t": "Four weeks is more than five half-lives, so levels sit at about 98% of a step's plateau before the next increase. The label states steady state is reached after four weeks of weekly dosing, and tells prescribers to wait at least four weeks on a dose before raising it."},
+      {"b": "Why side effects cluster after a step.", "t": "The label notes that most nausea, vomiting and diarrhea occurred during dose escalation, when levels were still climbing, and decreased over time once they flattened."},
+      {"b": "Why it takes weeks to wash out.", "t": "Half is gone in about five days, but it takes roughly 25 days to clear about 97%. The effect fades too: in SURMOUNT-4, people switched to placebo regained 14% of their body weight over the following year."}
+    ],
+    "showTable": true,
+    "more": [
+      {
+        "title": "More: the model behind the chart",
+        "paras": [
+          "The chart uses a standard one-compartment pharmacokinetic model: the drug is absorbed from the injection site at one rate, cleared from the blood at another, and each dose adds to what is still circulating. The numbers come from the approved labels: a half-life of about 5 days, a peak a median 24 hours after injection, exposure that rises in proportion to dose, and a plateau after about four weeks.",
+          "The vertical axis is relative. 100% is the average level on 15 mg weekly once it has plateaued, so the 5 mg average sits at one third and 10 mg at two thirds. Because a week is longer than the half-life, the level falls by about 60% between injections, which is the zigzag on the chart.",
+          "Real people differ. The label reports that body weight affects exposure and that absorption varies between injection sites and devices, so two people on the same dose can have noticeably different blood levels."
+        ]
+      },
+      {
+        "title": "More: what this chart cannot tell you",
+        "paras": [
+          "It models the label regimen, not a person. It measures nothing; only a blood test can.",
+          "It says nothing about compounded products or vials sold online as tirzepatide. Their contents and strength are unverified, and the FDA has said compounded GLP-1 products have not been proven safe, effective or of consistent quality. The model has no way to account for a vial whose strength is unknown.",
+          "Custom schedules are hypothetical. The chart can show what a schedule would do in the model, including where it goes past anything the trials tested, but it cannot tell you how your body differs from the model or whether a schedule is safe. The trials and the label answered that with bloodwork, follow-up visits and medical supervision, which a curve on a screen cannot replace."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "How the tirzepatide trials were run, and what the label took from them.",
+    "lede": "Two Phase 3 programs (the SURPASS series in diabetes, SURMOUNT in obesity) set the dose ladder that now appears on the label. Here is how they worked and what is still being studied.",
+    "ladder": {
+      "title": "The dose ladder used in the trials and on the label",
+      "text": "Everyone started at 2.5 mg a week for four weeks, a dose the label describes as for starting only, then moved to 5 mg. After that the dose rose by 2.5 mg every four weeks until it reached the assigned target. In SURMOUNT-1 the targets were fixed at 5, 10 or 15 mg; in SURMOUNT-3, -4, -5 and -OSA people climbed to the highest dose they tolerated, 10 or 15 mg.",
+      "steps": [
+        {"d": "2.5 mg", "t": "start"},
+        {"d": "5 mg", "t": "week 4"},
+        {"d": "7.5 mg", "t": "week 8"},
+        {"d": "10 mg", "t": "week 12"},
+        {"d": "12.5 mg", "t": "week 16"},
+        {"d": "15 mg", "t": "week 20"}
+      ],
+      "note": "The label lists 5, 10 and 15 mg as maintenance doses for weight (10 or 15 mg for sleep apnea); 7.5 and 12.5 mg are stepping stones. A placebo group followed the same schedule with inactive injections, and nobody, including the doctors, knew who had what until the trial ended. SURMOUNT-5 was the exception: it was open-label."
+    },
+    "more": [
+      {
+        "title": "More: how side effects were handled inside the trials",
+        "paras": [
+          "The slow dose ladder is the main tool. Stomach symptoms tend to appear in the weeks after a step up and settle before the next one. In most SURMOUNT trials the protocol allowed the study team to hold a person at 10 mg rather than push to 15 mg, which is why those trials report a \"maximum tolerated dose\". The label follows the same logic: at least four weeks on each dose before any increase.",
+          "Participants had a study clinician to call, and symptoms were treated the way a doctor would treat them in any patient. People whose symptoms did not settle could leave the drug; that is where the discontinuation figures on the Side effects tab come from.",
+          "None of this is a self-management plan. The approved drug comes with a prescriber who can adjust the dose, which is exactly what is missing when someone uses a product bought online."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials still running or awaiting decisions",
+      "items": [
+        "A morbidity and mortality outcomes trial in people with obesity (Lilly's \"MMO\" study), and a chronic kidney disease study, both described by Lilly as ongoing in July 2025",
+        "Heart failure (HFpEF): the FDA asked for an additional confirmatory trial in 2025 before it would approve this use",
+        "Fatty liver disease (MASH): Phase 2 was positive in 2024 and Lilly said it was discussing next steps with regulators",
+        "Children and adolescents with type 2 diabetes: the EMA's committee recommended extending the diabetes indication to age 10 and up in December 2025"
+      ]
+    },
+    "find": {
+      "text": "Lilly runs sites in Canada, the U.S. and elsewhere. Search the public registry, then contact the nearest site listed on the study page. Typical requirements: adult, a BMI above a set threshold, and no competing weight-loss medication.",
+      "term": "tirzepatide",
+      "extra": {"label": "Lilly Trials", "url": "https://trials.lilly.com/"}
+    }
+  },
+  "status": {
+    "headline": "Approved in Canada, the U.S. and the EU. Compounded and online \"tirzepatide\" is a different product.",
+    "items": [
+      {"tag": "ok", "label": "Canada", "text": "Mounjaro was authorized for type 2 diabetes in November 2022 (NOC Nov 24, 2022). Zepbound was authorized for chronic weight management on May 13, 2025 and for moderate to severe obstructive sleep apnea in adults with obesity on June 16, 2026. A submission for heart failure was withdrawn by Lilly on November 26, 2025 after Health Canada reviewers found the safety data insufficient."},
+      {"tag": "ok", "label": "United States", "text": "Mounjaro: type 2 diabetes (2022) and, from August 28, 2026, reducing cardiovascular risk in type 2 diabetes. Zepbound: weight management (November 2023), obstructive sleep apnea (December 2024), multi-dose KwikPen (February 23, 2026). Lilly withdrew its heart-failure application in May 2025 after the FDA asked for another trial."},
+      {"tag": "ok", "label": "European Union", "text": "Mounjaro is approved for type 2 diabetes and weight management. In December 2024 the EMA's committee declined a separate sleep-apnea indication and instead added the trial data to the label. On December 11, 2025 the committee recommended extending the diabetes indication to children aged 10 and up; the cardiovascular results are in the EU product information."},
+      {"tag": "soon", "label": "Pipeline", "text": "Outcomes trials in obesity (morbidity and mortality) and kidney disease are running. Heart failure and liver disease (MASH) need more data before any approval. The approved maximum dose in Canada and the U.S. is 15 mg weekly."}
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "Compounded and copycat tirzepatide",
+        "text": "During the shortage that ended in 2024, U.S. compounding pharmacies were allowed to make copies. The FDA declared the shortage over on December 19, 2024 (confirming an October 2, 2024 decision), with grace periods ending February 18, 2025 for pharmacies and March 19, 2025 for larger outsourcing facilities. Anything still sold as compounded tirzepatide, as a \"research\" peptide, or as an oral tirzepatide pill is not the approved drug.",
+        "items": [
+          "A federal court in Texas upheld the FDA's decision on May 7, 2025 (Outsourcing Facilities Association v. FDA).",
+          "Lilly sued two compounding pharmacies on April 1, 2025 and four telehealth companies on April 23, 2025, over copies with added ingredients, untested oral \"tirzepatide\" and marketing that borrowed Lilly's trial results.",
+          "In June 2026 the FDA sent 25 warning letters to telehealth firms for misleading marketing of compounded semaglutide and tirzepatide, stating that compounded GLP-1 products \"have not been proven safe, effective, or of consistent quality like FDA-approved drugs\".",
+          "The only tirzepatide products Health Canada has authorized are Lilly's Mounjaro and Zepbound, both prescription-only."
+        ],
+        "note": "In the U.S., Lilly sells Zepbound vials and the KwikPen directly through LillyDirect with a prescription: $299 a month for 2.5 mg, $399 for 5 mg and $449 for 7.5 to 15 mg under its self-pay program (Lilly, December 1, 2025; KwikPen at the same prices from February 2026). Lilly has not published Canadian prices in its releases."
+      },
+      {
+        "kind": "warn",
+        "title": "Safety notices, 2024 to 2026",
+        "text": "Regulators have adjusted the warnings on this drug class several times. What changed for tirzepatide:",
+        "items": [
+          "October 2024: U.S. label adds a warning about stomach contents being inhaled under general anesthesia or deep sedation. Tell every clinician about the drug before any procedure.",
+          "January 13, 2026: the FDA asks for the suicidal-thoughts warning to come off the Zepbound, Wegovy and Saxenda labels after finding no increased risk in 91 trials and 2.2 million users.",
+          "February 2026: the U.S. warning on severe gastrointestinal reactions is expanded; the drug is not recommended in severe gastroparesis.",
+          "Eye condition (NAION): listed as very rare for semaglutide by the EMA (June 2025); a class-wide caution covering Mounjaro was added in Australia (July 2026). Not on the U.S. Zepbound label as of April 2026."
+        ],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: the heart-failure setback",
+        "paras": [
+          "SUMMIT showed 38% fewer worsening heart-failure events or cardiovascular deaths in people with obesity and heart failure with preserved ejection fraction, but the trial was small (731 people, 92 events) and cardiovascular deaths were numerically higher on tirzepatide (10 versus 5). The FDA told Lilly an additional confirmatory trial would be required, and Lilly withdrew the U.S. application in May 2025. Health Canada's reviewers reached a similar view, finding the safety data insufficient to support the indication, and Lilly cancelled that submission on November 26, 2025 before a decision was issued. The indication remains unapproved everywhere."
+        ]
+      },
+      {
+        "title": "More: how the FDA settled the compounding question",
+        "paras": [
+          "Compounding pharmacies may copy a brand drug only while it is on the FDA's shortage list. Lilly's supply caught up in 2024. The FDA took tirzepatide off the list on October 2, 2024, was sued the same month by the Outsourcing Facilities Association, re-reviewed the evidence and issued a formal declaratory order on December 19, 2024 confirming the shortage was resolved. The court sided with the FDA on May 7, 2025. Since then, selling mass-produced compounded tirzepatide in the U.S. has been unlawful, which is why Lilly's lawsuits and the FDA's 2026 warning letters target marketing rather than shortages."
+        ]
+      }
+    ],
+    "sources": [
+      {"text": "Eli Lilly, SURMOUNT-1 topline results (weight change by estimand, adverse events, discontinuation), April 28, 2022. Jastreboff AM et al., Tirzepatide once weekly for the treatment of obesity, New England Journal of Medicine, 2022.", "url": "https://investor.lilly.com/node/47141"},
+      {"text": "Eli Lilly, SURMOUNT-2 results published in The Lancet, June 24, 2023; SURMOUNT-3 and -4 topline, July 27, 2023; SURMOUNT-3 published in Nature Medicine, October 15, 2023.", "url": "https://investor.lilly.com/node/49096"},
+      {"text": "Eli Lilly, SURMOUNT-5: Zepbound superior to Wegovy, New England Journal of Medicine, May 11, 2025 (−20.2% vs −13.7%, treatment-regimen estimand; discontinuation 6.1% vs 8.0%).", "url": "https://investor.lilly.com/node/52376"},
+      {"text": "Malhotra A et al., Tirzepatide for the treatment of obstructive sleep apnea and obesity (SURMOUNT-OSA), New England Journal of Medicine, 2024 (ACC summary); Lilly Medical, SURMOUNT-OSA results by arm.", "url": "https://www.acc.org/latest-in-cardiology/clinical-trials/2024/06/24/16/16/surmount-osa"},
+      {"text": "Eli Lilly, SURPASS-CVOT topline results vs dulaglutide (HR 0.92, 95.3% CI 0.83–1.01; all-cause death HR 0.84), July 31, 2025. Nicholls SJ et al., Cardiovascular outcomes with tirzepatide versus dulaglutide in type 2 diabetes, New England Journal of Medicine, 2025.", "url": "https://investor.lilly.com/node/52671/pdf"},
+      {"text": "Eli Lilly, SUMMIT heart-failure results, New England Journal of Medicine, November 16, 2024; SURMOUNT-1 176-week pre-diabetes results, November 13, 2024; SYNERGY-NASH Phase 2 results, New England Journal of Medicine, June 8, 2024.", "url": "https://investor.lilly.com/node/51581"},
+      {"text": "U.S. FDA, Zepbound (tirzepatide) prescribing information, revised 04/2026 (adverse reactions table, warnings 5.1–5.10, pharmacokinetics, recent major changes); earlier versions revised 11/2023 and 09/2025 (sleep-apnea indication 12/2024, aspiration warning 10/2024).", "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/217806Orig1s050lbl.pdf"},
+      {"text": "Lilly Medical (U.S.), How often were gastrointestinal adverse events reported in Zepbound clinical studies (SURMOUNT-1 and -2 counts by dose).", "url": "https://medical.lilly.com/us/products/answers/how-often-were-gastrointestinal-adverse-events-reported-in-zepbound-tirzepatide-clinical-studies-206711"},
+      {"text": "Health Canada, Zepbound product monograph (authorization 2026-06-11; SURMOUNT-1 to -4 results, adverse reactions) and Mounjaro product monograph (initial authorization Nov 2022; SURPASS-1 and -2 A1C results; half-life about 5 days).", "url": "https://pdf.hres.ca/dpd_pm/00084997.PDF"},
+      {"text": "Health Canada, Summary Basis of Decision for Mounjaro (NOC November 24, 2022) and Summary of Cancellation for Mounjaro heart-failure submission (cancelled 2025-11-26).", "url": "https://dhpp.hpfb-dgpsa.ca/review-documents/resource/RDS1772550683826/"},
+      {"text": "Lilly Canada, Health Canada approves Zepbound as the first obstructive sleep apnea medication in Canada for adults living with obesity (notes first authorization May 13, 2025), June 16, 2026.", "url": "https://www.lilly.com/en-ca/news/press-releases/zepbound-osa-noc"},
+      {"text": "U.S. FDA, Declaratory order: resolution of shortages of tirzepatide injection products, December 19, 2024; McDermott Will & Emery summary of Outsourcing Facilities Association v. FDA, May 7, 2025.", "url": "https://fda.gov/media/184606/download"},
+      {"text": "U.S. FDA, Drug Safety Communication: FDA requests removal of suicidal behavior and ideation warning from GLP-1 receptor agonist labeling, January 13, 2026. Bloomberg Law, FDA warns 25 telehealth companies over misleading claims for compounded GLP-1 drugs, June 16, 2026. NPR, Eli Lilly sues four telehealth companies, April 23, 2025.", "url": "https://www.fda.gov/drugs/drug-safety-and-availability/fda-requests-removal-suicidal-behavior-and-ideation-warning-glucagon-peptide-1-receptor-agonist-glp"},
+      {"text": "Eli Lilly, Lilly lowers the price of Zepbound single-dose vials, December 1, 2025; Zepbound now available in multi-dose KwikPen (FDA label expansion), February 23, 2026. BioPharm International, FDA approves Mounjaro to lower cardiovascular risk in type 2 diabetes, August 28, 2026.", "url": "https://investor.lilly.com/node/53466"},
+      {"text": "EMA, CHMP positive opinion on Mounjaro indication extension (children 10+), December 11, 2025; EMA assessment report II/0027 on sleep-apnea data, December 2024. Pharmaceutical Journal, EMA PRAC conclusion on NAION and semaglutide, June 2025. RACGP newsGP, TGA class-wide GLP-1 safety update on NAION, July 23, 2026.", "url": "https://www.ema.europa.eu/en/documents/smop/chmp-post-authorisation-summary-positive-opinion-mounjaro-emavr0000281937_en.pdf"}
+    ]
+  }
+}

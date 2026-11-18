@@ -1,0 +1,329 @@
+{
+  "id": "sermorelin",
+  "name": "Sermorelin",
+  "brands": "Geref (discontinued 2008)",
+  "maker": "EMD Serono (formerly Serono)",
+  "group": "research",
+  "pill": "Formerly approved (Geref)",
+  "overview": {
+    "headline": "The first 29 amino acids of the body's own growth-hormone-releasing hormone, once an FDA-approved drug called Geref.",
+    "lede": "Serono's Geref was approved in the U.S. as a diagnostic test in 1990 and for children with growth hormone deficiency in 1997. EMD Serono stopped making it in 2008 for business reasons and FDA withdrew the approvals in 2009. Today sermorelin is compounded by U.S. pharmacies, marketed by telehealth \"anti-aging\" clinics and sold online as a \"research chemical\"; none of those products is approved, and the adult uses never were.",
+    "stats": [
+      {
+        "num": "1990 / 1997",
+        "lbl": "FDA approvals: a diagnostic test, then nightly treatment for children with GH deficiency",
+        "src": "Federal Register, March 4, 2013"
+      },
+      {
+        "num": "2008",
+        "lbl": "year EMD Serono discontinued Geref; approvals withdrawn June 2009 for reasons other than safety or effectiveness",
+        "src": "BioSpace, Aug 5, 2008; 74 FR 23407"
+      },
+      {
+        "num": "11–12 min",
+        "lbl": "half-life in blood after an injection",
+        "src": "Geref prescribing information"
+      }
+    ],
+    "mechanism": {
+      "intro": "A shortened copy of the hypothalamus's own GH-releasing signal, acting on the pituitary's normal receptor.",
+      "parts": [
+        {
+          "name": "GHRH receptor",
+          "text": "Sermorelin is GHRH(1–29), the active fragment of the 44-amino-acid hormone. It tells the pituitary's GH-producing cells to release a pulse of GH, as the body's own hormone does."
+        },
+        {
+          "name": "Feedback stays intact",
+          "text": "Because it works upstream, the body's brakes (somatostatin, and IGF-1 feeding back on the pituitary) still apply. That is the argument for it over GH itself, and it also caps what it can do."
+        },
+        {
+          "name": "Very short-lived",
+          "text": "It is cleared from blood in minutes, so each injection produces one GH pulse, timed at bedtime to add to the natural night-time pulse."
+        }
+      ]
+    },
+    "more": {
+      "title": "More: from a children's medicine to an \"anti-aging\" product",
+      "paras": [
+        "Geref was a niche product: a diagnostic ampoule (approved December 28, 1990) and a nightly injection for pediatric GH deficiency (approved September 26, 1997). EMD Serono announced a business decision to discontinue it in August 2008; FDA withdrew the approvals effective June 18, 2009 and confirmed in 2013 that safety and effectiveness were not the reason. What was never studied in a trial of any size is the use it is now sold for: healthy adults wanting more GH."
+      ]
+    }
+  },
+  "results": {
+    "headline": "What people in the studies got: faster growth in some children, higher IGF-1 in older adults, and small body-composition changes.",
+    "lede": "The approval rested on pediatric trials. Adult evidence is a handful of small studies from 1992 to 2001, mostly in healthy people over 60, using sermorelin or a close analogue nightly for two weeks to six months.",
+    "chart": null,
+    "stats": [
+      {
+        "num": "~1 in 3",
+        "lbl": "children in the one-year Geref study whose growth sped up by less than 2 cm a year (27 of 84); they were switched to GH itself",
+        "src": "Geref International Study Group, 1999"
+      },
+      {
+        "num": "−5%",
+        "lbl": "body fat after about five months of nightly GHRH(1–29) versus placebo in 60 adults over 65; preliminary conference data",
+        "src": "University of Washington, 1999; Merriam et al., 2001"
+      }
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {
+          "b": "Children (human).",
+          "t": "Eighty-four prepubertal children with GH deficiency took nightly Geref for a year; most grew faster, but 27 gained less than 2 cm a year and were moved to GH, and 24 followed for two years kept growing. The label records 350 patients exposed in trials."
+        },
+        {
+          "b": "Older men, two weeks (human).",
+          "t": "In 10 healthy men around 68, two weeks of twice-daily GHRH(1–29) at the higher of two doses brought 24-hour GH and IGF-1 back to young-adult levels, with no change in blood sugar or blood pressure (Corpas 1992)."
+        },
+        {
+          "b": "Older adults, four to six months (human).",
+          "t": "In 19 people aged 55–71, 16 weeks of a close analogue ([Nle27]GHRH(1–29)) raised IGF-1; lean mass and insulin sensitivity improved in men only, with a transient lipid rise the only adverse effect (Khorram 1997). A placebo-controlled study in about 60 adults over 65 found IGF-1 up roughly 30% in men and 20% in women, body fat down about 5%, no better sleep, and mild fluid retention (Merriam 2001). A six-week study in healthy older men reported higher IGF-1 and small body-composition changes (Vittone 1997)."
+        },
+        {
+          "b": "Not shown (human).",
+          "t": "No trial measured fractures, falls, disease or any clinical outcome; no weight-loss trial, no trial in adults under 55, no head-to-head against GH in adults."
+        }
+      ]
+    },
+    "more": [
+      {
+        "title": "More: how to read the adult studies",
+        "paras": [
+          "They are small (10 to 60 people), short (two weeks to six months), and measure hormones and body composition rather than health; the largest was published in a non-indexed anti-aging journal and the Khorram study used a modified analogue. They show that nightly GHRH(1–29) raises IGF-1 in older adults and nudges fat and lean mass by a few percent, not that this is safe or beneficial over years."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "Mild in the label, but the label describes children on a defined dose for a year, not adults buying it online.",
+    "lede": "Geref's prescribing information lists injection-site reactions as the main problem, with everything else under 1%. The adult studies add fluid retention and a transient lipid rise. Long-term use in healthy adults has not been measured.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "Of 350 patients exposed in Geref's clinical trials, 3 stopped because of injection reactions. No other discontinuations for side effects are recorded in the label."
+    },
+    "unique": {
+      "title": "Antibodies, thyroid, and the GH-axis effects",
+      "text": "The label says a large proportion of patients developed antibodies to the peptide at some point, often gone by the next check, without affecting growth. Hypothyroidism appeared in 6.5% of patients in the studies, so thyroid tests were required before and during treatment. In older adults the typical complaint was fluid retention: the expected effects of raising GH, along with joint symptoms, tingling hands and higher blood sugar."
+    },
+    "more": [
+      {
+        "title": "More: what the label lists",
+        "paras": [
+          "Nightly use in children: injection-site pain, swelling or redness in about 1 patient in 6; headache, flushing, difficulty swallowing, dizziness, hyperactivity, sleepiness and hives each under 1%. Single intravenous diagnostic doses: facial flushing, injection-site pain, nausea, headache, vomiting, altered taste, pallor and chest tightness. GH-axis trials exclude active cancer because GH and IGF-1 can promote tumour growth; a telehealth questionnaire may not."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "In the adult studies: higher IGF-1, a few percent less body fat and, in men, slightly more lean mass and better insulin sensitivity. Sleep did not improve and physical function changes were equivocal."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms that need a doctor",
+      "items": [
+        "Swelling of the hands, feet or face that does not settle, or new joint pain",
+        "Numb or tingling hands, especially at night",
+        "Marked thirst, frequent urination or blurred vision",
+        "Unusual tiredness, feeling cold, weight gain or constipation (possible low thyroid)",
+        "Spreading redness, pus or fever at an injection site; hives, facial swelling or trouble breathing"
+      ],
+      "note": "Get medical care and say exactly what product was used."
+    }
+  },
+  "levels": {
+    "pk": {
+      "half": 0.0083,
+      "tmax": 0.01,
+      "ladder": [
+        1
+      ],
+      "stepDays": 1,
+      "tau": 1,
+      "maxDose": 1,
+      "refLabel": "1 mg nightly (former Geref label, 0.03 mg/kg)",
+      "source": "Geref (sermorelin acetate) prescribing information: half-life 11–12 min after IV or SC injection, peak 5–20 min after SC, bioavailability about 6%; Irish SPC for Geref 50: IV half-life 6–7 min"
+    },
+    "nopk": "",
+    "stats": [
+      {
+        "num": "11–12 min",
+        "lbl": "half-life: the time for the level to fall by half",
+        "src": "Geref prescribing information"
+      },
+      {
+        "num": "5–20 min",
+        "lbl": "to the peak blood level after an injection under the skin",
+        "src": "Geref prescribing information, 12 volunteers"
+      },
+      {
+        "num": "1.0×",
+        "lbl": "how far nightly dosing builds up compared with a single dose: it does not",
+        "src": "From the half-life and the 24-hour interval"
+      }
+    ],
+    "explain": [
+      {
+        "b": "Why nothing builds up.",
+        "t": "A day is more than a hundred half-lives. Each injection is gone within about an hour, so the chart is a row of identical spikes, not a rising curve."
+      },
+      {
+        "b": "Why the dose was given at bedtime.",
+        "t": "The natural GH surge comes in the first hours of sleep; a pulse of GHRH then adds to it."
+      },
+      {
+        "b": "Why a blood test cannot validate an online vial.",
+        "t": "Sermorelin itself is undetectable within an hour, and GH and IGF-1 vary too much between people to say what was injected or how much."
+      }
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: the model behind the chart",
+        "paras": [
+          "The chart uses the same one-compartment model as the other pages, fed with the label's numbers: a half-life of 12 minutes and a peak 5 to 20 minutes after injection. Because the label's dose is per kilogram, the 100% reference is set to 1 mg nightly (the label's 0.03 mg/kg for a 33 kg child); the shape is the same at any weight. The chart shows sermorelin, not GH or IGF-1, which is what the adult studies measured."
+        ]
+      },
+      {
+        "title": "More: what this chart cannot tell you",
+        "paras": [
+          "It models the label regimen for children, the only regimen ever approved; adult products are sold at strengths that were never part of any approval. It says nothing about compounded or online vials, whose content no regulator has verified."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "How Geref was given when it was a medicine, and what has been studied since.",
+    "lede": "The only regimens ever approved are the Geref label's: a nightly injection for children with GH deficiency, and a single intravenous dose as a pituitary test. No trial is recruiting for sermorelin today.",
+    "ladder": {
+      "title": "The Geref label regimen (historical)",
+      "text": "Children with GH deficiency received one injection under the skin at bedtime, dosed by body weight, with no step-up. Thyroid function was checked before and during treatment, growth was reassessed at set intervals, and children who did not respond were moved to GH itself. This is a fact about the former label, not guidance.",
+      "steps": [
+        {
+          "d": "0.03 mg/kg",
+          "t": "nightly from the start, no step-up"
+        }
+      ],
+      "note": "Diagnostic Geref was a single 1 µg/kg intravenous dose in the morning after an overnight fast, given and interpreted under specialist supervision, with GH measured over the following hour (Irish SPC)."
+    },
+    "more": [
+      {
+        "title": "More: how side effects were handled inside the trials",
+        "paras": [
+          "The pediatric trials ran a year or more with clinic visits, growth measurements, thyroid tests and antibody checks; children whose growth did not improve were taken off Geref and started on GH. The adult studies ran in research units with hormone sampling, body-composition scans and placebo controls. None of this resembles a telehealth questionnaire followed by a shipment."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials that have been run",
+      "items": [
+        "Children with GH deficiency, 1990s: 84 prepubertal children on nightly Geref for one year; most grew faster, 27 responded poorly and were switched to GH; 24 followed for two years kept growing (Geref International Study Group).",
+        "Older men, 1992: 10 healthy men, two 14-day courses of twice-daily GHRH(1–29); the higher dose restored GH and IGF-1 to young-adult levels (Corpas et al.).",
+        "Older adults, 1997–2001: 19 people for 16 weeks on a GHRH(1–29) analogue versus placebo (Khorram et al.); a six-week study in healthy older men (Vittone et al.); about 60 people over 65 for five months versus placebo (Merriam, Vitiello et al., funded by Serono).",
+        "Not run: any trial for weight loss, longevity, recovery or \"anti-aging\" with clinical outcomes; any trial in adults under 55."
+      ]
+    },
+    "find": {
+      "text": "Searching the public registry for \"sermorelin\" returns completed studies, mostly diagnostic or in older adults. A telehealth clinic's offer is a sale, not a trial.",
+      "term": "sermorelin",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "Formerly approved in the U.S. for children. Not approved anywhere today. Widely compounded and marketed to adults for uses that were never approved.",
+    "items": [
+      {
+        "tag": "no",
+        "label": "Canada",
+        "text": "No sermorelin product holds a Health Canada DIN. Health Canada's April 2026 advisory treats injectable peptides as prescription drugs and says a \"research use only\" label does not make them legal; it reports border seizures and won a permanent injunction against a Québec online seller in July 2026."
+      },
+      {
+        "tag": "no",
+        "label": "United States",
+        "text": "Geref's approvals (diagnostic 1990; pediatric GH deficiency 1997) were withdrawn effective June 18, 2009 after EMD Serono discontinued it for business reasons; FDA confirmed in 2013 that safety and effectiveness were not the cause, and a 2020 FDA-commissioned review found no approved sermorelin product in 13 registries. 503A pharmacies compound it and telehealth clinics prescribe it to adults; FDA has not placed it in any 503A category (May 2026) or published a position on it, and it is not on the 503B Category 1 list, so outsourcing facilities may not compound it in bulk. FDA's August 24, 2026 warning letters to online peptide sellers named tesamorelin, a related GHRH analogue, and rejected \"research use only\" labelling."
+      },
+      {
+        "tag": "no",
+        "label": "Sport",
+        "text": "Prohibited at all times under WADA's 2026 Prohibited List (S2, GHRH and its analogues; sermorelin is named)."
+      }
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "Compounded and \"research\" sermorelin is not Geref",
+        "text": "Geref came from FDA-inspected manufacturing. Today's products are compounded from bulk peptide FDA has not reviewed, or sold online with a \"research use only\" label that regulators in both countries reject. Testing shows why that matters:",
+        "items": [
+          "Norway's doping laboratory tested 21 seized vials sold as growth hormone: only 5 were; one contained sermorelin and others CJC-1295, GHRP-6 or ipamorelin (Henninge 2011).",
+          "Australia's sports drug testing laboratory analysed 200+ black-market peptide products: about 25% matched the label and 25% contained no peptide (Sport Integrity Australia).",
+          "Compounded products are not FDA-approved and FDA does not check their potency, sterility or endotoxin; in 2026 FDA and CDC traced more than two dozen illnesses to contaminated compounded injections of another product (glutathione)."
+        ],
+        "note": "Marketing sermorelin to healthy adults for \"anti-aging\" relies on studies of a few dozen people over 60 that measured hormones and body fat, not health."
+      },
+      {
+        "kind": "warn",
+        "title": "If someone has already used a sermorelin product",
+        "text": "See a doctor if any of these appear, and bring the vial:",
+        "items": [
+          "Swelling of hands, feet or face, new joint pain, or tingling hands",
+          "Marked thirst, frequent urination or blurred vision",
+          "Unusual tiredness, feeling cold, or unexplained weight gain",
+          "Fever, or redness and pus at an injection site; hives or facial swelling"
+        ],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: the compounding question, and a policy in flux",
+        "paras": [
+          "U.S. law lets a pharmacy compound with a bulk substance that is a component of an FDA-approved drug, has a USP monograph, or is on FDA's 503A bulks list. Sermorelin has no USP monograph and is not on the list or in any category; whether a drug whose approval was withdrawn for business reasons still counts as a \"component of an approved drug\" is the question its compounding turns on, and FDA has not answered it publicly. Separately, on October 14–15, 2026 HHS sent a peptide \"Interim Access Policy\" to the White House for review; its terms are not public and sermorelin has not been named in reporting on it."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "text": "U.S. FDA. Determination that GEREF (sermorelin acetate) injection was not withdrawn from sale for reasons of safety or effectiveness (NDA 19-863 approved Dec 28, 1990; NDA 20-443 approved Sept 26, 1997; approvals withdrawn effective June 18, 2009). Federal Register, March 4, 2013.",
+        "url": "https://public-inspection.federalregister.gov/2013-04827.pdf"
+      },
+      {
+        "text": "BioSpace. EMD Serono, Inc. to discontinue Geref Diagnostic (business decision; active ingredient no longer manufactured), August 5, 2008. The Pharma Letter, U.S. launch of Ares-Serono's Geref as therapeutic, April 29, 1998.",
+        "url": "https://www.biospace.com/emd-serono-inc-to-discontinue-geref-diagnostic"
+      },
+      {
+        "text": "Geref (sermorelin acetate) U.S. prescribing information, FDA revision October 2001, as reproduced by RxList: pharmacokinetics (half-life 11–12 min; peak 5–20 min; bioavailability about 6%), adverse reactions, 350 patients exposed, hypothyroidism 6.5%, antibodies.",
+        "url": "https://www.rxlist.com/sermorelin-acetate-drug/clinical-pharmacology.htm"
+      },
+      {
+        "text": "Health Products Regulatory Authority (Ireland). Summary of Product Characteristics, Geref 50 (sermorelin acetate), Serono: single 1 µg/kg IV diagnostic dose; plasma half-life 6–7 min; first authorised July 26, 1991; text revised May 2004.",
+        "url": "https://assets.hpra.ie/products/Human/16600/LicenseSPC_PA0285-006-001_13072006155719.pdf"
+      },
+      {
+        "text": "Murray FT et al., Geref International Study Group. GRF 1-29 (Geref) therapy accelerates growth in GHD children beyond the first year (24 children followed 2 years). Pediatric Research 1998;43(S4):82. Murray FT et al. Prolonged growth response to GH in pediatric subjects who responded poorly to GHRH (Geref) therapy (84 children, 30 µg/kg at bedtime for one year; 27 poor responders). Pediatric Research 1999;45:94.",
+        "url": "https://www.nature.com/articles/pr1999677"
+      },
+      {
+        "text": "Corpas E, Harman SM, Piñeyro MA, Roberson R, Blackman MR. GHRH-(1-29) twice daily reverses the decreased GH and IGF-I levels in old men. JCEM 1992;75:530–535.",
+        "url": "https://academic.oup.com/jcem/article/75/2/530/2649366"
+      },
+      {
+        "text": "Khorram O, Laughlin GA, Yen SSC. Endocrine and metabolic effects of long-term administration of [Nle27]GHRH-(1-29)-NH2 in age-advanced men and women. JCEM 1997;82:1472–1479. Vittone J, Blackman MR et al. Effects of single nightly injections of GHRH(1-29) in healthy elderly men. Metabolism 1997;46:89–96.",
+        "url": "https://www.deepdyve.com/lp/ou-press/endocrine-and-metabolic-effects-of-long-term-administration-of-nle27-Cu5qX5cavx?key=OUP"
+      },
+      {
+        "text": "Merriam GR, Barsness S, Buchner D, Vitiello MV et al. Growth hormone releasing hormone treatment in normal aging. Journal of Anti-Aging Medicine 2001;4:331–343. University of Washington news release on the placebo-controlled study (60 adults over 65), June 12, 1999.",
+        "url": "https://www.doping.nl/filter/doc:7877/"
+      },
+      {
+        "text": "University of Maryland M-CERSI for FDA. Summary Report: Sermorelin acetate (503B bulks evaluation), December 2020: no approved product in 13 registries; no USP monograph; not on the 503B Category 1 list. U.S. FDA, Bulk Drug Substances Nominated Under Section 503A (sermorelin absent), updated May 14, 2026.",
+        "url": "https://archive.hshsl.umaryland.edu/server/api/core/bitstreams/a2397a31-6114-4797-969e-f7709ac7cc57/content"
+      },
+      {
+        "text": "U.S. FDA warning letter to Tex Peptides, August 24, 2026 (tesamorelin named; \"research use only\" rejected). STAT News, HHS sends peptide Interim Access Policy to White House, October 15, 2026. Health Canada public advisory on peptides bought online, updated April 9, 2026. German Sport University Cologne, WADA Prohibited List 2026 S2 text (sermorelin named). Current U.S. marketing, cited only as evidence of sale: Empower Pharmacy sermorelin product page; Superpower telehealth \"sermorelin injections\" page.",
+        "url": "https://www.statnews.com/2026/10/15/trump-administration-advances-plan-peptides-rfk-jr/"
+      }
+    ]
+  }
+}

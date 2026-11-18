@@ -710,31 +710,28 @@ body.wk-locked{overflow:hidden}
 .chips::-webkit-scrollbar{display:none}
 .chips button{appearance:none;font:inherit;cursor:pointer;flex:0 0 auto;white-space:nowrap;font-family:var(--display);font-size:12.5px;font-weight:600;color:#c9d6f7;background:rgba(132,165,255,.10);border:1px solid rgba(132,165,255,.16);border-radius:999px;padding:7px 13px;line-height:1.2}
 .chips button[aria-selected="true"]{background:var(--grad);color:#fff;border-color:transparent;box-shadow:var(--glow)}
-.prods{display:grid;gap:14px}
-@media (min-width:560px){.prods{grid-template-columns:1fr 1fr}}
-.prod{background:var(--glass);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 12px 34px rgba(0,0,0,.32), inset 0 1px 0 rgba(255,255,255,.06);min-width:0}
-.prod-media{position:relative;height:150px;background:radial-gradient(80% 90% at 20% 0%, rgba(90,150,255,.45), rgba(90,150,255,0) 60%), radial-gradient(60% 70% at 90% 100%, rgba(73,214,200,.25), rgba(73,214,200,0) 60%), linear-gradient(160deg,#17306e,#0b1740);display:flex;align-items:center;justify-content:center}
-.prod-media img{width:100%;height:100%;object-fit:contain;padding:12px;background:#fff;box-sizing:border-box}
-.prod-ph{font-family:var(--display);font-size:64px;font-weight:800;color:rgba(138,184,255,.35);letter-spacing:-.04em;text-shadow:0 0 30px rgba(61,125,255,.5)}
-.prod-cat{position:absolute;top:10px;left:10px;font-family:var(--display);font-size:10.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:var(--grad);border-radius:999px;padding:4px 9px;box-shadow:0 0 14px rgba(61,125,255,.5)}
-.prod-body{padding:14px 14px 12px;display:flex;flex-direction:column;gap:8px}
-.prod-body h3{font-size:16.5px;line-height:1.25}
-.prod-sub{font-size:13px;color:var(--ink-2);line-height:1.4}
-.prod-why{font-size:13.5px;color:var(--ink-2);line-height:1.45}
-.prod-row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:2px;flex-wrap:wrap}
-.prod-price{font-family:var(--display);font-size:20px;font-weight:800;color:var(--sky);text-shadow:0 0 16px rgba(138,184,255,.4)}
-.prod-price i{font-style:normal;font-family:var(--sans);font-weight:500;font-size:12.5px;color:var(--ink-3);text-shadow:none}
-.prod-buy{flex-direction:column;align-items:flex-start;gap:0;line-height:1.15;padding:9px 14px}
-.prod-buy em{font-style:normal;font-family:var(--sans);font-weight:500;font-size:11px;opacity:.85}
-.prod .sup-ck{margin-top:2px}
-.prod-admin{display:flex;gap:6px;flex-wrap:wrap;padding-top:8px;border-top:1px dashed rgba(247,192,74,.45)}
-.prod-admin .mini{appearance:none;font:inherit;font-family:var(--display);font-weight:600;font-size:12.5px;cursor:pointer;color:#fff;background:rgba(132,165,255,.14);border:1px solid rgba(132,165,255,.3);border-radius:8px;padding:6px 10px;min-width:34px}
+.prods{display:flex;flex-direction:column;gap:8px}
+.prod{background:var(--glass);border:1px solid var(--line);border-radius:14px;display:grid;grid-template-columns:56px 1fr auto;gap:6px 12px;align-items:center;padding:9px 12px;box-shadow:0 8px 24px rgba(0,0,0,.28), inset 0 1px 0 rgba(255,255,255,.06);min-width:0}
+.prod-media{position:relative;width:56px;height:56px;border-radius:12px;overflow:hidden;background:radial-gradient(80% 90% at 20% 0%, rgba(90,150,255,.45), rgba(90,150,255,0) 60%), linear-gradient(160deg,#17306e,#0b1740);display:flex;align-items:center;justify-content:center}
+.prod-media img{width:100%;height:100%;object-fit:contain;padding:4px;background:#fff;box-sizing:border-box}
+.prod-ph{font-family:var(--display);font-size:24px;font-weight:800;color:rgba(138,184,255,.5);letter-spacing:-.04em}
+.prod-cat{font-family:var(--display);font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--sky)}
+.prod-body{display:flex;flex-direction:column;gap:1px;min-width:0}
+.prod-body h3{font-size:15px;line-height:1.25}
+.prod-right{display:flex;flex-direction:column;align-items:flex-end;gap:4px;text-align:right}
+.prod-price{font-family:var(--display);font-size:15px;font-weight:800;color:var(--sky)}
+.prod-price i{font-style:normal;font-family:var(--sans);font-weight:500;font-size:11px;color:var(--ink-3);white-space:nowrap}
+.prod-buy{padding:7px 12px;font-size:13px;border-radius:10px;white-space:nowrap}
+.prod .sup-ck{flex-direction:row;align-items:center;gap:6px;font-size:11.5px;width:auto;text-align:left}
+.prod .sup-ck input{width:18px;height:18px}
+@media (max-width:420px){.prod{grid-template-columns:46px 1fr auto}.prod-media{width:46px;height:46px}.prod-ph{font-size:20px}}
+.prod-admin{grid-column:1 / -1;display:flex;gap:6px;flex-wrap:wrap;padding-top:6px;border-top:1px dashed rgba(247,192,74,.45)}
+.prod-admin .mini{appearance:none;font:inherit;font-family:var(--display);font-weight:600;font-size:12px;cursor:pointer;color:#fff;background:rgba(132,165,255,.14);border:1px solid rgba(132,165,255,.3);border-radius:8px;padding:4px 9px;min-width:30px}
 .prod-admin .mini:disabled{opacity:.35;cursor:default}
 .prod-admin .mini.danger{color:#ffb3b3;border-color:rgba(255,99,99,.45);background:rgba(255,99,99,.10);margin-left:auto}
 .prod-admin .mini.danger.armed{background:var(--crit);color:#fff;border-color:transparent}
 .prod-err{color:#ffb3b3;font-size:13.5px;margin:0}
 .shop-form{border-color:rgba(247,192,74,.5)}
-.prod .sup-ck{flex-direction:row;align-items:center;gap:8px;font-size:13px;width:auto;text-align:left}
 
 #vials .sync{font-size:.74rem;color:var(--ink-2);display:inline-flex;align-items:center;gap:6px}
 #vials .sync::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--ink-2)}
@@ -1159,7 +1156,7 @@ body.wk-locked{overflow:hidden}
 </section>
 
   <section data-panel="shop" hidden>
-    <div><div class="kick"><div class="eyebrow">Shop</div><span class="tag2">Accessories only</span></div><h1 id="sh-h">Everything you need to mix and dose by weight.</h1></div>
+    <div><div class="kick"><div class="eyebrow">Shop</div></div><h1 id="sh-h">Everything you need to safely mix and dose by weight.</h1></div>
     <p class="lede" id="sh-lede">The kit this method was built on, in one place. Links open Amazon; prices and stock change there, the specifications do not.</p>
     <div id="shop" class="shop"></div>
   </section>
@@ -2089,7 +2086,7 @@ function renderStatus(P){
       return '<li>' + esc(src.text) + (src.url ? ' <a href="' + esc(src.url) + '" target="_blank" rel="noopener">' + esc(host || 'link') + '</a>' : '') + '</li>';
     }).join('') + '</ol></div></details>';
   }
-  h += '<footer>Educational summary of published evidence. App version 55, built 18 Nov 2026. Not medical advice and not a guide to using any product. Talk to a doctor about any treatment decision.</footer>';
+  h += '<footer>Educational summary of published evidence. App version 56, built 18 Nov 2026. Not medical advice and not a guide to using any product. Talk to a doctor about any treatment decision.</footer>';
   return h;
 }
 
@@ -3609,15 +3606,17 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
   /* ---- rendering ---- */
   function cats(){ var seen = {}, out = []; CAT.items.forEach(function(it){ if (!seen[it.cat]) { seen[it.cat] = 1; out.push(it.cat); } }); return out; }
   function card(it, i){
+    /* compact row: picture · category + name · price + Order + Ordered? — no descriptions (those live in Learn) */
     var ord = window.ORD && window.ORD.ordered && window.ORD.ordered[it.id]; var on = !!ord;
     var dateTxt = on && window.supDate ? 'Ordered ' + window.supDate(ord) : (on ? 'Ordered' : 'Ordered?');
+    var href = link(it);
     return '<article class="prod' + (it.img ? '' : ' noimg') + '" data-id="' + esc(it.id) + '">' +
-      '<div class="prod-media">' + (it.img ? '<img src="' + esc(it.img) + '" alt="" loading="lazy">' : '<span class="prod-ph">' + esc((it.cat || '').slice(0, 1)) + '</span>') + '<span class="prod-cat">' + esc(it.cat) + '</span></div>' +
-      '<div class="prod-body"><h3>' + esc(it.title) + '</h3>' + (it.sub ? '<p class="prod-sub">' + esc(it.sub) + '</p>' : '') + (it.blurb ? '<p class="prod-why">' + esc(it.blurb) + '</p>' : '') +
-      '<div class="prod-row"><span class="prod-price">' + (it.price ? esc(it.price) : '<i>price on Amazon</i>') + '</span><a class="btn prod-buy" href="' + esc(link(it)) + '" target="_blank" rel="noopener sponsored">Order ↗<em>' + esc(host(link(it)) || 'link') + '</em></a></div>' +
-      '<label class="sup-ck' + (on ? ' on' : '') + '"><input type="checkbox" data-sup="' + esc(it.id) + '"' + (on ? ' checked' : '') + '><span>' + esc(dateTxt) + '</span></label>' +
-      (ADMIN && editing ? '<div class="prod-admin"><button type="button" class="mini" data-act="up" data-i="' + i + '" aria-label="Move up"' + (i === 0 ? ' disabled' : '') + '>↑</button><button type="button" class="mini" data-act="down" data-i="' + i + '" aria-label="Move down"' + (i === CAT.items.length - 1 ? ' disabled' : '') + '>↓</button><button type="button" class="mini" data-act="edit" data-i="' + i + '">Edit</button><button type="button" class="mini danger" data-act="del" data-i="' + i + '">Delete</button></div>' : '') +
-      '</div></article>';
+      '<div class="prod-media">' + (it.img ? '<img src="' + esc(it.img) + '" alt="" loading="lazy">' : '<span class="prod-ph">' + esc((it.cat || '').slice(0, 1)) + '</span>') + '</div>' +
+      '<div class="prod-body"><span class="prod-cat">' + esc(it.cat) + '</span><h3>' + esc(it.title) + '</h3></div>' +
+      '<div class="prod-right"><span class="prod-price">' + (it.price ? esc(it.price) : '<i>price on Amazon</i>') + '</span><a class="btn prod-buy" href="' + esc(href) + '" target="_blank" rel="noopener sponsored" title="' + esc(host(href)) + '">Order \u2197</a>' +
+      '<label class="sup-ck' + (on ? ' on' : '') + '"><input type="checkbox" data-sup="' + esc(it.id) + '"' + (on ? ' checked' : '') + '><span>' + esc(dateTxt) + '</span></label></div>' +
+      (ADMIN && editing ? '<div class="prod-admin"><button type="button" class="mini" data-act="up" data-i="' + i + '" aria-label="Move up"' + (i === 0 ? ' disabled' : '') + '>\u2191</button><button type="button" class="mini" data-act="down" data-i="' + i + '" aria-label="Move down"' + (i === CAT.items.length - 1 ? ' disabled' : '') + '>\u2193</button><button type="button" class="mini" data-act="edit" data-i="' + i + '">Edit</button><button type="button" class="mini danger" data-act="del" data-i="' + i + '">Delete</button></div>' : '') +
+      '</article>';
   }
   function field(id, label, val, attrs){ return '<label class="ck-f">' + label + '<input id="' + id + '" value="' + esc(val == null ? '' : val) + '" ' + (attrs || '') + '></label>'; }
   function formHtml(){
@@ -3637,8 +3636,6 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
       field('pf-cat', 'Category', it.cat, 'list="pf-cats" placeholder="Syringes"') + '<datalist id="pf-cats">' + cats().map(function(c){ return '<option value="' + esc(c) + '">'; }).join('') + '</datalist>' +
       field('pf-img', 'Image link (optional)', it.img, 'inputmode="url" placeholder="https://m.media-amazon.com/images/….jpg"') +
       field('pf-qty', 'Quantity in the kit cart', it.qty || 1, 'type="number" min="1" step="1" inputmode="numeric"') + '</div>' +
-      '<label class="ck-f">One-line spec<input id="pf-sub" value="' + esc(it.sub) + '" placeholder="1 mL U-100, 30 G × 5/16 in, box of 100"></label>' +
-      '<label class="ck-f">Why it is in the kit<input id="pf-blurb" value="' + esc(it.blurb) + '" placeholder="One per draw; never reuse a needle."></label>' +
       '<label class="ck-chk"><input type="checkbox" id="pf-kit"' + (it.kit ? ' checked' : '') + '><span><b>In the starter kit</b> — included in “Add the whole kit”.</span></label>' +
       '<label class="ck-chk"><input type="checkbox" id="pf-re"' + (it.reorder ? ' checked' : '') + '><span><b>Consumable</b> — included in “Reorder consumables”.</span></label>' +
       '<p class="prod-err" id="pf-err" hidden></p>' +
@@ -3654,7 +3651,7 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
     if (kit.length || re.length) h += '<div class="sup-actions">' + (kit.length ? '<a class="btn sup-cart" href="' + esc(cart(kit)) + '" target="_blank" rel="noopener sponsored">Add the whole kit to your cart ↗<em>Amazon.ca · ' + kit.length + ' item' + (kit.length === 1 ? '' : 's') + '</em></a>' : '') + (re.length ? '<a class="btn ghost sup-cart" href="' + esc(cart(re)) + '" target="_blank" rel="noopener sponsored">Reorder consumables ↗<em>' + esc(re.map(function(it){ return it.cat.toLowerCase(); }).filter(function(c, i, a){ return a.indexOf(c) === i; }).join(' · ')) + '</em></a>' : '') + '</div>';
     if (cs.length > 1) h += '<div class="chips" role="tablist">' + ['All'].concat(cs).map(function(c){ return '<button type="button" role="tab" data-cat="' + esc(c) + '" aria-selected="' + (c === filter) + '">' + esc(c) + '</button>'; }).join('') + '</div>';
     h += '<div class="prods">' + (shown.length ? shown.map(function(it){ return card(it, items.indexOf(it)); }).join('') : '<p class="empty">Nothing here yet.' + (ADMIN ? ' Turn on Edit shop and add a product.' : '') + '</p>') + '</div>';
-    h += '<p class="note">' + ((st.tag || st.url) && st.disclosure ? esc(st.disclosure) + ' ' : '') + 'Accessories only: no peptides are sold here, and this app recommends no peptide supplier. Opening a link takes you to Amazon; the order, payment and delivery are Amazon’s.</p>';
+    if ((st.tag || st.url) && st.disclosure) h += '<p class="note">' + esc(st.disclosure) + '</p>';
     return h;
   }
   function paint(){ el = el || document.getElementById('shop'); if (!el) return; el.innerHTML = html(); var ld = document.getElementById('sh-lede'); if (ld && CAT.store.intro) ld.textContent = CAT.store.intro; if (window.qbDeco) window.qbDeco(el); }
@@ -3663,7 +3660,7 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
   function readItem(){
     var g = function(id){ var x = document.getElementById(id); return x ? x.value.trim() : ''; };
     var raw = g('pf-url'), asin = asinOf(raw), url = /^https?:\/\//i.test(raw) ? raw : (asin ? 'https://www.amazon.ca/dp/' + asin : raw);
-    var it = { title: g('pf-title'), sub: g('pf-sub'), blurb: g('pf-blurb'), url: url, asin: asin, img: g('pf-img'), price: g('pf-price'), cat: g('pf-cat') || 'Other', qty: Math.max(1, parseInt(g('pf-qty'), 10) || 1), kit: !!document.getElementById('pf-kit').checked, reorder: !!document.getElementById('pf-re').checked };
+    var it = { title: g('pf-title'), sub: (form.item && form.item.sub) || '', blurb: (form.item && form.item.blurb) || '', url: url, asin: asin, img: g('pf-img'), price: g('pf-price'), cat: g('pf-cat') || 'Other', qty: Math.max(1, parseInt(g('pf-qty'), 10) || 1), kit: !!document.getElementById('pf-kit').checked, reorder: !!document.getElementById('pf-re').checked };
     var err = !it.title ? 'Give the product a name.' : (!asin && !/^https?:\/\//i.test(url)) ? 'Paste the Amazon link (or the 10-character ASIN).' : '';
     return { it: it, err: err };
   }

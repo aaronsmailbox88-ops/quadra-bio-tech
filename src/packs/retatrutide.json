@@ -1,0 +1,258 @@
+{
+  "id": "retatrutide",
+  "name": "Retatrutide",
+  "brands": "",
+  "maker": "Eli Lilly",
+  "group": "trials",
+  "pill": "Investigational",
+  "overview": {
+    "headline": "One weekly injection that works on three hunger and blood-sugar hormones.",
+    "lede": "Retatrutide is an experimental medicine from Eli Lilly. It has finished its main Phase 3 trials for obesity, but no regulator anywhere has approved it yet. The only legal way to receive it today is inside a clinical trial.",
+    "stats": [
+      {"num": "28%", "lbl": "average weight loss at the top dose after 80 weeks", "src": "TRIUMPH-1, adults without diabetes"},
+      {"num": "5", "lbl": "positive Phase 3 trials reported so far", "src": "Dec 2025 to Jul 2026"},
+      {"num": "Q1 2027", "lbl": "when Lilly plans to file for U.S. approval", "src": "Approval would come later"}
+    ],
+    "mechanism": {
+      "intro": "One molecule switches on three receptors your body already uses after a meal.",
+      "parts": [
+        {"name": "GLP-1", "text": "Slows stomach emptying, signals fullness to the brain, and raises insulin when blood sugar is high. The same target as semaglutide."},
+        {"name": "GIP", "text": "Works alongside GLP-1 on appetite and insulin, and may take the edge off nausea. Tirzepatide hits this one too."},
+        {"name": "Glucagon", "text": "The new piece. Thought to raise energy use and help the liver burn fat, which is why weight loss in trials ran higher than with the two-hormone drugs."}
+      ]
+    },
+    "more": {
+      "title": "More: where it sits among the GLP-1 drugs",
+      "paras": [
+        "Semaglutide (Wegovy, Ozempic) acts on one receptor. Tirzepatide (Zepbound, Mounjaro) acts on two. Retatrutide acts on three, which the trials suggest translates into more weight loss, and also into more side effects at the highest dose.",
+        "Lilly's name for the chemistry is \"GIP, GLP-1 and glucagon triple hormone receptor agonist\". It is given once a week as an injection under the skin, like the drugs it is compared with. Lilly describes it as a 41 amino-acid peptide.",
+        "Everything on this page comes from Lilly's published trial announcements, peer-reviewed papers, and public health notices. Sources are listed under the Status tab."
+      ]
+    }
+  },
+  "results": {
+    "headline": "What people in the trials lost.",
+    "lede": "Average weight change at the highest dose tested (12 mg weekly), compared with placebo. Every group also received diet and activity counselling.",
+    "chart": {
+      "metric": "weight",
+      "legend": ["Retatrutide 12 mg", "Placebo"],
+      "rows": [
+        {"name": "TRIUMPH-1", "meta": "80 weeks · obesity or overweight, no diabetes · 2,339 people", "drug": -28.3, "placebo": -2.2, "tip": "Retatrutide 12 mg: −28.3% (−31.9 kg)"},
+        {"name": "TRIUMPH-4", "meta": "68 weeks · obesity plus knee osteoarthritis · 445 people", "drug": -28.7, "placebo": -2.1, "tip": "Retatrutide 12 mg: −28.7% (−32.3 kg)"},
+        {"name": "Phase 2", "meta": "48 weeks · obesity or overweight, no diabetes · 338 people", "drug": -24.2, "placebo": -2.1, "tip": "Retatrutide 12 mg: −24.2%"},
+        {"name": "TRIUMPH-3", "meta": "80 weeks · severe obesity plus heart disease · 1,949 people", "drug": -22.6, "placebo": -3.2, "tip": "Retatrutide 12 mg: −22.6% (−25.3 kg)"},
+        {"name": "TRIUMPH-2", "meta": "80 weeks · obesity plus type 2 diabetes · 1,152 people", "drug": -20.8, "placebo": -4.0, "tip": "Retatrutide 12 mg: −20.8% (−22.5 kg)"},
+        {"name": "TRANSCEND-T2D-1", "meta": "40 weeks · type 2 diabetes · 537 people", "drug": -16.8, "placebo": -2.5, "tip": "Retatrutide 12 mg: −16.8% (−16.6 kg)"}
+      ],
+      "max": 32,
+      "note": "Figures are the trials' \"efficacy estimand\": what happened for people who stayed on their assigned dose. Counting everyone, including those who stopped early, the TRIUMPH-1 top-dose result was −25.0%."
+    },
+    "stats": [
+      {"num": "−30.3%", "lbl": "after 104 weeks for people with a BMI of 35 or more who stayed on the top dose", "src": "TRIUMPH-1 extension"},
+      {"num": "−19.0%", "lbl": "on the lowest 4 mg dose, reached with a single dose step", "src": "TRIUMPH-1, 80 weeks"}
+    ],
+    "beyond": {
+      "title": "Beyond the scale",
+      "items": [
+        {"b": "Blood sugar.", "t": "In people with type 2 diabetes, A1C fell by 1.4 to 2.0 percentage points (placebo: 0.2 to 0.8)."},
+        {"b": "Knee pain.", "t": "In TRIUMPH-4, pain scores dropped about 75%, and roughly 1 in 8 people on the drug reported no knee pain at all by the end."},
+        {"b": "Heart risk markers.", "t": "In TRIUMPH-3 the top dose cut triglycerides 37%, systolic blood pressure 9 mmHg, and the inflammation marker hsCRP by half."},
+        {"b": "Liver fat.", "t": "A Phase 2 sub-study found large reductions in liver fat, with most people on the higher doses returning to normal levels."}
+      ]
+    },
+    "more": [
+      {
+        "title": "More: did it protect the heart?",
+        "paras": [
+          "Not proven yet. TRIUMPH-3 enrolled people who already had cardiovascular disease and counted heart attacks, strokes and related events. Fewer events happened than expected in both groups, which makes the comparison imprecise. The broad measure (death, heart attack, stroke, heart failure, or a stent or bypass) came out 44 events on retatrutide versus 52 on placebo. The narrow measure (cardiovascular death, heart attack, stroke) was 27 versus 23. Neither difference is statistically meaningful.",
+          "A dedicated cardiovascular and kidney outcomes trial is still running. That is the study that will answer the question."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "Mostly stomach-related, mostly early, and more common at higher doses.",
+    "lede": "Nausea, diarrhea, constipation and vomiting were the big four in every trial. They clustered in the weeks after each dose increase and usually faded while people kept taking the drug.",
+    "chart": {
+      "eyebrow": "TRIUMPH-1 · share of people affected",
+      "legend": ["Retatrutide 12 mg", "Placebo"],
+      "rows": [
+        {"name": "Nausea", "drug": 42.4, "placebo": 14.8},
+        {"name": "Diarrhea", "drug": 32.0, "placebo": 13.5},
+        {"name": "Constipation", "drug": 26.1, "placebo": 10.9},
+        {"name": "Vomiting", "drug": 25.3, "placebo": 4.8},
+        {"name": "Skin sensations (dysesthesia)", "drug": 12.5, "placebo": 0.9}
+      ],
+      "max": 50,
+      "note": "Lower doses had fewer: on 4 mg, nausea was 28.6% and vomiting 10.6%."
+    },
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "In TRIUMPH-1, 4.1% of people on 4 mg, 6.9% on 9 mg and 11.3% on 12 mg stopped the drug because of side effects, against 4.9% on placebo. The highest rate in any trial so far was 18.2% on 12 mg in TRIUMPH-4."
+    },
+    "unique": {
+      "title": "Dysesthesia: odd skin sensations",
+      "text": "Tingling, heightened sensitivity or unusual touch sensations showed up in 2% to 21% of people on retatrutide depending on dose and trial, versus about 1% or less on placebo. The trials describe it as generally mild, mostly resolving during treatment, and rarely a reason people quit. It is not seen with the older GLP-1 drugs, so it is being watched closely."
+    },
+    "more": [
+      {
+        "title": "More: what the trials monitor for",
+        "paras": [
+          "Heart rate. The Phase 2 study reported a dose-related rise in resting heart rate that peaked around six months and then eased. Trials track heart rate and rhythm throughout.",
+          "Class risks. Drugs in this family carry warnings for pancreatitis, gallbladder problems, dehydration from vomiting or diarrhea (which can strain the kidneys), low blood sugar when combined with insulin or sulfonylureas, and a thyroid tumour signal seen in rodents. Trial participants are screened and monitored for these.",
+          "Infections. Urinary tract infections were slightly more common on retatrutide (about 8% versus 5%).",
+          "Pregnancy. Not studied. Trials exclude pregnancy and require contraception."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "Lower blood pressure, lower triglycerides and non-HDL cholesterol, and less inflammation were consistent across trials. In TRIUMPH-3, high blood sugar was reported far less often on retatrutide (3.9%) than on placebo (13.4%). Knee pain relief in TRIUMPH-4 went beyond what weight loss alone would predict, which researchers are still trying to explain."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms trial teams treat as urgent",
+      "items": [
+        "Severe or persistent abdominal pain, with or without vomiting",
+        "Vomiting or diarrhea that will not stop, or not being able to keep fluids down",
+        "Yellowing of the skin or eyes, dark urine, pale stools",
+        "A racing or irregular heartbeat, fainting",
+        "Swelling of the face or throat, trouble breathing, severe rash"
+      ],
+      "note": "Anyone with these symptoms, in a trial or not, should get medical care right away."
+    }
+  },
+  "levels": {
+    "pk": {
+      "half": 6,
+      "tmax": 1.5,
+      "ladder": [2, 4, 6, 9, 12],
+      "stepDays": 28,
+      "tau": 7,
+      "maxDose": 12,
+      "refLabel": "12 mg weekly",
+      "source": "Urva et al., Lancet 2022 (phase 1b): half-life about 6 days, peak 12–48 h, dose-proportional"
+    },
+    "nopk": "",
+    "stats": [
+      {"num": "~6 days", "lbl": "half-life: the time for the level to fall by half", "src": "Phase 1b study, Lancet 2022"},
+      {"num": "1.8×", "lbl": "how far weekly dosing builds up compared with a single dose", "src": "From the half-life and the 7-day interval"},
+      {"num": "~5 wks", "lbl": "to clear about 97% after the last dose", "src": "Five half-lives"}
+    ],
+    "explain": [
+      {"b": "Why steps are four weeks apart.", "t": "Four weeks is nearly five half-lives, so levels reach about 95% of a step's plateau before the next increase. Stepping faster would stack the climbs."},
+      {"b": "Why side effects cluster after a step.", "t": "Nausea and vomiting in the trials peaked in the weeks when levels were still rising, then eased as they flattened."},
+      {"b": "Why trials follow up for four weeks after the last dose.", "t": "Half is gone in six days, but it takes about a month to clear almost all of it."}
+    ],
+    "showTable": true,
+    "more": [
+      {
+        "title": "More: the model behind the chart",
+        "paras": [
+          "The chart uses a standard one-compartment pharmacokinetic model: the drug is absorbed from the injection site at one rate, cleared from the blood at another, and each dose adds to what is still circulating. The numbers come from Lilly's phase 1b study: a half-life of about 6 days, a peak 12 to 48 hours after injection, and blood levels that rose in proportion to dose.",
+          "The vertical axis is relative. 100% is the average level on the 12 mg weekly dose once it has plateaued, so the 4 mg average sits at one third and 9 mg at three quarters. Because a week is longer than the half-life, the level falls by roughly half between injections, which is the zigzag on the chart.",
+          "Real people differ. Published data for drugs in this class show roughly twofold variation in blood levels between people on the same dose, from body weight, injection site and absorption differences."
+        ]
+      },
+      {
+        "title": "More: what this chart cannot tell you",
+        "paras": [
+          "It models the trial regimen, not a person. It measures nothing; only a blood test can.",
+          "It says nothing about products sold online as retatrutide. Their contents and strength are unverified, so a vial labelled 10 mg could hold any amount of anything, and the model has no way to account for that.",
+          "Custom schedules are hypothetical. The chart can show what a schedule would do in the model, including where it goes past anything the trials tested, but it cannot tell you how your body differs from the model or whether a schedule is safe. The trials answered that with bloodwork, weekly check-ins and medical supervision, which a curve on a screen cannot replace."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "How the retatrutide trials were run, and what joining one looks like.",
+    "lede": "Clinical trials are the only legal route to retatrutide today. Here is how the Phase 3 studies worked and what a participant goes through.",
+    "ladder": {
+      "title": "The dose ladder used in every Phase 3 trial",
+      "text": "Everyone started at 2 mg a week. The dose went up one step every four weeks until it reached the target the computer had assigned. Each step was taken under the study team's supervision, and a step could be delayed or reversed if side effects were a problem.",
+      "steps": [
+        {"d": "2 mg", "t": "start"},
+        {"d": "4 mg", "t": "week 4"},
+        {"d": "6 mg", "t": "week 8"},
+        {"d": "9 mg", "t": "week 12"},
+        {"d": "12 mg", "t": "week 16"}
+      ],
+      "note": "Target doses were 4, 9 or 12 mg. People assigned to 4 mg stopped climbing after one step. A placebo group followed the same schedule with inactive injections, and nobody, including the doctors, knew who had what until the trial ended."
+    },
+    "more": [
+      {
+        "title": "More: how side effects were handled inside the trials",
+        "paras": [
+          "The slow dose ladder is the main tool. Stomach symptoms tend to appear in the weeks after a step up and settle before the next one. The press releases note that doses could be interrupted or modified, meaning the team could pause at a step, go back a step, or hold the drug for a while.",
+          "Participants had a study clinician to call, and symptoms were treated the way a doctor would treat them in any patient. People whose symptoms did not settle could leave the drug; that is where the discontinuation figures on the Side effects tab come from.",
+          "None of this is a self-management plan. The point of a trial is that trained staff are watching, which is exactly what is missing when someone uses a product bought online."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials still running",
+      "items": [
+        "A cardiovascular and kidney outcomes trial (the heart-protection question)",
+        "Type 2 diabetes head-to-head against semaglutide, and a study in people with reduced kidney function",
+        "Obstructive sleep apnea, chronic low back pain, and fatty liver disease (MASLD)"
+      ]
+    },
+    "find": {
+      "text": "Lilly runs sites in Canada, the U.S. and elsewhere. Search the public registry, then contact the nearest site listed on the study page. Typical requirements: adult, a BMI above a set threshold, and no competing weight-loss medication.",
+      "term": "retatrutide",
+      "extra": {"label": "Lilly Trials", "url": "https://trials.lilly.com/"}
+    }
+  },
+  "status": {
+    "headline": "Not approved anywhere yet. Anything sold as retatrutide is not the real thing.",
+    "items": [
+      {"tag": "no", "label": "Not approved", "text": "Health Canada, the U.S. FDA, the European EMA and Australia's TGA have not approved retatrutide for any use."},
+      {"tag": "soon", "label": "Filing planned", "text": "Lilly says it will submit to the FDA in the first quarter of 2027. A review usually takes six months to a year after that, so the earliest realistic U.S. availability is late 2027 and more likely 2028. Health Canada runs its own review, which often finishes later."},
+      {"tag": "ok", "label": "Trials open", "text": "Lilly's trials are the only legal source. See the Trials tab."}
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "The black market",
+        "text": "Vials sold online, on social media, in med spas and by \"research use only\" peptide shops as retatrutide, \"Reta\", \"R-10\", \"R-20\" or \"GLP-3\" are unapproved and illegal to sell. Only Lilly makes the verified drug and it is not for sale, so buyers have no way to know what is in the vial or how much.",
+        "items": [
+          "Lilly Canada issued a public safety notice in August 2026, and Health Canada works with border services to seize shipments.",
+          "In the U.S., Lilly sued six sellers in August 2026 and reported more than 200 others to regulators. The FDA says retatrutide cannot be compounded and has sent warning letters to sellers using \"research only\" labels.",
+          "In Australia, Victoria's health department reported six cases of acute liver injury in the first half of 2026 (later updated to seven) in people who used products labelled retatrutide. Investigators suspect contaminants; the cause has not been confirmed."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "warn",
+        "title": "If someone has already used an unapproved product",
+        "text": "Public health authorities advise stopping, disposing of it safely, and seeing a doctor for liver tests if any of these appear:",
+        "items": ["Unusual tiredness", "Yellowing of the skin or eyes", "Abdominal pain, dark urine, itchy skin", "Easy bruising"],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: the drug-versus-biologic dispute",
+        "paras": [
+          "Since 2024 Lilly has been in court with the FDA over whether retatrutide counts as a \"biologic\" (the FDA draws the line at more than 40 amino acids; Lilly says retatrutide has 41). The label decides the approval pathway, how long Lilly keeps exclusivity, and whether pharmacies could ever compound it. A judge gave Lilly a partial win in October 2025, and the matter is still unresolved as the filing approaches."
+        ]
+      }
+    ],
+    "sources": [
+      {"text": "Eli Lilly, TRIUMPH-1 topline results, May 21, 2026.", "url": "https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-delivered-powerful-weight-loss"},
+      {"text": "Eli Lilly, TRIUMPH-2 and TRIUMPH-3 topline results and BLA plan, July 23, 2026.", "url": "https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-successful-two-additional"},
+      {"text": "Eli Lilly, TRIUMPH-4 topline results, December 11, 2025.", "url": "https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-delivered-weight-loss-average"},
+      {"text": "Eli Lilly, TRANSCEND-T2D-1 topline results, March 19, 2026.", "url": "https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-demonstrated-significant"},
+      {"text": "Jastreboff AM et al. Triple-hormone-receptor agonist retatrutide for obesity: a Phase 2 trial. New England Journal of Medicine, 2023.", "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2301972"},
+      {"text": "Rosenstock J et al. Retatrutide in type 2 diabetes: a Phase 2 trial. The Lancet, 2023. Sanyal AJ et al. Retatrutide and liver fat: Phase 2 sub-study. Nature Medicine, 2024.", "url": ""},
+      {"text": "Urva S, Coskun T et al. LY3437943 in people with type 2 diabetes: a phase 1b multiple-ascending-dose trial. The Lancet, 2022 (half-life about 6 days, peak 12 to 48 hours, dose-proportional exposure).", "url": "https://www.sciencedirect.com/science/article/abs/pii/S0140673622020335"},
+      {"text": "Coskun T et al. LY3437943, a novel triple glucagon, GIP and GLP-1 receptor agonist: from discovery to clinical proof of concept. Cell Metabolism, 2022.", "url": "https://www.cell.com/cell-metabolism/fulltext/S1550-4131(22)00312-6"},
+      {"text": "Eli Lilly, statement on the illegal retatrutide market and six lawsuits, August 12, 2026.", "url": "https://investor.lilly.com/node/54816/pdf"},
+      {"text": "CTV News, Lilly Canada warning on black-market retatrutide, August 2026.", "url": "https://www.ctvnews.ca/health/article/unapproved-and-illegal-obesity-drug-being-sold-on-black-market-in-canada/"},
+      {"text": "Victorian Department of Health, health alert: toxicity linked to unapproved peptide product labelled Retatrutide, June 19, 2026.", "url": "https://www.health.vic.gov.au/health-alerts/toxicity-linked-to-unapproved-peptide-product-labelled-retatrutide"},
+      {"text": "BioSpace, Lilly and FDA biologic classification dispute, 2026.", "url": "https://www.biospace.com/fda/lilly-fda-retatrutide-biologic-dispute-comes-to-a-head-as-submission-nears"},
+      {"text": "Trial registrations: NCT05929066 (TRIUMPH-1), NCT05929079 (TRIUMPH-2), NCT05882045 (TRIUMPH-3), NCT05931367 (TRIUMPH-4).", "url": "https://clinicaltrials.gov/study/NCT05929066"}
+    ]
+  }
+}

@@ -1,0 +1,280 @@
+{
+  "id": "pinealon",
+  "name": "Pinealon",
+  "brands": "",
+  "maker": "St Petersburg Institute of Bioregulation and Gerontology (V. Khavinson)",
+  "group": "research",
+  "pill": "Unapproved",
+  "overview": {
+    "headline": "A three-amino-acid peptide sold for the brain. Protective in rat hypoxia models; two small Russian reports in head-injury patients.",
+    "lede": "Pinealon is the Khavinson institute's tripeptide Glu-Asp-Arg. Despite the name, the institute says it was derived from Cortexin, a brain-cortex extract, not the pineal gland. It has the largest preclinical file in the family and two small Russian studies in people with old head injuries. In Russia it is a dietary supplement; it is not a registered medicine anywhere.",
+    "stats": [
+      {
+        "num": "3",
+        "lbl": "amino acids: Glu-Asp-Arg, derived from the brain extract Cortexin",
+        "src": "Molecules 2021; Khavinson 2016"
+      },
+      {
+        "num": "25 + 72",
+        "lbl": "head-injury patients in the two Russian reports (a saline-controlled study and an uncontrolled series, possibly overlapping)",
+        "src": "US patent 8,524,674; Molecules 2021"
+      },
+      {
+        "num": "0",
+        "lbl": "trials on an international registry",
+        "src": "PubMed, patents, institute publications and registries, Oct 2026"
+      }
+    ],
+    "mechanism": {
+      "intro": "A short peptide said to help neurons survive low oxygen and injury by switching on protective genes.",
+      "parts": [
+        {
+          "name": "The bioregulator idea",
+          "text": "The 2016 computer model places Pinealon on the DNA sequence \"ttcc\" with \"very strong\" predicted binding; a 2021 review proposes binding sites in the PPARA and PPARG gene promoters. Docking calculations, not measurements in brain tissue."
+        },
+        {
+          "name": "What the animal work showed",
+          "text": "Rats pre-treated for five days survived severe low pressure longer (184 versus 72 seconds to respiratory arrest; 10 per group). In rats with brain trauma about twice as many could learn an avoidance task at 96 hours. Cultured neurons from Alzheimer's and Huntington's mouse models regained dendritic spines; no human study in either disease exists."
+        }
+      ]
+    },
+    "more": {
+      "title": "More: the two human reports",
+      "paras": [
+        "The U.S. patent (2013): 25 people aged 31–60 with symptoms one to ten years after a head injury, randomised to the peptide or saline for ten days; \"good\" results in 59.4%, a figure that cannot be produced from 25 people, and control results unreported. A 2021 institute review cites 72 patients on oral Pinealon who reported better memory and fewer headaches, with no control group or design given."
+      ]
+    }
+  },
+  "results": {
+    "headline": "Convincing-looking rat hypoxia data, encouraging cell models, and human reports that cannot be checked.",
+    "lede": "The deepest preclinical record in the family, almost entirely from the institute and its St Petersburg collaborators. The human data are two small Russian reports.",
+    "chart": null,
+    "stats": [
+      {
+        "num": "184 s vs 72 s",
+        "lbl": "time to respiratory arrest in rats under acute hypobaric hypoxia, Pinealon versus control (10 per group)",
+        "src": "Kozina et al. 2008"
+      },
+      {
+        "num": "59.4%",
+        "lbl": "\"good clinical result\" among 25 head-injury patients in the patent; controls' results not reported",
+        "src": "US patent 8,524,674"
+      }
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {
+          "b": "In vitro.",
+          "t": "Rat cerebellar neurons stressed with hydrogen peroxide or NMDA: less reactive-oxygen build-up. Neurons from Alzheimer's and Huntington's mouse models: more dendritic spines. Isolated crayfish neurons: survival after axotomy 13.7 versus 11.9 hours. Rat cortex explants: 37% larger area (patent)."
+        },
+        {
+          "b": "Animals.",
+          "t": "Rats, acute hypobaric hypoxia: respiratory arrest at 184 versus 72 seconds, 10 per group (2008). Offspring of rats exposed to hypoxia in pregnancy: more survivors (14 versus 9 per female) and more active behaviour. Brain trauma (24 rats) and spinal trauma (27 rats): better learning, motor function and tissue appearance (patent). Toxicity tests in 72 mice, 65 rats and 84 guinea pigs: none reported."
+        },
+        {
+          "b": "Russian human reports.",
+          "t": "25 adults with remote consequences of head injury, randomised to peptide or saline for ten days (patent, 2013): good result 59.4%, attention-test errors 12.6 to 6.4, EEG alpha index 35.7 to 47.9; control results unreported. 72 patients on oral Pinealon plus standard care (cited in Molecules 2021): better memory, fewer headaches; no design given."
+        }
+      ]
+    },
+    "more": [
+      {
+        "title": "More: why the rat data do not settle anything",
+        "paras": [
+          "The 2008 hypoxia paper is the best-documented experiment in the family: ten rats per group, a clear outcome, a significant difference for Pinealon alone among four peptides. But its table and text disagree on the death rate, it has not been repeated outside the institute's circle, and surviving a vacuum chamber is not a human disease. The Alzheimer's claims are cell-culture observations."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "Ten days of exposure in a few dozen Russians, no adverse-event table, and rodent toxicity tests in a patent.",
+    "lede": "The patent states \"no negative effect\" was registered in its 25 patients without describing how adverse events were sought. Rodent testing reported no toxic reactions.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "Not reported in either human study."
+    },
+    "unique": {
+      "title": "What is actually known",
+      "text": "Very little. The peptide is reported to change antioxidant enzymes, serotonin-related gene expression and the stress-signalling enzyme ERK in rat neurons. What months of that does in a human brain is unmeasured."
+    },
+    "more": [
+      {
+        "title": "More: what a trial would monitor for",
+        "paras": [
+          "Mood, sleep, seizures and cognition, since the rat data show it changes neuronal signalling; immune reactions to an injected peptide of uncertain purity."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "In rats: longer survival under hypoxia, better recovery from brain and spinal injury. In cells: more dendritic spines in dementia models. In two small Russian head-injury series: self-reported memory and headache improvements without usable controls."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms a doctor should see promptly",
+      "items": [
+        "Spreading redness, swelling or pus at an injection site, or fever and chills after an injection",
+        "Hives, swelling of the face or throat, trouble breathing",
+        "Yellowing of the skin or eyes, dark urine",
+        "New confusion, seizures, severe headache or one-sided weakness"
+      ],
+      "note": "No trial has defined this peptide's own danger signs; these relate to an unverified product."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "No one has measured Pinealon in a person's blood; no half-life or absorption figure exists for it in any species. There is nothing to build a curve from.",
+    "stats": [
+      {
+        "num": "None",
+        "lbl": "human half-life; never measured",
+        "src": "No PK study found, Oct 2026"
+      },
+      {
+        "num": "3",
+        "lbl": "amino acids long (Glu-Asp-Arg)",
+        "src": "Khavinson 2016"
+      },
+      {
+        "num": "10 days",
+        "lbl": "length of the only controlled human exposure, in 25 head-injury patients",
+        "src": "US patent 8,524,674"
+      }
+    ],
+    "explain": [
+      {
+        "b": "Why there is no chart.",
+        "t": "The simulator on other pages needs a measured half-life; none exists for Pinealon."
+      },
+      {
+        "b": "Why the oral claim is contested.",
+        "t": "Pharmacologists expect peptides this short to be digested by gut and blood enzymes; the institute says they are absorbed intact. Nothing in people settles it."
+      }
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: what this page cannot tell you",
+        "paras": [
+          "What is in a product sold as Pinealon, or what repeated use does: no independent analysis exists, and no study has followed anyone beyond a few weeks."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "One small saline-controlled study in a patent, one uncontrolled series in a review. Nothing registered.",
+    "lede": "A 25-patient randomised comparison with saline in a 2013 U.S. patent, and a 72-patient uncontrolled series cited in a 2021 institute review.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: how the human studies were run",
+        "paras": [
+          "Patent: 25 adults randomised to peptide or saline for ten days, with attention tests and EEG before and after; group sizes, control results and a \"commonly used medications\" comparison group in the tables are not described. The 72-patient series is known only from a sentence in the review."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials that have been run",
+      "items": [
+        "Remote consequences of head injury, 25 adults, ten days, saline control, randomised (patent, 2013): \"good\" result 59.4%, better attention scores and EEG alpha index; control results unreported; not peer reviewed.",
+        "Post-traumatic brain symptoms, 72 patients, oral Pinealon plus standard therapy (cited in Molecules 2021): memory and headache improvements; no control group described.",
+        "No trial on ClinicalTrials.gov or any registry we could find (October 2026)."
+      ]
+    },
+    "find": {
+      "text": "Search the registry for \"Pinealon\" and its sequence \"EDR\". We found no registered trial.",
+      "term": "Pinealon",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "Not approved anywhere. A dietary supplement in Russia, a \"research chemical\" everywhere else.",
+    "items": [
+      {
+        "tag": "no",
+        "label": "Canada",
+        "text": "Never authorised by Health Canada as a medicine or natural health product (October 2026)."
+      },
+      {
+        "tag": "no",
+        "label": "United States",
+        "text": "Not FDA-approved; absent from FDA's 503A compounding category list of 14 May 2026."
+      },
+      {
+        "tag": "no",
+        "label": "Russia",
+        "text": "Not a registered medicine. The Russian drug directory RLS lists Пинеалон as a food supplement (БАД), an additional source of peptides of arginine, glutamic acid and aspartic acid. Supplements are registered on safety paperwork, not proof of effect."
+      }
+    ],
+    "cards": [
+      {
+        "kind": "warn",
+        "title": "What a \"bioregulator\" claim rests on",
+        "text": "The claim is that a peptide copied from an organ extract reaches that organ and switches on its genes. For Pinealon the support is:",
+        "items": [
+          "Computer docking models, test-tube DNA work and cell cultures from one institute; no study has tracked one of these peptides into a human organ.",
+          "The name suggests the pineal gland; the institute says the peptide came from Cortexin, a brain-cortex extract. Melatonin or sleep claims attached to the name have no study behind them."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "crit",
+        "title": "What \"research use only\" means",
+        "text": "A \"research use only\" label is a legal device, not a safety rating. No regulator in Canada or the U.S. has checked what is in a vial sold as Pinealon, and no toxicology or purity data have been filed in the West.",
+        "items": [
+          "In Russia the same name is a food supplement; that says nothing about what is in a vial sold abroad under it."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "soft",
+        "title": "Symptoms to take to a doctor",
+        "text": "If any of these appear after using such a product, see a doctor and bring the product:",
+        "items": [
+          "Fever, chills, or a hot, swollen injection site",
+          "Hives, swelling of the face or throat, trouble breathing",
+          "Yellowing of the skin or eyes, dark urine",
+          "New confusion, seizures or severe headache"
+        ],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: the Khavinson peptide family",
+        "paras": [
+          "Vladimir Khavinson (1946–2024) directed the St Petersburg Institute of Bioregulation and Gerontology, which made animal-organ extracts from the 1970s and then designed two- to four-amino-acid peptides from each extract's amino-acid make-up, naming them after target organs. Six products became licensed medicines in the USSR or Russia: Thymalin (1982), Thymogen and Epithalamin (1990), Prostatilen (1992), Cortexin and Retinalamin (1999). The synthetic organ-named peptides sold online are not among them, and none appears in an international trial registry."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "text": "Kozina LS, Arutjunyan AV, Stvolinskii SL et al. Regulatory peptides protect brain neurons from hypoxia in vivo. Doklady Biological Sciences 2008;418:7–10.",
+        "url": "https://khavinson.info/assets/files/2008-Kozina.pdf"
+      },
+      {
+        "text": "Khavinson V, Linkova N, Kozhevnikova E, Trofimova S. EDR peptide: possible mechanism of gene expression and protein synthesis regulation involved in the pathogenesis of Alzheimer's disease. Molecules 2021;26(1):159.",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7795577"
+      },
+      {
+        "text": "Khavinson VKh et al. Method of improving the conditioned reflex habit, the muscle tonus, or the motion coordination of a patient after suffering trauma to the brain cortex. US patent 8,524,674, 3 September 2013.",
+        "url": "https://patents.justia.com/patent/8524674"
+      },
+      {
+        "text": "RLS drug directory, Пинеалон: food supplement (БАД), additional source of peptides (arginine, glutamic acid, aspartic acid).",
+        "url": "https://www.rlsnet.ru/baa/pinealon-30390"
+      },
+      {
+        "text": "Khavinson VKh, Lin'kova NS, Tarnovskaya SI. Short peptides regulate gene expression. Bull Exp Biol Med 2016;162(2): sequence table and modelled DNA binding sites.",
+        "url": "https://khavinson.info/assets/files/skan/2016-khavinson_lin_tarn.pdf"
+      },
+      {
+        "text": "U.S. FDA, 503A bulk drug substances category list, updated 14 May 2026.",
+        "url": "https://fda.gov/media/94155/download"
+      }
+    ]
+  }
+}

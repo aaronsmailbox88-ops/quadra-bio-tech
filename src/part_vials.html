@@ -1,0 +1,77 @@
+<!-- ============ VIALS ============ -->
+<section data-panel="vials" aria-labelledby="vl-h" hidden>
+<div id="vials">
+  <div id="vl-head"><div><div class="kick"><div class="eyebrow">Track · Vials</div><span class="tag2">Interactive</span></div><h1 id="vl-h">What is in each vial, by weight.</h1></div>
+  <p class="lede">Every number here comes from a scale, not a syringe mark: water in, concentration, each dose, what is left and when to reorder.</p></div>
+  <p class="sync" id="vl-sync">Saved in this browser only</p>
+
+  
+
+  <div id="vl-resume" hidden style="margin-bottom:12px"></div>
+  <div id="vl-alerts" class="stack" style="margin-bottom:12px"></div>
+
+  <!-- Supply list -->
+  <div id="vl-list">
+    <div class="row between" style="margin-bottom:10px">
+      <span class="eyebrow">Supply at a glance</span>
+      <span class="row" style="gap:8px"><button type="button" class="btn sm" data-vgo="wiz">+ Mix a vial, step by step</button><button type="button" class="btn sm ghost" data-vgo="new">Enter numbers</button></span>
+    </div>
+    <div id="vl-cards" class="stack"></div>
+    <div id="vl-empty" class="card" hidden>
+      <h2>No vials yet</h2>
+      <p class="muted" style="margin-top:6px">The guided mix walks you through it one weigh at a time — scale check, the dry vial, the empty syringe, the water, the full vial — with a photo of the display at each step. From there the tracker keeps the ledger: concentration, every dose by weight, what's left, and when to reorder.</p>
+      <p style="margin-top:12px" class="row"><button type="button" class="btn" data-vgo="wiz">Mix your first vial</button><button type="button" class="btn ghost" data-vgo="new">I have the numbers already</button></p>
+    </div>
+    <details class="card" style="margin-top:14px"><summary style="cursor:pointer;font-weight:600">The weighing protocol (every step, in order)</summary><div id="vl-howto" style="margin-top:12px;display:flex;flex-direction:column;gap:12px"></div></details>
+  </div>
+
+  <!-- New vial -->
+  <div id="vl-new" hidden>
+    <p class="small"><button type="button" class="linkish" data-vgo="">← Supply</button></p>
+    <h2 style="margin:8px 0 12px">New vial — numbers in hand</h2>
+    <p class="small muted" style="margin:-6px 0 10px">Mixing right now? <button type="button" class="linkish" data-vgo="wiz">Use the step-by-step guide</button> instead; it weighs and photographs each step.</p>
+    <form id="f-new" novalidate>
+      <fieldset><legend>What it is</legend>
+        <div class="f2">
+          <label class="fl">Peptide<input id="n-name" list="vl-peps" required placeholder="e.g. Retatrutide"><datalist id="vl-peps"></datalist></label>
+          <label class="fl">Label amount (mg)<input id="n-mg" class="mono" type="number" step="any" min="0" inputmode="decimal" required placeholder="15"></label>
+          <label class="fl">Source / brand (optional)<input id="n-src" placeholder="Vendor or lot"></label>
+          <label class="fl">Mixed with<select id="n-dil"><option>Bacteriostatic water</option><option>Sterile water</option><option>Acetic acid 0.6%</option><option>Other</option></select></label>
+        </div><div id="n-dil-note"></div></fieldset>
+      <fieldset><legend>Weights (grams, from the scale)</legend>
+        <div class="f3">
+          <label class="fl">Vial dry, cap off<span class="uin u1"><span class="uin-in"><input id="n-dry" class="mono" type="number" step="0.001" inputmode="decimal" required placeholder="5.622"></span><span class="uin-u">g</span></span></label>
+          <label class="fl">Syringe empty<span class="uin u1"><span class="uin-in"><input id="n-se" class="mono" type="number" step="0.001" inputmode="decimal" required placeholder="0.000 if tared"></span><span class="uin-u">g</span></span></label>
+          <label class="fl">Syringe with water<span class="uin u1"><span class="uin-in"><input id="n-sf" class="mono" type="number" step="0.001" inputmode="decimal" required placeholder="1.500"></span><span class="uin-u">g</span></span></label>
+          <label class="fl">Vial after water<span class="uin u1"><span class="uin-in"><input id="n-full" class="mono" type="number" step="0.001" inputmode="decimal" required placeholder="7.104"></span><span class="uin-u">g</span></span></label>
+        </div>
+        <p class="small muted" style="margin:6px 0 0">Every weight is required: the syringe is weighed empty and again with the water in it, and the vial before and after. The two water figures must agree.</p>
+        <div class="f2" style="margin-top:8px">
+          <label class="fl">New vial, empty (if sterile-filtered)<span class="uin u1"><span class="uin-in"><input id="n-fdry" class="mono" type="number" step="0.001" inputmode="decimal" placeholder="4.900"></span><span class="uin-u">g</span></span></label>
+          <label class="fl">New vial, filled<span class="uin u1"><span class="uin-in"><input id="n-ffull" class="mono" type="number" step="0.001" inputmode="decimal" placeholder="6.900"></span><span class="uin-u">g</span></span></label>
+        </div>
+        <div class="calc" id="n-calc">Enter the dry and after-water weights to see the measured volume and concentration.</div></fieldset>
+      <fieldset><legend>Dose plan</legend>
+        <div class="f2">
+          <label class="fl">Dose now<span class="uin u1"><span class="uin-in"><input id="n-dose" class="mono" type="number" step="any" min="0" inputmode="decimal" placeholder="3"></span><span class="uin-u">mg</span></span></label>
+          <label class="fl">Doses per week<span class="uin u2"><span class="uin-in"><input id="n-pw" class="mono" type="number" step="any" min="0" inputmode="decimal" value="1"></span><span class="uin-u">× per week</span></span></label>
+        </div>
+        <div class="f2" style="margin-top:8px">
+          <label class="fl">Date mixed<input id="n-mixed" type="date"></label>
+          <label class="fl">Use within (after mixing)<span class="uin u3"><span class="uin-in"><input id="n-exp" class="mono" type="number" step="1" min="1" inputmode="numeric" value="28"></span><span class="uin-u">days</span></span></label>
+        </div>
+        <p class="small muted">28 days is the multi-dose-vial rule (USP &lt;797&gt;) for a refrigerated vial after its first puncture; the tracker sets the use-by date from the date mixed and warns a week before. Shorten it if you like; nothing supports lengthening it. Keep the mixed vial in the fridge, upright, out of the light; keep unmixed powder cool, dry and dark.</p>
+        <p class="small muted">The dose is yours to set and change on the vial page as you step up; the tracker uses it to flag a draw that lands far from it and to count the doses left at that dose. It never forecasts a run-out date.</p></fieldset>
+      <p class="err" id="n-err" hidden></p>
+      <div class="row"><button class="btn" type="submit">Save vial</button><button type="button" class="btn ghost" data-vgo="">Cancel</button></div>
+    </form>
+  </div>
+
+  <!-- Guided mix -->
+  <div id="vl-wiz" hidden></div>
+
+  <!-- Vial detail -->
+  <div id="vl-vial" hidden></div>
+
+</div>
+</section>

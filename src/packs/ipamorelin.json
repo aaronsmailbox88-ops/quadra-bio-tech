@@ -1,0 +1,213 @@
+{
+  "id": "ipamorelin",
+  "name": "Ipamorelin",
+  "brands": "",
+  "maker": "Novo Nordisk",
+  "group": "research",
+  "pill": "Unapproved",
+  "overview": {
+    "headline": "A small peptide that makes the pituitary release a short burst of growth hormone.",
+    "lede": "Ipamorelin was designed at Novo Nordisk in the 1990s and later tested by Helsinn as a hospital drug to restart the bowel after surgery. It failed that test and has never been approved anywhere. Today it is sold online as a \"research chemical\", usually blended with CJC-1295. That is not a legal route to a medicine, and no trial has ever tested the blend.",
+    "stats": [
+      {"num": "2", "lbl": "published human studies: one dosing study in healthy men (1999), one placebo-controlled trial in surgery patients (2014)", "src": "Gobburu 1999; Beck 2014"},
+      {"num": "0", "lbl": "approvals anywhere, for any use", "src": "As of October 2026"},
+      {"num": "1998", "lbl": "year it was first described, as \"the first selective growth hormone secretagogue\"", "src": "Raun et al., Eur J Endocrinol"}
+    ],
+    "mechanism": {
+      "intro": "It copies ghrelin, the stomach's hunger hormone, at one receptor in the pituitary and brain.",
+      "parts": [
+        {"name": "Ghrelin receptor", "text": "Ipamorelin switches on the same receptor as ghrelin (GHS-R1a). In the pituitary that triggers a single burst of growth hormone (GH). In the 1999 study, GH peaked about 40 minutes after an intravenous dose began and then fell back."},
+        {"name": "GH and IGF-1", "text": "GH acts on the liver to make IGF-1, the hormone that carries most of GH's effects on muscle, bone and fat. Whether repeated ipamorelin raises IGF-1 in people was not reported in either published human study."},
+        {"name": "Selectivity", "text": "Older peptides in this family (GHRP-6, GHRP-2) also raise the stress hormones ACTH and cortisol. In pigs, ipamorelin did not, which is why it was called \"selective\". That finding comes from animals, not people."}
+      ]
+    },
+    "more": {
+      "title": "More: where it came from and why it stalled",
+      "paras": [
+        "Novo Nordisk chemists built ipamorelin (code NNC 26-0161) from an older peptide, GHRP-1, and published it in 1998. It is five amino acids long, far smaller than GH itself. Novo ran early human work, including the 1999 dosing study in healthy men, and then stopped developing it.",
+        "In 2006 a small U.S. company, Sapphire Therapeutics, licensed it to test a different idea: that stimulating the ghrelin receptor could restart a gut that has gone quiet after bowel surgery (postoperative ileus). Helsinn bought Sapphire in 2009 and ran two Phase 2 trials. The published one found no benefit over placebo, and the program went no further.",
+        "Everything on this page comes from the peer-reviewed papers, trial registry entries and regulators' documents listed under the Status tab. Vendor websites were not used for anything except the fact that the product is being sold."
+      ]
+    }
+  },
+  "results": {
+    "headline": "It raises growth hormone for an hour or two. Beyond that, the human evidence is thin, and negative where it exists.",
+    "lede": "Two human studies have been published. One measured hormone levels in healthy men after an intravenous dose. The other, a placebo-controlled trial in surgery patients, found no benefit. Nobody has published a trial of ipamorelin for muscle, fat, sleep, ageing or injury.",
+    "chart": null,
+    "stats": [
+      {"num": "25 vs 33 h", "lbl": "median time to tolerate a solid meal after bowel surgery, ipamorelin vs placebo. Not statistically significant (p = 0.15).", "src": "Beck et al., 2014, 114 patients"},
+      {"num": "0", "lbl": "published human trials of ipamorelin for body composition, performance, sleep or longevity", "src": "Published literature as of October 2026"}
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {"b": "In people: a GH pulse.", "t": "Eight healthy men at each of five dose levels received a 15-minute intravenous infusion. GH rose once, peaked at about 40 minutes and declined. Blood levels of the drug rose in proportion to dose and cleared with a half-life of about 2 hours."},
+        {"b": "In people: no help after surgery.", "t": "In the 2014 Phase 2 trial, 114 adults recovering from bowel resection received ipamorelin 0.03 mg/kg or placebo intravenously twice a day for up to 7 days. Time to a first tolerated meal, and every secondary measure, were no better than placebo."},
+        {"b": "In animals: growth and gut movement.", "t": "Rats given ipamorelin grew longer bones (1999) and gained weight (2002). Rodent models of postoperative ileus showed faster stomach emptying (2009 to 2016). These findings did not carry over to the human trial."},
+        {"b": "Never studied in people.", "t": "Fat loss, muscle gain, recovery from injury, sleep, skin and \"anti-ageing\" effects have no published human trial data at all. Claims about them are extrapolated from the animal work or from how GH itself behaves."}
+      ]
+    },
+    "more": [
+      {
+        "title": "More: why a hospital drug for the gut?",
+        "paras": [
+          "After abdominal surgery the bowel often stops moving for days (postoperative ileus), which keeps people in hospital. Ghrelin itself speeds up stomach emptying, so a ghrelin mimic was a reasonable idea, and Helsinn tested ipamorelin intravenously in that setting.",
+          "The proof-of-concept trial (NCT00672074, registered 2008) enrolled 117 patients at several U.S. centres and was published in 2014. A second, larger Phase 2 study (HT-IPAM-202, registered as NCT01280591) ran from 2011 to 2014. No results from it were ever posted or published, and Helsinn did not take the drug further. Drug databases list the program as discontinued."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "Short exposures, few specifics, and no data at all on long-term use.",
+    "lede": "In the surgery trial, side effects were common in both groups because everyone had just had major surgery: 87.5% on ipamorelin and 94.8% on placebo reported at least one. The paper did not single out any effect as caused by ipamorelin. No study has followed people using it for weeks or months.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "Not reported. The 2014 trial lasted a week at most, and the 1999 study was a single infusion. There is no human data on what happens during or after longer use."
+    },
+    "unique": {
+      "title": "What any GH-releasing peptide can do, and what was never measured here",
+      "text": "Anything that raises GH and IGF-1 for long enough can cause fluid retention (swollen ankles, joint and muscle aches, carpal tunnel symptoms), higher blood sugar and insulin resistance, and a sustained rise in IGF-1. The approved GH-axis drug tesamorelin carries label warnings for all of these and is contraindicated in active cancer because IGF-1 drives cell growth. None of this has been measured for ipamorelin in people, because no trial has used it for long enough. That is a gap in the evidence, not reassurance."
+    },
+    "more": [
+      {
+        "title": "More: what the trials monitored for",
+        "paras": [
+          "The 2014 trial tracked standard post-surgical safety: vital signs, laboratory tests, electrocardiograms and adverse events, and reported ipamorelin as well tolerated for up to 7 days of intravenous dosing. It did not report IGF-1, blood sugar or body composition.",
+          "Ghrelin-receptor drugs can increase appetite and, in some cases, cortisol and prolactin. Ipamorelin was selected because it did not raise ACTH or cortisol in pigs; whether that holds in people at repeated doses is unreported.",
+          "Pregnancy, children, people with cancer or diabetes: excluded or never studied."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "None established. The surgery trial found a numerically shorter time to eating (about 7 hours) that could have been chance. The hormone response in healthy men was real but brief, and no study has linked it to any benefit."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms that need urgent care",
+      "items": [
+        "Swelling of the face, lips or throat, hives, or trouble breathing after an injection",
+        "Chest pain, a racing or irregular heartbeat, fainting",
+        "Fever, spreading redness or pus at an injection site (a sign of a contaminated product)",
+        "Unusual thirst, frequent urination or blurred vision (possible high blood sugar)",
+        "Numbness, tingling or pain in the hands, or new joint swelling"
+      ],
+      "note": "Anyone with these symptoms should get medical care right away and tell the clinician exactly what product was used and when."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "Human pharmacokinetic data for ipamorelin exist only for intravenous infusion: a 1999 study in healthy men measured a half-life of about 2 hours. Nobody has published how fast it is absorbed after an injection under the skin, which is how grey-market products are used, so the chart cannot be drawn honestly. The numbers that are known are below.",
+    "stats": [
+      {"num": "~2 h", "lbl": "half-life after an intravenous dose in healthy men", "src": "Gobburu et al., Pharm Res 1999"},
+      {"num": "40 min", "lbl": "time to the GH peak after the start of a 15-minute infusion", "src": "Same study: 0.67 hours"},
+      {"num": "~10 h", "lbl": "to clear about 97% of a dose", "src": "Five half-lives"}
+    ],
+    "explain": [
+      {"b": "Why the effect is a pulse, not a plateau.", "t": "With a 2-hour half-life, almost nothing is left by the next day. Each dose produces one GH burst, which is also how the body normally releases GH."},
+      {"b": "Why injection-site data matter.", "t": "Absorption from under the skin changes the height and timing of the peak. Without that measurement, any blood-level curve for subcutaneous use is a guess."},
+      {"b": "Why repeated dosing is uncharted.", "t": "The pituitary can become less responsive to repeated stimulation, and IGF-1 responds over days, not hours. No human study has measured either for ipamorelin."}
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: what the 1999 study measured",
+        "paras": [
+          "Eight healthy men at each of five dose levels received a 15-minute intravenous infusion. Drug concentrations rose in proportion to dose. Clearance was 0.078 litres per hour per kilogram and the volume of distribution 0.22 litres per kilogram, both consistent with a small peptide that stays mostly in the bloodstream and is cleared quickly. GH rose once and declined.",
+          "The Helsinn surgery trial also used intravenous dosing (0.03 mg/kg twice daily). It did not publish blood levels."
+        ]
+      },
+      {
+        "title": "More: what this tab cannot tell you",
+        "paras": [
+          "Nothing here applies to vials sold online. Their contents, strength and sterility are unverified. In 2025 even a licensed U.S. pharmacy's compounded CJC-1295 syringes were recalled for lack of sterility assurance; anonymous sellers face no checks at all.",
+          "A blood level is not a benefit. Even a perfectly measured curve would say nothing about whether ipamorelin does anything useful, because no trial has shown that it does."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "Two Phase 2 trials were run. Here is what happened to them.",
+    "lede": "Ipamorelin's human testing consisted of early dosing work at Novo Nordisk and two Phase 2 trials in surgery patients run by Helsinn. There are no trials recruiting today.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: how the surgery trial was run",
+        "paras": [
+          "Patients were enrolled after small or large bowel resection and randomised to ipamorelin or a matching placebo, given by intravenous infusion twice a day from the first day after surgery until day 7 or discharge. Neither patients nor doctors knew who received which. The main measure was the time until a patient could tolerate a standard solid meal; bowel function, hospital stay and adverse events were secondary.",
+          "The study was designed as a proof of concept with about 120 patients, enough to detect a large effect but not a modest one. The authors noted that the patients were medically diverse, which adds noise. The result, a non-significant 7-hour difference, was not enough to carry the drug forward after the second study."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials that were run",
+      "items": [
+        "Novo Nordisk, dose-escalation study in healthy men (published 1999): intravenous infusions at five dose levels. Outcome: dose-proportional blood levels, a single GH pulse, half-life about 2 hours.",
+        "Sapphire/Helsinn, Phase 2 proof of concept (NCT00672074, registered 2008, published 2014): 117 bowel-surgery patients. Outcome: no significant difference from placebo on any efficacy measure; well tolerated for up to 7 days.",
+        "Helsinn, Phase 2 (HT-IPAM-202, NCT01280591, 2011 to 2014): a second trial of recovery of gut function after surgery. Outcome: the registry lists it as completed, but no results were posted or published, and the program was discontinued.",
+        "No trial of ipamorelin for body composition, performance, sleep or ageing has ever been registered."
+      ]
+    },
+    "find": {
+      "text": "No trials are recruiting. The registry entries are useful mainly to see what was studied and, just as important, what was not.",
+      "term": "ipamorelin",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "Not approved anywhere. Not legal to compound. Sold anyway.",
+    "items": [
+      {"tag": "no", "label": "Canada", "text": "Health Canada has never authorized a product containing ipamorelin. Selling it as an injectable, with or without a \"research use only\" label, is selling an unauthorized drug (status as of October 2026)."},
+      {"tag": "no", "label": "United States", "text": "Not FDA-approved. In September 2023 the FDA placed ipamorelin in category 2 of its list of bulk substances nominated for compounding: substances that may present significant safety risks. Licensed compounding pharmacies therefore cannot legally make it, and as of 2026 it remains ineligible. The FDA treats peptide vials sold \"for research\" as unapproved drugs and has sent warning letters to sellers (2023 onward)."},
+      {"tag": "no", "label": "Sport", "text": "Prohibited at all times by the World Anti-Doping Agency under S2 (peptide hormones, growth factors, related substances and mimetics), where growth hormone secretagogues such as ipamorelin are named. 2026 Prohibited List."},
+      {"tag": "no", "label": "Pipeline", "text": "No company is developing ipamorelin. Helsinn's program ended after 2014 and no trial has been registered since."}
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "What \"research use only\" means",
+        "text": "The label is a legal disclaimer, not a quality standard. Sellers use it to argue the product is not a drug. It means nobody has checked what is in the vial, how strong it is, whether it is sterile, or whether it is ipamorelin at all.",
+        "items": [
+          "Most products are sold as \"CJC-1295/ipamorelin\" blends. Both ingredients are in the same FDA risk category, and the blend has never been tested in a human trial.",
+          "In 2025 a Colorado pharmacy recalled compounded CJC-1295 syringes for lack of sterility assurance; the FDA classed it a Class II recall (June 2025). Unregulated vendors face no such checks.",
+          "Health Canada and the FDA both treat injectable peptides bought online as unauthorized drugs, and border agencies seize shipments."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "warn",
+        "title": "If someone has already used an unapproved product",
+        "text": "Stop, keep the vial and packaging, and see a doctor. Ask for a check of blood sugar and IGF-1, and mention any of these:",
+        "items": [
+          "Swelling in the hands, feet or face, or new joint pain",
+          "Thirst, frequent urination, blurred vision",
+          "Fever or a hot, red, painful injection site",
+          "Headache, flushing or a fast heartbeat soon after injecting"
+        ],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: the GH-axis family and who actually got approved",
+        "paras": [
+          "Ipamorelin belongs to a family of drugs that push the body to make its own GH. Two have reached approval for narrow uses: tesamorelin (Egrifta, for HIV-related abdominal fat) and macimorelin (Macrilen, a diagnostic test for adult GH deficiency). Sermorelin (Geref) was approved for children and later withdrawn for commercial reasons. Ipamorelin never got that far. The gap between its evidence and theirs is the whole point of this page."
+        ]
+      }
+    ],
+    "sources": [
+      {"text": "Raun K et al. Ipamorelin, the first selective growth hormone secretagogue. European Journal of Endocrinology 1998;139(5):552–561.", "url": "https://pubmed.ncbi.nlm.nih.gov/9849822/"},
+      {"text": "Gobburu JVS, Agersø H, Jusko WJ, Ynddal L. Pharmacokinetic-pharmacodynamic modeling of ipamorelin, a growth hormone releasing peptide, in human volunteers. Pharmaceutical Research 1999;16(9):1412–1416 (half-life 2 h, clearance 0.078 L/h/kg, GH peak at 0.67 h).", "url": "https://pubmed.ncbi.nlm.nih.gov/10496658/"},
+      {"text": "Beck DE, Sweeney WB, McCarter MD et al. Prospective, randomized, controlled, proof-of-concept study of the ghrelin mimetic ipamorelin for the management of postoperative ileus in bowel resection patients. International Journal of Colorectal Disease 2014;29:1527–1534.", "url": "https://dx.doi.org/10.1007/s00384-014-2030-8"},
+      {"text": "Trial registrations: NCT00672074 (Helsinn, Phase 2 proof of concept) and NCT01280591 (HT-IPAM-202, Phase 2, 2011–2014, no results posted).", "url": "https://clinicaltrials.gov/study/NCT00672074"},
+      {"text": "Johansen PB et al. Ipamorelin, a new growth-hormone-releasing peptide, induces longitudinal bone growth in rats. Growth Hormone & IGF Research 1999;9(2):106–113.", "url": "https://pubmed.ncbi.nlm.nih.gov/10373343/"},
+      {"text": "Rodent postoperative-ileus study: Efficacy of ipamorelin, a ghrelin mimetic, on gastric dysmotility in a rodent model of postoperative ileus. 2016.", "url": "https://pubmed.ncbi.nlm.nih.gov/27186127/"},
+      {"text": "FDA, Bulk drug substances nominated for use in compounding under section 503A (ipamorelin and CJC-1295 placed in category 2, September 2023).", "url": "https://www.fda.gov/drugs/human-drug-compounding/bulk-drug-substances-nominated-use-compounding-under-section-503a-federal-food-drug-and-cosmetic-act"},
+      {"text": "FDA docket FDA-2015-N-3469, bulk drug substance nomination for ipamorelin acetate, with the human data summarised (Gobburu 1999; Beck 2014).", "url": "https://downloads.regulations.gov/FDA-2015-N-3469-0293/attachment_1.pdf"},
+      {"text": "World Anti-Doping Agency, The 2026 Prohibited List, section S2 (growth hormone secretagogues, e.g. ipamorelin).", "url": "https://www.wada-ama.org/en/prohibited-list"},
+      {"text": "Pharmacy Learning Network (HMP Global), FDA recalls CJC-1295 injectable due to sterility concerns: Thrive Health Solutions, Colorado, recall initiated May 21, 2025, Class II June 20, 2025. July 2, 2025.", "url": "https://www.hmpgloballearningnetwork.com/site/pln/news/fda-recalls-cjc-1295-injectable-due-sterility-concerns"}
+    ]
+  }
+}

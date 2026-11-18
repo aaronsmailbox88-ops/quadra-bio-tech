@@ -1,0 +1,127 @@
+#vials .sync{font-size:.74rem;color:var(--ink-2);display:inline-flex;align-items:center;gap:6px}
+#vials .sync::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--ink-2)}
+#vials .sync.on::before{background:var(--good)}
+#vials .muted{color:var(--ink-2)}
+#vials .small{font-size:.86rem}
+#vials .mono{font-family:var(--mono);font-size:.92em}
+#vials .eyebrow{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);font-weight:600}
+#vials .stack{display:grid;gap:12px}
+#vials .card{background:var(--glass);border:1px solid var(--line);border-radius:var(--radius);padding:16px;box-shadow:0 12px 34px rgba(0,0,0,.32), inset 0 1px 0 rgba(255,255,255,.06)}
+#vials .card.tap{cursor:pointer}
+#vials .card.tap:hover{border-color:var(--accent)}
+#vials .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+#vials .between{justify-content:space-between}
+#vials .chip{display:inline-block;padding:3px 10px;border-radius:999px;font-size:.76rem;font-weight:600;letter-spacing:.02em;white-space:nowrap;border:1px solid transparent}
+#vials .chip.ok{background:var(--good-soft);color:var(--good)}
+#vials .chip.warn{background:var(--warn-soft);color:var(--warn)}
+#vials .chip.bad{background:var(--crit-soft);color:var(--crit)}
+#vials .chip.info{background:var(--accent-soft);color:var(--s2)}
+#vials .chip.plain{background:transparent;border-color:var(--line);color:var(--ink-2)}
+#vials .bar{height:10px;border-radius:999px;background:var(--surface-2);overflow:hidden;margin:10px 0 8px}
+#vials .bar i{display:block;height:100%;background:linear-gradient(90deg,#4d8bff,#49d6c8);border-radius:999px;transition:width .3s}
+#vials .bar.low i{background:var(--warn)}
+#vials .bar.empty i{background:var(--crit)}
+#vials .dates{font-size:.76rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);font-weight:600}
+#vials .big{font-family:var(--mono);font-size:1.45rem;font-weight:600;letter-spacing:-.01em}
+#vials .kv{display:grid;grid-template-columns:1fr auto;gap:6px 14px;font-size:.92rem}
+#vials .kv dt{color:var(--ink-2)}
+#vials .kv dd{margin:0;font-family:var(--mono);font-size:.9rem;text-align:right}
+#vials .btn{display:inline-flex;align-items:center;gap:8px;padding:11px 16px;border-radius:12px;border:1px solid transparent;background:var(--grad);color:#fff;font:inherit;font-family:var(--display);font-weight:700;font-size:.95rem;cursor:pointer;line-height:1.2;text-decoration:none;box-shadow:0 8px 22px rgba(61,125,255,.35)}
+#vials .btn.ghost{background:rgba(61,125,255,.10);color:#d7e4ff;border-color:rgba(132,165,255,.35);box-shadow:none}
+#vials .btn.ghost:hover{background:var(--accent-soft)}
+#vials .btn.sm{padding:7px 12px;font-size:.86rem}
+#vials .btn.danger{border-color:var(--crit);color:var(--crit);background:transparent;box-shadow:none}
+#vials .btn:disabled{opacity:.5;cursor:not-allowed}
+#vials .notice{border-left:3px solid var(--warn);background:var(--warn-soft);padding:12px 14px;border-radius:0 8px 8px 0;font-size:.92rem}
+#vials .notice.bad{border-color:var(--crit);background:var(--crit-soft)}
+#vials .notice.ok{border-color:var(--good);background:var(--good-soft)}
+#vials .notice.info{border-color:var(--s2);background:var(--accent-soft)}
+#vials form{display:grid;gap:12px}
+#vials fieldset{border:1px solid var(--line);border-radius:var(--radius);padding:12px 14px 14px;margin:0;display:grid;gap:10px;background:var(--glass)}
+#vials legend{font-weight:600;font-size:.92rem;padding:0 6px}
+#vials .f2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+#vials .f3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+#vials .f3{grid-template-columns:1fr 1fr}
+#vials label.fl{display:grid;gap:4px;font-size:.82rem;font-weight:600;color:var(--ink-2);min-width:0}
+#vials label.fl input,#vials label.fl select,#vials label.fl textarea{font:inherit;font-weight:400;font-size:1rem;color:var(--ink);padding:9px 11px;border:1px solid var(--line);border-radius:8px;background:var(--bg);width:100%;min-width:0}
+#vials label.fl input.mono{font-family:var(--mono)}
+#vials label.fl textarea{min-height:64px;resize:vertical}
+#vials .calc{background:var(--bg);border:1px dashed var(--line);border-radius:8px;padding:10px 12px;font-size:.9rem;display:grid;gap:4px}
+#vials .calc b{font-family:var(--mono)}
+#vials .err{color:var(--crit);font-size:.86rem;font-weight:600}
+#vials table{border-collapse:collapse;width:100%;font-size:.88rem}
+#vials th,#vials td{text-align:left;padding:8px 8px;border-bottom:1px solid var(--surface-2);vertical-align:top}
+#vials th{font-size:.7rem;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-2);font-weight:600}
+#vials td.num{font-family:var(--mono);text-align:right;white-space:nowrap}
+#vials th.num{text-align:right}
+#vials .tbl{overflow-x:auto}
+#vials .steps{margin:0;padding:0;display:flex;flex-direction:column;gap:10px;font-size:14px;list-style:none;counter-reset:step}
+#vials .steps li{display:block;position:relative;padding-left:40px;min-height:28px;line-height:1.5;color:var(--ink-2)}
+#vials .steps li::before{position:absolute;left:0;top:0}
+#vials .steps li b{display:block;font-weight:600;color:var(--ink)}
+#vials .steps li span{display:block}
+#vials #vl-head{display:flex;flex-direction:column;gap:14px}
+#vials .steps li a{overflow-wrap:anywhere}
+#vials .seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+#vials .seg button{font:inherit;font-size:.86rem;font-weight:600;padding:7px 12px;border:0;background:var(--surface);color:var(--ink-2);cursor:pointer}
+#vials .seg button[aria-pressed="true"]{background:var(--grad);color:#fff}
+#vials .toast{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:8px;font-size:.9rem;z-index:20;max-width:calc(100vw - 32px)}
+#vials .linkish{background:none;border:0;padding:0;color:var(--sky);font:inherit;cursor:pointer;text-decoration:underline;text-underline-offset:2px}
+#vials{display:flex;flex-direction:column;gap:14px}
+#vials h2{font-family:var(--display);font-weight:700;color:#fff}
+#vials .card{display:flex;flex-direction:column;gap:0}
+#vials .card.tap{text-decoration:none;color:inherit;cursor:pointer}
+
+#vials .wf{display:grid;gap:6px}
+#vials .wf-cam{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+#vials .wf-cam .cam{cursor:pointer}
+#vials .wf-cam .cam svg{flex:none}
+#vials .wf-st{min-height:1em}
+#vials .wf-thumb{width:120px;max-width:40%;border-radius:8px;border:1px solid var(--line);display:block}
+#vials .whead{display:grid;gap:8px;margin-bottom:14px}
+#vials .whead h2{font-size:1.45rem;line-height:1.15;margin:4px 0 0}
+#vials .wprog{height:6px;border-radius:999px;background:var(--surface-2);overflow:hidden}
+#vials .wprog i{display:block;height:100%;background:linear-gradient(90deg,#4d8bff,#49d6c8);transition:width .3s}
+#vials .wsteps{margin-bottom:14px}
+#vials .wnav{display:flex;justify-content:space-between;gap:10px;margin-top:18px;padding-top:14px;border-top:1px solid var(--line)}
+#vials .wnav .btn{min-width:110px;justify-content:center}
+#vials .calc .ok,#vials .ok{color:var(--good);font-weight:600}
+#vials .card.target{border-color:var(--accent);background:var(--accent-soft)}
+#vials .tape{background:var(--bg);border:1px dashed var(--line);border-radius:8px;padding:10px 12px;margin-top:8px;font-size:.9rem;overflow-wrap:anywhere}
+#vials .pstrip{display:flex;gap:10px;overflow-x:auto;padding:8px 0 4px}
+#vials .pstrip figure{margin:0;flex:none;width:110px;text-align:center}
+#vials .pstrip img{width:110px;height:82px;object-fit:cover;border-radius:8px;border:1px solid var(--line);cursor:zoom-in;display:block}
+#vials .pstrip figcaption{font-size:.72rem;color:var(--ink-2);margin-top:4px}
+#vials #vl-wiz .f2{grid-template-columns:1fr 1fr}
+@media (max-width:520px){#vials #vl-wiz .f2{grid-template-columns:1fr}}
+.plight{position:fixed;inset:0;background:rgba(0,0,0,.85);display:flex;align-items:center;justify-content:center;z-index:50;cursor:zoom-out;padding:16px}
+.plight img{max-width:100%;max-height:100%;border-radius:8px}
+
+#vials .wf-verdict:empty{display:none}
+#vials .wf-verdict .notice{margin-top:4px}
+#vials .nophoto{margin:-2px 0 0}
+#vials .wsub{margin:14px 0 0;font-size:1rem}
+#vials table.rec td{vertical-align:middle}
+#vials table.rec td.pth{width:64px;padding-left:0}
+#vials table.rec td.pth img{width:60px;height:45px;object-fit:cover;border-radius:6px;border:1px solid var(--line);cursor:zoom-in;display:block}
+#vials .dsteps li{padding-left:40px}
+#vials .dsteps li .wf{margin-top:6px}
+#vials .dsteps li span{color:var(--ink-2)}
+
+#vials .wone{display:grid;gap:12px}
+#vials .wsub2{color:var(--ink-2);font-size:1rem;line-height:1.5;margin:0}
+#vials .big-in{font-size:1.4rem !important;padding:12px 14px !important}
+#vials .btn.big{font-size:1.1rem;padding:14px 20px;justify-content:center;width:100%}
+#vials .whead h2{font-size:1.5rem}
+
+#vials .uin{position:relative;display:block}
+#vials .uin .uin-in input{padding-right:7.5em !important}
+#vials .uin .uin-u{position:absolute;right:12px;top:50%;transform:translateY(-50%);font-size:.95rem;color:var(--ink-2);pointer-events:none;white-space:nowrap}
+#vials .uin .uin-in input.big-in + .uin-u, #vials .uin:has(.big-in) .uin-u{font-size:1.05rem}
+
+#vials .uin.u1 .uin-in input{padding-right:2.4em !important}
+#vials .uin.u2 .uin-in input{padding-right:6.4em !important}
+#vials .uin.u3 .uin-in input{padding-right:3.8em !important}
+
+#vials .coa-note{margin:8px 0 0;font-size:13px;color:var(--crit);max-width:none}
+#vials .kick>.eyebrow{color:#fff;font-size:11px;letter-spacing:.14em}

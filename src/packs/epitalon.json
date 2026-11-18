@@ -1,0 +1,212 @@
+{
+  "id": "epitalon",
+  "name": "Epitalon",
+  "brands": "",
+  "maker": "Khavinson group, St Petersburg (Russia)",
+  "group": "research",
+  "pill": "Unapproved",
+  "overview": {
+    "headline": "A four-amino-acid peptide from a St Petersburg laboratory, sold as an anti-ageing \"telomerase activator\" on the strength of studies almost no one outside Russia has checked.",
+    "lede": "Epitalon (also epithalon or AEDG) is a synthetic tetrapeptide, Ala-Glu-Asp-Gly, created by Vladimir Khavinson's group in St Petersburg as a copy of what they took to be the active part of epithalamin, an extract of cow pineal glands used in Russia for decades. Epitalon itself has never been approved anywhere, and no Western regulator had examined it until the U.S. FDA did in 2026. It is sold online as a \"research chemical\".",
+    "stats": [
+      {"num": "3", "lbl": "human studies of epitalon itself found by the FDA in 2026; none collected safety data, none tested the injection that is sold", "src": "FDA review for its advisory committee, 12 May 2026"},
+      {"num": "0", "lbl": "approvals by any regulator outside Russia; the Russian product with a clinical history is the extract epithalamin, not epitalon", "src": "FDA review 2026; Alzheimer's Drug Discovery Foundation review"},
+      {"num": "1", "lbl": "research group behind nearly all the published work, about half of it available only in Russian", "src": "Alzheimer's Drug Discovery Foundation review"}
+    ],
+    "mechanism": {
+      "intro": "The claims rest on three ideas, each shown only in cells, animals or very small human studies.",
+      "parts": [
+        {"name": "Telomerase", "text": "In 2003 the Khavinson group reported that epitalon switched on telomerase and lengthened telomeres in human fetal cells in a dish, and that treated cells divided more times before stopping. A 2025 British cell-culture paper reported similar telomerase activation. Nobody has shown this in a living person."},
+        {"name": "Melatonin", "text": "In old monkeys and in one small human study, epitalon raised night-time melatonin, which the pineal gland makes less of with age. The group's theory is that restoring pineal output slows ageing. Sleep itself has never been measured."},
+        {"name": "The cancer question", "text": "Telomerase is also what most cancers use to keep dividing. The Russian mouse studies reported fewer tumours, but FDA's reviewers found them too limited (one fixed dose, females only, short exposure) to answer whether long-term use raises cancer risk."}
+      ]
+    },
+    "more": {
+      "title": "More: epithalamin is not epitalon",
+      "paras": [
+        "Most of the \"human evidence\" quoted for epitalon comes from studies of epithalamin, a crude mixture of peptides extracted from the pineal glands of cattle, given by injection in Russian and Ukrainian clinics since the 1980s. Epitalon is a single synthetic four-amino-acid peptide designed in the late 1980s and 1990s to mimic it. The FDA treats them as different substances and, in its 2026 review, set the epithalamin literature aside.",
+        "The Khavinson group, based at the St Petersburg Institute of Bioregulation and Gerontology, has published around a hundred papers on the two substances, about half of them only in Russian. Independent groups have rarely tried to repeat the work, and the one large independent review (by the Alzheimer's Drug Discovery Foundation) concluded that replication and a proper safety study are needed before anything can be said.",
+        "Everything on this page comes from the published papers, the FDA's 2026 review, the ADDF review and the WADA list. Sources are listed under the Status tab."
+      ]
+    }
+  },
+  "results": {
+    "headline": "Most of what is quoted as human evidence tested a different product.",
+    "lede": "There is no weight, sleep or longevity trial of epitalon. The three human studies of epitalon measured a melatonin marker, gene expression and the retina. The long-term mortality studies people cite used epithalamin, the extract.",
+    "chart": null,
+    "stats": [
+      {"num": "28%", "lbl": "lower mortality over 12 years reported in about 70 elderly heart patients given epithalamin (the extract), versus usual care; randomisation and blinding were not described", "src": "Korkushko et al., Bulletin of Experimental Biology and Medicine 2006"},
+      {"num": "1.7×", "lbl": "rise in a urinary melatonin marker over 20 days in 20 women given sublingual epitalon spray, versus 20 on placebo; sleep was not measured and blinding not stated", "src": "Ivko et al. 2021, as summarised in the FDA review"}
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {"b": "In people: epitalon.", "t": "Three small studies, all from the Khavinson group. One (2002) injected it beside the eye in people with retinitis pigmentosa and reported improved retinal function, with no control group described in FDA's summary. Two (2021) gave a sublingual spray to women working night shifts: one reported a 1.7-fold rise in a urinary melatonin marker and \"positive psycho-emotional or physical changes\" in 83% versus 25% on placebo, without saying how those were assessed; the other reported changes in clock-gene expression. None collected safety data."},
+        {"b": "In people: epithalamin, the extract.", "t": "A 2003 report followed 266 elderly people given pineal and thymus extracts for 6 to 12 years and reported mortality 1.6 to 4.1 times lower than in controls, with no blinding or placebo described. A 2006 report on about 70 heart patients given epithalamin courses for three years found 28% fewer deaths after 12 years, and a 2011 extension to 15 years reported preserved exercise capacity. Same group, no independent replication."},
+        {"b": "In animals.", "t": "Female mice of several strains lived longer and developed fewer spontaneous tumours; flies and rats also lived longer in the group's hands. Old rhesus monkeys made more evening melatonin and less cortisol. FDA judged the mouse studies (one fixed dose, females only, about 22 weeks of total exposure) too limited to assess cancer risk."},
+        {"b": "In cells.", "t": "Telomerase activation and telomere lengthening in human fetal fibroblasts (2003), and cells dividing past their normal limit (2004). A 2025 study from a British university reported telomerase activation in cultured cells. None of this has been shown in tissue from a treated person."}
+      ]
+    },
+    "more": [
+      {
+        "title": "More: how to read the Russian mortality studies",
+        "paras": [
+          "The 266-person and 70-person studies are the strongest-looking numbers in the field, and they have three problems. They tested epithalamin, not epitalon. They came from the group that developed the products and sells related ones. And their methods, as far as the English abstracts and reviews show, do not describe randomisation, blinding or a placebo, which are the tools that stop a hopeful team from seeing an effect that is not there.",
+          "That does not make them wrong. It makes them unverified, which is a different thing from verified, and a 28% reduction in deaths is exactly the kind of claim that, if real, would have been confirmed elsewhere by now."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "No safety study has ever been done. Not in Russia, not anywhere.",
+    "lede": "FDA searched for safety data on epitalon in 2026 and found none: the three small human studies did not collect it, the animal toxicology is thin, and its adverse-event database held no reports through December 2025, mostly because nobody is required to file them for an unapproved product.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "Not measurable. No study has followed people on epitalon closely enough, or long enough, to count who stopped and why. The Russian epithalamin trials (a different product) stated that no severe adverse events occurred in older adults over three years of courses, without detail."
+    },
+    "unique": {
+      "title": "What regulators flagged",
+      "text": "FDA, May 2026: epitalon \"has been shown to activate telomerase and lengthen telomeres\", which raises a concern about cancer risk with continuous use that the available mouse studies cannot settle; a risk of immune reactions from aggregates and impurities when injected under the skin; a certificate of analysis allowing up to 2% unidentified impurities and saying nothing about aggregates, bacterial load or endotoxins; and no acute, repeat-dose, reproductive or two-year cancer studies of any kind. Its conclusion: \"no clinical data to support the safety\" of epitalon in humans."
+    },
+    "more": [
+      {
+        "title": "More: what a trial would monitor for",
+        "paras": [
+          "Cancer. A substance that genuinely lengthens telomeres would need long follow-up with cancer screening, because telomerase is the enzyme most tumours rely on. No such follow-up exists.",
+          "Immune reactions. Small peptides can provoke antibodies, especially when injected repeatedly under the skin, and impurities make that more likely. Nobody has looked for anti-epitalon antibodies.",
+          "Hormones. The whole premise is that epitalon changes melatonin and cortisol output. What months or years of that does to sleep, blood pressure, blood sugar or mood has not been measured in anyone."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "In the one placebo-controlled human study, a urinary melatonin marker rose 1.7-fold over 20 days, and more women on epitalon than on placebo reported feeling better (83% versus 25%). The study did not say whether participants knew what they were taking or how \"feeling better\" was scored, so the second number is hard to weigh. That is the extent of the measured benefit in people."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms a doctor should see promptly",
+      "items": [
+        "Spreading redness, warmth, swelling or pus at an injection site, or fever and chills after an injection",
+        "Hives, swelling of the face or throat, wheeze or trouble breathing",
+        "A new lump, unexplained bleeding, or unexplained weight loss (reasons to see a doctor for anyone, and the cancer question here is unanswered)",
+        "Yellowing of the skin or eyes, dark urine",
+        "Chest pain, a racing or irregular heartbeat, fainting"
+      ],
+      "note": "These relate mainly to injecting an unverified product. No trial has defined the peptide's own danger signs, because none has looked."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "No human pharmacokinetics exist. Nobody has measured how much epitalon reaches the blood after an injection, a spray or a capsule, or how fast it disappears. FDA's 2026 review found no pharmacokinetic data by any route, in people or animals. There is nothing to build a curve from.",
+    "stats": [
+      {"num": "None", "lbl": "human half-life; never measured by any route", "src": "FDA review, 12 May 2026"},
+      {"num": "0", "lbl": "studies, in people or animals, of the under-the-skin injection that is sold online", "src": "FDA review, 12 May 2026"},
+      {"num": "≤ 2%", "lbl": "unidentified impurities permitted by the one certificate of analysis FDA examined; aggregates and endotoxins were not tested", "src": "FDA review, 12 May 2026"}
+    ],
+    "explain": [
+      {"b": "Why there is no chart.", "t": "The simulator on other pages runs on a measured half-life. None exists for epitalon, so any curve would be invented."},
+      {"b": "Why the route matters.", "t": "The human studies used a spray under the tongue and an injection beside the eye. The animal work mostly used injections into the abdomen or under the skin. None of it tells you what an injected vial does in a person."},
+      {"b": "Why the label tells you little.", "t": "A \"research use only\" vial carries a milligram number but no verified potency. FDA could not establish what impurities are in the material being sold."}
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: what a chart would need",
+        "paras": [
+          "To model blood levels you need, at minimum, how fast the peptide is absorbed from where it is given and how fast the body clears it. Neither has ever been measured for epitalon. Four-amino-acid peptides are generally broken down quickly by enzymes in blood and tissue, which is why the group's own theory leans on epigenetic effects that outlast the molecule, but that is theory, not measurement.",
+          "The Khavinson group has published cell studies suggesting the peptide enters cells and reaches the nucleus. Entry into cultured cells and distribution through a human body are different questions."
+        ]
+      },
+      {
+        "title": "More: what this page cannot tell you",
+        "paras": [
+          "It cannot tell you what is in a vial sold as epitalon, how much, or how pure. FDA could not identify any pharmacy compounding it and found only websites selling vials and capsules labelled for research use, some of them advertising it as a \"fountain of youth\".",
+          "It cannot tell you what repeated injections do, because no study has published that for this peptide in any species."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "Small Russian studies, one FDA review, no registered trial.",
+    "lede": "No trial of epitalon has ever been registered on a public registry. What exists are a handful of small studies from one group, published mostly in Russian journals, plus the FDA's 2026 assessment of them.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: what the human studies did and did not do",
+        "paras": [
+          "The best-designed study (Ivko et al., 2021) randomised 40 women aged 40 to 50 with low melatonin output, most of them night-shift workers, to a sublingual epitalon spray or saline for 20 days, with 35 further women as untreated comparators. It measured a urine melatonin marker and asked about wellbeing. It did not say whether anyone was blinded, did not measure sleep, and did not record side effects.",
+          "The retinitis pigmentosa study (2002) and the clock-gene study (2021) are described by FDA without participant numbers or control groups. None of the three used the injection under the skin that is sold online, and none was designed to find harm."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials that have been run",
+      "items": [
+        "Khavinson et al., 2002: epitalon injected beside the eye in people with congenital retinitis pigmentosa. Reported improved retinal function. Size and controls not described in the FDA summary.",
+        "Ivko et al., 2021: 75 women aged 40 to 50, mostly night-shift workers; 40 with low melatonin randomised to sublingual epitalon or placebo for 20 days. Urinary melatonin marker rose 1.7-fold; no sleep or safety outcomes.",
+        "Khavinson et al., 2021: sublingual epitalon in night-shift workers; changes in circadian (clock) gene expression. Design not detailed.",
+        "Epithalamin (the extract), not epitalon: Khavinson & Morozov 2003 (266 elderly, 6 to 12 years, lower mortality, no placebo); Korkushko et al. 2006 and 2011 (about 70 elderly heart patients, 12- and 15-year follow-up, 28% fewer deaths). Single group, not replicated.",
+        "ClinicalTrials.gov: no epitalon trial registered, as of October 2026."
+      ]
+    },
+    "find": {
+      "text": "No trial of epitalon is recruiting anywhere. A registry search for \"epitalon\" or \"epithalon\" returns nothing; the Russian studies were never registered.",
+      "term": "epitalon",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "Unapproved everywhere. An FDA panel narrowly backed letting pharmacies compound it in July 2026; the FDA itself recommended against and has not acted.",
+    "items": [
+      {"tag": "no", "label": "Canada", "text": "Health Canada has never authorized a product containing epitalon. Anything sold in Canada, online or through a clinic, is an unauthorized drug (as of October 2026)."},
+      {"tag": "soon", "label": "United States", "text": "Not approved and not legal to compound. September 2023: FDA placed epitalon in Category 2, citing immunogenicity risk from aggregation and impurities and no safety information for the proposed injection. April 2026: the nomination was withdrawn and FDA removed it from Category 2 to put it before its Pharmacy Compounding Advisory Committee, evaluating it for insomnia on its own initiative. 12 May 2026: FDA staff found no evidence of effectiveness for insomnia and \"no clinical data to support the safety\", and recommended against listing. 24 July 2026: the committee nevertheless voted narrowly in favour. The vote is non-binding; adding it would need formal rulemaking that typically takes a year or more, and FDA has not acted."},
+      {"tag": "no", "label": "Russia", "text": "Epithalamin, the pineal extract, has been used clinically in Russia since the Soviet era and is reported to be registered there for several conditions. Whether a registered epitalon product exists in Russia could not be confirmed from the documents available; no approval in any other country was found."},
+      {"tag": "no", "label": "Sport", "text": "Not named on the WADA list, but prohibited at all times under S0, the catch-all class for any substance with \"no current approval by any governmental regulatory health authority for human therapeutic use\". The same class caught AOD-9604 in 2013 before it was named."}
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "\"Research use only\" is a sales label, not a safety standard",
+        "text": "FDA's 2026 review could not find a single pharmacy compounding epitalon, but found wellness clinics and websites selling vials and capsules labelled for research use and promoting it as anti-ageing. Nothing sold this way has passed through a regulated supply chain.",
+        "items": [
+          "The one certificate of analysis FDA examined allowed up to 2% unidentified impurities and gave no information on aggregates, bacterial load or endotoxins (residues that cause fever and immune reactions). No independent laboratory testing of epitalon vials has been published.",
+          "Epitalon has never been given to people by injection under the skin in any published study, so there is no basis for any claim about what that does or what it is safe to inject.",
+          "The telomerase claim is the sales pitch and the safety question at once: the same enzyme that \"lengthens telomeres\" is the one most cancers depend on, and no study has run long enough to look."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "warn",
+        "title": "If someone has already used an injected product",
+        "text": "Stop, keep the vial and its label, and see a doctor if any of these appear:",
+        "items": ["Fever, chills, or a hot swollen injection site", "Hives, facial swelling or trouble breathing", "A new lump or unexplained bleeding or weight loss", "Yellowing of the skin or eyes, dark urine"],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: how the 2026 FDA review came about, and what it found",
+        "paras": [
+          "Compounding pharmacies nominated epitalon for the list of substances they may legally compound. In 2023 FDA placed it in Category 2 (do not compound) on safety grounds. In February 2026 the U.S. health secretary said publicly that he wanted peptides available from \"ethical suppliers\"; in April 2026 FDA removed twelve peptides from Category 2 and, although the nominators had withdrawn, chose to evaluate epitalon itself for insomnia, the only use with any human data nearby.",
+          "FDA's reviewers concluded that the substance is not well characterised, that its compounding history is too thin to assess, that there is no evidence it works for insomnia (the studies measured melatonin, not sleep, and approved insomnia drugs exist), and that safety data are insufficient. On 24 July 2026 the advisory committee, which critics noted included several members who prescribe or promote peptides, voted narrowly to recommend listing anyway. A favourable vote changes nothing on its own; only a final rule would allow a licensed pharmacy to compound it on prescription, and that would still not be approval as a medicine."
+        ]
+      }
+    ],
+    "sources": [
+      {"text": "U.S. FDA, Evaluation of epitalon-related bulk drug substances (epitalon free base and epitalon acetate) for inclusion on the 503A bulks list, briefing document for the Pharmacy Compounding Advisory Committee, 12 May 2026 (three human studies, no safety data, telomerase and cancer concern, impurities, recommendation against listing).", "url": "https://www.fda.gov/media/193345/download"},
+      {"text": "U.S. FDA, Certain bulk drug substances for use in compounding that may present significant safety risks (epitalon concerns: immunogenicity from aggregation and impurities, no safety information; nomination withdrawn). Content current as of 22 April 2026.", "url": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks"},
+      {"text": "Alliance for Pharmacy Compounding, summary of FDA's September 2023 503A categories update (epitalon among 19 peptides placed in Category 2), 29 September 2023.", "url": "https://join.a4pc.org/hubfs/PDFs/503A-Categories-Update-for-September-2023-FINAL.docx.pdf"},
+      {"text": "U.S. FDA, 503A bulk drug substances category list, updated 14 May 2026 (epitalon in no category).", "url": "https://fda.gov/media/94155/download"},
+      {"text": "Goodwin / JD Supra, FDA signals potentially evolving stance toward compounding of certain peptides (April 2026 removals; epitalon scheduled for 24 July 2026 for insomnia), 12 May 2026.", "url": "https://www.jdsupra.com/legalnews/fda-signals-potentially-evolving-stance-5479727/"},
+      {"text": "AJMC, FDA panel backs 6 peptides for compounding (epitalon cleared by a tight margin on 24 July 2026; FDA staff recommended against all seven), 31 July 2026.", "url": "https://www.ajmc.com/view/fda-panel-backs-6-peptides-for-compounding"},
+      {"text": "Alzheimer's Drug Discovery Foundation, Cognitive Vitality report: Epithalamin and Epithalon (critical review of the human, animal and cell studies; evidence quality; about half the literature in Russian only).", "url": "https://www.alzdiscovery.org/uploads/cognitive_vitality_media/Epithalamin-and-Epithalon-Cognitive-Vitality-For-Researchers.pdf"},
+      {"text": "Korkushko OV, Khavinson VKh, Shatilo VB et al. Geroprotective effect of epithalamine (pineal gland peptide preparation) in elderly subjects with accelerated aging. Bulletin of Experimental Biology and Medicine, 2006;142(3):356-359 (12-year study; deaths 28% lower; epithalamin, not epitalon).", "url": "https://link.springer.com/doi/10.1007/s10517-006-0365-z"},
+      {"text": "Khavinson VKh, Morozov VG. Peptides of pineal gland and thymus prolong human life. Neuro Endocrinology Letters, 2003;24(3-4):233-240 (266 elderly people; epithalamin and thymalin extracts).", "url": "https://pubmed.ncbi.nlm.nih.gov/14523363/"},
+      {"text": "Khavinson VKh, Bondarev IE, Butyugov AA. Epithalon peptide induces telomerase activity and telomere elongation in human somatic cells. Bulletin of Experimental Biology and Medicine, 2003;135(6):590-592 (cell culture).", "url": "https://pubmed.ncbi.nlm.nih.gov/12937682/"},
+      {"text": "Brunel University London group, telomerase activation by epitalon in cultured human cells, 2025 (cell culture; independent of the Khavinson group).", "url": "https://pubmed.ncbi.nlm.nih.gov/40908429/"},
+      {"text": "WADA, 2026 Prohibited List, in force 1 January 2026 (S0 non-approved substances; epitalon not named), official text as published in the Netherlands Tractatenblad 2026-25; see also wada-ama.org/en/prohibited-list.", "url": "https://zoek.officielebekendmakingen.nl/trb-2026-25.html"}
+    ]
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "id": "foxo4-dri",
+  "name": "FOXO4-DRI",
+  "brands": "",
+  "maker": "Erasmus MC (de Keizer lab); Cleara Biotech (preclinical)",
+  "group": "research",
+  "pill": "Unapproved",
+  "overview": {
+    "headline": "A designer peptide that kills 'senescent' cells in mice. It has never been given to a person.",
+    "lede": "FOXO4-DRI is a synthetic, cell-penetrating peptide built from a fragment of the FOXO4 protein, assembled in reverse order from mirror-image (D) amino acids so enzymes cannot break it down. In a 2017 Cell paper it made senescent cells self-destruct and restored fur, fitness and kidney function in aged and fast-aging mice. No human study exists; the Dutch company formed around the work remains preclinical in 2026, and the vials sold online are unapproved products.",
+    "stats": [
+      {"num": "0", "lbl": "human studies of any kind", "src": "No registered or published trial found as of October 2026"},
+      {"num": "2017", "lbl": "the single landmark mouse study (Baar et al., Cell)", "src": "Cell 169:132-147"},
+      {"num": "3", "lbl": "mouse settings where it helped: chemotherapy toxicity, fast-aging mice, naturally old mice", "src": "Baar et al. 2017"}
+    ],
+    "mechanism": {
+      "intro": "It pries apart two proteins that keep damaged, non-dividing cells alive.",
+      "parts": [
+        {"name": "Senescent cells", "text": "Cells that stop dividing after damage but refuse to die, and leak inflammatory signals. They accumulate with age and after chemotherapy."},
+        {"name": "FOXO4 and p53", "text": "In senescent cells FOXO4 holds the p53 protein in the nucleus and blocks self-destruction. FOXO4-DRI mimics the FOXO4 piece that binds p53, pushing p53 out so it can trigger apoptosis. In the dish this was selective for senescent cells."},
+        {"name": "D-retro-inverso design", "text": "The sequence is reversed and built from D-amino acids so blood enzymes cannot chew it up. That design makes a stable powder easy to sell; it is not evidence that it works in people."}
+      ]
+    },
+    "more": {
+      "title": "More: where it sits among senolytics",
+      "paras": [
+        "Senolytics are drugs meant to clear senescent cells. A few small molecules, such as dasatinib plus quercetin and fisetin, have reached small human trials. FOXO4-DRI has not; it remains a laboratory tool and a preclinical candidate. Sources are listed under the Status tab."
+      ]
+    }
+  },
+  "results": {
+    "headline": "No human results. Striking effects in old mice, in one laboratory's hands.",
+    "lede": "The 2017 study is thorough and often cited. It is also the only substantial body of evidence, and it was done in mice.",
+    "chart": null,
+    "stats": [],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {"b": "Mice, chemotherapy.", "t": "FOXO4-DRI neutralised the toxicity of the chemotherapy drug doxorubicin, at doses the authors describe as well tolerated (Baar 2017)."},
+        {"b": "Mice, aging.", "t": "In fast-aging XpdTTD/TTD mice and naturally aged mice, the peptide restored fitness, fur density and kidney function."},
+        {"b": "Cells.", "t": "It drove p53 out of the nucleus of senescent cells and triggered their apoptosis while sparing normal cells in the same experiments."},
+        {"b": "Follow-up animal work.", "t": "A 2025 paper reported improved aortic function and less vascular aging in aged and progeroid mice (summarised by Fight Aging!, February 2026)."},
+        {"b": "Humans.", "t": "None. No trial has been registered or published."}
+      ]
+    },
+    "more": [
+      {
+        "title": "More: why the gap to humans is wide",
+        "paras": [
+          "Senescent cells differ by tissue, age and cause, and people are not inbred mice in clean cages. The first human senolytic trials with other compounds have been small and mixed. A peptide that kills cells on purpose needs careful dose-finding, and that work has not been done for FOXO4-DRI."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "Unknown in humans. Designed to make cells die.",
+    "lede": "No person has received FOXO4-DRI in a study. Its mechanism, selective cell killing, is exactly the kind that needs human safety data before anyone can describe a side-effect profile.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "Not applicable. No human study has given FOXO4-DRI."
+    },
+    "unique": {
+      "title": "The theoretical risks of killing cells on purpose",
+      "text": "Senescent cells also do useful jobs: they help wounds heal, stop damaged cells from turning cancerous, and shape tissue repair. Off-target killing, slower healing and the fate of cell debris have not been studied in people. The 2017 paper reports the peptide was well tolerated in mice at effective doses; mice are not people, and the studies ran for weeks to months, not years."
+    },
+    "more": [
+      {
+        "title": "More: what a trial would monitor for",
+        "paras": [
+          "Wound healing, blood counts, kidney and liver function, immune reactions to a foreign D-amino-acid peptide and, over the long term, cancer incidence, since the target pathway (p53) is central to cancer control."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "None reported in humans. Better kidney function and fitness were seen in mice only."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms doctors treat as urgent after any injected product",
+      "items": [
+        "Swelling of the face or throat, trouble breathing, hives",
+        "Fever, spreading redness or pus at an injection site",
+        "Wounds that will not heal, unusual bruising or bleeding",
+        "Dark urine, swelling of the legs, or a sharp drop in urine output"
+      ],
+      "note": "Anyone with these symptoms should get medical care right away and bring the product with them."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "No human pharmacokinetic data exist. The peptide was built from D-amino acids precisely to last longer in the body, but how long it lasts in a person, where it goes and what level kills senescent cells without harming others has never been measured in humans.",
+    "stats": [
+      {"num": "0", "lbl": "human pharmacokinetic studies", "src": "No published human data"},
+      {"num": "D-amino acids", "lbl": "mirror-image building blocks that resist enzyme breakdown, the 'DRI' in the name", "src": "Baar et al. 2017"},
+      {"num": "Mice", "lbl": "the only animals in which its effects on aging have been measured", "src": "Baar 2017; follow-up mouse work 2025"}
+    ],
+    "explain": [
+      {"b": "Why there is no chart.", "t": "The simulator needs a human half-life and a tested dose range. Neither exists."},
+      {"b": "Why 'stable' is not 'safe'.", "t": "A peptide that resists breakdown stays in the body longer. For a cell-killing molecule that cuts both ways, and only a study in people could show which."}
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: what this page cannot tell you",
+        "paras": [
+          "What a vial sold as FOXO4-DRI contains, whether it is the correct D-amino-acid sequence, or what any amount of it does in a human body."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "No human trials have been run.",
+    "lede": "The company founded around this work is still preclinical; academic groups use the peptide as a laboratory tool.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: who is working on it",
+        "paras": [
+          "Cleara Biotech, founded in 2018 by the Dutch researchers behind the 2017 paper, says it is developing a senolytic peptide for indications such as resistant tumours, COPD, osteoarthritis and kidney disease. As of February 2026 it appeared to remain preclinical, focused on the FOXO4-p53 interaction rather than FOXO4-DRI itself. No company has announced a human study."
+        ]
+      }
+    ],
+    "running": {
+      "title": "No human trials",
+      "items": [
+        "None registered or published as of October 2026.",
+        "Cleara Biotech (Netherlands) remains preclinical and has not announced a clinical trial."
+      ]
+    },
+    "find": {
+      "text": "If a trial is ever registered it will appear on the public registry. Searching today returns nothing.",
+      "term": "FOXO4-DRI",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "Not approved anywhere. Never reviewed by any regulator for human use.",
+    "items": [
+      {"tag": "no", "label": "Canada: not authorized", "text": "Health Canada has not authorized any FOXO4-DRI product. It treats injectable peptides as prescription drugs, said in April 2026 that unauthorized injectable peptide drugs are illegal in Canada, and in July 2026 obtained a permanent injunction against the Quebec seller Canlab Research."},
+      {"tag": "no", "label": "US: not approved", "text": "The FDA has never approved FOXO4-DRI, and it does not appear on the FDA's Category 2 or withdrawn-nomination lists for compounding (April 2026), so no pharmacy has a basis to compound it. Marketed for people it is an unapproved drug; the FDA's August 24, 2026 warning letters rejected 'research use only' disclaimers."},
+      {"tag": "no", "label": "Sport: prohibited", "text": "Not named on the 2026 WADA Prohibited List, but with no approval anywhere for human use it falls under the S0 clause, prohibited at all times."}
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "What 'research use only' means",
+        "text": "Vials sold as FOXO4-DRI carry 'for research use only' labels. That describes a product meant for laboratory work, not people. It does not mean the contents were tested, and it does not make the sale legal once the seller markets the product for human use.",
+        "items": [
+          "Health Canada: injectable peptides are prescription drugs; unauthorized ones are illegal to sell (2025 and 2026 notices).",
+          "FDA warning letters, August 24, 2026: the disclaimer does not control when a website shows the product is intended as a drug for people.",
+          "A long D-amino-acid peptide is difficult to make correctly; nobody independently checks the sequence, purity or sterility of what is sold."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "warn",
+        "title": "Symptoms to take to a doctor",
+        "text": "Anyone who has injected a product sold as FOXO4-DRI should tell a doctor, especially with any of the following:",
+        "items": ["Fever, redness or pus at an injection site", "Hives, swelling or wheezing", "Slow-healing wounds, bruising or bleeding", "Swollen legs, reduced urine or dark urine"],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: the senolytic field and self-experimenters",
+        "paras": [
+          "Because the 2017 paper was widely covered, FOXO4-DRI became a favourite of longevity self-experimenters. The research community's own assessment in 2026 is that such use produces no useful data and that the peptide remains stalled short of the clinic."
+        ]
+      }
+    ],
+    "sources": [
+      {"text": "Baar MP, Brandt RMC, Putavet DA et al. Targeted apoptosis of senescent cells restores tissue homeostasis in response to chemotoxicity and aging. Cell 2017;169(1):132-147.", "url": "https://doi.org/10.1016/j.cell.2017.02.031"},
+      {"text": "Open-access record of Baar et al. 2017 (abstract), eScholarship, University of California.", "url": "https://escholarship.org/uc/item/4j8893w1"},
+      {"text": "Fight Aging! People are still working on the senolytic peptide FOXO4-DRI (status of Cleara Biotech; 2025 mouse aorta study), February 16, 2026.", "url": "https://www.fightaging.org/?p=66560"},
+      {"text": "Lifespan.io Rejuvenation Roadmap: Cleara Biotech, FOXO4-DRI (development stage; no human trials listed).", "url": "https://www.lifespan.io/road-maps/the-rejuvenation-roadmap/cleara-biotech-foxo4-dri"},
+      {"text": "Smart & Biggar. Health Canada obtains permanent injunction against Canlab Research (April 2026 warning; July 29, 2026 injunction), August 25, 2026.", "url": "https://www.smartbiggar.ca/insights/publication/health-canada-obtains-permanent-injunction-to-prevent-illegal-sale-of-injectable-peptides-by-canlab-research"},
+      {"text": "ArentFox Schiff. Five peptide vendors learn that 'research use only' is not a legal strategy (FDA warning letters of August 24, 2026), September 18, 2026.", "url": "https://www.afslaw.com/perspectives/alerts/ruo-ined-five-peptide-vendors-learn-research-use-only-not-legal-strategy"},
+      {"text": "World Anti-Doping Agency. The 2026 Prohibited List (S0 non-approved substances).", "url": "https://pgtofindia.com/storage/app/anti_doping_link/pdf/Prohibited-List-2026.pdf"}
+    ]
+  }
+}

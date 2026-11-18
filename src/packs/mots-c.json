@@ -1,0 +1,211 @@
+{
+  "id": "mots-c",
+  "name": "MOTS-c",
+  "brands": "",
+  "maker": "",
+  "group": "research",
+  "pill": "Unapproved",
+  "overview": {
+    "headline": "A peptide your own mitochondria make. Promising in mice, never given to a person in a trial.",
+    "lede": "MOTS-c is a 16-amino-acid peptide encoded inside mitochondrial DNA, identified around 2012 and published in 2015 by Pinchas Cohen and Changhan Lee's groups at the University of Southern California. MOTS-c itself has never been tested in a human trial. A modified version, CB4211, went through one small Phase 1 study run by the company CohBar between 2019 and 2021 and was not developed further. Nothing containing MOTS-c is approved anywhere, and WADA bans it in sport. It is sold online as a \"research chemical\".",
+    "stats": [
+      {"num": "2015", "lbl": "year MOTS-c was first described in a journal, in mice and cells", "src": "Lee et al., Cell Metabolism; identified around 2012 per CohBar"},
+      {"num": "0", "lbl": "human trials of MOTS-c itself; the FDA found no human exposure data of any kind in 2026", "src": "FDA review for its advisory committee, 11 May 2026"},
+      {"num": "20", "lbl": "obese adults in the only trial of a MOTS-c analogue (CB4211), four weeks long", "src": "CohBar topline results, 10 August 2021"}
+    ],
+    "mechanism": {
+      "intro": "A mitochondrial messenger that, in mice, seems to tell cells to burn fuel rather than store it.",
+      "parts": [
+        {"name": "Made by mitochondria", "text": "Most mitochondrial DNA codes for the machinery of energy production. A short 51-letter stretch inside the 12S ribosomal RNA gene also encodes this small peptide, which is why it is called a \"mitochondrial-derived peptide\". The name stands for mitochondrial open reading frame of the 12S rRNA type-c."},
+        {"name": "AMPK", "text": "In mouse studies MOTS-c switched on AMPK, an energy-sensing enzyme that exercise and metformin also activate, improving the way muscle took up sugar. That is why WADA files it under \"AMPK activators\". Its receptor or molecular target, if it has one, has not been identified."},
+        {"name": "Under stress, to the nucleus", "text": "In cells, MOTS-c moves into the nucleus under metabolic stress and alters gene expression. Whether injected MOTS-c reaches the right places in a person, and in what amount, has never been measured; in human blood in a test tube it started breaking into fragments within 15 minutes."}
+      ]
+    },
+    "more": {
+      "title": "More: MOTS-c versus CB4211",
+      "paras": [
+        "The only human data in this field come from CB4211, which CohBar described as a \"novel, improved analog\" of MOTS-c, chemically altered to last longer in the body. It is not the same molecule as the MOTS-c sold online, and its results cannot be transferred to it. CohBar never disclosed the structure.",
+        "MOTS-c has also been measured as a natural substance in people. Studies have reported that circulating levels differ with age, body weight and after exercise. Those are observations about the body's own peptide, not evidence that injecting it does anything.",
+        "Everything on this page comes from the discoverers' published papers, CohBar's trial announcements, FDA's 2023 and 2026 reviews and the WADA list. Sources are listed under the Status tab."
+      ]
+    }
+  },
+  "results": {
+    "headline": "Mouse results, one small analogue trial, and nothing on MOTS-c in people.",
+    "lede": "The weight-loss and insulin findings that make MOTS-c popular come from rodents. The one human trial tested a different molecule for four weeks in 20 people, and its headline result was in liver enzymes, not weight.",
+    "chart": null,
+    "stats": [
+      {"num": "−25 pts", "lbl": "difference in ALT (a liver-damage enzyme) after 4 weeks of CB4211 vs placebo (−21% vs +4%) in 20 obese adults with fatty liver", "src": "CohBar topline results, 10 August 2021"},
+      {"num": "≈ same", "lbl": "liver fat fell about as much on placebo (−4.9 points) as on CB4211 (−5.0 points); body weight showed only a \"trend\" that was not significant", "src": "CohBar topline results, 10 August 2021"}
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {"b": "In mice: weight.", "t": "Mice on a high-fat diet given daily MOTS-c injections for eight weeks weighed about 20% less than untreated mice, used more energy, and had less liver fat and lower insulin."},
+        {"b": "In mice: insulin and ageing.", "t": "Treated mice needed about 30% more glucose infused to hold blood sugar steady, a sign of better insulin sensitivity, and a week of treatment restored muscle insulin response in middle-aged mice. Old mice given MOTS-c ran further on a treadmill, and mice treated three times a week from late life lived slightly longer (median 970 versus 912 days)."},
+        {"b": "In people: CB4211, the analogue.", "t": "In 20 obese adults with fatty liver, four weeks of daily CB4211 lowered ALT, AST and fasting glucose more than placebo (all statistically significant), but liver fat fell equally in both groups and weight only trended down. CohBar called the result positive and never ran another trial."},
+        {"b": "In people: MOTS-c itself.", "t": "Nothing. FDA's 2026 search found no clinical study, no case report and no pharmacokinetic data for MOTS-c by any route. Observational studies that measure the body's own MOTS-c show associations, not effects of treatment."}
+      ]
+    },
+    "more": [
+      {
+        "title": "More: why mouse results are not a forecast",
+        "paras": [
+          "The rodent studies were short, used one or two dose levels, mostly injected into the abdominal cavity, and did not identify the molecular target. FDA's reviewers noted the absence of dose-response work and that every finding was in rodents. Many metabolic peptides that cut weight in mice (AOD-9604 among them) did nothing in people.",
+          "The CB4211 trial is the closest thing to a human test, and it is a cautionary one: a company confident enough to call its result positive still chose not to spend money on a Phase 2."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "No human safety data exist for MOTS-c. The analogue was tolerated for four weeks.",
+    "lede": "There is no side-effect table for MOTS-c because nobody has given it to people in a study. For CB4211, 65 healthy volunteers took it for a week and 20 obese adults for four weeks, with no serious adverse events; the only common complaint was mild, short-lived injection-site reactions. Nothing is known about longer use.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "Not measurable for MOTS-c: no trial has been run. In the CB4211 study, no serious adverse events occurred in either part, and injection-site reactions were the only events affecting more than 10% of people on the drug. CohBar did not publish how many people stopped."
+    },
+    "unique": {
+      "title": "What regulators flagged",
+      "text": "FDA's 2023 and 2026 reviews list the same concerns: no human exposure data by any route; no toxicology studies of any kind (acute, repeat-dose, genetic, reproductive or cancer); poor characterisation of the material sold, with no data on impurities, aggregates or endotoxins; and a risk of immune reactions when a peptide is injected under the skin. FDA's adverse-event database held no MOTS-c reports through March 2025, which mostly reflects that nobody is required to file them."
+    },
+    "more": [
+      {
+        "title": "More: what a trial would monitor for",
+        "paras": [
+          "Immune reactions. Small peptides can provoke antibodies, especially when injected repeatedly under the skin, and aggregates or impurities make that more likely. No study has looked for anti-MOTS-c antibodies in people.",
+          "Metabolism. A substance that activates AMPK could in principle lower blood sugar or interact with diabetes drugs. Nobody has measured this in people.",
+          "Everything downstream of a gene regulator. MOTS-c alters gene expression in cells; what months of that does in a person is unknown, which is why FDA listed cancer and reproductive studies among the gaps."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "In mice: lower weight, better insulin sensitivity, less liver fat, longer running times and modestly longer life. In the 20-person CB4211 trial: lower ALT, AST and glucose than placebo over four weeks. That is the complete list, and none of it is about MOTS-c in a person."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms a doctor should see promptly",
+      "items": [
+        "Spreading redness, warmth, swelling or pus at an injection site, or fever and chills after an injection",
+        "Hives, swelling of the face or throat, wheeze or trouble breathing",
+        "Shakiness, sweating, confusion or fainting (possible low blood sugar, especially with diabetes medicines)",
+        "Yellowing of the skin or eyes, dark urine",
+        "Chest pain, a racing or irregular heartbeat"
+      ],
+      "note": "These relate mainly to injecting an unverified product. No trial has defined the peptide's own danger signs, because none has been run."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "No one has measured MOTS-c in a person after an injection. FDA's 2026 review found no human pharmacokinetic data and no animal pharmacokinetic study either; the only clue is a test-tube experiment in which MOTS-c added to human blood had already begun breaking into fragments at 15 minutes. There is nothing to build a curve from.",
+    "stats": [
+      {"num": "None", "lbl": "human half-life; never measured by any route", "src": "FDA review, 11 May 2026"},
+      {"num": "15 min", "lbl": "time at which breakdown fragments were already detectable when MOTS-c was added to human blood in a test tube", "src": "Knoop et al. 2019, cited in FDA review"},
+      {"num": "0", "lbl": "animal toxicology studies (acute, repeat-dose, genetic, reproductive, cancer) found by FDA", "src": "FDA review, 11 May 2026"}
+    ],
+    "explain": [
+      {"b": "Why there is no chart.", "t": "The simulator on other pages runs on a measured half-life. None exists for MOTS-c, so any curve would be invented."},
+      {"b": "Why the analogue existed.", "t": "CohBar built CB4211 precisely because natural MOTS-c is thought to be cleared fast. The company has never published CB4211's pharmacokinetics either."},
+      {"b": "Why the label tells you little.", "t": "A \"research use only\" vial carries a milligram number but no verified potency. The certificates of analysis FDA examined gave no information on impurities, aggregates or endotoxins."}
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: what a chart would need",
+        "paras": [
+          "To model blood levels you need, at minimum, how fast the peptide is absorbed from where it is given and how fast the body clears it. Neither has been measured for MOTS-c in any animal or person. The test-tube blood experiment shows that enzymes in blood cut it into shorter fragments quickly, which suggests a short life, but a suggestion is not a number.",
+          "Natural MOTS-c has been measured in human blood and muscle in observational studies. Those levels are the body's own output and say nothing about what an injected dose would do."
+        ]
+      },
+      {
+        "title": "More: what this page cannot tell you",
+        "paras": [
+          "It cannot tell you what is in a vial sold as MOTS-c, how much, or how pure. FDA found no pharmacy legally compounding it and no outsourcing facility reporting it between 2017 and 2025, so what is sold did not pass through a regulated supply chain.",
+          "It cannot tell you what repeated injections do, because no study has published that for this peptide in any species."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "One trial of a cousin molecule. None of MOTS-c.",
+    "lede": "CohBar, a company co-founded by MOTS-c's discoverer, took its analogue CB4211 through a combined Phase 1a/1b study and stopped. No company or university has registered a trial of MOTS-c itself.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: how the CB4211 trial was run",
+        "paras": [
+          "Phase 1a enrolled 65 healthy adults who received single and then repeated daily injections for a week under observation, to find a tolerated dose. Phase 1b then randomised 20 obese adults with at least 10% liver fat to that single dose or placebo, once daily for four weeks, while they lived in a clinical unit at one of four sites. Safety was the primary endpoint; liver fat, weight, liver enzymes and glucose were exploratory.",
+          "The design means a few things. Twenty people cannot show whether weight changes; the trial was not built to. Four weeks cannot show long-term safety. And living in a research unit on a controlled diet explains why the placebo group's liver fat fell as much as the drug group's."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials that have been run",
+      "items": [
+        "CB4211 Phase 1a (2019 to 2020): 65 healthy adults, single and multiple ascending doses over one week. Safety and dose selection. No serious adverse events.",
+        "CB4211 Phase 1b (2020 to 2021): 20 obese adults with fatty liver disease, one daily dose or placebo for four weeks (11 drug, 9 placebo). Primary endpoint (safety) met; ALT, AST and glucose fell more than placebo; liver fat and weight did not separate from placebo. Presented at The Liver Meeting, November 2021. No Phase 2 followed.",
+        "MOTS-c itself: no registered or published human trial, as of October 2026."
+      ]
+    },
+    "find": {
+      "text": "No trial of MOTS-c is recruiting. Searching the registry for \"MOTS-c\" and \"CB4211\" shows that the only completed interventional study is CohBar's Phase 1a/1b; anything else measures natural levels.",
+      "term": "MOTS-c",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "Not approved anywhere. Backed by an FDA panel in July 2026, not by the FDA. Banned in sport.",
+    "items": [
+      {"tag": "no", "label": "Canada", "text": "Health Canada has never authorized a product containing MOTS-c. Anything sold in Canada, online or through a clinic, is an unauthorized drug (as of October 2026)."},
+      {"tag": "soon", "label": "United States", "text": "Not approved and not legal to compound. September 2023: FDA placed MOTS-c in Category 2, citing immunogenicity risk, impurity and characterisation problems and the absence of any human exposure data. April 2026: the nomination was withdrawn and FDA removed it from Category 2 to put it before its Pharmacy Compounding Advisory Committee. 11 May 2026: FDA staff found no human data and recommended against adding it to the compounding list. 23 July 2026: the committee nevertheless voted 7 to 5 (2 abstentions) in favour, for obesity and osteoporosis. The vote is non-binding; adding it would need formal rulemaking that typically takes a year or more, and FDA has not acted."},
+      {"tag": "no", "label": "Sport", "text": "Prohibited at all times by WADA under S4.4.1, metabolic modulators, where it is named: \"mitochondrial open reading frame of the 12S rRNA-c (MOTS-c)\", alongside other AMPK activators. It was already listed by 2024 and remains on the 2026 list."},
+      {"tag": "no", "label": "Development", "text": "CohBar, the only company to take a MOTS-c analogue into people, reported its Phase 1 result in August 2021, ran no further trial, and in 2023 merged with a cancer-immunotherapy company (now TuHURA Biosciences), whose pipeline does not include CB4211. No other company has registered a MOTS-c trial."}
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "\"Research use only\" vials and clinic \"longevity\" injections",
+        "text": "FDA's 2026 review found wellness clinics and websites marketing MOTS-c injections, no pharmacy legally compounding it, and no licensed outsourcing facility reporting it between 2017 and 2025. Whatever is in those vials did not come through a regulated supply chain.",
+        "items": [
+          "The certificates of analysis FDA examined gave no information on impurities, aggregates or endotoxins (bacterial residues that cause fever). No independent laboratory testing of MOTS-c vials has been published.",
+          "The peptide has never been given to a person in a study, so there is no basis for any claim about what it does or what it is safe to inject.",
+          "Athletes: MOTS-c is on the WADA list by name. A positive test is a violation regardless of how the product was labelled."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "warn",
+        "title": "If someone has already used an injected product",
+        "text": "Stop, keep the vial and its label, and see a doctor if any of these appear:",
+        "items": ["Fever, chills, or a hot swollen injection site", "Hives, facial swelling or trouble breathing", "Shakiness, sweating or confusion (check blood sugar)", "Yellowing of the skin or eyes, dark urine"],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: what the July 2026 vote does and does not mean",
+        "paras": [
+          "In February 2026 the U.S. health secretary said publicly that he wanted peptides available from \"ethical suppliers\", and in April 2026 FDA pulled twelve peptides out of Category 2 so its advisory committee could reconsider them. For MOTS-c, FDA's own reviewers wrote that they were \"particularly concerned about the lack of human data\" and recommended against listing it. The committee, which critics noted included several members who prescribe or promote peptides, voted the other way on six of the seven peptides it reviewed.",
+          "A favourable vote changes nothing on its own. Only a final rule adds a substance to the list pharmacies may compound from, and even then compounding would mean a prescription from a doctor and a licensed pharmacy, not a vial from a website. Approval as a medicine, which requires trials showing it works, is not on any horizon."
+        ]
+      }
+    ],
+    "sources": [
+      {"text": "U.S. FDA, Evaluation of MOTS-c-related bulk drug substances for inclusion on the 503A bulks list, briefing document for the Pharmacy Compounding Advisory Committee, 11 May 2026 (no human data; rodent studies summarised; no toxicology; FAERS empty; recommendation against listing).", "url": "https://www.fda.gov/media/193347/download"},
+      {"text": "U.S. FDA, Certain bulk drug substances for use in compounding that may present significant safety risks (MOTS-c concerns: immunogenicity, impurities, no human exposure data; nomination withdrawn). Content current as of 22 April 2026.", "url": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks"},
+      {"text": "Alliance for Pharmacy Compounding, summary of FDA's September 2023 503A categories update (MOTS-c among 19 peptides placed in Category 2), 29 September 2023.", "url": "https://join.a4pc.org/hubfs/PDFs/503A-Categories-Update-for-September-2023-FINAL.docx.pdf"},
+      {"text": "U.S. FDA, 503A bulk drug substances category list, updated 14 May 2026 (MOTS-c in no category).", "url": "https://fda.gov/media/94155/download"},
+      {"text": "Goodwin / JD Supra, FDA signals potentially evolving stance toward compounding of certain peptides (April 2026 removals, July 2026 committee agenda, docket FDA-2025-N-6895), 12 May 2026.", "url": "https://www.jdsupra.com/legalnews/fda-signals-potentially-evolving-stance-5479727/"},
+      {"text": "AJMC, FDA panel backs 6 peptides for compounding (MOTS-c vote 7-5 with 2 abstentions, 23 July 2026; FDA staff recommended against all seven), 31 July 2026.", "url": "https://www.ajmc.com/view/fda-panel-backs-6-peptides-for-compounding"},
+      {"text": "CohBar, Inc., positive topline results from the Phase 1a/1b study of CB4211 (65 healthy adults; 20 obese adults with NAFLD; ALT −21% vs +4%, AST −28% vs −11%, glucose −6% vs 0%; liver fat −5.03 vs −4.88 points; no serious adverse events), 10 August 2021.", "url": "https://www.biospace.com/cohbar-announces-positive-topline-results-from-the-phase-1a-1b-study-of-cb4211-under-development-for-nash-and-obesity"},
+      {"text": "CohBar, Inc., CB4211 Phase 1a/1b results selected for late-breaker presentation at The Liver Meeting 2021, 13 October 2021.", "url": "https://www.cohbar.com/news-media/press-releases/detail/160/cohbar-announces-cb4211-phase-1a1b-results-selected-for"},
+      {"text": "CohBar, Inc., last subject visit in the Phase 1b trial of CB4211 (design: randomised, double-blind, placebo-controlled, four weeks, in-unit), 21 April 2021.", "url": "https://cohbar.com/news-media/press-releases/detail/146/cohbar-completes-last-subject-visit-in-the-phase-1b"},
+      {"text": "WADA, 2026 Prohibited List, in force 1 January 2026 (S4.4.1 metabolic modulators: MOTS-c named among AMPK activators), official text as published in the Netherlands Tractatenblad 2026-25; Finnish Anti-Doping Agency KAMU 2026 list.", "url": "https://zoek.officielebekendmakingen.nl/trb-2026-25.html"},
+      {"text": "Lee C, Zeng J, Drew BG et al. The mitochondrial-derived peptide MOTS-c promotes metabolic homeostasis and reduces obesity and insulin resistance. Cell Metabolism, 2015.", "url": "https://doi.org/10.1016/j.cmet.2015.02.009"},
+      {"text": "Reynolds JC et al. MOTS-c is an exercise-induced mitochondrial-encoded regulator of age-dependent physical decline and muscle homeostasis. Nature Communications, 2021 (treadmill and lifespan data in mice as summarised by FDA).", "url": "https://doi.org/10.1038/s41467-020-20790-0"},
+      {"text": "TuHURA Biosciences (formerly CohBar), completion of merger with Morphogenesis, 2023.", "url": ""}
+    ]
+  }
+}

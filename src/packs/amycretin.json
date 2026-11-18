@@ -1,0 +1,249 @@
+{
+  "id": "amycretin",
+  "name": "Amycretin",
+  "brands": "",
+  "maker": "Novo Nordisk",
+  "group": "trials",
+  "pill": "Investigational",
+  "overview": {
+    "headline": "A weekly injection or a daily tablet that works on two fullness hormones at once.",
+    "lede": "Amycretin is an experimental medicine from Novo Nordisk. Its early trials were published in 2025, and in 2026 it moved into Phase 3 under a new generic name, zenagamtide. No regulator anywhere has approved it. The only legal way to receive it today is inside a clinical trial.",
+    "stats": [
+      {"num": "−24.3%", "lbl": "average weight change after 36 weeks on the highest weekly dose (60 mg), in a 17-person group", "src": "Phase 1b/2a, Lancet 2025"},
+      {"num": "−13.1%", "lbl": "after 12 weeks on the highest daily tablet dose, in a 16-person group", "src": "Phase 1, Lancet 2025"},
+      {"num": "2026", "lbl": "the year Phase 3 trials started; the main obesity trial runs 84 weeks", "src": "Novo Nordisk; registry listings"}
+    ],
+    "mechanism": {
+      "intro": "One molecule carries two signals your body normally sends after a meal.",
+      "parts": [
+        {"name": "GLP-1", "text": "Slows stomach emptying, tells the brain you are full, and raises insulin when blood sugar is high. The same target as semaglutide (Wegovy, Ozempic)."},
+        {"name": "Amylin", "text": "A hormone the pancreas releases alongside insulin. It adds a separate fullness signal and also slows the stomach. Novo already pairs it with GLP-1 in CagriSema, where the two are separate molecules in one pen. In amycretin both parts are built into a single peptide."}
+      ]
+    },
+    "more": {
+      "title": "More: where it sits among the GLP-1 drugs",
+      "paras": [
+        "Semaglutide (Wegovy, Ozempic) acts on one receptor. Tirzepatide (Zepbound, Mounjaro) acts on two, GLP-1 and GIP. Amycretin also acts on two, but its second target is amylin rather than GIP. Novo describes it as \"the first treatment that combines GLP-1 and amylin receptor agonism biology in a single molecule\". Papers from 2026 add that, like other amylin analogues, it also activates the closely related calcitonin receptor.",
+        "It comes in two forms that are tested separately: an injection under the skin once a week, and a tablet once a day. Because peptides are largely destroyed in the gut, the tablet doses (50 to 100 mg a day) are far higher than the injection doses (1.25 to 60 mg a week).",
+        "Novo's internal code for the molecule is NNC0487-0111, which is how it appears in trial registries. In 2026 the company began calling it zenagamtide, \"formerly known as amycretin\". Everything on this page comes from Novo's announcements, the peer-reviewed papers and public trial listings. Sources are under the Status tab."
+      ]
+    }
+  },
+  "results": {
+    "headline": "What people in the early trials lost.",
+    "lede": "Average weight change by dose, compared with placebo, in the two published trials. These were small safety-first studies with 4 to 34 people per group, so treat the figures as a first look rather than a settled answer.",
+    "chart": {
+      "metric": "weight",
+      "legend": ["Amycretin", "Placebo"],
+      "rows": [
+        {"name": "Weekly 60 mg", "meta": "36 weeks · overweight or obesity, no diabetes · 17 vs 5 people", "drug": -24.3, "placebo": -1.1, "tip": "Amycretin 60 mg weekly: −24.3%"},
+        {"name": "Weekly 20 mg", "meta": "36 weeks · overweight or obesity, no diabetes · 34 vs 5 people", "drug": -22.0, "placebo": 1.9, "tip": "Amycretin 20 mg weekly: −22.0%"},
+        {"name": "Weekly 5 mg", "meta": "28 weeks · overweight or obesity, no diabetes · 16 vs 4 people", "drug": -16.2, "placebo": 2.3, "tip": "Amycretin 5 mg weekly: −16.2%"},
+        {"name": "Weekly 1.25 mg", "meta": "20 weeks · overweight or obesity, no diabetes · 16 vs 4 people", "drug": -9.7, "placebo": 2.0, "tip": "Amycretin 1.25 mg weekly: −9.7%"},
+        {"name": "Tablet 2 × 50 mg", "meta": "12 weeks · overweight or obesity, no diabetes · 16 vs 12 people", "drug": -13.1, "placebo": -1.2, "tip": "Oral amycretin 2 × 50 mg daily: −13.1%"},
+        {"name": "Tablet 50 mg", "meta": "12 weeks · overweight or obesity, no diabetes · 16 vs 12 people", "drug": -10.4, "placebo": -1.2, "tip": "Oral amycretin 50 mg daily: −10.4%"}
+      ],
+      "max": 30,
+      "note": "Injection figures are Novo's \"if everyone had adhered\" estimand: the estimated change had all participants followed the planned dosing schedule with no discontinuations. A treatment-policy figure counting everyone has not been published. Placebo groups in three of the four injection parts gained weight. Tablet results were exploratory endpoints in a safety trial."
+    },
+    "stats": [
+      {"num": "Still falling", "lbl": "weight had not levelled off at the end of treatment in any dose group, 12 to 36 weeks in", "src": "Novo Nordisk, June 20, 2025"},
+      {"num": "−11.8 pts", "lbl": "placebo-adjusted weight change after 12 weeks of the top tablet dose (95% CI −14.6 to −9.0)", "src": "EASD 2024 presentation"}
+    ],
+    "beyond": {
+      "title": "Beyond the scale",
+      "items": [
+        {"b": "Blood sugar.", "t": "Participants did not have diabetes, so there was little to lower. Even so, A1C fell by 0.2 to 0.6 percentage points depending on the injection dose (placebo: −0.1 to +0.1), and fasting glucose, blood fats and the inflammation marker hs-CRP all moved in amycretin's favour. The tablet trial saw lower fasting glucose and A1C at 12 weeks."},
+        {"b": "Type 2 diabetes.", "t": "A Phase 2 trial in 262 adults with type 2 diabetes finished in 2026 and was published in The Lancet in August 2026. Novo reported it as positive. We have not been able to check the paper's figures, so they are not shown here."},
+        {"b": "Still unknown.", "t": "Nothing beyond 36 weeks. No one over 55 in the injection trial. No heart, kidney or liver outcomes. No data on keeping the weight off, and no head-to-head comparison with semaglutide or tirzepatide yet."}
+      ]
+    },
+    "more": [
+      {
+        "title": "More: how much of this is the amylin part?",
+        "paras": [
+          "Not known yet. The early trials compared amycretin with placebo only, so they cannot say what the amylin component adds over a GLP-1 drug on its own. The Lancet editorial that accompanied the papers, by Bernard Khoo and Tricia Tan, said head-to-head outcome studies comparing GLP-1 drugs with GLP-1-plus-amylin drugs \"are required\" to establish the added value.",
+          "Those comparisons are now being set up: two Phase 3 trials (AMAZE 7 and 8) are listed as comparing zenagamtide with weekly semaglutide, one in obesity and one in type 2 diabetes. Neither had started recruiting by October 2026."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "Mostly stomach-related and dose-dependent, in trials too small to pin the rates down.",
+    "lede": "Nausea, vomiting and reduced appetite were the common complaints in both trials. They rose with dose, were most frequent while the dose was being stepped up, and were described as mostly mild to moderate and resolved by the end of the studies.",
+    "chart": {
+      "eyebrow": "Oral phase 1, 12-week cohort · share of people affected",
+      "legend": ["Amycretin 2 × 50 mg daily", "Placebo"],
+      "rows": [
+        {"name": "Any side effect", "drug": 93.8, "placebo": 33.3},
+        {"name": "Stomach or gut symptoms", "drug": 87.5, "placebo": 16.7},
+        {"name": "Decreased appetite", "drug": 81.3, "placebo": 16.7}
+      ],
+      "max": 100,
+      "note": "16 people on the top dose and 12 on placebo, so each person moves the bar 6 to 8 points. On the lower 50 mg tablet: any side effect 75%, gut symptoms 50%, decreased appetite 56.3%. Nausea and vomiting were the most common gut symptoms, but their rates by group have not been published outside the full papers. For the weekly injection, 80 of 83 people on amycretin and 18 of 18 on placebo reported at least one side effect; the authors put the placebo figure down partly to a nocebo effect and the tiny groups."
+    },
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "In the injection trial about a third of participants (33%) left before the end, and the authors report that 59% of those exits were for reasons unrelated to side effects. The share who stopped because of side effects, by dose, has not been published in the public summaries. Discontinuations in the tablet trial were not reported in the summaries either."
+    },
+    "unique": {
+      "title": "Serious events were rare but telling",
+      "text": "Across both trials, roughly 200 people took amycretin. The injection trial recorded one case of recurrent gallstone pancreatitis. The tablet trial recorded two serious events: acute gallbladder inflammation, and diabetic ketoacidosis in a participant who turned out to have had type 1 diabetes antibodies before treatment. Gallbladder and pancreas problems are known risks of the GLP-1 class, and the trials watched for them. With groups this small, no one can yet say how often they will happen."
+    },
+    "more": [
+      {
+        "title": "More: what the trials monitor for",
+        "paras": [
+          "Heart rate. The injection paper notes increases in heart rate, as seen with other GLP-1 drugs. Trials track heart rate and rhythm throughout.",
+          "Skin sensations. Abnormal skin sensations (dysesthesia) were recorded in 14 of the 101 people on the weekly injection. This has also been seen with retatrutide and is being watched.",
+          "Class risks. Drugs in this family carry warnings for pancreatitis, gallbladder disease, dehydration from vomiting or diarrhea (which can strain the kidneys), low blood sugar when combined with insulin or sulfonylureas, and a thyroid tumour signal in rodents. Trial participants are screened and monitored for these.",
+          "Pregnancy. Not studied. Trials exclude pregnancy and require contraception."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "In the injection trial, fasting glucose, A1C, blood fats and hs-CRP all favoured amycretin over placebo. In the tablet trial, BMI, waist size, fasting glucose and A1C were all lower than placebo at 12 weeks. None of these were the trials' main questions, and whether they translate into fewer heart attacks or strokes is what the outcome trials now starting are meant to answer."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms trial teams treat as urgent",
+      "items": [
+        "Severe or persistent abdominal pain, with or without vomiting",
+        "Vomiting or diarrhea that will not stop, or not being able to keep fluids down",
+        "Yellowing of the skin or eyes, dark urine, pale stools",
+        "A racing or irregular heartbeat, fainting",
+        "Swelling of the face or throat, trouble breathing, severe rash"
+      ],
+      "note": "Anyone with these symptoms, in a trial or not, should get medical care right away."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "Amycretin's blood levels were measured in both trials: Part A of the injection study existed to work out its pharmacokinetics and starting dose, and drug exposure was a secondary endpoint in both. But Novo has published the half-life and time-to-peak only inside the full Lancet papers, which we could not verify directly, and the public summaries do not state them. Rather than fill a chart with numbers we cannot check, we leave the simulator off. What is known: Novo calls amycretin long-acting, the injection is given once a week and the tablet once a day, and in the tablet trial blood levels rose in proportion to dose.",
+    "stats": [
+      {"num": "0.3 mg", "lbl": "first weekly dose in the injection trial; every group climbed from here", "src": "Dahl et al., Lancet 2025"},
+      {"num": "60 mg", "lbl": "highest weekly dose reached, at the very end of a 36-week climb", "src": "Novo Nordisk, June 20, 2025"},
+      {"num": "12 weeks", "lbl": "time spent on the final dose in the 1.25, 5 and 20 mg groups", "src": "Novo Nordisk, January 24, 2025"}
+    ],
+    "explain": [
+      {"b": "Why the climb was slow.", "t": "The injection groups took 8 to 24 weeks to step up from 0.3 mg to their final dose, then held it for 12 weeks. The 60 mg group was still stepping up when the trial ended. Side effects were most frequent at higher doses and during the climb."},
+      {"b": "Why the tablet dose is so much larger.", "t": "Peptides are mostly destroyed in the gut, so very little of a tablet reaches the blood. The daily tablet doses were 50 to 100 mg against 1.25 to 60 mg a week by injection."},
+      {"b": "Why a half-life matters.", "t": "It sets how far the drug builds up between doses, how long levels take to settle after each step, and how long it lingers after stopping. For amycretin that number is not yet in the public record, so none of those questions can be answered here."}
+    ],
+    "showTable": true,
+    "more": [
+      {
+        "title": "More: what a half-life would tell you",
+        "paras": [
+          "For the drugs in the table, blood levels follow a simple pattern: each dose adds to what is still circulating, and the drug clears at a steady rate set by its half-life. A weekly drug with a half-life near a week builds to roughly twice the level of a single dose and takes four to five weeks to settle after each step. That is why the published trials of semaglutide, tirzepatide and retatrutide space their steps four weeks apart.",
+          "Amycretin was dosed weekly, which implies a half-life measured in days rather than hours, but the actual figure, its peak time and how much it varies between people are in the Lancet papers' pharmacokinetic sections, not in the public summaries. When a label or an accessible PK paper gives them, this tab will show the curve."
+        ]
+      },
+      {
+        "title": "More: what this tab cannot tell you",
+        "paras": [
+          "It measures nothing; only a blood test can.",
+          "It says nothing about products sold online as amycretin or zenagamtide. Novo has not released the compound, so any vial carrying the name has unverified contents and strength, and no model can account for that.",
+          "The trial schedules on the Trials tab are facts about how the studies were run under medical supervision with regular bloodwork. They are not a plan for anyone to follow."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "How the amycretin trials were run, and what joining one looks like.",
+    "lede": "Clinical trials are the only legal route to amycretin. The two published trials each ran at a single U.S. research site; the Phase 3 programme that began in 2026 recruits in many countries.",
+    "ladder": {
+      "title": "The dose climb used in the weekly-injection trial",
+      "text": "Everyone on the drug started at 0.3 mg a week. Doses were stepped up over 8 to 24 weeks to the target assigned to their group, which was then held for 12 weeks: 1.25 mg (20 weeks in total), 5 mg (28 weeks) or 20 mg (36 weeks). A fourth group kept climbing for 36 weeks and reached 60 mg at the end. The exact intermediate steps are in the paper, not the public summaries.",
+      "steps": [
+        {"d": "0.3 mg", "t": "start"},
+        {"d": "1.25 mg", "t": "by week 8"},
+        {"d": "5 mg", "t": "by week 16"},
+        {"d": "20 mg", "t": "by week 24"},
+        {"d": "60 mg", "t": "week 36 (end)"}
+      ],
+      "note": "Each dose group had its own placebo participants (4 or 5 per group) following the same schedule with inactive injections, double-blind. The tablet trial climbed from 3 mg a day to 50 mg or 2 × 50 mg over 12 weeks, spending the final two weeks on the top dose."
+    },
+    "more": [
+      {
+        "title": "More: how side effects were handled inside the trials",
+        "paras": [
+          "The slow climb is the main tool. Stomach symptoms were most common while doses were rising and were described as settling by the end of the studies. Starting at 0.3 mg, a fraction of the lowest target dose, gave the body weeks to adjust before each increase.",
+          "Both trials ran at one research site with frequent visits, blood tests and heart monitoring. Serious events were investigated: the ketoacidosis case in the tablet trial led to the finding that the participant had type 1 diabetes antibodies before treatment. People who could not tolerate the drug left the study; that is where the one-third withdrawal figure on the Side effects tab comes from.",
+          "None of this is a self-management plan. The point of a trial is that trained staff are watching, which is exactly what is missing when someone uses a product bought online."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials running or opening",
+      "items": [
+        "AMAZE 1 (NCT07339423): the main obesity trial of the weekly injection against placebo, 84 weeks, about 1,150 adults. Recruiting since February 2026; the registry estimates main results in mid-2029.",
+        "AMAZE 2 (type 2 diabetes, about 630 people), AMAZE 3 and 4 (sleep apnea), AMAZE 5 and 6 (knee osteoarthritis), AMAZE 12 (keeping weight off after losing it) and AMAZE 13 (adults in Asia).",
+        "AMAZE 7 and 8: head-to-head against weekly semaglutide, in obesity and in type 2 diabetes. Not yet recruiting as of October 2026.",
+        "AMAZE 9: the first Phase 3 of the daily tablet, 76 weeks, about 950 adults; posted to the registry in July 2026.",
+        "HF-POLARIS (heart failure with obesity, about 5,600 people) and AMBIENCE, a cardiovascular outcomes trial posted in October 2026 and not yet recruiting."
+      ]
+    },
+    "find": {
+      "text": "Registry records use Novo's code NNC0487-0111 and, from 2026, the name zenagamtide, so a search for \"amycretin\" alone can miss them. Search the public registry, then contact the nearest site listed on the study page. Typical requirements: adult, a BMI above a set threshold, and no competing weight-loss medication.",
+      "term": "NNC0487-0111",
+      "extra": {"label": "Novo Nordisk trials", "url": "https://www.novonordisk-trials.com/"}
+    }
+  },
+  "status": {
+    "headline": "Not approved anywhere, and years from a filing. Anything sold as amycretin is not the real thing.",
+    "items": [
+      {"tag": "no", "label": "Not approved", "text": "As of October 24, 2026, Health Canada, the U.S. FDA, the European EMA and every other regulator have not approved amycretin (zenagamtide) for any use. It cannot be prescribed."},
+      {"tag": "soon", "label": "Phase 3 under way", "text": "Novo said in June 2025 it would start Phase 3 in early 2026 after end-of-Phase 2 talks with regulators, and registry listings show the first AMAZE trials recruiting from February 2026. The main obesity trial runs 84 weeks with results estimated for mid-2029, so a filing cannot come before then. At its September 2026 investor day Novo reportedly pointed to a launch no earlier than 2029. The company has given no filing date."},
+      {"tag": "soon", "label": "New name", "text": "In 2026 Novo adopted the generic name zenagamtide for the molecule and now writes \"zenagamtide, formerly known as amycretin\". Trial records carry the code NNC0487-0111."},
+      {"tag": "ok", "label": "Trials open", "text": "Phase 3 trials are recruiting in the U.S., South Korea and other countries. See the Trials tab."}
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "No genuine amycretin exists outside Novo's trials",
+        "text": "Novo Nordisk is the only maker. It has not sold, licensed or released the compound, and it is not available to compounding pharmacies, clinics or \"research\" suppliers. Any vial, pen or tablet labelled amycretin, zenagamtide or NNC0487-0111 outside a registered trial has unverified contents and strength.",
+        "items": [
+          "Grey-market sites already publish \"dosing protocols\" and reconstitution calculators for amycretin, and at least one research-chemical vendor runs an amycretin page while stating it does not stock it (checked October 2026). We could not confirm any verified sale, which is the point: there is nothing genuine to sell.",
+          "U.S. pharmacies may compound only approved drugs or substances on FDA's bulks lists. Amycretin is on neither, so a \"compounded amycretin\" cannot be legal.",
+          "As of October 24, 2026 we found no regulator safety notice naming amycretin specifically. Regulators' general warnings about unapproved weight-loss peptides apply."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "warn",
+        "title": "If someone has already used an unapproved product",
+        "text": "Public health authorities advise stopping, keeping the vial for identification, and seeing a doctor, urgently if any of these appear:",
+        "items": ["Severe abdominal pain or persistent vomiting", "Yellowing of the skin or eyes, dark urine", "Unusual tiredness, confusion or fainting", "Signs of infection at an injection site"],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: amycretin and CagriSema",
+        "paras": [
+          "Novo already has an amylin-plus-GLP-1 product in late development: CagriSema, which combines cagrilintide (an amylin analogue) and semaglutide as two separate molecules in one injection. Amycretin is the single-molecule follow-on. Novo has positioned it as the next step after CagriSema, with the tablet form as the longer-range goal.",
+          "The early amycretin results come from small, short trials and cannot be compared directly with CagriSema's 68-week Phase 3 figures. The AMAZE programme is what will show whether one molecule does the job of two."
+        ]
+      }
+    ],
+    "sources": [
+      {"text": "Novo Nordisk, company announcement: topline results from the phase 1b/2a trial of subcutaneous amycretin, January 24, 2025.", "url": "https://www.novonordisk.com/news-and-media/news-and-ir-materials/news-details.html?id=915251"},
+      {"text": "Novo Nordisk, company announcement: decision to advance subcutaneous and oral amycretin into phase 3, June 12, 2025.", "url": "https://www.novonordisk.com/content/nncorp/global/en/news-and-media/news-and-ir-materials/news-details.html?id=916348"},
+      {"text": "Novo Nordisk, press release: subcutaneous and oral amycretin data published in The Lancet and presented at ADA 2025 (dose-by-dose weight and placebo figures, estimand footnote), June 20, 2025.", "url": "https://www.novonordisk.com/news-and-media/news-and-ir-materials/news-details.html?id=916351"},
+      {"text": "Dahl K, Toubro S, Dey S, et al. Amycretin, a novel, unimolecular GLP-1 and amylin receptor agonist administered subcutaneously: results from a phase 1b/2a randomised controlled study. The Lancet, June 21, 2025 (125 participants, 101 on amycretin; group sizes, adverse events, withdrawals, HbA1c). NCT06064006.", "url": "https://doi.org/10.1016/S0140-6736(25)01185-7"},
+      {"text": "Gasiorek A, Heydorn A, Gabery S, et al. Safety, tolerability, pharmacokinetics, and pharmacodynamics of the first-in-class GLP-1 and amylin receptor agonist, amycretin: a first-in-human, phase 1, double-blind, randomised, placebo-controlled trial. The Lancet, June 21, 2025 (144 participants). NCT05369390.", "url": "https://doi.org/10.1016/S0140-6736(25)01176-6"},
+      {"text": "Gasiorek A et al., oral amycretin first-in-human study, EASD Annual Meeting, September 2024 (12-week cohort: 16, 16 and 12 people; adverse-event rates by group; placebo-adjusted weight change), as reported by Healio, September 17, 2024.", "url": "https://www.healio.com/news/endocrinology/20240917/new-oral-obesity-drug-safe-linked-to-weight-loss-in-firstinhuman-study"},
+      {"text": "Dahl K et al. Poster 2002-LB, American Diabetes Association 85th Scientific Sessions, Diabetes 74 (Suppl 1), June 2025.", "url": "https://diabetesjournals.org/diabetes/article/74/Supplement_1/2002-LB/158365/2002-LB-Amycretin-a-Novel-Unimolecular-GLP-1-and"},
+      {"text": "American College of Cardiology, journal scan of the two Lancet amycretin papers (participant numbers, adverse-event counts, withdrawals), July 2, 2025.", "url": "https://www.acc.org/latest-in-cardiology/journal-scans/2025/07/02/14/43/oral-subcutaneous-amycretin"},
+      {"text": "Khoo B, Tan T. Linked editorial on amycretin, The Lancet, June 2025, as quoted by HCPLive, June 21, 2025.", "url": "https://www.hcplive.com/view/amycretin-data-at-ada-highlight-efficacy-safety-of-dual-agonist-obesity-therapy"},
+      {"text": "Fierce Biotech, Novo Nordisk plots phase 3 trials for amycretin (Q1 2026 start), June 13, 2025.", "url": "https://www.fiercebiotech.com/biotech/novo-nordisk-plots-phase-3-trials-next-gen-obesity-asset-amycretin"},
+      {"text": "Dailypharm (Korea), MFDS approval of the AMAZE 2 (type 2 diabetes, 630 people globally) and HF-POLARIS (5,610 people) trials of NNC0487-0111, February 27, 2026.", "url": "https://m.dailypharm.com/eng/user/news/7776"},
+      {"text": "Patsnap Synapse drug record for zenagamtide (quoting Novo Nordisk's September 16, 2026 press release, \"zenagamtide, formerly known as amycretin\", and the Lancet phase 2 type 2 diabetes paper of August 2026; registry entries NCT07668401, NCT07861100), accessed October 2026.", "url": "https://synapse.patsnap.com/drug/8123ee7b1d524b90b554c2152bbcd184"},
+      {"text": "Trial registrations: NCT06064006 (subcutaneous phase 1b/2a), NCT05369390 (oral phase 1), NCT06542874 (phase 2, type 2 diabetes), NCT07339423 (AMAZE 1), NCT07533175 (AMAZE 2), NCT07720271 (AMAZE 9), NCT07503210 (AMAZE 12), NCT07567001 (HF-POLARIS), NCT07861100 (AMBIENCE).", "url": "https://clinicaltrials.gov/study/NCT06064006"},
+      {"text": "Novo Nordisk preclinical paper: the effect of amycretin on body weight and metabolic dysfunction in mice and rats. eBioMedicine, 2025 (mechanism).", "url": "https://www.thelancet.com/journals/ebiom/article/PIIS2352-3964(25)00306-8/fulltext"}
+    ]
+  }
+}

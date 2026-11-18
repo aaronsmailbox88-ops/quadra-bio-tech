@@ -1,0 +1,307 @@
+{
+  "id": "ghrp-6",
+  "name": "GHRP-6",
+  "brands": "",
+  "maker": "None marketed; designed by Cyril Bowers' group (SmithKline code SKF-110679)",
+  "group": "research",
+  "pill": "Unapproved",
+  "overview": {
+    "headline": "The first growth-hormone-releasing peptide, built in a laboratory in the early 1980s and never approved anywhere.",
+    "lede": "GHRP-6 was designed by Cyril Bowers' group before anyone knew which receptor it worked on; that receptor later turned out to be the one for ghrelin, the hunger hormone. It was studied in the 1990s and 2000s as a GH stimulant and as part of a diagnostic test, then abandoned. Today it exists only as a \"research chemical\" and a doping agent.",
+    "stats": [
+      {
+        "num": "0",
+        "lbl": "approvals anywhere, for any use",
+        "src": "FDA-commissioned review of 13 drug registries, 2021"
+      },
+      {
+        "num": "45 min",
+        "lbl": "time to the GH peak after an intravenous dose in 17 healthy men; back to baseline by 3.5 hours",
+        "src": "Ilson et al., 1989"
+      },
+      {
+        "num": "3 of 21",
+        "lbl": "seized vials sold as growth hormone that were actually GHRP-6; only 5 were growth hormone",
+        "src": "Henninge et al., 2011"
+      }
+    ],
+    "mechanism": {
+      "intro": "A synthetic copy of ghrelin's signal at the receptor that releases GH and drives hunger.",
+      "parts": [
+        {
+          "name": "Ghrelin receptor (GHS-R1a)",
+          "text": "Activating it in the pituitary releases a short, dose-related burst of GH within the hour; it works best alongside the body's own GHRH."
+        },
+        {
+          "name": "Appetite",
+          "text": "The same receptor in the hypothalamus triggers hunger, the effect most often reported with GHRP-6."
+        },
+        {
+          "name": "Cortisol, prolactin, blood sugar",
+          "text": "GHRPs briefly raise cortisol and prolactin; FDA's safety review also notes possible effects on blood glucose through reduced insulin sensitivity."
+        }
+      ]
+    },
+    "more": {
+      "title": "More: a research tool that was never meant to be a drug",
+      "paras": [
+        "GHRP-6 was made as an analogue of the opioid peptide met-enkephalin that had lost its opioid activity but kept a surprising ability to release GH; the hunt for its receptor led to the discovery of ghrelin in 1999. Cuban researchers have studied it for heart and tissue protection, almost entirely in animals."
+      ]
+    }
+  },
+  "results": {
+    "headline": "What human studies measured: GH peaks and a diagnostic test. Nothing on body composition.",
+    "lede": "No placebo-controlled trial has tested GHRP-6 for muscle, fat, recovery, healing or ageing in people. The human record is single-dose hormone studies, diagnostic-test validations and one pharmacokinetic study.",
+    "chart": null,
+    "stats": [
+      {
+        "num": "0",
+        "lbl": "human trials of GHRP-6 as a treatment for any condition",
+        "src": "FDA-commissioned systematic review, 2021"
+      },
+      {
+        "num": "~350",
+        "lbl": "adults in the largest diagnostic-test validation (146 patients with pituitary disease, 203 controls)",
+        "src": "Leal et al., 2002"
+      }
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {
+          "b": "GH release (human).",
+          "t": "In 17 healthy men, intravenous GHRP-6 raised GH dose-dependently, peaking at 45 minutes and back to baseline by 210 minutes (Ilson 1989). It also worked when swallowed, with under 1% absorption (Hartman 1992)."
+        },
+        {
+          "b": "Diagnosis (human).",
+          "t": "GHRH plus GHRP-6 was validated as a test for adult GH deficiency in studies of 125 patients and 125 controls (Popovic 2000), 146 patients and 203 controls (Leal 2002) and 83 adults after brain injury (Castro 2007)."
+        },
+        {
+          "b": "Appetite (human).",
+          "t": "Hunger is the hallmark effect and is what the ghrelin receptor does; controlled food-intake studies exist for its sibling GHRP-2, none that we found for GHRP-6 itself."
+        },
+        {
+          "b": "Heart and tissue protection (animal).",
+          "t": "Cuban work reports protection in animal models of ischemia; we found no completed human trial."
+        },
+        {
+          "b": "Muscle, fat, healing, anti-ageing.",
+          "t": "No human data."
+        }
+      ]
+    },
+    "more": [
+      {
+        "title": "More: why a GH peak is not a GH treatment",
+        "paras": [
+          "A dose produces a GH burst lasting a few hours; IGF-1, the growth and repair signal, needs sustained GH to move. No multi-month study has shown repeated GHRP-6 raising IGF-1 or changing body composition, and its close relative hexarelin failed to change IGF-1, fat or lean mass over 16 weeks."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "Hunger, short hormone surges, and almost no long-term safety data.",
+    "lede": "What is known comes from single doses given in clinics; the diagnostic studies reported no side effects of note. Nobody has followed healthy adults through months of repeated use.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "Not measurable: no multi-dose human trial exists. In one diagnostic study of 49 patients and 20 controls, a single dose caused no side effects (Alaioubi 2009)."
+    },
+    "unique": {
+      "title": "Hunger, and FDA's flagged risks",
+      "text": "Strong hunger soon after a dose is the signature effect. FDA places GHRP-6 on its Category 2 list of compounding substances with significant safety risks, citing an immune-reaction risk for certain routes, possible effects on cortisol and on blood sugar through reduced insulin sensitivity, and limited safety information overall."
+    },
+    "more": [
+      {
+        "title": "More: what a GH-raising drug can do over time",
+        "paras": [
+          "Sustained GH can cause fluid retention, joint pain, carpal-tunnel-type tingling and higher blood sugar; GH-axis trials monitor for these and exclude active cancer because GH and IGF-1 can promote tumour growth. Whether repeated GHRP-6 produces enough GH to cause them has never been studied."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "Reliable GH release in people with a working pituitary, which is why it made a useful diagnostic test. No benefit beyond that has been shown in humans."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms that need a doctor",
+      "items": [
+        "Spreading redness, pus or fever at an injection site; hives, facial swelling or trouble breathing",
+        "Marked thirst, frequent urination or blurred vision; or shakiness, sweating and confusion",
+        "Severe or persistent abdominal pain",
+        "Tingling hands, swollen hands or feet, or new joint pain that does not settle"
+      ],
+      "note": "Get medical care and say exactly what product was used."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "One published pharmacokinetic study exists (Cabrales et al., 2013: nine healthy men, Cuba), but we could not read its half-life figure in the original paper, so no simulator is shown rather than copy a number second-hand. What is documented: GH peaks about 45 minutes after an intravenous dose and is back to baseline by about 3.5 hours.",
+    "stats": [
+      {
+        "num": "45 min",
+        "lbl": "time to the GH peak after an intravenous dose",
+        "src": "Ilson et al., 1989"
+      },
+      {
+        "num": "~3.5 h",
+        "lbl": "until GH is back to baseline (210 minutes)",
+        "src": "Ilson et al., 1989"
+      },
+      {
+        "num": "<1%",
+        "lbl": "oral absorption, which is why online products are injectables",
+        "src": "Hartman et al., 1992"
+      }
+    ],
+    "explain": [
+      {
+        "b": "A spike, not a plateau.",
+        "t": "GHRP-6 is cleared within hours; each dose makes one GH burst and nothing accumulates between doses."
+      },
+      {
+        "b": "Why that undercuts the claims.",
+        "t": "Muscle, fat and healing effects of GH depend on sustained IGF-1, which no human study has shown GHRP-6 raising."
+      }
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: why there is no chart",
+        "paras": [
+          "The level charts need a verified half-life and a trial dosing schedule; GHRP-6 has no treatment regimen, and we did not verify its half-life from the primary paper."
+        ]
+      },
+      {
+        "title": "More: what blood levels could not tell you anyway",
+        "paras": [
+          "Products sold as GHRP-6 are unverified: customs seizures have contained GHRP-6 in vials sold as growth hormone, and a German laboratory found a glycine-modified GHRP-6 analogue, never tested in any human, in black-market products."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "No trial is recruiting for GHRP-6 as a treatment; its human record is pharmacology and diagnostics.",
+    "lede": "GHRP-6's human studies were hormone experiments and test validations, mostly from 1989 to 2009. Nothing registered today would change its status.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: what the diagnostic studies involved",
+        "paras": [
+          "Participants received one intravenous injection of GHRH plus GHRP-6 in hospital, with blood drawn over the next hour or two to measure the GH peak, as a replacement for the risky insulin tolerance test. The studies say nothing about taking GHRP-6 repeatedly."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials that have been run",
+      "items": [
+        "Healthy men, 1989: intravenous GHRP-6 versus saline in 17 men; dose-dependent GH rise peaking at 45 minutes (Ilson et al.); oral GHRP-6 released GH despite under 1% absorption (Hartman 1992).",
+        "Diagnostic validations, 1995–2009: GHRH plus GHRP-6 in hundreds of adults with pituitary disease and controls; judged safe and reliable (Popovic 2000; Leal 2002; Castro 2007; Alaioubi 2009).",
+        "Pharmacokinetics, 2013: single doses in nine healthy men, Cuba (Cabrales et al.).",
+        "Not run: any placebo-controlled trial for muscle, fat, healing, heart protection or ageing."
+      ]
+    },
+    "find": {
+      "text": "Searching the public registry for \"GHRP-6\" returns historical diagnostic studies, not treatment trials.",
+      "term": "GHRP-6",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "Not approved anywhere. Not legally compoundable in the U.S. Banned in sport.",
+    "items": [
+      {
+        "tag": "no",
+        "label": "Canada",
+        "text": "No GHRP-6 product holds a Health Canada DIN. Health Canada's April 2026 advisory treats injectable peptides as prescription drugs and says a \"research use only\" label does not make them legal; it reports border seizures and won a permanent injunction against a Québec online seller in July 2026."
+      },
+      {
+        "tag": "no",
+        "label": "United States",
+        "text": "Never FDA-approved; an FDA-commissioned review (2021) found no approved product in 13 registries. FDA lists it in 503A Category 3 (nominated without adequate support; May 2026) and 503B Category 2 (significant safety risks; April 2026), so it cannot legally be compounded. FDA's August 24, 2026 warning letters to five online peptide sellers rejected \"research use only\" labelling."
+      },
+      {
+        "tag": "no",
+        "label": "Sport",
+        "text": "Prohibited at all times under WADA's 2026 Prohibited List (S2, GH-releasing peptides; GHRP-6 is named); GHRP findings have appeared in doping control since 2014."
+      }
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "What \"research use only\" really means",
+        "text": "Regulators judge a product by how it is sold, not its label: human-dose vials, bacteriostatic water, dosing calculators and health claims count as intended human use. Testing shows why that matters:",
+        "items": [
+          "Norway's doping laboratory tested 21 seized vials sold as growth hormone: only 5 were; 3 were GHRP-6 and others CJC-1295, sermorelin or ipamorelin (Henninge 2011). A 2007 seizure of unmarked \"salt\" from China turned out to be GHRP-6 (Henninge 2008).",
+          "Australia's sports drug testing laboratory analysed 200+ black-market peptide products: about 25% matched the label, 25% contained no peptide, and one \"growth hormone\" product contained pig insulin (Sport Integrity Australia).",
+          "A German anti-doping laboratory found Gly-GHRP-6, a chemically altered GHRP-6 never tested in humans, in black-market products (Krug 2018)."
+        ],
+        "note": "No regulator has checked any online GHRP-6 product for identity, strength, sterility or endotoxin."
+      },
+      {
+        "kind": "warn",
+        "title": "If someone has already used a product sold as GHRP-6",
+        "text": "See a doctor if any of these appear, and bring the vial:",
+        "items": [
+          "Fever, or redness and pus at an injection site",
+          "Marked thirst, frequent urination, or shakiness and confusion",
+          "Swelling of hands, feet or face; new joint pain or tingling hands",
+          "Severe abdominal pain or persistent vomiting"
+        ],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: U.S. peptide policy is moving, but not for GHRP-6",
+        "paras": [
+          "In July 2026 an FDA advisory committee recommended six other peptides for the compounding list, and on October 14–15, 2026 HHS sent a peptide \"Interim Access Policy\" to the White House; its terms are not public. GHRP-6 was not reviewed and stays on FDA's Category 2 list."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "text": "University of Maryland M-CERSI for FDA. Summary Report: Growth hormone-releasing peptide-6 (503B bulks evaluation), January 2021 (summarises Ilson 1989, Popovic 2000, Leal 2002, Petersenn 2002, Castro 2007, Alaioubi 2009; zero eligible treatment studies; no approved product in 13 registries).",
+        "url": "https://archive.hshsl.umaryland.edu/server/api/core/bitstreams/b11e0b7d-27cf-4e26-813d-2035f73c54f4/content"
+      },
+      {
+        "text": "Hartman ML, Farello G, Pezzoli SS, Thorner MO. Oral administration of growth hormone (GH)-releasing peptide stimulates GH secretion in normal men. JCEM 1992;74:1378–1384.",
+        "url": "https://doi.org/10.1210/jcem.74.6.1592884"
+      },
+      {
+        "text": "Cabrales A, Gil J, Fernández E et al. Pharmacokinetic study of Growth Hormone-Releasing Peptide 6 (GHRP-6) in nine male healthy volunteers. European Journal of Pharmaceutical Sciences 2013;48:40–46.",
+        "url": "https://doi.org/10.1016/j.ejps.2012.10.006"
+      },
+      {
+        "text": "U.S. FDA. Certain Bulk Drug Substances for Use in Compounding that May Present Significant Safety Risks (GHRP-6: 503B Category 2), content current April 22, 2026.",
+        "url": "https://www.fda.gov/Drugs/GuidanceComplianceRegulatoryInformation/PharmacyCompounding/ucm502449.htm"
+      },
+      {
+        "text": "U.S. FDA. Bulk Drug Substances Nominated for Use in Compounding Under Section 503A (GHRP-6 in Category 3), updated May 14, 2026.",
+        "url": "https://fda.gov/media/94155/download"
+      },
+      {
+        "text": "U.S. FDA. Warning letter to TXP Innovations LLC dba Tex Peptides, August 24, 2026 (one of five letters rejecting \"research use only\" labelling).",
+        "url": "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/txp-innovations-llc-dba-tex-peptides-735067-08242026"
+      },
+      {
+        "text": "Henninge J, Hullstein I, Hagelin G, Hemmersbach P. Identification of GHRP-6 in an unknown pharmaceutical preparation. Recent Advances in Doping Analysis 16, 2008. Henninge J et al. Unknown peptide preparations analysed in 2010. Recent Advances in Doping Analysis 19, 2011.",
+        "url": "https://www.dshs-koeln.de/fileadmin/redaktion/Institute/Biochemie/PDF/Proceedings/Proceedings_19/19_pp_231-234.pdf"
+      },
+      {
+        "text": "Krug O, Thomas A, Thevis M et al. Analysis of new growth promoting black market products (Gly-GHRP-6, Gly-GHRP-2, Gly-ipamorelin). Growth Hormone & IGF Research 2018;41:1–7.",
+        "url": "https://kups.ub.uni-koeln.de/17824"
+      },
+      {
+        "text": "Health Canada. Public advisory: Think twice before injecting peptides bought online, updated April 9, 2026. Fasken, Health Canada permanent injunction against Canlab Research, July 29, 2026.",
+        "url": "https://recalls-rappels.canada.ca/en/alert-recall/think-twice-injecting-peptides-bought-online-unauthorized-products-can-seriously-harm"
+      },
+      {
+        "text": "German Sport University Cologne. WADA Prohibited List 2026, S2 growth hormone-releasing factors (GHRP-6 named). Sport Integrity Australia, black-market peptide testing.",
+        "url": "https://www.dshs-koeln.de/en/universitaet/organisation/institute-einrichtungen/department-of-biochemistry/doping-substances/prohibited-classes-of-substances-and-methods/s2-peptide-hormones-growth-factors-etc"
+      }
+    ]
+  }
+}

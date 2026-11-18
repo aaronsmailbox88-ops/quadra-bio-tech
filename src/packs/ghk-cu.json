@@ -1,0 +1,199 @@
+{
+  "id": "ghk-cu",
+  "name": "GHK-Cu",
+  "brands": "",
+  "maker": "",
+  "group": "research",
+  "pill": "Unapproved",
+  "overview": {
+    "headline": "A copper-carrying tripeptide from human blood, familiar in face creams, now sold in vials for injection without a single human injection study.",
+    "lede": "GHK-Cu (glycyl-L-histidyl-L-lysine bound to a copper ion) was isolated from human blood plasma in 1973 by the biochemist Loren Pickart. As a cosmetic ingredient (INCI name Copper Tripeptide-1) it is legal in creams and serums in Canada, the U.S. and Europe. The injectable vials sold online as \"research chemicals\" are a different matter: no regulator has approved them, no human trial of injected GHK-Cu exists, and the FDA has flagged immune-reaction and impurity risks.",
+    "stats": [
+      {"num": "0", "lbl": "human trials of injected GHK-Cu found by regulators or by us", "src": "FDA bulk-substances review: 'limited data in humans'; October 2026"},
+      {"num": "1973", "lbl": "year the tripeptide was isolated from human plasma", "src": "Pickart & Thaler, Nature New Biology, 1973"},
+      {"num": "Sept 2023", "lbl": "when the FDA put injectable GHK-Cu on its 'significant safety risk' compounding list; removed in April 2026 pending a new review", "src": "FDA; Alliance for Pharmacy Compounding"}
+    ],
+    "mechanism": {
+      "intro": "Copper is a cofactor for enzymes that build and remodel skin; the peptide binds copper tightly and is thought to carry it into cells.",
+      "parts": [
+        {"name": "Copper delivery", "text": "GHK grips copper(II) and may hand it to enzymes such as lysyl oxidase, which cross-links collagen, and superoxide dismutase, an antioxidant defence. This is the lab-based explanation; it has not been traced in a living person."},
+        {"name": "Fibroblast signalling", "text": "In cultured skin cells GHK-Cu increases production of collagen, elastin and glycosaminoglycans, and in rodents it speeds wound closure. These findings, from the late 1980s onward, are the basis for its use in creams."},
+        {"name": "Gene-expression claims", "text": "The discoverer's group reports database analyses predicting that GHK alters the activity of thousands of human genes. That is a computer prediction from cell-line data, not a measured effect in people, and it comes from a researcher with a commercial interest in the peptide."}
+      ]
+    },
+    "more": {
+      "title": "More: cream versus vial",
+      "paras": [
+        "In a cream, GHK-Cu is a cosmetic ingredient, regulated for safety in topical use, and the small human studies that exist are topical ones. In a vial, it is an unapproved injectable drug. The FDA treats the two differently: in September 2023 it listed only the injectable form as a significant safety risk, leaving the non-injectable form \"under evaluation\" for compounding.",
+        "Most of what is written about GHK-Cu traces to Loren Pickart, who discovered it, founded a company selling copper-peptide skin products, and wrote the reviews that sellers quote. That does not make the science wrong, but it means the claims have had little independent scrutiny.",
+        "Everything on this page comes from regulators' documents and the published literature. Sources are listed under the Status tab."
+      ]
+    }
+  },
+  "results": {
+    "headline": "What the studies actually showed.",
+    "lede": "There is no placebo-controlled trial of injected GHK-Cu to chart. The human evidence that exists is for creams and gels on skin, and it is old, small and mostly industry-run.",
+    "chart": null,
+    "stats": [],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {"b": "In cells and animals.", "t": "GHK-Cu raises collagen and glycosaminoglycan production in cultured human fibroblasts, and topical GHK-Cu speeds wound closure in rats, mice and other animals in studies dating from the 1980s and 1990s, many by the discoverer's group or the company that licensed the molecule."},
+        {"b": "In people, on the skin.", "t": "Randomized trials in the 1990s tested a GHK-Cu gel on diabetic foot ulcers and venous leg ulcers, and small cosmetic studies in the late 1990s and 2000s compared copper-peptide creams with plain creams over about three months and reported firmer, thicker-looking skin. Most were sponsored by the makers, some appeared only as conference posters or book chapters, and the gel never became an approved drug. We have not reproduced their figures because we could not check them against the original papers."},
+        {"b": "In people, injected.", "t": "Nothing. The FDA found only \"limited data in humans\" for injectable GHK-Cu, meaning no trial by that route, and we found no registered or published study of injected GHK-Cu for any condition."},
+        {"b": "What is not shown.", "t": "Any effect on hair, joints, muscle, organs, ageing or longevity in a human being by any route. Those claims come from cell studies, animal studies or gene-database predictions."}
+      ]
+    },
+    "more": [
+      {
+        "title": "More: why cream results say nothing about injections",
+        "paras": [
+          "A cosmetic cream is applied to a small area and little of the peptide enters the bloodstream, so topical safety data cannot be read across to a dose injected into the whole body. Copper is essential in trace amounts and toxic in excess; no one has measured what injected GHK-Cu does to a person's copper balance, liver or immune system.",
+          "Animal and cell results transfer poorly in general: most treatments that work in rodents fail in human trials. For GHK-Cu the gap is wider than usual because the human studies that do exist used a different route, and because so much of the literature has a commercial author."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "Topical use has a long cosmetic track record. Injected use has no safety data at all.",
+    "lede": "No trial has measured side effects of GHK-Cu given by injection, so there are no percentages to show. What follows is what regulators have said and what cosmetic use tells us, which is less than it sounds.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "No data. There has never been a trial of injected GHK-Cu from which anyone could stop."
+    },
+    "unique": {
+      "title": "What has actually been reported",
+      "text": "For creams, cosmetic-safety assessments allow the ingredient and the topical studies reported no notable harm; that covers skin contact only. For injections, the FDA says compounded injectable GHK-Cu \"may pose risk for immunogenicity due to the potential for aggregation and peptide-related impurities\" and that human data are limited. Health Canada seized injectable GHK-Cu from a Calgary clinic in April 2025 and from an online seller in August 2025 and named it in its April 2026 advisory. In June 2026 Australia's TGA named GHK-Cu among unapproved peptides linked to reports of liver damage and severe allergic reactions; those are reports about the product category, not findings against GHK-Cu itself."
+    },
+    "more": [
+      {
+        "title": "More: what regulators flagged",
+        "paras": [
+          "Immune reactions. Injected peptides can provoke antibodies, especially when the peptide has clumped (aggregated) or carries manufacturing impurities. No immunogenicity study of GHK-Cu exists.",
+          "Quality. Research-chemical vials are not made to pharmaceutical standards and are not tested by any regulator. Health Canada warns they may be contaminated, mislabelled, wrong-strength or contain unlisted ingredients, and that a \"research use only\" label does not make them legal.",
+          "Copper. GHK-Cu delivers copper. Excess copper damages the liver and red blood cells; whether the amounts in injected products matter is unknown because no one has measured it."
+        ]
+      },
+      {
+        "title": "More: what has never been studied",
+        "paras": [
+          "Pharmacokinetics in humans, carcinogenicity, pregnancy, children, long-term use and drug interactions, for any route other than skin. The FDA plans to review injectable GHK-Cu at an advisory-committee meeting before February 2027, which will be the first public regulatory assessment of the evidence."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms doctors treat as urgent after an unapproved injection",
+      "items": [
+        "Swelling of the face, lips or throat, trouble breathing, hives or a spreading rash",
+        "Fever, spreading redness, warmth, pus or severe pain at an injection site",
+        "Yellowing of the skin or eyes, dark urine, pale stools, unusual tiredness or itching",
+        "Severe or persistent abdominal pain, vomiting",
+        "Fainting, a racing or irregular heartbeat, confusion"
+      ],
+      "note": "Anyone with these symptoms should get medical care right away and tell the clinician exactly what was injected."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "No human half-life has ever been measured for GHK-Cu by injection, so there is nothing honest to simulate. The only human measurements are of the natural peptide circulating in plasma, reported by its discoverer.",
+    "stats": [
+      {"num": "none", "lbl": "human pharmacokinetic studies of GHK-Cu by any route", "src": "No published human data as of October 2026"},
+      {"num": "not found", "lbl": "animal half-life in any published study we could verify", "src": "Literature and FDA documents reviewed, October 2026"},
+      {"num": "unknown", "lbl": "half-life, peak and absorption in humans; the discoverer reports that natural plasma levels fall with age, which has not been independently confirmed", "src": "Pickart reviews; no independent data"}
+    ],
+    "explain": [
+      {"b": "Why 'natural' is not 'safe to inject'.", "t": "GHK circulates in everyone's blood at tiny concentrations. An injected vial delivers far more than the body makes, bound to copper, with impurities nobody has measured. The natural level says nothing about what that does."},
+      {"b": "Why skin data do not help.", "t": "Topical studies measured skin appearance, not blood levels. There is no bridge from a cream to a dose in the bloodstream."}
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: what a proper study would require",
+        "paras": [
+          "Animal toxicology for the injected route, then a Phase 1 trial in healthy volunteers: a validated assay for the peptide and for copper, supervised single doses, timed blood draws to measure half-life and peak, and antibody testing for an immune response. None has been done. The FDA's advisory-committee review planned before February 2027 will say what, if anything, exists beyond what is on this page."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "Human studies exist for creams and gels. None exist for injections.",
+    "lede": "There is no injectable GHK-Cu trial to join, and no regulator-approved injectable product. Here is what has been run.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: the wound-gel programme",
+        "paras": [
+          "In the late 1980s and 1990s a U.S. company tested a topical GHK-Cu gel in randomized trials of chronic wounds: diabetic foot ulcers and venous leg ulcers. The results were mixed, the gel was never approved as a drug, and copper peptides moved into cosmetics instead. The published trials are small and decades old; we have not reproduced their numbers because we could not verify them against the original papers in preparing this page.",
+          "Since then the human literature consists of cosmetic studies of creams, typically a few dozen volunteers followed for about 12 weeks, several published only as meeting posters or book chapters."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials that have been run",
+      "items": [
+        "Topical GHK-Cu gel, diabetic foot ulcers: randomized trial, 1990s, small; not approved as a drug",
+        "Topical GHK-Cu gel, venous leg ulcers: randomized trial, 1990s, small; not approved as a drug",
+        "Copper-peptide face creams: small cosmetic studies of about 12 weeks, late 1990s to 2000s, several unpublished in peer-reviewed form",
+        "Injected GHK-Cu, any condition: none registered or published that we could find (October 2026)"
+      ]
+    },
+    "find": {
+      "text": "Search the registry for copper tripeptide or GHK-Cu; results are topical or cosmetic. The FDA's bulk-substances page and its planned advisory-committee review are the places to watch for any injectable assessment.",
+      "term": "GHK-Cu",
+      "extra": {"label": "FDA bulk drug substances list", "url": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks"}
+    }
+  },
+  "status": {
+    "headline": "Legal in a cream. Unapproved and illegal to sell for injection in Canada.",
+    "items": [
+      {"tag": "no", "label": "Canada: injectable unauthorized", "text": "Copper Tripeptide-1 is a permitted cosmetic ingredient. Injectable GHK-Cu is a prescription-class drug that Health Canada has never authorized, so selling it is illegal. Health Canada seized injectable GHK-Cu from a Calgary clinic (April 1, 2025) and from the online seller Canada Peptide (August 1, 2025), and named GHK-Cu in its public advisory of April 9, 2026."},
+      {"tag": "no", "label": "U.S.: cosmetic yes, injection no", "text": "No injectable GHK-Cu product is FDA-approved. On September 29, 2023 the FDA placed GHK-Cu for injectable routes in Category 2 of its compounding list (\"significant safety risks\"), citing immunogenicity, aggregation and impurities, while leaving non-injectable GHK-Cu under evaluation. In April 2026 it removed the injectable form from Category 2 after the nominations were withdrawn and said an advisory committee would review it before February 2027. As of mid-October 2026 that review has not happened and removal from Category 2 does not by itself make it eligible for compounding."},
+      {"tag": "soon", "label": "Sport: not named, check first", "text": "WADA's Prohibited List does not name GHK-Cu. Its S0 category covers any pharmacological substance not approved for human therapeutic use, which could capture an injected product; athletes should check with their anti-doping organisation before use."},
+      {"tag": "no", "label": "Australia", "text": "On June 19, 2026 the TGA and Australia's Chief Medical Officer named GHK-Cu in a warning about unapproved peptide products linked to liver damage, severe allergic reactions and hospitalisations. Unapproved injectable peptides are not on the Australian Register of Therapeutic Goods."}
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "What \"research use only\" means",
+        "text": "The label is a legal shield for the seller, not a safety standard. Health Canada says it does not make a product legal to sell or use, and no regulator checks what is in the vial.",
+        "items": [
+          "Health Canada warns research-chemical peptides may be contaminated, mislabelled, wrong-strength or contain unlisted ingredients; it has seized injectable GHK-Cu twice and obtained a court injunction against an online seller in June 2026.",
+          "The FDA's concern for injectable GHK-Cu is specifically about aggregated peptide and manufacturing impurities provoking immune reactions, problems that no certificate of analysis from a research-chemical seller is required to test for.",
+          "Australia's TGA reported in June 2026 that unapproved peptide products, GHK-Cu among those named, have been linked to liver damage and severe allergic reactions requiring hospital treatment."
+        ],
+        "note": "A cosmetic-grade ingredient is made for skin contact, not for injection; the two have different purity, sterility and endotoxin requirements."
+      },
+      {
+        "kind": "warn",
+        "title": "If someone has already used an unapproved product",
+        "text": "Health Canada and the TGA advise stopping, keeping the vial for identification, and seeing a doctor if any of these appear:",
+        "items": ["Unusual tiredness, yellow skin or eyes, dark urine, itching", "Swelling, hives, wheeze or trouble breathing", "Redness, heat, pus or severe pain at an injection site", "Unexplained bruising or bleeding"],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: the 2026 regulatory shuffle",
+        "paras": [
+          "In February 2026 the U.S. Health Secretary announced that most peptides on the FDA's Category 2 list, GHK-Cu included, would come off it. The FDA did so in April 2026 after the original nominations were withdrawn, and split the substances into two groups: seven went to a July 23–24, 2026 advisory committee, which narrowly recommended six of them against the FDA's own reviewers; five others, including injectable GHK-Cu, were set aside for a later committee meeting before February 2027.",
+          "Whatever that committee says, it is advisory. Listing a substance for compounding would require formal rulemaking and would permit pharmacies to compound it on prescription. It would not be approval, and it would not create the human trial data that do not exist today."
+        ]
+      }
+    ],
+    "sources": [
+      {"text": "FDA, Certain bulk drug substances for use in compounding that may present significant safety risks (GHK-Cu, injectable routes, under 'nominated but withdrawn': immunogenicity, aggregation, impurities, limited human data), current as of April 22, 2026.", "url": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks"},
+      {"text": "Alliance for Pharmacy Compounding, 503A categories update for September 2023 (GHK-Cu for injectable routes moved to Category 2 on September 29, 2023; non-injectable form remained Category 1).", "url": "https://join.a4pc.org/hubfs/PDFs/503A-Categories-Update-for-September-2023-FINAL.docx.pdf"},
+      {"text": "Goodwin, FDA signals potentially evolving stance toward compounding of certain peptides (April 15, 2026 removal from Category 2; GHK-Cu scheduled for later advisory review before February 2027), May 2026.", "url": "https://www.goodwinlaw.com/en/insights/blogs/2026/05/fda-signals-potentially-evolving-stance-toward-compounding-of-certain-peptides"},
+      {"text": "AJMC, 5 things to know about the FDA's peptide reversal (February 27, 2026 HHS announcement naming GHK-Cu; July 2026 committee votes), August 21, 2026.", "url": "https://ajmc.com/view/5-things-to-know-about-the-fda-s-peptide-reversal"},
+      {"text": "Health Canada, Public advisory: Think twice before injecting peptides bought online (names GHK-Cu), April 9, 2026.", "url": "https://recalls-rappels.canada.ca/en/alert-recall/think-twice-injecting-peptides-bought-online-unauthorized-products-can-seriously-harm"},
+      {"text": "Health Canada, Unauthorized injectable peptide drugs seized from Canada Peptide (lists GHK and GHK-Cu), August 1, 2025.", "url": "https://recalls-rappels.canada.ca/en/alert-recall/unauthorized-injectable-peptide-drugs-seized-and-sold-canada-peptide-may-pose-serious"},
+      {"text": "Health Canada, Unauthorized injectable peptide drugs seized from Optimum Wellness Centre, Calgary (lists GHK-Cu), April 1, 2025.", "url": "https://recalls-rappels.canada.ca/en/alert-recall/unauthorized-injectable-peptide-drugs-seized-optimum-wellness-centre-calgary-alberta"},
+      {"text": "Australian Government Department of Health / TGA, Concerns regarding the public health risks associated with unapproved peptide products (names GHK-Cu), June 19, 2026.", "url": "https://www.health.gov.au/news/concerns-regarding-the-public-health-risks-associated-with-unapproved-peptide-products"},
+      {"text": "CTV News / CP24, Peptides are the latest trend in the wellness industry (Health Canada position; June 2026 Quebec court injunction against Canlab Research), July 30, 2026.", "url": "https://www.cp24.com/news/canada/2026/07/30/peptides-are-the-latest-trend-in-the-wellness-industry-experts-warn-the-hype-outpaces-the-research/"},
+      {"text": "WADA, Prohibited List (S0, non-approved substances; GHK-Cu not named).", "url": "https://www.wada-ama.org/en/prohibited-list"},
+      {"text": "Pickart L, Thaler MM, Tripeptide in human serum which prolongs survival of normal liver cells and stimulates growth in neoplastic liver, Nature New Biology, 1973 (first isolation of GHK).", "url": ""},
+      {"text": "Maquart FX et al., Stimulation of collagen synthesis in fibroblast cultures by the tripeptide-copper complex glycyl-L-histidyl-L-lysine-Cu2+, FEBS Letters, 1988; Pickart L, Margolina A, Regenerative and protective actions of the GHK-Cu peptide in the light of the new gene data, International Journal of Molecular Sciences, 2018 (review by the discoverer; summarises the topical trials).", "url": ""}
+    ]
+  }
+}

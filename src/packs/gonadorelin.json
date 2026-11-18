@@ -1,0 +1,193 @@
+{
+  "id": "gonadorelin",
+  "name": "Gonadorelin (GnRH)",
+  "brands": "Factrel, Lutrepulse, Lutrelef (human, discontinued); Factrel, Cystorelin, Fertagyl (veterinary)",
+  "maker": "Ferring, Wyeth-Ayerst (historic human products); Zoetis and others (veterinary)",
+  "group": "approved",
+  "pill": "Approved (diagnostic; human products discontinued)",
+  "overview": {
+    "headline": "The brain's own ten-amino-acid signal to the pituitary, made synthetically. Once approved as a diagnostic test and a fertility pump drug; now mostly sold compounded to men on testosterone.",
+    "lede": "Gonadorelin is gonadotropin-releasing hormone (GnRH) with the natural sequence. Human products were approved decades ago in the U.S. and Canada, Factrel for diagnosis and Ferring's Lutrepulse pump for fertility, but have been withdrawn: Lutrepulse left the Canadian market in November 2024 after Ferring stopped making it worldwide. It remains approved for cattle. Since hCG became uncompoundable in 2020, U.S. clinics have prescribed compounded gonadorelin alongside testosterone to keep the testes working, a use with no controlled trials.",
+    "stats": [
+      {"num": "~4 min", "lbl": "half-life after intravenous injection (animal data; human estimates are also minutes)", "src": "EMA veterinary summary report"},
+      {"num": "0", "lbl": "controlled trials of gonadorelin added to testosterone therapy", "src": "No published trial found as of October 2026"},
+      {"num": "Nov 2024", "lbl": "when the last human gonadorelin product in Canada (Lutrepulse) was discontinued", "src": "Drug Shortages Canada report"}
+    ],
+    "mechanism": {
+      "intro": "GnRH is a pulse, not a level. The pituitary responds only if it arrives in bursts.",
+      "parts": [
+        {"name": "GnRH receptor", "text": "Each pulse makes the pituitary release LH and FSH, which drive testosterone, sperm and egg production. Given continuously, the same receptor shuts down; that is how the long-acting GnRH agonists (leuprolide and others) suppress hormones in prostate cancer."},
+        {"name": "Why the pump", "text": "Natural GnRH pulses every 60 to 120 minutes. The approved fertility use copied that with a portable pump. The drug itself is cleared within minutes."}
+      ]
+    },
+    "more": {
+      "title": "More: three different jobs",
+      "paras": [
+        "Diagnostic: a single intravenous dose with blood samples before and after shows whether the pituitary can respond (the GnRH stimulation test). Fertility: a pump giving a pulse about every 90 minutes restored ovulation in women with hypothalamic amenorrhea and sperm production in men with hypogonadotropic hypogonadism. Compounded add-on: U.S. clinics began using gonadorelin in 2020 as a substitute for hCG. It is not one; hCG acts on the testes directly, gonadorelin only on the pituitary.",
+        "Veterinary gonadorelin (Factrel, Cystorelin, Fertagyl) is approved for cattle breeding programs in North America and Europe.",
+        "Sources are under the Status tab."
+      ]
+    }
+  },
+  "results": {
+    "headline": "Proven as a pump for pituitary-origin infertility. Untested as an add-on to testosterone.",
+    "lede": "The only controlled human evidence is for pulsatile GnRH in people whose hypothalamus does not make it. None of it involved men taking testosterone.",
+    "chart": null,
+    "stats": [
+      {"num": "7 studies", "lbl": "of pulsatile GnRH versus gonadotropin injections in 420 men with congenital hypogonadotropic hypogonadism: similar sperm counts and pregnancy rates", "src": "Meta-analysis, see sources"}
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {"b": "Pump therapy.", "t": "In men with congenital hypogonadotropic hypogonadism, pulsatile GnRH started sperm production and achieved pregnancies at rates similar to gonadotropin injections (hCG plus FSH), with sperm appearing a few months sooner in a pooled analysis of seven studies."},
+        {"b": "Diagnosis.", "t": "A single dose distinguishes pituitary from hypothalamic causes of low hormones; this was the first approved use."},
+        {"b": "With testosterone.", "t": "We found no randomized or controlled study of gonadorelin given to men on testosterone therapy. The practice rests on pump-therapy biology and clinic experience, not trials."},
+        {"b": "An open question.", "t": "Testosterone suppresses LH at the pituitary as well as the hypothalamus, so a GnRH signal alone cannot be assumed to restore testicular stimulation. Nobody has measured whether it does."}
+      ]
+    },
+    "more": [
+      {
+        "title": "More: why hCG and gonadorelin are not interchangeable",
+        "paras": [
+          "hCG acts directly on the testes, like LH, so it works even when the pituitary is switched off by testosterone. Gonadorelin acts one step upstream, on the pituitary. If the pituitary's LH response is suppressed by testosterone, the signal may not get through. The small hCG studies on the hCG page therefore do not transfer to gonadorelin."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "Mild in the approved uses: headache, flushing, nausea, injection-site reactions. Unknown as a long-term add-on.",
+    "lede": "The human labels described infrequent reactions after single diagnostic doses or pump use. Nobody has collected side-effect data for compounded injections given for months.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "Not reported. No controlled trial of the compounded use exists."
+    },
+    "unique": {
+      "title": "Receptor shutdown",
+      "text": "GnRH's defining property is that pulses stimulate and steady exposure suppresses. The approved pump mimicked pulses. What a given compounded schedule does to a man's own LH over months has not been measured."
+    },
+    "more": [
+      {
+        "title": "More: what the historic labels and reports list",
+        "paras": [
+          "Headache, nausea, flushing, abdominal discomfort, light-headedness, and local irritation; rare allergic reactions have been reported. With pump therapy in women, multiple pregnancy and ovarian overstimulation. The veterinary summary describes gonadorelin as rapidly broken down into inactive fragments."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "In its approved pump use: restored ovulation, sperm production and natural testosterone in people with hypothalamic failure."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms trial teams treat as urgent",
+      "items": [
+        "Swelling of the face or throat, hives, wheezing (allergic reaction)",
+        "Fainting or severe light-headedness after an injection",
+        "Testicular pain or a lump",
+        "Severe or persistent headache"
+      ],
+      "note": "Anyone with these symptoms, prescribed or not, should get medical care right away."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "Gonadorelin is cleared in minutes. The EMA veterinary summary gives a half-life of about 4 minutes after intravenous injection and about 20 minutes after intramuscular injection in cows; reference databases give human figures in the same range (initial 2 to 10 minutes, terminal 10 to 40 minutes), but no current human label states one. A daily-dose chart has no meaning for a drug gone within the hour. The approved fertility use needed a pump pulsing about every 90 minutes.",
+    "stats": [
+      {"num": "~4 min", "lbl": "half-life after intravenous injection (animal data)", "src": "EMA Committee for Veterinary Medicinal Products, summary report"},
+      {"num": "~90 min", "lbl": "between pump pulses in the approved fertility use, copying the body's rhythm", "src": "Lutrepulse labelling (discontinued product)"},
+      {"num": "<1 h", "lbl": "for an injected dose to be essentially gone", "src": "From the half-life"}
+    ],
+    "explain": [
+      {"b": "Why minutes matter.", "t": "The pituitary reads GnRH as pulses. The approved pump re-created them; an occasional injection is a single pulse followed by nothing."},
+      {"b": "Why there is no ladder.", "t": "No approved product exists for the testosterone add-on use, so there is no label regimen to show."}
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: what this page cannot tell you",
+        "paras": [
+          "What a compounded or grey-market vial contains, or what any schedule does to a man's hormones. Only blood tests (LH, testosterone) and semen analysis can show that, and no study has published them for this use."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "Approved regimens were for diagnosis and pump fertility therapy. There is none for the add-on use.",
+    "lede": "Factrel's regimen was a single intravenous dose with timed blood samples. Lutrepulse was a pump worn for weeks under specialist care. Neither resembles what compounding pharmacies supply, and both products are gone from Canada and the U.S.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: how the pump trials were run",
+        "paras": [
+          "Women with hypothalamic amenorrhea and men with hypogonadotropic hypogonadism wore a portable pump delivering a pulse about every 90 minutes, with ultrasound or hormone and semen monitoring, until ovulation or sperm production occurred. The therapy was specialist-run and is no longer available in North America."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials that have been run",
+      "items": [
+        "Pulsatile GnRH in congenital hypogonadotropic hypogonadism: seven studies, 420 men, pooled in a meta-analysis; outcomes comparable to gonadotropin injections.",
+        "GnRH stimulation testing: decades of diagnostic use, the basis of Factrel's approval.",
+        "Gonadorelin with testosterone therapy: no randomized or controlled trial found as of October 2026."
+      ]
+    },
+    "find": {
+      "text": "Registry searches for \"gonadorelin\" return mostly veterinary and diagnostic studies, plus pulsatile GnRH in hypogonadotropic hypogonadism. Nothing for the testosterone add-on.",
+      "term": "gonadorelin",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "Approved for people once; now a cattle drug and a compounded prescription. Banned for male athletes.",
+    "items": [
+      {"tag": "no", "label": "Canada", "text": "No human gonadorelin product is currently marketed. Factrel was discontinued in 1999 and Ferring's Lutrepulse on November 26, 2024 (manufacturing line decommissioned; unavailable worldwide since June 2024). Veterinary gonadorelin is approved. Health Canada listed gonadorelin among unauthorized injectable peptides seized from Canada Peptide (August 1, 2025)."},
+      {"tag": "no", "label": "United States", "text": "Factrel and Lutrepulse are discontinued; no FDA-approved human gonadorelin is on the market. Compounded gonadorelin is supplied by 503A pharmacies on prescription. FDA's compounding advisory committee has been reviewing which peptides may be compounded (2026), and gonadorelin's position should be checked at the time of reading. Veterinary products (Factrel, Cystorelin, Fertagyl) are FDA-approved for cattle."},
+      {"tag": "no", "label": "Sport", "text": "Prohibited at all times in males under WADA's 2026 Prohibited List (S2.2.1 names gonadorelin)."}
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "Compounded versus grey-market gonadorelin",
+        "text": "A compounded product from a licensed pharmacy on a doctor's prescription is legal in the U.S. and is monitored by that doctor. Vials from peptide shops are not: Health Canada seized gonadorelin from an online seller in 2025, and \"research use only\" labels do not exempt them.",
+        "items": [
+          "There is no approved human reference product to test a vial against; potency and sterility are unverified.",
+          "FDA warning letters (2024–2026) treat marketing for testicular function or fertility as evidence of unapproved human drug use, regardless of disclaimers.",
+          "Health Canada (April 9, 2026): injectable peptides are prescription drugs; unauthorized sale is illegal."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "warn",
+        "title": "If someone is using it with testosterone",
+        "text": "This is a medical treatment that needs a prescriber. Ask for:",
+        "items": [
+          "LH, FSH and testosterone blood tests",
+          "A semen analysis if fertility is the goal",
+          "A review of the evidence-based alternatives with a urologist or endocrinologist"
+        ],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: why clinics switched to it in 2020",
+        "paras": [
+          "Until March 2020, U.S. compounding pharmacies made hCG for men on testosterone. When hCG became a biologic and lost compounding eligibility, clinics needed a substitute they could still compound. Gonadorelin, a small peptide and not a biologic, filled the gap. The substitution was regulatory, not scientific."
+        ]
+      }
+    ],
+    "sources": [
+      {"text": "Drug Shortages Canada, discontinuation report for Lutrepulse PWS 0.8 mg/vial (gonadorelin acetate, Ferring Inc., DIN 02046210), actual discontinuation November 26, 2024.", "url": "https://dev02.healthproductshortages.ca/history/246470"},
+      {"text": "DrugBank, Gonadorelin (DB00644): Canadian product history (Factrel 1976–1999; Lutrepulse from 1994), indications and pharmacokinetics.", "url": "https://www.drugbank.ca/r/DB00644"},
+      {"text": "European Medicines Agency, Committee for Veterinary Medicinal Products, Gonadotrophin releasing hormone (gonadorelin) summary report (structure, half-life about 4 minutes IV, veterinary uses).", "url": "https://ema.europa.eu/en/documents/mrl-report/gonadotrophin-releasing-hormone-gonadorelin-summary-report-committee-veterinary-medicinal-products_en.pdf"},
+      {"text": "Meta-analysis of pulsatile GnRH versus gonadotropin therapy in congenital hypogonadotropic hypogonadism (7 studies, 420 men), PubMed 32777865.", "url": "https://pubmed.ncbi.nlm.nih.gov/32777865/"},
+      {"text": "FDA, Notice to compounders: changes that affect compounding on March 23, 2020 (hCG transitions to biologic status; the reason clinics turned to gonadorelin).", "url": "https://www.fda.gov/drugs/human-drug-compounding/notice-compounders-changes-affect-compounding-march-23-2020"},
+      {"text": "Health Canada, public advisory: unauthorized injectable peptide drugs seized and sold by Canada Peptide (gonadorelin listed), August 1, 2025.", "url": "https://recalls-rappels.canada.ca/en/alert-recall/unauthorized-injectable-peptide-drugs-seized-and-sold-canada-peptide-may-pose-serious"},
+      {"text": "Health Canada, Think twice before injecting peptides bought online, April 9, 2026.", "url": "https://recalls-rappels.canada.ca/en/alert-recall/think-twice-injecting-peptides-bought-online-unauthorized-products-can-seriously-harm"},
+      {"text": "Mondaq, FDA balances peptide policy with enforcement against unlawful peptide sellers (August 2026 warning letters; 2026 compounding advisory committee review).", "url": "https://www.mondaq.com/fda-balances-peptide-policy-with-enforcement-against-unlawful-peptide-sellers/1845390"},
+      {"text": "World Anti-Doping Agency, 2026 Prohibited List, effective January 1, 2026 (S2.2.1).", "url": "https://www.wada-ama.org/en/prohibited-list"}
+    ]
+  }
+}

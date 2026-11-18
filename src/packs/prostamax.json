@@ -1,0 +1,270 @@
+{
+  "id": "prostamax",
+  "name": "Prostamax",
+  "brands": "",
+  "maker": "St Petersburg Institute of Bioregulation and Gerontology (V. Khavinson)",
+  "group": "research",
+  "pill": "Unapproved",
+  "overview": {
+    "headline": "A four-amino-acid peptide named for the prostate. We found no published prostate study of it in animals or people, only a test on elderly blood cells.",
+    "lede": "Prostamax is the Khavinson institute's tetrapeptide Lys-Glu-Asp-Pro, listed in the institute's tables as a regulator of prostate function. The only peer-reviewed experiment we could retrieve is a 2004 chromatin study on blood cells from people aged 75–88. It is not a registered medicine anywhere.",
+    "stats": [
+      {
+        "num": "4",
+        "lbl": "amino acids: Lys-Glu-Asp-Pro",
+        "src": "Khavinson 2016, 2020"
+      },
+      {
+        "num": "1",
+        "lbl": "peer-reviewed experiment on this peptide we could retrieve, on elderly donors' blood cells, not prostate",
+        "src": "Khavinson, Lezhava, Malinin 2004"
+      },
+      {
+        "num": "0",
+        "lbl": "human studies in prostate disease of any design",
+        "src": "PubMed, patents, institute publications and registries, Oct 2026"
+      }
+    ],
+    "mechanism": {
+      "intro": "A short peptide the institute assigns to the prostate, on the model of its licensed prostate extract Prostatilen.",
+      "parts": [
+        {
+          "name": "The bioregulator idea",
+          "text": "The 2016 computer model places Prostamax on the DNA sequence \"attc\" with \"strong\" predicted binding. A docking calculation, not a measurement in prostate tissue."
+        },
+        {
+          "name": "What was actually tested",
+          "text": "In cultured blood cells from people aged 75–88, Prostamax, with Epithalon and Livagen, loosened the tightly packed heterochromatin around the centre of chromosome 1 and activated ribosomal genes, which the institute treats as cellular rejuvenation. The 2020 monograph lists Prostamax as \"regulating prostate function\" and gives no data; the institute's U.S. patent portfolio contains no Prostamax patent."
+        }
+      ]
+    },
+    "more": {
+      "title": "More: Prostamax versus Prostatilen",
+      "paras": [
+        "Prostatilen (also sold as Samprost and Vitaprost) is a cattle-prostate extract licensed in Russia in 1992 with Russian clinical studies behind it. Prostamax is a synthetic tetrapeptide designed from the extract's composition and has neither. Vendor pages routinely borrow the extract's record for the peptide."
+      ]
+    }
+  },
+  "results": {
+    "headline": "A chromatin change in a dish. Nothing on the prostate that we could verify.",
+    "lede": "The vendor claim is prostate health. The retrievable evidence is one in-vitro experiment in which Prostamax was one of five peptides tested on elderly people's blood cells.",
+    "chart": null,
+    "stats": [
+      {
+        "num": "75–88",
+        "lbl": "age range of the donors whose blood cells were exposed to Prostamax in the only retrievable experiment",
+        "src": "Khavinson, Lezhava, Malinin 2004"
+      }
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {
+          "b": "In vitro.",
+          "t": "Blood cells from people aged 75–88: Prostamax, Epithalon and Livagen decondensed the pericentromeric heterochromatin of chromosome 1; all five peptides tested activated ribosomal genes (2004; donor numbers not in the abstract). A 2012 Georgian Medical News paper on the same theme is indexed but was not retrieved."
+        },
+        {
+          "b": "Animals.",
+          "t": "Secondary sources cite a 2013 Russian report of Prostamax in rats with chemically induced prostatitis. We could not retrieve it and report no result from it. The institute's 2013 review of its animal work does not mention Prostamax."
+        },
+        {
+          "b": "Russian human reports.",
+          "t": "None found. The institute's 2014 clinical review does not mention Prostamax, and it has no patent describing human data."
+        }
+      ]
+    },
+    "more": [
+      {
+        "title": "More: why a chromatin marker is not a prostate result",
+        "paras": [
+          "Prostamax did something to chromosome 1 in a dish. That tells a buyer nothing about urinary symptoms, PSA or prostate size. The institute's own reviews, generous to its products, give Prostamax no clinical paragraph at all."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "No safety data in people, and none in animals that we could retrieve.",
+    "lede": "Prostamax has no U.S. patent with toxicity testing, no published human exposure and no adverse-event report.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "Not measurable: no trial has been run and no human report exists."
+    },
+    "unique": {
+      "title": "What is actually known",
+      "text": "Nothing. A peptide sold to men for prostate health has never had its effect on PSA, urinary symptoms or hormones measured in a man."
+    },
+    "more": [
+      {
+        "title": "More: what a trial would monitor for",
+        "paras": [
+          "Urinary symptoms, PSA and prostate imaging, and the possibility that a growth-promoting peptide affects a gland in which cancer is common; immune reactions."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "In elderly blood cells in a dish: a chromatin change the institute reads as rejuvenation. In prostate tissue, animals or men: nothing measured."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms a doctor should see promptly",
+      "items": [
+        "Spreading redness, swelling or pus at an injection site, or fever and chills after an injection",
+        "Hives, swelling of the face or throat, trouble breathing",
+        "Yellowing of the skin or eyes, dark urine",
+        "Blood in the urine, inability to pass urine, or fever with pelvic pain"
+      ],
+      "note": "No trial has defined this peptide's own danger signs; these relate to an unverified product."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "No one has measured Prostamax in a person's blood; no half-life or absorption figure exists for it in any species. There is nothing to build a curve from.",
+    "stats": [
+      {
+        "num": "None",
+        "lbl": "human half-life; never measured",
+        "src": "No PK study found, Oct 2026"
+      },
+      {
+        "num": "4",
+        "lbl": "amino acids long (Lys-Glu-Asp-Pro)",
+        "src": "Khavinson 2016"
+      },
+      {
+        "num": "0",
+        "lbl": "toxicity or pharmacokinetic studies in any species",
+        "src": "PubMed, patents, institute publications and registries, Oct 2026"
+      }
+    ],
+    "explain": [
+      {
+        "b": "Why there is no chart.",
+        "t": "The simulator on other pages needs a measured half-life; none exists for Prostamax."
+      },
+      {
+        "b": "Why the oral claim is contested.",
+        "t": "Pharmacologists expect peptides this short to be digested by gut and blood enzymes; the institute says they are absorbed intact. Nothing in people settles it."
+      }
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: what this page cannot tell you",
+        "paras": [
+          "What is in a product sold as Prostamax, or what repeated use does: no independent analysis exists, and no study has followed anyone beyond a few weeks."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "No clinical trial, registered or unregistered, could be found.",
+    "lede": "Prostamax has never been given to people in any published study. The Russian clinical record vendors point to belongs to Prostatilen, the extract.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: how the existing study was run",
+        "paras": [
+          "Blood cells from elderly donors were cultured with the peptide and their chromosomes examined for heterochromatin and ribosomal-gene changes. That is the entire retrievable experimental record for this peptide."
+        ]
+      }
+    ],
+    "running": {
+      "title": "No registered trials",
+      "items": [
+        "No clinical trial of Prostamax on ClinicalTrials.gov or any registry we could find (October 2026).",
+        "No Russian clinical report of Prostamax, controlled or uncontrolled, was found."
+      ]
+    },
+    "find": {
+      "text": "Search the registry for \"Prostamax\" and its sequence \"KEDP\". We found no registered trial.",
+      "term": "Prostamax",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "Not approved anywhere, including Russia. Do not confuse it with Prostatilen.",
+    "items": [
+      {
+        "tag": "no",
+        "label": "Canada",
+        "text": "Never authorised by Health Canada as a medicine or natural health product (October 2026)."
+      },
+      {
+        "tag": "no",
+        "label": "United States",
+        "text": "Not FDA-approved; absent from FDA's 503A compounding category list of 14 May 2026."
+      },
+      {
+        "tag": "no",
+        "label": "Russia",
+        "text": "Not a registered medicine; not among the institute's six licensed products, and no Russian registration of any kind found."
+      }
+    ],
+    "cards": [
+      {
+        "kind": "warn",
+        "title": "What a \"bioregulator\" claim rests on",
+        "text": "The claim is that a peptide copied from an organ extract reaches that organ and switches on its genes. For Prostamax the support is:",
+        "items": [
+          "Computer docking models, test-tube DNA work and cell cultures from one institute; no study has tracked one of these peptides into a human organ.",
+          "Prostatilen, the prostate extract this peptide was copied from, is a licensed Russian medicine. That licence covers a different product."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "crit",
+        "title": "What \"research use only\" means",
+        "text": "A \"research use only\" label is a legal device, not a safety rating. No regulator in Canada or the U.S. has checked what is in a vial sold as Prostamax, and no toxicology or purity data have been filed in the West.",
+        "items": [
+          "Prostamax is not even registered as a food supplement in Russia as far as we could find."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "soft",
+        "title": "Symptoms to take to a doctor",
+        "text": "If any of these appear after using such a product, see a doctor and bring the product:",
+        "items": [
+          "Fever, chills, or a hot, swollen injection site",
+          "Hives, swelling of the face or throat, trouble breathing",
+          "Yellowing of the skin or eyes, dark urine",
+          "Blood in the urine, inability to pass urine, or fever with pelvic pain"
+        ],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: the Khavinson peptide family",
+        "paras": [
+          "Vladimir Khavinson (1946–2024) directed the St Petersburg Institute of Bioregulation and Gerontology, which made animal-organ extracts from the 1970s and then designed two- to four-amino-acid peptides from each extract's amino-acid make-up, naming them after target organs. Six products became licensed medicines in the USSR or Russia: Thymalin (1982), Thymogen and Epithalamin (1990), Prostatilen (1992), Cortexin and Retinalamin (1999). The synthetic organ-named peptides sold online are not among them, and none appears in an international trial registry."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "text": "Khavinson VK, Lezhava TA, Malinin VV. Effects of short peptides on lymphocyte chromatin in senile subjects. Bull Exp Biol Med 2004;137:78–81.",
+        "url": "https://link.springer.com/article/10.1023/B:BEBM.0000024393.40560.05"
+      },
+      {
+        "text": "Khavinson VKh, Lin'kova NS, Tarnovskaya SI. Short peptides regulate gene expression. Bull Exp Biol Med 2016;162(2): sequence table and modelled DNA binding sites.",
+        "url": "https://khavinson.info/assets/files/skan/2016-khavinson_lin_tarn.pdf"
+      },
+      {
+        "text": "Khavinson VKh. Peptides, Genome, Aging. Russian Academy of Sciences, 2020: peptide table; the six institute products licensed as medicines.",
+        "url": "https://new.ras.ru/upload/iblock/333/b7wjz691315010b39o8ja61gl78y062c.pdf"
+      },
+      {
+        "text": "Khavinson VKh, Kuznik BI, Ryzhak GA. Peptide bioregulators: a new class of geroprotectors. Report 2: clinical trials. Adv Gerontol 2014;4(4):346–361.",
+        "url": "https://khavinson.info/assets/files/2014-Khavinson_Kuznik.pdf"
+      },
+      {
+        "text": "U.S. FDA, 503A bulk drug substances category list, updated 14 May 2026.",
+        "url": "https://fda.gov/media/94155/download"
+      }
+    ]
+  }
+}

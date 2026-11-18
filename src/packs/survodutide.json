@@ -1,0 +1,436 @@
+{
+ "id": "survodutide",
+ "name": "Survodutide",
+ "brands": "",
+ "maker": "Boehringer Ingelheim (licensed from Zealand Pharma)",
+ "group": "trials",
+ "pill": "Investigational",
+ "overview": {
+  "headline": "One weekly injection that works on two hormones: GLP-1 for appetite and glucagon for the liver.",
+  "lede": "Survodutide (BI 456906) is an experimental medicine from Boehringer Ingelheim, licensed from Denmark's Zealand Pharma. Two of its main Phase 3 obesity trials reported in 2026, but no regulator anywhere has approved it. The only legal way to receive it today is inside a clinical trial.",
+  "stats": [
+   {
+    "num": "16.6%",
+    "lbl": "average weight loss on 6.0 mg after 76 weeks, for people who stayed on treatment",
+    "src": "SYNCHRONIZE-1, adults without diabetes"
+   },
+   {
+    "num": "83%",
+    "lbl": "of people with the liver disease MASH whose liver improved on 4.8 mg (placebo: 18%)",
+    "src": "Phase 2 liver trial, NEJM 2024"
+   },
+   {
+    "num": "~1 in 4",
+    "lbl": "stopped the drug because of side effects in the Phase 2 and Phase 3 obesity trials",
+    "src": "About 1 in 20 on placebo"
+   }
+  ],
+  "mechanism": {
+   "intro": "One molecule switches on two receptors your body already uses to manage food and fuel.",
+   "parts": [
+    {
+     "name": "GLP-1",
+     "text": "Slows stomach emptying, signals fullness to the brain, and raises insulin when blood sugar is high. The same target as semaglutide."
+    },
+    {
+     "name": "Glucagon",
+     "text": "The second piece. Glucagon acts on the liver, and Boehringer's stated aim is to burn liver fat and raise energy use alongside the appetite effect. It is also the likely reason heart rate rises slightly on the drug."
+    }
+   ]
+  },
+  "more": {
+   "title": "More: where it sits among the GLP-1 drugs",
+   "paras": [
+    "Semaglutide (Wegovy, Ozempic) acts on one receptor. Tirzepatide (Zepbound, Mounjaro) acts on two, GLP-1 and GIP. Survodutide also acts on two, but its second target is glucagon rather than GIP. Retatrutide, still in development, acts on all three.",
+    "Boehringer's name for the chemistry is \"glucagon/GLP-1 receptor dual agonist\". It is a modified glucagon-type peptide with a C18 fatty-acid side chain added to make it last long enough for one injection a week under the skin. It came out of a Zealand Pharma and Boehringer collaboration; Zealand licensed it to Boehringer, which runs all development and would sell it if approved.",
+    "Everything on this page comes from Boehringer's and Zealand's published trial announcements, peer-reviewed papers, trial protocols and registry entries. Sources are listed under the Status tab."
+   ]
+  }
+ },
+ "results": {
+  "headline": "What people in the trials lost.",
+  "lede": "Average weight change at the highest dose in each trial (4.8 mg weekly in Phase 2, 6.0 mg weekly in Phase 3), compared with placebo. Every group also received diet and activity counselling.",
+  "chart": {
+   "metric": "weight",
+   "legend": [
+    "Survodutide, highest dose",
+    "Placebo"
+   ],
+   "rows": [
+    {
+     "name": "Phase 2 obesity",
+     "meta": "46 weeks · obesity or overweight, no diabetes · 387 people",
+     "drug": -18.7,
+     "placebo": -2.0,
+     "tip": "Survodutide 4.8 mg: −18.7% (actual-treatment analysis); placebo −2.0%"
+    },
+    {
+     "name": "SYNCHRONIZE-1",
+     "meta": "76 weeks · obesity or overweight, no diabetes · 725 people",
+     "drug": -16.6,
+     "placebo": -3.2,
+     "tip": "Survodutide 6.0 mg: −16.6% (−17.8 kg)"
+    },
+    {
+     "name": "SYNCHRONIZE-2",
+     "meta": "76 weeks · obesity or overweight plus type 2 diabetes · 755 people",
+     "drug": -13.1,
+     "placebo": -3.1,
+     "tip": "Survodutide, up to −13.1% (highest dose, 6.0 mg)"
+    }
+   ],
+   "max": 20,
+   "note": "Figures are the trials' \"efficacy estimand\" (Phase 2: \"actual treatment\" analysis): what happened for people who stayed on treatment. Counting everyone randomised, including those who stopped early, the results were smaller: Phase 2 4.8 mg −14.9% vs −2.8%; SYNCHRONIZE-1 6.0 mg −13.0% vs −5.4% (3.6 mg: −12.2%). SYNCHRONIZE-2 figures for everyone randomised were not in the public announcement."
+  },
+  "stats": [
+   {
+    "num": "85.1%",
+    "lbl": "of people on survodutide lost at least 5% of their weight in SYNCHRONIZE-1, against 38.8% on placebo",
+    "src": "Efficacy estimand, 76 weeks"
+   },
+   {
+    "num": "28.5%",
+    "lbl": "of people on 6.0 mg lost 20% or more of their weight, against 6.6% on placebo",
+    "src": "SYNCHRONIZE-1, NEJM 2026"
+   }
+  ],
+  "beyond": {
+   "title": "Beyond the scale",
+   "items": [
+    {
+     "b": "Liver disease (MASH).",
+     "t": "In a 48-week Phase 2 trial of 295 people with biopsy-proven MASH, liver inflammation improved without fibrosis getting worse in up to 83% on 4.8 mg versus 18% on placebo (people with paired biopsies). Counting everyone assigned, it was 62% versus 14%. Fibrosis improved by at least one stage in 34% to 36% versus 22%."
+    },
+    {
+     "b": "Liver fat.",
+     "t": "In an MRI sub-study of SYNCHRONIZE-1 (25 people per arm), liver fat fell 63.1% on 6.0 mg versus 24.5% on placebo, and visceral (belly) fat fell 34.0% versus 11.8%. Lean tissue made up no more than about 10.8% of what was lost."
+    },
+    {
+     "b": "Blood sugar.",
+     "t": "In SYNCHRONIZE-2 (type 2 diabetes), A1C fell by up to 1.21 percentage points from 7.4%, against 0.03 on placebo, and up to 29.5% of people returned to a normal A1C (below 5.7%) versus 4.0% on placebo. Waist size fell 11.1 cm versus 3.5 cm."
+    },
+    {
+     "b": "Blood pressure.",
+     "t": "In the Phase 2 obesity trial, systolic pressure fell up to 8.7 mmHg (3.6 mg) versus 2.5 on placebo, and diastolic up to 4.8 mmHg (4.8 mg) versus 1.9."
+    }
+   ]
+  },
+  "more": [
+   {
+    "title": "More: did it protect the heart?",
+    "paras": [
+     "Not known yet. SYNCHRONIZE-1 recorded no deaths and no adjudicated major cardiovascular events in the survodutide groups (one ischemic stroke occurred on placebo), but a 76-week obesity trial is too small to answer the question. A dedicated cardiovascular outcomes trial, SYNCHRONIZE-CVOT, in people with heart disease, kidney disease or cardiovascular risk factors is the study that will. In October 2026 Boehringer said it expects to present those results later in 2026.",
+     "One oddity of SYNCHRONIZE-1: the placebo group lost 5.4% when everyone was counted, more than the 2% to 3% the trial was designed around. More than 16% of placebo participants reported using a GLP-1 medicine they were not supposed to take during the trial."
+    ]
+   },
+   {
+    "title": "More: the Phase 3 liver trial (SYNCHRONIZE-MASLD)",
+    "paras": [
+     "A 48-week Phase 3 trial in adults with obesity and fatty liver disease (MASLD or MASH) was presented at the American Diabetes Association meeting in June 2026 and published in Nature Medicine. Boehringer reported that up to 84.2% of people on survodutide cut their liver fat by at least 30% (placebo: 24.3%), 61.0% brought liver fat below 5% (placebo: 5.7%), and weight fell up to 12.2% versus 1.0%. The Nature Medicine paper reports lower headline figures (68.5% versus 28.6% reaching the 30% liver-fat target; weight −8.7% versus −1.4%), so the company's \"up to\" numbers should be read as the best case among the trial's analyses. About 20% on survodutide stopped because of side effects, versus 4% on placebo."
+    ]
+   }
+  ]
+ },
+ "effects": {
+  "headline": "Mostly stomach-related, clustered in the dose-climbing weeks, and a high drop-out rate.",
+  "lede": "Nausea, vomiting, constipation and diarrhea were the main side effects in every trial. They were most frequent in the first ten weeks, while the dose was being raised every two weeks or so, and they were the main reason people stopped.",
+  "chart": {
+   "eyebrow": "Phase 2 obesity trial, 46 weeks · share of people affected",
+   "legend": [
+    "Survodutide 4.8 mg",
+    "Placebo"
+   ],
+   "rows": [
+    {
+     "name": "Nausea",
+     "drug": 64,
+     "placebo": 20
+    },
+    {
+     "name": "Vomiting",
+     "drug": 35,
+     "placebo": 5
+    },
+    {
+     "name": "Constipation",
+     "drug": 26,
+     "placebo": 5
+    },
+    {
+     "name": "Diarrhea",
+     "drug": 20,
+     "placebo": 10
+    }
+   ],
+   "max": 70,
+   "note": "The lowest dose had fewer: on 0.6 mg, nausea was 34% and vomiting 9%. The 2.4 mg and 3.6 mg groups looked much like 4.8 mg (nausea 65% and 62%). Symptom-by-symptom rates from the Phase 3 trials were not in the public announcements."
+  },
+  "disc": {
+   "title": "Stopping because of side effects",
+   "text": "In the Phase 2 obesity trial, 29% of people assigned to 4.8 mg stopped the drug because of side effects, against 4% on placebo; across all survodutide doses it was 25% (76 of 309). Among people who actually reached and stayed on 4.8 mg, the figure was 9.3%. In the Phase 3 trials it stayed high: in SYNCHRONIZE-1, 17.8% on 3.6 mg and 20.2% on 6.0 mg quit because of stomach symptoms alone (placebo: 2.9%), and about 24% to 25% quit for any side effect (placebo: about 5.4%). In SYNCHRONIZE-2 the stomach-related figure was 18% versus 1.2%. Boehringer attributes most of this to the speed of the dose climb and says newer trials use a slower, more flexible one."
+  },
+  "unique": {
+   "title": "Glucagon and the heart rate",
+   "text": "Switching on the glucagon receptor tends to speed the heart. In the Phase 2 obesity trial, resting heart rate at week 46 was up 2.7 beats per minute on survodutide (all doses) versus 0.1 on placebo, and no dose group averaged more than a 10-beat rise. In the Phase 2 liver trial the rise was 2.4 to 4.2 beats versus 1.6, and in SYNCHRONIZE-1 it was 3.2 to 3.5 beats at week 76. Boehringer's protocol summary of the early multiple-dose study lists heart-rate increase and sinus tachycardia (a fast but regular rhythm, in 8% of people) among the expected effects. Glucagon can also raise blood sugar, but in the diabetes trial A1C fell."
+  },
+  "more": [
+   {
+    "title": "More: what the trials monitor for",
+    "paras": [
+     "Pancreas. SYNCHRONIZE-1 reported no confirmed acute pancreatitis, pancreatic cancer or thyroid cancer, but raised pancreatic enzymes without symptoms were slightly more common on survodutide. Enzyme levels are checked throughout.",
+     "Serious events overall. In the Phase 2 obesity trial, serious adverse events were 4% on survodutide and 7% on placebo; in the Phase 2 liver trial, 8% versus 7%.",
+     "Class risks. Drugs in this family carry warnings for pancreatitis, gallbladder problems, dehydration from vomiting or diarrhea (which can strain the kidneys), low blood sugar when combined with insulin or sulfonylureas, and a thyroid tumour signal seen in rodents. Trial participants are screened and monitored for these, and the heart-rate effect above is tracked throughout.",
+     "Pregnancy. Not studied. Trials exclude pregnancy and require contraception."
+    ]
+   },
+   {
+    "title": "More: the good side effects",
+    "paras": [
+     "Lower blood pressure, a smaller waist, a large drop in liver fat and, in people with type 2 diabetes, lower A1C were consistent across the trials. In the liver trials the fall in liver fat was proportionally bigger than the fall in weight, which Boehringer attributes to glucagon acting directly on the liver."
+    ]
+   }
+  ],
+  "urgent": {
+   "title": "Symptoms trial teams treat as urgent",
+   "items": [
+    "Severe or persistent abdominal pain, with or without vomiting",
+    "Vomiting or diarrhea that will not stop, or not being able to keep fluids down",
+    "Yellowing of the skin or eyes, dark urine, pale stools",
+    "A racing or irregular heartbeat, chest pain, fainting",
+    "Swelling of the face or throat, trouble breathing, severe rash"
+   ],
+   "note": "Anyone with these symptoms, in a trial or not, should get medical care right away."
+  }
+ },
+ "levels": {
+  "pk": null,
+  "nopk": "No level chart is shown for survodutide, because its published human pharmacokinetics could not be verified for this page. A Phase 1 paper exists (Jungnik and colleagues, Diabetes, Obesity and Metabolism, 2023) but its full text was not accessible. Boehringer's own trial protocol summarises the early single-dose study as a half-life of 10 to 15 hours and a peak 9 to 60 hours after injection at doses of 0.3 to 1.2 mg, and refers to an unpublished Investigator's Brochure for what happens with repeated weekly doses. A half-life that short is hard to square with once-weekly dosing without the multiple-dose data, so rather than draw a curve from uncertain numbers, this page reports what the sources say and nothing more.",
+  "stats": [
+   {
+    "num": "10–15 h",
+    "lbl": "half-life after a single low dose, as summarised in Boehringer's trial protocol",
+    "src": "Phase 1 single-dose study, doses 0.3 to 1.2 mg; not independently verified"
+   },
+   {
+    "num": "9–60 h",
+    "lbl": "time to peak level after an injection, same summary",
+    "src": "Boehringer protocol for NCT04771273"
+   },
+   {
+    "num": "2 weeks",
+    "lbl": "between dose steps in the Phase 2 liver trial protocol, from 0.3 mg to 6.0 mg over 22 weeks",
+    "src": "Boehringer protocol for NCT04771273"
+   }
+  ],
+  "explain": [
+   {
+    "b": "Why there is no curve here.",
+    "t": "The model behind these charts needs a measured half-life and time to peak from a published study or label. For survodutide those numbers sit in a paper and a sponsor document that could not be checked, so the chart is left out rather than guessed."
+   },
+   {
+    "b": "Why steps were two weeks apart in the trials.",
+    "t": "The protocols raised the dose in small increments (0.3 mg, later 0.6 mg) every two weeks to limit nausea. The Phase 2 authors still called this rapid and linked it to the high drop-out rate, and Boehringer says newer trials use a more flexible, slower climb."
+   },
+   {
+    "b": "Why side effects cluster in the escalation phase.",
+    "t": "In the Phase 2 obesity trial, stomach symptoms were most frequent in the first ten weeks, while doses were still rising. In the Phase 3 trials most people who quit did so during escalation rather than on a steady dose."
+   }
+  ],
+  "showTable": true,
+  "more": [
+   {
+    "title": "More: what is known about survodutide levels",
+    "paras": [
+     "Boehringer's protocol for its Phase 2 liver trial carries a short summary of the first human study: single injections of 0.3, 0.5 and 1.2 mg gave peak blood levels of 7, 13 and 34 nanomolar, rising roughly in proportion to dose, with the peak reached 9 to 60 hours after the injection and a half-life of 10 to 15 hours. In the Phase 2 diabetes trial, trough levels also rose roughly in proportion to dose and levelled off by week 8 to 12 of the dose climb.",
+     "Those are the only public numbers found for this page. The full Phase 1 paper and the Investigator's Brochure, which hold the repeated-dose data, were not available to check, and no regulator has published a label. If survodutide is approved, the label's pharmacokinetics section will replace this note."
+    ]
+   },
+   {
+    "title": "More: what this chart cannot tell you",
+    "paras": [
+     "Nothing on this tab measures anything; only a blood test can.",
+     "It says nothing about products sold online as survodutide. Their contents and strength are unverified, so a vial labelled with a dose could hold any amount of anything.",
+     "The trials answered their dosing questions with bloodwork, frequent visits and medical supervision, which no chart or schedule can replace."
+    ]
+   }
+  ]
+ },
+ "trials": {
+  "headline": "How the survodutide trials were run, and what joining one looks like.",
+  "lede": "Clinical trials are the only legal route to survodutide today. Here is how the dose was climbed in the published protocols, how the Phase 3 program is built, and what a participant goes through.",
+  "ladder": {
+   "title": "The dose ladder in Boehringer's Phase 2 liver-trial protocol",
+   "text": "Everyone started at 0.3 mg a week. The dose rose every two weeks, by 0.3 mg at first and by 0.6 mg higher up, until it reached the target the computer had assigned: 2.4 mg at week 14, 4.8 mg at week 18 or 6.0 mg at week 22. A person who could not tolerate a step could drop to the next lower target dose, up to twice. The Phase 3 obesity trials use the same two top doses, 3.6 mg and 6.0 mg a week, reached by a stepwise climb with visits every two to four weeks; their exact step schedule was not in the sources available for this page.",
+   "steps": [
+    {
+     "d": "0.3 mg",
+     "t": "start"
+    },
+    {
+     "d": "0.6 mg",
+     "t": "week 2"
+    },
+    {
+     "d": "1.2 mg",
+     "t": "week 6"
+    },
+    {
+     "d": "2.4 mg",
+     "t": "week 10"
+    },
+    {
+     "d": "3.6 mg",
+     "t": "week 14"
+    },
+    {
+     "d": "4.8 mg",
+     "t": "week 18"
+    },
+    {
+     "d": "6.0 mg",
+     "t": "week 22"
+    }
+   ],
+   "note": "Intermediate steps of 0.9, 1.8, 3.0, 4.2 and 5.4 mg sat between the ones shown, each held for two weeks; people assigned to the 2.4 mg target took smaller final steps (1.8, 2.1, 2.4 mg) and reached it at week 14. The Phase 2 obesity trial used a similar 20-week climb (fixed for weeks 1 to 10, adjustable for weeks 11 to 20) to targets of 0.6, 2.4, 3.6 or 4.8 mg, then 26 weeks at a steady dose. Placebo groups followed the same schedule with inactive injections, and nobody knew who had what until the trial ended."
+  },
+  "more": [
+   {
+    "title": "More: how side effects were handled inside the trials",
+    "paras": [
+     "The slow dose ladder is the main tool. In the Phase 2 obesity trial, doses were fixed for the first ten weeks; from week 11 the study team could stop climbing or move someone to a lower dose if stomach symptoms were a problem, and people who still could not tolerate the drug left it. That is where the discontinuation figures on the Side effects tab come from.",
+     "The Phase 3 design allows a pause in treatment, a temporary step down, a delayed step up, and one or two attempts to climb again. After SYNCHRONIZE-2, Boehringer said the Phase 3 protocols gave limited room to manage symptoms during escalation and that current and upcoming trials use more flexible, slower titration.",
+     "None of this is a self-management plan. The point of a trial is that trained staff are watching, which is exactly what is missing when someone uses a product bought online."
+    ]
+   }
+  ],
+  "running": {
+   "title": "Trials still running",
+   "items": [
+    "SYNCHRONIZE-CVOT (NCT06077864): the cardiovascular outcomes trial in people with heart disease, kidney disease or cardiovascular risk factors; Boehringer expects results later in 2026",
+    "LIVERAGE (NCT06632444, about 1,800 adults with MASH and stage 2 or 3 fibrosis) and LIVERAGE-Cirrhosis (NCT06632457, about 1,590 adults with compensated MASH cirrhosis): Phase 3 liver trials with a top dose of 6 mg",
+    "SYNCHRONIZE-T2D (NCT07754461), a new trial focused on blood-sugar control in type 2 diabetes, plus SYNCHRONIZE-JP in Japan and SYNCHRONIZE-CN in China"
+   ]
+  },
+  "find": {
+   "text": "Boehringer's Phase 3 program runs at well over a hundred sites across North America, Europe and Asia. Search the public registry, then contact the nearest site listed on the study page. Typical requirements: adult, a BMI above a set threshold, the condition the trial studies, and no competing weight-loss medication.",
+   "term": "survodutide",
+   "extra": null
+  }
+ },
+ "status": {
+  "headline": "Not approved anywhere. Two Phase 3 obesity trials have reported; the heart-safety trial is still to come.",
+  "items": [
+   {
+    "tag": "no",
+    "label": "Not approved",
+    "text": "As of October 24, 2026, Health Canada, the U.S. FDA, the European EMA and Australia's TGA have not approved survodutide for any use. Boehringer's October 2026 announcement states that it \"has not been approved for use, and its efficacy and safety have not been established.\""
+   },
+   {
+    "tag": "soon",
+    "label": "Filing not yet announced",
+    "text": "Boehringer's 2026 announcements (April 28 and October 1–2) give no submission date. The company says the cardiovascular outcomes trial will read out later in 2026, and regulators generally expect that kind of data for a weight-loss drug. For the liver disease MASH, survodutide holds FDA Fast Track (May 2021) and Breakthrough Therapy (September 2024) designations and a place in the EMA's PRIME scheme (November 2023); these speed up review but are not approvals."
+   },
+   {
+    "tag": "ok",
+    "label": "Trials open",
+    "text": "Boehringer's trials are the only legal source. See the Trials tab."
+   }
+  ],
+  "cards": [
+   {
+    "kind": "crit",
+    "title": "The grey market",
+    "text": "Vials labelled survodutide or \"BI 456906\" are sold online by \"research chemical\" shops, usually with a \"not for human consumption\" line beside the shop button. Boehringer makes the only verified drug and it is not for sale, so buyers have no way to know what is in the vial or how much.",
+    "items": [
+     "Because it has never been approved, no pharmacy in Canada or the U.S. is licensed to dispense or compound it, and no manufacturer-made supply exists outside Boehringer's trials.",
+     "In this review (October 2026), no regulator notice naming survodutide specifically was found, and no published case series of harm from products sold under its name was found. That is an absence of reports, not evidence of safety.",
+     "The trials recorded roughly one in four people stopping because of side effects under medical supervision. Anyone using an unverified product gets those odds with no supervision, and with unknown contents."
+    ],
+    "note": ""
+   },
+   {
+    "kind": "warn",
+    "title": "If someone has already used an unapproved product",
+    "text": "Public health authorities' standing advice for unapproved injectables is to stop, dispose of the product safely, and see a doctor, urgently if any of these appear:",
+    "items": [
+     "Vomiting or diarrhea that will not stop",
+     "Severe or persistent abdominal pain",
+     "A racing or irregular heartbeat, chest pain, fainting",
+     "Yellowing of the skin or eyes, dark urine"
+    ],
+    "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+   }
+  ],
+  "more": [
+   {
+    "title": "More: who is behind it",
+    "paras": [
+     "Survodutide was discovered by Zealand Pharma and is licensed to Boehringer Ingelheim, which Zealand says is \"solely responsible for development and commercialization globally\". Boehringer is privately held, so there are no quarterly investor calls where filing plans tend to surface; its statements come through press releases and medical congresses.",
+     "The Phase 3 obesity results were published in the New England Journal of Medicine alongside their congress presentations: SYNCHRONIZE-1 on June 7, 2026 (American Diabetes Association) and SYNCHRONIZE-2 on October 1, 2026 (European Association for the Study of Diabetes)."
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "text": "Boehringer Ingelheim, SYNCHRONIZE-1 topline results press release, April 28, 2026.",
+    "url": "https://www.boehringer-ingelheim.com/us/human-health/metabolic-diseases/results-phase-iii-synchronize-1-obesity-trial"
+   },
+   {
+    "text": "le Roux CW, Wharton S, Startseva E et al. Survodutide once weekly for the treatment of adults with obesity (SYNCHRONIZE-1). New England Journal of Medicine, June 7, 2026. doi:10.1056/NEJMoa2600751.",
+    "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2600751"
+   },
+   {
+    "text": "AJMC, coverage of the SYNCHRONIZE-1 full results presented at ADA 2026 (per-dose weight loss, discontinuation, MRI sub-study), June 8, 2026.",
+    "url": "https://www.ajmc.com/view/survodutide-phase-3-data-signal-metabolic-gains-beyond-weight-loss"
+   },
+   {
+    "text": "Boehringer Ingelheim, SYNCHRONIZE-2 results press release, October 1–2, 2026.",
+    "url": "https://www.globenewswire.com/news-release/2026/10/01/3372564/0/en/boehringer-ingelheim-s-survodutide-achieves-up-to-13-1-weight-loss-in-new-phase-iii-trial-alongside-significant-improvements-in-glycemic-control-in-people-with-obesity-and-type-2-d.html"
+   },
+   {
+    "text": "Zealand Pharma, company announcement No. 52/2026 on SYNCHRONIZE-2, October 1, 2026.",
+    "url": "https://www.inderes.dk/releases/zealand-pharma-announces-boehringer-ingelheims-survodutide-achieves-up-to-131percent-weight-loss-in-new-phase-iii-trial-alongside-significant-improvements-in-glycemic-control-in-people-with-obesity-and-type-2-diabetes"
+   },
+   {
+    "text": "Wharton S et al. Survodutide once weekly in adults with obesity and type 2 diabetes (SYNCHRONIZE-2). New England Journal of Medicine, October 1, 2026. doi:10.1056/NEJMoa2607219.",
+    "url": "https://doi.org/10.1056/NEJMoa2607219"
+   },
+   {
+    "text": "Wharton S, le Roux CW, Bozkurt B et al. Baseline characteristics in the SYNCHRONIZE-2 randomized phase 3 trial of survodutide (trial design, estimands, dose-adjustment rules). Diabetes, Obesity and Metabolism, 2026;28:1490–1498.",
+    "url": "https://dom-pubs.onlinelibrary.wiley.com/doi/full/10.1111/dom.70263"
+   },
+   {
+    "text": "le Roux CW et al. Glucagon and GLP-1 receptor dual agonist survodutide for obesity: a randomised, double-blind, placebo-controlled, dose-finding phase 2 trial. Lancet Diabetes & Endocrinology, 2024;12:162–173 (NCT04667377).",
+    "url": "https://sio-obesita.org/wp-content/uploads/2025/01/del-prete-2.pdf"
+   },
+   {
+    "text": "Sanyal AJ et al. A Phase 2 randomized trial of survodutide in MASH and fibrosis. New England Journal of Medicine, 2024;391:311–319 (NCT04771273).",
+    "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2401755"
+   },
+   {
+    "text": "Boehringer Ingelheim, clinical trial protocol for NCT04771273 (Phase 2 MASH), posted on ClinicalTrials.gov: Phase 1 pharmacokinetic summary and dose-escalation schedule.",
+    "url": "https://cdn.clinicaltrials.gov/large-docs/73/NCT04771273/Prot_000.pdf"
+   },
+   {
+    "text": "Jungnik A, Arrubla Martinez J, Plum-Morschel L et al. Phase I studies of the safety, tolerability, pharmacokinetics and pharmacodynamics of the dual glucagon receptor/GLP-1 receptor agonist BI 456906. Diabetes, Obesity and Metabolism, 2023;25:1011–1023 (full text not accessed for this page).",
+    "url": "https://dom-pubs.onlinelibrary.wiley.com/doi/full/10.1111/dom.14948"
+   },
+   {
+    "text": "Lawitz EJ et al. Efficacy, tolerability and pharmacokinetics of survodutide in cirrhosis. Journal of Hepatology, 2024;81:837–846.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38857788/"
+   },
+   {
+    "text": "Blüher M, Rosenstock J et al. Dose–response effects on HbA1c and bodyweight reduction of survodutide compared with placebo and open-label semaglutide in type 2 diabetes. Diabetologia, 2024;67:470–482.",
+    "url": "https://link.springer.com/article/10.1007/s00125-023-06053-9"
+   },
+   {
+    "text": "Kaplan LM et al. SYNCHRONIZE-MASLD phase 3 trial. Nature Medicine, June 7, 2026. doi:10.1038/s41591-026-04479-3; with Boehringer's ADA 2026 announcement as reported by AJMC, June 7, 2026.",
+    "url": "https://www.ajmc.com/view/emerging-data-suggest-survodutide-targets-liver-fat-more-rapidly-than-weight-loss-lee-kaplan-md-phd"
+   },
+   {
+    "text": "Trial registrations: NCT06066515 (SYNCHRONIZE-1), NCT06066528 (SYNCHRONIZE-2), NCT06077864 (SYNCHRONIZE-CVOT), NCT06309992 (SYNCHRONIZE-MASLD), NCT07754461 (SYNCHRONIZE-T2D), NCT06632444 (LIVERAGE), NCT06632457 (LIVERAGE-Cirrhosis).",
+    "url": "https://clinicaltrials.gov/study/NCT06066528"
+   }
+  ]
+ }
+}

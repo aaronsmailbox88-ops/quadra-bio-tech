@@ -1,0 +1,331 @@
+<title>Vial Tracker</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+/* Layout: a supply list of vial cards, each opening to a ledger; every quantity on the page comes from a scale reading, never a syringe mark. */
+:root{
+  --bg:#F4F5F2; --card:#FFFFFF; --ink:#1A2321; --muted:#5E6B68; --line:#D8DEDB; --line-2:#EAEEEC;
+  --accent:#1D6B5F; --accent-ink:#FFFFFF; --accent-soft:#E1F0EC;
+  --ok:#1F7A47; --ok-soft:#E3F3E8; --warn:#8A5A00; --warn-soft:#FBF0D9; --bad:#A23A2C; --bad-soft:#F9E7E3; --info:#2F5F8F; --info-soft:#E6EEF7;
+  --sans:'IBM Plex Sans',system-ui,-apple-system,'Segoe UI',sans-serif; --mono:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace; --r:10px;
+}
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){
+  --bg:#0F1413; --card:#171D1C; --ink:#E6ECEA; --muted:#9AA9A5; --line:#2A3331; --line-2:#1F2726;
+  --accent:#5CC4B2; --accent-ink:#0B1513; --accent-soft:#183029;
+  --ok:#62C98E; --ok-soft:#15291D; --warn:#E6AE54; --warn-soft:#2B2113; --bad:#F08E7E; --bad-soft:#2E1815; --info:#8DB6E3; --info-soft:#15222F; color-scheme:dark } }
+:root[data-theme="dark"]{
+  --bg:#0F1413; --card:#171D1C; --ink:#E6ECEA; --muted:#9AA9A5; --line:#2A3331; --line-2:#1F2726;
+  --accent:#5CC4B2; --accent-ink:#0B1513; --accent-soft:#183029;
+  --ok:#62C98E; --ok-soft:#15291D; --warn:#E6AE54; --warn-soft:#2B2113; --bad:#F08E7E; --bad-soft:#2E1815; --info:#8DB6E3; --info-soft:#15222F; color-scheme:dark }
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 var(--sans);font-variant-numeric:tabular-nums}
+[hidden]{display:none!important}
+a{color:var(--accent)}
+h1,h2,h3{margin:0;line-height:1.2;letter-spacing:-.01em;text-wrap:balance}
+h1{font-size:1.5rem;font-weight:600} h2{font-size:1.15rem;font-weight:600} h3{font-size:1rem;font-weight:600}
+p{margin:0}
+.wrap{max-width:720px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:14px 48px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:6px 14px}
+.top small{display:block;color:var(--muted);font-size:.8rem}
+.sync{font-size:.74rem;color:var(--muted);display:inline-flex;align-items:center;gap:6px}
+.sync::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--muted)}
+.sync.on::before{background:var(--ok)}
+.muted{color:var(--muted)} .small{font-size:.86rem} .mono{font-family:var(--mono);font-size:.92em}
+.eyebrow{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.stack{display:grid;gap:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px}
+.card.tap{cursor:pointer}
+.card.tap:hover{border-color:var(--accent)}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.between{justify-content:space-between}
+.chip{display:inline-block;padding:3px 10px;border-radius:999px;font-size:.76rem;font-weight:600;letter-spacing:.02em;white-space:nowrap;border:1px solid transparent}
+.chip.ok{background:var(--ok-soft);color:var(--ok)} .chip.warn{background:var(--warn-soft);color:var(--warn)} .chip.bad{background:var(--bad-soft);color:var(--bad)} .chip.info{background:var(--info-soft);color:var(--info)} .chip.plain{background:transparent;border-color:var(--line);color:var(--muted)}
+.bar{height:10px;border-radius:999px;background:var(--line-2);overflow:hidden;margin:10px 0 8px}
+.bar i{display:block;height:100%;background:var(--accent);border-radius:999px;transition:width .3s}
+.bar.low i{background:var(--warn)} .bar.empty i{background:var(--bad)}
+.dates{font-size:.76rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.big{font-family:var(--mono);font-size:1.45rem;font-weight:600;letter-spacing:-.01em}
+.kv{display:grid;grid-template-columns:1fr auto;gap:6px 14px;font-size:.92rem}
+.kv dt{color:var(--muted)} .kv dd{margin:0;font-family:var(--mono);font-size:.9rem;text-align:right}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:8px;border:1px solid var(--accent);background:var(--accent);color:var(--accent-ink);font:inherit;font-weight:600;font-size:.95rem;cursor:pointer;line-height:1.2;text-decoration:none}
+.btn.ghost{background:transparent;color:var(--accent)} .btn.ghost:hover{background:var(--accent-soft)}
+.btn.sm{padding:7px 12px;font-size:.86rem} .btn.danger{border-color:var(--bad);color:var(--bad);background:transparent}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.notice{border-left:3px solid var(--warn);background:var(--warn-soft);padding:12px 14px;border-radius:0 8px 8px 0;font-size:.92rem}
+.notice.bad{border-color:var(--bad);background:var(--bad-soft)} .notice.ok{border-color:var(--ok);background:var(--ok-soft)} .notice.info{border-color:var(--info);background:var(--info-soft)}
+form{display:grid;gap:12px}
+fieldset{border:1px solid var(--line);border-radius:var(--r);padding:12px 14px 14px;margin:0;display:grid;gap:10px;background:var(--card)}
+legend{font-weight:600;font-size:.92rem;padding:0 6px}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:10px} .f3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+@media (max-width:520px){.f3{grid-template-columns:1fr 1fr}}
+label.fl{display:grid;gap:4px;font-size:.82rem;font-weight:600;color:var(--muted);min-width:0}
+label.fl input,label.fl select,label.fl textarea{font:inherit;font-weight:400;font-size:1rem;color:var(--ink);padding:9px 11px;border:1px solid var(--line);border-radius:8px;background:var(--bg);width:100%;min-width:0}
+label.fl input.mono{font-family:var(--mono)}
+label.fl textarea{min-height:64px;resize:vertical}
+.calc{background:var(--bg);border:1px dashed var(--line);border-radius:8px;padding:10px 12px;font-size:.9rem;display:grid;gap:4px}
+.calc b{font-family:var(--mono)}
+.err{color:var(--bad);font-size:.86rem;font-weight:600}
+table{border-collapse:collapse;width:100%;font-size:.88rem}
+th,td{text-align:left;padding:8px 8px;border-bottom:1px solid var(--line-2);vertical-align:top}
+th{font-size:.7rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);font-weight:600}
+td.num{font-family:var(--mono);text-align:right;white-space:nowrap} th.num{text-align:right}
+.tbl{overflow-x:auto}
+.steps{margin:0;padding-left:1.3em;display:grid;gap:6px;font-size:.92rem}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.seg button{font:inherit;font-size:.86rem;font-weight:600;padding:7px 12px;border:0;background:var(--card);color:var(--muted);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+.toast{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:8px;font-size:.9rem;z-index:20;max-width:calc(100vw - 32px)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div><h1>Vial Tracker</h1><small>Every number here comes from a scale, not a syringe mark.</small></div>
+    <span class="sync" id="sync">Saved in this browser only</span>
+  </header>
+
+  <div id="alerts" class="stack" style="margin-bottom:12px"></div>
+
+  <!-- Supply list -->
+  <section id="view-list">
+    <div class="row between" style="margin-bottom:10px">
+      <span class="eyebrow">Supply at a glance</span>
+      <a class="btn sm" href="#new">+ New vial</a>
+    </div>
+    <div id="cards" class="stack"></div>
+    <div id="empty" class="card" hidden>
+      <h2>No vials yet</h2>
+      <p class="muted" style="margin-top:6px">Add a vial, weigh it dry, weigh the water in, and the tracker keeps the ledger from there: concentration, every dose, what's left, and when to reorder.</p>
+      <p style="margin-top:12px"><a class="btn" href="#new">Add your first vial</a></p>
+    </div>
+    <details class="card" style="margin-top:14px"><summary style="cursor:pointer;font-weight:600">How to weigh (the method this tracker expects)</summary>
+      <ol class="steps" style="margin-top:10px">
+        <li><b>The scale.</b> A 0.001 g (1 mg) pocket scale with a draft shield and calibration weights is enough for water quantities of 0.05 mL and up. The one this tracker was built around: <a href="https://www.amazon.ca/dp/B07ZQZ962K" target="_blank" rel="noopener">MAXUS 50 g × 0.001 g milligram scale with 2 × 20 g weights (Amazon.ca)</a>. Check it against the 20 g weight before each session; it reads to 1 mg but is only accurate to about ±3–5 mg, and the tracker shows that uncertainty on every dose.</li>
+        <li><b>Dry vial, cap off.</b> Flip the plastic cap off first — it weighs 100–200 mg. Record the weight. This is the baseline.</li>
+        <li><b>Water by weight, not by syringe mark.</b> Tare the empty syringe on the pan, fill it, weigh again: the gain in grams is the millilitres. After injecting, weigh the vial: the gain over the baseline is what actually went in. The two should agree; if they don't, liquid stayed in the syringe or leaked.</li>
+        <li><b>Concentration = label mg ÷ measured mL.</b> Use the measured volume, never the intended one.</li>
+        <li><b>Each dose: weigh before you inject.</b> Tare the empty syringe, draw, weigh: grams = mL, and the tracker turns it into mg at the vial's concentration and compares it with your planned dose. Weighing the vial before and after is the cross-check.</li>
+        <li><b>Keep conditions identical</b> — same pan, dry outside, cap state the same every time.</li>
+      </ol>
+      <p class="small muted" style="margin-top:10px">The tracker records what you measured. It does not set doses, and everything it shows assumes the vial contains what its label says, which only a lab test can confirm.</p>
+    </details>
+  </section>
+
+  <!-- New vial -->
+  <section id="view-new" hidden>
+    <p class="small"><a href="#">← Supply</a></p>
+    <h2 style="margin:8px 0 12px">New vial</h2>
+    <form id="f-new" novalidate>
+      <fieldset><legend>What it is</legend>
+        <div class="f2">
+          <label class="fl">Peptide<input id="n-name" list="peps" required placeholder="e.g. Retatrutide"><datalist id="peps"></datalist></label>
+          <label class="fl">Label amount (mg)<input id="n-mg" class="mono" type="number" step="any" min="0" inputmode="decimal" required placeholder="15"></label>
+          <label class="fl">Source / brand (optional)<input id="n-src" placeholder="Vendor or lot"></label>
+          <label class="fl">Mixed with<select id="n-dil"><option>Bacteriostatic water</option><option>Sterile water</option><option>Acetic acid 0.6%</option><option>Other</option></select></label>
+        </div></fieldset>
+      <fieldset><legend>Weights (grams, from the scale)</legend>
+        <div class="f3">
+          <label class="fl">Vial dry, cap off<input id="n-dry" class="mono" type="number" step="0.001" inputmode="decimal" required placeholder="5.622"></label>
+          <label class="fl">Syringe empty (optional)<input id="n-se" class="mono" type="number" step="0.001" inputmode="decimal" placeholder="0.000 after tare"></label>
+          <label class="fl">Syringe filled (optional)<input id="n-sf" class="mono" type="number" step="0.001" inputmode="decimal" placeholder="1.500"></label>
+          <label class="fl">Vial after water<input id="n-full" class="mono" type="number" step="0.001" inputmode="decimal" required placeholder="7.104"></label>
+        </div>
+        <div class="calc" id="n-calc">Enter the dry and after-water weights to see the measured volume and concentration.</div></fieldset>
+      <fieldset><legend>Plan (used only for projections)</legend>
+        <div class="f3">
+          <label class="fl">Planned dose (mg)<input id="n-dose" class="mono" type="number" step="any" min="0" inputmode="decimal" placeholder="your own plan"></label>
+          <label class="fl">Doses per week<input id="n-pw" class="mono" type="number" step="any" min="0" inputmode="decimal" value="1"></label>
+          <label class="fl">Reorder lead time (days)<input id="n-lead" class="mono" type="number" step="1" min="0" inputmode="numeric" value="10"></label>
+        </div>
+        <p class="small muted">The planned dose is yours to set; the tracker never suggests one. It uses it to flag a dose that lands far from your plan and to project when the vial runs out.</p></fieldset>
+      <p class="err" id="n-err" hidden></p>
+      <div class="row"><button class="btn" type="submit">Save vial</button><a class="btn ghost" href="#">Cancel</a></div>
+    </form>
+  </section>
+
+  <!-- Vial detail -->
+  <section id="view-vial" hidden></section>
+</div>
+
+<script>
+(function(){
+  'use strict';
+  var $=function(s,r){return (r||document).querySelector(s)}, $$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+  var esc=function(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})};
+  var PEPS=['Retatrutide','Semaglutide','Tirzepatide','Cagrilintide','BPC-157','TB-500','GHK-Cu','KPV','Ipamorelin','CJC-1295 (no DAC)','Sermorelin','Tesamorelin','GHRP-2','GHRP-6','Hexarelin','AOD-9604','Selank','Semax','DSIP','Epitalon','MOTS-c','LL-37','Kisspeptin-10','Thymosin alpha-1','PT-141','NAD+','L-carnitine','Glutathione'];
+  var LS='vt-state';
+  var state={v:1, scale:{res:0.001, acc:0.005}, vials:[]};
+  var store={mode:'local', doc:null};
+
+  // ---------- helpers
+  function num(id){var el=$('#'+id); if(!el) return NaN; var v=parseFloat(String(el.value).replace(',','.')); return isFinite(v)?v:NaN}
+  function r3(x){return Math.round(x*1000)/1000} function r2(x){return Math.round(x*100)/100} function r1(x){return Math.round(x*10)/10}
+  function fmtG(x){return isFinite(x)?x.toFixed(3)+' g':'—'} function fmtMg(x){return isFinite(x)?(Math.abs(x)<1?x.toFixed(2):x.toFixed(1))+' mg':'—'} function fmtMl(x){return isFinite(x)?x.toFixed(3)+' mL':'—'}
+  function today(){var d=new Date(); d.setHours(0,0,0,0); return d}
+  function dstr(d){return d?d.toISOString().slice(0,10):''}
+  function dlabel(d){return d?d.toLocaleDateString(undefined,{month:'short',day:'numeric'}):'—'}
+  function dtlabel(iso){var d=new Date(iso); return isNaN(d)?iso:d.toLocaleString(undefined,{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'})}
+  function uid(){return 'v'+Date.now().toString(36)+Math.random().toString(36).slice(2,6)}
+  function clean(s){
+    s=(s&&typeof s==='object')?s:{}; var out={v:1, scale:{res:0.001, acc:0.005}, vials:[]};
+    if(s.scale&&isFinite(+s.scale.acc)) out.scale.acc=+s.scale.acc; if(s.scale&&isFinite(+s.scale.res)) out.scale.res=+s.scale.res;
+    (Array.isArray(s.vials)?s.vials:[]).forEach(function(v){ if(!v||!v.id) return; var c={id:String(v.id), name:String(v.name||'Vial'), src:String(v.src||''), label_mg:+v.label_mg||0, diluent:String(v.diluent||'Bacteriostatic water'),
+      dry_g:+v.dry_g||0, full_g:+v.full_g||0, syr_water_g:isFinite(+v.syr_water_g)?+v.syr_water_g:null, planned_mg:isFinite(+v.planned_mg)&&+v.planned_mg>0?+v.planned_mg:null, per_week:isFinite(+v.per_week)?+v.per_week:1, lead_days:isFinite(+v.lead_days)?+v.lead_days:10,
+      status:['active','ordered','out','archived'].indexOf(v.status)>=0?v.status:'active', ordered_on:v.ordered_on||null, created:v.created||new Date().toISOString(), notes:String(v.notes||''), doses:[], weights:[]};
+      (Array.isArray(v.doses)?v.doses:[]).forEach(function(d){ if(!d||!isFinite(+d.mg)) return; c.doses.push({t:String(d.t||''), ml:+d.ml||0, mg:+d.mg, method:String(d.method||'manual'), before_g:isFinite(+d.before_g)?+d.before_g:null, after_g:isFinite(+d.after_g)?+d.after_g:null, syr_empty_g:isFinite(+d.syr_empty_g)?+d.syr_empty_g:null, syr_full_g:isFinite(+d.syr_full_g)?+d.syr_full_g:null, note:String(d.note||'')}) });
+      (Array.isArray(v.weights)?v.weights:[]).forEach(function(w){ if(!w||!isFinite(+w.g)) return; c.weights.push({t:String(w.t||''), g:+w.g}) });
+      out.vials.push(c) });
+    return out;
+  }
+  function loadLocal(){try{var s=JSON.parse(localStorage.getItem(LS)||'null'); if(s) state=clean(s)}catch(e){}}
+  function saveLocal(){try{localStorage.setItem(LS,JSON.stringify(state))}catch(e){}}
+
+  // ---------- derived numbers
+  function calc(v){
+    var water=r3(v.full_g-v.dry_g); var conc=water>0?v.label_mg/water:NaN;
+    var taken=v.doses.reduce(function(a,d){return a+d.mg},0); var takenMl=v.doses.reduce(function(a,d){return a+d.ml},0);
+    var remaining=Math.max(0,v.label_mg-taken); var pct=v.label_mg>0?remaining/v.label_mg:0;
+    var remMl=Math.max(0,water-takenMl);
+    var lastW=v.weights.length?v.weights[v.weights.length-1]:null; var byWeight=null;
+    if(lastW&&water>0){ var liq=lastW.g-v.dry_g; byWeight={g:lastW.g, ml:r3(liq), mg:r2(liq/water*v.label_mg), t:lastW.t} }
+    var dosesLeft=v.planned_mg?Math.floor(remaining/v.planned_mg+1e-9):null;
+    var perDay=v.planned_mg&&v.per_week>0?(v.planned_mg*v.per_week/7):0;
+    var lastDose=v.doses.length?new Date(v.doses[v.doses.length-1].t):null;
+    var runOut=null, reorder=null, daysLeft=null;
+    if(perDay>0){ daysLeft=remaining/perDay; var base=(lastDose&&!isNaN(lastDose))?lastDose:today(); runOut=new Date(base.getTime()+daysLeft*86400000); runOut.setHours(0,0,0,0); reorder=new Date(runOut.getTime()-v.lead_days*86400000) }
+    var st='ok', label='In stock';
+    if(v.status==='archived'){st='plain';label='Archived'}
+    else if(v.status==='out'||remaining<=0.0001){st='bad';label='Out'}
+    else if(v.status==='ordered'){st='info';label='Ordered'}
+    else if(reorder&&today()>=reorder){st='bad';label='Reorder now'}
+    else if(reorder&&(reorder-today())<=3*86400000){st='warn';label='Reorder soon'}
+    else if(v.planned_mg&&dosesLeft!==null&&dosesLeft<=1){st='warn';label='Last dose left'}
+    return {water:water, conc:conc, taken:taken, takenMl:takenMl, remaining:remaining, pct:pct, remMl:remMl, byWeight:byWeight, dosesLeft:dosesLeft, runOut:runOut, reorder:reorder, daysLeft:daysLeft, st:st, label:label, count:v.doses.length};
+  }
+  function summaryFor(v){var c=calc(v); return {state:c.label, remaining_mg:r2(c.remaining), pct:Math.round(c.pct*100), doses:c.count, runs_out_on:dstr(c.runOut), reorder_on:dstr(c.reorder), conc_mg_ml:isFinite(c.conc)?r2(c.conc):null, updated:new Date().toISOString()}}
+
+  // ---------- persistence
+  var writing=false, pending=false;
+  function payload(){ return {v:1, scale:state.scale, vials:state.vials.map(function(v){var o=JSON.parse(JSON.stringify(v)); o.summary=summaryFor(v); return o})} }
+  function pushDb(){ if(store.mode!=='db') return; if(writing){pending=true;return} writing=true;
+    store.doc.set(payload()).then(function(){setSync(true)},function(){setSync(false,'Could not save to your account; kept in this browser.')}).then(function(){writing=false; if(pending){pending=false;pushDb()}}) }
+  function commit(){saveLocal(); pushDb(); render()}
+  function setSync(on,msg){var e=$('#sync'); e.className='sync'+(on?' on':''); e.textContent=msg||(on?'Saved privately to your account':'Saved in this browser only')}
+  function initDb(){
+    if(!(window.claude&&typeof window.claude.use==='function')) return;
+    Promise.all([window.claude.use('db'),window.claude.use('user')]).then(function(r){var db=r[0],user=r[1]; if(!db||!user) return null;
+      return user.id().then(function(id){ if(!id) return null; var doc=db.doc('data/users/'+id+'/vials');
+        return doc.get().then(function(snap){ if(snap.exists){state=clean(snap.data()); saveLocal(); return doc} if(state.vials.length) return doc.set(payload()).then(function(){return doc}); return doc }) }) })
+    .then(function(doc){ if(!doc) return; store.mode='db'; store.doc=doc; setSync(true); render();
+      doc.onSnapshot(function(s){ if(!s.exists||s.metadata.hasPendingWrites||writing) return; var next=clean(s.data()); if(JSON.stringify(next)!==JSON.stringify(state)){state=next; saveLocal(); render()} }) })
+    .catch(function(){});
+  }
+
+  // ---------- toast
+  var toastT; function toast(m){var t=$('#toast'); if(!t){t=document.createElement('div');t.id='toast';t.className='toast';t.setAttribute('role','status');document.body.appendChild(t)} t.textContent=m; t.hidden=false; clearTimeout(toastT); toastT=setTimeout(function(){t.hidden=true},2400)}
+
+  // ---------- rendering
+  function chip(c){return '<span class="chip '+c.st+'">'+esc(c.label)+'</span>'}
+  function cardHtml(v){ var c=calc(v); var pct=Math.round(c.pct*100); var barCls=c.remaining<=0?'empty':(pct<=25?'low':'');
+    var dates=c.reorder?('Reorder '+dlabel(c.reorder)+' · Runs out '+dlabel(c.runOut)):(v.planned_mg?'Set doses per week to project':'Set a planned dose to project run-out');
+    return '<a class="card tap" href="#vial-'+esc(v.id)+'" style="text-decoration:none;color:inherit"><div class="row between"><h2>'+esc(v.name)+'</h2>'+chip(c)+'</div>'
+      +'<div class="row" style="margin-top:4px;gap:14px"><span><b class="mono">'+pct+'%</b> remaining</span><span class="muted small">'+fmtMg(c.remaining)+' of '+fmtMg(v.label_mg)+' · '+c.count+' dose'+(c.count==1?'':'s')+' logged'+(c.dosesLeft!==null?' · '+c.dosesLeft+' left at plan':'')+'</span></div>'
+      +'<div class="bar '+barCls+'"><i style="width:'+Math.max(0,Math.min(100,pct))+'%"></i></div><div class="dates">'+esc(dates)+'</div></a>' }
+  function renderAlerts(){ var a=$('#alerts'); var items=[];
+    state.vials.forEach(function(v){ var c=calc(v); if(v.status==='archived') return;
+      if(c.label==='Reorder now'||c.label==='Out') items.push('<div class="notice bad"><b>'+esc(v.name)+':</b> '+(c.label==='Out'?'empty.':'reorder now — runs out '+dlabel(c.runOut)+' at your planned dose, and your lead time is '+v.lead_days+' days.')+' <a href="#vial-'+esc(v.id)+'">Open</a></div>');
+      else if(c.label==='Reorder soon') items.push('<div class="notice"><b>'+esc(v.name)+':</b> reorder by '+dlabel(c.reorder)+' (runs out '+dlabel(c.runOut)+'). <a href="#vial-'+esc(v.id)+'">Open</a></div>'); });
+    a.innerHTML=items.join(''); }
+  function renderList(){ var active=state.vials.filter(function(v){return v.status!=='archived'}); var arch=state.vials.filter(function(v){return v.status==='archived'});
+    $('#cards').innerHTML=active.map(cardHtml).join('')+(arch.length?'<details style="margin-top:6px"><summary class="muted small" style="cursor:pointer">'+arch.length+' archived</summary><div class="stack" style="margin-top:10px">'+arch.map(cardHtml).join('')+'</div></details>':'');
+    $('#empty').hidden=state.vials.length>0; }
+  function doseRows(v,c){ if(!v.doses.length) return '<p class="muted small">No doses logged yet.</p>';
+    var rows=v.doses.slice().reverse().map(function(d,i){ var idx=v.doses.length-1-i; var unc=c.water>0&&d.ml>0?Math.round(state.scale.acc/d.ml*100):null;
+      return '<tr><td>'+esc(dtlabel(d.t))+'</td><td class="num">'+d.ml.toFixed(3)+'</td><td class="num"><b>'+fmtMg(d.mg)+'</b>'+(unc!==null?'<br><span class="muted">±'+unc+'%</span>':'')+'</td><td>'+esc(d.method==='vial'?'vial Δ':d.method==='syringe'?'syringe Δ':d.method==='both'?'vial + syringe':'manual')+(d.note?'<br><span class="muted small">'+esc(d.note)+'</span>':'')+'</td><td><button class="btn sm danger" type="button" data-del-dose="'+idx+'">Delete</button></td></tr>' }).join('');
+    return '<div class="tbl"><table><thead><tr><th>When</th><th class="num">mL</th><th class="num">Dose</th><th>Method</th><th></th></tr></thead><tbody>'+rows+'</tbody></table></div>' }
+  function renderVial(id){ var v=state.vials.filter(function(x){return x.id===id})[0]; var sec=$('#view-vial'); if(!v){sec.innerHTML='<p class="small"><a href="#">← Supply</a></p><p style="margin-top:10px">That vial isn’t here.</p>';return}
+    var c=calc(v); var pct=Math.round(c.pct*100); var barCls=c.remaining<=0?'empty':(pct<=25?'low':'');
+    var wdiff=(v.syr_water_g!==null&&c.water>0)?r3(v.syr_water_g-c.water):null;
+    var bw=c.byWeight?('<dt>By last vial weight ('+esc(dtlabel(c.byWeight.t))+')</dt><dd>'+fmtMg(c.byWeight.mg)+' · '+c.byWeight.ml.toFixed(3)+' mL</dd>'):'';
+    var ledgerVsWeight=(c.byWeight&&Math.abs(c.byWeight.mg-c.remaining)>Math.max(0.3,0.05*v.label_mg))?'<div class="notice" style="margin-top:10px"><b>Ledger and scale disagree</b> by '+fmtMg(Math.abs(c.byWeight.mg-c.remaining))+'. Either a dose went unlogged, liquid was lost, or the weighing conditions changed. The vial weight is the physical truth; the ledger is what you recorded.</div>':'';
+    sec.innerHTML='<p class="small"><a href="#">← Supply</a></p>'
+      +'<div class="row between" style="margin:8px 0 10px"><div><h2>'+esc(v.name)+'</h2><p class="muted small">'+esc(v.label_mg+' mg label')+(v.src?' · '+esc(v.src):'')+' · '+esc(v.diluent)+'</p></div>'+chip(c)+'</div>'
+      +'<div class="card"><div class="row" style="gap:16px;align-items:baseline"><span class="big">'+pct+'%</span><span class="muted">'+fmtMg(c.remaining)+' remaining · '+fmtMl(c.remMl)+'</span></div><div class="bar '+barCls+'"><i style="width:'+Math.max(0,Math.min(100,pct))+'%"></i></div>'
+      +'<dl class="kv" style="margin-top:8px"><dt>Concentration</dt><dd>'+(isFinite(c.conc)?c.conc.toFixed(2)+' mg/mL':'—')+'</dd><dt>Water in (vial Δ)</dt><dd>'+fmtMl(c.water)+(wdiff!==null?' <span class="muted">(syringe '+(wdiff>=0?'+':'')+wdiff.toFixed(3)+')</span>':'')+'</dd><dt>Taken</dt><dd>'+fmtMg(c.taken)+' in '+c.count+' dose'+(c.count==1?'':'s')+'</dd>'
+      +(v.planned_mg?'<dt>Planned dose</dt><dd>'+fmtMg(v.planned_mg)+' × '+v.per_week+'/wk'+(isFinite(c.conc)?' = '+(v.planned_mg/c.conc).toFixed(3)+' g on the scale':'')+'</dd><dt>Doses left at plan</dt><dd>'+c.dosesLeft+'</dd>':'')
+      +(c.runOut?'<dt>Runs out</dt><dd>'+dlabel(c.runOut)+'</dd><dt>Reorder by</dt><dd>'+dlabel(c.reorder)+' <span class="muted">('+v.lead_days+'-day lead)</span></dd>':'')+bw+'</dl>'+ledgerVsWeight+'</div>'
+      +'<div class="card" style="margin-top:12px"><h3>Log a dose — weigh before you inject</h3><p class="small muted" style="margin-top:4px">Tare the empty syringe, draw, weigh; or weigh the vial before and after. Enter grams; the tracker gives mL and mg.</p>'
+      +'<form id="f-dose" style="margin-top:10px"><div class="row"><span class="seg" role="group" aria-label="Method"><button type="button" data-m="syringe" aria-pressed="true">Syringe</button><button type="button" data-m="vial" aria-pressed="false">Vial before/after</button><button type="button" data-m="both" aria-pressed="false">Both</button></span></div>'
+      +'<div class="f2" id="d-syr"><label class="fl">Syringe empty (g)<input id="d-se" class="mono" type="number" step="0.001" inputmode="decimal" value="0" placeholder="0.000 after tare"></label><label class="fl">Syringe filled (g)<input id="d-sf" class="mono" type="number" step="0.001" inputmode="decimal" placeholder="0.030"></label></div>'
+      +'<div class="f2" id="d-vial" hidden><label class="fl">Vial before (g)<input id="d-b" class="mono" type="number" step="0.001" inputmode="decimal" placeholder="'+(c.byWeight?c.byWeight.g.toFixed(3):v.full_g.toFixed(3))+'"></label><label class="fl">Vial after (g)<input id="d-a" class="mono" type="number" step="0.001" inputmode="decimal"></label></div>'
+      +'<div class="f2"><label class="fl">When<input id="d-t" type="datetime-local"></label><label class="fl">Note (optional)<input id="d-note" placeholder="e.g. syringe mark read 3 units"></label></div>'
+      +'<div class="calc" id="d-calc">Enter weights to see the dose.</div><p class="err" id="d-err" hidden></p><div class="row"><button class="btn" type="submit">Log this dose</button></div></form></div>'
+      +'<div class="card" style="margin-top:12px"><h3>Spot-check the vial</h3><p class="small muted" style="margin-top:4px">Weigh the vial any time; the tracker converts it to what’s left and compares with the ledger.</p><form id="f-weigh" class="row" style="margin-top:10px;align-items:end"><label class="fl" style="flex:1 1 160px">Vial weight now (g)<input id="w-g" class="mono" type="number" step="0.001" inputmode="decimal"></label><button class="btn ghost" type="submit">Record</button></form></div>'
+      +'<div class="card" style="margin-top:12px"><div class="row between"><h3>Dose log</h3><span class="muted small">'+c.count+' total</span></div><div style="margin-top:8px">'+doseRows(v,c)+'</div></div>'
+      +'<div class="card" style="margin-top:12px"><h3>Supply</h3><div class="row" style="margin-top:10px">'
+      +(v.status==='ordered'?'<span class="chip info">Ordered '+esc(v.ordered_on?dlabel(new Date(v.ordered_on)):'')+'</span><button class="btn sm ghost" type="button" data-act="unorder">Not ordered</button>':'<button class="btn sm ghost" type="button" data-act="ordered">Mark reordered</button>')
+      +(v.status==='archived'?'<button class="btn sm ghost" type="button" data-act="unarchive">Restore</button>':'<button class="btn sm ghost" type="button" data-act="archive">Archive (finished)</button>')
+      +'<button class="btn sm danger" type="button" data-act="delete">Delete vial</button></div>'
+      +'<form id="f-plan" style="margin-top:12px"><div class="f3"><label class="fl">Planned dose (mg)<input id="p-dose" class="mono" type="number" step="any" min="0" inputmode="decimal" value="'+(v.planned_mg||'')+'"></label><label class="fl">Doses per week<input id="p-pw" class="mono" type="number" step="any" min="0" inputmode="decimal" value="'+v.per_week+'"></label><label class="fl">Lead time (days)<input id="p-lead" class="mono" type="number" step="1" min="0" inputmode="numeric" value="'+v.lead_days+'"></label></div><div class="row" style="margin-top:8px"><button class="btn sm ghost" type="submit">Update plan</button></div></form>'
+      +'<p class="small muted" style="margin-top:10px">Scale accuracy used for the ± figures: ±'+(state.scale.acc*1000).toFixed(0)+' mg. <button class="btn sm ghost" type="button" data-act="scale">Change</button></p></div>';
+    wireVial(v);
+  }
+  function wireVial(v){ var c=calc(v); var method='syringe';
+    $$('#f-dose .seg button').forEach(function(b){ b.addEventListener('click',function(){ method=b.getAttribute('data-m'); $$('#f-dose .seg button').forEach(function(x){x.setAttribute('aria-pressed',String(x===b))}); $('#d-syr').hidden=method==='vial'; $('#d-vial').hidden=method==='syringe'; doseCalc() }) });
+    var tEl=$('#d-t'); var now=new Date(); now.setMinutes(now.getMinutes()-now.getTimezoneOffset()); tEl.value=now.toISOString().slice(0,16);
+    function doseNums(){ var sm=NaN, vm=NaN; if(method!=='vial'){var se=num('d-se'),sf=num('d-sf'); if(isFinite(sf)) sm=r3(sf-(isFinite(se)?se:0))} if(method!=='syringe'){var b=num('d-b'),a=num('d-a'); if(isFinite(b)&&isFinite(a)) vm=r3(b-a)} return {sm:sm,vm:vm} }
+    function doseCalc(){ var n=doseNums(); var ml=method==='vial'?n.vm:(isFinite(n.sm)?n.sm:n.vm); var el=$('#d-calc');
+      if(!isFinite(ml)||!isFinite(c.conc)){el.innerHTML='Enter weights to see the dose.';return}
+      var mg=ml*c.conc; var unc=ml>0?Math.round(state.scale.acc/ml*100):null; var html='<span>Drawn: <b>'+ml.toFixed(3)+' g = '+ml.toFixed(3)+' mL</b> → <b>'+fmtMg(mg)+'</b>'+(unc!==null?' <span class="muted">(±'+unc+'% at this scale’s accuracy)</span>':'')+'</span>';
+      if(method==='both'&&isFinite(n.sm)&&isFinite(n.vm)){var d=Math.abs(n.sm-n.vm); html+='<span class="'+(d>Math.max(0.01,0.1*n.vm)?'err':'muted')+'">Syringe says '+n.sm.toFixed(3)+' mL, vial says '+n.vm.toFixed(3)+' mL'+(d>Math.max(0.01,0.1*n.vm)?' — they disagree; the vial figure is used.':' — agree.')+'</span>'}
+      if(ml<=0) html+='<span class="err">Nothing drawn (the after weight must be lower than before).</span>';
+      else if(v.planned_mg){ var ratio=mg/v.planned_mg; if(ratio>1.25||ratio<0.75) html+='<span class="err">This is '+(ratio>=1?ratio.toFixed(1)+'× your planned dose':Math.round(ratio*100)+'% of your planned dose')+' ('+fmtMg(v.planned_mg)+'). Check the syringe before injecting.</span>'; else html+='<span class="muted">Within 25% of your planned '+fmtMg(v.planned_mg)+'.</span>' }
+      el.innerHTML=html }
+    ['d-se','d-sf','d-b','d-a'].forEach(function(id){$('#'+id).addEventListener('input',doseCalc)});
+    $('#f-dose').addEventListener('submit',function(e){ e.preventDefault(); var err=$('#d-err'); err.hidden=true; var n=doseNums(); var ml=method==='vial'?n.vm:(method==='both'&&isFinite(n.vm)?n.vm:n.sm);
+      if(!isFinite(ml)||ml<=0){err.textContent='Enter the weights first; the amount drawn must be greater than zero.';err.hidden=false;return}
+      if(!isFinite(c.conc)){err.textContent='This vial has no measured water volume, so there is no concentration to work from.';err.hidden=false;return}
+      var t=tEl.value?new Date(tEl.value).toISOString():new Date().toISOString();
+      v.doses.push({t:t, ml:ml, mg:r3(ml*c.conc), method:method, before_g:isFinite(num('d-b'))?num('d-b'):null, after_g:isFinite(num('d-a'))?num('d-a'):null, syr_empty_g:isFinite(num('d-se'))?num('d-se'):null, syr_full_g:isFinite(num('d-sf'))?num('d-sf'):null, note:$('#d-note').value.trim()});
+      if(method!=='syringe'&&isFinite(num('d-a'))) v.weights.push({t:t, g:num('d-a')});
+      toast('Dose logged: '+fmtMg(ml*c.conc)); commit() });
+    $('#f-weigh').addEventListener('submit',function(e){ e.preventDefault(); var g=num('w-g'); if(!isFinite(g)) return; v.weights.push({t:new Date().toISOString(), g:g}); toast('Weight recorded'); commit() });
+    $('#f-plan').addEventListener('submit',function(e){ e.preventDefault(); var d=num('p-dose'); v.planned_mg=isFinite(d)&&d>0?d:null; var pw=num('p-pw'); v.per_week=isFinite(pw)&&pw>=0?pw:1; var ld=num('p-lead'); v.lead_days=isFinite(ld)&&ld>=0?Math.round(ld):10; toast('Plan updated'); commit() });
+    $$('[data-act]').forEach(function(b){ b.addEventListener('click',function(){ var a=b.getAttribute('data-act');
+      if(a==='ordered'){v.status='ordered'; v.ordered_on=new Date().toISOString(); commit()}
+      else if(a==='unorder'){v.status='active'; v.ordered_on=null; commit()}
+      else if(a==='archive'){v.status='archived'; commit(); location.hash=''}
+      else if(a==='unarchive'){v.status='active'; commit()}
+      else if(a==='delete'){ if(b.getAttribute('data-armed')){ state.vials=state.vials.filter(function(x){return x.id!==v.id}); commit(); location.hash='' } else { b.setAttribute('data-armed','1'); b.textContent='Tap again to delete'; setTimeout(function(){b.removeAttribute('data-armed'); b.textContent='Delete vial'},3000) } }
+      else if(a==='scale'){ var cur=(state.scale.acc*1000).toFixed(0); var wrap=document.createElement('form'); wrap.className='row'; wrap.innerHTML='<label class="fl">Scale accuracy (± mg)<input id="s-acc" class="mono" type="number" step="1" min="0" value="'+cur+'"></label><button class="btn sm" type="submit">Save</button>'; b.replaceWith(wrap); wrap.addEventListener('submit',function(e){e.preventDefault(); var a2=num('s-acc'); if(isFinite(a2)&&a2>=0){state.scale.acc=a2/1000; commit()}}) }
+    }) });
+    $$('[data-del-dose]').forEach(function(b){ b.addEventListener('click',function(){ var i=+b.getAttribute('data-del-dose'); if(b.getAttribute('data-armed')){ v.doses.splice(i,1); commit() } else { b.setAttribute('data-armed','1'); b.textContent='Confirm'; setTimeout(function(){b.removeAttribute('data-armed'); b.textContent='Delete'},3000) } }) });
+  }
+
+  // new-vial form
+  function newCalc(){ var dry=num('n-dry'), full=num('n-full'), mg=num('n-mg'), se=num('n-se'), sf=num('n-sf'); var el=$('#n-calc');
+    if(!isFinite(dry)||!isFinite(full)){el.innerHTML='Enter the dry and after-water weights to see the measured volume and concentration.';return}
+    var water=r3(full-dry); var html='<span>Water in the vial: <b>'+water.toFixed(3)+' g = '+water.toFixed(3)+' mL</b></span>';
+    if(isFinite(sf)){var sw=r3(sf-(isFinite(se)?se:0)); var d=r3(sw-water); html+='<span class="'+(Math.abs(d)>Math.max(0.02,0.05*sw)?'err':'muted')+'">Syringe delivered '+sw.toFixed(3)+' mL'+(Math.abs(d)>Math.max(0.02,0.05*sw)?' — '+Math.abs(d).toFixed(3)+' mL '+(d>0?'never reached the vial (pushed back under pressure or leaked). The vial figure is used.':'more in the vial than the syringe shows — check the weights.'):' — matches.')+'</span>'}
+    if(isFinite(mg)&&water>0) html+='<span>Concentration: <b>'+(mg/water).toFixed(2)+' mg/mL</b> (label '+mg+' mg ÷ '+water.toFixed(3)+' mL)</span>';
+    if(water<=0) html+='<span class="err">The after-water weight must be higher than the dry weight.</span>';
+    el.innerHTML=html }
+  ['n-dry','n-full','n-mg','n-se','n-sf'].forEach(function(id){$('#'+id).addEventListener('input',newCalc)});
+  $('#f-new').addEventListener('submit',function(e){ e.preventDefault(); var err=$('#n-err'); err.hidden=true;
+    var name=$('#n-name').value.trim(), mg=num('n-mg'), dry=num('n-dry'), full=num('n-full');
+    if(!name||!isFinite(mg)||mg<=0||!isFinite(dry)||!isFinite(full)){err.textContent='Name, label amount, dry weight and after-water weight are required.';err.hidden=false;return}
+    if(full<=dry){err.textContent='The after-water weight must be higher than the dry weight.';err.hidden=false;return}
+    var se=num('n-se'), sf=num('n-sf'); var d=num('n-dose'), pw=num('n-pw'), ld=num('n-lead');
+    var v={id:uid(), name:name, src:$('#n-src').value.trim(), label_mg:mg, diluent:$('#n-dil').value, dry_g:dry, full_g:full, syr_water_g:isFinite(sf)?r3(sf-(isFinite(se)?se:0)):null, planned_mg:isFinite(d)&&d>0?d:null, per_week:isFinite(pw)&&pw>=0?pw:1, lead_days:isFinite(ld)&&ld>=0?Math.round(ld):10, status:'active', ordered_on:null, created:new Date().toISOString(), notes:'', doses:[], weights:[{t:new Date().toISOString(), g:full}]};
+    state.vials.push(v); $('#f-new').reset(); $('#n-pw').value='1'; $('#n-lead').value='10'; newCalc(); commit(); location.hash='vial-'+v.id; toast('Vial saved') });
+  $('#peps').innerHTML=PEPS.map(function(p){return '<option value="'+esc(p)+'">'}).join('');
+
+  // router
+  function render(){ renderAlerts(); renderList(); var h=(location.hash||'').slice(1).replace(/[^A-Za-z0-9-]/g,'');
+    $('#view-list').hidden=!(h===''||h==='list'); $('#view-new').hidden=h!=='new'; $('#view-vial').hidden=h.indexOf('vial-')!==0;
+    if(h.indexOf('vial-')===0) renderVial(h.slice(5)); if(h==='new') newCalc(); }
+  window.addEventListener('hashchange',function(){render(); window.scrollTo(0,0)});
+  loadLocal(); render(); initDb();
+})();
+</script>

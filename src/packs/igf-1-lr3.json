@@ -1,0 +1,197 @@
+{
+  "id": "igf-1-lr3",
+  "name": "IGF-1 LR3 (Long R3 IGF-1)",
+  "brands": "",
+  "maker": "",
+  "group": "research",
+  "pill": "Unapproved",
+  "overview": {
+    "headline": "A lab-made variant of IGF-1 designed to keep cells growing in a dish. It has never been a medicine.",
+    "lede": "Long R3 IGF-1 is an 83-amino-acid analogue of insulin-like growth factor 1, built in 1992 so it would not stick to the body's IGF-binding proteins and would stay active in cell culture. Biotech suppliers sell it as a research reagent marked \"not for human or veterinary use\"; peptide shops sell the same idea for muscle growth. No company has ever asked a regulator to approve it, and no human trial has been published.",
+    "stats": [
+      {"num": "0", "lbl": "human trials published for IGF-1 LR3", "src": "Published literature; registry searches return nothing"},
+      {"num": "83", "lbl": "amino acids: natural IGF-1 (70) plus a 13-unit tail and one swapped unit", "src": "Francis et al., J Mol Endocrinol 1992"},
+      {"num": "42%", "lbl": "of children on the approved IGF-1 drug (mecasermin) had low blood sugar at least once in its trials", "src": "Increlex label, 71 patients, mean 3.9 years"}
+    ],
+    "mechanism": {
+      "intro": "It acts on the IGF-1 receptor, the growth signal one step downstream of growth hormone.",
+      "parts": [
+        {"name": "IGF-1 receptor", "text": "IGF-1 tells muscle, bone, cartilage and many other tissues to grow and to take up glucose. LR3 binds this receptor like IGF-1 does."},
+        {"name": "The \"long R3\" change", "text": "Swapping one amino acid (position 3) and adding a 13-unit tail stops the molecule binding IGF-binding proteins, the carriers that hold most IGF-1 in reserve. In a dish that means more free, longer-acting signal. In a body it would mean the same, with none of the normal brakes."}
+      ]
+    },
+    "more": {
+      "title": "More: the difference from the approved drug",
+      "paras": [
+        "Mecasermin (Increlex) is recombinant human IGF-1 with the natural sequence. It is approved in the U.S. (2005) and Canada (December 2020) for children aged 2 and up with severe primary IGF-1 deficiency, a condition affecting fewer than 5 in 10,000 people. It is not approved for adults, athletes or anyone with normal IGF-1, and its label says it is not a substitute for growth hormone.",
+        "LR3 was designed by Australian researchers (Francis, Ross, Ballard and colleagues) as a more potent, longer-acting reagent for cell culture. The published work is in cells and rats.",
+        "Everything here comes from the primary literature, the Increlex label and regulators' notices. Sources are under the Status tab."
+      ]
+    }
+  },
+  "results": {
+    "headline": "No human results exist. What is known comes from cells, animals and the approved IGF-1 drug.",
+    "lede": "There is no trial of IGF-1 LR3 in people, so there is nothing to chart. The nearest human evidence is mecasermin, given to children who cannot make IGF-1.",
+    "chart": null,
+    "stats": [
+      {"num": "No human data", "lbl": "on muscle, strength, fat or recovery with IGF-1 LR3", "src": "No published trial"}
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {"b": "Cells.", "t": "LR3 drives protein synthesis and cell division more strongly than IGF-1 in culture, which is what it was designed for (Francis 1992)."},
+        {"b": "Animals.", "t": "In rats, LR3 and related variants that escape the carrier proteins were more potent than IGF-1 at the same dose (Tomas 1993)."},
+        {"b": "Children with IGF-1 deficiency.", "t": "Mecasermin increased growth in children who had almost no IGF-1 of their own. That is the whole human evidence base for benefit from any IGF-1 product."},
+        {"b": "Healthy adults.", "t": "Nothing. No controlled trial has tested LR3, and no regulator has approved any IGF-1 product for healthy adults."}
+      ]
+    },
+    "more": [
+      {
+        "title": "More: why \"longer-acting\" is the worry, not the selling point",
+        "paras": [
+          "Most IGF-1 in blood rides on carrier proteins, which release it slowly and protect against surges. LR3 was engineered to escape those carriers. That is useful in a dish. In a person it removes the system that normally stops IGF-1 from crashing blood sugar or over-stimulating tissues, and nobody has measured the result."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "Unknown in humans. By analogy with IGF-1: low blood sugar, tissue overgrowth and a cancer question.",
+    "lede": "Because there are no human studies of LR3, the only guide is the approved IGF-1 drug and what is known about IGF-1 biology.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "Not measurable: no trial. In the Increlex trials (71 children followed for a mean of 3.9 years) no child withdrew for side effects, but 42% had low blood sugar at least once, five severely, and four had seizures or lost consciousness."
+    },
+    "unique": {
+      "title": "Hypoglycemia",
+      "text": "IGF-1 acts like insulin on glucose. The Increlex label requires dosing with a meal and lists seizures from low blood sugar as a known risk. LR3 is designed to act longer and with fewer brakes, so the same risk is expected to be larger, though no one has measured it."
+    },
+    "more": [
+      {
+        "title": "More: what the approved IGF-1 drug warns about",
+        "paras": [
+          "Low blood sugar (42% of trial children); enlarged tonsils and adenoids with snoring and sleep apnea (15%); raised pressure in the head with headache and vision changes; slipped hip growth plates and worsening scoliosis in growing children; and postmarketing reports of cancers in treated children, more often at higher-than-recommended doses. The label contraindicates it in anyone with cancer or a history of cancer.",
+          "Tissue growth. IGF-1 is the hormone behind the enlarged jaw, hands and organs of acromegaly. Long-term, unmonitored IGF-1 stimulation is expected to carry the same risks."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "None documented in humans for LR3. In deficient children, mecasermin restores growth; that is the entire evidence base for benefit."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms trial teams treat as urgent",
+      "items": [
+        "Shakiness, sweating, confusion, fainting or a seizure (low blood sugar)",
+        "Severe headache with vision changes or vomiting",
+        "Snoring with pauses in breathing",
+        "Hip or knee pain, or a limp, in a young person",
+        "A new lump or rapidly growing tissue"
+      ],
+      "note": "Anyone with these symptoms should get medical care right away. The urgent list is drawn from the Increlex label."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "No human half-life has been measured for IGF-1 LR3. Figures circulated online (20 to 30 hours, or days) come from cell-culture and animal work, not from people. The approved IGF-1 drug, mecasermin, has a half-life of about 5.8 hours in children after injection under the skin (Increlex label); LR3 was built to last longer, but how much longer in a human body is unknown.",
+    "stats": [
+      {"num": "No human PK", "lbl": "for IGF-1 LR3", "src": "No published study"},
+      {"num": "5.8 h", "lbl": "half-life of the approved IGF-1 drug (mecasermin) in children, with a peak at 2 hours", "src": "Increlex label, section 12.3"},
+      {"num": "13 + 1", "lbl": "the extra tail and one swapped amino acid that stop LR3 binding carrier proteins", "src": "Francis et al., 1992"}
+    ],
+    "explain": [
+      {"b": "Why a lab reagent is not a drug.", "t": "Medicines need measured absorption, half-life, dose response and safety in people. None of this exists for LR3."},
+      {"b": "Why \"long-acting\" matters.", "t": "Carrier proteins normally buffer IGF-1. A molecule that escapes them acts faster and longer, including on blood sugar."}
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: what this page cannot tell you",
+        "paras": [
+          "Anything about what is in a vial sold as IGF-1 LR3. Reagent-grade protein is made for cells, not for sterility or dose accuracy in humans, and grey-market vials are unverified."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "There are no trials. The approved IGF-1 drug has a regimen, but for a different patient.",
+    "lede": "IGF-1 LR3 has never entered a clinical trial. Mecasermin's label regimen is for children with severe IGF-1 deficiency, injected with meals and adjusted by their specialist. It is not relevant to adults seeking muscle.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: how the mecasermin trials handled low blood sugar",
+        "paras": [
+          "Doses were given with a meal or snack, started low and raised only if blood sugar stayed normal, and skipped if the child could not eat. Families were taught to recognize hypoglycemia. That supervision is the context for the 42% figure, and it is absent from any online purchase."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials that have been run",
+      "items": [
+        "IGF-1 LR3: none in humans. Published work is in cell culture and rats (Francis 1992; Tomas 1993).",
+        "Mecasermin (natural-sequence IGF-1): open-label trials in 71 children with severe primary IGF-1 deficiency, the basis of approval in the U.S. (2005) and Canada (2020).",
+        "No trial of any IGF-1 product for muscle, fat loss or performance in healthy adults has led to an approval."
+      ]
+    },
+    "find": {
+      "text": "A registry search for IGF-1 LR3 returns nothing. Searching \"mecasermin\" shows the deficiency studies.",
+      "term": "mecasermin",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "Not approved anywhere, for anything. Banned in sport. Sold anyway.",
+    "items": [
+      {"tag": "no", "label": "Canada", "text": "Not authorized. Health Canada treats injectable peptides as prescription drugs, and \"research use only\" labels do not make them legal (advisory of April 9, 2026). The approved IGF-1 drug, Increlex, has been authorized since December 2020 for children with severe primary IGF-1 deficiency only."},
+      {"tag": "no", "label": "United States", "text": "Not approved and never submitted. FDA treats peptides sold with muscle, fat-loss or recovery claims as unapproved new drugs regardless of research disclaimers (warning letters 2024–2026). Increlex has been approved since 2005 for severe primary IGF-1 deficiency in children."},
+      {"tag": "no", "label": "Sport", "text": "Prohibited at all times under WADA's 2026 Prohibited List (S2.3: IGF-1 and its analogues)."}
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "What is really in the vial",
+        "text": "Legitimate LR3 is a cell-culture reagent sold to laboratories with \"not for human use\" on the data sheet. Vials sold to consumers are either that reagent repackaged, or something else. There is no approved product to compare against and no verification.",
+        "items": [
+          "No sterility, potency or purity standard for human use exists for LR3.",
+          "Health Canada (2025–2026) has seized unauthorized injectable peptides from online sellers and gyms and warns they may contain the wrong amount, hidden ingredients or contaminants.",
+          "FDA warning letters (2024–2026) treat website claims about muscle, fat loss or recovery as proof of intended human use, whatever the label says."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "warn",
+        "title": "If someone has already used it",
+        "text": "See a doctor and mention the product. Ask about:",
+        "items": [
+          "Blood sugar, especially any episodes of shakiness, sweating or confusion",
+          "Snoring or breathing pauses in sleep",
+          "Headaches with vision changes",
+          "Any new lump, or symptoms in a known or past cancer"
+        ],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: the IGF-1 and cancer question",
+        "paras": [
+          "IGF-1 is a growth signal for normal and cancerous cells alike. The approved drug's label forbids use in anyone with cancer or a cancer history and reports malignancies in treated children, more often at higher-than-recommended doses. Whether courses of an IGF-1 analogue in adults change cancer risk is unknown, and nobody has studied LR3."
+        ]
+      }
+    ],
+    "sources": [
+      {"text": "Francis GL, Ross M, Ballard FJ, et al. Novel recombinant fusion protein analogues of insulin-like growth factor (IGF)-I indicate the relative importance of IGF-binding protein and receptor binding for enhanced biological potency. Journal of Molecular Endocrinology 1992;8:213–223.", "url": ""},
+      {"text": "Tomas FM, Knowles SE, Owens PC, et al. Biochemical Journal 1993;291:781–786 (IGF-1 and its variants, including LR3, in rats).", "url": ""},
+      {"text": "Eton Pharmaceuticals, INCRELEX (mecasermin) prescribing information, revised July 2025 (indications, warnings, adverse reactions, section 12.3).", "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/021839s033lbl.pdf"},
+      {"text": "Health Canada, Regulatory Decision Summary for Increlex (Ipsen Biopharmaceuticals Canada), Notice of Compliance for severe primary IGF-1 deficiency.", "url": "https://dhpp.hpfb-dgpsa.ca/review-documents/resource/RDS00739"},
+      {"text": "Ipsen Canada, press release: Health Canada approves Increlex, March 16, 2021 (approval December 2020).", "url": "https://www.ipsen.com/canada/press-releases/health-canada-approves-increlex-first-and-only-recombinant-human-insulin-like-growth-factor-1-igf-1-therapy-in-canada-for-the-treatment-of-severe-growth-failure-associated-with-ultra-rare-con/"},
+      {"text": "Cayman Chemical, IGF-1 LR3 product page (research reagent, \"not for human or veterinary use\"), with the 1992 and 1993 primary references.", "url": "https://www.caymanchem.com/product/45532/igf-1-lr3"},
+      {"text": "Health Canada, Think twice before injecting peptides bought online, April 9, 2026.", "url": "https://recalls-rappels.canada.ca/en/alert-recall/think-twice-injecting-peptides-bought-online-unauthorized-products-can-seriously-harm"},
+      {"text": "Health Canada, public advisory: unauthorized injectable peptide drugs seized and sold by Canada Peptide, August 1, 2025.", "url": "https://recalls-rappels.canada.ca/en/alert-recall/unauthorized-injectable-peptide-drugs-seized-and-sold-canada-peptide-may-pose-serious"},
+      {"text": "FDA, warning letter to Prime Sciences, March 31, 2026 (research-use disclaimers do not change intended human use).", "url": "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/prime-sciences-721805-03312026"},
+      {"text": "World Anti-Doping Agency, 2026 Prohibited List, effective January 1, 2026 (S2.3).", "url": "https://www.wada-ama.org/en/prohibited-list"}
+    ]
+  }
+}

@@ -1,0 +1,270 @@
+{
+  "id": "cartalax",
+  "name": "Cartalax",
+  "brands": "",
+  "maker": "St Petersburg Institute of Bioregulation and Gerontology (V. Khavinson)",
+  "group": "research",
+  "pill": "Unapproved",
+  "overview": {
+    "headline": "A three-amino-acid peptide sold for joints. The published studies are on skin, kidney and stem cells, not cartilage.",
+    "lede": "Cartalax is the Khavinson institute's tripeptide Ala-Glu-Asp. Vendors sell it for cartilage and joints, yet we could not find a single published study of it in cartilage, joint tissue or people with joint disease. The papers that exist are cell-culture work on skin fibroblasts, kidney tissue and stem cells. It is not a registered medicine anywhere.",
+    "stats": [
+      {
+        "num": "3",
+        "lbl": "amino acids: Ala-Glu-Asp",
+        "src": "Khavinson 2016, 2020"
+      },
+      {
+        "num": "0",
+        "lbl": "published studies in cartilage, joints or people with arthritis",
+        "src": "PubMed, patents, institute publications and registries, Oct 2026"
+      },
+      {
+        "num": "0",
+        "lbl": "human trials of any design",
+        "src": "PubMed, patents, institute publications and registries, Oct 2026"
+      }
+    ],
+    "mechanism": {
+      "intro": "A short peptide said to slow cell ageing in connective tissue.",
+      "parts": [
+        {
+          "name": "The bioregulator idea",
+          "text": "The 2016 computer model places Cartalax on the DNA sequence \"acct\" with only \"weak\" predicted binding, three times weaker than the tetrapeptide Pancragen at the same site. A docking calculation, not a measurement in tissue."
+        },
+        {
+          "name": "What the cell work showed",
+          "text": "Ala-Glu-Asp was tested on ageing skin fibroblasts (2016), kidney tissue cultures (2015), human mesenchymal stem cells (2020) and dental-ligament stem cells from 10 donors (2019), where significant effects were reported for a four-peptide mixture and for the tripeptide KED, not for Ala-Glu-Asp alone. No cartilage experiment appears anywhere."
+        }
+      ]
+    },
+    "more": {
+      "title": "More: where the name comes from",
+      "paras": [
+        "Each institute extract had a synthetic peptide designed to match it. Cartalax was assigned to cartilage, but unlike Bronchogen (bronchial cells) or Livagen (liver cells) the institute never published an experiment in the named tissue."
+      ]
+    }
+  },
+  "results": {
+    "headline": "Skin, kidney and stem cells in a dish, old-rat kidneys, and nothing about joints or people.",
+    "lede": "Every published Cartalax experiment is in cultured cells or rodent kidney. None measures cartilage, pain, mobility or any joint outcome.",
+    "chart": null,
+    "stats": [
+      {
+        "num": "10",
+        "lbl": "donors whose dental-ligament stem cells were tested in the 2019 Italian–Russian study, the only human-cell data",
+        "src": "Caputi et al. 2019, abstract"
+      }
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {
+          "b": "In vitro.",
+          "t": "Human skin fibroblasts ageing in culture (Lin'kova 2016) and human mesenchymal stem cells (Ashapkin 2020): gene-expression changes reported by the institute. Periodontal ligament stem cells from 10 donors (Caputi 2019): a four-peptide mixture raised the nerve-growth protein GAP43; Ala-Glu-Asp alone was not reported as significant. Kidney tissue cultures (Chalisova 2015)."
+        },
+        {
+          "b": "Animals.",
+          "t": "Old rats: kidney structure and function reported as improved with peptides including Ala-Glu-Asp (Zamorskii 2019). No cartilage or joint experiment in any species."
+        },
+        {
+          "b": "Russian human reports.",
+          "t": "None found. Cartalax is absent from the institute's 2014 clinical review and from its 2020 monograph's human data."
+        }
+      ]
+    },
+    "more": [
+      {
+        "title": "More: why a name is not evidence",
+        "paras": [
+          "A product called Cartalax, sold for joints, with no cartilage study is a marketing fact, not a scientific one. The Italian stem-cell work is a collaboration with Khavinson as co-author, not an independent test."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "No safety data in people or animals beyond cell cultures and one rat kidney study.",
+    "lede": "Unlike several of its siblings, Cartalax has no U.S. patent with toxicity testing and no human report of any kind.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "Not measurable: no trial has been run and no human report exists."
+    },
+    "unique": {
+      "title": "What is actually known",
+      "text": "Nothing. We found no toxicity study, no human exposure and no adverse-event report for this peptide."
+    },
+    "more": [
+      {
+        "title": "More: what a trial would monitor for",
+        "paras": [
+          "Joint symptoms and imaging, if the claim were tested; kidney function, the only organ it has been shown to affect in a living animal; immune reactions."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "In cultured skin, kidney and stem cells: changes in growth and gene markers. In old rats: better-looking kidneys. In joints or people: nothing measured."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms a doctor should see promptly",
+      "items": [
+        "Spreading redness, swelling or pus at an injection site, or fever and chills after an injection",
+        "Hives, swelling of the face or throat, trouble breathing",
+        "Yellowing of the skin or eyes, dark urine",
+        "A hot, swollen or newly painful joint, which needs a doctor regardless of cause"
+      ],
+      "note": "No trial has defined this peptide's own danger signs; these relate to an unverified product."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "No one has measured Cartalax in a person's blood; no half-life or absorption figure exists for it in any species. There is nothing to build a curve from.",
+    "stats": [
+      {
+        "num": "None",
+        "lbl": "human half-life; never measured",
+        "src": "No PK study found, Oct 2026"
+      },
+      {
+        "num": "3",
+        "lbl": "amino acids long (Ala-Glu-Asp)",
+        "src": "Khavinson 2016"
+      },
+      {
+        "num": "0",
+        "lbl": "toxicity or pharmacokinetic studies in any species",
+        "src": "PubMed, patents, institute publications and registries, Oct 2026"
+      }
+    ],
+    "explain": [
+      {
+        "b": "Why there is no chart.",
+        "t": "The simulator on other pages needs a measured half-life; none exists for Cartalax."
+      },
+      {
+        "b": "Why the oral claim is contested.",
+        "t": "Pharmacologists expect peptides this short to be digested by gut and blood enzymes; the institute says they are absorbed intact. Nothing in people settles it."
+      }
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: what this page cannot tell you",
+        "paras": [
+          "What is in a product sold as Cartalax, or what repeated use does: no independent analysis exists, and no study has followed anyone beyond a few weeks."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "No clinical trial, registered or unregistered, could be found.",
+    "lede": "Cartalax has never been given to people in any published study.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: how the existing studies were run",
+        "paras": [
+          "Cultured skin, kidney and stem cells were exposed to the peptide and compared with untreated cultures; old rats were given peptides and their kidneys examined. None of this says anything about joints, or about a person."
+        ]
+      }
+    ],
+    "running": {
+      "title": "No registered trials",
+      "items": [
+        "No clinical trial of Cartalax on ClinicalTrials.gov or any registry we could find (October 2026).",
+        "No Russian clinical report of Cartalax, controlled or uncontrolled, was found."
+      ]
+    },
+    "find": {
+      "text": "Search the registry for \"Cartalax\" and its sequence \"AED\". We found no registered trial.",
+      "term": "Cartalax",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "Not approved anywhere. Sold for joints with no joint study.",
+    "items": [
+      {
+        "tag": "no",
+        "label": "Canada",
+        "text": "Never authorised by Health Canada as a medicine or natural health product (October 2026)."
+      },
+      {
+        "tag": "no",
+        "label": "United States",
+        "text": "Not FDA-approved; absent from FDA's 503A compounding category list of 14 May 2026."
+      },
+      {
+        "tag": "no",
+        "label": "Russia",
+        "text": "Not a registered medicine; not among the institute's six licensed products, and no Russian registration of any kind found."
+      }
+    ],
+    "cards": [
+      {
+        "kind": "warn",
+        "title": "What a \"bioregulator\" claim rests on",
+        "text": "The claim is that a peptide copied from an organ extract reaches that organ and switches on its genes. For Cartalax the support is:",
+        "items": [
+          "Computer docking models, test-tube DNA work and cell cultures from one institute; no study has tracked one of these peptides into a human organ.",
+          "No cartilage or joint experiment has been published for this peptide in any species."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "crit",
+        "title": "What \"research use only\" means",
+        "text": "A \"research use only\" label is a legal device, not a safety rating. No regulator in Canada or the U.S. has checked what is in a vial sold as Cartalax, and no toxicology or purity data have been filed in the West.",
+        "items": [
+          "Whether a supplement under the name Карталакс is currently registered in Russia we could not confirm."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "soft",
+        "title": "Symptoms to take to a doctor",
+        "text": "If any of these appear after using such a product, see a doctor and bring the product:",
+        "items": [
+          "Fever, chills, or a hot, swollen injection site",
+          "Hives, swelling of the face or throat, trouble breathing",
+          "Yellowing of the skin or eyes, dark urine",
+          "A hot, swollen or newly painful joint"
+        ],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: the Khavinson peptide family",
+        "paras": [
+          "Vladimir Khavinson (1946–2024) directed the St Petersburg Institute of Bioregulation and Gerontology, which made animal-organ extracts from the 1970s and then designed two- to four-amino-acid peptides from each extract's amino-acid make-up, naming them after target organs. Six products became licensed medicines in the USSR or Russia: Thymalin (1982), Thymogen and Epithalamin (1990), Prostatilen (1992), Cortexin and Retinalamin (1999). The synthetic organ-named peptides sold online are not among them, and none appears in an international trial registry."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "text": "Caputi S, Khavinson V, Trubiani O et al. Short peptides increased nestin expression in human periodontal ligament stem cells. Book of Abstracts, International Symposium of Experts, Stockholm, January 2019.",
+        "url": "https://khavinson.info/assets/files/pdf/2019-21_23.pdf"
+      },
+      {
+        "text": "Lin'kova NS et al., skin fibroblasts ageing in vitro (2016); Chalisova NI et al., kidney tissue cultures (2015); Zamorskii II et al., kidneys of old rats (2019); Ashapkin VV et al., human mesenchymal stem cells (2020). Titles as indexed; not retrieved.",
+        "url": ""
+      },
+      {
+        "text": "Khavinson VKh, Lin'kova NS, Tarnovskaya SI. Short peptides regulate gene expression. Bull Exp Biol Med 2016;162(2): sequence table and modelled DNA binding sites.",
+        "url": "https://khavinson.info/assets/files/skan/2016-khavinson_lin_tarn.pdf"
+      },
+      {
+        "text": "Khavinson VKh. Peptides, Genome, Aging. Russian Academy of Sciences, 2020: peptide table; the six institute products licensed as medicines.",
+        "url": "https://new.ras.ru/upload/iblock/333/b7wjz691315010b39o8ja61gl78y062c.pdf"
+      },
+      {
+        "text": "U.S. FDA, 503A bulk drug substances category list, updated 14 May 2026.",
+        "url": "https://fda.gov/media/94155/download"
+      }
+    ]
+  }
+}

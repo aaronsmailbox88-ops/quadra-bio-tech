@@ -1,0 +1,316 @@
+{
+  "id": "kisspeptin-10",
+  "name": "Kisspeptin-10",
+  "brands": "",
+  "maker": "",
+  "group": "research",
+  "pill": "Unapproved",
+  "overview": {
+    "headline": "A fragment of the hormone that tells the brain to start the reproductive cycle. Real human research exists; no approval does.",
+    "lede": "Kisspeptin is a natural hormone, identified in 2003 as the switch that starts puberty and drives fertility. Kisspeptin-10 is its shortest active fragment. University teams in London and Boston have given kisspeptin to a few hundred volunteers and patients since 2005, mostly as the longer kisspeptin-54. No form is approved anywhere, no company is developing kisspeptin-10, and it is banned in sport for men.",
+    "stats": [
+      {
+        "num": "~4 min",
+        "lbl": "half-life of kisspeptin-10 in blood after an intravenous dose",
+        "src": "Jayasena et al. 2011, JCEM"
+      },
+      {
+        "num": "0 to 11",
+        "lbl": "FDA advisory committee vote in October 2024 against allowing pharmacies to compound it",
+        "src": "PCAC minutes, 29 October 2024"
+      },
+      {
+        "num": "32",
+        "lbl": "women, and separately 32 men, with low sexual desire in the 2022 and 2023 randomized trials (which used kisspeptin-54)",
+        "src": "JAMA Network Open, 2022 and 2023"
+      }
+    ],
+    "mechanism": {
+      "intro": "Kisspeptin acts one step above the hormones fertility clinics already use.",
+      "parts": [
+        {
+          "name": "KISS1 receptor",
+          "text": "Kisspeptin binds a receptor on the brain's GnRH neurons, which release gonadotropin-releasing hormone in pulses. GnRH drives the pituitary to release LH and FSH, which drive testosterone, estrogen and egg or sperm production."
+        },
+        {
+          "name": "Kisspeptin-10 vs -54",
+          "text": "The gene makes a 54-amino-acid peptide; kisspeptin-10 is the 10-amino-acid tail that binds the receptor. Both raise LH in people, but kisspeptin-10 lasts about 4 minutes in blood against roughly half an hour for kisspeptin-54, so most clinical research has used the longer form."
+        },
+        {
+          "name": "Desensitisation",
+          "text": "Continuous exposure switches the system off: the receptor stops responding and LH falls. This was shown in women given kisspeptin-54 twice daily, and it is why kisspeptin is studied as pulses or single doses."
+        }
+      ]
+    },
+    "more": {
+      "title": "More: where it comes from",
+      "paras": [
+        "Kisspeptin was first found as a tumour-suppressor gene product (KISS1) in 1996. In 2003 two groups showed that people born with faulty kisspeptin receptors never go through puberty. Waljit Dhillo's team at Imperial College London gave the first injections to healthy men in 2005 and has run the fertility and sexual-function studies since; Yee-Ming Chan's team in Boston uses kisspeptin-10 to probe puberty disorders.",
+        "Everything on this page comes from those peer-reviewed studies, the FDA's 2024 review of kisspeptin-10 and the WADA list, cited under Status."
+      ]
+    }
+  },
+  "results": {
+    "headline": "It reliably raises LH. Whether that helps anyone is still an open question.",
+    "lede": "Small, careful physiology studies show that kisspeptin-10 raises LH within minutes in healthy men and, depending on cycle phase, in women. The clinically interesting results, triggering egg maturation in IVF and changing sexual-desire brain responses, come from trials of kisspeptin-54, not kisspeptin-10.",
+    "chart": null,
+    "stats": [
+      {
+        "num": "11 of 12",
+        "lbl": "men with congenital kisspeptin-pathway defects who had no LH response to kisspeptin-10, confirming where it acts",
+        "src": "Chan et al. 2014, reviewed by FDA"
+      },
+      {
+        "num": "5",
+        "lbl": "men with type 2 diabetes and low testosterone whose testosterone rose during an 11-hour kisspeptin-10 infusion (245 to 329 ng/dL in the four infused), with no placebo group",
+        "src": "George et al. 2013"
+      }
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {
+          "b": "Kisspeptin-10, human.",
+          "t": "In 2011 single intravenous doses raised LH in healthy men within minutes; in women the response depended on cycle phase (Jayasena; George). Later studies used it as a probe in men with hypogonadism and in adolescents with delayed puberty. Total participants across the FDA's 2024 review: under 100. No study measured a health outcome."
+        },
+        {
+          "b": "Kisspeptin-54, fertility.",
+          "t": "In 53 women undergoing IVF (2014) and 60 at high risk of ovarian hyperstimulation (2015), a single kisspeptin-54 injection matured eggs and led to live births, with no severe hyperstimulation. These were open-label, single-arm studies from one London centre."
+        },
+        {
+          "b": "Kisspeptin-54, sexual desire.",
+          "t": "In 32 women (2022) and 32 men (2023) with hypoactive sexual desire disorder, a 75-minute kisspeptin-54 infusion changed brain responses to erotic images on MRI compared with placebo, and in men increased penile response. These were single-session crossover studies measuring brain activity, not months of treatment."
+        },
+        {
+          "b": "Western review.",
+          "t": "The FDA's 2024 evaluation found the data insufficient to judge effectiveness for male hypogonadism, flagged an unstudied immune-reaction risk and a mouse study in which kisspeptin-10 worsened artery plaques, and the advisory committee voted 0 to 11 against compounding."
+        }
+      ]
+    },
+    "more": [
+      {
+        "title": "More: why fertility clinics do not use it yet",
+        "paras": [
+          "The IVF trigger studies were promising because kisspeptin works through the body's own LH surge, which should make dangerous ovarian hyperstimulation less likely than with hCG. But they were small, uncontrolled and from one group, and the short half-life is awkward; a longer-acting analogue (MVT-602) was tested in 2020 instead. No kisspeptin product has been submitted to any regulator."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "Well tolerated in short hospital studies. Long-term use is uncharted.",
+    "lede": "Across the volunteer studies, kisspeptin infusions and injections produced no serious adverse events. The studies were hours to days long, small, and often did not report side effects systematically. There is no human experience with repeated self-injection of kisspeptin-10.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "Not reported. The studies were single-session or a few days, with no discontinuations described."
+    },
+    "unique": {
+      "title": "What has actually been reported",
+      "text": "Three signals stand out. First, desensitisation: continuous or twice-daily kisspeptin-54 blunted the hormone response in women within two weeks, so repeated dosing may do the opposite of what users expect. Second, the FDA's adverse-event database held one report, a 17-year-old with hypogonadism given 100 micrograms of kisspeptin-10 under the skin daily for about six weeks who gained weight and showed a rise in the estrogen estrone; cause unproven. Third, in mice prone to atherosclerosis, four weeks of kisspeptin-10 increased artery plaques at both doses tested; relevance to people is unknown."
+    },
+    "more": [
+      {
+        "title": "More: what the trials monitor for",
+        "paras": [
+          "Hormone levels every 10 to 30 minutes, heart rate and blood pressure, and in the fertility studies ultrasound and signs of ovarian hyperstimulation. The sexual-desire trials added MRI and questionnaires. No study has measured antibodies to kisspeptin or followed participants for months, and pregnancy outside IVF has not been studied."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "In the IVF studies, no woman developed severe ovarian hyperstimulation, the most feared complication of standard triggers. In the sexual-desire trials, participants reported feeling happier about sex during the infusion. Both are early findings from small studies."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms trial teams treat as urgent",
+      "items": [
+        "Severe pelvic or abdominal pain, rapid bloating, breathlessness or sudden weight gain in anyone undergoing fertility treatment (signs of ovarian hyperstimulation)",
+        "Chest pain, fainting or a racing or irregular heartbeat",
+        "Swelling of the face or throat, hives or trouble breathing",
+        "Sudden severe headache or vision change"
+      ],
+      "note": "Anyone with these symptoms should get medical care right away, whatever product they have used."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "Kisspeptin-10 has a measured human half-life of about 4 minutes (3.8 minutes in men, 4.1 in women) after intravenous injection, with the blood peak about 10 minutes after a bolus. There is no tested dosing schedule, no approved dose and no data for injection under the skin, so the weekly-dosing simulator used elsewhere in this app has nothing to model: a 4-minute half-life means the peptide is gone within about 20 minutes of any dose.",
+    "stats": [
+      {
+        "num": "~4 min",
+        "lbl": "half-life in blood after an intravenous dose, men and women",
+        "src": "Jayasena et al. 2011, JCEM"
+      },
+      {
+        "num": "~20 min",
+        "lbl": "to clear about 97% after a dose: five half-lives",
+        "src": "Calculated from the 2011 half-life"
+      },
+      {
+        "num": "IV",
+        "lbl": "the route in nearly every human study; one study gave it under the skin to women",
+        "src": "FDA review, July 2024"
+      }
+    ],
+    "explain": [
+      {
+        "b": "Why the half-life rules out a simple shot.",
+        "t": "A peptide that disappears in minutes produces a brief hormone pulse. That is useful for a laboratory test or a one-off trigger, and useless as a steady treatment without a pump or a redesigned molecule."
+      },
+      {
+        "b": "Why more is not better.",
+        "t": "The system is built to respond to pulses. Sustained kisspeptin exposure shut the response down in human studies within days."
+      },
+      {
+        "b": "Why nothing here applies to products sold online.",
+        "t": "Their content is unverified, and the subcutaneous route has essentially no human data."
+      }
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: why there is no chart",
+        "paras": [
+          "The simulator models weekly injections that build up over months. Kisspeptin-10 is cleared in minutes and has no studied regimen, so a curve would be a spike that vanishes before the next pixel. The half-life is well measured; the regimen to apply it to does not exist."
+        ]
+      },
+      {
+        "title": "More: what a chart could not tell you anyway",
+        "paras": [
+          "Hormone responses to kisspeptin depend on sex, cycle phase, prior exposure and whether the person's own reproductive axis is intact. Blood levels of the peptide predict none of that."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "Academic trials only, in London and Boston.",
+    "lede": "Kisspeptin has been given to people only in university hospital studies, under research ethics approval and registered on public registries. No pharmaceutical company has run a kisspeptin-10 trial. Check the registry for anything currently open.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: how the studies were run",
+        "paras": [
+          "Volunteers came to a research unit, had a cannula placed, and received kisspeptin or saline over minutes to hours while blood was drawn every 10 to 30 minutes; the sexual-desire trials added an MRI scan during the infusion. None of this is a self-management plan, and a single-session design says nothing about repeated use."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials that have been run",
+      "items": [
+        "2005 to 2007, London: first kisspeptin-54 injections in healthy men and women; LH rose, more in some cycle phases than others (Dhillo et al.).",
+        "2011, London and Edinburgh: kisspeptin-10 intravenously in healthy men and women; potent LH rise in men, cycle-dependent in women; half-life about 4 minutes; faster LH pulses in men (Jayasena et al.; George et al.).",
+        "2011 onward, Boston: kisspeptin-10 as a probe of the GnRH pulse generator in men, women and people with congenital hypogonadism (Chan et al.).",
+        "2013, Edinburgh: kisspeptin-10 raised LH and testosterone in 5 men with type 2 diabetes and low testosterone; no placebo (George et al.).",
+        "2014 and 2015, London: kisspeptin-54 as an IVF trigger in 53 women, then 60 at high risk of hyperstimulation; eggs matured, live births, no severe hyperstimulation (Jayasena et al.; Abbara et al.).",
+        "2017 to 2023, London: kisspeptin-54 infusions changed sexual and emotional brain processing in healthy men (2017) and in 32 women (2022) and 32 men (2023) with hypoactive sexual desire disorder, placebo-controlled crossover (Comninos; Thurston; Mills).",
+        "2024, U.S.: FDA review and 0 to 11 advisory vote against compounding kisspeptin-10 for male hypogonadism."
+      ]
+    },
+    "find": {
+      "text": "Kisspeptin studies recruit mainly through Imperial College London and Massachusetts General Hospital. Search the registry for current entries; most use kisspeptin-54 or an analogue rather than kisspeptin-10.",
+      "term": "kisspeptin",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "Not approved anywhere. On the FDA's \"significant safety risk\" list and banned in men's sport.",
+    "items": [
+      {
+        "tag": "no",
+        "label": "Canada",
+        "text": "No Health Canada authorisation (no entry in the Drug Product Database, October 2026). Anything sold as kisspeptin in Canada is an unauthorised drug."
+      },
+      {
+        "tag": "no",
+        "label": "United States",
+        "text": "Not approved. Kisspeptin-10 remains in Category 2 (\"bulk drug substances that raise significant safety risks\") of the FDA's 503A compounding list, updated 14 May 2026, one of only six substances left there. On 29 October 2024 the Pharmacy Compounding Advisory Committee voted 0 to 11 against adding it, citing a lack of convincing safety and efficacy data. Pharmacies may not compound it; state boards (for example Ohio's) have acted against those that did."
+      },
+      {
+        "tag": "no",
+        "label": "Sport",
+        "text": "Prohibited at all times for male athletes: WADA's 2026 Prohibited List names \"kisspeptin and its agonist analogues\" among testosterone-stimulating peptides in section S2.2.1."
+      },
+      {
+        "tag": "no",
+        "label": "Elsewhere",
+        "text": "No marketing application in the EU, UK, Australia or elsewhere. Research continues only in university hospitals."
+      }
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "What \"research use only\" means",
+        "text": "Kisspeptin-10 sold online is labelled \"not for human consumption\" so the seller can avoid drug law. The real research on kisspeptin happened in hospitals with intravenous infusions and minute-by-minute blood tests; the vials sold online have no connection to it.",
+        "items": [
+          "No regulator checks the contents, strength or sterility. The FDA found it could not even determine which forms were being sold.",
+          "The FDA keeps kisspeptin-10 in its highest-concern compounding category, so even a licensed pharmacy with a prescription cannot legally make it.",
+          "Male athletes who test positive face a doping violation."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "warn",
+        "title": "Symptoms to take to a doctor",
+        "text": "Anyone who has used a product sold as kisspeptin should see a doctor if they notice:",
+        "items": [
+          "Missed or irregular periods, or new breast tenderness or discharge",
+          "Loss of libido or erectile change, hot flushes or mood change (signs the axis has been suppressed)",
+          "Pelvic pain or bloating",
+          "Hives, facial swelling or wheezing"
+        ],
+        "note": "A doctor can check LH, FSH, testosterone or estradiol with a simple blood test. Report a reaction to MedEffect Canada (canada.ca/medeffect) or FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: why real science and a black market coexist",
+        "paras": [
+          "Kisspeptin has a solid physiological story and genuine academic trials, which is exactly why vendors market it for libido, fertility and testosterone. The gap is between what the trials showed (short hormone pulses, brain-scan changes during one infusion) and what buyers are promised (lasting improvement from self-injection). The FDA's reviewers concluded in 2024 that effectiveness could not be judged from existing studies, and the committee agreed unanimously."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "text": "Jayasena CN, Comninos AN et al. The effects of kisspeptin-10 on reproductive hormone release show sexual dimorphism in humans. Journal of Clinical Endocrinology and Metabolism, 2011;96(12):E1963-E1972 (half-life 3.8 min in men, 4.1 min in women).",
+        "url": "https://doi.org/10.1210/jc.2011-1408"
+      },
+      {
+        "text": "George JT et al. Kisspeptin-10 is a potent stimulator of LH and increases pulse frequency in men. JCEM, 2011;96(8):E1228-E1236; and George JT et al., kisspeptin-10 in men with type 2 diabetes and low testosterone, Clinical Endocrinology, 2013;79(1):100-104 (PubMed 23153270).",
+        "url": "https://doi.org/10.1210/jc.2011-0089"
+      },
+      {
+        "text": "Jayasena CN, Abbara A et al. Kisspeptin-54 triggers egg maturation in women undergoing in vitro fertilization. Journal of Clinical Investigation, 2014;124(8):3667-3677; and Abbara A et al., kisspeptin-54 trigger in 60 women at high risk of ovarian hyperstimulation, JCEM, 2015;100(9):3322-3331.",
+        "url": "https://doi.org/10.1172/JCI75730"
+      },
+      {
+        "text": "Comninos AN et al. Kisspeptin modulates sexual and emotional brain processing in humans. Journal of Clinical Investigation, 2017;127(2):709-719.",
+        "url": "https://doi.org/10.1172/JCI89519"
+      },
+      {
+        "text": "Thurston L et al. Effects of kisspeptin administration in women with hypoactive sexual desire disorder: a randomized clinical trial. JAMA Network Open, 2022;5(10):e2236131 (32 women, kisspeptin-54, crossover).",
+        "url": "https://doi.org/10.1001/jamanetworkopen.2022.36131"
+      },
+      {
+        "text": "Mills EG et al. Effects of kisspeptin on sexual brain processing and penile tumescence in men with hypoactive sexual desire disorder: a randomized clinical trial. JAMA Network Open, 2023;6(2):e2254313 (32 men, kisspeptin-54, crossover).",
+        "url": "https://doi.org/10.1001/jamanetworkopen.2022.54313"
+      },
+      {
+        "text": "U.S. FDA, Evaluation of kisspeptin-10 for inclusion on the 503A bulk drug substances list (advisory committee briefing document: human studies, pharmacokinetics, adverse-event report, mouse atherosclerosis data), 5 July 2024.",
+        "url": "https://fda.gov/media/182089/download"
+      },
+      {
+        "text": "U.S. FDA, Final summary minutes of the Pharmacy Compounding Advisory Committee meeting of 29 October 2024 (kisspeptin-10 vote: 0 yes, 11 no).",
+        "url": "https://fda.gov/media/185412/download"
+      },
+      {
+        "text": "U.S. FDA, Bulk drug substances nominated for use in compounding under section 503A: category lists (kisspeptin-10 in Category 2), updated 14 May 2026.",
+        "url": "https://fda.gov/media/94155/download"
+      },
+      {
+        "text": "World Anti-Doping Agency, 2026 Prohibited List, S2.2.1: kisspeptin and its agonist analogues, prohibited in males.",
+        "url": "https://www.wada-ama.org/en/prohibited-list"
+      }
+    ]
+  }
+}

@@ -1,0 +1,312 @@
+{
+  "id": "ghrp-2",
+  "name": "GHRP-2 (pralmorelin)",
+  "brands": "GHRP Kaken 100 (Japan, diagnostic test only)",
+  "maker": "Kaken Pharmaceutical (diagnostic product)",
+  "group": "approved",
+  "pill": "Approved (diagnostic, Japan)",
+  "overview": {
+    "headline": "A six-amino-acid peptide that makes the pituitary release a burst of growth hormone, approved only as a one-time diagnostic test in Japan.",
+    "lede": "Pralmorelin (GHRP-2, KP-102) is sold in Japan by Kaken Pharmaceutical as a single-dose injection that tests whether the pituitary can release growth hormone (GH). No country has approved it as a treatment, and vials sold online as \"GHRP-2\" are unapproved drugs.",
+    "stats": [
+      {
+        "num": "1",
+        "lbl": "country where it is approved, and only as a single-dose diagnostic test",
+        "src": "Japan, Kaken Pharmaceutical"
+      },
+      {
+        "num": "0",
+        "lbl": "approvals anywhere as a treatment",
+        "src": "FDA-commissioned registry review, 2021"
+      },
+      {
+        "num": "36%",
+        "lbl": "of patients had hot flushes or stomach rumbling after the test dose (29% of healthy controls)",
+        "src": "Chihara et al., 2007"
+      }
+    ],
+    "mechanism": {
+      "intro": "It copies ghrelin, the stomach's hunger hormone, at the receptor that also triggers GH release.",
+      "parts": [
+        {
+          "name": "Ghrelin receptor (GHS-R1a)",
+          "text": "Switching it on in the pituitary releases a burst of GH that peaks about an hour after injection and is over within a few hours."
+        },
+        {
+          "name": "Appetite",
+          "text": "The same receptor drives hunger; a GHRP-2 infusion made healthy men eat more in controlled studies."
+        },
+        {
+          "name": "Other pituitary hormones",
+          "text": "Peptides in this family also briefly raise cortisol and prolactin after each dose."
+        }
+      ]
+    },
+    "more": {
+      "title": "More: how a diagnostic peptide ended up in \"research\" vials",
+      "paras": [
+        "Outside Japan it reached mid-stage trials in the 1990s but was never marketed, partly because it raises GH far less in GH-deficient people. Cheap to synthesise, it is now made by contract chemical plants and sold online, unconnected to Kaken's licensed product."
+      ]
+    }
+  },
+  "results": {
+    "headline": "What human studies measured: hormone peaks, appetite, and a little growth in a few children.",
+    "lede": "GHRP-2 has never been tested in a placebo-controlled trial for body composition, muscle, fat loss or ageing. The human record is small pharmacology studies, the Japanese diagnostic validation, and a handful of children.",
+    "chart": null,
+    "stats": [
+      {
+        "num": "6",
+        "lbl": "children in the longest treatment study (8 months): more GH and faster growth, no rise in IGF-1",
+        "src": "Mericq et al., JCEM 1998"
+      },
+      {
+        "num": "135",
+        "lbl": "people in the Japanese diagnostic validation (58 with severe GH deficiency, 77 healthy)",
+        "src": "Chihara et al., 2007"
+      }
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {
+          "b": "GH release (human).",
+          "t": "A single intravenous dose gives a reliable GH peak at about 60 minutes; the Japanese test reads the height of that peak."
+        },
+        {
+          "b": "Appetite (human).",
+          "t": "An infusion increased food intake versus placebo in lean and obese men (Laferrère 2005, 2006)."
+        },
+        {
+          "b": "Growth (human, children).",
+          "t": "Six GH-deficient children on nightly injections for eight months grew faster, but IGF-1 did not rise; 15 short children on a nasal spray grew modestly faster. No child was randomised to placebo."
+        },
+        {
+          "b": "Critical illness (human).",
+          "t": "In 28 critically ill adults, five days of GHRP-2 plus TRH versus placebo re-activated pituitary output but did not change recovery (Van den Berghe 1999)."
+        },
+        {
+          "b": "Fat, muscle, ageing, recovery.",
+          "t": "No human data."
+        }
+      ]
+    },
+    "more": [
+      {
+        "title": "More: why it was never approved as a treatment",
+        "paras": [
+          "Each dose gives a brief GH spike, not the sustained rise needed to move IGF-1 and growth, and the response is weakest in the people who need GH most."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "Short hormone surges, hunger, and a long-term safety file that is mostly empty.",
+    "lede": "Side effects are known from single test doses and a few small, short studies. Nobody has followed healthy adults on repeated GHRP-2 for months.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "Not measurable. The eight-month study in six children reported no side effects; the Japanese validation called the test well tolerated."
+    },
+    "unique": {
+      "title": "Hunger, cortisol and prolactin, and FDA's safety list",
+      "text": "Hunger within the hour is the ghrelin receptor doing its job; each dose also briefly raises cortisol and prolactin. FDA's compounding safety review cites serious events reported in GHRP-2 studies (increased insulin requirements, infection, pancreatitis, deaths among critically ill subjects; causality not established) and an immune-reaction risk from impurities and the molecule's unnatural amino acid."
+    },
+    "more": [
+      {
+        "title": "More: what a GH-raising drug can do over time",
+        "paras": [
+          "Sustained GH can cause fluid retention, joint pain, carpal-tunnel-type tingling and higher blood sugar; GH-axis trials monitor for these and exclude active cancer because GH and IGF-1 can promote tumour growth. Whether repeated GHRP-2 raises GH enough to cause them has never been studied."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "Reliable GH release in people with a working pituitary, which is what makes it a useful test. Nothing else has been shown in people."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms that need a doctor",
+      "items": [
+        "Severe or persistent abdominal pain (pancreatitis has been reported in GHRP-2 studies)",
+        "Spreading redness, pus or fever at an injection site; hives, facial swelling or trouble breathing",
+        "Marked thirst, frequent urination or blurred vision; or shakiness, sweating and confusion",
+        "Tingling hands, swollen hands or feet, or new joint pain that does not settle"
+      ],
+      "note": "Get medical care and say exactly what product was used."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "No human pharmacokinetic study of GHRP-2 reporting a half-life could be verified from a primary source, so no simulator is shown. What is documented: after an intravenous test dose, GH peaks at about 60 minutes and the effect is over within a few hours.",
+    "stats": [
+      {
+        "num": "~60 min",
+        "lbl": "time to the GH peak after the intravenous test dose",
+        "src": "Chihara et al., 2007"
+      },
+      {
+        "num": "1 dose",
+        "lbl": "the only approved use is a single injection for diagnosis",
+        "src": "Japan, GHRP Kaken 100"
+      },
+      {
+        "num": "None",
+        "lbl": "published human half-life we could verify in a primary paper",
+        "src": "Searched October 2026"
+      }
+    ],
+    "explain": [
+      {
+        "b": "A spike, not a plateau.",
+        "t": "GHRP-2 is cleared within hours; each dose makes one GH burst and nothing builds up between doses."
+      },
+      {
+        "b": "Why that undercuts the claims.",
+        "t": "Growth, muscle and fat effects depend on sustained IGF-1, which did not move in the only multi-month human study."
+      }
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: why there is no chart",
+        "paras": [
+          "The level charts need a published half-life and a trial dosing schedule; GHRP-2 has neither."
+        ]
+      },
+      {
+        "title": "More: what blood levels could not tell you anyway",
+        "paras": [
+          "Products sold online as GHRP-2 are unverified; analyses of seized products have found wrong peptides, no peptide, and chemically modified analogues (see Status)."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "No trial is recruiting for GHRP-2 as a treatment; its human record is decades old.",
+    "lede": "GHRP-2's human studies were pharmacology experiments and diagnostic validations. Nothing registered today would change its status.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: what the approved diagnostic test looks like",
+        "paras": [
+          "In Japan a doctor gives one intravenous dose in the morning after an overnight fast and measures the GH peak from timed blood draws, under specialist supervision. That is the only approved use of GHRP-2 anywhere."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials that have been run",
+      "items": [
+        "Healthy volunteers, 1990s–2000s: single doses and short infusions gave dose-related GH peaks; infusions increased food intake versus placebo (Laferrère 2005, 2006).",
+        "Children: 8 months of nightly injections in 6 GH-deficient children raised GH and growth but not IGF-1 (Mericq 1998); nasal GHRP-2 in 15 short children (Pihoker 1997).",
+        "Critically ill adults: 5-day infusion with TRH versus placebo in 28 patients; no clinical benefit (Van den Berghe 1999).",
+        "Diagnostic validation, Japan: 58 adults with severe GH deficiency and 77 controls (Chihara 2007)."
+      ]
+    },
+    "find": {
+      "text": "Searching the public registry for \"pralmorelin\" or \"GHRP-2\" turns up historical diagnostic and pharmacology studies, not treatment trials.",
+      "term": "pralmorelin",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "Approved as a one-time diagnostic test in Japan. Unapproved, and not legal to sell, as a treatment anywhere.",
+    "items": [
+      {
+        "tag": "ok",
+        "label": "Japan: diagnostic only",
+        "text": "Kaken Pharmaceutical markets pralmorelin (\"GHRP Kaken 100\") as a single-dose, in-clinic test of GH secretion, on the market by 2006. We found no approval as a therapy anywhere."
+      },
+      {
+        "tag": "no",
+        "label": "Canada",
+        "text": "No GHRP-2 product holds a Health Canada DIN. Health Canada's April 2026 advisory treats injectable peptides as prescription drugs and says a \"research use only\" label does not make them legal; it reports border seizures and won a permanent injunction against a Québec online seller in July 2026."
+      },
+      {
+        "tag": "no",
+        "label": "United States",
+        "text": "Not FDA-approved. FDA lists it in 503A Category 3 (nominated without adequate support; May 2026) and 503B Category 2 (significant safety risks; April 2026), so it cannot legally be compounded. FDA's August 24, 2026 warning letters to five online peptide sellers rejected \"research use only\" labelling."
+      },
+      {
+        "tag": "no",
+        "label": "Sport",
+        "text": "Prohibited at all times under WADA's 2026 Prohibited List (S2; named as \"GHRP-2 (pralmorelin)\"); IOC re-tests found it in samples from the 2008 and 2010 Olympics."
+      }
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "What \"research use only\" really means",
+        "text": "Regulators judge a product by how it is sold, not its label: human-dose vials, bacteriostatic water, dosing calculators and health claims count as intended human use. Testing shows why that matters:",
+        "items": [
+          "Australia's sports drug testing laboratory analysed 200+ black-market peptide products: about 25% matched the label, 25% contained no peptide, and one \"growth hormone\" product contained pig insulin (Sport Integrity Australia).",
+          "Norway's doping laboratory tested 21 seized vials sold as growth hormone: only 5 were; the rest included CJC-1295, GHRP-6, sermorelin and ipamorelin (Henninge 2011).",
+          "A German anti-doping laboratory found chemically modified Gly-GHRP-2 and Gly-GHRP-6, never tested in any human, in black-market products (Krug 2018)."
+        ],
+        "note": "No regulator has checked any online GHRP-2 product for identity, strength, sterility or endotoxin."
+      },
+      {
+        "kind": "warn",
+        "title": "If someone has already used a product sold as GHRP-2",
+        "text": "See a doctor if any of these appear, and bring the vial:",
+        "items": [
+          "Severe abdominal pain or persistent vomiting",
+          "Fever, or redness and pus at an injection site",
+          "Marked thirst, frequent urination, or shakiness and confusion",
+          "Swelling of hands, feet or face; new joint pain or tingling hands"
+        ],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: U.S. peptide policy is moving, but not for GHRP-2",
+        "paras": [
+          "In July 2026 an FDA advisory committee recommended six other peptides for the compounding list, and on October 14–15, 2026 HHS sent a peptide \"Interim Access Policy\" to the White House; its terms are not public. GHRP-2 was not reviewed and stays on FDA's Category 2 list."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "text": "Brabant G. GH releasing peptide 2 test: the holy grail of testing GH deficiency? European Journal of Endocrinology 2007;157:29–30 (commentary on Chihara K et al., KP-102 Study Group, EJE 2007;157:19–27: 58 severe GHD patients, 77 controls; hot flushes and borborygmus in 36% vs 29%).",
+        "url": "https://christie.openrepository.com/server/api/core/bitstreams/9017096e-522f-46f2-b2af-49ded2146621/content"
+      },
+      {
+        "text": "Manufacturing Chemist. Growth hormone deficiency – pralmorelin (Kaken; launched in Japan as a diagnostic agent), February 1, 2006.",
+        "url": "https://manufacturingchemist.com/growth-hormone-deficiency-i-pralmorelin-i--37024"
+      },
+      {
+        "text": "Adis R&D Profile. Pralmorelin: GHRP 2, GPA 748, KP 102. Drugs in R&D 2004;5(4):236–239.",
+        "url": "https://doi.org/10.2165/00126839-200405040-00011"
+      },
+      {
+        "text": "Mericq V, Cassorla F, Bowers CY, Merriam GR et al. Effects of eight months treatment with graded doses of a GH-releasing peptide in GH-deficient children. JCEM 1998;83:2355–2360.",
+        "url": "https://academic.oup.com/jcem/article/83/7/2355/2865347"
+      },
+      {
+        "text": "Laferrère B, Abraham C, Russell CD, Bowers CY. Growth hormone releasing peptide-2 (GHRP-2), like ghrelin, increases food intake in healthy men. JCEM 2005.",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2824650"
+      },
+      {
+        "text": "University of Maryland M-CERSI for FDA. Summary Report: Growth hormone-releasing peptide-2 (503B bulks evaluation), January 2021 (summarises Pihoker 1997, Van den Berghe 1999, Laferrère 2005/2006; no approved product in 13 registries).",
+        "url": "https://archive.hshsl.umaryland.edu/server/api/core/bitstreams/4ebb4113-854b-4231-94c5-f202e84b5206/content"
+      },
+      {
+        "text": "U.S. FDA. Certain Bulk Drug Substances for Use in Compounding that May Present Significant Safety Risks (GHRP-2 and GHRP-6 in 503B Category 2), content current April 22, 2026.",
+        "url": "https://www.fda.gov/Drugs/GuidanceComplianceRegulatoryInformation/PharmacyCompounding/ucm502449.htm"
+      },
+      {
+        "text": "U.S. FDA. Bulk Drug Substances Nominated for Use in Compounding Under Section 503A (GHRP-2, GHRP-6 in Category 3), updated May 14, 2026.",
+        "url": "https://fda.gov/media/94155/download"
+      },
+      {
+        "text": "Health Canada. Public advisory: Think twice before injecting peptides bought online, updated April 9, 2026. Fasken, Health Canada permanent injunction against Canlab Research, July 29, 2026.",
+        "url": "https://recalls-rappels.canada.ca/en/alert-recall/think-twice-injecting-peptides-bought-online-unauthorized-products-can-seriously-harm"
+      },
+      {
+        "text": "German Sport University Cologne. WADA Prohibited List 2026, S2 growth hormone-releasing factors (text), and GHRP doping glossary (IOC re-tests, 2017). Sport Integrity Australia, black-market peptide testing. Henninge J et al., Recent Advances in Doping Analysis 2011. Krug O et al., Growth Hormone & IGF Research 2018;41:1–7.",
+        "url": "https://www.dshs-koeln.de/en/universitaet/organisation/institute-einrichtungen/department-of-biochemistry/doping-substances/prohibited-classes-of-substances-and-methods/s2-peptide-hormones-growth-factors-etc"
+      }
+    ]
+  }
+}

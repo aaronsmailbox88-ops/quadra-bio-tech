@@ -1,0 +1,266 @@
+{
+  "id": "cagrisema",
+  "name": "CagriSema",
+  "brands": "",
+  "maker": "Novo Nordisk",
+  "group": "trials",
+  "pill": "Investigational",
+  "overview": {
+    "headline": "Two hunger hormones in one weekly injection: an amylin analogue plus semaglutide.",
+    "lede": "CagriSema is Novo Nordisk's follow-up to Wegovy. It pairs cagrilintide, a long-acting copy of the hormone amylin, with the same 2.4 mg semaglutide dose used in Wegovy. Novo filed for U.S. approval in December 2025 and the FDA has not yet decided. No regulator anywhere has approved it, so the only legal way to receive it today is inside a clinical trial.",
+    "stats": [
+      {"num": "22.7%", "lbl": "average weight loss after 68 weeks for people who stayed on treatment", "src": "REDEFINE 1, adults without diabetes"},
+      {"num": "Q4 2026", "lbl": "when Novo expects the FDA's decision; the application was filed December 18, 2025", "src": "Novo Nordisk, restated October 2026"},
+      {"num": "23.0%", "lbl": "vs 25.5% on tirzepatide 15 mg in the only head-to-head trial; CagriSema did not prove non-inferior", "src": "REDEFINE 4, 84 weeks, open-label"}
+    ],
+    "mechanism": {
+      "intro": "Two separate molecules, injected together, act on two different fullness signals your body sends after a meal.",
+      "parts": [
+        {"name": "Amylin (cagrilintide)", "text": "Amylin is released by the pancreas alongside insulin when you eat. It acts on amylin receptors in the brainstem and hypothalamus to signal fullness and slow stomach emptying. Cagrilintide is a modified amylin with a fatty-acid tail that keeps it in the blood for about a week. On its own it produced about 11–12% weight loss in trials."},
+        {"name": "GLP-1 (semaglutide)", "text": "The Wegovy and Ozempic molecule. Slows stomach emptying, signals fullness to the brain and raises insulin when blood sugar is high. Alone, at 2.4 mg, it produced 16.1% weight loss in the same trial where the combination produced 22.7%."}
+      ]
+    },
+    "more": {
+      "title": "More: why adding amylin adds weight loss",
+      "paras": [
+        "Amylin and GLP-1 reach the brain through different receptors and different nerve pathways. In REDEFINE 1, the trial that tested each part alone against the pair, the combination beat semaglutide by about 6 percentage points and cagrilintide by about 11. The investigators attribute this to \"the complementary effect of the two molecules on appetite regulation\", acting on both the homeostatic (hunger) and hedonic (reward) circuits.",
+        "The two drugs are given in matching doses, written as \"2.4 mg/2.4 mg\": 2.4 mg of cagrilintide and 2.4 mg of semaglutide, once a week, under the skin. Novo also tests lower pairs (1.0/1.0 mg and 1.7/1.7 mg) and is planning a higher one (2.4 mg cagrilintide with 7.2 mg semaglutide).",
+        "Everything on this page comes from Novo Nordisk's published trial announcements, peer-reviewed papers, trial registries and regulator notices. Sources are listed under the Status tab."
+      ]
+    }
+  },
+  "results": {
+    "headline": "What people in the trials lost.",
+    "lede": "Average weight change on the 2.4 mg/2.4 mg dose compared with placebo, plus the earlier trial of cagrilintide on its own. Every group also received diet and activity counselling.",
+    "chart": {
+      "metric": "weight",
+      "legend": ["CagriSema 2.4/2.4 mg", "Placebo"],
+      "rows": [
+        {"name": "REDEFINE 1", "meta": "68 weeks · obesity or overweight, no diabetes · 3,417 people", "drug": -22.7, "placebo": -2.3, "tip": "CagriSema 2.4/2.4 mg: −22.7% (semaglutide alone −16.1%, cagrilintide alone −11.8%)"},
+        {"name": "REDEFINE 2", "meta": "68 weeks · obesity or overweight plus type 2 diabetes · 1,206 people", "drug": -15.7, "placebo": -3.1, "tip": "CagriSema 2.4/2.4 mg: −15.7%"},
+        {"name": "REIMAGINE 2", "meta": "68 weeks · type 2 diabetes on metformin · 2,728 people", "drug": -14.2, "placebo": -1.5, "tip": "CagriSema 2.4/2.4 mg: −14.2% (semaglutide 2.4 mg alone −10.2%)"},
+        {"name": "Cagrilintide alone, Phase 2", "meta": "26 weeks · obesity or overweight, no diabetes · 706 people · 4.5 mg, no semaglutide", "drug": -10.8, "placebo": -3.0, "tip": "Cagrilintide 4.5 mg alone: −10.8% (−11.5 kg); liraglutide 3.0 mg −9.0%"}
+      ],
+      "max": 30,
+      "note": "Figures are the trials' \"trial product\" or \"efficacy\" estimand: what happened for people who stayed on treatment. Counting everyone, including those who stopped early (the \"treatment-policy\" estimand), REDEFINE 1 was −20.4% vs −3.0%, REDEFINE 2 was −13.7% vs −3.4% and REIMAGINE 2 was −12.9%. The Phase 2 row is cagrilintide by itself at 4.5 mg, a higher dose than the 2.4 mg used in CagriSema."
+    },
+    "stats": [
+      {"num": "−25.0%", "lbl": "among the 2,309 women in REDEFINE 1 (vs −3.0% on placebo), in a post hoc analysis of people who stayed on treatment", "src": "Novo Nordisk, October 20, 2026"},
+      {"num": "−21.0%", "lbl": "on the lower 1.0/1.0 mg dose after 68 weeks, vs −2.0% on placebo; the release did not name the estimand", "src": "REDEFINE 9, September 2026"}
+    ],
+    "beyond": {
+      "title": "Beyond the scale",
+      "items": [
+        {"b": "Blood sugar.", "t": "In REDEFINE 2, A1C fell 1.8 percentage points against 0.4 on placebo, and 73.5% of people reached an A1C of 6.5% or lower (placebo 15.9%). In REDEFINE 1, 87.7% of people who started with prediabetes had normal blood sugar at the end (placebo 32.2%)."},
+        {"b": "Against semaglutide alone.", "t": "In people with type 2 diabetes on metformin (REIMAGINE 2), CagriSema lowered A1C by 1.91 points and weight by 14.2%, against 1.76 points and 10.2% for semaglutide 2.4 mg by itself."},
+        {"b": "Against tirzepatide.", "t": "REDEFINE 4 (809 people, 84 weeks, open-label) set CagriSema against tirzepatide 15 mg: 23.0% vs 25.5% for people who stayed on treatment, 20.2% vs 23.6% counting everyone. CagriSema missed its goal of proving it was no worse. In type 2 diabetes, the low 1.0/1.0 mg dose beat tirzepatide 5 mg (12.4% vs 9.1%, REIMAGINE 5)."},
+        {"b": "Heart risk markers.", "t": "In REDEFINE 1, systolic blood pressure fell 9.9 mmHg against 3.2 on placebo. A post hoc analysis found the inflammation marker hsCRP down 68.9% against 16.0%."},
+        {"b": "Fat versus muscle.", "t": "A 252-person body-composition sub-study of REDEFINE 1 measured a 35.7% drop in fat mass (placebo 5.7%) and a 14.4% drop in lean soft tissue (placebo 4.3%)."},
+        {"b": "Not everyone reached the full dose.", "t": "REDEFINE 1 let people stay on a lower dose if they preferred. At week 68 only 57.3% of the CagriSema group were on 2.4/2.4 mg, yet the group still averaged 22.7%. The investigators wrote that doses below the target might be highly effective for some patients."}
+      ]
+    },
+    "more": [
+      {
+        "title": "More: the head-to-head with tirzepatide, and why Novo is going higher",
+        "paras": [
+          "REDEFINE 4 is the trial most people ask about. It was open-label, meaning participants and doctors knew which drug they were on, and it compared the 2.4/2.4 mg dose with tirzepatide at its top 15 mg dose over 84 weeks in 809 adults with a mean starting weight of 114.2 kg. Tirzepatide came out ahead by about 2.5 to 3.4 percentage points depending on the estimand, and the trial did not meet its primary goal of non-inferiority. Novo did not report how many people in each arm reached the full dose, nor discontinuation rates, in its February 23, 2026 announcement.",
+          "Novo's response has been to test more drug. A Phase 3 trial of cagrilintide 2.4 mg with semaglutide 7.2 mg is planned to start in the second half of 2026, and REDEFINE 11, an 80-week trial of the current dose with a longer maintenance phase, reads out in the first half of 2027."
+        ]
+      },
+      {
+        "title": "More: did it protect the heart?",
+        "paras": [
+          "Not known yet. REDEFINE 3 is the cardiovascular outcomes trial: 7,101 adults aged 55 or over with established heart or vascular disease, randomised to CagriSema or placebo and followed for up to three years. The registry lists an estimated completion date of October 2027. Until then the blood pressure and hsCRP changes are markers, not proof."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "Mostly stomach-related, mostly early, and more of it than with semaglutide alone.",
+    "lede": "Eight in ten people on CagriSema in REDEFINE 1 reported a gastrointestinal side effect, against four in ten on placebo. Nausea, constipation and vomiting led the list. Most events were mild to moderate and faded over time, clustering around dose increases.",
+    "chart": {
+      "eyebrow": "REDEFINE 1 · share of people affected",
+      "legend": ["CagriSema 2.4/2.4 mg", "Placebo"],
+      "rows": [
+        {"name": "Nausea", "drug": 55.0, "placebo": 12.6},
+        {"name": "Constipation", "drug": 30.7, "placebo": 11.6},
+        {"name": "Vomiting", "drug": 26.1, "placebo": 4.1}
+      ],
+      "max": 60,
+      "note": "Any gastrointestinal event: 79.6% vs 39.9%. Diarrhea and abdominal pain were also among the most common complaints, but Novo's releases do not give their rates. In REDEFINE 2 (type 2 diabetes) gastrointestinal events were reported by 72.5% on CagriSema."
+    },
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "In REDEFINE 1, 5.9% of people on CagriSema stopped because of side effects, against 3.5% on placebo. In REDEFINE 2 it was 8.4% against 3.0%. In the Phase 2 trial of cagrilintide alone, 6% stopped on the 2.4 mg dose against 3% on placebo."
+    },
+    "unique": {
+      "title": "Injection-site reactions: the amylin signal",
+      "text": "Cagrilintide causes more skin reactions where it is injected than GLP-1 drugs do. In the Phase 2 trial of cagrilintide alone, administration-site reactions rose with dose: 26% at 2.4 mg and 43% at 4.5 mg, against 3% on placebo and 13% on liraglutide. None were serious. The Phase 1b study of the combination described them as mild, mostly bruising, and mostly attributed to cagrilintide. Novo's REDEFINE releases do not break out injection-site rates for the combination."
+    },
+    "more": [
+      {
+        "title": "More: what the trials monitor for",
+        "paras": [
+          "Class risks. Semaglutide carries warnings for pancreatitis, gallbladder disease, dehydration from vomiting or diarrhea (which can strain the kidneys), low blood sugar when combined with insulin or sulfonylureas, and a thyroid tumour signal seen in rodents. CagriSema trials screen and monitor for all of these. In REDEFINE 2 the investigators reported two severe low-blood-sugar events, both in people also taking a sulfonylurea.",
+          "Overall adverse events. In REDEFINE 2, 90.2% of people on CagriSema and 85.4% on placebo reported at least one adverse event of any kind over 68 weeks, which shows how common minor complaints are in both groups.",
+          "Pregnancy. Not studied. Trials exclude pregnancy and require contraception."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "Lower blood pressure (systolic down 9.9 mmHg vs 3.2 on placebo in REDEFINE 1), lower hsCRP inflammation, smaller waists and better lipid profiles were consistent across the trials. In people with prediabetes, 87.7% returned to normal blood sugar. Nearly four in ten people on blood-pressure medication in REDEFINE 1 reduced or stopped it during the trial, according to a Novo post hoc analysis."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms trial teams treat as urgent",
+      "items": [
+        "Severe or persistent abdominal pain, with or without vomiting",
+        "Vomiting or diarrhea that will not stop, or not being able to keep fluids down",
+        "Yellowing of the skin or eyes, dark urine, pale stools",
+        "Shakiness, confusion or fainting in someone also taking insulin or a sulfonylurea",
+        "Swelling of the face or throat, trouble breathing, severe rash"
+      ],
+      "note": "Anyone with these symptoms, in a trial or not, should get medical care right away."
+    }
+  },
+  "levels": {
+    "pk": {
+      "half": 7.4,
+      "tmax": 1,
+      "ladder": [0.25, 0.5, 1.0, 1.7, 2.4],
+      "stepDays": 28,
+      "tau": 7,
+      "maxDose": 2.4,
+      "refLabel": "2.4 mg + 2.4 mg weekly",
+      "source": "Enebo et al., Lancet 2021 (phase 1b): cagrilintide half-life 159–195 h (about 7–8 days), peak about 24 h after injection, dose-proportional; semaglutide half-life 145–165 h, unchanged by cagrilintide. Chart models the cagrilintide component."
+    },
+    "nopk": "",
+    "stats": [
+      {"num": "~7–8 days", "lbl": "cagrilintide half-life: the time for the level to fall by half", "src": "Phase 1b study, Lancet 2021"},
+      {"num": "~2×", "lbl": "how far weekly dosing builds up compared with a single dose", "src": "From the half-life and the 7-day interval"},
+      {"num": "~5 wks", "lbl": "to clear about 97% after the last dose", "src": "Five half-lives"}
+    ],
+    "explain": [
+      {"b": "Why steps are four weeks apart.", "t": "Four weeks is nearly four half-lives, so levels reach about 93% of a step's plateau before the next increase. Stepping faster would stack the climbs."},
+      {"b": "Why both parts can share one schedule.", "t": "Semaglutide's half-life (about 6–7 days) is close to cagrilintide's (about 7–8 days), so the two rise, plateau and clear on nearly the same timetable and can be stepped up together in matching doses."},
+      {"b": "Why side effects cluster after a step.", "t": "Nausea and vomiting in the trials peaked in the weeks after each dose increase, while levels were still rising, then eased as they flattened."}
+    ],
+    "showTable": true,
+    "more": [
+      {
+        "title": "More: the model behind the chart",
+        "paras": [
+          "The chart uses a standard one-compartment pharmacokinetic model: the drug is absorbed from the injection site at one rate, cleared from the blood at another, and each dose adds to what is still circulating. The numbers come from Novo's Phase 1b study of cagrilintide given with semaglutide: a cagrilintide half-life of 159 to 195 hours (about 7 to 8 days), a peak about 24 hours after injection, and blood levels that rose in proportion to dose. The chart draws the cagrilintide component; the semaglutide component follows a similar curve because its half-life in the same study was 145 to 165 hours and was not changed by cagrilintide.",
+          "The vertical axis is relative. 100% is the average level on the 2.4 mg weekly dose once it has plateaued, so 1.0 mg sits at about 40% and 1.7 mg at about 70%. Because the half-life is about the same as the dosing interval, the level falls by roughly half between injections, which is the zigzag on the chart.",
+          "Real people differ. Published data for drugs in this class show roughly twofold variation in blood levels between people on the same dose, from body weight, injection site and absorption differences."
+        ]
+      },
+      {
+        "title": "More: what this chart cannot tell you",
+        "paras": [
+          "It models the trial regimen, not a person. It measures nothing; only a blood test can.",
+          "It says nothing about products sold online as cagrilintide or \"CagriSema\". Their contents and strength are unverified, so a vial labelled 5 mg could hold any amount of anything, and the model has no way to account for that.",
+          "Custom schedules are hypothetical. The chart can show what a schedule would do in the model, including where it goes past anything the trials tested, but it cannot tell you how your body differs from the model or whether a schedule is safe. The trials answered that with bloodwork, regular visits and medical supervision, which a curve on a screen cannot replace."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "How the CagriSema trials were run, and what joining one looks like.",
+    "lede": "Clinical trials are the only legal route to CagriSema today. Here is how the Phase 3 studies worked and what a participant goes through.",
+    "ladder": {
+      "title": "The dose ladder used in REDEFINE 1",
+      "text": "Everyone started at 0.25 mg of each drug a week. Both doses went up together one step every four weeks, reaching 2.4 mg/2.4 mg at week 16. The protocol was flexible: a step could be delayed, and people could stay on a lower dose or go back down if side effects were a problem, under the study team's supervision.",
+      "steps": [
+        {"d": "0.25 / 0.25 mg", "t": "start"},
+        {"d": "0.5 / 0.5 mg", "t": "week 4"},
+        {"d": "1.0 / 1.0 mg", "t": "week 8"},
+        {"d": "1.7 / 1.7 mg", "t": "week 12"},
+        {"d": "2.4 / 2.4 mg", "t": "week 16"}
+      ],
+      "note": "Each dose is written as cagrilintide / semaglutide. At week 68, 57.3% of the CagriSema group were on the top step, compared with 70.2% of the semaglutide-alone group and 82.5% of the cagrilintide-alone group. A placebo group followed the same schedule with inactive injections, and nobody, including the doctors, knew who had what until the trial ended."
+    },
+    "more": [
+      {
+        "title": "More: how side effects were handled inside the trials",
+        "paras": [
+          "The slow dose ladder is the main tool. Stomach symptoms tend to appear in the weeks after a step up and settle before the next one. REDEFINE 1 went further than most trials by letting the investigator and participant decide whether to take the next step at all; Novo described it as \"a flexible protocol, allowing patients to modify their dosing throughout the trial\". That is why only 57% ended up on the full dose, and the investigators think it kept the discontinuation rate low.",
+          "Participants had a study clinician to call, and symptoms were treated the way a doctor would treat them in any patient. People whose symptoms did not settle could leave the drug; that is where the discontinuation figures on the Side effects tab come from.",
+          "None of this is a self-management plan. The point of a trial is that trained staff are watching, which is exactly what is missing when someone uses a product bought online."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials still running",
+      "items": [
+        "REDEFINE 3: the cardiovascular outcomes trial, 7,101 adults aged 55+ with established heart or vascular disease, fully enrolled, estimated completion October 2027",
+        "REDEFINE 8 (104 weeks with body composition, then a year on maintenance or tapering) and REDEFINE 11 (80 weeks plus an 80-week maintenance extension; results expected first half of 2027)",
+        "A higher-dose Phase 3 trial of cagrilintide 2.4 mg with semaglutide 7.2 mg, planned to start in the second half of 2026",
+        "In type 2 diabetes: REIMAGINE 3 (people on basal insulin) and REIMAGINE 4 (against tirzepatide 15 mg); REIMAGINE 1, 2 and 5 have reported",
+        "RENEW: a separate Phase 3 program of cagrilintide on its own, started late 2025",
+        "Completed and reported: REDEFINE 1, 2, 4 and 9, plus REDEFINE 5 in Japan and Taiwan against semaglutide alone"
+      ]
+    },
+    "find": {
+      "text": "Novo Nordisk runs sites in Canada, the U.S., Europe and Asia. Search the public registry for \"CagriSema\" or \"cagrilintide\", then contact the nearest site listed on the study page. Typical requirements: adult, a BMI above a set threshold, and no competing weight-loss medication.",
+      "term": "cagrilintide",
+      "extra": {"label": "Novo Nordisk trials", "url": "https://www.novonordisk-trials.com/"}
+    }
+  },
+  "status": {
+    "headline": "Under FDA review, not yet approved anywhere. Anything sold today as CagriSema or cagrilintide is not the real thing.",
+    "items": [
+      {"tag": "soon", "label": "Under U.S. review", "text": "Novo Nordisk filed its New Drug Application for weight management on December 18, 2025, ahead of its earlier guidance of an early-2026 filing. The company says it expects the FDA's decision in the fourth quarter of 2026 and repeated that on September 21 and October 20, 2026. As of October 24, 2026 no decision and no brand name have been announced."},
+      {"tag": "no", "label": "Not approved", "text": "Health Canada, the U.S. FDA, the European EMA and other regulators have not approved CagriSema. Novo's own releases describe it as not approved in the U.S. or EU, and no Canadian or European filing has been announced publicly."},
+      {"tag": "soon", "label": "Diabetes use comes later", "text": "The U.S. filing covers weight management only. Novo says it will discuss a type 2 diabetes pathway with regulators after the REIMAGINE 1 and REDEFINE 3 results are in."},
+      {"tag": "ok", "label": "Trials open", "text": "Novo's trials are the only legal source. See the Trials tab."}
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "The grey market",
+        "text": "Vials and pre-filled pens sold online as cagrilintide, alone or blended with other peptides such as retatrutide, are unapproved and not legal to sell for human use. Only Novo Nordisk makes verified cagrilintide and it is not for sale, so a buyer has no way to know what is in the vial or how much.",
+        "items": [
+          "The FDA's page on unapproved GLP-1 products states that cagrilintide is not approved for any use and cannot legally be compounded. A \"research use only\" label does not make a product safe or legal to inject.",
+          "Sellers describe these products as \"for in-vitro laboratory research only, not for human or veterinary use\". That wording is a legal shield, not a quality standard; no regulator tests what is in them.",
+          "There is no legitimate compounded CagriSema either. Compounding copies an approved product, and none exists."
+        ],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      },
+      {
+        "kind": "warn",
+        "title": "If someone has already used an unapproved product",
+        "text": "Stop, keep the vial so it can be identified, and see a doctor promptly, especially with:",
+        "items": ["Vomiting or diarrhea that will not stop", "Severe abdominal pain", "Yellowing of the skin or eyes, dark urine", "Shakiness or confusion in someone also taking diabetes medication"],
+        "note": "These are the class warnings for the semaglutide component and the urgent symptoms trial teams watch for; see the Side effects tab."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: why the tirzepatide result does not decide the approval",
+        "paras": [
+          "The FDA file rests on REDEFINE 1 and REDEFINE 2, both placebo-controlled, and both met their primary endpoints. REDEFINE 4 compared CagriSema with tirzepatide 15 mg in an open-label design and did not show non-inferiority (23.0% vs 25.5%). That shapes how the drug will be positioned against Zepbound, not whether it can be approved. Novo's response has been to plan a higher-dose version (cagrilintide 2.4 mg with semaglutide 7.2 mg) with a Phase 3 trial due to start in late 2026, and to point to REDEFINE 11, which reads out in the first half of 2027.",
+          "Three different headline numbers circulate for REDEFINE 1: 20.4%, 22.7% and \"23%\". The first counts everyone randomised (treatment-policy estimand), the second counts people who stayed on treatment (trial product estimand), and the third is Novo's rounding of the second. All three are correct descriptions of the same trial."
+        ]
+      }
+    ],
+    "sources": [
+      {"text": "Novo Nordisk, CagriSema demonstrates superior weight loss in adults with obesity or overweight in the REDEFINE 1 trial (company announcement 99/2024), December 20, 2024.", "url": "https://www.novonordisk.com/news-and-media/news-and-ir-materials/news-details.html?id=915082"},
+      {"text": "Garvey WT, Blüher M, Osorto Contreras CK et al. Coadministered cagrilintide and semaglutide in adults with overweight or obesity (REDEFINE 1). New England Journal of Medicine 2025;393:635-647.", "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2502081"},
+      {"text": "Davies MJ, Bajaj HS, Broholm C et al. Cagrilintide-semaglutide in adults with overweight or obesity and type 2 diabetes (REDEFINE 2). New England Journal of Medicine 2025;393:648-659.", "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2502082"},
+      {"text": "Novo Nordisk Canada, REDEFINE 1 and REDEFINE 2 results published in NEJM and presented at ADA (adverse event rates, discontinuation, body composition), June 24, 2025.", "url": "https://www.novonordisk.ca/content/dam/nncorp/ca/en/press-releases/2025/redefine-canadian-press-release-english.pdf"},
+      {"text": "Novo Nordisk, Novo Nordisk files for FDA approval of CagriSema, the first once-weekly combination of GLP-1 and amylin analogues for weight management, December 18, 2025.", "url": "https://www.novonordisk.com/news-and-media/news-and-ir-materials/news-details.html?id=916470"},
+      {"text": "Novo Nordisk, CagriSema demonstrated 23% weight loss in an open-label head-to-head REDEFINE 4 trial; the primary endpoint was not achieved (company announcement 13/2026), February 23, 2026.", "url": "https://www.biospace.com/press-releases/novo-nordisk-a-s-cagrisema-demonstrated-23-weight-loss-in-an-open-label-head-to-head-redefine-4-trial-in-people-with-obesity-the-primary-endpoint-was-not-achieved"},
+      {"text": "Novo Nordisk, CagriSema demonstrated superior HbA1c reduction and weight loss versus semaglutide in the REIMAGINE 2 trial (company announcement 2/2026), February 2, 2026.", "url": "https://www.novonordisk.com/news-and-media/news-and-ir-materials/news-details.html?id=916481"},
+      {"text": "Novo Nordisk, CagriSema delivers superior weight loss versus tirzepatide in REIMAGINE 5; REDEFINE 9 results; FDA decision expected Q4 2026, September 21, 2026.", "url": "https://www.novonordisk.com/news-and-media/news-and-ir-materials/news-details.html?id=916774"},
+      {"text": "Novo Nordisk, post hoc analyses of REDEFINE 1 in women, presented at The Menopause Society annual meeting, October 20, 2026 (as carried by chemXplore).", "url": "https://chemxplore.com/news/cagrisema-weight-loss-women-menopause"},
+      {"text": "Novo Nordisk, post hoc analyses of REDEFINE 1: blood pressure and hsCRP (as reported by Bariatric News), November 7, 2025.", "url": "https://www.bariatricnews.net/post/cagrisema-associated-with-significant-reduction-in-blood-pressure-and-reduces-the-proportion-of-pati"},
+      {"text": "Lau DCW, Erichsen L, Francisco AM et al. Once-weekly cagrilintide for weight management in people with overweight and obesity: a dose-finding phase 2 trial. The Lancet, 2021 (10.8% at 4.5 mg over 26 weeks; injection-site reactions by dose).", "url": "https://pubmed.ncbi.nlm.nih.gov/34798060/"},
+      {"text": "Enebo LB, Berthelsen KK, Kankam M et al. Safety, tolerability, pharmacokinetics and pharmacodynamics of concomitant cagrilintide and semaglutide 2.4 mg: a phase 1b trial. The Lancet 2021;397:1736-48 (cagrilintide half-life 159–195 h, tmax about 24 h).", "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(21)00845-X/fulltext"},
+      {"text": "Trial registrations: NCT05567796 (REDEFINE 1), NCT05669755 (REDEFINE 3, 7,101 participants, estimated completion October 2027), NCT06131437 (REDEFINE 4), NCT06388187 (REDEFINE 9), NCT06534411 (REIMAGINE 5).", "url": "https://clinicaltrials.gov/study/NCT05669755"},
+      {"text": "U.S. FDA, FDA's concerns with unapproved GLP-1 drugs used for weight loss (cagrilintide not approved and not eligible for compounding), 2026.", "url": "https://www.fda.gov/drugs/postmarket-drug-safety-information-patients-and-providers/fdas-concerns-unapproved-glp-1-drugs-used-weight-loss"}
+    ]
+  }
+}

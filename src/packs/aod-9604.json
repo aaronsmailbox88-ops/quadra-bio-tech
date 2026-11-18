@@ -1,0 +1,229 @@
+{
+  "id": "aod-9604",
+  "name": "AOD-9604",
+  "brands": "",
+  "maker": "Metabolic Pharmaceuticals (Calzada), Australia",
+  "group": "research",
+  "pill": "Unapproved",
+  "overview": {
+    "headline": "A small piece of the growth hormone molecule, built as a diet pill, that failed its biggest trial in 2007.",
+    "lede": "AOD-9604 is a 16-amino-acid fragment copied from the tail end of human growth hormone. Metabolic Pharmaceuticals, a Melbourne company, ran six human trials between 2001 and 2007 to turn it into an oral obesity drug, then stopped when the largest trial showed no meaningful weight loss. No regulator has approved it as a medicine. Today it is sold online as a \"research chemical\" and injected by buyers, a route that was never tested.",
+    "stats": [
+      {"num": "925", "lbl": "people took part in the developer's six trials, 2001 to 2007", "src": "Stier, Vos & Kenley 2013; Calzada statement, April 2013"},
+      {"num": "0", "lbl": "approvals as a medicine, anywhere", "src": "No TGA, FDA or Health Canada authorization"},
+      {"num": "Feb 2007", "lbl": "when the obesity program was terminated after a 502-person trial", "src": "Calzada ASX statement, 26 April 2013"}
+    ],
+    "mechanism": {
+      "intro": "The idea was to keep the fat-burning part of growth hormone and drop the parts that raise blood sugar and make tissue grow.",
+      "parts": [
+        {"name": "hGH 177–191", "text": "Growth hormone is a 191-amino-acid protein. Its final stretch (residues 177 to 191) appeared, in animal and test-tube work, to drive fat breakdown. AOD-9604 is that stretch with a tyrosine added at the front for stability."},
+        {"name": "No growth signal", "text": "Unlike full growth hormone, AOD-9604 does not raise IGF-1, the hormone that mediates growth. The trials confirmed this: IGF-1 did not change at any dose. That was the selling point, and it is also why it does not build muscle."},
+        {"name": "The gap", "text": "Fat-burning in obese mice did not translate into weight loss in people. Why is not settled; the company itself called the dose pattern in its 2004 trial unexplained."}
+      ]
+    },
+    "more": {
+      "title": "More: where it came from and where it ended",
+      "paras": [
+        "The fragment grew out of 1990s work at Monash University in Melbourne on which part of growth hormone affects fat metabolism. Metabolic Pharmaceuticals licensed it and, by its own account, spent more than A$50 million developing it as a once-daily tablet for obesity.",
+        "Two Phase 2b trials were run. The first (2004, 300 people, 12 weeks) was borderline: the best dose lost 2.8 kg on average, but the primary comparison with placebo did not reach statistical significance. The second (2006 to 2007, 502 people, 24 weeks) showed no clinically meaningful weight loss and the program was terminated in February 2007. The company later said the market's verdict was \"absolutely safe, but it just doesn't work\".",
+        "Everything on this page comes from the developer's published trial summary, its stock-exchange statements, contemporary press reports and regulators' documents. Sources are listed under the Status tab."
+      ]
+    }
+  },
+  "results": {
+    "headline": "Two Phase 2b trials. One borderline, one flat.",
+    "lede": "The developer ran two placebo-controlled trials large enough to measure weight loss, both using daily tablets or capsules. Neither produced a result that supported approval. No one has run a weight-loss trial since, and nothing injected under the skin has ever been tested in people.",
+    "chart": null,
+    "stats": [
+      {"num": "2.8 kg", "lbl": "average weight loss on the best dose over 12 weeks in the 300-person 2004 trial; the company said placebo lost about a third as much, and the primary comparison missed significance (p = 0.1)", "src": "Metabolic Pharmaceuticals, December 2004, via BioWorld and LabOnline"},
+      {"num": "No difference", "lbl": "in the 502-person, 24-week trial that followed: no clinically meaningful weight loss versus placebo. The exact figures were never published", "src": "Calzada ASX statement, 26 April 2013"}
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {"b": "In people: weight.", "t": "The 12-week trial found its best result at the lowest dose and a weaker result at the highest, with a middle that did not line up, which analysts called \"a mystery\" at the time. The 24-week trial of three low doses, designed to settle it, found nothing. There is no chart on this page because the per-group figures from that trial were never released."},
+        {"b": "In people: blood sugar.", "t": "In the 12-week trial, people with impaired glucose tolerance on AOD-9604 were less likely to progress to diabetes than those on placebo. The authors called this a hypothesis needing its own trial. It was never run."},
+        {"b": "In people: hormones.", "t": "IGF-1 did not rise at any dose in either Phase 2b trial, confirming the fragment does not act like full growth hormone. The developer also states there is no evidence it increases muscle or cartilage cell numbers."},
+        {"b": "In animals.", "t": "In obese mice, daily injections increased fat oxidation and reduced weight gain without raising blood sugar, and the effect depended on a particular fat-cell receptor (the beta-3 adrenergic receptor). After 2007 the company pointed to preclinical cartilage and joint work as a possible new direction. None of this has been shown in people."}
+      ]
+    },
+    "more": [
+      {
+        "title": "More: how the 2004 result was argued over",
+        "paras": [
+          "When the 300-person trial read out in December 2004, the company first announced a weight loss of 2.8 kg on the 1 mg dose, nearly three times placebo, with weight loss continuing through the 12 weeks. Analysts then pointed out that the primary analysis gave p = 0.1, meaning roughly a 90% chance the drug caused the difference, where the usual bar is 95%. The company restated the result, leaned on a secondary analysis of the rate of weight change (which it said exceeded 99%), and the share price swung from A$2.50 to A$1.20 within days.",
+          "The company's regulatory adviser said a further dose-finding study was needed before Phase 3. That study became the 502-person trial, and it is the one that ended the program."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "In the trials, no more side effects than placebo. Outside the trials, nobody has counted.",
+    "lede": "The developer published a pooled safety summary of all six trials in 2013. In the 24-week trial the commonest complaints were colds (17%), headache (26%) and diarrhea (8%), at similar rates on drug and placebo. Nothing was judged definitely related to the drug and no one left a trial because of it. These were tablets and controlled intravenous doses, not vials injected at home.",
+    "chart": {
+      "eyebrow": "METAOD006 · 24 weeks · share of people with any side effect",
+      "legend": ["AOD-9604 0.25 mg tablet", "Placebo"],
+      "rows": [
+        {"name": "Any adverse event", "drug": 75.6, "placebo": 83.2}
+      ],
+      "max": 100,
+      "note": "502 obese adults, 125 to 127 per group. The 0.5 mg and 1 mg groups fell between these two values (78.7% overall). Serious adverse events: 18 people (3.6%), spread evenly across groups. The paper does not break the common events down by group."
+    },
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "None. Across all six trials the authors report no treatment-related withdrawals. In the 12-week trial, five people were diagnosed with cancers (two skin cancers and a lipoma at one dose, a breast cancer and a melanoma at others), all in drug groups and none on placebo. The investigators judged none related, which is reasonable for cancers appearing within 12 weeks, but it is also a reminder that no trial was long enough to see slow harms."
+    },
+    "unique": {
+      "title": "What was specific to AOD-9604",
+      "text": "Two things stand out. In an early intravenous study, 5 of 23 obese men reported mild to moderate euphoria during AOD-9604 periods and none during placebo. And when the FDA reviewed it in 2023 it cited reports of serious adverse events possibly associated with AOD-9604 (causality unclear), a risk of immune reactions when injected, and problems characterising the material and its impurities. The trials found no anti-AOD-9604 antibodies in the subset tested, but those people took tablets or clinic infusions, not repeated injections under the skin."
+    },
+    "more": [
+      {
+        "title": "More: what the trials monitored for",
+        "paras": [
+          "Growth hormone effects. Because the fragment comes from growth hormone, every trial tracked IGF-1, glucose tolerance and antibodies against the peptide. None moved.",
+          "Everything else. Vital signs, blood counts, liver and kidney tests and ECGs were collected in each study, and the published summary reports nothing of concern. Full tables by dose group were not published.",
+          "What was not studied: repeated injections under the skin, use for longer than six months, use alongside other hormones, and use in anyone under 18 or pregnant."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "The one encouraging signal was in blood sugar: fewer people with impaired glucose tolerance progressed to diabetes on the drug than on placebo in the 12-week trial, and IGF-1 stayed flat, so the fragment avoided the blood-sugar and growth effects of full growth hormone. Neither finding was followed up."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms a doctor should see promptly",
+      "items": [
+        "Spreading redness, warmth, swelling or pus at an injection site, or fever and chills after an injection",
+        "Hives, swelling of the face or throat, wheeze or trouble breathing",
+        "Severe or persistent abdominal pain, or vomiting that will not stop",
+        "Yellowing of the skin or eyes, dark urine, pale stools",
+        "A racing or irregular heartbeat, chest pain, fainting"
+      ],
+      "note": "These relate mainly to injecting an unverified product. No trial has defined the drug's own danger signs, because none ran long enough or used this route."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "No human half-life has been published. The developer's first three trials (2001 to 2002) were designed to measure blood levels after intravenous and oral doses, but those results never appeared in a journal, and no independent group has measured them since. There is nothing to build a curve from.",
+    "stats": [
+      {"num": "None", "lbl": "published human half-life or peak time", "src": "Stier et al. 2013 reports no pharmacokinetics"},
+      {"num": "2 routes", "lbl": "tested in people: tablets and clinic infusions. Injection under the skin, the route sold online, was never studied", "src": "Six developer trials, 2001 to 2007"},
+      {"num": "0", "lbl": "independent studies of absorption, blood levels or breakdown in people", "src": "Literature search, October 2026"}
+    ],
+    "explain": [
+      {"b": "Why there is no chart.", "t": "The simulator on other pages runs on a measured half-life. None exists for AOD-9604, so any curve would be invented."},
+      {"b": "Why the route matters.", "t": "The trials used tablets, which the gut partly destroys, and short intravenous infusions in a clinic. A vial injected under the skin behaves differently, and nobody has measured how."},
+      {"b": "Why the label tells you little.", "t": "A \"research use only\" vial carries a milligram number but no verified potency. FDA's 2023 review flagged exactly this: difficulty characterising the material and its impurities."}
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: what a chart would need",
+        "paras": [
+          "To model blood levels you need, at minimum, how fast the drug is absorbed from where it is given and how fast the body clears it. Both were measured in the developer's 2001 to 2002 studies in 15 healthy men and 23 obese men, and neither number was ever published. The 2013 safety paper, which pooled all six trials, reports no pharmacokinetics at all.",
+          "Small peptides are generally cleared quickly, but that is a generalisation, not a measurement, and this page does not substitute one for the other."
+        ]
+      },
+      {
+        "title": "More: what this page cannot tell you",
+        "paras": [
+          "It cannot tell you what is in a vial sold as AOD-9604, how much, or how pure. The developer has never manufactured or sold the peptide and has said since 2010 that black-market product is made in China and elsewhere.",
+          "It cannot tell you what repeated injections do, because no trial, animal or human, has published that for this peptide."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "Six trials, one sponsor, all finished by 2007.",
+    "lede": "Every human study of AOD-9604 was run or paid for by its developer, in Manchester and at Australian hospitals, between 2001 and 2007. Nothing has been registered since. Here is what each one did and found.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: how the trials were run",
+        "paras": [
+          "The two large trials were multicentre, randomised, double-blind and placebo-controlled, with a placebo run-in period so that people who lost weight simply from joining a study could be identified. Participants were obese adults with a BMI of 30 or more and received diet advice alongside tablets.",
+          "The trials were registered under Australia's Clinical Trial Notification scheme rather than on a public registry, which is why they do not appear on ClinicalTrials.gov. Only the pooled safety data were published, in 2013, in a paper funded by the company and co-written by its chief executive. The weight-loss results of the 24-week trial exist only as company statements."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials that have been run",
+      "items": [
+        "METAOD001 (2001, Phase 1): 15 healthy men, single intravenous doses, growth hormone as a comparator. Safety only; headache was the commonest complaint.",
+        "METAOD002 (2001, Phase 2a): 23 obese men, single intravenous doses in a crossover. Tolerated; 5 of 23 reported euphoria on the drug and none on placebo.",
+        "METAOD003 (2002, Phase 2a): 17 obese men, single oral doses. Two serious events: a bout of diarrhea judged possibly related and a pneumonia judged unrelated.",
+        "METAOD004 (2003, Phase 2a): 36 obese men, seven days of oral dosing. More headache and diarrhea at the highest dose; otherwise like placebo.",
+        "METAOD005 (2004, Phase 2b): 300 obese adults, five oral doses or placebo for 12 weeks at five centres. Best dose lost 2.8 kg; difference from placebo not significant (p = 0.1).",
+        "METAOD006 (2006 to 2007, Phase 2b): 502 obese adults, three low oral doses or placebo for 24 weeks at 16 centres. No clinically meaningful weight loss versus placebo. Program terminated February 2007; full results never published."
+      ]
+    },
+    "find": {
+      "text": "No trial of AOD-9604 is recruiting anywhere, and none has been registered since 2007. A registry search returns little because the developer's trials predate public registration.",
+      "term": "AOD9604",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "Never approved. Dropped by its developer. Banned in sport. Sold anyway.",
+    "items": [
+      {"tag": "no", "label": "Canada", "text": "Health Canada has never authorized a product containing AOD-9604. Anything sold in Canada, online or through a clinic, is an unauthorized drug (as of October 2026)."},
+      {"tag": "no", "label": "United States", "text": "Not approved. In September 2023 the FDA placed AOD-9604 in Category 2 of substances pharmacies may not compound, citing immunogenicity risk, impurity and characterisation problems, little or no safety information, and reports of serious adverse events of unclear cause. The nomination was later withdrawn by its sponsor; on FDA's list updated 14 May 2026 it appears in no category, which still leaves it ineligible for compounding. It was not among the peptides an FDA advisory committee reviewed in July 2026."},
+      {"tag": "no", "label": "Australia", "text": "Never approved by the TGA as a medicine. The developer said in 2013 that doctors could prescribe it through compounding pharmacies and licensed two that year; since 2011 it has also been an ingredient in an anti-cellulite cream. Its 2012 to 2014 \"GRAS\" claim concerns food in the United States, not medicine (see below)."},
+      {"tag": "no", "label": "Sport", "text": "Prohibited at all times by WADA. First caught by the catch-all S0 \"non-approved substances\" class in a WADA statement of 22 April 2013, after the Essendon football club scandal, and now named under S2.2.3: \"growth hormone fragments, e.g. AOD-9604 and hGH 176-191\" (2026 list)."}
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "\"Research use only\" is a sales label, not a safety standard",
+        "text": "The developer never made or sold AOD-9604. Everything in circulation comes from unregulated manufacturers, and the product form (a vial to inject) is one no trial ever tested.",
+        "items": [
+          "Since 2010 the developer has told the stock exchange that black-market AOD-9604 made in China and elsewhere was being bought by distributors, gyms, clinics, athletes and bodybuilders.",
+          "FDA's 2023 review cited problems characterising the material and its peptide-related impurities, and a risk of immune reactions when injected. No independent laboratory testing of AOD-9604 vials has been published.",
+          "The 925 trial participants took tablets or clinic infusions under medical supervision. The oral tablets failed; the injections were never studied at all."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "warn",
+        "title": "If someone has already used an injected product",
+        "text": "Stop, keep the vial and its label, and see a doctor if any of these appear:",
+        "items": ["Fever, chills, or a hot swollen injection site", "Hives, facial swelling or trouble breathing", "Yellowing of the skin or eyes, dark urine", "Severe abdominal pain or persistent vomiting"],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch). Athletes should know that a positive test is a violation regardless of the product's label."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: the \"GRAS\" claim, explained",
+        "paras": [
+          "In June 2012 Metabolic announced that AOD-9604 had a \"conditional, self-affirmed GRAS\" status, GRAS meaning \"generally recognised as safe\" as a food ingredient in the United States. The determination was made by an expert panel hired through a consultancy (GRAS Associates), on the condition that the company publish its safety data, which it did in the 2013 paper. In August 2014 the company announced the status as final, covering foods, drinks and supplements at up to 1 mg per person per day.",
+          "A self-affirmed GRAS determination is the company's own conclusion, reached by a panel it commissioned. It is not an FDA approval or review, and the announcements describe no filing with the agency. It says nothing about injecting the peptide, and nothing about effectiveness. The company's own 2013 statement is that AOD-9604 \"has not been approved by the TGA or any other government health authority as a pharmaceutical\"."
+        ]
+      },
+      {
+        "title": "More: the 2013 Essendon episode",
+        "paras": [
+          "In 2013 it emerged that players at the Essendon Football Club in Melbourne had been injected with AOD-9604 as part of a supplements program. Australia's anti-doping agency treated it as banned under WADA's S0 class because it was not approved for human use; WADA confirmed that reading in April 2013. The developer issued a statement that the peptide was safe but \"did not show a clinically meaningful weight loss outcome\" and that there was no evidence it builds muscle. The episode is why AOD-9604 is now named in the Prohibited List, and why it became a sought-after black-market product."
+        ]
+      }
+    ],
+    "sources": [
+      {"text": "Stier H, Vos E, Kenley D. Safety and tolerability of the hexadecapeptide AOD9604 in humans. Journal of Endocrinology and Metabolism, 2013;3(1-2):7-15 (pooled safety data from all six trials; 925 participants; no pharmacokinetics reported).", "url": "https://www.jofem.org/index.php/jofem/article/view/157/194"},
+      {"text": "Stier et al., supplementary summary of clinical trials METAOD001 to METAOD006 (designs, years, sizes, doses, durations).", "url": "https://jofem.org/index.php/jofem/article/downloadSuppFile/157/281"},
+      {"text": "BioWorld, Metabolic's AOD9604 Phase IIb result: 2.8 kg at 1 mg, 90% confidence on the primary analysis, 22 December 2004.", "url": "https://www.bioworld.com/articles/466438"},
+      {"text": "LabOnline / Australian Life Scientist, Metabolic hits back at drug trial criticism (p = 0.1 on the primary analysis), 17 December 2004.", "url": "https://labonline.com.au/content/life-scientist/news/metabolic-hits-back-at-drug-trial-criticism-243845831"},
+      {"text": "BioCentury, Metabolic completes Phase IIb obesity enrollment (300 patients, 12 weeks), June 2004.", "url": "https://biocentury.com/article/167545/aod9604-phase-iib-completed-enrollment"},
+      {"text": "Calzada Limited / Metabolic Pharmaceuticals, ASX statement on AOD9604: six trials, 925 patients, no clinically meaningful weight loss, program terminated February 2007, WADA S0 statement of 22 April 2013, GRAS, TGA status, black market. 26 April 2013.", "url": "https://announcements.asx.com.au/asxpdf/20130426/pdf/42fh15rvm7p65t.pdf"},
+      {"text": "Calzada Limited, ASX announcement: conditional self-affirmed GRAS determination for AOD9604 by an expert panel, up to 1 mg per day, 25 June 2012.", "url": "https://announcements.asx.com.au/asxpdf/20120625/pdf/4270mj9x71tv3k.pdf"},
+      {"text": "LabOnline, AOD9604 awarded safe (GRAS) status in US, 6 August 2014.", "url": "https://labonline.com.au/content/life-scientist/news/aod96-4-awarded-safe-status-in-us-1406753236"},
+      {"text": "The Age / InvestSMART, interview with Metabolic chief executive David Kenley: development stopped in 2007 after a large trial failed; A$50 million spent; black-market prices. 24 April 2013.", "url": "https://www.investsmart.com.au/investment-news/cbd/35712"},
+      {"text": "U.S. FDA, Certain bulk drug substances for use in compounding that may present significant safety risks (AOD-9604 concerns: immunogenicity, impurities, limited safety information, serious adverse event reports; nomination withdrawn). Content current as of 22 April 2026.", "url": "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks"},
+      {"text": "U.S. FDA, 503A bulk drug substances category list, updated 14 May 2026 (AOD-9604 in no category).", "url": "https://fda.gov/media/94155/download"},
+      {"text": "Alliance for Pharmacy Compounding, summary of FDA's September 2023 503A categories update (AOD-9604 and 18 other peptides placed in Category 2), 29 September 2023.", "url": "https://join.a4pc.org/hubfs/PDFs/503A-Categories-Update-for-September-2023-FINAL.docx.pdf"},
+      {"text": "WADA, 2026 Prohibited List, in force 1 January 2026 (S2.2.3 growth hormone fragments, e.g. AOD-9604 and hGH 176-191), official text as published in the Netherlands Tractatenblad 2026-25; see also wada-ama.org/en/prohibited-list.", "url": "https://zoek.officielebekendmakingen.nl/trb-2026-25.html"},
+      {"text": "Ng FM et al. Metabolic studies of a synthetic lipolytic domain (AOD9604) of human growth hormone. Hormone Research, 2000. Heffernan MA et al. Increase of fat oxidation and weight loss in obese mice caused by chronic treatment with human growth hormone or a modified C-terminal fragment. International Journal of Obesity, 2001.", "url": "https://doi.org/10.1038/sj.ijo.0801740"}
+    ]
+  }
+}

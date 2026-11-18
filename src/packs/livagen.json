@@ -1,0 +1,273 @@
+{
+  "id": "livagen",
+  "name": "Livagen",
+  "brands": "",
+  "maker": "St Petersburg Institute of Bioregulation and Gerontology (V. Khavinson)",
+  "group": "research",
+  "pill": "Unapproved",
+  "overview": {
+    "headline": "A four-amino-acid peptide named for the liver. Rat hepatitis data and a 23-patient Russian report with no control-group results.",
+    "lede": "Livagen is the Khavinson institute's tetrapeptide Lys-Glu-Asp-Ala, patented in the U.S. in 2006 for \"stimulating the functional activity of hepatocytes\". Its peer-reviewed papers concern chromatin in elderly people's blood cells; the liver data are in the patent. It is not a registered medicine anywhere.",
+    "stats": [
+      {
+        "num": "4",
+        "lbl": "amino acids: Lys-Glu-Asp-Ala",
+        "src": "US patent 7,101,854; Khavinson 2016"
+      },
+      {
+        "num": "23",
+        "lbl": "hepatitis patients in the only human report, plus 12 controls whose results were never published",
+        "src": "US patent 7,101,854"
+      },
+      {
+        "num": "0",
+        "lbl": "controlled or peer-reviewed human trials",
+        "src": "PubMed, patents, institute publications and registries, Oct 2026"
+      }
+    ],
+    "mechanism": {
+      "intro": "A short peptide said to help liver cells make protein and recover from toxic injury.",
+      "parts": [
+        {
+          "name": "The bioregulator idea",
+          "text": "The 2016 computer model places Livagen on the DNA sequence \"tcct\" with \"very strong\" predicted binding. In blood cells from people aged 75–88 the institute and Georgian collaborators reported it loosens tightly packed chromatin on chromosomes 1 and 9. Neither is a measurement in a human liver."
+        },
+        {
+          "name": "What the liver work showed",
+          "text": "In the patent, liver cells from rats of three ages made more protein, most in the oldest; chick-embryo liver explants grew 24% more; rats poisoned with carbon tetrachloride had lower ALT (35 versus 53 units) and fewer fat-laden liver cells."
+        }
+      ]
+    },
+    "more": {
+      "title": "More: the chromatin papers",
+      "paras": [
+        "Most of Livagen's journal record is not about the liver. Papers from 2002–2004 with collaborators in Tbilisi report that it \"de-heterochromatinised\" chromatin and activated ribosomal genes in cultured blood cells from people in their late seventies and eighties. No one has linked this to any change in a living person."
+      ]
+    }
+  },
+  "results": {
+    "headline": "Rat liver injury in a patent, chromatin changes in elderly blood cells, and 23 hepatitis patients without a comparison.",
+    "lede": "The liver claims rest on the inventors' animal experiments and a small Russian case series whose control group was never reported.",
+    "chart": null,
+    "stats": [
+      {
+        "num": "53 → 41",
+        "lbl": "ALT (a liver enzyme) before and after treatment in 23 hepatitis patients; the 12 controls' values were not reported",
+        "src": "US patent 7,101,854"
+      }
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {
+          "b": "In vitro.",
+          "t": "Rat liver cells aged 4, 8 and 18 months: more protein synthesis, strongest in the oldest (figure only). Liver explants from 53 chick embryos: growth 24% above control. Blood cells from old people: chromatin loosened on chromosomes 1 and 9 (Khavinson 2002, 2004; Lezhava 2004)."
+        },
+        {
+          "b": "Animals.",
+          "t": "Rats with carbon tetrachloride hepatitis: ALT 35.3 versus 53.0; fat-laden liver cells 50% versus 84%; rat numbers not stated. 37 female rats with transplanted hepatoma-27: tumours about 2.5 times smaller by day 30, three complete regressions, survival 68 versus 55 days. Toxicity tests in 72 mice and 64 rats: no pathology."
+        },
+        {
+          "b": "Russian human reports.",
+          "t": "23 patients aged 32–53 with chronic persistent hepatitis: bilirubin fell from 26.3 to 21.7 and ALT from 53.1 to 40.8; AST, GGT and lipids unchanged. A 12-patient control group is mentioned but its results are not. No randomisation or blinding described; patent only."
+        }
+      ]
+    },
+    "more": [
+      {
+        "title": "More: why the hepatitis report is not a result",
+        "paras": [
+          "Chronic hepatitis fluctuates, and hospital care tends to lower liver enzymes on its own. Without the control group's numbers, the treated group's modest fall in ALT cannot be attributed to the peptide. The hepatoma result is intriguing and unreplicated."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "No controlled safety data. Twenty-three Russian patients with no adverse-event reporting, and rodent toxicity tests in a patent.",
+    "lede": "The patent's hepatitis report lists symptom improvements but no adverse events. Rodent testing reported no pathology.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "Not measurable: no trial has been run, and the 23-patient report does not say whether anyone stopped."
+    },
+    "unique": {
+      "title": "What is actually known",
+      "text": "Nothing beyond the absence of data. The patent's own table shows no change in AST, GGT, cholesterol or triglycerides in 23 people over a few weeks, which at least suggests no acute liver toxicity."
+    },
+    "more": [
+      {
+        "title": "More: what a trial would monitor for",
+        "paras": [
+          "Liver enzymes and bilirubin, the claimed target and the organ most at risk from an impure injected product; tumour markers over the long term, given the rat hepatoma finding; immune reactions."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "In rats: lower ALT after chemical liver injury, smaller transplanted liver tumours. In 23 patients: a small fall in bilirubin and ALT with no control comparison."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms a doctor should see promptly",
+      "items": [
+        "Spreading redness, swelling or pus at an injection site, or fever and chills after an injection",
+        "Hives, swelling of the face or throat, trouble breathing",
+        "Yellowing of the skin or eyes, dark urine",
+        "Pain under the right ribs, pale stools, itching"
+      ],
+      "note": "No trial has defined this peptide's own danger signs; these relate to an unverified product."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "No one has measured Livagen in a person's blood; no half-life or absorption figure exists for it in any species. There is nothing to build a curve from.",
+    "stats": [
+      {
+        "num": "None",
+        "lbl": "human half-life; never measured",
+        "src": "No PK study found, Oct 2026"
+      },
+      {
+        "num": "4",
+        "lbl": "amino acids long (Lys-Glu-Asp-Ala)",
+        "src": "Khavinson 2016"
+      },
+      {
+        "num": "10–40 days",
+        "lbl": "treatment length in the 23-patient report, the only human exposure on record",
+        "src": "US patent 7,101,854"
+      }
+    ],
+    "explain": [
+      {
+        "b": "Why there is no chart.",
+        "t": "The simulator on other pages needs a measured half-life; none exists for Livagen."
+      },
+      {
+        "b": "Why the oral claim is contested.",
+        "t": "Pharmacologists expect peptides this short to be digested by gut and blood enzymes; the institute says they are absorbed intact. Nothing in people settles it."
+      }
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: what this page cannot tell you",
+        "paras": [
+          "What is in a product sold as Livagen, or what repeated use does: no independent analysis exists, and no study has followed anyone beyond a few weeks."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "One unregistered 23-patient series in a patent. No controlled trial.",
+    "lede": "A before-and-after series of 23 hepatitis patients in the 2006 U.S. patent, with a 12-person control group whose results were never published.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: how the human report was run",
+        "paras": [
+          "Twenty-three adults with long-standing chronic hepatitis received the peptide for 10 to 40 days alongside usual care; liver tests and immunoglobulins were measured before and after. Twelve patients on conventional treatment formed a comparison group, but the patent reports nothing about them, or about randomisation, blinding or adverse events."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials that have been run",
+      "items": [
+        "Chronic persistent hepatitis, 23 treated adults aged 32–53 plus 12 controls (patent, 2006): bilirubin and ALT fell in the treated group; control results unreported; not peer reviewed.",
+        "No trial on ClinicalTrials.gov or any registry we could find (October 2026)."
+      ]
+    },
+    "find": {
+      "text": "Search the registry for \"Livagen\" and its sequence \"KEDA\". We found no registered trial.",
+      "term": "Livagen",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "Not approved anywhere, including Russia.",
+    "items": [
+      {
+        "tag": "no",
+        "label": "Canada",
+        "text": "Never authorised by Health Canada as a medicine or natural health product (October 2026)."
+      },
+      {
+        "tag": "no",
+        "label": "United States",
+        "text": "Not FDA-approved; absent from FDA's 503A compounding category list of 14 May 2026."
+      },
+      {
+        "tag": "no",
+        "label": "Russia",
+        "text": "Not a registered medicine; not among the institute's six licensed products, and no Russian registration of any kind found."
+      }
+    ],
+    "cards": [
+      {
+        "kind": "warn",
+        "title": "What a \"bioregulator\" claim rests on",
+        "text": "The claim is that a peptide copied from an organ extract reaches that organ and switches on its genes. For Livagen the support is:",
+        "items": [
+          "Computer docking models, test-tube DNA work and cell cultures from one institute; no study has tracked one of these peptides into a human organ."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "crit",
+        "title": "What \"research use only\" means",
+        "text": "A \"research use only\" label is a legal device, not a safety rating. No regulator in Canada or the U.S. has checked what is in a vial sold as Livagen, and no toxicology or purity data have been filed in the West.",
+        "items": [
+          "Livagen is not even registered as a food supplement in Russia as far as we could find."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "soft",
+        "title": "Symptoms to take to a doctor",
+        "text": "If any of these appear after using such a product, see a doctor and bring the product:",
+        "items": [
+          "Fever, chills, or a hot, swollen injection site",
+          "Hives, swelling of the face or throat, trouble breathing",
+          "Yellowing of the skin or eyes, dark urine",
+          "Pain under the right ribs, pale stools or itching"
+        ],
+        "note": "Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: the Khavinson peptide family",
+        "paras": [
+          "Vladimir Khavinson (1946–2024) directed the St Petersburg Institute of Bioregulation and Gerontology, which made animal-organ extracts from the 1970s and then designed two- to four-amino-acid peptides from each extract's amino-acid make-up, naming them after target organs. Six products became licensed medicines in the USSR or Russia: Thymalin (1982), Thymogen and Epithalamin (1990), Prostatilen (1992), Cortexin and Retinalamin (1999). The synthetic organ-named peptides sold online are not among them, and none appears in an international trial registry."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "text": "Khavinson VKh. Tetrapeptide stimulating the functional activity of hepatocytes. US patent 7,101,854, 5 September 2006.",
+        "url": "https://patents.justia.com/patent/7101854"
+      },
+      {
+        "text": "Khavinson VK, Lezhava TA, Monaselidze JG et al. Effects of Livagen peptide on chromatin activation in lymphocytes from old people. Bull Exp Biol Med 2002;134:389–392.",
+        "url": "https://link.springer.com/article/10.1023/A:1021924702103"
+      },
+      {
+        "text": "Khavinson VK, Lezhava TA, Malinin VV. Effects of short peptides on lymphocyte chromatin in senile subjects. Bull Exp Biol Med 2004;137:78–81.",
+        "url": "https://link.springer.com/article/10.1023/B:BEBM.0000024393.40560.05"
+      },
+      {
+        "text": "Lezhava T, Khavinson V et al. Bioregulator Vilon-induced reactivation of chromatin in cultured lymphocytes from old people. Biogerontology 2004;5:73–79.",
+        "url": "https://khavinson.info/assets/files/2004-Lezhava.pdf"
+      },
+      {
+        "text": "Khavinson VKh, Lin'kova NS, Tarnovskaya SI. Short peptides regulate gene expression. Bull Exp Biol Med 2016;162(2): sequence table and modelled DNA binding sites.",
+        "url": "https://khavinson.info/assets/files/skan/2016-khavinson_lin_tarn.pdf"
+      },
+      {
+        "text": "U.S. FDA, 503A bulk drug substances category list, updated 14 May 2026.",
+        "url": "https://fda.gov/media/94155/download"
+      }
+    ]
+  }
+}

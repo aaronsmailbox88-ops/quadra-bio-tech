@@ -1,0 +1,270 @@
+{
+  "id": "dulaglutide",
+  "name": "Dulaglutide",
+  "brands": "Trulicity",
+  "maker": "Eli Lilly",
+  "group": "approved",
+  "pill": "Approved",
+  "overview": {
+    "headline": "A once-weekly GLP-1 injection for type 2 diabetes, built by fusing the hormone to an antibody fragment so one dose lasts a week.",
+    "lede": "Dulaglutide is Eli Lilly's Trulicity. It has been approved for type 2 diabetes in the U.S. and the EU since 2014 and is prescribed in Canada, the U.S., Europe and elsewhere. It is not approved for weight loss anywhere. It is supplied only as a single-use prefilled pen, by prescription, through pharmacies.",
+    "stats": [
+      {"num": "−1.5 pts", "lbl": "average fall in A1C on 1.5 mg at 26 weeks, against −0.5 on placebo", "src": "AWARD-1, FDA label"},
+      {"num": "12%", "lbl": "fewer heart attacks, strokes and cardiovascular deaths over 5.4 years", "src": "REWIND, 9,901 people, Lancet 2019"},
+      {"num": "−4.6 kg", "lbl": "average weight change on the top 4.5 mg dose at 36 weeks (−3.0 kg on 1.5 mg)", "src": "AWARD-11, treatment-regimen estimand"}
+    ],
+    "mechanism": {
+      "intro": "One receptor, kept switched on for a week.",
+      "parts": [
+        {"name": "GLP-1", "text": "Dulaglutide copies the gut hormone GLP-1 (about 90% identical). It tells the pancreas to release insulin when blood sugar is high, lowers glucagon, slows stomach emptying and signals fullness. The same target as semaglutide."},
+        {"name": "Antibody tail (Fc)", "text": "Two copies of the GLP-1 look-alike are joined to the stem of a modified human IgG4 antibody. The large size, about 63,000 daltons, keeps it from being filtered out by the kidneys and broken down quickly, so a dose lasts a week."},
+        {"name": "What it does not hit", "text": "Unlike tirzepatide (GLP-1 plus GIP) or retatrutide (plus glucagon), dulaglutide acts on GLP-1 alone. That is one reason its weight loss in trials is smaller than the newer drugs'."}
+      ]
+    },
+    "more": {
+      "title": "More: where it sits among the GLP-1 drugs",
+      "paras": [
+        "Dulaglutide was one of the first once-weekly GLP-1 drugs, approved in the U.S. in 2014. It is a diabetes drug first: the trials that set its doses measured blood sugar, and weight loss was a secondary finding. In the only large head-to-head trial, tirzepatide (Mounjaro) lowered A1C and weight considerably more than dulaglutide, with similar heart protection (SURPASS-CVOT, 2025).",
+        "Lilly describes the chemistry as a GLP-1 receptor agonist fusion protein: two identical chains, each a GLP-1 analog linked to the Fc part of a modified human IgG4 heavy chain, made in Chinese hamster ovary cells. Because of the antibody piece it is regulated as a biologic, which matters for how copies will eventually be approved (as biosimilars, not generics).",
+        "Everything on this page comes from the FDA label, the peer-reviewed AWARD, REWIND and SURPASS-CVOT papers, Lilly's press releases and annual report, and regulator notices. Sources are listed under the Status tab."
+      ]
+    }
+  },
+  "results": {
+    "headline": "What the trials measured: blood sugar first, weight second.",
+    "lede": "Dulaglutide's trials were built to lower A1C, the three-month average of blood sugar. The chart shows the fall in A1C on the 1.5 mg dose against placebo in the placebo-controlled adult trials. Weight change, which the trials reported in kilograms rather than percent, is in the tips and tiles.",
+    "chart": {
+      "metric": "other",
+      "legend": ["Dulaglutide 1.5 mg", "Placebo"],
+      "rows": [
+        {"name": "AWARD-1", "meta": "26 weeks · added to metformin + pioglitazone · 976 people", "drug": -1.5, "placebo": -0.5, "tip": "Dulaglutide 1.5 mg: A1C −1.5 points (from 8.1%); placebo −0.5. Weight: −1.3 kg vs +1.2 kg"},
+        {"name": "AWARD-9", "meta": "28 weeks · added to insulin glargine · 300 people", "drug": -1.4, "placebo": -0.7, "tip": "Dulaglutide 1.5 mg: A1C −1.4 points (from 8.4%); placebo −0.7. Weight: −1.3 kg vs +0.8 kg"},
+        {"name": "AWARD-8", "meta": "24 weeks · added to glimepiride · 299 people", "drug": -1.3, "placebo": -0.3, "tip": "Dulaglutide 1.5 mg: A1C −1.3 points (from 8.4%); placebo −0.3. Weight: −0.5 kg vs −0.2 kg"},
+        {"name": "AWARD-10", "meta": "24 weeks · added to an SGLT2 inhibitor · 423 people", "drug": -1.3, "placebo": -0.6, "tip": "Dulaglutide 1.5 mg: A1C −1.3 points (from 8.0%); placebo −0.6. Weight: −2.9 kg vs −2.0 kg"},
+        {"name": "AWARD-5", "meta": "26 weeks · added to metformin · 972 people (also a sitagliptin arm)", "drug": -1.2, "placebo": 0.1, "tip": "Dulaglutide 1.5 mg: A1C −1.2 points (from 8.1%); placebo +0.1. Weight: −3.0 kg vs −1.4 kg"}
+      ],
+      "max": 2,
+      "note": "Values are the change in A1C from baseline in percentage points (8.1% to 6.6% is −1.5), as printed in the clinical-studies section of the FDA label. These older trials predate the estimand framework; the label's figures are intention-to-treat analyses counting everyone randomized. Weight is given in kilograms because the trials did not report percent change. Background drugs differ by row, so compare each drug bar with its own placebo bar."
+    },
+    "stats": [
+      {"num": "−4.6 kg", "lbl": "weight change at 36 weeks on 4.5 mg, against −3.0 kg on 1.5 mg; there was no placebo arm", "src": "AWARD-11, 1,842 people, treatment-regimen estimand (efficacy: −4.7 vs −3.1 kg)"},
+      {"num": "−1.8 pts", "lbl": "A1C change at 36 weeks on 4.5 mg, against −1.5 on 1.5 mg", "src": "AWARD-11, treatment-regimen estimand (efficacy: −1.9 vs −1.5)"}
+    ],
+    "beyond": {
+      "title": "Beyond the scale",
+      "items": [
+        {"b": "Heart protection.", "t": "REWIND followed 9,901 people with type 2 diabetes for a median 5.4 years. Heart attack, stroke or cardiovascular death happened in 12.0% on dulaglutide 1.5 mg versus 13.4% on placebo (hazard ratio 0.88, 95% CI 0.79 to 0.99). Most of the difference was in strokes (HR 0.76). Only 31.5% had existing heart disease, so the result covers people at risk as well as those already ill."},
+        {"b": "Kidneys.", "t": "In REWIND, a kidney composite (new heavy protein loss in the urine, a sustained 30% fall in filtration, or dialysis) occurred in 17.1% versus 19.6% (HR 0.85), driven mostly by less protein leakage (8.9% versus 11.3%). It was an exploratory outcome, not the trial's main question."},
+        {"b": "Children and teens.", "t": "AWARD-PEDS (154 people aged 10 to 17, 26 weeks) found A1C fell 1.0 (0.75 mg) and 1.5 (1.5 mg) percentage points more than on placebo, where it rose 0.5. BMI did not change. The FDA and EU labels now cover ages 10 and up, at a maximum of 1.5 mg."},
+        {"b": "Weight.", "t": "Modest. On 1.5 mg, people lost roughly 1 to 3 kg more than placebo over six months. Over three years in SURPASS-CVOT, dulaglutide 1.5 mg gave −4.95% of body weight (−4.65 kg), against −12.06% (−11.43 kg) on tirzepatide."},
+        {"b": "Against tirzepatide.", "t": "SURPASS-CVOT (more than 13,000 people with diabetes and heart disease, median 4 years) found tirzepatide no worse than dulaglutide for heart attack, stroke or cardiovascular death (HR 0.92; superiority not shown, p=0.086), with fewer deaths from any cause (HR 0.84) and a larger A1C drop (−1.73 versus −0.90 points at 36 months)."}
+      ]
+    },
+    "more": [
+      {
+        "title": "More: how to read the REWIND result",
+        "paras": [
+          "REWIND is unusual among GLP-1 heart trials: about two in three participants had no prior cardiovascular disease, the median starting A1C was only 7.2%, and follow-up ran more than five years. The 12% relative reduction is modest, but it was achieved in a lower-risk group than most comparable trials. Death from any cause was 10.8% versus 12.0%, a difference that did not reach statistical significance (HR 0.90, 95% CI 0.80 to 1.01).",
+          "SURPASS-CVOT had no placebo arm, so on its own it cannot say whether tirzepatide protects the heart compared with no treatment. The investigators used REWIND as the bridge: matched indirectly to REWIND's placebo group, tirzepatide's estimated effect was HR 0.72 (0.55 to 0.94). That is a modelled estimate presented at the 2025 EASD meeting, not a trial result."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "Stomach-related, dose-related, and mostly in the first weeks.",
+    "lede": "Nausea, vomiting and diarrhea led in every trial. The chart pools the placebo-controlled adult trials in the FDA label, comparing the 1.5 mg dose with placebo. The 0.75 mg dose sat in between. Symptoms were most common after starting and after each step up, and usually eased with continued use.",
+    "chart": {
+      "eyebrow": "FDA label, pooled placebo-controlled trials · share of people affected",
+      "legend": ["Dulaglutide 1.5 mg", "Placebo"],
+      "rows": [
+        {"name": "Nausea", "drug": 21.1, "placebo": 5.3},
+        {"name": "Vomiting", "drug": 12.7, "placebo": 2.3},
+        {"name": "Diarrhea", "drug": 12.6, "placebo": 6.7},
+        {"name": "Abdominal pain", "drug": 9.4, "placebo": 4.9},
+        {"name": "Decreased appetite", "drug": 8.6, "placebo": 1.6},
+        {"name": "Dyspepsia (indigestion)", "drug": 5.8, "placebo": 2.3}
+      ],
+      "max": 30,
+      "note": "Placebo n=568, 1.5 mg n=834. On 0.75 mg (n=836): nausea 12.4%, vomiting 6.0%, diarrhea 8.9%. At the higher doses in AWARD-11 (36 weeks, no placebo arm): nausea 13.4% on 1.5 mg, 15.6% on 3 mg, 16.4% on 4.5 mg; vomiting 5.6%, 8.3%, 9.3%; diarrhea 7.0%, 11.4%, 10.7%."
+    },
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "In the pooled placebo-controlled trials, stomach and bowel side effects led 3.5% of people on 1.5 mg and 1.3% on 0.75 mg to stop the drug, against 0.2% on placebo. Severe gastrointestinal reactions were recorded in 4.3% on 1.5 mg, 2.2% on 0.75 mg and 1.4% on placebo. Over a median four years in SURPASS-CVOT, 10.2% of people on dulaglutide 1.5 mg stopped because of side effects (13.3% on tirzepatide)."
+    },
+    "unique": {
+      "title": "A biologic: antibodies, the injection site, and the thyroid warning",
+      "text": "Because dulaglutide carries an antibody fragment, the trials checked whether the body makes antibodies against it. In the adult program 1.6% of people (64 of 3,907) developed anti-drug antibodies and 0.9% had antibodies that neutralised the drug, with no clinically significant effect found. Injection-site reactions were rare in adults (0.5% versus 0% on placebo) and more common in children (about 4%). Whole-body allergic reactions occurred in 0.5%; anaphylaxis and angioedema have been reported since marketing. Like every long-acting GLP-1 drug, it carries a boxed warning because it causes thyroid C-cell tumours in rats; whether that applies to humans is unknown, and people with a personal or family history of medullary thyroid cancer or MEN 2 are told not to use it."
+    },
+    "more": [
+      {
+        "title": "More: what the trials monitor for",
+        "paras": [
+          "Heart rate and rhythm. Resting heart rate rose 2 to 4 beats per minute on average. The PR interval on the ECG lengthened 2 to 3 milliseconds; first-degree AV block was recorded in 2.3% on 1.5 mg versus 0.9% on placebo, and sinus tachycardia in 5.6% versus 3.0%.",
+          "Pancreas. Pancreatic enzymes (lipase, amylase) rose 14% to 20% on average versus up to 3% on placebo. Confirmed acute pancreatitis was rare: 1.4 cases per 1,000 patient-years versus 0.88 with non-incretin comparators; in REWIND, 0.5% versus 0.3% over 5.4 years. Pancreatitis, including fatal cases, has been reported since marketing.",
+          "Gallbladder, kidneys, eyes. Gallstones 0.62 versus 0.56 per 100 patient-years; acute cholecystitis 0.5% versus 0.3%. Acute kidney injury, sometimes needing dialysis, has been reported after dehydration from vomiting or diarrhea. In people who already had diabetic retinopathy, eye complications were 8.5% versus 6.2%, a pattern seen when blood sugar falls quickly.",
+          "Low blood sugar. With metformin alone it was rare (blood sugar under 54 mg/dL in 0.7% versus 0%). It climbs with insulin or a sulfonylurea: with insulin glargine, 14.7% versus 9.3% on placebo; with mealtime insulin over a year, 69%, with severe episodes in 3.4%.",
+          "Class warnings added since launch. Ileus and bowel obstruction (post-marketing reports), pulmonary aspiration under general anaesthesia or deep sedation (patients are told to inform the surgical team), and, in March 2026, a dedicated warning on severe gastrointestinal reactions; the drug is not recommended in severe gastroparesis.",
+          "Pregnancy and breastfeeding. Data are limited; the label advises use in pregnancy only if the benefit justifies the potential risk to the fetus, and there are no data on breast milk."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "Fewer people in REWIND developed heavy protein loss in the urine (8.9% versus 11.3%) or a sustained halving of kidney filtration (1.2% versus 2.2%), and a combined eye-or-kidney outcome was 18.4% versus 20.6%. Weight loss is a side effect in the diabetes sense: about 1 to 3 kg more than placebo at 1.5 mg over six months, and 4.6 kg at 36 weeks on 4.5 mg."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms trial teams treat as urgent",
+      "items": [
+        "Severe or persistent abdominal pain, with or without vomiting, sometimes spreading to the back",
+        "Vomiting or diarrhea that will not stop, or not being able to keep fluids down",
+        "Severe constipation with bloating and no bowel movement, or a swollen, hard abdomen",
+        "A lump in the neck, trouble swallowing or breathing, or hoarseness that does not go away",
+        "Swelling of the face, lips or throat, hives, trouble breathing",
+        "Sudden changes in vision",
+        "Shakiness, sweating, confusion or fainting in someone also taking insulin or a sulfonylurea"
+      ],
+      "note": "Anyone with these symptoms should get medical care right away. The label also asks patients to tell any surgeon or anaesthetist that they take a GLP-1 drug before a procedure."
+    }
+  },
+  "levels": {
+    "pk": {
+      "half": 5,
+      "tmax": 2,
+      "ladder": [0.75, 1.5, 3.0, 4.5],
+      "stepDays": 28,
+      "tau": 7,
+      "maxDose": 4.5,
+      "refLabel": "4.5 mg weekly",
+      "source": "FDA label (Trulicity USPI, revised 03/2026): half-life about 5 days; peak 24–72 h (median 48 h) at steady state; accumulation ratio about 1.56; steady state within 2–4 weeks"
+    },
+    "nopk": "",
+    "stats": [
+      {"num": "~5 days", "lbl": "half-life: the time for the level to fall by half", "src": "FDA label, section 12.3"},
+      {"num": "1.56×", "lbl": "how far weekly dosing builds up compared with a single dose", "src": "FDA label, accumulation ratio"},
+      {"num": "2–4 wks", "lbl": "to reach a steady level after starting or stepping up", "src": "FDA label"}
+    ],
+    "explain": [
+      {"b": "Why steps are at least four weeks apart.", "t": "The label says levels plateau within two to four weeks, so each dose has settled before the next increase is considered. Four weeks is the minimum between steps, not a schedule: a step is taken only if more blood-sugar control is needed, and many people stay at 0.75 or 1.5 mg."},
+      {"b": "Why side effects cluster after a step.", "t": "The label notes that the slowing of stomach emptying is strongest after the first dose and fades with repeat doses, which matches nausea peaking early and easing while levels flatten."},
+      {"b": "Why effects linger after the last dose.", "t": "Half is gone in about five days, but clearing nearly all of it takes about five half-lives, roughly three and a half weeks."}
+    ],
+    "showTable": true,
+    "more": [
+      {
+        "title": "More: the model behind the chart",
+        "paras": [
+          "The chart uses a standard one-compartment pharmacokinetic model: the drug is absorbed from under the skin at one rate, cleared from the blood at another, and each weekly dose adds to what is still circulating. The inputs are from the FDA label: a half-life of about 5 days, a peak 24 to 72 hours after injection (median 48 hours), and a build-up of about 1.56 times a single dose with weekly use.",
+          "The vertical axis is relative. 100% is the average level on 4.5 mg weekly once it has plateaued. The chart assumes exposure scales with dose, so 1.5 mg sits at one third and 0.75 mg at one sixth. In reality the label reports lower absorption at the higher of the two original doses (65% of a 0.75 mg dose reaches the blood, 47% of a 1.5 mg dose), so real levels are not perfectly proportional. With a five-day half-life and a seven-day interval, the level falls by well over half between injections in the model, which is the zigzag.",
+          "Real people differ. Absorption from the injection site, body size and other factors shift individual levels; the chart shows an average."
+        ]
+      },
+      {
+        "title": "More: what this chart cannot tell you",
+        "paras": [
+          "It models the label's regimen, not a person. It measures nothing; only a blood test can.",
+          "It cannot speak to products sold outside pharmacies as 'dulaglutide'. Trulicity is a biologic made in cell culture and is supplied only as a single-use prefilled pen, so there is no legitimate vial, powder or 'research' form. Anything sold that way is not the approved drug, and the model has no way to account for what it contains.",
+          "Custom schedules are hypothetical. The chart can show what a schedule would do in the model, including beyond anything the label allows, but it cannot say how your body differs or whether a schedule is safe. The label's four-week minimum between steps and its 4.5 mg ceiling come from trials with bloodwork and medical supervision, which a curve on a screen cannot replace."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "How dulaglutide was tested, and how the label uses the results.",
+    "lede": "The AWARD trials set the doses, REWIND tested the heart, and SURPASS-CVOT later used dulaglutide as the yardstick for tirzepatide. Here is the dose ladder the trials and the label use, and what is still being asked.",
+    "ladder": {
+      "title": "The dose ladder in the label (and in AWARD-11)",
+      "text": "Everyone starts at 0.75 mg once a week. After four weeks the dose can go to 1.5 mg. Further increases of 1.5 mg are allowed after at least four weeks at the current dose, up to a maximum of 4.5 mg. In AWARD-11, everyone started at 0.75 mg and stepped up every four weeks to the dose the computer had assigned, so the 4.5 mg group reached it at week 12.",
+      "steps": [
+        {"d": "0.75 mg", "t": "start"},
+        {"d": "1.5 mg", "t": "week 4"},
+        {"d": "3 mg", "t": "week 8 at the earliest"},
+        {"d": "4.5 mg", "t": "week 12 at the earliest"}
+      ],
+      "note": "The 0.75 mg dose is also an approved maintenance dose; in the trials it lowered A1C a little less than 1.5 mg with fewer stomach effects. For ages 10 to 17 the label caps the dose at 1.5 mg. REWIND and SURPASS-CVOT used 1.5 mg throughout. In AWARD-11, nobody knew which of the three target doses they were on until the trial ended."
+    },
+    "more": [
+      {
+        "title": "More: how side effects were handled inside the trials",
+        "paras": [
+          "The ladder is the main tool. In AWARD-11 the step-up every four weeks was fixed by the protocol; the label instead makes each step optional and conditional on needing more blood-sugar control, so a prescriber can hold at any dose or go back.",
+          "Participants had a study team to call. Nausea and vomiting were treated the way a doctor would treat them in any patient, and people whose symptoms did not settle could stop; that is where the discontinuation figures on the Side effects tab come from. In REWIND, where people took the drug for more than five years, 47.4% reported a gastrointestinal event at some point, against 34.1% on placebo.",
+          "None of this is a self-management plan. Trulicity is a prescription biologic in a fixed-dose pen; decisions about starting, stepping up and stopping belong to the prescriber."
+        ]
+      }
+    ],
+    "running": {
+      "title": "What is still being studied",
+      "items": [
+        "Head-to-head against tirzepatide: SURPASS-CVOT published its main result in December 2025, and pre-specified kidney analyses followed in 2026 (kidney composite 7.6% on dulaglutide versus 6.0% on tirzepatide; HR 0.77)",
+        "Secondary analyses of REWIND continue to appear: stroke, kidney outcomes and subgroups by baseline risk",
+        "No new company-sponsored dulaglutide indication trials were identified for this review; investigator-led studies in people who already have type 2 diabetes are listed on the public registry"
+      ]
+    },
+    "find": {
+      "text": "Dulaglutide is a prescription medicine, so most people get it from a prescriber and a pharmacy rather than a trial. Investigator-led studies still recruit people who already have type 2 diabetes. Search the registry by drug name; the usual requirements are adult, a confirmed type 2 diabetes diagnosis, and an A1C inside the study's range.",
+      "term": "dulaglutide",
+      "extra": {"label": "Lilly Trials", "url": "https://trials.lilly.com/"}
+    }
+  },
+  "status": {
+    "headline": "Approved for type 2 diabetes since 2014. Not approved for weight loss. The 2023–2025 shortage is over in the EU, and the patents start expiring in 2027.",
+    "items": [
+      {"tag": "ok", "label": "Canada", "text": "Trulicity is marketed in Canada by Eli Lilly Canada for type 2 diabetes. The Canadian product monograph could not be retrieved for this review (October 2026); confirm current Canadian indications, strengths and warnings in Health Canada's Drug Product Database rather than assuming they match the U.S. label."},
+      {"tag": "ok", "label": "United States", "text": "FDA-approved in 2014 for adults with type 2 diabetes. The label has since added heart-risk reduction (after REWIND), the 3 mg and 4.5 mg doses (after AWARD-11), and children aged 10 and up (after AWARD-PEDS). Latest label revision: March 2026, adding a warning on severe gastrointestinal reactions. In January 2026 the U.S. government selected Trulicity for Medicare price negotiation, with negotiated prices taking effect in 2028."},
+      {"tag": "ok", "label": "European Union", "text": "Authorised 21 November 2014 (Eli Lilly Nederland B.V.), for people aged 10 and above with type 2 diabetes. Product information last updated 30 January 2026. EMA listed all four pen strengths as in shortage from 28 August 2023 and marked the shortage resolved on its 17 February 2026 update (expected resolution had been end of 2025)."},
+      {"tag": "soon", "label": "Copies coming", "text": "Lilly's annual report for 2025 lists the U.S. compound patent and biologics data protection expiring in 2027, and the main European and Japanese patents in 2029, and says Trulicity \"will lose significant patent and remaining data protections in the next few years\". Because it is a biologic, copies will be biosimilars, each needing its own approval; none had been identified for this review as of October 2026."}
+    ],
+    "cards": [
+      {
+        "kind": "warn",
+        "title": "Not a weight-loss drug, and not sold outside pharmacies",
+        "text": "Trulicity is approved only for type 2 diabetes, plus heart-risk reduction in adults who have diabetes. It is a biologic made in cell culture and supplied only as a single-use prefilled pen, on prescription.",
+        "items": [
+          "EMA (June 2024): off-label prescribing for cosmetic weight loss worsened GLP-1 shortages; prescribers were told to stick to authorised uses and patients to buy only from registered pharmacies.",
+          "EMA (June 2024): criminal activity around GLP-1 drugs raises the risk of falsified products reaching patients.",
+          "Anything sold as dulaglutide powder, in a vial, or as a 'research peptide' is not Trulicity. There is no legitimate form other than the pen."
+        ],
+        "note": "Report a suspected reaction or a suspect product to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      },
+      {
+        "kind": "warn",
+        "title": "The label's hard stops",
+        "text": "From the FDA label, revised March 2026:",
+        "items": [
+          "Contraindicated in anyone with a personal or family history of medullary thyroid cancer, or with MEN 2 (boxed warning: thyroid C-cell tumours in rats).",
+          "Not recommended in severe gastroparesis (slow stomach emptying); a new warning on severe gastrointestinal reactions was added in March 2026.",
+          "Tell the surgical team before any procedure under general anaesthesia or deep sedation: rare cases of stomach contents entering the lungs have been reported.",
+          "Stop and seek care if pancreatitis is suspected; watch for dehydration from vomiting or diarrhea, which can injure the kidneys."
+        ],
+        "note": ""
+      }
+    ],
+    "more": [
+      {
+        "title": "More: the shortage years and what comes next",
+        "paras": [
+          "Demand for GLP-1 drugs surged from 2022, and in June 2024 EMA named Trulicity alongside Ozempic, Saxenda and Victoza as medicines in shortage, blaming demand, manufacturing capacity and publicity around cosmetic weight-loss use. EMA's Trulicity shortage listing, first posted in August 2023, was marked resolved by February 2026. Trulicity still earned Lilly more than $3 billion in 2025, one of six Lilly products to do so.",
+          "The next phase is about copies and prices. U.S. patent and data protection run to 2027, Europe and Japan to 2029, and Medicare-negotiated U.S. prices take effect in 2028. A biosimilar will have to show it matches Trulicity in its own studies before a regulator approves it; until then, the only dulaglutide is Lilly's."
+        ]
+      }
+    ],
+    "sources": [
+      {"text": "Eli Lilly, TRULICITY (dulaglutide) injection, U.S. Prescribing Information, revised 03/2026 (indications, dosing, boxed warning, pooled adverse reactions, immunogenicity, pharmacokinetics, clinical studies tables).", "url": "https://pi.lilly.com/us/trulicity-uspi.pdf?s=pi"},
+      {"text": "Frias JP et al. Efficacy and safety of dulaglutide 3.0 mg and 4.5 mg versus dulaglutide 1.5 mg in metformin-treated patients with type 2 diabetes in a randomized controlled trial (AWARD-11). Diabetes Care 2021;44:765–773.", "url": "https://doi.org/10.2337/dc20-1473"},
+      {"text": "Eli Lilly, press release: higher investigational doses of Trulicity meaningfully reduced A1C and body weight (AWARD-11 topline, both estimands), May 8, 2020.", "url": "https://investor.lilly.com/node/43216/pdf"},
+      {"text": "Gerstein HC et al. Dulaglutide and cardiovascular outcomes in type 2 diabetes (REWIND): a double-blind, randomised placebo-controlled trial. The Lancet 2019;394:121–130. NCT01394952.", "url": "https://doi.org/10.1016/S0140-6736(19)31149-3"},
+      {"text": "Gerstein HC et al. Dulaglutide and renal outcomes in type 2 diabetes: an exploratory analysis of the REWIND trial. The Lancet 2019;394:131–138. Trial summary with renal and microvascular figures: American College of Cardiology, REWIND trial page, 2019.", "url": "https://www.acc.org/latest-in-cardiology/clinical-trials/2019/06/14/11/33/rewind"},
+      {"text": "Eli Lilly, press release on AWARD-PEDS (154 youths aged 10–17, 26 weeks), June 4, 2022; published as Arslanian SA et al., Once-weekly dulaglutide for the treatment of youths with type 2 diabetes, New England Journal of Medicine 2022.", "url": "https://investor.lilly.com/node/47376/pdf"},
+      {"text": "Eli Lilly, press release: SURPASS-CVOT topline results (tirzepatide vs dulaglutide 1.5 mg), July 31, 2025.", "url": "https://investor.lilly.com/node/52671/pdf"},
+      {"text": "Nicholls SJ et al. Tirzepatide versus dulaglutide in type 2 diabetes with atherosclerotic cardiovascular disease (SURPASS-CVOT). New England Journal of Medicine 2025;393:2409–2420. Summary: ACC Journal Scan, January 7, 2026.", "url": "https://www.acc.org/latest-in-cardiology/journal-scans/2026/01/07/14/20/surpass-cvot"},
+      {"text": "Healio, report of the SURPASS-CVOT presentation at EASD 2025 (component hazard ratios, indirect comparison with REWIND placebo, nausea and diarrhea rates), September 19, 2025.", "url": "https://www.healio.com/news/endocrinology/20250919/tirzepatide-similar-to-dulaglutide-for-cv-outcomes-but-tied-to-lower-rates-of-death"},
+      {"text": "Zoungas S et al. Major kidney events with tirzepatide versus dulaglutide in type 2 diabetes and atherosclerotic cardiovascular disease: pre-specified exploratory analyses of SURPASS-CVOT. The Lancet Diabetes & Endocrinology 2026;14:544–557.", "url": "https://eprints.gla.ac.uk/387357/1/387357.pdf"},
+      {"text": "European Medicines Agency, Trulicity EPAR page (authorised 21 November 2014; product information updated 30 January 2026).", "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/trulicity"},
+      {"text": "European Medicines Agency, Trulicity supply shortage page (first published 28 August 2023; status resolved; last updated 17 February 2026).", "url": "https://www.ema.europa.eu/en/medicines/human/shortages/trulicity"},
+      {"text": "European Medicines Agency, EU actions to tackle shortages of GLP-1 receptor agonists, 26 June 2024.", "url": "https://www.ema.europa.eu/en/news/eu-actions-tackle-shortages-glp-1-receptor-agonists"},
+      {"text": "Eli Lilly and Company, Form 10-K for the fiscal year ended December 31, 2025 (Trulicity patent and data-protection dates; Medicare price selection, January 2026; 2025 revenue).", "url": "https://investor.lilly.com/static-files/70c644f5-d894-471a-a4c5-6464848ca393"}
+    ]
+  }
+}

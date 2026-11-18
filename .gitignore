@@ -1,0 +1,7 @@
+# build outputs that live inside src/ (the deployable copies are at the repo root)
+src/site/
+src/index.html
+src/miracle-peptides.html
+src/template.html
+src/__pycache__/
+src/bg/__pycache__/

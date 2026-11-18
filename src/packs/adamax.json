@@ -1,0 +1,192 @@
+{
+  "id": "adamax",
+  "name": "Adamax",
+  "brands": "",
+  "maker": "",
+  "group": "research",
+  "pill": "Unapproved",
+  "overview": {
+    "headline": "A vendor-designed variant of semax with no published research of its own.",
+    "lede": "Adamax is sold by online \"research chemical\" shops as a longer-acting version of the Russian nasal drug semax. It has no manufacturer of record, no regulator has ever reviewed it, and we could find no peer-reviewed study of it in animals or people as of October 2026. Everything said about it is borrowed from semax or asserted by sellers.",
+    "stats": [
+      {"num": "0", "lbl": "peer-reviewed studies of Adamax, in any species", "src": "Literature check, October 2026"},
+      {"num": "0", "lbl": "regulators that have approved or even assessed it", "src": "FDA, Health Canada, EMA, Medsafe, October 2026"},
+      {"num": "2025", "lbl": "year New Zealand's regulator named it as a peptide being intercepted at the border", "src": "Medsafe submission, June 2025"}
+    ],
+    "mechanism": {
+      "intro": "Sellers describe Adamax as semax with two chemical add-ons copied from another research peptide, P21.",
+      "parts": [
+        {"name": "Semax core", "text": "The seven amino acids of semax, an ACTH fragment approved in Russia as nasal drops for stroke and cognitive complaints. Semax's own evidence is Russian and unblinded; see its page."},
+        {"name": "The add-ons", "text": "An acetyl cap at one end and an adamantane-bearing glycine at the other, said to slow breakdown and help the molecule cross into the brain. That is a chemist's expectation. No published study has tested whether Adamax does either."}
+      ]
+    },
+    "more": {
+      "title": "More: where it comes from",
+      "paras": [
+        "No scientist, institute or company has published a description of Adamax. It appeared in online peptide catalogues in recent years, sometimes listed as \"Adamax 1032\" after its molecular weight. New Zealand's medicines regulator, Medsafe, described it in 2025 as an ACTH analogue marketed with nootropic claims whose mechanism is unknown and whose clinical research is limited.",
+        "This page therefore has little to report. Where we describe effects, they belong to semax, not Adamax, and we say so."
+      ]
+    }
+  },
+  "results": {
+    "headline": "There are no results. Nobody has studied it.",
+    "lede": "A search of the medical literature in October 2026 found no human trial, no animal study and no laboratory paper on Adamax. The claims on vendor pages (sharper focus, longer action, more BDNF) are marketing, resting on studies of semax.",
+    "chart": null,
+    "stats": [
+      {"num": "0", "lbl": "human participants ever reported to have received Adamax in a study", "src": "Literature check, October 2026"}
+    ],
+    "beyond": {
+      "title": "What the studies actually showed",
+      "items": [
+        {"b": "Adamax itself.", "t": "Nothing. There are no studies to show anything."},
+        {"b": "Semax, the parent.", "t": "Thirteen unblinded Russian stroke studies and small case series for cognitive complaints. No placebo-controlled trial. Whether any of this carries over to a chemically different molecule is unknown."},
+        {"b": "P21, the source of the add-ons.", "t": "The acetyl cap and adamantylated glycine were used by a New York lab to make a different peptide (from a nerve growth factor) that works in mice. That says nothing about what the same chemistry does to semax."},
+        {"b": "Western review.", "t": "None. Adamax is not on the FDA's compounding list in any category and appears in no regulator's documents except as a border-seizure item in New Zealand."}
+      ]
+    },
+    "more": [
+      {
+        "title": "More: why \"it is just semax plus a bit\" is not evidence",
+        "paras": [
+          "Small changes to a peptide can change how it binds, how long it lasts and what it breaks down into. Drug developers test every such variant from scratch. For Adamax, no one has done even the first step of showing the product sold is the molecule described."
+        ]
+      }
+    ]
+  },
+  "effects": {
+    "headline": "Unknown. No study has recorded a single side effect, or a single safe exposure.",
+    "lede": "Because no one has given Adamax to people or animals under observation, there is no side-effect profile. Reports on forums are unverifiable and tell you nothing about what was actually in the vial.",
+    "chart": null,
+    "disc": {
+      "title": "Stopping because of side effects",
+      "text": "Not reported. There are no trials."
+    },
+    "unique": {
+      "title": "What has actually been reported",
+      "text": "Nothing in the scientific literature. The only official document naming Adamax, the 2025 Medsafe submission, says its side effects are poorly understood. Semax's Russian label excludes people with anxiety disorders, psychosis or a history of seizures, which is the closest thing to a safety signal for this chemical family."
+    },
+    "more": [
+      {
+        "title": "More: what the trials monitor for",
+        "paras": [
+          "There are no trials. If one were ever run, it would start with animal toxicology, then a small human study measuring blood levels, immune reactions to the peptide, heart rate, blood pressure and mood. None of that exists."
+        ]
+      },
+      {
+        "title": "More: the good side effects",
+        "paras": [
+          "None documented. Claims of better focus or mood come from sellers and users, not from any measurement."
+        ]
+      }
+    ],
+    "urgent": {
+      "title": "Symptoms trial teams treat as urgent",
+      "items": [
+        "Swelling of the face or throat, hives or trouble breathing after a dose",
+        "A seizure, severe agitation or psychotic symptoms",
+        "Fever, spreading redness or pus at an injection site",
+        "Chest pain, fainting or a racing heartbeat"
+      ],
+      "note": "Anyone with these symptoms should get medical care right away, whatever product they have used."
+    }
+  },
+  "levels": {
+    "pk": null,
+    "nopk": "No one has measured Adamax in blood, in any species. There is no half-life, no time to peak and no known dose, so there is nothing to model. Vendor claims that it lasts longer than semax are untested.",
+    "stats": [
+      {"num": "0", "lbl": "pharmacokinetic measurements of any kind", "src": "Literature check, October 2026"},
+      {"num": "~1,032", "lbl": "molecular weight in daltons that sellers quote; not confirmed by any published analysis", "src": "Vendor catalogues, as evidence of what is sold"},
+      {"num": "0", "lbl": "published tests confirming that products sold as Adamax contain it", "src": "Literature check, October 2026"}
+    ],
+    "explain": [
+      {"b": "Why there is no chart.", "t": "The simulator needs a measured half-life and time to peak from a human study. Adamax has no study of any kind."},
+      {"b": "Why semax's numbers cannot be borrowed.", "t": "Semax has no published human half-life either, and the add-ons on Adamax are meant to change exactly the property a half-life measures."},
+      {"b": "Why products sold online are a second unknown.", "t": "Without a published analytical method, no buyer can confirm the contents of a vial labelled Adamax."}
+    ],
+    "showTable": false,
+    "more": [
+      {
+        "title": "More: why there is no chart",
+        "paras": [
+          "A pharmacokinetic chart is a summary of measurements. For Adamax there are none, so a chart would be fiction."
+        ]
+      },
+      {
+        "title": "More: what a chart could not tell you anyway",
+        "paras": [
+          "Even for well-studied drugs a blood-level curve says nothing about benefit or harm. Those questions need trials, and Adamax has had none."
+        ]
+      }
+    ]
+  },
+  "trials": {
+    "headline": "No trial has ever been run, registered or announced.",
+    "lede": "There is no record of Adamax on ClinicalTrials.gov, the EU registry or any other public trial register, and no company has declared plans to study it.",
+    "ladder": null,
+    "more": [
+      {
+        "title": "More: what a first study would need",
+        "paras": [
+          "Before a human trial, regulators require chemical characterisation of the molecule, stability data, and animal toxicology. None of this has been published for Adamax. A first-in-human study would then give single rising doses to a few healthy volunteers under hospital monitoring. Nothing on a vendor page resembles this."
+        ]
+      }
+    ],
+    "running": {
+      "title": "Trials that have been run",
+      "items": [
+        "None. No human or animal study of Adamax has been published (checked October 2026).",
+        "For context, the parent compound semax has 13 unblinded Russian stroke studies and no placebo-controlled trial; see the semax page."
+      ]
+    },
+    "find": {
+      "text": "There are no Adamax trials anywhere. The registry search below will show if that changes.",
+      "term": "adamax",
+      "extra": null
+    }
+  },
+  "status": {
+    "headline": "Approved nowhere, assessed nowhere, sold anyway.",
+    "items": [
+      {"tag": "no", "label": "Canada", "text": "No Health Canada authorisation (no entry in the Drug Product Database, October 2026). Anything sold as Adamax in Canada is an unauthorised drug."},
+      {"tag": "no", "label": "United States", "text": "Not approved. Adamax does not appear in any category of the FDA's compounding bulk-substances list (14 May 2026 version), so unlike semax it has no pending review. Selling it for human use is selling an unapproved new drug, whatever the label says."},
+      {"tag": "no", "label": "New Zealand", "text": "Named by Medsafe in June 2025 as an ACTH analogue arriving in intercepted parcels; Medsafe proposed classifying it as a prescription medicine so that imports without a prescription can be stopped."},
+      {"tag": "ok", "label": "Sport", "text": "Not named on WADA's 2026 Prohibited List."}
+    ],
+    "cards": [
+      {
+        "kind": "crit",
+        "title": "What \"research use only\" means",
+        "text": "Adamax exists only as a \"research chemical\". The label is a legal device: by saying \"not for human consumption\", sellers try to stay outside drug law while marketing to people who intend to use it.",
+        "items": [
+          "No regulator checks what is in the vial. For a compound with no published analytical method, not even the seller can prove it.",
+          "There is no safety data to fall back on. A doctor treating a reaction has nothing to look up.",
+          "Regulators in New Zealand and the U.S. treat such products as unapproved medicines regardless of the label."
+        ],
+        "note": ""
+      },
+      {
+        "kind": "warn",
+        "title": "Symptoms to take to a doctor",
+        "text": "Anyone who has used a product sold as Adamax should see a doctor if they notice:",
+        "items": ["Hives, facial swelling or wheezing", "New anxiety, agitation, insomnia or mood change", "A seizure or blackout", "Fever, redness or swelling at an injection site"],
+        "note": "Bring the vial. Report a reaction to MedEffect Canada (canada.ca/medeffect) or, in the U.S., FDA MedWatch (fda.gov/medwatch)."
+      }
+    ],
+    "more": [
+      {
+        "title": "More: the difference between semax and Adamax, legally",
+        "paras": [
+          "Semax is a registered medicine in Russia and is under active review for U.S. compounding after a July 2026 advisory vote. Adamax is neither. Even if the FDA eventually lists semax, that listing would not extend to a chemically different molecule."
+        ]
+      }
+    ],
+    "sources": [
+      {"text": "Medsafe (New Zealand), Classification of unscheduled peptides: submission to the Medicines Classification Committee (ACTH analogues Adamax and Semax; border interceptions April to May 2025), June 2025.", "url": "https://medsafe.govt.nz/Profs/class/Agendas/Agen74/5.7Peptides.pdf"},
+      {"text": "U.S. FDA, Bulk drug substances nominated for use in compounding under section 503A: category lists, updated 14 May 2026 (Adamax not listed).", "url": "https://fda.gov/media/94155/download"},
+      {"text": "Vidal (Russian drug reference), Semax 0.1% nasal drops: label of the parent compound, including contraindications. Accessed October 2026.", "url": "https://www.vidal.ru/drugs/semax__28676"},
+      {"text": "Spirin NN et al. Review of 13 Russian semax stroke studies (parent compound). Zh Nevrol Psikhiatr Im S S Korsakova, 2024;124(8-2):56-63.", "url": "https://www.mediasphera.ru/issues/zhurnal-nevrologii-i-psikhiatrii-im-s-s-korsakova-2/2024/8-2/1199772982024082056"},
+      {"text": "Baazaoui N, Iqbal K. Prevention of dendritic and synaptic deficits and cognitive impairment with a neurotrophic compound (P021, the source of the acetyl and adamantylated-glycine modifications). Alzheimer's Research & Therapy, 2017;9:45.", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5488423"},
+      {"text": "World Anti-Doping Agency, 2026 Prohibited List.", "url": "https://www.wada-ama.org/en/prohibited-list"}
+    ]
+  }
+}
