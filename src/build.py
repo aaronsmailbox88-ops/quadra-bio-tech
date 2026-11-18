@@ -6,7 +6,7 @@
 import json, glob, os, sys, re
 
 BASE = os.path.dirname(os.path.abspath(__file__))
-APP_VER = '64'  # bump before each artifact publish; shown in the app footer
+APP_VER = '65'  # bump before each artifact publish; shown in the app footer
 
 PACKS = os.path.join(BASE, 'packs')
 ORDER = ['retatrutide', 'semaglutide', 'tirzepatide', 'liraglutide', 'dulaglutide', 'cagrisema', 'survodutide', 'mazdutide', 'amycretin',
