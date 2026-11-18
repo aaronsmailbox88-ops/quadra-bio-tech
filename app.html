@@ -894,7 +894,7 @@ body.wk-locked{overflow:hidden}
   <p class="lede">Everything in the Peptides section comes from trials, product labels and regulators. This section explains the machinery behind those numbers: what a trial is, what the results mean, why half-life matters, what the side-effect tables are really saying, and why this app measures by weight.</p>
 
   <div class="card wk-again" id="learn-start"><div><b>Before you mix or dose</b><span>The seven things to know, in two minutes. Shown once after sign-in; read it again any time.</span></div><button type="button" class="btn ghost" onclick="window.qbWalk&&window.qbWalk.open()">Read it</button></div>
-  <div class="card wk-again" id="learn-coa"><div><b>COA Checker</b><span>Type what is on your vial and what the certificate says; seven checks, one verdict. Every check has an example certificate behind it.</span></div><button type="button" class="btn" data-coa="learn">Check a COA</button></div>
+  <div class="card wk-again" id="learn-coa"><div><b>COA Checker</b><span>Type what is on your vial and what the certificate says; six checks, one verdict. Every check has an example certificate behind it.</span></div><button type="button" class="btn" data-coa="learn">Check a COA</button></div>
 
   <div id="learn-trials">
     <h2>What a clinical trial is</h2>
@@ -1523,7 +1523,7 @@ var SUPPLIES = {
     ['Sterile empty vials', 'ZHANXUBIO sealed sterile glass vials, self-healing stopper, flip-off cap, pack of 10 — choose the 3 mL size', 'The filtered solution goes into one of these; it becomes the vial you dose from. One per peptide vial. Often supplied with the peptide as well.', 'https://www.amazon.ca/Sterile-Self-Healing-Injection-Package-ZHANXUBIO/dp/B0CP3WJNKY', 'Amazon.ca'],
     ['Sharps container', 'Biohazard sharps disposal container, lidded', 'Every used syringe goes in here, needle first, straight away. Most pharmacies take full containers back.', 'https://www.amazon.ca/dp/B0BVN2M2PG', 'Amazon.ca']
   ],
-  foot: 'The peptide itself: buy from a supplier that gives you a lot-specific certificate of analysis (COA) tested by an independent third-party laboratory — RP-HPLC purity and mass-spec identity for your lot, not a generic sheet. Do not administer a peptide that has not been third-party tested. A pre-filled pen sold as a research product cannot be matched to a certificate; skip those. The COA Checker under Learn runs the seven checks on yours. This app does not sell peptides and does not recommend a supplier.'
+  foot: 'The peptide itself: buy from a supplier that gives you a lot-specific certificate of analysis (COA) tested by an independent third-party laboratory — RP-HPLC purity and mass-spec identity for your lot, not a generic sheet. Do not administer a peptide that has not been third-party tested. A pre-filled pen sold as a research product cannot be matched to a certificate; skip those. The COA Checker under Learn runs the six checks on yours. This app does not sell peptides and does not recommend a supplier.'
 };
 /* ---- per-user documents (account sync when signed in; local otherwise) ---- */
 window.qbUserDoc = function(name){
@@ -2089,7 +2089,7 @@ function renderStatus(P){
       return '<li>' + esc(src.text) + (src.url ? ' <a href="' + esc(src.url) + '" target="_blank" rel="noopener">' + esc(host || 'link') + '</a>' : '') + '</li>';
     }).join('') + '</ol></div></details>';
   }
-  h += '<footer>Educational summary of published evidence. App version 54, built 18 Nov 2026. Not medical advice and not a guide to using any product. Talk to a doctor about any treatment decision.</footer>';
+  h += '<footer>Educational summary of published evidence. App version 55, built 18 Nov 2026. Not medical advice and not a guide to using any product. Talk to a doctor about any treatment decision.</footer>';
   return h;
 }
 
@@ -3109,7 +3109,7 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
     var head=function(title,sub){ return '<div class="whead"><div class="row between"><button type="button" class="linkish" data-w="cancel">Cancel</button><span class="eyebrow">Step '+n+' of '+total+'</span></div><div class="wprog"><i style="width:'+Math.round(n/total*100)+'%"></i></div><h2>'+esc(title)+'</h2>'+(sub?'<p class="wsub2">'+esc(sub)+'</p>':'')+'</div>' };
     var done='Mark complete';
     if(key==='pep'){ var opts=PEPS.map(function(p){return '<option value="'+esc(p)+'"'+(d.name===p?' selected':'')+'>'+esc(p)+'</option>'}).join(''); var other=d.name&&PEPS.indexOf(d.name)<0;
-      h=head('Which peptide is in the vial?','Pick it from the list, or choose “Other” and type it.')+'<div class="wone"><label class="fl">Peptide<select id="wz-pep"><option value=""'+(!d.name?' selected':'')+'>Choose…</option>'+opts+'<option value="__other"'+(other?' selected':'')+'>Other (type it)</option></select></label><div class="note coa-note"><span>Only mix a vial that has a current third-party COA naming this brand, the amount in the vial and the batch number. No COA, no dose.</span><button type="button" class="btn sm" data-coa="wiz">Check the COA</button>'+coaLast()+'</div><label class="fl" id="wz-otherwrap"'+(other?'':' hidden')+'>Name<input id="wz-other" value="'+esc(other?d.name:'')+'" placeholder="Peptide name"></label></div>'
+      h=head('Which peptide is in the vial?','Pick it from the list, or choose “Other” and type it.')+'<div class="wone"><label class="fl">Peptide<select id="wz-pep"><option value=""'+(!d.name?' selected':'')+'>Choose…</option>'+opts+'<option value="__other"'+(other?' selected':'')+'>Other (type it)</option></select></label><div class="note coa-note"><span>Only mix a vial that has a current third-party COA naming this brand, the batch number and the product inside the vial. NO COA, NO DOSE.</span><button type="button" class="btn sm" data-coa="wiz">Check the COA</button>'+coaLast()+'</div><label class="fl" id="wz-otherwrap"'+(other?'':' hidden')+'>Name<input id="wz-other" value="'+esc(other?d.name:'')+'" placeholder="Peptide name"></label></div>'
         +wNav(false,true,'Next',!wReady(key))+'<p class="small muted" style="margin-top:14px">Already have the numbers written down? <button type="button" class="linkish" data-vgo="new">Enter them directly</button>.</p>' }
     else if(key==='mg'){ h=head('How many milligrams does the label say?','The number printed on the '+esc(d.name||'peptide')+' vial, for example 15.')+'<div class="wone"><label class="fl">Amount on the label'+unitWrap('<input id="wz-mg" class="mono big-in" type="number" step="any" min="0" inputmode="decimal" value="'+esc(d.mg)+'" placeholder="15">','mg')+'</label><label class="fl">Vendor / lot (optional)<input id="wz-src" value="'+esc(d.src)+'" placeholder="Who made it, lot number"></label><label class="fl">Mixing with<select id="wz-dil">'+['Bacteriostatic water','Sterile water','Acetic acid 0.6%','Other'].map(function(o){return '<option'+(d.dil===o?' selected':'')+'>'+o+'</option>'}).join('')+'</select></label><div data-dilslot>'+dilNote(d.dil)+'</div></div>'+wNav(true,true,'Next',!wReady(key)) }
     else if(key==='check'){ h=head('Turn the scale on and test it with the 20 g weight','Hard, level surface, away from drafts and fans. Press ON with nothing on the pan and wait for 0.000. Put ONE 20 g weight in the middle of the pan and wait for the number to settle. Photograph it, or enter the number manually.')
@@ -3347,7 +3347,7 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
   var esc = function(s){ return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){ return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); };
   var PAGES = [
     { k: 'Before you start', h: 'Read this before mixing or dosing.', p: ['Five minutes now saves a vial later.', 'This app explains the published research on each peptide and keeps your records straight. It is an educational tool: not medical advice, and it sells nothing.'] },
-    { k: 'The peptide', h: 'No COA, no dose.', warn: 'If your supply does not have a current third-party Certificate of Analysis (COA) that references the brand, the amount in the vial and the batch number, you have an untested product, and you should not use it.', p: ['A COA is the independent lab\u2019s report for your exact lot: purity and identity, not a generic sheet from the seller.', 'A pre-filled pen sold as a research product cannot be matched to a COA.'] },
+    { k: 'The peptide', h: 'NO COA, NO DOSE.', warn: 'If your supply does not have a current third-party Certificate of Analysis (COA) naming the brand, the batch number, and the product contained inside the vial, you have an untested product, and you should not use it.', p: ['A COA is the independent lab\u2019s report for your exact lot: purity and identity, not a generic sheet from the seller.', 'A pre-filled pen sold as a research product cannot be matched to a COA.'] },
     { k: 'The method', h: 'Everything is weighed.', p: ['Syringe marks lie; a 0.001 g scale does not. The water going in, every draw and what is left in the vial are all weighed, and the app does the arithmetic.', 'Say milligrams, never units. The kit you need is under Learn, with one-click ordering.'] },
     { k: 'Mixing', h: 'Water, filter, look.', p: ['Bacteriostatic water only; plain sterile water makes a single-session vial.', 'Push the finished solution through a 0.22 µm filter into a new sterile vial, then hold it up to the light: perfectly clear, no floating particles, all powder dissolved. If not, do not use that vial.', 'The Mix a vial wizard walks you through it one step at a time.'] },
     { k: 'Dosing', h: 'Low, slow, logged.', p: ['Start at the lowest step and stay there until your weekly weigh-in plateaus. Whether you can feel the drug is not the signal; the scale is.', 'Log each dose right after you draw it. Track → Levels then shows how much is in your blood at any moment.'] },
@@ -3362,7 +3362,6 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
     { k: 'supplier', t: 'Supplier name here', p: 'The company you bought from must be named on the certificate. Not a distributor, not a blank, not a first name.', box: [57.41, 19.53, 12.06, 2.96] },
     { k: 'identity', t: 'Peptide identity', p: 'The compound must be the peptide on your vial\u2019s label, spelled the same way. Retatrutide on the label means Retatrutide here.', box: [4.36, 33.37, 24.71, 2.13] },
     { k: 'batch', t: 'Peptide batch number', p: 'The lot number must match the one printed on your vial, character for character. A certificate for another lot proves nothing about yours.', box: [4.36, 37.04, 31.98, 2.13] },
-    { k: 'amount', t: 'Amount in the vial', p: 'The mass tested must match the milligrams on your label. Here: 83.5 mg. If your certificate has no amount, it does not cover your vial.', box: [4.36, 38.93, 24.71, 2.13] },
     { k: 'date', t: 'Current', p: 'A recent report for this lot. An old certificate re-used across new batches is the commonest trick.', box: [4.36, 15.38, 21.51, 2.37] },
     { k: 'verify', t: 'Verify it', p: 'A code or QR you can check on the lab\u2019s own website. A certificate you cannot verify is just a picture.', box: [36.63, 13.25, 13.37, 13.25] },
     { k: 'tests', t: 'What was tested', p: 'This page is a heavy-metals screen. Your certificate set must also show purity (HPLC, a percentage) and identity (mass spectrometry). Endotoxin and metals are extras, not substitutes.', box: [4.36, 52.54, 91.57, 21.54] }
@@ -3404,7 +3403,7 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
     /* front and centre, and blocking: the app cannot be used until OK (or Check COA) is tapped; shown on every launch */
     push = document.createElement('div'); push.className = 'qb-pushwrap';
     var ic = window.QB_MARK || (function(){ var m = document.querySelector('.pep-wrap .brandmark, .brandmark'); return m ? m.outerHTML : ''; })();
-    push.innerHTML = '<div class="qb-push" role="alertdialog" aria-modal="true" aria-labelledby="qb-push-h">' + (ic ? '<span class="qb-push-i">' + ic + '</span>' : '') + '<div class="qb-push-t"><div class="eyebrow">Before anything else</div><b id="qb-push-h">No COA, <em>no dose</em>.</b><span>Only use a peptide with a current third-party Certificate of Analysis naming the brand, the amount in the vial and the batch number. Anything else is untested. Do not use it.</span></div><div class="qb-push-b"><button type="button" class="qb-push-go">Check COA</button><button type="button" class="qb-push-x">OK, understood</button></div></div>';
+    push.innerHTML = '<div class="qb-push" role="alertdialog" aria-modal="true" aria-labelledby="qb-push-h">' + (ic ? '<span class="qb-push-i">' + ic + '</span>' : '') + '<div class="qb-push-t"><div class="eyebrow">Before anything else</div><b id="qb-push-h">NO COA, <em>NO DOSE</em>.</b><span>Only use a peptide with a current third-party Certificate of Analysis naming the brand, the batch number, and the product contained inside the vial. Anything else is untested. Do not use it.</span></div><div class="qb-push-b"><button type="button" class="qb-push-go">Check COA</button><button type="button" class="qb-push-x">OK, understood</button></div></div>';
     document.body.appendChild(push); document.body.classList.add('wk-locked');
     function off(){ if (!push) return; var el = push; push = null; el.classList.add('out'); setTimeout(function(){ el.remove(); }, 260); if (!box && !document.querySelector('.ck')) document.body.classList.remove('wk-locked'); if (then) then(); }
     push.querySelector('.qb-push-x').addEventListener('click', off);
@@ -3419,14 +3418,14 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
 })();
 
 /* ===== COA Checker: does this certificate cover this vial? Type what the vial says and what the certificate says; the app runs the
-   seven checks (supplier, peptide, lot, amount, date, verifiable, purity + identity) and gives one verdict. Checks are saved per
+   six checks (supplier, peptide, lot, date, verifiable, purity + identity) and gives one verdict. Checks are saved per
    account (database when signed in, this browser otherwise). Opens from the push notice, the walkthrough, Learn and the mixing wizard. ===== */
 (function(){
   'use strict';
   var esc = function(s){ return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){ return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); };
   var KEY = 'qb-coa', LIST = [], doc = null, box = null;
   var F = blank();
-  function blank(){ return { v_pep: '', v_mg: '', v_lot: '', v_sup: '', c_client: '', c_pep: '', c_lot: '', c_mg: '', c_date: '', c_pur: '', c_id: false, c_lab: '', c_ver: false }; }
+  function blank(){ return { v_pep: '', v_mg: '', v_lot: '', v_sup: '', c_client: '', c_pep: '', c_lot: '', c_date: '', c_pur: '', c_id: false, c_lab: '', c_ver: false }; }
   try { LIST = JSON.parse(localStorage.getItem(KEY) || '[]'); if (!Array.isArray(LIST)) LIST = []; } catch (e) { LIST = []; }
   function persist(){ try { localStorage.setItem(KEY, JSON.stringify(LIST)); } catch (e) {} if (doc) doc.set({ v: 1, list: LIST.slice(0, 50), updated: new Date().toISOString() }).catch(function(){}); }
   if (window.qbUserDoc) window.qbUserDoc('coa').then(function(d){ if (!d) return; doc = d; return d.get().then(function(snap){
@@ -3444,7 +3443,7 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
   function num(v){ var x = parseFloat(String(v).replace(',', '.')); return isFinite(x) ? x : NaN; }
   function ago(d){ var days = Math.round((Date.now() - d.getTime()) / 86400000); if (days < 0) return 'dated in the future'; if (days < 1) return 'dated today'; if (days < 45) return days + ' day' + (days === 1 ? '' : 's') + ' ago'; var m = Math.round(days / 30.4); if (m < 24) return m + ' month' + (m === 1 ? '' : 's') + ' ago'; return (Math.round(days / 36.5) / 10) + ' years ago'; }
 
-  /* the seven checks: st = ok | bad | na (not filled in yet); tour = step index on the example certificate */
+  /* the six checks: st = ok | bad | na (not filled in yet); tour = step index on the example certificate. The lab does not report how much was in the vial, so there is no amount check (Aaron, Nov 2026). */
   function checks(){
     var out = [];
     var s = same(F.v_sup, F.c_client);
@@ -3456,18 +3455,15 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
     var l = (norm(F.v_lot) && norm(F.c_lot)) ? (norm(F.v_lot) === norm(F.c_lot)) : null;
     out.push({ k: 'batch', t: 'Lot / batch number', st: l === null ? 'na' : (l ? 'ok' : 'bad'), tour: 2,
       msg: l === null ? 'Printed on the vial and on the certificate; they must match character for character.' : (l ? 'Lot numbers match.' : 'Lot numbers differ. A certificate for another lot proves nothing about yours.') });
-    var a = num(F.v_mg), b = num(F.c_mg), am = (a > 0 && b > 0) ? Math.abs(a - b) <= Math.max(0.1, a * 0.02) : null;
-    out.push({ k: 'amount', t: 'Amount in the vial', st: am === null ? 'na' : (am ? 'ok' : 'bad'), tour: 3,
-      msg: am === null ? 'Milligrams on the label and milligrams the lab measured. No amount on the certificate means it does not cover the vial.' : (am ? 'The lab’s mass matches the label.' : 'Label says ' + a + ' mg, certificate says ' + b + ' mg. That is not the same vial.') });
     var d = F.c_date ? new Date(F.c_date + 'T00:00:00') : null, days = d && !isNaN(d.getTime()) ? (Date.now() - d.getTime()) / 86400000 : NaN;
     var cur = isNaN(days) ? null : (days >= -1 && days <= 365);
-    out.push({ k: 'date', t: 'Current', st: cur === null ? 'na' : (cur ? 'ok' : 'bad'), tour: 4,
+    out.push({ k: 'date', t: 'Current', st: cur === null ? 'na' : (cur ? 'ok' : 'bad'), tour: 3,
       msg: cur === null ? 'The report date. A recent report for this lot, not last year’s re-used across new batches.' : (cur ? 'Report ' + ago(d) + '.' : (days < 0 ? 'The report is dated in the future. Check the date.' : 'Report ' + ago(d) + ': too old to vouch for a lot sold today.')) });
-    out.push({ k: 'verify', t: 'Verifiable', st: F.c_ver ? 'ok' : 'na', tour: 5,
+    out.push({ k: 'verify', t: 'Verifiable', st: F.c_ver ? 'ok' : 'na', tour: 4,
       msg: F.c_ver ? 'You found this report on the lab’s own website.' : 'Open the lab’s own website and look the report number or QR code up there. A certificate you cannot verify is just a picture.' });
     var pur = num(F.c_pur), purSt = !isFinite(pur) ? 'na' : (pur >= 98 ? 'ok' : 'bad'), idSt = F.c_id ? 'ok' : 'na';
     var tst = (purSt === 'ok' && idSt === 'ok') ? 'ok' : (purSt === 'bad' ? 'bad' : 'na');
-    out.push({ k: 'tests', t: 'Purity and identity', st: tst, tour: 6,
+    out.push({ k: 'tests', t: 'Purity and identity', st: tst, tour: 5,
       msg: tst === 'ok' ? 'Purity ' + pur + '% by HPLC and identity confirmed by mass spectrometry.' : (purSt === 'bad' ? 'Purity ' + pur + '% is below 98%. Clean lots test at 98–99%+; ask the supplier for a cleaner lot.' : (!isFinite(pur) ? 'Purity (HPLC, a percentage) and identity (mass spectrometry) must both be on the certificate set. Endotoxin or heavy-metal pages are extras, not substitutes.' : 'Tick identity once the certificate shows the mass spectrum matched.')) });
     return out;
   }
@@ -3482,24 +3478,23 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
   function html(){
     return '<div class="ck-bar"><span>COA Checker</span><button type="button" class="ct-x" data-ck="close" aria-label="Close">✕</button></div>' +
       '<div class="ck-in">' +
-      '<div class="ck-hero"><div class="kick"><div class="eyebrow">Tool · COA</div><span class="tag2">Interactive</span></div><h1>Does this certificate cover this vial?</h1><p>Type what is printed on your vial, then what the certificate of analysis says. Seven checks, one verdict. No COA, no dose.</p></div>' +
+      '<div class="ck-hero"><div class="kick"><div class="eyebrow">Tool · COA</div><span class="tag2">Interactive</span></div><h1>Does this certificate cover this vial?</h1><p>Type what is printed on your vial, then what the certificate of analysis says. Six checks, one verdict. NO COA, NO DOSE.</p></div>' +
       '<div class="card ck-grp"><h3><i>1</i>Your vial</h3><div class="ck-two">' +
         f('ck-v_pep', 'Peptide on the label', 'list="ck-peps" autocomplete="off" placeholder="Retatrutide"') + pepList() +
-        f('ck-v_mg', 'Amount on the label (mg)', 'type="number" inputmode="decimal" step="any" min="0" placeholder="15"', 'mono') +
+        f('ck-v_mg', 'Amount on the label (mg), for your vial record', 'type="number" inputmode="decimal" step="any" min="0" placeholder="15"', 'mono') +
         f('ck-v_lot', 'Lot / batch on the vial', 'autocomplete="off" autocapitalize="characters" placeholder="QB-2401"', 'mono') +
         f('ck-v_sup', 'Who you bought it from', 'autocomplete="off" placeholder="Supplier name"') + '</div></div>' +
       '<div class="card ck-grp"><h3><i>2</i>The certificate</h3><div class="ck-two">' +
         f('ck-c_client', 'Issued to (client / customer)', 'autocomplete="off" placeholder="Name on the certificate"') +
         f('ck-c_pep', 'Compound tested', 'list="ck-peps" autocomplete="off" placeholder="Retatrutide"') +
         f('ck-c_lot', 'Lot / batch on the certificate', 'autocomplete="off" autocapitalize="characters" placeholder="QB-2401"', 'mono') +
-        f('ck-c_mg', 'Amount measured (mg)', 'type="number" inputmode="decimal" step="any" min="0" placeholder="e.g. 15.2"', 'mono') +
         f('ck-c_date', 'Report date', 'type="date"', 'mono') +
         f('ck-c_pur', 'Purity by HPLC (%)', 'type="number" inputmode="decimal" step="any" min="0" max="100" placeholder="99.1"', 'mono') +
         f('ck-c_lab', 'Laboratory (optional)', 'autocomplete="off" placeholder="Third-party lab named on it"') + '</div>' +
         '<label class="ck-chk"><input type="checkbox" id="ck-c_id"' + (F.c_id ? ' checked' : '') + '><span><b>Identity confirmed</b> — the certificate says the mass spectrum (MS) matched the expected peptide.</span></label>' +
         '<label class="ck-chk"><input type="checkbox" id="ck-c_ver"' + (F.c_ver ? ' checked' : '') + '><span><b>Verified at the source</b> — I opened the lab’s own website and found this report there (report number or QR code).</span></label>' +
       '</div>' +
-      '<div class="card ck-grp"><h3><i>3</i>The seven checks</h3><ul class="ck-list" id="ck-checks"></ul><div id="ck-verdict"></div></div>' +
+      '<div class="card ck-grp"><h3><i>3</i>The six checks</h3><ul class="ck-list" id="ck-checks"></ul><div id="ck-verdict"></div></div>' +
       '<div class="card ck-grp" id="ck-savedwrap"' + (LIST.length ? '' : ' hidden') + '><h3><i>✓</i>Checked vials</h3><ul class="ck-saved" id="ck-saved"></ul></div>' +
       '<p class="note">An example certificate with each field lit up is behind every “Show me”. This checker reads only what you type; it cannot see the certificate itself. Keep the PDF with your vial record.</p>' +
       '</div>';
@@ -3516,10 +3511,10 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
     } else {
       var lines = v.bad.map(function(c){ return '<li><b>' + esc(c.t) + ':</b> ' + esc(c.msg) + '</li>'; });
       var todo = v.na.map(function(c){ return c.t; });
-      vd.innerHTML = '<div class="ck-verdict ' + (v.bad.length ? 'bad' : '') + '"><div class="eyebrow">Verdict</div><h2>' + (v.bad.length ? 'No COA, no dose.' : 'Not checked yet.') + '</h2>' +
+      vd.innerHTML = '<div class="ck-verdict ' + (v.bad.length ? 'bad' : '') + '"><div class="eyebrow">Verdict</div><h2>' + (v.bad.length ? 'NO COA, NO DOSE.' : 'Not checked yet.') + '</h2>' +
         (v.bad.length ? '<p>This certificate does not cover this vial. Do not mix or dose from it until the supplier sends one that does.</p><ul>' + lines.join('') + '</ul>' : '') +
         (todo.length ? '<p class="note" style="color:var(--ink-2)">Still to fill in: ' + esc(todo.join(', ')) + '.</p>' : '') +
-        (v.bad.length ? '<p class="note" style="color:var(--ink-2)">Ask the supplier for: the certificate for <b>lot ' + esc(F.v_lot || '…') + '</b> of <b>' + esc(F.v_pep || 'this peptide') + '</b>, from an independent lab, showing purity (HPLC), identity (MS) and the amount, issued to them, dated for this lot.</p><div class="btn-row"><button type="button" class="btn ghost" data-ck="save">Save the check anyway</button></div>' : '') + '</div>';
+        (v.bad.length ? '<p class="note" style="color:var(--ink-2)">Ask the supplier for: the certificate for <b>lot ' + esc(F.v_lot || '…') + '</b> of <b>' + esc(F.v_pep || 'this peptide') + '</b>, from an independent lab, showing purity (HPLC) and identity (MS), issued to them, dated for this lot.</p><div class="btn-row"><button type="button" class="btn ghost" data-ck="save">Save the check anyway</button></div>' : '') + '</div>';
     }
   }
   function paintSaved(){
@@ -3533,7 +3528,7 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
     LIST = [e].concat(LIST.filter(function(x){ return !(x.lot && norm(x.lot) === norm(e.lot) && norm(x.pep) === norm(e.pep)); })).slice(0, 50);
     persist(); paintSaved(); return e;
   }
-  function read(){ var ids = ['v_pep', 'v_mg', 'v_lot', 'v_sup', 'c_client', 'c_pep', 'c_lot', 'c_mg', 'c_date', 'c_pur', 'c_lab'];
+  function read(){ var ids = ['v_pep', 'v_mg', 'v_lot', 'v_sup', 'c_client', 'c_pep', 'c_lot', 'c_date', 'c_pur', 'c_lab'];
     ids.forEach(function(k){ var el = box.querySelector('#ck-' + k); if (el) F[k] = el.value; });
     ['c_id', 'c_ver'].forEach(function(k){ var el = box.querySelector('#ck-' + k); if (el) F[k] = !!el.checked; });
     try { localStorage.setItem(KEY + '-draft', JSON.stringify(F)); } catch (e) {} }
