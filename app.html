@@ -2118,7 +2118,7 @@ function renderStatus(P){
       return '<li>' + esc(src.text) + (src.url ? ' <a href="' + esc(src.url) + '" target="_blank" rel="noopener">' + esc(host || 'link') + '</a>' : '') + '</li>';
     }).join('') + '</ol></div></details>';
   }
-  h += '<footer>Educational summary of published evidence. App version 63, built 18 Nov 2026. Not medical advice and not a guide to using any product. Talk to a doctor about any treatment decision.</footer>';
+  h += '<footer>Educational summary of published evidence. App version 64, built 18 Nov 2026. Not medical advice and not a guide to using any product. Talk to a doctor about any treatment decision.</footer>';
   return h;
 }
 
@@ -3161,7 +3161,7 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
         +weighField('wz-check','The scale reads, with the 20 g weight on it (g)',W.id+':check','20.000')+'<div id="wz-checknote">'+checkNote()+'</div>'
         +'<div class="tarebox"><b>Then lift the 20 g weight off and press TARE on the scale.</b><span>The display should show 0.000 — if not, press TARE again and wait. Leave the scale on and do not move it from now on.</span>'
         +weighField('wz-zero','The scale reads, with the weight off (g)',W.id+':zero','0.000')+'<div id="wz-zeronote">'+zeroNote()+'</div></div>'+wNav(true,true,done,!wReady(key)) }
-    else if(key==='dry'){ h=head('Weigh the vial with the dry powder','Flip the plastic cap off (leave the rubber stopper and metal ring). Place the vial in the middle of the pan and wait for the number to settle. Photograph it, or enter the number manually.')
+    else if(key==='dry'){ h=head('Weigh the vial with the dry powder','Flip the plastic cap off (leave the rubber stopper and metal ring). Place the vial in the middle of the pan and wait for the number to settle. Photograph it, or enter the number manually. Then take the vial off and press TARE so the scale reads 0.000 for the next weigh.')
         +weighField('wz-dry','The scale reads, with the dry vial on it (g)',W.id+':dry','5.622')+wNav(true,true,done,!wReady(key)) }
     else if(key==='syr'){ h=head('Weigh the empty syringe','New 1 mL insulin syringe. Needle cover off, plunger cap off. Lay it across the scale pan, making sure it rests on nothing but the pan. Photograph it, or enter the number manually.')
         +(d.newSyringe?'<div class="notice bad" style="margin-bottom:12px"><b>Do not use the syringe that fell.</b> Its needle touched something other than the pan, so it is no longer sterile. Put it in the sharps container. Take a NEW syringe out of the wrapper — needle cover off, plunger cap off — and weigh that one.</div>':'')
