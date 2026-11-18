@@ -43,4 +43,64 @@
     }).observe(document.body, { childList: true, subtree: true });
   } catch (e) {}
   window.qbDeco = sweep;
+
+  /* ===== Collapsible tiles (v58): long reading becomes tap-to-open tiles. Learn's topics become tiles with a one-line teaser; inside them
+     (and on the peptide Trials / Effects / Status / Dosing tabs) a text card with several h3 sections is split into one sub-tile per
+     section, and a single long text card becomes one sub-tile. Cards with controls, charts or links-as-buttons are left alone.
+     Open/closed state is remembered per summary while the app is open, so a re-render does not fold what the reader opened. ===== */
+  var esc = function(t){ return String(t == null ? '' : t).replace(/[&<>"']/g, function(c){ return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); };
+  var TEASE = {
+    'learn-trials': 'Phases 1–4, placebo and randomization, what a participant goes through',
+    'learn-results': 'Percent vs pounds, points vs percent, dropouts, unpublished results',
+    'learn-levels': 'Half-life, steady state, saturation, half-lives across the family',
+    'learn-effects': 'What the trials saw, when to stop and be seen, what they monitored',
+    'learn-status': 'Approved · in trials · sold as research, and what a COA proves',
+    'learn-units': 'Units, millilitres and milligrams: the dosing-error trap',
+    'learn-weigh': 'The method: scale set-up, mixing, every dose, storage, what to order'
+  };
+  var OPEN = {};
+  document.addEventListener('toggle', function(e){ var d = e.target; if (d && d.tagName === 'DETAILS' && d.getAttribute('data-k')) OPEN[d.getAttribute('data-k')] = d.open; }, true);
+  function key(scope, text){ return scope + '|' + text.trim().slice(0, 60); }
+  function interactive(el){ return !!el.querySelector('input,select,textarea,button,svg,canvas,.btn,.chart,.pk,.ladder,.entry,table'); }
+  function mkDetails(cls, scope, title, teaser){
+    var d = document.createElement('details'); d.className = cls; var k = key(scope, title); d.setAttribute('data-k', k); if (OPEN[k]) d.open = true;
+    var sm = document.createElement('summary'); sm.innerHTML = '<span class="tile-t">' + esc(title) + '</span>' + (teaser ? '<span class="tile-s">' + esc(teaser) + '</span>' : ''); d.appendChild(sm);
+    var body = document.createElement('div'); body.className = cls === 'tile' ? 'tile-b' : 'body'; d.appendChild(body); return d;
+  }
+  function splitCard(card, scope){
+    if (card.getAttribute('data-tiled') || interactive(card)) return;
+    var kids = Array.prototype.slice.call(card.children), h3s = kids.filter(function(k){ return k.tagName === 'H3'; });
+    if (!h3s.length || kids[0].tagName !== 'H3') return;
+    var textLen = (card.textContent || '').trim().length;
+    if (h3s.length === 1 && textLen < 170) return;                      /* short: leave it as a card */
+    var groups = [], cur = null;
+    kids.forEach(function(k){ if (k.tagName === 'H3') { cur = { h: k, rest: [] }; groups.push(cur); } else if (cur) cur.rest.push(k); });
+    var wrap = document.createElement('div'); wrap.className = 'subs';
+    groups.forEach(function(g){ var d = mkDetails('sub', scope, g.h.textContent, ''); ['good', 'warn', 'crit', 'soft'].forEach(function(c){ if (card.classList.contains(c)) d.classList.add(c); });
+      g.rest.forEach(function(n){ d.lastChild.appendChild(n); }); wrap.appendChild(d); });
+    card.parentNode.replaceChild(wrap, card);
+  }
+  function subTiles(root, scope){
+    Array.prototype.forEach.call(root.querySelectorAll('.card'), function(c){ if (c.closest('.subs, details.sub')) return; splitCard(c, scope); });
+    Array.prototype.forEach.call(root.querySelectorAll('details:not(.tile):not(.sub):not([data-tiled])'), function(d){ d.classList.add('sub'); d.removeAttribute('open'); d.setAttribute('data-tiled', '1'); });
+  }
+  function tileLearn(){
+    var sec = document.querySelector('section[data-panel="learn"]'); if (!sec || sec.getAttribute('data-tiled')) return; sec.setAttribute('data-tiled', '1');
+    Array.prototype.forEach.call(sec.querySelectorAll(':scope > div[id^="learn-"]'), function(div){
+      var h2 = div.querySelector('h2'); if (!h2) return; var id = div.id;
+      var d = mkDetails('tile', 'learn', h2.textContent, TEASE[id] || ''); d.id = id; div.removeAttribute('id');
+      var wrap = h2.parentNode; h2.remove(); if (wrap !== div && !wrap.children.length && !wrap.textContent.trim()) wrap.remove();
+      var body = d.lastChild; while (div.firstChild) body.appendChild(div.firstChild);
+      /* a second h2 inside the topic (e.g. "What a participant experiences") becomes a sub-tile holding what follows it */
+      Array.prototype.slice.call(body.querySelectorAll('h2')).forEach(function(h){ var host = h.parentNode, sd = mkDetails('sub', 'learn', h.textContent, ''); var n = h.nextSibling; host.insertBefore(sd, h); h.remove(); if (host !== body && !host.children.length) { /* h2 was alone in a wrapper */ var after = host.nextSibling; host.parentNode.insertBefore(sd, host); host.remove(); n = after; host = sd.parentNode; } while (n && !(n.tagName === 'H2' || (n.tagName === 'DETAILS' && n.classList.contains('sub')))) { var nx = n.nextSibling; sd.lastChild.appendChild(n); n = nx; } });
+      div.parentNode.replaceChild(d, div);
+      subTiles(body, 'learn');
+    });
+  }
+  function tilePeptide(){
+    ['trials', 'effects', 'status', 'dosing'].forEach(function(id){ var p = document.querySelector('section[data-panel="' + id + '"]'); if (p) subTiles(p, id); });
+  }
+  function tiles(){ try { tileLearn(); tilePeptide(); } catch (e) {} }
+  window.qbTiles = tiles;
+  tiles();
 })();

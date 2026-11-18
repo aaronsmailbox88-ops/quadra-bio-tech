@@ -268,6 +268,7 @@ function renderPeptide(P){
   var sel = document.getElementById('pep'); if (sel.value !== P.id) sel.value = P.id;
   Array.prototype.slice.call(document.querySelectorAll('.hl li')).forEach(function(li){ li.classList.toggle('now', li.getAttribute('data-id') === P.id); });
   initSim(P.levels.pk);
+  if (window.qbTiles) window.qbTiles();
 }
 
 /* ===== Learn section: inject shared content ===== */
@@ -284,7 +285,7 @@ function renderPeptide(P){
   var $ = function(s){ return document.querySelector(s); }, $$ = function(s){ return Array.prototype.slice.call(document.querySelectorAll(s)); };
   var PTABS = ['overview', 'results', 'effects', 'levels', 'trials', 'status', 'dosing'];
   var PLABEL = { overview: 'Overview', results: 'Results', effects: 'Effects', levels: 'Levels', trials: 'Trials', status: 'Status', dosing: 'Dosing' };
-  var TTABS = { track: 'Vitals', levels: 'Levels', vials: 'Vial tracker', mix: 'Mix a vial' };
+  var TTABS = { track: 'Vitals', levels: 'Levels', mix: 'Mix a vial', vials: 'Vial tracker' };
   var LEARN = [['learn-trials', 'Trials'], ['learn-results', 'Results'], ['learn-levels', 'Levels'], ['learn-effects', 'Side effects'], ['learn-status', 'Status'], ['learn-units', 'Units'], ['learn-weigh', 'Weighing']];
   var modeBtns = $$('nav.tabs [data-mode]'), panels = $$('section[data-panel]'), sel = $('#pep'), pepWrap = $('.pep-wrap'), pill = $('#pill'), title = $('#mode-title'), sub = $('#sub-in');
   var BADGE = (function(){ var m = document.querySelector('.pep-wrap .brandmark'); return m ? m.outerHTML : ''; })();
@@ -369,7 +370,7 @@ function renderPeptide(P){
     if (o.ttab && TTABS[o.ttab]) ttab = o.ttab;
     apply(); setHash();
     if (o.coa) setTimeout(function(){ if (window.qbCOA) window.qbCOA.open(); }, 80);
-    if (o.anchor){ var an = document.getElementById(o.anchor); if (an){ setTimeout(function(){ window.scrollTo(0, an.getBoundingClientRect().top + window.pageYOffset - 120); }, 30); scroll = false; } }
+    if (o.anchor){ var an = document.getElementById(o.anchor); if (an){ if (an.tagName === 'DETAILS') an.open = true; setTimeout(function(){ window.scrollTo(0, an.getBoundingClientRect().top + window.pageYOffset - 120); }, 30); scroll = false; } }
     try { localStorage.setItem('mp-mode', mode); localStorage.setItem('mp-pep', CURRENT.id); localStorage.setItem('mp-tab', tab); localStorage.setItem('mp-ttab', ttab); } catch (e) {}
     if (scroll) window.scrollTo(0, 0);
   }
@@ -386,7 +387,7 @@ function renderPeptide(P){
     var b = e.target.closest('button'); if (!b) return;
     if (b.hasAttribute('data-tab')) go({ mode: 'pep', tab: b.getAttribute('data-tab') }, true);
     else if (b.hasAttribute('data-ttab')) go({ mode: 'track', ttab: b.getAttribute('data-ttab') }, true);
-    else if (b.hasAttribute('data-anchor')) { var el = document.getElementById(b.getAttribute('data-anchor')); if (el) { var y = el.getBoundingClientRect().top + window.pageYOffset - 120; window.scrollTo({ top: y, behavior: 'smooth' }); } }
+    else if (b.hasAttribute('data-anchor')) { var el = document.getElementById(b.getAttribute('data-anchor')); if (el) { if (el.tagName === 'DETAILS') el.open = true; var y = el.getBoundingClientRect().top + window.pageYOffset - 120; window.scrollTo({ top: y, behavior: 'smooth' }); } }
   });
   sel.addEventListener('change', function(){ go({ mode: 'pep', pep: sel.value }, true); });
   window.addEventListener('hashchange', function(){ var h = parse(location.hash); if (h.mode) go(h, true); });
