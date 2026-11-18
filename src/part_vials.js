@@ -354,8 +354,8 @@
 
   // ---------- the guided mix (wizard)
   var W=null; // {id, step, d:{...}}
-  function wLoad(){ try{ var s=JSON.parse(localStorage.getItem(LSW)||'null'); if(s&&s.id&&s.d){ W=s; if(!W.d.photos) W.d.photos={}; if(W.d.zero===undefined) W.d.zero=''; if(W.d.waterAuto===undefined) W.d.waterAuto=W.d.water==='' } }catch(e){} }
-  function wSave(){ try{ if(W) localStorage.setItem(LSW,JSON.stringify(W)); else localStorage.removeItem(LSW) }catch(e){} }
+  function wLoad(){ try{ var s=JSON.parse(localStorage.getItem(LSW)||'null'); if(s&&s.id&&s.d){ W=s; if(!W.d.photos) W.d.photos={}; if(W.d.zero===undefined) W.d.zero=''; if(W.d.waterAuto===undefined) W.d.waterAuto=W.d.water===''; if(W.key){ var ki=wSteps().indexOf(W.key); if(ki>=0) W.step=ki } } }catch(e){} }   /* resume by step name, so a saved mix lands on the same page even after the step order changes */
+  function wSave(){ try{ if(W){ try{ W.key=wSteps()[W.step]||W.key }catch(e){} localStorage.setItem(LSW,JSON.stringify(W)) } else localStorage.removeItem(LSW) }catch(e){} }
   function wInit(pre){ W={id:uid(), step:0, d:{name:'', mg:'', src:'', dil:'Bacteriostatic water', dose:'', next:'', after:4, pw:1, lead:10, water:'', waterAuto:true, syr:1, check:'', zero:'', dry:'', tare:'', tared:false, stepChoice:'', draws:{}, full:'', photos:{}}}; if(pre){ if(pre.name) W.d.name=pre.name; if(pre.src) W.d.src=pre.src; if(isFinite(pre.mg)&&pre.mg>0) W.d.mg=pre.mg; if(isFinite(pre.dose)&&pre.dose>0) W.d.dose=pre.dose; if(isFinite(pre.perWeek)&&pre.perWeek>=0) W.d.pw=pre.perWeek; if(isFinite(pre.lead)&&pre.lead>=0) W.d.lead=pre.lead; if(isFinite(pre.water)&&pre.water>0){ W.d.water=pre.water; W.d.waterAuto=false } } wSave() }
   function wStart(pre){ wInit(pre); vgo('wiz') }
   function coaLast(){ var e=window.qbCOA&&window.qbCOA.last&&window.qbCOA.last(); if(!e) return ''; var d=new Date(e.t); return '<span class="coa-last">\u2713 Last passed check: '+esc(e.pep||'')+(e.mg?' '+esc(e.mg)+' mg':'')+' \u00b7 lot '+esc(e.lot||'')+(isNaN(d)?'':' \u00b7 '+d.toLocaleDateString(undefined,{day:'numeric',month:'short'}))+'</span>' }
