@@ -460,8 +460,8 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
         +(isFinite(sw)&&!isStd?'<p class="small muted">Standard for this vial: '+ml(sw)+'. <button type="button" class="linkish" data-stdwater="1">Use it</button></p>':'')
         +'<div id="wz-watercard">'+waterCard(v)+'</div><div id="wz-anim" class="syr-slot"></div>'
         +'<ul class="wlist"><li>Alcohol swab on both stoppers (BAC water and peptide). Let them dry.</li>'
-        +'<li>Vent the peptide vial: a second syringe with the plunger pulled out and thrown away, needle through the edge of the stopper. Leave it standing.</li>'
-        +'<li>On a fresh syringe, pull the plunger to the mark (air) and push that air into the BAC water vial. The air replaces the water you take, so there is no vacuum.</li>'
+        +'<li>Vent the PEPTIDE vial only: a second syringe with the plunger pulled out and thrown away, needle through the edge of the stopper. Leave it standing. The BAC water vial is never vented.</li>'
+        +'<li>Air first, for the BAC WATER vial only: on a fresh syringe, pull the plunger to the mark (air) and push that air into the BAC water vial. The air replaces the water you take, so there is no vacuum.</li>'
         +'<li>Hold the vial upside down. Pull SLOWLY to the mark. If the plunger drags or creeps back, stop: push a little more air in, then pull again.</li>'
         +'<li>Bubbles: pull 10–20 units past the mark, flick the barrel, push back to the mark. What is left in the syringe is the water you are adding.</li>'
         +'<li>Hold the peptide vial upright and inject the BAC water slowly down the side of the vial. Do not push hard. Do not aim at the powder.</li>'
