@@ -153,7 +153,7 @@
     var step=st.U>=100?10:5; st.overU=Math.min(st.U, Math.ceil((st.units+15)/step)*step); st.overTxt=String(st.overU); st.opx=Math.min(st.U,st.overU)*st.pxu;
     st.tLine.setAttribute('y1',L0+px); st.tLine.setAttribute('y2',L0+px); tpos(st.tG,88,L0+px); tpos(st.tU,80,L0+px); st.ring.setAttribute('cy',L0+px);
     st.tG.textContent=st.gTxt; st.tU.textContent=st.uTxt+' units';
-    st.note.textContent=st.over?'More than this syringe holds ('+st.U+' units = '+(st.U/100).toFixed(1)+' mL). Use a bigger syringe or less water next time.':(st.liquid==='water'?'Pull slowly to the mark.':'Pull to the mark, then let the scale decide.');
+    st.note.textContent=st.over?'More than this syringe holds ('+st.U+' units = '+(st.U/100).toFixed(1)+' mL). Use a bigger syringe or less water next time.':(st.liquid==='water'?'':'Pull to the mark, then let the scale decide.');
     play(st) }
   function play(st,from){
     if(st.raf) cancelAnimationFrame(st.raf); st.raf=0;
