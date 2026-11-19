@@ -385,7 +385,7 @@
     /* 1. the draws, first and plain: a 1 mL syringe cannot carry more than 1 g, so 1.3 g means two separate draws */
     var n=drawCount(), lines=[];
     if(n===1) lines.push('Draw '+ml(w)+' of water ('+units(w)+' units) into the '+s+' mL syringe.');
-    else { lines.push('A '+s+' mL syringe holds '+ml(s)+', so '+ml(w)+' of water takes '+n+' draws.'); for(var di=1;di<=n;di++){ var dg=drawTarget(di); lines.push('Draw '+di+' is '+ml(dg)+' ('+units(dg)+' units'+(dg>=s-0.0005?', a full syringe':'')+').') } }
+    else { lines.push('A '+s+' mL syringe holds '+ml(s)+', so '+ml(w)+' of water takes '+n+' draws.'); for(var di=1;di<=n;di++){ var dg=drawTarget(di); lines.push('Draw '+di+' is '+ml(dg)+' ('+units(dg)+' units'+fracTxt(dg,s)+').') } }
     html+=lines.map(function(t,k){ return '<span'+(k===0&&n>1?' class="emph"':'')+'>'+t+'</span>' }).join('');
     /* 3. no dose talk here: dosing comes after the vial is mixed, dissolved, inspected and filtered. Only warn if this water amount would make the dose unweighable. */
     [['Your dose',v.planned_mg],['Next dose',v.next_mg&&v.next_mg!==v.planned_mg?v.next_mg:null]].forEach(function(p){ if(!p[1]) return; var g=p[1]/conc; if(g<0.05) warn.push(p[0].toLowerCase()+' would be only '+g.toFixed(3)+' g — too small to weigh well (±'+Math.round(state.scale.acc/g*100)+'%). Use more water.'); else if(g<0.1) warn.push(p[0].toLowerCase()+' is a small draw ('+g.toFixed(3)+' g, ±'+Math.round(state.scale.acc/g*100)+'%); more water would make it more accurate.'); if(g>s) warn.push(p[0].toLowerCase()+' would be '+g.toFixed(3)+' g, more than one '+s+' mL syringe holds. Use less water.') });
@@ -406,6 +406,7 @@
   function drawNote(i){ var tg=drawTarget(i), got=f(W.d.draws[i]); if(!isFinite(got)) return ''; if(got>tg*5&&got>=5) return '<div class="notice"><b>'+got+' looks like units, not grams.</b> The scale shows grams: '+units(tg)+' units of water weighs '+tg.toFixed(3)+' g.</div>'; if(Math.abs(got-tg)<=0.05) return '<div class="notice ok"><b>'+got.toFixed(3)+' g. On target.</b></div>'; return '<div class="notice"><b>'+got.toFixed(3)+' g, target '+tg.toFixed(3)+' g.</b> '+(got>tg?'Push a little back into the water vial.':'Draw a little more.')+' Or carry on: the full-vial weight decides.</div>' }
   var VALKEY={'wz-check':'check','wz-zero':'zero','wz-dry':'dry','wz-tare':'tare','wz-full':'full','wz-fdry':'fdry','wz-ffull':'ffull'};
   function fillVals(root){ $$('[data-wf] input[type="number"]',root).forEach(function(el){ if(el.value) return; var m=/^wz-draw(\d+)$/.exec(el.id); var v=m?(W.d.draws||{})[m[1]]:W.d[VALKEY[el.id]]; if(v!==undefined&&v!==null&&v!=='') el.value=v }) }
+  function fracTxt(dg,s){ var r=dg/s; if(Math.abs(r-1)<0.001) return ', a full syringe'; if(Math.abs(r-0.5)<0.001) return ', half a syringe'; if(Math.abs(r-0.25)<0.001) return ', a quarter of a syringe'; if(Math.abs(r-0.75)<0.001) return ', three-quarters of a syringe'; return '' }
   function ml(x){ var v=f(x); if(!isFinite(v)) return ''; var t=v.toFixed(2).replace(/0$/,''); return t+' mL' }
   function drawDone(i){ return !!(W.d.drawDone&&W.d.drawDone[i]) }
   function allDrawsDone(){ var nd=drawCount(); for(var i=1;i<=nd;i++){ if(!drawDone(i)) return false } return true }
