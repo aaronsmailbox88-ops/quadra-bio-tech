@@ -142,3 +142,7 @@
 #vials ul.wlist li::marker{color:var(--sky)}
 #vials .uin input[type=number]{appearance:textfield;-moz-appearance:textfield}
 #vials .uin input[type=number]::-webkit-inner-spin-button,#vials .uin input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
+#vials .fell{display:flex;align-items:center;gap:10px;flex-wrap:nowrap;white-space:nowrap;overflow:hidden}
+#vials .fell .btn{flex:0 0 auto}
+#vials .fell span{overflow:hidden;text-overflow:ellipsis}
+@media (max-width:560px){#vials .fell{flex-wrap:wrap;white-space:normal}}
