@@ -114,14 +114,13 @@
 #vials .btn.big{font-size:1.1rem;padding:14px 20px;justify-content:center;width:100%}
 #vials .whead h2{font-size:1.5rem}
 
-#vials .uin{position:relative;display:block}
-#vials .uin .uin-in input{padding-right:7.5em !important}
-#vials .uin .uin-u{position:absolute;right:12px;top:50%;transform:translateY(-50%);font-size:.95rem;color:var(--ink-2);pointer-events:none;white-space:nowrap}
-#vials .uin .uin-in input.big-in + .uin-u, #vials .uin:has(.big-in) .uin-u{font-size:1.05rem}
-
-#vials .uin.u1 .uin-in input{padding-right:2.4em !important}
-#vials .uin.u2 .uin-in input{padding-right:6.4em !important}
-#vials .uin.u3 .uin-in input{padding-right:3.8em !important}
+/* number box only as wide as the number, unit right beside it */
+#vials .uin{display:flex;align-items:center;gap:8px;max-width:100%}
+#vials .uin .uin-in{flex:0 1 auto;min-width:0}
+#vials .uin .uin-in input{padding-right:12px !important;width:9ch;max-width:100%;box-sizing:content-box}
+#vials .uin .uin-in input.big-in{width:7ch}
+#vials .uin .uin-u{font-size:1rem;font-weight:600;color:var(--ink);white-space:nowrap}
+#vials .uin:has(.big-in) .uin-u{font-size:1.1rem}
 
 #vials .coa-note{margin:8px 0 0;font-size:13px;color:var(--crit);max-width:none}
 #vials .kick>.eyebrow{color:#fff;font-size:11px;letter-spacing:.14em}
@@ -141,3 +140,5 @@
 #vials .tarebox .btn.big{width:100%;justify-content:center}
 #vials ul.wlist{margin:8px 0 0;padding-left:20px;display:flex;flex-direction:column;gap:6px;font-size:15px;color:var(--ink-2);line-height:1.45}
 #vials ul.wlist li::marker{color:var(--sky)}
+#vials .uin input[type=number]{appearance:textfield;-moz-appearance:textfield}
+#vials .uin input[type=number]::-webkit-inner-spin-button,#vials .uin input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}

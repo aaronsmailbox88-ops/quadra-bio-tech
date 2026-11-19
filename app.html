@@ -876,14 +876,13 @@ details.tile .row{gap:8px}
 #vials .btn.big{font-size:1.1rem;padding:14px 20px;justify-content:center;width:100%}
 #vials .whead h2{font-size:1.5rem}
 
-#vials .uin{position:relative;display:block}
-#vials .uin .uin-in input{padding-right:7.5em !important}
-#vials .uin .uin-u{position:absolute;right:12px;top:50%;transform:translateY(-50%);font-size:.95rem;color:var(--ink-2);pointer-events:none;white-space:nowrap}
-#vials .uin .uin-in input.big-in + .uin-u, #vials .uin:has(.big-in) .uin-u{font-size:1.05rem}
-
-#vials .uin.u1 .uin-in input{padding-right:2.4em !important}
-#vials .uin.u2 .uin-in input{padding-right:6.4em !important}
-#vials .uin.u3 .uin-in input{padding-right:3.8em !important}
+/* number box only as wide as the number, unit right beside it */
+#vials .uin{display:flex;align-items:center;gap:8px;max-width:100%}
+#vials .uin .uin-in{flex:0 1 auto;min-width:0}
+#vials .uin .uin-in input{padding-right:12px !important;width:9ch;max-width:100%;box-sizing:content-box}
+#vials .uin .uin-in input.big-in{width:7ch}
+#vials .uin .uin-u{font-size:1rem;font-weight:600;color:var(--ink);white-space:nowrap}
+#vials .uin:has(.big-in) .uin-u{font-size:1.1rem}
 
 #vials .coa-note{margin:8px 0 0;font-size:13px;color:var(--crit);max-width:none}
 #vials .kick>.eyebrow{color:#fff;font-size:11px;letter-spacing:.14em}
@@ -903,6 +902,8 @@ details.tile .row{gap:8px}
 #vials .tarebox .btn.big{width:100%;justify-content:center}
 #vials ul.wlist{margin:8px 0 0;padding-left:20px;display:flex;flex-direction:column;gap:6px;font-size:15px;color:var(--ink-2);line-height:1.45}
 #vials ul.wlist li::marker{color:var(--sky)}
+#vials .uin input[type=number]{appearance:textfield;-moz-appearance:textfield}
+#vials .uin input[type=number]::-webkit-inner-spin-button,#vials .uin input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
 
 </style>
 
@@ -2134,7 +2135,7 @@ function renderStatus(P){
       return '<li>' + esc(src.text) + (src.url ? ' <a href="' + esc(src.url) + '" target="_blank" rel="noopener">' + esc(host || 'link') + '</a>' : '') + '</li>';
     }).join('') + '</ol></div></details>';
   }
-  h += '<footer>Educational summary of published evidence. App version 73, built 19 Nov 2026. Not medical advice and not a guide to using any product. Talk to a doctor about any treatment decision.</footer>';
+  h += '<footer>Educational summary of published evidence. App version 74, built 18 Nov 2026. Not medical advice and not a guide to using any product. Talk to a doctor about any treatment decision.</footer>';
   return h;
 }
 
@@ -2898,7 +2899,7 @@ function renderPeptide(P){
   function showThumb(id,key){ photoGet(key).then(function(d){ var im=$('#'+id+'-img'); if(im&&d){im.src=d; im.hidden=false} }) }
   // meta per photo: {t, g (number read), ok, issues[], seen, checked (true when a checker looked), override, nophoto}
   function verdictHtml(meta,id){ if(!meta) return '';
-    if(meta.nophoto) return '<div class="notice"><b>No photo for this step.</b> The number was typed; the record will say so.</div>';
+    if(meta.nophoto) return /^wz-draw/.test(id||'')?'':'<div class="notice"><b>No photo for this step.</b> The number was typed; the record will say so.</div>';
     if(!meta.checked) return '<div class="notice info"><b>Photo saved as the record.</b> The automatic check is not available here, so look at it yourself: '+esc((CHECKS[meta.kind]||CHECKS.vial).must.join('; '))+'.</div>';
     if(meta.ok) return '<div class="notice ok"><b>✓ Looks right.</b> '+esc(meta.seen||'')+(meta.g!==null&&meta.g!==undefined?' Display reads '+meta.g.toFixed(3)+' g.':'')+'</div>';
     var why=meta.issues&&meta.issues.length?meta.issues.join(' '):(meta.readable===false?'The display is not readable in this photo.':'Something does not match this step.');
@@ -2986,13 +2987,13 @@ function renderPeptide(P){
       +(c.expires?'<dt>Mixed on</dt><dd>'+dlabel(new Date(v.mixed_on+'T00:00:00'))+'</dd><dt>Use by</dt><dd>'+dlabel(c.expires)+' <span class="muted">('+v.expiry_days+' days'+(c.daysToExp!==null?(c.daysToExp<0?', expired':', '+c.daysToExp+' left'):'')+')</span></dd>':'')+bw+'</dl>'+(c.weekLeft?'<div class="notice bad" style="margin-top:10px"><b>'+(c.dosesLeft===0?'Less than a dose left.':'About a week left.')+'</b> '+fmtMg(c.remaining)+' in the vial'+(c.dosesLeft===0?' is not enough for one '+fmtMg(c.nextMg)+' dose':' is '+c.dosesLeft+' dose'+(c.dosesLeft===1?'':'s')+' at '+fmtMg(c.nextMg))+'. Order the next vial now.</div>':'')+(c.daysToExp!==null&&c.daysToExp<0&&v.status!=='archived'?'<div class="notice bad" style="margin-top:10px"><b>Expired.</b> Past the use-by date you set. Discard it and archive it here.</div>':'')+ledgerVsWeight+'</div>'
       +'<div class="card" style="margin-top:12px"><h3>Log a dose — in this order</h3>'+(c.nextG?'<p class="small" style="margin-top:4px"><b>Target on the scale: '+c.nextG.toFixed(3)+' g</b> for '+fmtMg(c.nextMg)+' (≈ '+units(c.nextG)+' units: pull past it to about '+Math.min(100,Math.ceil((units(c.nextG)+15)/10)*10)+', then push back).</p>':'')
       +'<form id="f-dose" style="margin-top:10px"><ol class="steps dsteps">'
-      +'<li><b>Weigh the vial before you start</b><span>Cap off, outside dry. Photograph it, or enter the number manually.'+(c.expectNow!==null?' It should read <b>'+c.expectNow.toFixed(3)+' g</b>.':'')+'</span>'+weighField('d-b','The scale reads, with the vial on it (g)',v.id+':tmp-before',c.expectNow!==null?c.expectNow.toFixed(3):'')+'</li>'
+      +'<li><b>Weigh the vial before you start</b><span>Cap off, outside dry. Photograph it, or enter the number manually.'+(c.expectNow!==null?' It should read <b>'+c.expectNow.toFixed(3)+' g</b>.':'')+'</span>'+weighField('d-b','The scale reads, with the vial on it',v.id+':tmp-before',c.expectNow!==null?c.expectNow.toFixed(3):'')+'</li>'
       +'<li><b>Tare the scale on a new syringe, vent the vial, draw past the mark, push back to the mark</b><span>Bare syringe laid across the pan, resting on nothing else, press TARE (0.000). Plungerless syringe through the edge of the stopper as the vent. Draw slowly 10–20 units past your mark; tap the bubbles up; push back until the liquid sits exactly on the mark. If the plunger creeps back on its own, the vial is under vacuum — fix the vent first.</span></li>'
-      +'<li><b>Weigh the filled syringe</b><span>Lay it across the tared pan exactly as before, resting on nothing but the pan. Photograph it, or enter the number manually.</span><div class="f2" style="margin-top:6px"><label class="fl">Syringe empty (g)<input id="d-se" class="mono" type="number" step="0.001" inputmode="decimal" value="0" placeholder="Enter the number from the scale"></label>'+weighField('d-sf','The scale reads, with the filled syringe on it (g)',v.id+':tmp-syr',c.nextG?c.nextG.toFixed(3):'0.300')+'</div></li>'
-      +'<li><b>Weigh the vial after the draw</b><span>Vent needle out. Cap off, outside dry. Photograph it, or enter the number manually. This weight is what the vial must read before your next dose.</span>'+weighField('d-a','The scale reads, with the vial on it (g)',v.id+':tmp-vial',c.nextG&&c.expectNow!==null?(c.expectNow-c.nextG).toFixed(3):'')+'</li>'
+      +'<li><b>Weigh the filled syringe</b><span>Lay it across the tared pan exactly as before, resting on nothing but the pan. Photograph it, or enter the number manually.</span><div class="f2" style="margin-top:6px"><label class="fl">Syringe empty (g)<input id="d-se" class="mono" type="number" step="0.001" inputmode="decimal" value="0" placeholder="Enter the number from the scale"></label>'+weighField('d-sf','The scale reads, with the filled syringe on it',v.id+':tmp-syr',c.nextG?c.nextG.toFixed(3):'0.300')+'</div></li>'
+      +'<li><b>Weigh the vial after the draw</b><span>Vent needle out. Cap off, outside dry. Photograph it, or enter the number manually. This weight is what the vial must read before your next dose.</span>'+weighField('d-a','The scale reads, with the vial on it',v.id+':tmp-vial',c.nextG&&c.expectNow!==null?(c.expectNow-c.nextG).toFixed(3):'')+'</li>'
       +'<li><b>Check the numbers, log the dose, then inject</b><span>Nothing is injected until the box below says the dose matches.</span><div class="f2" style="margin-top:6px"><label class="fl">When<input id="d-t" type="datetime-local"></label><label class="fl">Note (optional)<input id="d-note" placeholder="e.g. second attempt, first draw frothed"></label></div></li></ol>'
       +'<div class="calc" id="d-calc">Enter the weights to see the dose.</div><p class="err" id="d-err" hidden></p><div class="row"><button class="btn" type="submit">Log this dose</button></div></form></div>'
-      +'<div class="card" style="margin-top:12px"><h3>Spot-check the vial</h3><p class="small muted" style="margin-top:4px">Weigh the vial any time; the tracker converts it to what’s left and compares with the ledger'+(c.byWeight?' (expected now: about '+expectNow.toFixed(3)+' g)':'')+'.</p><form id="f-weigh" style="margin-top:10px">'+weighField('w-g','Vial weight now (g)',v.id+':tmp-check','')+'<div class="row"><button class="btn ghost" type="submit">Record</button></div></form></div>'
+      +'<div class="card" style="margin-top:12px"><h3>Spot-check the vial</h3><p class="small muted" style="margin-top:4px">Weigh the vial any time; the tracker converts it to what’s left and compares with the ledger'+(c.byWeight?' (expected now: about '+expectNow.toFixed(3)+' g)':'')+'.</p><form id="f-weigh" style="margin-top:10px">'+weighField('w-g','Vial weight now',v.id+':tmp-check','')+'<div class="row"><button class="btn ghost" type="submit">Record</button></div></form></div>'
       +'<div class="card" style="margin-top:12px"><div class="row between"><h3>Dose log</h3><span class="muted small">'+c.count+' total</span></div><div style="margin-top:8px">'+doseRows(v,c)+'</div></div>'
       +'<div class="card" id="vl-photos" style="margin-top:12px" hidden></div>'
       +'<div class="card" style="margin-top:12px"><h3>Plan and supply</h3>'
@@ -3185,14 +3186,14 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
         +'<div class="note coa-note"><span>NO COA, NO DOSE.</span><button type="button" class="btn sm" data-coa="wiz">Check the COA</button>'+coaLast()+'</div></div>'
         +wNav(false,true,'Next',!wReady(key))+'<p class="small muted" style="margin-top:14px">Already have the numbers written down? <button type="button" class="linkish" data-vgo="new">Enter them directly</button>.</p>' }
     else if(key==='check'){ h=head('Test the scale','Hard, level surface, no drafts. ON with nothing on the pan; wait for 0.000. ONE 20 g weight in the middle of the pan; wait for it to settle.')
-        +weighField('wz-check','The scale reads, with the 20 g weight on it (g)',W.id+':check','20.000')+'<div id="wz-checknote">'+checkNote()+'</div>'
+        +weighField('wz-check','The scale reads, with the 20 g weight on it',W.id+':check','20.000')+'<div id="wz-checknote">'+checkNote()+'</div>'
         +'<div class="tarebox"><b>Lift the weight off and press TARE.</b><span>It should read 0.000 (if not, TARE again). Leave the scale on; do not move it from now on.</span>'
-        +weighField('wz-zero','The scale reads, with the weight off (g)',W.id+':zero','0.000')+'<div id="wz-zeronote">'+zeroNote()+'</div></div>'+wNav(true,true,done,!wReady(key)) }
+        +weighField('wz-zero','The scale reads, with the weight off',W.id+':zero','0.000')+'<div id="wz-zeronote">'+zeroNote()+'</div></div>'+wNav(true,true,done,!wReady(key)) }
     else if(key==='dry'){ h=head('Weigh the dry vial','Plastic cap off (stopper and ring stay). Vial in the middle of the pan; wait for it to settle. Then vial off and press TARE so it reads 0.000 for the next weigh.')
-        +weighField('wz-dry','The scale reads, with the dry vial on it (g)',W.id+':dry','5.622')+wNav(true,true,done,!wReady(key)) }
+        +weighField('wz-dry','The scale reads, with the dry vial on it',W.id+':dry','5.622')+wNav(true,true,done,!wReady(key)) }
     else if(key==='syr'){ h=head('Weigh the empty syringe','New insulin syringe. Needle cover off, plunger cap off. Lay it across the pan, touching nothing but the pan.')
         +(d.newSyringe?'<div class="notice bad" style="margin-bottom:12px"><b>The syringe that fell is not sterile.</b> Sharps bin. Weigh a NEW one.</div>':'')
-        +weighField('wz-tare','The scale reads, with the empty syringe on it (g)',W.id+':syr','2.438')
+        +weighField('wz-tare','The scale reads, with the empty syringe on it',W.id+':syr','2.438')
         +'<div class="tarebox"><b>Syringe still on the pan: press TARE.</b><span>It should read 0.000 with the syringe on it. Every draw is weighed against this tare.</span>'
         +'<button type="button" class="btn big'+(d.tared?' ok':'')+'" data-tared="1">'+(d.tared?'✓ It reads 0.000':'It reads 0.000')+'</button></div>'+fellOff(key)+wNav(true,true,done,!wReady(key)) }
     else if(key==='plan'){ h=head('Your dose today','What you take now, and how many times a week. Change it any time on the vial page.')+'<div class="f2"><label class="fl">Dose you take now'+unitWrap('<input id="wz-dose" class="mono big-in" type="number" step="any" min="0" inputmode="decimal" value="'+esc(d.dose)+'" placeholder="3">','mg')+'</label><label class="fl">How often'+unitWrap('<input id="wz-pw" class="mono big-in" type="number" step="any" min="0" inputmode="decimal" value="'+esc(d.pw)+'">','× per week')+'</label></div>'
@@ -3213,7 +3214,7 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
         +'<div class="tarebox"><b>When every draw is in the peptide vial:</b><button type="button" class="btn'+(d.waterin?' ok':'')+'" data-waterin="1">'+(d.waterin?'\u2713 The water is in':'The water is in')+'</button></div>'
         +fellOff(key)+wNav(true,true,done,!wReady(key)) }
     else if(key==='full'){ h=head('Full vial','Vent needle out. Dry the outside. Vial on the pan, cap off.')
-        +weighField('wz-full','The scale reads, full vial (g)',W.id+':full',isFinite(f(d.dry))&&isFinite(drawsSum())?(f(d.dry)+drawsSum()).toFixed(3):'')+'<div id="wz-recon">'+reconcileCard()+'</div>'
+        +weighField('wz-full','The scale reads, full vial',W.id+':full',isFinite(f(d.dry))&&isFinite(drawsSum())?(f(d.dry)+drawsSum()).toFixed(3):'')+'<div id="wz-recon">'+reconcileCard()+'</div>'
         +'<div class="tarebox"><b>Let it dissolve, then look at it against a light.</b><ul class="wlist"><li>Roll it gently or let it stand. Bubbles clear in 4–5 minutes.</li><li>Perfectly clear: no haze, no particles, no powder on the glass.</li><li>Not clear: do not filter it, do not dose from it. Contact the supplier with the lot number.</li></ul>'
         +'<div class="btn-row"><button type="button" class="btn'+(d.clear?' ok':'')+'" data-clear="ok">'+(d.clear?'✓ Perfectly clear':'Perfectly clear')+'</button><button type="button" class="btn ghost" data-clear="no">Not clear — do not use this vial</button></div></div>'
         +wNav(true,true,done,!wReady(key)) }
@@ -3222,9 +3223,9 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
         +'<div class="btn-row" style="margin-top:14px"><button type="button" class="btn" data-w="save">Record it as rejected</button><button type="button" class="btn ghost" data-clear="undo">Back — I want to look again</button></div>' }
     else if(key==='filter'){ var fl=filterCard(); h=head('Sterile filter into a new vial','Everything goes through a 0.22 µm filter into a new sealed vial. That is the vial you dose from.')
         +'<ul class="wlist"><li>New sterile vial: cap off, wipe the stopper with an alcohol swab, let it dry.</li></ul>'
-        +weighField('wz-fdry','The scale reads, empty new vial (g)',W.id+':fdry','')
+        +weighField('wz-fdry','The scale reads, empty new vial',W.id+':fdry','')
         +'<ul class="wlist"><li>Vent the mixed vial (plungerless syringe through the edge of the stopper).</li><li>3 mL Luer-lock syringe: vial upside down, draw every drop SLOWLY, then about 0.5 mL of air.</li><li>Unscrew the needle into the sharps bin. Screw the 0.22 µm PES filter on, tight.</li><li>New sterile needle on the filter outlet. Vent the new vial the same way.</li><li>Push slowly: liquid first, then the air. Real thumb pressure, 20–30 s per mL. A sudden easy push = burst membrane: stop.</li><li>Needles out. New vial on the pan, cap off.</li></ul>'
-        +weighField('wz-ffull','The scale reads, filled new vial (g)',W.id+':ffull','')+'<div id="wz-filt">'+fl+'</div>'
+        +weighField('wz-ffull','The scale reads, filled new vial',W.id+':ffull','')+'<div id="wz-filt">'+fl+'</div>'
         +wNav(true,true,done,!wReady(key))+'<p class="small muted" style="margin-top:14px">No filter kit? <button type="button" class="linkish" data-nofilter="1">Skip filtering</button> — the vial is dosed as mixed.</p>' }
     else if(key==='done'){ var c=calc(v); var exp=c.expires; var lines=[];
       lines.push('<dt>Peptide</dt><dd>'+esc(v.name)+' · '+fmtMg(v.label_mg)+'</dd><dt>Water in the vial</dt><dd>'+c.water.toFixed(3)+' g</dd><dt>Concentration</dt><dd>'+c.conc.toFixed(2)+' mg per g</dd>');
