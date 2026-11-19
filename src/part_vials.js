@@ -462,7 +462,7 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
         +'<ul class="wlist"><li>Alcohol swab on both stoppers (BAC water and peptide). Let them dry.</li>'
         +'<li>Vent the peptide vial: a second syringe with the plunger pulled out and thrown away, needle through the edge of the stopper. Leave it standing.</li>'
         +'<li>On a fresh syringe, pull the plunger to the mark (air) and push that air into the BAC water vial. The air replaces the water you take, so there is no vacuum.</li>'
-        +'<li>Vial upside down. Pull SLOWLY to the mark. If the plunger drags or creeps back, stop: push a little more air in, then pull again.</li>'
+        +'<li>Hold the vial upside down. Pull SLOWLY to the mark. If the plunger drags or creeps back, stop: push a little more air in, then pull again.</li>'
         +'<li>Bubbles: pull 10–20 units past the mark, flick the barrel, push back to the mark. What is left in the syringe is the water you are adding.</li>'
         +'<li>Inject slowly down the glass of the peptide vial. Not hard, not at the powder.</li>'
         +'<li>Tap the draw\u2019s button once it is in the vial'+(nd>1?'; the picture moves on to the next draw':'')+'.</li>'+(nd>1?'<li>Same syringe, same way, for every draw.</li>':'')+'<li>Both needles out. Do not shake.</li></ul>'
