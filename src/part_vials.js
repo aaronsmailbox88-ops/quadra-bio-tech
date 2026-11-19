@@ -465,7 +465,7 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
         +'<li>Hold the vial upside down. Pull SLOWLY to the mark. If the plunger drags or creeps back, stop: push a little more air in, then pull again.</li>'
         +'<li>Bubbles: pull 10–20 units past the mark, flick the barrel, push back to the mark. What is left in the syringe is the water you are adding.</li>'
         +'<li>Hold the peptide vial upright and inject the BAC water slowly down the side of the vial. Do not push hard. Do not aim at the powder.</li>'
-        +'<li>Tap the draw\u2019s button once it is in the vial'+(nd>1?'; the picture moves on to the next draw':'')+'.</li>'+(nd>1?'<li>For multiple draws, repeat these steps with the same syringe.</li>':'')+'<li>Both needles out. Do not shake.</li></ul>'
+        +'<li>Tap the draw\u2019s button once it is in the vial'+(nd>1?'; the picture moves on to the next draw':'')+'.</li>'+(nd>1?'<li>For multiple draws, repeat these steps with the same syringe.</li>':'')+'<li>When your draws are done, take both needles out and put them in the sharps box. Do not recap them. Do not shake the vial.</li></ul>'
         +'<div id="wz-draws" data-sig="'+esc(drawsSig())+'">'+drawsBlock()+'</div>'
         +fellOff(key)+wNav(true,true,done,!wReady(key)) }
     else if(key==='full'){ h=head('Full vial','Vent needle out. Dry the outside. Vial on the pan, cap off.')
