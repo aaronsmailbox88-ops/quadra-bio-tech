@@ -2171,7 +2171,7 @@ function renderStatus(P){
       return '<li>' + esc(src.text) + (src.url ? ' <a href="' + esc(src.url) + '" target="_blank" rel="noopener">' + esc(host || 'link') + '</a>' : '') + '</li>';
     }).join('') + '</ol></div></details>';
   }
-  h += '<footer>Educational summary of published evidence. App version 91, built 19 Nov 2026. Not medical advice and not a guide to using any product. Talk to a doctor about any treatment decision.</footer>';
+  h += '<footer>Educational summary of published evidence. App version 92, built 18 Nov 2026. Not medical advice and not a guide to using any product. Talk to a doctor about any treatment decision.</footer>';
   return h;
 }
 
@@ -3157,7 +3157,7 @@ function renderPeptide(P){
   function noPhotoLink(id){ return '<p class="small muted nophoto">Cannot take a photo on this device? <button type="button" class="linkish" data-nophoto="'+esc(id)+'">Type the number and continue without one</button> — the record will say so.</p>' }
   function drawCount(){ var w=f(W.d.water), s=f(W.d.syr)||1; if(!(w>0)) return 1; return Math.max(1,Math.min(6,Math.ceil(w/s-1e-6))) }
   function drawTarget(i){ var w=f(W.d.water), s=f(W.d.syr)||1, n=drawCount(); if(!(w>0)) return s; return i<n?s:r3(w-s*(n-1)) }
-  function drawsSum(){ var t=0, any=false, nd=drawCount(); for(var i=1;i<=nd;i++){ var g=f(W.d.draws[i]); if(!(g>0)) g=f((W.d.drawMl||{})[i]); if(g>0){ t+=g; any=true } } return any?r3(t):NaN }
+  function drawsSum(){ var t=0, any=false, nd=drawCount(); for(var i=1;i<=nd;i++){ var g=f(W.d.draws[i]); if(!(g>0)) g=f((W.d.drawMl||{})[i]); if(!(g>0)) g=drawTarget(i); if(g>0){ t+=g; any=true } } return any?r3(t):NaN }
   function wSteps(){ var s=['vial','check','dry','syr','water','full']; if(W.d.rejected){ s.push('rejected'); return s } if(!W.d.nofilter) s.push('filter'); s.push('plan','done'); return s }   /* nine pages: vial · scale · dry vial · syringe · water in · full vial + clarity · filter · dose · done */   /* the dose comes last: the vial is mixed, clear and filtered before anyone talks about doses */
   function wVial(){ // a provisional vial object from the wizard data, for calc()
     var full=f(W.d.full), dry=f(W.d.dry); var sum=drawsSum();
@@ -3200,7 +3200,7 @@ function renderPeptide(P){
   function allDrawsDone(){ var nd=drawCount(); for(var i=1;i<=nd;i++){ if(!drawDone(i)) return false } return true }
   function drawsBlock(){ var nd=drawCount(), now=pendingDraw(), h=''; for(var i=1;i<=nd;i++){ var tg=drawTarget(i), dn=drawDone(i);
       h+='<div class="wdraw'+(dn?' done':'')+(i===now&&!dn?' now':'')+'"><h3>Draw '+i+(nd>1?' of '+nd:'')+' \u2014 pull to '+units(tg)+' units = '+ml(tg)+'</h3>'
-        +'<label class="fl">How many mL in this draw?'+unitWrap('<input id="wz-ml'+i+'" class="mono" type="number" step="0.01" min="0" inputmode="decimal" value="'+esc((W.d.drawMl||{})[i]||'')+'" placeholder="mL">','mL')+'</label><div id="wz-mlnote'+i+'">'+mlNote(i)+'</div>'
+        +'<label class="fl">How many mL in this draw?'+unitWrap('<input id="wz-ml'+i+'" class="mono" type="number" step="0.01" min="0" inputmode="decimal" value="'+esc((W.d.drawMl||{})[i]||ml(tg).replace(' mL',''))+'" placeholder="mL">','mL')+'</label><div id="wz-mlnote'+i+'">'+mlNote(i)+'</div>'
         +weighField('wz-draw'+i,'<span class="muted">Optional: on the scale it should weigh '+tg.toFixed(3)+' g</span>',W.id+':draw'+i,'')+'<div id="wz-drawnote'+i+'">'+drawNote(i)+'</div>'
         +'<button type="button" class="btn sm'+(dn?' ok':'')+'" data-drawdone="'+i+'">'+(dn?'\u2713 Draw '+i+' is in the vial':'Draw '+i+' is in the vial')+'</button></div>' } return h }
   function drawsSig(){ var nd=drawCount(), a=[]; for(var i=1;i<=nd;i++) a.push(drawTarget(i).toFixed(3)+(drawDone(i)?'d':'')); return a.join('|') }
