@@ -326,3 +326,9 @@ details.tile .row{gap:8px}
 .syr-wrap svg.syr-svg{width:100%;max-width:none;height:auto;max-height:min(30vh,220px)}
 .syr-cap{max-width:none}
 }
+
+/* animation step controls */
+.syr-row{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap}
+.syr-step{appearance:none;width:36px;height:36px;border-radius:50%;border:1px solid rgba(132,165,255,.45);background:rgba(132,165,255,.10);color:#dfe7ff;font:700 22px/1 var(--display, inherit);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;padding:0 0 3px}
+.syr-step:hover{background:rgba(132,165,255,.22)}
+.syr-steplab{font-family:var(--display, inherit);font-weight:700;font-size:13px;color:#c9d6f7;min-width:7.5em;text-align:center}
