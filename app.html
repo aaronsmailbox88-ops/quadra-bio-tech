@@ -2134,7 +2134,7 @@ function renderStatus(P){
       return '<li>' + esc(src.text) + (src.url ? ' <a href="' + esc(src.url) + '" target="_blank" rel="noopener">' + esc(host || 'link') + '</a>' : '') + '</li>';
     }).join('') + '</ol></div></details>';
   }
-  h += '<footer>Educational summary of published evidence. App version 72, built 19 Nov 2026. Not medical advice and not a guide to using any product. Talk to a doctor about any treatment decision.</footer>';
+  h += '<footer>Educational summary of published evidence. App version 73, built 18 Nov 2026. Not medical advice and not a guide to using any product. Talk to a doctor about any treatment decision.</footer>';
   return h;
 }
 
@@ -3155,7 +3155,7 @@ function renderPeptide(P){
   function drawNote(i){ var tg=drawTarget(i), got=f(W.d.draws[i]); if(!isFinite(got)) return ''; if(got>tg*5&&got>=5) return '<div class="notice"><b>'+got+' looks like units, not grams.</b> The scale shows grams: '+units(tg)+' units of water weighs '+tg.toFixed(3)+' g.</div>'; if(Math.abs(got-tg)<=0.05) return '<div class="notice ok"><b>'+got.toFixed(3)+' g. On target.</b></div>'; return '<div class="notice"><b>'+got.toFixed(3)+' g, target '+tg.toFixed(3)+' g.</b> '+(got>tg?'Push a little back into the water vial.':'Draw a little more.')+' Or carry on: the full-vial weight decides.</div>' }
   var VALKEY={'wz-check':'check','wz-zero':'zero','wz-dry':'dry','wz-tare':'tare','wz-full':'full','wz-fdry':'fdry','wz-ffull':'ffull'};
   function fillVals(root){ $$('[data-wf] input[type="number"]',root).forEach(function(el){ if(el.value) return; var m=/^wz-draw(\d+)$/.exec(el.id); var v=m?(W.d.draws||{})[m[1]]:W.d[VALKEY[el.id]]; if(v!==undefined&&v!==null&&v!=='') el.value=v }) }
-  function drawsBlock(){ var nd=drawCount(), h='<p class="small muted" style="margin:10px 0 2px">Optional check: lay the filled syringe across the tared pan. It should read close to the target.</p>'; for(var i=1;i<=nd;i++){ var tg=drawTarget(i); h+=weighField('wz-draw'+i,'Draw '+i+(nd>1?' of '+nd:'')+' \u2014 pull to '+units(tg)+' units = '+tg.toFixed(3)+' g',W.id+':draw'+i,'')+'<div id="wz-drawnote'+i+'">'+drawNote(i)+'</div>' } return h }
+  function drawsBlock(){ var nd=drawCount(), h=''; for(var i=1;i<=nd;i++){ var tg=drawTarget(i); h+=weighField('wz-draw'+i,'Draw '+i+(nd>1?' of '+nd:'')+' \u2014 pull to '+units(tg)+' units = '+tg.toFixed(3)+' g <span class="muted">(scale reading, optional)</span>',W.id+':draw'+i,'')+'<div id="wz-drawnote'+i+'">'+drawNote(i)+'</div>' } return h }
   function drawsSig(){ var nd=drawCount(), a=[]; for(var i=1;i<=nd;i++) a.push(drawTarget(i).toFixed(3)); return a.join('|') }
   function pendingDraw(){ var nd=drawCount(); for(var i=1;i<=nd;i++){ if(!(f(W.d.draws[i])>0)) return i } return nd }
   function mountAnim(box){ if(!window.syringeAnim) return; var el=$('#wz-anim',box); if(!el) return; var g=drawTarget(pendingDraw()), sig=g.toFixed(3)+'/'+(f(W.d.syr)||1); if(el.getAttribute('data-anim')===sig) return; el.setAttribute('data-anim',sig); window.syringeAnim(el,{g:g, syringe:f(W.d.syr)||1, liquid:'water', name:'water'}) }
