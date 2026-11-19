@@ -386,8 +386,6 @@
     var n=drawCount(), lines=[];
     if(n===1) lines.push('Draw '+w.toFixed(3)+' g of water ('+units(w)+' units) into the '+s+' mL syringe.');
     else { lines.push('A '+s+' mL syringe holds '+s.toFixed(1)+' g, so '+w.toFixed(3)+' g of water takes '+n+' draws.'); for(var di=1;di<=n;di++){ var dg=drawTarget(di); lines.push('Draw '+di+' is '+dg.toFixed(3)+' g ('+units(dg)+' units'+(dg>=s-0.0005?', a full syringe':'')+').') } }
-    lines.push('That makes '+fmtMg(per100)+' in every full '+s+' mL syringe ('+units(s)+' units).');
-    lines.push('10 units is '+fmtMg(conc/10)+'.');
     html+=lines.map(function(t,k){ return '<span'+(k===0&&n>1?' class="emph"':'')+'>'+t+'</span>' }).join('');
     /* 3. no dose talk here: dosing comes after the vial is mixed, dissolved, inspected and filtered. Only warn if this water amount would make the dose unweighable. */
     [['Your dose',v.planned_mg],['Next dose',v.next_mg&&v.next_mg!==v.planned_mg?v.next_mg:null]].forEach(function(p){ if(!p[1]) return; var g=p[1]/conc; if(g<0.05) warn.push(p[0].toLowerCase()+' would be only '+g.toFixed(3)+' g — too small to weigh well (±'+Math.round(state.scale.acc/g*100)+'%). Use more water.'); else if(g<0.1) warn.push(p[0].toLowerCase()+' is a small draw ('+g.toFixed(3)+' g, ±'+Math.round(state.scale.acc/g*100)+'%); more water would make it more accurate.'); if(g>s) warn.push(p[0].toLowerCase()+' would be '+g.toFixed(3)+' g, more than one '+s+' mL syringe holds. Use less water.') });

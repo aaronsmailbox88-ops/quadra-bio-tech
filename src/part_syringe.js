@@ -7,6 +7,7 @@
   var SW=480, SH=146, SY=50;                // shown lying flat: translate(0 260) rotate(-90) maps (x,y) -> (y, 260-x); the picture is cropped to y 50..196
   var L0=206, LEN=180, CX=130;              // barrel top (needle end), barrel length, centre x
   var BX=116, BW=28;                        // barrel left, width
+  var EXT=22;                               // plain barrel past the last mark, where a real syringe prints its size
   function clamp(t){ return Math.max(0,Math.min(1,t)) }
   function easeIO(t){ t=clamp(t); return t<.5?8*t*t*t*t:1-Math.pow(-2*t+2,4)/2 }   // quartic in-out: soft start and stop
   function easeOut(t){ t=clamp(t); return 1-Math.pow(1-t,3) }
@@ -78,15 +79,11 @@
     var liqG=mk('g',{'clip-path':'url(#syr-barrelclip)'},syr);
     var liq=mk('rect',{x:BX,y:L0,width:BW,height:0,fill:'url(#syr-liq)'},liqG);
     var men=mk('path',{d:'',fill:lq[0],opacity:'.9'},liqG);
-    mk('rect',{x:BX,y:L0,width:BW,height:LEN,rx:2,fill:'url(#syr-glass)',opacity:'.55'},syr);
-    mk('rect',{x:BX+4,y:L0+2,width:3,height:LEN-4,rx:1.5,fill:'#fff',opacity:'.6'},syr);
-    mk('rect',{x:BX,y:L0,width:BW,height:LEN,rx:2,fill:'none',stroke:'#8d9aa3','stroke-width':'1.1'},syr);
-    mk('rect',{x:104,y:L0+LEN-1,width:52,height:7,rx:3,fill:'url(#syr-flange)',stroke:'#98a5ae','stroke-width':'.7'},syr);
-    // scale printed on the barrel: ticks on the right wall, numbers outside
-    var minor=U>=100?2:1, major=U>=100?10:5, mid=U>=100?5:0;
-    for(var u=0;u<=U;u+=minor){ var y=L0+u*pxu, big=u%major===0, md=mid&&u%mid===0; mk('line',{x1:BX+BW-(big?12:md?8:5),y1:y,x2:BX+BW,y2:y,stroke:'#1b2328','stroke-width':big?'1.1':'.7',opacity:big?'.95':'.6'},syr); if(big&&u>0) ht({x:BX+BW+9,y:y,'text-anchor':'middle','font-size':'8.6','font-weight':'700',fill:'#e2e9f1','font-family':'var(--mono, ui-monospace, monospace)'},syr,String(u)) }
-    ht({x:BX+BW+9,y:L0,'text-anchor':'middle','font-size':'7.5',fill:'#a9b8c6','font-family':'var(--mono, ui-monospace, monospace)'},syr,'0');
-    ht({x:BX+BW+9,y:L0-7,'text-anchor':'end','font-size':'5.6','font-weight':'700',fill:'#a9b8c6','letter-spacing':'.08em'},syr,'UNITS');
+    mk('rect',{x:BX,y:L0,width:BW,height:LEN+EXT,rx:2,fill:'url(#syr-glass)',opacity:'.55'},syr);
+    mk('rect',{x:BX+BW-7,y:L0+2,width:3,height:LEN+EXT-4,rx:1.5,fill:'#fff',opacity:'.6'},syr);
+    mk('rect',{x:BX,y:L0,width:BW,height:LEN+EXT,rx:2,fill:'none',stroke:'#8d9aa3','stroke-width':'1.1'},syr);
+    mk('rect',{x:104,y:L0+LEN+EXT-1,width:52,height:7,rx:3,fill:'url(#syr-flange)',stroke:'#98a5ae','stroke-width':'.7'},syr);
+    // the scale is printed on the glass (see printOn below, drawn last so it sits over the liquid, the stopper and the rod)
     // plunger: flat-faced rubber stopper whose needle-side edge sits exactly on the mark (that is where a dose is read), rod with ridges, thumb pad
     var stopG=mk('g',{},syr);
     var stopTip=mk('path',{d:'',fill:'#2b3238'},stopG);
@@ -97,6 +94,9 @@
     var thumb=mk('rect',{x:CX-19,y:L0+258,width:38,height:8,rx:3,fill:'url(#syr-flange)',stroke:'#98a5ae','stroke-width':'.7'},syr);
     var bubble=mk('circle',{cx:CX-5,cy:L0+40,r:2.1,fill:'#fff',stroke:'#9ccaff','stroke-width':'.6',opacity:'0'},syr);
     var bubble2=mk('circle',{cx:CX+6,cy:L0+40,r:1.3,fill:'#fff',stroke:'#9ccaff','stroke-width':'.5',opacity:'0'},syr);
+    var print=mk('g',{class:'syr-print'},syr); var minor=U>=100?2:1, major=U>=100?10:5, mid=U>=100?5:0;
+    for(var u=0;u<=U;u+=minor){ var y=L0+u*pxu, big=u%major===0, md=mid&&u%mid===0; mk('line',{x1:BX+BW-(big?11:md?7:4.5),y1:y,x2:BX+BW,y2:y,stroke:'#141a1e','stroke-width':big?'1.1':'.7',opacity:big?'.95':'.7'},print); if(big&&u>0) ht({x:BX+2.5,y:y,'text-anchor':'middle','font-size':'7.2','font-weight':'800',fill:'#141a1e','font-family':'var(--mono, ui-monospace, monospace)'},print,String(u)) }
+    var sz=(o.syringe||1); ht({x:BX+BW/2+6,y:L0+LEN+EXT/2,'text-anchor':'middle','font-size':'6.4','font-weight':'800',fill:'#141a1e'},print,sz+' mL'); ht({x:BX+BW/2-4,y:L0+LEN+EXT/2,'text-anchor':'middle','font-size':'5.4','font-weight':'700',fill:'#141a1e'},print,U+' I.U.');
     // vent: a second syringe barrel with no plunger, standing in the edge of the stopper (dose mode only)
     var vent=mk('g',{class:'syr-vent',opacity:'0'},scene);
     var ventIn=mk('g',{transform:'rotate(-14 150 150)'},vent);
