@@ -1737,7 +1737,7 @@ function renderTitration(P){
   // phases: k = kind, d = seconds, zoom > 1 zooms on the target mark. Built per play, because the dose and the water draw differ:
   // the dose vents the vial with a plungerless syringe; the water draw puts air into the water vial first. Both overdraw and push back.
   function phases(st){ var n=0; var over=st.overU>st.units+2.5; var ph=[];
-    var SLOW=1.6; var step=function(d,zoom,capFn){ ph.push({d:d*SLOW, zoom:zoom, cap:capFn}) };
+    var SLOW=2.4; var step=function(d,zoom,capFn){ ph.push({d:d*SLOW, zoom:zoom, cap:capFn}) };
     var plain=function(d,zoom,capFn){ ph.push({d:d*SLOW, zoom:zoom, cap:capFn}) };
     plain(1.0,1,function(s){ return (s.liquid==='water'?'Water to draw: ':'Your dose: ')+(s.doseTxt?s.doseTxt+' = ':'')+s.uTxt+' units = '+s.gTxt+'.' }); ph[ph.length-1].k='intro';
     if(st.liquid==='water'){
@@ -1760,7 +1760,7 @@ function renderTitration(P){
     return ph }
   /* the vial label, in the style of the product label: dark header with the mark and wordmark, holographic body, product name,
      a pill, a details line, a decorative (non-scanning) QR and a dark footer. Drawn in flat coordinates: the group undoes the scene rotation. */
-  function vialLabel(vial,defs,o){ var lab=mk('g',{class:'syr-label',transform:'rotate(90) translate(0 -260)'},vial); var LX=44, LY=110, LW=104, LH=40;
+  function vialLabel(vial,defs,o){ var lab=mk('g',{class:'syr-label',transform:'rotate(90) translate(0 -260)'},vial); var LX=22, LY=110, LW=94, LH=40;
     grad(defs,'syr-holo',[[0,'#f3d6ff'],[.28,'#d6f1ff'],[.55,'#fff4c4'],[.8,'#d4ffe6'],[1,'#f0d8ff']]);
     mk('rect',{x:LX,y:LY,width:LW,height:LH,rx:3,fill:'url(#syr-holo)',stroke:'#0B1F1E','stroke-width':'.7'},lab);
     mk('path',{d:'M'+(LX+3)+' '+LY+' H'+(LX+LW-3)+' Q'+(LX+LW)+' '+LY+' '+(LX+LW)+' '+(LY+3)+' V'+(LY+9.5)+' H'+LX+' V'+(LY+3)+' Q'+LX+' '+LY+' '+(LX+3)+' '+LY+' Z',fill:'#0B1F1E'},lab);
@@ -2171,7 +2171,7 @@ function renderStatus(P){
       return '<li>' + esc(src.text) + (src.url ? ' <a href="' + esc(src.url) + '" target="_blank" rel="noopener">' + esc(host || 'link') + '</a>' : '') + '</li>';
     }).join('') + '</ol></div></details>';
   }
-  h += '<footer>Educational summary of published evidence. App version 92, built 19 Nov 2026. Not medical advice and not a guide to using any product. Talk to a doctor about any treatment decision.</footer>';
+  h += '<footer>Educational summary of published evidence. App version 93, built 18 Nov 2026. Not medical advice and not a guide to using any product. Talk to a doctor about any treatment decision.</footer>';
   return h;
 }
 
