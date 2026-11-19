@@ -130,7 +130,12 @@
 #vials .wchip{appearance:none;font:inherit;font-family:var(--display);font-size:12px;font-weight:600;color:#0b1a12;background:linear-gradient(180deg,#8ef5c0,#4ade80);border:1px solid rgba(74,222,128,.7);border-radius:999px;padding:4px 10px 4px 8px;cursor:pointer;line-height:1.3;box-shadow:0 1px 6px rgba(74,222,128,.25)}
 #vials .wchip::before{content:'\2713  ';font-weight:800}
 #vials .wchip:hover{filter:brightness(1.06)}
-#vials .wdraw h3{margin:14px 0 6px;font-size:1rem}
+#vials .wdraw{border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin-top:10px}
+#vials .wdraw.now{border-color:rgba(132,165,255,.55);box-shadow:0 0 0 3px rgba(132,165,255,.12)}
+#vials .wdraw.done{opacity:.72}
+#vials .wdraw h3{margin:0 0 6px;font-size:1rem}
+#vials .wdraw .wf{margin-top:4px}
+#vials .wdraw>.btn{margin-top:8px}
 #vials .wf+#wz-draws,#vials #wz-draws .wf{margin-top:10px}
 #vials .f2.stack,#vials #vl-wiz .f2.stack{grid-template-columns:1fr}
 #vials .calc .emph{font-size:15px;color:#fff;padding:8px 10px;border-left:3px solid var(--s2);background:rgba(73,214,200,.08);border-radius:6px}

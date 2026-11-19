@@ -19,12 +19,12 @@
   // phases: k = kind, d = seconds, zoom > 1 zooms on the target mark. Built per play, because the dose and the water draw differ:
   // the dose vents the vial with a plungerless syringe; the water draw puts air into the water vial first. Both overdraw and push back.
   function phases(st){ var n=0; var over=st.overU>st.units+2.5; var ph=[];
-    var step=function(d,zoom,capFn){ n++; var label=n+' · '; ph.push({d:d, zoom:zoom, cap:function(s){ return label+capFn(s) }}) };
+    var step=function(d,zoom,capFn){ ph.push({d:d, zoom:zoom, cap:capFn}) };
     var plain=function(d,zoom,capFn){ ph.push({d:d, zoom:zoom, cap:capFn}) };
     plain(1.0,1,function(s){ return (s.liquid==='water'?'Water to draw: ':'Your dose: ')+(s.doseTxt?s.doseTxt+' = ':'')+s.uTxt+' units = '+s.gTxt+'.' }); ph[ph.length-1].k='intro';
     if(st.liquid==='water'){
       step(1.6,1,function(s){ return 'Air first: pull the plunger back to the '+s.uTxt+' mark.' }); ph[ph.length-1].k='air';
-      step(2.0,1,function(){ return 'Push the needle through the water vial’s stopper and push the air in. That air replaces the water you take, so no vacuum forms.' }); ph[ph.length-1].k='in-air';
+      step(2.0,1,function(){ return 'Needle through the water vial’s stopper. Push the air in: it replaces the water you take, so no vacuum forms.' }); ph[ph.length-1].k='in-air';
     } else {
       step(2.0,1,function(){ return 'Vent the vial: a second syringe with its plunger pulled out, needle through the edge of the stopper. The vial can breathe, so nothing sucks your plunger back.' }); ph[ph.length-1].k='vent';
       step(1.4,1,function(){ return 'Push the dosing needle through the stopper and turn the vial upside down.' }); ph[ph.length-1].k='in';
@@ -38,7 +38,7 @@
     }
     step(3.0,2.2,function(s){ return 'The liquid sits exactly on the '+s.uTxt+' mark — the bottom of the curved surface on the line. Not above, not below.' }); ph[ph.length-1].k='zoom';
     plain(0.9,1,function(s){ return 'Exactly on the '+s.uTxt+' mark.' }); ph[ph.length-1].k='unzoom';
-    step(2.6,1,function(s){ return s.liquid==='water'?'Needle out. That is '+s.gTxt+' of water: inject it into the peptide vial.':'Needle out, vent needle out. Lay the syringe on the tared scale: it should read '+s.gTxt+'.' }); ph[ph.length-1].k='weigh';
+    step(2.6,1,function(s){ return s.liquid==='water'?'Pull the needle out of the water vial. You have '+s.gTxt+' of water. Inject it into the peptide vial.':'Needle out, vent needle out. Lay the syringe on the tared scale: it should read '+s.gTxt+'.' }); ph[ph.length-1].k='weigh';
     return ph }
   function build(el,o){
     el.innerHTML=''; el.classList.add('syr-wrap');

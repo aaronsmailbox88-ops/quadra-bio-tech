@@ -407,9 +407,14 @@
   var VALKEY={'wz-check':'check','wz-zero':'zero','wz-dry':'dry','wz-tare':'tare','wz-full':'full','wz-fdry':'fdry','wz-ffull':'ffull'};
   function fillVals(root){ $$('[data-wf] input[type="number"]',root).forEach(function(el){ if(el.value) return; var m=/^wz-draw(\d+)$/.exec(el.id); var v=m?(W.d.draws||{})[m[1]]:W.d[VALKEY[el.id]]; if(v!==undefined&&v!==null&&v!=='') el.value=v }) }
   function ml(x){ var v=f(x); if(!isFinite(v)) return ''; var t=v.toFixed(2).replace(/0$/,''); return t+' mL' }
-  function drawsBlock(){ var nd=drawCount(), h=''; for(var i=1;i<=nd;i++){ var tg=drawTarget(i); h+=weighField('wz-draw'+i,'Draw '+i+(nd>1?' of '+nd:'')+' \u2014 pull to '+units(tg)+' units = '+ml(tg)+' <span class="muted">(optional: on the scale it weighs '+tg.toFixed(3)+' g)</span>',W.id+':draw'+i,'')+'<div id="wz-drawnote'+i+'">'+drawNote(i)+'</div>' } return h }
-  function drawsSig(){ var nd=drawCount(), a=[]; for(var i=1;i<=nd;i++) a.push(drawTarget(i).toFixed(3)); return a.join('|') }
-  function pendingDraw(){ var nd=drawCount(); for(var i=1;i<=nd;i++){ if(!(f(W.d.draws[i])>0)) return i } return nd }
+  function drawDone(i){ return !!(W.d.drawDone&&W.d.drawDone[i]) }
+  function allDrawsDone(){ var nd=drawCount(); for(var i=1;i<=nd;i++){ if(!drawDone(i)) return false } return true }
+  function drawsBlock(){ var nd=drawCount(), now=pendingDraw(), h=''; for(var i=1;i<=nd;i++){ var tg=drawTarget(i), dn=drawDone(i);
+      h+='<div class="wdraw'+(dn?' done':'')+(i===now&&!dn?' now':'')+'"><h3>Draw '+i+(nd>1?' of '+nd:'')+' \u2014 pull to '+units(tg)+' units = '+ml(tg)+'</h3>'
+        +weighField('wz-draw'+i,'<span class="muted">Optional: on the scale it weighs '+tg.toFixed(3)+' g</span>',W.id+':draw'+i,'')+'<div id="wz-drawnote'+i+'">'+drawNote(i)+'</div>'
+        +'<button type="button" class="btn sm'+(dn?' ok':'')+'" data-drawdone="'+i+'">'+(dn?'\u2713 Draw '+i+' is in the vial':'Draw '+i+' is in the vial')+'</button></div>' } return h }
+  function drawsSig(){ var nd=drawCount(), a=[]; for(var i=1;i<=nd;i++) a.push(drawTarget(i).toFixed(3)+(drawDone(i)?'d':'')); return a.join('|') }
+  function pendingDraw(){ var nd=drawCount(); for(var i=1;i<=nd;i++){ if(!drawDone(i)) return i } return nd }
   function mountAnim(box){ if(!window.syringeAnim) return; var el=$('#wz-anim',box); if(!el) return; var g=drawTarget(pendingDraw()), sig=g.toFixed(3)+'/'+(f(W.d.syr)||1); if(el.getAttribute('data-anim')===sig) return; el.setAttribute('data-anim',sig); window.syringeAnim(el,{g:g, syringe:f(W.d.syr)||1, liquid:'water', name:'water'}) }
   function fellOff(key){ return '<p class="small fell" style="margin-top:14px"><button type="button" class="btn sm danger" data-fell="'+esc(key)+'">My syringe fell off the scale</button><span class="muted">It is no longer sterile. DO NOT USE it. Start over with a NEW syringe.</span></p>' }
   function dilNote(dil){ if(dil==='Sterile water') return '<p class="note" data-dilnote>No preservative: a vial mixed with plain sterile water is a single-session vial. Draw the dose and discard the rest the same day; the tracker sets its use-by to 1 day. Bacteriostatic water (0.9% benzyl alcohol) is what makes the 28-day rule possible.</p>'; if(dil==='Other') return '<p class="note" data-dilnote>Not saline, not PBS: use bacteriostatic water.</p>'; return '' }
@@ -423,7 +428,7 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
       var lab={ vial:function(){ return d.name?(window.PEP_LABEL&&window.PEP_LABEL[d.name]||d.name)+(d.mg?' '+d.mg+' mg':''):'' }, check:function(){ return d.check?'Scale '+g(d.check)+(d.zero?' \u00b7 zero '+g(d.zero):''):'' },
         dry:function(){ return d.dry?'Dry vial '+g(d.dry):'' }, syr:function(){ return d.tare?'Syringe '+g(d.tare)+(d.tared?' \u00b7 tared \u2713':''):'' }, plan:function(){ return d.dose?d.dose+' mg \u00d7 '+(d.pw||1)+'/wk':'' },
         full:function(){ return d.full?'Full vial '+g(d.full)+(d.clear?' \u00b7 clear \u2713':''):'' }, filter:function(){ return d.ffull?'Filtered '+g(d.ffull):(d.fdry?'New vial '+g(d.fdry):'') },
-        water:function(){ return d.water?'BAC water '+ml(d.water)+(d.waterin?' in \u2713':''):'' } };
+        water:function(){ return d.water?'BAC water '+ml(d.water)+(allDrawsDone()?' in \u2713':''):'' } };
       for(var i=0;i<W.step&&i<steps.length;i++){ var k=steps[i], t=''; if(lab[k]) t=lab[k]();
         if(t) out.push('<button type="button" class="wchip" data-goto="'+i+'" title="Back to this step">'+esc(t)+'</button>'); }
       return out.length?'<div class="wsum">'+out.join('')+'</div>':'' };
@@ -456,13 +461,12 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
         +'<div id="wz-watercard">'+waterCard(v)+'</div><div id="wz-anim" class="syr-slot"></div>'
         +'<ul class="wlist"><li>Alcohol swab on both stoppers (BAC water and peptide). Let them dry.</li>'
         +'<li>Vent the peptide vial: a second syringe with the plunger pulled out and thrown away, needle through the edge of the stopper. Leave it standing.</li>'
-        +'<li>Pull the plunger to the mark (air) and push that air into the BAC water vial. The air replaces the water you take, so there is no vacuum.</li>'
+        +'<li>On a fresh syringe, pull the plunger to the mark (air) and push that air into the BAC water vial. The air replaces the water you take, so there is no vacuum.</li>'
         +'<li>Vial upside down. Pull SLOWLY to the mark. If the plunger drags or creeps back, stop: push a little more air in, then pull again.</li>'
         +'<li>Bubbles: pull 10–20 units past the mark, flick the barrel, push back to the mark. What is left in the syringe is the water you are adding.</li>'
         +'<li>Inject slowly down the glass of the peptide vial. Not hard, not at the powder.</li>'
-        +(nd>1?'<li>Same syringe, same way, for every draw.</li>':'')+'<li>Both needles out. Do not shake.</li></ul>'
+        +'<li>Tap the draw\u2019s button once it is in the vial'+(nd>1?'; the picture moves on to the next draw':'')+'.</li>'+(nd>1?'<li>Same syringe, same way, for every draw.</li>':'')+'<li>Both needles out. Do not shake.</li></ul>'
         +'<div id="wz-draws" data-sig="'+esc(drawsSig())+'">'+drawsBlock()+'</div>'
-        +'<div class="tarebox"><b>When every draw is in the peptide vial:</b><button type="button" class="btn'+(d.waterin?' ok':'')+'" data-waterin="1">'+(d.waterin?'\u2713 The water is in':'The water is in')+'</button></div>'
         +fellOff(key)+wNav(true,true,done,!wReady(key)) }
     else if(key==='full'){ h=head('Full vial','Vent needle out. Dry the outside. Vial on the pan, cap off.')
         +weighField('wz-full','The scale reads, full vial',W.id+':full',isFinite(f(d.dry))&&isFinite(drawsSum())?(f(d.dry)+drawsSum()).toFixed(3):'')+'<div id="wz-recon">'+reconcileCard()+'</div>'
@@ -505,7 +509,7 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
     $$('[data-clear]',box).forEach(function(b){ b.addEventListener('click',function(){ var a=b.getAttribute('data-clear'); if(a==='ok'){ d.clear=true; d.rejected=false; wSave(); b.classList.add('ok'); b.textContent='✓ Perfectly clear'; re() } else if(a==='no'){ d.clear=false; d.rejected=true; wSave(); W.step=wSteps().indexOf('rejected'); wSave(); wRender() } else { d.rejected=false; wSave(); W.step=wSteps().indexOf('full'); wSave(); wRender() } }) });
     $$('[data-goto]',box).forEach(function(b){ b.addEventListener('click',function(){ var i=parseInt(b.getAttribute('data-goto'),10); if(i>=0&&i<wSteps().length){ W.step=i; wSave(); wRender(); window.scrollTo(0,0) } }) });
     var tb=$('[data-tared]',box); if(tb) tb.addEventListener('click',function(){ d.tared=true; wSave(); tb.textContent='✓ It reads 0.000'; tb.classList.add('ok'); re() });
-    var wb=$('[data-waterin]',box); if(wb) wb.addEventListener('click',function(){ d.waterin=true; wSave(); wb.textContent='✓ The water is in'; wb.classList.add('ok'); re() });
+    if(box.__onDrawDone) box.removeEventListener('click',box.__onDrawDone); box.__onDrawDone=function(e){ var b=e.target&&e.target.closest&&e.target.closest('[data-drawdone]'); if(!b||!box.contains(b)) return; var i=+b.getAttribute('data-drawdone'); if(!d.drawDone) d.drawDone={}; d.drawDone[i]=true; d.waterin=allDrawsDone(); wSave(); re(); window.scrollTo({top:window.scrollY,behavior:'auto'}) }; box.addEventListener('click',box.__onDrawDone);
     var fb=$('[data-fell]',box); if(fb) fb.addEventListener('click',function(){ var from=fb.getAttribute('data-fell'); var m=/^draw(\d+)$/.exec(from); if(m){ delete d.draws[m[1]]; delete d.photos['draw'+m[1]]; photoDel(W.id+':draw'+m[1]) } d.tare=''; d.tared=false; delete d.photos.syr; photoDel(W.id+':syr'); d.newSyringe=true; d.returnTo=m?'water':(from==='water'?'water':''); W.step=wSteps().indexOf('syr'); wSave(); wRender(); window.scrollTo(0,0) });
     var pep=$('#wz-pep',box); if(pep){ pep.addEventListener('change',function(){ var o=$('#wz-otherwrap',box); if(pep.value==='__other'){ o.hidden=false; d.name=$('#wz-other',box).value.trim(); $('#wz-other',box).focus() } else { o.hidden=true; d.name=pep.value } wSave(); re() }); $('#wz-other',box).addEventListener('input',function(e){ d.name=e.target.value.trim(); wSave(); re() }) }
     wireDraws();
@@ -524,7 +528,7 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
     if(key==='check'){ var ck=f(d.check), z=f(d.zero); return isFinite(ck)&&Math.abs(ck-20)<=0.010&&photoOK('check')&&isFinite(z)&&Math.abs(z)<=0.002&&photoOK('zero') }
     if(key==='dry') return f(d.dry)>0&&photoOK('dry'); if(key==='syr') return f(d.tare)>0&&photoOK('syr')&&!!d.tared;
     if(key==='plan') return f(d.dose)>0;
-    if(key==='water') return f(d.water)>0&&d.waterin===true;
+    if(key==='water') return f(d.water)>0&&allDrawsDone();
     if(key==='full') return f(d.full)>f(d.dry)&&photoOK('full')&&d.clear===true;
     if(key==='rejected') return true;
     if(key==='filter') return f(d.fdry)>0&&photoOK('fdry')&&f(d.ffull)>f(d.fdry)&&photoOK('ffull'); return true }
