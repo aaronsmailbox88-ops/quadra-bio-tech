@@ -150,3 +150,11 @@
 #vials .fell{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
 #vials .fell .btn{flex:0 0 auto}
 #vials .fell span{flex:1 1 16em;min-width:0}
+#vials .animpick{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:12px}
+/* tappable steps: a circle at the left, ticked and greyed when done; tap again to undo */
+#vials ul.wlist>li.tick{list-style:none;position:relative;padding-left:30px;cursor:pointer;-webkit-tap-highlight-color:transparent;transition:color .15s}
+#vials ul.wlist>li.tick::before{content:'';position:absolute;left:2px;top:.2em;width:16px;height:16px;border-radius:50%;border:1.5px solid rgba(132,165,255,.6);background:rgba(132,165,255,.08)}
+#vials ul.wlist>li.tick.done{color:rgba(170,182,205,.55)}
+#vials ul.wlist>li.tick.done::before{background:linear-gradient(180deg,#8ef5c0,#4ade80);border-color:rgba(74,222,128,.8)}
+#vials ul.wlist>li.tick.done::after{content:'\2713';position:absolute;left:5.5px;top:.15em;font-size:12px;font-weight:800;color:#0b1a12}
+#vials ul.wlist{padding-left:0}

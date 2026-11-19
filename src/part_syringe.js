@@ -8,6 +8,7 @@
   var L0=206, LEN=180, CX=130;              // barrel top (needle end), barrel length, centre x
   var BX=116, BW=28;                        // barrel left, width
   var EXT=22;                               // plain barrel past the last mark, where a real syringe prints its size
+  var ROD=190;                              // plunger rod; the thumb rest sits at its end
   function clamp(t){ return Math.max(0,Math.min(1,t)) }
   function easeIO(t){ t=clamp(t); return t<.5?8*t*t*t*t:1-Math.pow(-2*t+2,4)/2 }   // quartic in-out: soft start and stop
   function easeOut(t){ t=clamp(t); return 1-Math.pow(1-t,3) }
@@ -19,8 +20,8 @@
   // phases: k = kind, d = seconds, zoom > 1 zooms on the target mark. Built per play, because the dose and the water draw differ:
   // the dose vents the vial with a plungerless syringe; the water draw puts air into the water vial first. Both overdraw and push back.
   function phases(st){ var n=0; var over=st.overU>st.units+2.5; var ph=[];
-    var step=function(d,zoom,capFn){ ph.push({d:d, zoom:zoom, cap:capFn}) };
-    var plain=function(d,zoom,capFn){ ph.push({d:d, zoom:zoom, cap:capFn}) };
+    var SLOW=1.6; var step=function(d,zoom,capFn){ ph.push({d:d*SLOW, zoom:zoom, cap:capFn}) };
+    var plain=function(d,zoom,capFn){ ph.push({d:d*SLOW, zoom:zoom, cap:capFn}) };
     plain(1.0,1,function(s){ return (s.liquid==='water'?'Water to draw: ':'Your dose: ')+(s.doseTxt?s.doseTxt+' = ':'')+s.uTxt+' units = '+s.gTxt+'.' }); ph[ph.length-1].k='intro';
     if(st.liquid==='water'){
       step(1.6,1,function(s){ return 'Air first: pull the plunger back to the '+s.uTxt+' mark.' }); ph[ph.length-1].k='air';
@@ -38,8 +39,27 @@
     }
     step(3.0,2.2,function(s){ return 'The liquid sits exactly on the '+s.uTxt+' mark — the bottom of the curved surface on the line. Not above, not below.' }); ph[ph.length-1].k='zoom';
     plain(0.9,1,function(s){ return 'Exactly on the '+s.uTxt+' mark.' }); ph[ph.length-1].k='unzoom';
-    step(2.6,1,function(s){ return s.liquid==='water'?'Pull the needle out of the water vial. You have '+s.gTxt+' of water. Inject it into the peptide vial.':'Needle out, vent needle out. Lay the syringe on the tared scale: it should read '+s.gTxt+'.' }); ph[ph.length-1].k='weigh';
+    step(2.6,1,function(s){ return s.liquid==='water'?'Pull the needle out of the BAC water vial. You have '+s.gTxt+' of water. Inject it into the peptide vial.':'Needle out, vent needle out. Lay the syringe on the tared scale: it should read '+s.gTxt+'.' }); ph[ph.length-1].k='weigh';
     return ph }
+  /* the vial label, in the style of the product label: dark header with the mark and wordmark, holographic body, product name,
+     a pill, a details line, a decorative (non-scanning) QR and a dark footer. Drawn in flat coordinates: the group undoes the scene rotation. */
+  function vialLabel(vial,defs,o){ var lab=mk('g',{class:'syr-label',transform:'rotate(90) translate(0 -260)'},vial); var LX=44, LY=110, LW=104, LH=40;
+    grad(defs,'syr-holo',[[0,'#f3d6ff'],[.28,'#d6f1ff'],[.55,'#fff4c4'],[.8,'#d4ffe6'],[1,'#f0d8ff']]);
+    mk('rect',{x:LX,y:LY,width:LW,height:LH,rx:3,fill:'url(#syr-holo)',stroke:'#0B1F1E','stroke-width':'.7'},lab);
+    mk('path',{d:'M'+(LX+3)+' '+LY+' H'+(LX+LW-3)+' Q'+(LX+LW)+' '+LY+' '+(LX+LW)+' '+(LY+3)+' V'+(LY+9.5)+' H'+LX+' V'+(LY+3)+' Q'+LX+' '+LY+' '+(LX+3)+' '+LY+' Z',fill:'#0B1F1E'},lab);
+    mk('path',{d:'M'+LX+' '+(LY+LH-4)+' H'+(LX+LW)+' V'+(LY+LH-3)+' Q'+(LX+LW)+' '+(LY+LH)+' '+(LX+LW-3)+' '+(LY+LH)+' H'+(LX+3)+' Q'+LX+' '+(LY+LH)+' '+LX+' '+(LY+LH-3)+' Z',fill:'#0B1F1E'},lab);
+    if(window.QB_MARK){ var mg=mk('g',{transform:'translate('+(LX+2.4)+' '+(LY+1.4)+') scale(0.068)'},lab); try{ mg.innerHTML=window.QB_MARK; var ns=mg.querySelector('svg'); if(ns){ ns.setAttribute('width','100'); ns.setAttribute('height','100') } }catch(e){} }
+    var wm=txt(mk('text',{x:LX+10.5,y:LY+7,'font-size':'5.4','font-weight':'800',fill:'#fff','letter-spacing':'.14em','font-family':'var(--display, inherit)'},lab),''); var t1=mk('tspan',{},wm); t1.textContent='QUAD'; var t2=mk('tspan',{fill:'#4FC8BB'},wm); t2.textContent='BIO';
+    var water=o.liquid==='water'; var nm=water?'BAC WATER':(o.name||''); if(!water){ var pl=window.PEP_LABEL&&window.PEP_LABEL[nm]; if(pl) nm=pl.split(' (')[0]; nm=nm.slice(0,12) }
+    txt(mk('text',{x:LX+4,y:LY+23.5,'font-size':nm.length>8?'8.5':'12','font-weight':'800',fill:'#0B1F1E','letter-spacing':'-.02em','font-family':'var(--display, inherit)'},lab),nm);
+    var pill=water?'10 mL':(o.mg?o.mg+' MG':'RUO'); mk('rect',{x:LX+4,y:LY+26.5,width:22,height:7.5,rx:1.6,fill:'#0E6F68'},lab); txt(mk('text',{x:LX+15,y:LY+32,'text-anchor':'middle','font-size':'5.2','font-weight':'800',fill:'#fff','font-family':'var(--display, inherit)'},lab),pill);
+    txt(mk('text',{x:LX+29,y:LY+32,'font-size':'3.6','font-weight':'700',fill:'#0B1F1E','letter-spacing':'.04em'},lab),water?'0.9% BENZYL ALCOHOL':'\u226598% PURITY');
+    // a QR-looking square that encodes nothing: three finder squares and a fixed pattern of modules
+    var QX=LX+LW-22, QY=LY+12, M=2; mk('rect',{x:QX-1,y:QY-1,width:9*M+2,height:9*M+2,fill:'#fff'},lab);
+    var pat=['1111111001','1000001010','1011101000','1011101011','1011101000','1000001010','1111111001','0000000011','1010101001','0110010111']; // 10x10 module map
+    for(var r=0;r<9;r++) for(var c=0;c<9;c++){ var on=pat[r].charAt(c)==='1'; if(on) mk('rect',{x:QX+c*M,y:QY+r*M,width:M,height:M,fill:'#0B1F1E'},lab) }
+    txt(mk('text',{x:QX+9,y:QY+9*M+4,'text-anchor':'middle','font-size':'3',fill:'#0B1F1E','font-weight':'700','letter-spacing':'.06em'},lab),'COA');
+    return lab }
   function build(el,o){
     el.innerHTML=''; el.classList.add('syr-wrap');
     var U=Math.round((o.syringe||1)*100); var pxu=LEN/U;
@@ -67,10 +87,7 @@
     mk('rect',{x:104,y:146,width:52,height:15,rx:2,fill:'url(#syr-alu)',stroke:'#7d8990','stroke-width':'.8'},vial);
     for(var kx=108;kx<156;kx+=4) mk('line',{x1:kx,y1:148,x2:kx,y2:159,stroke:'#6f7b83','stroke-width':'.5',opacity:'.5'},vial);
     mk('circle',{cx:130,cy:161,r:9.5,fill:'#5b666f'},vial); mk('circle',{cx:130,cy:161,r:6,fill:'#434d55'},vial);
-    mk('rect',{x:117,y:36,width:26,height:60,rx:2,fill:'#F5F7F5',stroke:'#c9d2d8','stroke-width':'.6'},vial);
-    // label reads the right way up in the flat picture; the water vial says BAC / WATER, stacked, in capitals
-    if(o.liquid==='water'){ ht({x:133,y:66,'text-anchor':'middle','font-size':'8.5','font-weight':'700',fill:'#16211F','letter-spacing':'.06em'},vial,'BAC'); ht({x:122,y:66,'text-anchor':'middle','font-size':'8.5','font-weight':'700',fill:'#16211F','letter-spacing':'.06em'},vial,'WATER'); }
-    else { var nm=(o.name||'').slice(0,13); ht({x:127,y:66,'text-anchor':'middle','font-size':nm.length>10?'7':'8.5','font-weight':'600',fill:'#16211F'},vial,nm) }
+    vialLabel(vial,defs,o);
     // ---- syringe (group translates for in/out of the stopper)
     var syr=mk('g',{class:'syr-body',filter:'url(#syr-shadow)'},scene);
     mk('line',{x1:CX,y1:148,x2:CX,y2:196,stroke:'#8a949b','stroke-width':'1.3'},syr);
@@ -89,9 +106,9 @@
     var stopTip=mk('path',{d:'',fill:'#2b3238'},stopG);
     var stop=mk('rect',{x:BX+1.2,y:L0,width:BW-2.4,height:10,rx:1.2,fill:'url(#syr-rubber)'},stopG);
     var stopHi=mk('rect',{x:BX+5,y:L0+1.5,width:2.4,height:7,rx:1.2,fill:'#fff',opacity:'.22'},stopG);
-    var rod=mk('rect',{x:CX-5.5,y:L0,width:11,height:262,fill:'url(#syr-rod)',stroke:'#9aa6ae','stroke-width':'.7'},syr);
-    var rodL=mk('line',{x1:CX,y1:L0,x2:CX,y2:L0+262,stroke:'#aeb9c0','stroke-width':'.8'},syr);
-    var thumb=mk('rect',{x:CX-19,y:L0+258,width:38,height:8,rx:3,fill:'url(#syr-flange)',stroke:'#98a5ae','stroke-width':'.7'},syr);
+    var rod=mk('rect',{x:CX-5.5,y:L0,width:11,height:ROD,fill:'url(#syr-rod)',stroke:'#9aa6ae','stroke-width':'.7'},syr);
+    var rodL=mk('line',{x1:CX,y1:L0,x2:CX,y2:L0+ROD,stroke:'#aeb9c0','stroke-width':'.8'},syr);
+    var thumb=mk('rect',{x:CX-19,y:L0+ROD+6,width:38,height:8,rx:3,fill:'url(#syr-flange)',stroke:'#98a5ae','stroke-width':'.7'},syr);
     var bubble=mk('circle',{cx:CX-5,cy:L0+40,r:2.1,fill:'#fff',stroke:'#9ccaff','stroke-width':'.6',opacity:'0'},syr);
     var bubble2=mk('circle',{cx:CX+6,cy:L0+40,r:1.3,fill:'#fff',stroke:'#9ccaff','stroke-width':'.5',opacity:'0'},syr);
     var print=mk('g',{class:'syr-print'},syr); var minor=U>=100?2:1, major=U>=100?10:5, mid=U>=100?5:0;
@@ -122,11 +139,12 @@
     row.querySelector('.syr-replay').addEventListener('click',function(){ play(st) });
     el.__syr=st; return st;
   }
-  function setPlunger(st,px){ var y=L0+px; st.stop.setAttribute('y',y); st.stopHi.setAttribute('y',y+1.5); st.stopTip.setAttribute('d',''); st.rod.setAttribute('y',y+10); st.rodL.setAttribute('y1',y+10); st.rodL.setAttribute('y2',y+262); st.thumb.setAttribute('y',y+258) }
+  function setPlunger(st,px){ var y=L0+px; st.stop.setAttribute('y',y); st.stopHi.setAttribute('y',y+1.5); st.stopTip.setAttribute('d',''); st.rod.setAttribute('y',y+10); st.rodL.setAttribute('y1',y+10); st.rodL.setAttribute('y2',y+10+ROD); st.thumb.setAttribute('y',y+10+ROD-4) }
   function setLiquid(st,px){ px=Math.max(0,px); st.liq.setAttribute('height',px); var y=L0+px; st.men.setAttribute('d',px>0.5?'M'+BX+' '+(y-2.2)+' Q'+CX+' '+(y+1.2)+' '+(BX+BW)+' '+(y-2.2)+' L'+(BX+BW)+' '+y+' L'+BX+' '+y+' Z':'') }
-  function setView(st,z,cy){ // zoom z about the target mark; in the flat picture the mark sits at x = cy (upright y), y = 260 - CX
-    if(z<=1.001){ st.svg.setAttribute('viewBox','0 '+SY+' '+SW+' '+SH); return }
-    var w=SW/z, h=SH/z; var x=Math.max(0,Math.min(SW-w,cy-w/2)); var y=Math.max(SY,Math.min(SY+SH-h,(VW-CX+15)-h*0.5)); st.svg.setAttribute('viewBox',x.toFixed(2)+' '+y.toFixed(2)+' '+w.toFixed(2)+' '+h.toFixed(2)) }
+  function setView(st,z,cy,padEnd){ // the picture widens (same aspect) when the thumb rest would leave it; zoom z about the target mark at x = cy, y = 260 - CX
+    var w0=Math.max(SW,(padEnd||0)+12), h0=SH*w0/SW, y0=SY-(h0-SH)/2;
+    if(z<=1.001){ st.svg.setAttribute('viewBox','0 '+y0.toFixed(2)+' '+w0.toFixed(2)+' '+h0.toFixed(2)); return }
+    var w=w0/z, h=h0/z; var x=Math.max(0,Math.min(w0-w,cy-w/2)); var y=Math.max(y0,Math.min(y0+h0-h,(VW-CX+15)-h*0.5)); st.svg.setAttribute('viewBox',x.toFixed(2)+' '+y.toFixed(2)+' '+w.toFixed(2)+' '+h.toFixed(2)) }
   function apply(st,o){
     st.g=o.g; st.units=o.g*100; st.gTxt=st.liquid==='water'?o.g.toFixed(2).replace(/0$/,'')+' mL':o.g.toFixed(3)+' g'; st.uTxt=(Math.round(st.units*10)/10).toString().replace(/\.0$/,''); st.doseTxt=o.doseTxt||'';
     st.over=st.units>st.U+1e-6; var px=Math.min(st.U,st.units)*st.pxu; st.tpx=px;
@@ -170,7 +188,7 @@
       st.bubble.setAttribute('opacity',bub); st.bubble.setAttribute('cy',bubY); st.bubble2.setAttribute('opacity',bub2); st.bubble2.setAttribute('cy',bub2Y);
       st.ring.setAttribute('opacity',ringOp);
       st.ro.setAttribute('opacity',roOp); st.roT.textContent=(roOp?roVal:0).toFixed(3)+' g';
-      setView(st,zoom,L0+tp+shift);
+      setView(st,zoom,L0+tp+shift,L0+plunger+10+ROD+4+shift);
       st.cap.textContent=ph.cap(st);
     }
     if(reduce||st.over){ frame(total-0.01); st.cap.textContent=st.over?'This draw does not fit in one syringe.':(st.liquid==='water'?'Pull past the '+st.uTxt+' mark, push back to it: '+st.gTxt+'.':'Pull past the '+st.uTxt+' mark, push back to it; the scale must read '+st.gTxt+'.'); return }
@@ -180,6 +198,6 @@
   /* opts: {g: grams to draw, syringe: 1|0.5|0.3 (mL), liquid: 'dose'|'water', name: vial label, doseTxt: e.g. '4 mg'} */
   window.syringeAnim=function(el,opts){ if(!el) return null; var o=opts||{}; if(!(o.g>0)){ el.innerHTML=''; el.__syr=null; return null }
     var st=el.__syr; var U=Math.round((o.syringe||1)*100);
-    if(!st||st.U!==U||st.liquid!==(o.liquid||'dose')||st.name!==(o.name||'')){ st=build(el,o); st.liquid=o.liquid||'dose'; st.name=o.name||'' }
+    if(!st||st.U!==U||st.liquid!==(o.liquid||'dose')||st.name!==(o.name||'')||st.mg!==(o.mg||'')){ st=build(el,o); st.liquid=o.liquid||'dose'; st.name=o.name||''; st.mg=o.mg||'' }
     if(st.g!==o.g||st.doseTxt!==(o.doseTxt||'')) apply(st,o); return st };
 })();
