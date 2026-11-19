@@ -61,7 +61,7 @@
 
 /* animated draw */
 .syr-wrap{display:grid;gap:8px;justify-items:center;margin-top:12px}
-.syr-svg{width:100%;max-width:280px;height:auto;display:block}
+.syr-svg{width:100%;height:auto;display:block}
 .syr-cap{font-size:14px;color:var(--ink);margin:0;text-align:center;min-height:2.6em;max-width:420px}
 .syr-row{display:flex;gap:12px;align-items:center;flex-wrap:wrap;justify-content:center}
 .syr-replay{font:inherit;font-size:.86rem;font-weight:600;padding:7px 12px;border-radius:8px;border:1px solid var(--accent);background:transparent;color:var(--accent);cursor:pointer}
@@ -319,12 +319,8 @@ details.sub.good>summary::before,details.sub.warn>summary::before,details.sub.cr
 details.sub.good>summary::before{background:var(--good);box-shadow:0 0 8px var(--good)} details.sub.warn>summary::before{background:var(--warn);box-shadow:0 0 8px var(--warn)} details.sub.crit>summary::before{background:var(--crit);box-shadow:0 0 8px var(--crit)}
 details.tile .row{gap:8px}
 
-/* animation never taller than a phone screen; on wide screens it sits beside the directions instead of under them */
-.syr-wrap svg{max-height:min(52vh,420px);width:auto;max-width:100%;height:auto}
-@media (min-width:760px){
-  #vl-wiz:has(.syr-slot:not(:empty)){display:grid;grid-template-columns:minmax(0,1fr) 260px;column-gap:22px;align-items:start}
-  #vl-wiz:has(.syr-slot:not(:empty))>*{grid-column:1}
-  #vl-wiz:has(.syr-slot:not(:empty))>.syr-slot{grid-column:2;grid-row:1 / span 8;margin-top:0;position:sticky;top:calc(var(--header-h) + 70px)}
-  #vl-wiz:has(.syr-slot:not(:empty))>.syr-slot svg{max-height:380px}
-  .syr-cap{font-size:12.5px}
+/* the draw lies flat: full width, short */
+.syr-wrap{justify-items:stretch}
+.syr-wrap svg.syr-svg{width:100%;max-width:none;height:auto;max-height:min(30vh,220px)}
+.syr-cap{max-width:none}
 }
