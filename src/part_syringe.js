@@ -38,7 +38,7 @@
     }
     step(3.0,2.2,function(s){ return 'The liquid sits exactly on the '+s.uTxt+' mark — the bottom of the curved surface on the line. Not above, not below.' }); ph[ph.length-1].k='zoom';
     plain(0.9,1,function(s){ return 'Exactly on the '+s.uTxt+' mark.' }); ph[ph.length-1].k='unzoom';
-    step(2.6,1,function(s){ return (s.liquid==='water'?'Needle out. ':'Needle out, vent needle out. ')+'Lay the syringe on the tared scale: it should read '+s.gTxt+'.' }); ph[ph.length-1].k='weigh';
+    step(2.6,1,function(s){ return s.liquid==='water'?'Needle out. That is '+s.gTxt+' of water: inject it into the peptide vial.':'Needle out, vent needle out. Lay the syringe on the tared scale: it should read '+s.gTxt+'.' }); ph[ph.length-1].k='weigh';
     return ph }
   function build(el,o){
     el.innerHTML=''; el.classList.add('syr-wrap');
@@ -128,12 +128,12 @@
     if(z<=1.001){ st.svg.setAttribute('viewBox','0 '+SY+' '+SW+' '+SH); return }
     var w=SW/z, h=SH/z; var x=Math.max(0,Math.min(SW-w,cy-w/2)); var y=Math.max(SY,Math.min(SY+SH-h,(VW-CX+15)-h*0.5)); st.svg.setAttribute('viewBox',x.toFixed(2)+' '+y.toFixed(2)+' '+w.toFixed(2)+' '+h.toFixed(2)) }
   function apply(st,o){
-    st.g=o.g; st.units=o.g*100; st.gTxt=o.g.toFixed(3)+' g'; st.uTxt=(Math.round(st.units*10)/10).toString().replace(/\.0$/,''); st.doseTxt=o.doseTxt||'';
+    st.g=o.g; st.units=o.g*100; st.gTxt=st.liquid==='water'?o.g.toFixed(2).replace(/0$/,'')+' mL':o.g.toFixed(3)+' g'; st.uTxt=(Math.round(st.units*10)/10).toString().replace(/\.0$/,''); st.doseTxt=o.doseTxt||'';
     st.over=st.units>st.U+1e-6; var px=Math.min(st.U,st.units)*st.pxu; st.tpx=px;
     var step=st.U>=100?10:5; st.overU=Math.min(st.U, Math.ceil((st.units+15)/step)*step); st.overTxt=String(st.overU); st.opx=Math.min(st.U,st.overU)*st.pxu;
     st.tLine.setAttribute('y1',L0+px); st.tLine.setAttribute('y2',L0+px); tpos(st.tG,88,L0+px); tpos(st.tU,80,L0+px); st.ring.setAttribute('cy',L0+px);
     st.tG.textContent=st.gTxt; st.tU.textContent=st.uTxt+' units';
-    st.note.textContent=st.over?'More than this syringe holds ('+st.U+' units = '+(st.U/100).toFixed(1)+' g). Use a bigger syringe or less water next time.':'Pull to the mark, then let the scale decide.';
+    st.note.textContent=st.over?'More than this syringe holds ('+st.U+' units = '+(st.U/100).toFixed(1)+' mL). Use a bigger syringe or less water next time.':(st.liquid==='water'?'Pull slowly to the mark.':'Pull to the mark, then let the scale decide.');
     play(st) }
   function play(st){
     if(st.raf) cancelAnimationFrame(st.raf); st.raf=0;
@@ -162,7 +162,7 @@
       else if(k==='unzoom'){ zoom=2.2-(2.2-1)*easeIO(p); ringOp=1-p }
       else if(k==='weigh'){ var c=easeIO(p/0.3); shift=IN*c; ventOp=1-easeIO(p/0.3); ventY=-40*easeIO(p/0.3); roOp=1; roVal=st.g*easeOut(clamp((p-0.3)/0.5)) }
       if(st.over){ plunger=Math.min(plunger,st.U*st.pxu); liquid=Math.min(liquid,st.U*st.pxu) }
-      if(st.liquid==='water') ventOp=0;
+      if(st.liquid==='water'){ ventOp=0; roOp=0 }
       st.syr.setAttribute('transform','translate(0 '+shift.toFixed(2)+')');
       st.vent.setAttribute('opacity',ventOp.toFixed(2)); st.vent.setAttribute('transform','translate(0 '+ventY.toFixed(2)+')');
       setPlunger(st,plunger); setLiquid(st,liquid);
@@ -173,7 +173,7 @@
       setView(st,zoom,L0+tp+shift);
       st.cap.textContent=ph.cap(st);
     }
-    if(reduce||st.over){ frame(total-0.01); st.cap.textContent=st.over?'This draw does not fit in one syringe.':'Pull past the '+st.uTxt+' mark, push back to it; the scale must read '+st.gTxt+'.'; return }
+    if(reduce||st.over){ frame(total-0.01); st.cap.textContent=st.over?'This draw does not fit in one syringe.':(st.liquid==='water'?'Pull past the '+st.uTxt+' mark, push back to it: '+st.gTxt+'.':'Pull past the '+st.uTxt+' mark, push back to it; the scale must read '+st.gTxt+'.'); return }
     var t0=null; function tick(ts){ if(t0===null) t0=ts; var t=(ts-t0)/1000; frame(Math.min(t,total-0.001)); if(t<total) st.raf=requestAnimationFrame(tick); else st.raf=0 }
     st.raf=requestAnimationFrame(tick);
   }

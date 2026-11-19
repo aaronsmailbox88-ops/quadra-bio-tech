@@ -384,8 +384,8 @@
     var conc=mg/w, per100=conc*s; var html='', warn=[];
     /* 1. the draws, first and plain: a 1 mL syringe cannot carry more than 1 g, so 1.3 g means two separate draws */
     var n=drawCount(), lines=[];
-    if(n===1) lines.push('Draw '+w.toFixed(3)+' g of water ('+units(w)+' units) into the '+s+' mL syringe.');
-    else { lines.push('A '+s+' mL syringe holds '+s.toFixed(1)+' g, so '+w.toFixed(3)+' g of water takes '+n+' draws.'); for(var di=1;di<=n;di++){ var dg=drawTarget(di); lines.push('Draw '+di+' is '+dg.toFixed(3)+' g ('+units(dg)+' units'+(dg>=s-0.0005?', a full syringe':'')+').') } }
+    if(n===1) lines.push('Draw '+ml(w)+' of water ('+units(w)+' units) into the '+s+' mL syringe.');
+    else { lines.push('A '+s+' mL syringe holds '+ml(s)+', so '+ml(w)+' of water takes '+n+' draws.'); for(var di=1;di<=n;di++){ var dg=drawTarget(di); lines.push('Draw '+di+' is '+ml(dg)+' ('+units(dg)+' units'+(dg>=s-0.0005?', a full syringe':'')+').') } }
     html+=lines.map(function(t,k){ return '<span'+(k===0&&n>1?' class="emph"':'')+'>'+t+'</span>' }).join('');
     /* 3. no dose talk here: dosing comes after the vial is mixed, dissolved, inspected and filtered. Only warn if this water amount would make the dose unweighable. */
     [['Your dose',v.planned_mg],['Next dose',v.next_mg&&v.next_mg!==v.planned_mg?v.next_mg:null]].forEach(function(p){ if(!p[1]) return; var g=p[1]/conc; if(g<0.05) warn.push(p[0].toLowerCase()+' would be only '+g.toFixed(3)+' g — too small to weigh well (±'+Math.round(state.scale.acc/g*100)+'%). Use more water.'); else if(g<0.1) warn.push(p[0].toLowerCase()+' is a small draw ('+g.toFixed(3)+' g, ±'+Math.round(state.scale.acc/g*100)+'%); more water would make it more accurate.'); if(g>s) warn.push(p[0].toLowerCase()+' would be '+g.toFixed(3)+' g, more than one '+s+' mL syringe holds. Use less water.') });
@@ -406,7 +406,8 @@
   function drawNote(i){ var tg=drawTarget(i), got=f(W.d.draws[i]); if(!isFinite(got)) return ''; if(got>tg*5&&got>=5) return '<div class="notice"><b>'+got+' looks like units, not grams.</b> The scale shows grams: '+units(tg)+' units of water weighs '+tg.toFixed(3)+' g.</div>'; if(Math.abs(got-tg)<=0.05) return '<div class="notice ok"><b>'+got.toFixed(3)+' g. On target.</b></div>'; return '<div class="notice"><b>'+got.toFixed(3)+' g, target '+tg.toFixed(3)+' g.</b> '+(got>tg?'Push a little back into the water vial.':'Draw a little more.')+' Or carry on: the full-vial weight decides.</div>' }
   var VALKEY={'wz-check':'check','wz-zero':'zero','wz-dry':'dry','wz-tare':'tare','wz-full':'full','wz-fdry':'fdry','wz-ffull':'ffull'};
   function fillVals(root){ $$('[data-wf] input[type="number"]',root).forEach(function(el){ if(el.value) return; var m=/^wz-draw(\d+)$/.exec(el.id); var v=m?(W.d.draws||{})[m[1]]:W.d[VALKEY[el.id]]; if(v!==undefined&&v!==null&&v!=='') el.value=v }) }
-  function drawsBlock(){ var nd=drawCount(), h=''; for(var i=1;i<=nd;i++){ var tg=drawTarget(i); h+=weighField('wz-draw'+i,'Draw '+i+(nd>1?' of '+nd:'')+' \u2014 pull to '+units(tg)+' units = '+tg.toFixed(3)+' g <span class="muted">(scale reading, optional)</span>',W.id+':draw'+i,'')+'<div id="wz-drawnote'+i+'">'+drawNote(i)+'</div>' } return h }
+  function ml(x){ var v=f(x); if(!isFinite(v)) return ''; var t=v.toFixed(2).replace(/0$/,''); return t+' mL' }
+  function drawsBlock(){ var nd=drawCount(), h=''; for(var i=1;i<=nd;i++){ var tg=drawTarget(i); h+=weighField('wz-draw'+i,'Draw '+i+(nd>1?' of '+nd:'')+' \u2014 pull to '+units(tg)+' units = '+ml(tg)+' <span class="muted">(optional: on the scale it weighs '+tg.toFixed(3)+' g)</span>',W.id+':draw'+i,'')+'<div id="wz-drawnote'+i+'">'+drawNote(i)+'</div>' } return h }
   function drawsSig(){ var nd=drawCount(), a=[]; for(var i=1;i<=nd;i++) a.push(drawTarget(i).toFixed(3)); return a.join('|') }
   function pendingDraw(){ var nd=drawCount(); for(var i=1;i<=nd;i++){ if(!(f(W.d.draws[i])>0)) return i } return nd }
   function mountAnim(box){ if(!window.syringeAnim) return; var el=$('#wz-anim',box); if(!el) return; var g=drawTarget(pendingDraw()), sig=g.toFixed(3)+'/'+(f(W.d.syr)||1); if(el.getAttribute('data-anim')===sig) return; el.setAttribute('data-anim',sig); window.syringeAnim(el,{g:g, syringe:f(W.d.syr)||1, liquid:'water', name:'water'}) }
@@ -422,7 +423,7 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
       var lab={ vial:function(){ return d.name?(window.PEP_LABEL&&window.PEP_LABEL[d.name]||d.name)+(d.mg?' '+d.mg+' mg':''):'' }, check:function(){ return d.check?'Scale '+g(d.check)+(d.zero?' \u00b7 zero '+g(d.zero):''):'' },
         dry:function(){ return d.dry?'Dry vial '+g(d.dry):'' }, syr:function(){ return d.tare?'Syringe '+g(d.tare)+(d.tared?' \u00b7 tared \u2713':''):'' }, plan:function(){ return d.dose?d.dose+' mg \u00d7 '+(d.pw||1)+'/wk':'' },
         full:function(){ return d.full?'Full vial '+g(d.full)+(d.clear?' \u00b7 clear \u2713':''):'' }, filter:function(){ return d.ffull?'Filtered '+g(d.ffull):(d.fdry?'New vial '+g(d.fdry):'') },
-        water:function(){ return d.water?'BAC water '+g(d.water)+(d.waterin?' in \u2713':''):'' } };
+        water:function(){ return d.water?'BAC water '+ml(d.water)+(d.waterin?' in \u2713':''):'' } };
       for(var i=0;i<W.step&&i<steps.length;i++){ var k=steps[i], t=''; if(lab[k]) t=lab[k]();
         if(t) out.push('<button type="button" class="wchip" data-goto="'+i+'" title="Back to this step">'+esc(t)+'</button>'); }
       return out.length?'<div class="wsum">'+out.join('')+'</div>':'' };
@@ -450,8 +451,8 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
         +'<div id="wz-plancard">'+planCard(v,true)+'</div>'+wNav(true,true,'Next',!wReady(key)) }
     else if(key==='water'){ syncWater(); var sw=stdWater(); var isStd=isFinite(sw)&&Math.abs(f(d.water)-sw)<0.0005; var nd=drawCount(), sz=f(d.syr)||1;
       h=head('Add BAC water','This is the standard dilution of the powder. Your dose is based off the dilution rate.')
-        +'<div class="f2 stack"><label class="fl">Water to add <span class="muted">(1 g of water = 1 mL)</span>'+unitWrap('<input id="wz-water" class="mono big-in" type="number" step="0.001" min="0" inputmode="decimal" value="'+esc(d.water)+'" placeholder="grams">','g')+'</label><label class="fl">Syringe size<select id="wz-syr">'+[[1,'1 mL (100 units)'],[0.5,'0.5 mL (50 units)'],[0.3,'0.3 mL (30 units)']].map(function(o){return '<option value="'+o[0]+'"'+(sz===o[0]?' selected':'')+'>'+o[1]+'</option>'}).join('')+'</select></label></div>'
-        +(isFinite(sw)&&!isStd?'<p class="small muted">Standard for this vial: '+sw.toFixed(3)+' g. <button type="button" class="linkish" data-stdwater="1">Use it</button></p>':'')
+        +'<div class="f2 stack"><label class="fl">Water to add'+unitWrap('<input id="wz-water" class="mono big-in" type="number" step="0.1" min="0" inputmode="decimal" value="'+esc(d.water)+'" placeholder="mL">','mL')+'</label><label class="fl">Syringe size<select id="wz-syr">'+[[1,'1 mL (100 units)'],[0.5,'0.5 mL (50 units)'],[0.3,'0.3 mL (30 units)']].map(function(o){return '<option value="'+o[0]+'"'+(sz===o[0]?' selected':'')+'>'+o[1]+'</option>'}).join('')+'</select></label></div>'
+        +(isFinite(sw)&&!isStd?'<p class="small muted">Standard for this vial: '+ml(sw)+'. <button type="button" class="linkish" data-stdwater="1">Use it</button></p>':'')
         +'<div id="wz-watercard">'+waterCard(v)+'</div><div id="wz-anim" class="syr-slot"></div>'
         +'<ul class="wlist"><li>Alcohol swab on both stoppers (BAC water and peptide). Let them dry.</li>'
         +'<li>Vent the peptide vial: a second syringe with the plunger pulled out and thrown away, needle through the edge of the stopper. Leave it standing.</li>'
@@ -478,7 +479,7 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
         +weighField('wz-ffull','The scale reads, filled new vial',W.id+':ffull','')+'<div id="wz-filt">'+fl+'</div>'
         +wNav(true,true,done,!wReady(key))+'<p class="small muted" style="margin-top:14px">No filter kit? <button type="button" class="linkish" data-nofilter="1">Skip filtering</button> — the vial is dosed as mixed.</p>' }
     else if(key==='done'){ var c=calc(v); var exp=c.expires; var lines=[];
-      lines.push('<dt>Peptide</dt><dd>'+esc(v.name)+' · '+fmtMg(v.label_mg)+'</dd><dt>Water in the vial</dt><dd>'+c.water.toFixed(3)+' g</dd><dt>Concentration</dt><dd>'+c.conc.toFixed(2)+' mg per g</dd>');
+      lines.push('<dt>Peptide</dt><dd>'+esc(v.name)+' · '+fmtMg(v.label_mg)+'</dd><dt>Water in the vial</dt><dd>'+ml(c.water)+'</dd><dt>Concentration</dt><dd>'+c.conc.toFixed(2)+' mg per g</dd>');
       if(v.planned_mg) lines.push('<dt>Dose now '+fmtMg(v.planned_mg)+'</dt><dd>'+(v.planned_mg/c.conc).toFixed(3)+' g (≈ '+units(v.planned_mg/c.conc)+' u)</dd>');
       if(v.next_mg&&v.next_mg!==v.planned_mg) lines.push('<dt>Next dose '+fmtMg(v.next_mg)+' (after '+v.step_after+')</dt><dd>'+(v.next_mg/c.conc).toFixed(3)+' g (≈ '+units(v.next_mg/c.conc)+' u)</dd>');
       if(c.dosesLeft!==null) lines.push('<dt>Draws at today’s dose</dt><dd>'+c.dosesLeft+'</dd>');
