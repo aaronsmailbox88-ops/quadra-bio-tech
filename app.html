@@ -1832,7 +1832,7 @@ function renderTitration(P){
     var step=st.U>=100?10:5; st.overU=Math.min(st.U, Math.ceil((st.units+15)/step)*step); st.overTxt=String(st.overU); st.opx=Math.min(st.U,st.overU)*st.pxu;
     st.tLine.setAttribute('y1',L0+px); st.tLine.setAttribute('y2',L0+px); st.tG.setAttribute('y',L0+px-1.5); st.tU.setAttribute('y',L0+px+8.5); st.ring.setAttribute('cy',L0+px);
     st.tG.textContent=st.gTxt; st.tU.textContent=st.uTxt+' units';
-    st.note.textContent=st.over?'More than this syringe holds ('+st.U+' units = '+(st.U/100).toFixed(1)+' g). Use a bigger syringe or less water next time.':'1 unit on a U-100 syringe = 0.01 mL = 0.010 g of water. The scale is the measurement; the mark is the guide.';
+    st.note.textContent=st.over?'More than this syringe holds ('+st.U+' units = '+(st.U/100).toFixed(1)+' g). Use a bigger syringe or less water next time.':'Pull to the mark, then let the scale decide.';
     play(st) }
   function play(st){
     if(st.raf) cancelAnimationFrame(st.raf); st.raf=0;
@@ -2135,7 +2135,7 @@ function renderStatus(P){
       return '<li>' + esc(src.text) + (src.url ? ' <a href="' + esc(src.url) + '" target="_blank" rel="noopener">' + esc(host || 'link') + '</a>' : '') + '</li>';
     }).join('') + '</ol></div></details>';
   }
-  h += '<footer>Educational summary of published evidence. App version 69, built 18 Nov 2026. Not medical advice and not a guide to using any product. Talk to a doctor about any treatment decision.</footer>';
+  h += '<footer>Educational summary of published evidence. App version 70, built 18 Nov 2026. Not medical advice and not a guide to using any product. Talk to a doctor about any treatment decision.</footer>';
   return h;
 }
 
@@ -3199,7 +3199,7 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
     else if(key==='plan'){ h=head('Your dose today','What you take now, and how many times a week. Change it any time on the vial page.')+'<div class="f2"><label class="fl">Dose you take now'+unitWrap('<input id="wz-dose" class="mono big-in" type="number" step="any" min="0" inputmode="decimal" value="'+esc(d.dose)+'" placeholder="3">','mg')+'</label><label class="fl">How often'+unitWrap('<input id="wz-pw" class="mono big-in" type="number" step="any" min="0" inputmode="decimal" value="'+esc(d.pw)+'">','× per week')+'</label></div>'
         +'<div id="wz-plancard">'+planCard(v,true)+'</div>'+wNav(true,true,'Next',!wReady(key)) }
     else if(key==='water'){ syncWater(); var sw=stdWater(); var isStd=isFinite(sw)&&Math.abs(f(d.water)-sw)<0.0005; var nd=drawCount(), sz=f(d.syr)||1;
-      h=head('Water in','0.1 g of water per mg: 10 units = 1 mg.')
+      h=head('Water in','The standard amount is filled in for you. Change it only if you want a different strength.')
         +'<div class="f2 stack"><label class="fl">Water to add'+unitWrap('<input id="wz-water" class="mono big-in" type="number" step="0.001" min="0" inputmode="decimal" value="'+esc(d.water)+'" placeholder="grams">','g = mL')+'</label><label class="fl">Syringe size<select id="wz-syr">'+[[1,'1 mL (100 units)'],[0.5,'0.5 mL (50 units)'],[0.3,'0.3 mL (30 units)']].map(function(o){return '<option value="'+o[0]+'"'+(sz===o[0]?' selected':'')+'>'+o[1]+'</option>'}).join('')+'</select></label></div>'
         +(isFinite(sw)&&!isStd?'<p class="small muted">Standard for this vial: '+sw.toFixed(3)+' g. <button type="button" class="linkish" data-stdwater="1">Use it</button></p>':'')
         +'<div id="wz-watercard">'+waterCard(v)+'</div><div id="wz-anim" class="syr-slot"></div>'

@@ -130,7 +130,7 @@
     var step=st.U>=100?10:5; st.overU=Math.min(st.U, Math.ceil((st.units+15)/step)*step); st.overTxt=String(st.overU); st.opx=Math.min(st.U,st.overU)*st.pxu;
     st.tLine.setAttribute('y1',L0+px); st.tLine.setAttribute('y2',L0+px); st.tG.setAttribute('y',L0+px-1.5); st.tU.setAttribute('y',L0+px+8.5); st.ring.setAttribute('cy',L0+px);
     st.tG.textContent=st.gTxt; st.tU.textContent=st.uTxt+' units';
-    st.note.textContent=st.over?'More than this syringe holds ('+st.U+' units = '+(st.U/100).toFixed(1)+' g). Use a bigger syringe or less water next time.':'1 unit on a U-100 syringe = 0.01 mL = 0.010 g of water. The scale is the measurement; the mark is the guide.';
+    st.note.textContent=st.over?'More than this syringe holds ('+st.U+' units = '+(st.U/100).toFixed(1)+' g). Use a bigger syringe or less water next time.':'Pull to the mark, then let the scale decide.';
     play(st) }
   function play(st){
     if(st.raf) cancelAnimationFrame(st.raf); st.raf=0;
