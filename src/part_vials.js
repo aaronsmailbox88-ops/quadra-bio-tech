@@ -547,9 +547,9 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
     $$('[data-w]',box).forEach(function(b){ b.addEventListener('click',function(){ var a=b.getAttribute('data-w');
       if(a==='back'){ if(W.step>0){W.step--; wSave(); wRender(); window.scrollTo(0,0)} }
       else if(a==='next'){ if(!wReady(key)) return; if(key==='syr'){ d.newSyringe=false; if(d.returnTo){ var idx=wSteps().indexOf(d.returnTo); d.returnTo=''; W.step=idx>=0?idx:W.step+1 } else W.step++ } else W.step++; wSave(); wRender(); window.scrollTo(0,0) }
-      else if(a==='cancel'){ if(b.getAttribute('data-armed')){ wClear(); vgo(''); if(location.hash==='#track.mix') location.hash='#track.vials' } else { b.setAttribute('data-armed','1'); b.textContent='Tap again to discard this vial'; setTimeout(function(){b.removeAttribute('data-armed'); b.textContent='Cancel'},3000) } }
+      else if(a==='cancel'){ if(b.getAttribute('data-armed')){ wClear(); vgo(''); if(location.hash==='#dose.mix') location.hash='#dose.vials' } else { b.setAttribute('data-armed','1'); b.textContent='Tap again to discard this vial'; setTimeout(function(){b.removeAttribute('data-armed'); b.textContent='Cancel'},3000) } }
       else if(a==='save'){ ['check','zero','dry','full'].concat(d.nofilter?[]:['fdry','ffull']).concat(Object.keys(d.draws).map(function(k){return 'draw'+k})).forEach(function(k){ if(!d.photos[k]) d.photos[k]={kind:kindOf(k), t:new Date().toISOString(), g:null, checked:false, ok:false, issues:[], seen:'', saved:false, nophoto:true} });
-        var v=wVial(); if(!(v.label_mg>0)||!(v.full_g>v.dry_g)){ toast('Weights are missing'); return } v.created=new Date().toISOString(); v.bw_no=(+d.bw>0)?Math.round(+d.bw):null; if(v.bw_no&&v.status!=='rejected') bwLog(v.bw_no,v.mixed_on||dstr(today()),v.id); v.weights=[{t:v.created, g:v.filtered?v.filtered.full_g:v.full_g}]; state.vials.push(v); var id=W.id; var rej=v.status==='rejected'; W=null; wSave(); VIEW='vial-'+id; commit(); if(location.hash==='#track.mix') location.hash='#track.vials'; window.scrollTo(0,0); toast(rej?'Recorded as rejected':'Vial saved') }
+        var v=wVial(); if(!(v.label_mg>0)||!(v.full_g>v.dry_g)){ toast('Weights are missing'); return } v.created=new Date().toISOString(); v.bw_no=(+d.bw>0)?Math.round(+d.bw):null; if(v.bw_no&&v.status!=='rejected') bwLog(v.bw_no,v.mixed_on||dstr(today()),v.id); v.weights=[{t:v.created, g:v.filtered?v.filtered.full_g:v.full_g}]; state.vials.push(v); var id=W.id; var rej=v.status==='rejected'; W=null; wSave(); VIEW='vial-'+id; commit(); if(location.hash==='#dose.mix') location.hash='#dose.vials'; window.scrollTo(0,0); toast(rej?'Recorded as rejected':'Vial saved') }
     }) });
   }
   function wReady(key){ var d=W.d;
@@ -569,14 +569,14 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
     if(h.indexOf('vial-')===0) renderVial(h.slice(5)); if(h==='new'){ newCalc(); var nm=$('#n-mixed'); if(nm&&!nm.value) nm.value=dstr(today()); var nbw=$('#n-bw'); if(nbw) nbw.innerHTML=bwOptions(nbw.value); var nd=$('#n-dil'); if(nd&&!nd.__dil){ nd.__dil=1; nd.addEventListener('change',function(){ var ne=$('#n-exp'), note=$('#n-dil-note'); if(nd.value==='Sterile water'){ if(ne&&(!ne.value||+ne.value===28)) ne.value=1 } else if(ne&&+ne.value===1) ne.value=28; if(note) note.innerHTML=dilNote(nd.value) }) } } if(h==='wiz'){ if(!W) wInit(); wRender() } }
   var VIEW='';
   function vgo(v){ VIEW=v||''; render(); var s=document.getElementById('vials'); if(s&&!s.closest('section').hidden) window.scrollTo(0,0); }
-  // the mixing guide is its own page (#track.mix); the tracker page (#track.vials) never shows it
+  // the mixing guide is its own page (#dose.mix); the tracker page (#dose.vials) never shows it
   window.vtMix=function(){ if(!W) wStart(); else vgo('wiz'); };
   if(window.__wantMix){ window.__wantMix=false; setTimeout(function(){ window.vtMix() },0); }
   window.vlVials=function(){ return state.vials };
   window.vtLeaveMix=function(){ if(VIEW==='wiz') vgo(''); };
   document.addEventListener('click',function(e){ var el=e.target.closest('[data-vgo]'); if(!el||!document.getElementById('vials').contains(el)) return; e.preventDefault(); var t=el.getAttribute('data-vgo');
-    if(t==='wiz'){ location.hash='#track.mix'; return } if(t===''||t==='list'){ if(location.hash==='#track.mix'){ location.hash='#track.vials'; return } }
-    if(location.hash==='#track.mix'){ vgo(t); location.hash='#track.vials'; return }
+    if(t==='wiz'){ location.hash='#dose.mix'; return } if(t===''||t==='list'){ if(location.hash==='#dose.mix'){ location.hash='#dose.vials'; return } }
+    if(location.hash==='#dose.mix'){ vgo(t); location.hash='#dose.vials'; return }
     vgo(t); });
   document.addEventListener('keydown',function(e){ if(e.key!=='Enter') return; var el=e.target.closest('[data-vgo][role="link"]'); if(el){ e.preventDefault(); vgo(el.getAttribute('data-vgo')); } });
   window.vlNewVial=function(pre){ wStart(pre||null) };

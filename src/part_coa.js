@@ -129,7 +129,7 @@
         var a = b.getAttribute('data-ck');
         if (a === 'close') close();
         else if (a === 'save') { save(); var t = document.createElement('div'); t.className = 'qb-toast'; t.textContent = 'Saved under Checked vials'; document.body.appendChild(t); setTimeout(function(){ t.remove(); }, 1800); }
-        else if (a === 'mix') { var en = save(); close(); location.hash = '#track.vials'; setTimeout(function(){ if (window.vlNewVial) window.vlNewVial({ name: en.pep, mg: num(en.mg), src: (en.sup ? en.sup + ' · ' : '') + 'lot ' + en.lot + ' · COA checked' }); }, 60); }
+        else if (a === 'mix') { var en = save(); close(); location.hash = '#dose.mix'; setTimeout(function(){ if (window.vlNewVial) window.vlNewVial({ name: en.pep, mg: num(en.mg), src: (en.sup ? en.sup + ' · ' : '') + 'lot ' + en.lot + ' · COA checked' }); }, 60); }
       });
     }
     box.innerHTML = html(); paintChecks(); paintSaved(); box.scrollTop = 0;

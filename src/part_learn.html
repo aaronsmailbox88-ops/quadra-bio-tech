@@ -1,12 +1,5 @@
-<!-- ============ LEARN ============ -->
-<section data-panel="learn" aria-labelledby="ln-h" hidden>
-  <div>
-    <div class="kick"><div class="eyebrow">Learn</div><span class="tag2">Guides &amp; tools</span></div>
-    <h1 id="ln-h">How peptide drugs are studied, and how to read what you find here.</h1>
-  </div>
-  <p class="lede">Everything in the Peptides section comes from trials, product labels and regulators. This section explains the machinery behind those numbers: what a trial is, what the results mean, why half-life matters, what the side-effect tables are really saying, and why this app measures by weight.</p>
-
-  <div class="card wk-again" id="learn-start"><div><b>Before you mix or dose</b><span>The seven things to know, in two minutes. Shown once after sign-in; read it again any time.</span></div><button type="button" class="btn ghost" onclick="window.qbWalk&&window.qbWalk.open()">Read it</button></div>
+<!-- ============ LEARN (background reading; placed under the matching Peptides tab by part_fx.js) ============ -->
+<div id="learn-pool" hidden>
   <div class="card wk-again" id="learn-coa"><div><b>COA Checker</b><span>Type what is on your vial and what the certificate says; six checks, one verdict. Every check has an example certificate behind it.</span></div><button type="button" class="btn" data-coa="learn">Check a COA</button></div>
 
   <div id="learn-trials">
@@ -19,8 +12,6 @@
       <div class="card"><h3>Phase 4 · What happens at scale?</h3><p style="font-size:14px;color:var(--ink-2)">After approval: rare side effects, long-term outcomes, new uses. Labels are updated as this evidence arrives.</p></div>
     </div>
     <div class="card" style="margin-top:12px"><h3>Placebo and randomization</h3><p style="font-size:14px;color:var(--ink-2)">A trial result is never "people lost 20%." It is "people on the drug lost 20% and people on placebo, doing the same diet and visits, lost 2%." The difference between the two is the drug's effect, and that placebo-adjusted number is what this app reports first. Randomization (a computer assigning each person to a group) and blinding (nobody knowing who got what until the end) are what make that comparison fair.</p></div>
-    <div style="margin-top:14px"><h2>What a participant experiences</h2></div>
-    <ol class="steps" id="learn-steps"></ol>
   </div>
 
   <div id="learn-results">
@@ -62,16 +53,4 @@
     <div class="card" style="margin-top:12px"><h3>What a certificate of analysis does and does not prove</h3><p style="font-size:14px;color:var(--ink-2)">A COA from an independent lab shows purity (what fraction of the material is the intended peptide), identity (the mass spectrum matches) and sometimes net content (how many milligrams of actual peptide are in the vial, as opposed to salt and water). A purity figure alone does not say how much is in the vial, and a COA for one batch says nothing about another. A sealed vial cannot be checked on a scale; the powder's weight is not the peptide's weight.</p></div>
   </div>
 
-  <div id="learn-units">
-    <h2>Units, millilitres and milligrams</h2>
-    <div id="learn-units-body" style="margin-top:10px"></div>
-  </div>
-
-  <div id="learn-weigh">
-    <h2>Why this app measures by weight, and exactly how</h2>
-    <div class="card" style="margin-top:10px">
-      <p style="font-size:14px;color:var(--ink-2)">Syringe marks measure volume by eye, on a tube a few millimetres wide, against a label that may not be true. A pocket scale measures the same liquid to a thousandth of a gram, and water weighs exactly one gram per millilitre. So each peptide’s Dosing tab and the Vial tracker in the Track section never ask for units or syringe marks: they ask what the scale showed, and do the arithmetic from there. The protocol below is the whole method, step by step.</p>
-    </div>
-    <div id="learn-protocol" style="margin-top:12px;display:flex;flex-direction:column;gap:12px"></div>
-  </div>
-</section>
+</div>

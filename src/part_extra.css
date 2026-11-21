@@ -363,3 +363,8 @@ details.tile .row{gap:8px}
 .peprow.on::after{content:" \2713";font-weight:800}
 .pepnone{padding:18px 12px;color:var(--ink-3)}
 body.pep-open{overflow:hidden}
+
+/* Learn reading at the foot of each Peptides tab (v103) */
+.learn-more{display:flex;flex-direction:column;gap:10px;margin-top:10px;padding-top:16px;border-top:1px solid var(--line)}
+.learn-more>.eyebrow{margin-bottom:2px}
+.learn-more .wk-again{margin-bottom:0}

@@ -1,7 +1,7 @@
 <!-- ============ VIALS ============ -->
 <section data-panel="vials" aria-labelledby="vl-h" hidden>
 <div id="vials">
-  <div id="vl-head"><div><div class="kick"><div class="eyebrow">Track · Vials</div><span class="tag2">Interactive</span></div><h1 id="vl-h">What is in each vial, by weight.</h1></div>
+  <div id="vl-head"><div><div class="kick"><div class="eyebrow">Dosing · Vials</div><span class="tag2">Interactive</span></div><h1 id="vl-h">What is in each vial, by weight.</h1></div>
   <p class="lede">Every number here comes from a scale, not a syringe mark: water in, concentration, each dose, what is left and when to reorder.</p></div>
   <p class="sync" id="vl-sync">Saved in this browser only</p>
 
@@ -23,6 +23,7 @@
       <p class="muted" style="margin-top:6px">The guided mix walks you through it one weigh at a time — scale check, the dry vial, the syringe tared, the water, the full vial — with a photo of the display at each step. From there the tracker keeps the ledger: concentration, every dose by weight, what's left, and when to reorder.</p>
       <p style="margin-top:12px" class="row"><button type="button" class="btn" data-vgo="wiz">Mix your first vial</button><button type="button" class="btn ghost" data-vgo="new">I have the numbers already</button></p>
     </div>
+    <div class="card wk-again" id="learn-start" style="margin-top:14px"><div><b>Before you mix or dose</b><span>The seven things to know, in two minutes. Read it again any time.</span></div><button type="button" class="btn ghost" onclick="window.qbWalk&&window.qbWalk.open()">Read it</button></div>
     <details class="card" style="margin-top:14px"><summary style="cursor:pointer;font-weight:600">The weighing protocol (every step, in order)</summary><div id="vl-howto" style="margin-top:12px;display:flex;flex-direction:column;gap:12px"></div></details>
   </div>
 

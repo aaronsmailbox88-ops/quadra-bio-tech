@@ -50,7 +50,7 @@
      Open/closed state is remembered per summary while the app is open, so a re-render does not fold what the reader opened. ===== */
   var esc = function(t){ return String(t == null ? '' : t).replace(/[&<>"']/g, function(c){ return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); };
   var TEASE = {
-    'learn-trials': 'Phases 1–4, placebo and randomization, what a participant goes through',
+    'learn-trials': 'Phases 1–4, placebo and randomization',
     'learn-results': 'Percent vs pounds, points vs percent, dropouts, unpublished results',
     'learn-levels': 'Half-life, steady state, saturation, half-lives across the family',
     'learn-effects': 'What the trials saw, when to stop and be seen, what they monitored',
@@ -84,11 +84,15 @@
     Array.prototype.forEach.call(root.querySelectorAll('.card'), function(c){ if (c.closest('.subs, details.sub')) return; splitCard(c, scope); });
     Array.prototype.forEach.call(root.querySelectorAll('details:not(.tile):not(.sub):not([data-tiled])'), function(d){ d.classList.add('sub'); d.removeAttribute('open'); d.setAttribute('data-tiled', '1'); });
   }
+  /* Learn lives under the Peptides tabs (v103): each topic is a collapsed tile at the foot of the tab it explains */
+  var LEARN_HOME = { results: ['learn-results'], effects: ['learn-effects'], levels: ['learn-levels'], trials: ['learn-trials'], status: ['learn-status', 'learn-coa'] };
+  var LEARN_NODES = {};
   function tileLearn(){
-    var sec = document.querySelector('section[data-panel="learn"]'); if (!sec || sec.getAttribute('data-tiled')) return; sec.setAttribute('data-tiled', '1');
+    var sec = document.getElementById('learn-pool'); if (!sec || sec.getAttribute('data-tiled')) return; sec.setAttribute('data-tiled', '1');
+    Array.prototype.forEach.call(sec.querySelectorAll(':scope > [id^="learn-"]'), function(n){ LEARN_NODES[n.id] = n; });
     Array.prototype.forEach.call(sec.querySelectorAll(':scope > div[id^="learn-"]'), function(div){
       var h2 = div.querySelector('h2'); if (!h2) return; var id = div.id;
-      var d = mkDetails('tile', 'learn', h2.textContent, TEASE[id] || ''); d.id = id; div.removeAttribute('id');
+      var d = mkDetails('tile', 'learn', h2.textContent, TEASE[id] || ''); d.id = id; div.removeAttribute('id'); LEARN_NODES[id] = d;
       var wrap = h2.parentNode; h2.remove(); if (wrap !== div && !wrap.children.length && !wrap.textContent.trim()) wrap.remove();
       var body = d.lastChild; while (div.firstChild) body.appendChild(div.firstChild);
       /* a second h2 inside the topic (e.g. "What a participant experiences") becomes a sub-tile holding what follows it */
@@ -100,7 +104,17 @@
   function tilePeptide(){
     ['trials', 'effects', 'status', 'dosing'].forEach(function(id){ var p = document.querySelector('section[data-panel="' + id + '"]'); if (p) subTiles(p, id); });
   }
-  function tiles(){ try { tileLearn(); tilePeptide(); } catch (e) {} }
+  function placeLearn(){
+    Object.keys(LEARN_HOME).forEach(function(panel){
+      var sec = document.querySelector('section[data-panel="' + panel + '"]'); if (!sec) return;
+      var wrap = sec.querySelector(':scope > .learn-more');
+      if (!wrap) { wrap = document.createElement('div'); wrap.className = 'learn-more'; wrap.innerHTML = '<div class="eyebrow">Learn \u00b7 the background</div>'; var ft = sec.querySelector(':scope > footer'); if (ft) sec.insertBefore(wrap, ft); else sec.appendChild(wrap); }
+      LEARN_HOME[panel].forEach(function(id){ var n = LEARN_NODES[id]; if (n && n.parentNode !== wrap) wrap.appendChild(n); });
+      /* the half-life table is shown once: the tab's own copy wins when it has one */
+      if (panel === 'levels') { var hl = document.getElementById('learn-hl'); if (hl) hl.hidden = Array.prototype.some.call(sec.querySelectorAll('.hl'), function(e){ return !e.closest('.learn-more'); }); }
+    });
+  }
+  function tiles(){ try { tileLearn(); tilePeptide(); placeLearn(); } catch (e) {} }
   window.qbTiles = tiles;
   tiles();
 })();

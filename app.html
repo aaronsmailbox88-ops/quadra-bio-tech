@@ -799,6 +799,11 @@ details.tile .row{gap:8px}
 .pepnone{padding:18px 12px;color:var(--ink-3)}
 body.pep-open{overflow:hidden}
 
+/* Learn reading at the foot of each Peptides tab (v103) */
+.learn-more{display:flex;flex-direction:column;gap:10px;margin-top:10px;padding-top:16px;border-top:1px solid var(--line)}
+.learn-more>.eyebrow{margin-bottom:2px}
+.learn-more .wk-again{margin-bottom:0}
+
 #vials .sync{font-size:.74rem;color:var(--ink-2);display:inline-flex;align-items:center;gap:6px}
 #vials .sync::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--ink-2)}
 #vials .sync.on::before{background:var(--good)}
@@ -986,15 +991,8 @@ body.pep-open{overflow:hidden}
 <section data-panel="status" aria-labelledby="st-h" hidden></section>
 <section data-panel="dosing" aria-labelledby="do-h" hidden></section>
 
-<!-- ============ LEARN ============ -->
-<section data-panel="learn" aria-labelledby="ln-h" hidden>
-  <div>
-    <div class="kick"><div class="eyebrow">Learn</div><span class="tag2">Guides &amp; tools</span></div>
-    <h1 id="ln-h">How peptide drugs are studied, and how to read what you find here.</h1>
-  </div>
-  <p class="lede">Everything in the Peptides section comes from trials, product labels and regulators. This section explains the machinery behind those numbers: what a trial is, what the results mean, why half-life matters, what the side-effect tables are really saying, and why this app measures by weight.</p>
-
-  <div class="card wk-again" id="learn-start"><div><b>Before you mix or dose</b><span>The seven things to know, in two minutes. Shown once after sign-in; read it again any time.</span></div><button type="button" class="btn ghost" onclick="window.qbWalk&&window.qbWalk.open()">Read it</button></div>
+<!-- ============ LEARN (background reading; placed under the matching Peptides tab by part_fx.js) ============ -->
+<div id="learn-pool" hidden>
   <div class="card wk-again" id="learn-coa"><div><b>COA Checker</b><span>Type what is on your vial and what the certificate says; six checks, one verdict. Every check has an example certificate behind it.</span></div><button type="button" class="btn" data-coa="learn">Check a COA</button></div>
 
   <div id="learn-trials">
@@ -1007,8 +1005,6 @@ body.pep-open{overflow:hidden}
       <div class="card"><h3>Phase 4 · What happens at scale?</h3><p style="font-size:14px;color:var(--ink-2)">After approval: rare side effects, long-term outcomes, new uses. Labels are updated as this evidence arrives.</p></div>
     </div>
     <div class="card" style="margin-top:12px"><h3>Placebo and randomization</h3><p style="font-size:14px;color:var(--ink-2)">A trial result is never "people lost 20%." It is "people on the drug lost 20% and people on placebo, doing the same diet and visits, lost 2%." The difference between the two is the drug's effect, and that placebo-adjusted number is what this app reports first. Randomization (a computer assigning each person to a group) and blinding (nobody knowing who got what until the end) are what make that comparison fair.</p></div>
-    <div style="margin-top:14px"><h2>What a participant experiences</h2></div>
-    <ol class="steps" id="learn-steps"></ol>
   </div>
 
   <div id="learn-results">
@@ -1050,19 +1046,7 @@ body.pep-open{overflow:hidden}
     <div class="card" style="margin-top:12px"><h3>What a certificate of analysis does and does not prove</h3><p style="font-size:14px;color:var(--ink-2)">A COA from an independent lab shows purity (what fraction of the material is the intended peptide), identity (the mass spectrum matches) and sometimes net content (how many milligrams of actual peptide are in the vial, as opposed to salt and water). A purity figure alone does not say how much is in the vial, and a COA for one batch says nothing about another. A sealed vial cannot be checked on a scale; the powder's weight is not the peptide's weight.</p></div>
   </div>
 
-  <div id="learn-units">
-    <h2>Units, millilitres and milligrams</h2>
-    <div id="learn-units-body" style="margin-top:10px"></div>
-  </div>
-
-  <div id="learn-weigh">
-    <h2>Why this app measures by weight, and exactly how</h2>
-    <div class="card" style="margin-top:10px">
-      <p style="font-size:14px;color:var(--ink-2)">Syringe marks measure volume by eye, on a tube a few millimetres wide, against a label that may not be true. A pocket scale measures the same liquid to a thousandth of a gram, and water weighs exactly one gram per millilitre. So each peptide’s Dosing tab and the Vial tracker in the Track section never ask for units or syringe marks: they ask what the scale showed, and do the arithmetic from there. The protocol below is the whole method, step by step.</p>
-    </div>
-    <div id="learn-protocol" style="margin-top:12px;display:flex;flex-direction:column;gap:12px"></div>
-  </div>
-</section>
+</div>
 
 <!-- ============ TRACK ============ -->
 <section data-panel="track" aria-labelledby="tk-h" hidden>
@@ -1179,7 +1163,7 @@ body.pep-open{overflow:hidden}
 <!-- ============ VIALS ============ -->
 <section data-panel="vials" aria-labelledby="vl-h" hidden>
 <div id="vials">
-  <div id="vl-head"><div><div class="kick"><div class="eyebrow">Track · Vials</div><span class="tag2">Interactive</span></div><h1 id="vl-h">What is in each vial, by weight.</h1></div>
+  <div id="vl-head"><div><div class="kick"><div class="eyebrow">Dosing · Vials</div><span class="tag2">Interactive</span></div><h1 id="vl-h">What is in each vial, by weight.</h1></div>
   <p class="lede">Every number here comes from a scale, not a syringe mark: water in, concentration, each dose, what is left and when to reorder.</p></div>
   <p class="sync" id="vl-sync">Saved in this browser only</p>
 
@@ -1201,6 +1185,7 @@ body.pep-open{overflow:hidden}
       <p class="muted" style="margin-top:6px">The guided mix walks you through it one weigh at a time — scale check, the dry vial, the syringe tared, the water, the full vial — with a photo of the display at each step. From there the tracker keeps the ledger: concentration, every dose by weight, what's left, and when to reorder.</p>
       <p style="margin-top:12px" class="row"><button type="button" class="btn" data-vgo="wiz">Mix your first vial</button><button type="button" class="btn ghost" data-vgo="new">I have the numbers already</button></p>
     </div>
+    <div class="card wk-again" id="learn-start" style="margin-top:14px"><div><b>Before you mix or dose</b><span>The seven things to know, in two minutes. Read it again any time.</span></div><button type="button" class="btn ghost" onclick="window.qbWalk&&window.qbWalk.open()">Read it</button></div>
     <details class="card" style="margin-top:14px"><summary style="cursor:pointer;font-weight:600">The weighing protocol (every step, in order)</summary><div id="vl-howto" style="margin-top:12px;display:flex;flex-direction:column;gap:12px"></div></details>
   </div>
 
@@ -1270,8 +1255,8 @@ body.pep-open{overflow:hidden}
   <div class="in" role="tablist">
     <button type="button" data-mode="pep" role="tab" aria-selected="true" id="tab-pep">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6M10 3v5.5L5 17a3 3 0 0 0 2.6 4.5h8.8A3 3 0 0 0 19 17l-5-8.5V3"/><path d="M7.5 15h9"/></svg>Peptides</button>
-    <button type="button" data-mode="learn" role="tab" aria-selected="false" id="tab-learn">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5V5.5M8 7h8M8 10.5h8"/></svg>Learn</button>
+    <button type="button" data-mode="dose" role="tab" aria-selected="false" id="tab-dose">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.5 2.5l3 3"/><path d="M17 7l3-3"/><path d="M19.5 5.5l-2 2"/><path d="M15.5 6.5l-9 9a2.1 2.1 0 0 0 0 3 2.1 2.1 0 0 0 3 0l9-9z"/><path d="M6.5 15.5l-4 4"/><path d="M11 11l2.5 2.5M9 13l1.5 1.5"/></svg>Dosing</button>
     <button type="button" data-mode="shop" role="tab" aria-selected="false" id="tab-shop">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7h12l1 13H5L6 7z"/><path d="M9 7V5a3 3 0 0 1 6 0v2"/><path d="M9 11v1a3 3 0 0 0 6 0v-1"/></svg>Shop</button>
     <button type="button" data-mode="track" role="tab" aria-selected="false" id="tab-track">
@@ -2041,7 +2026,7 @@ function renderOverview(P){
       (o.mechanism.parts || []).map(function(m){ return '<div class="hormone"><b>' + esc(m.name) + '</b><span>' + esc(m.text) + '</span></div>'; }).join('') + '</div>';
   }
   if (o.more) h += detailsList([o.more]);
-  h += '<div class="card"><h3>Dosing and vial tracking, by weight</h3><p style="font-size:14px;color:var(--ink-2)">What the trials dosed, what a vial of ' + esc(P.name) + ' makes at a given amount of water, the grams to draw for a dose, how many doses are left and when to reorder. Measured with a scale, not syringe marks.</p><div class="btn-row"><a class="btn" href="#' + P.id + '.dosing">Dosing</a><a class="btn ghost" href="#track.vials">Vial tracker</a></div></div>';
+  h += '<div class="card"><h3>Dosing and vial tracking, by weight</h3><p style="font-size:14px;color:var(--ink-2)">What the trials dosed, what a vial of ' + esc(P.name) + ' makes at a given amount of water, the grams to draw for a dose, how many doses are left and when to reorder. Measured with a scale, not syringe marks.</p><div class="btn-row"><a class="btn" href="#' + P.id + '.dosing">Dosing</a><a class="btn ghost" href="#dose.vials">Vial tracker</a></div></div>';
   return h;
 }
 function renderResults(P){
@@ -2156,7 +2141,7 @@ function renderDosing(P){
     '<div class="btn-row"><button type="button" class="btn" id="do-track">Track this vial</button><a class="btn ghost" href="#learn.weigh">How to weigh</a></div>' +
     '<div id="do-animwrap" hidden style="margin-top:14px;border-top:1px solid var(--line);padding-top:12px"><h3 style="margin:0">What the draw looks like</h3><p style="font-size:13px;color:var(--ink-2);margin-top:4px">The syringe fills to the dose you typed. Marks are the guide; the scale is the measurement.</p><div id="do-anim" class="syr-slot"></div></div></div>';
   h += renderTitration(P);
-  h += '<div style="margin-top:6px"><h2>The weighing protocol</h2><p class="lede" style="font-size:15px;margin-top:4px">Every step, in order, every time. The same text is under Learn \u2192 Weighing and inside the Vial tracker.</p></div>' + renderProtocol();
+  h += '<div id="do-protocol" style="margin-top:6px"><h2>The weighing protocol</h2><p class="lede" style="font-size:15px;margin-top:4px">Every step, in order, every time. The same text is inside the Vial tracker.</p></div>' + renderProtocol();
   h += UNITS_NOTE;
   return h;
 }
@@ -2197,7 +2182,7 @@ function wireDosing(P){
   calc();
   document.getElementById('do-track').addEventListener('click', function(){
     var pre = { name: P.name, mg: num('do-mg'), water: num('do-water'), dose: num('do-dose'), perWeek: num('do-pw'), lead: num('do-lead') };
-    location.hash = '#track.vials';
+    location.hash = '#dose.mix';
     if (window.vlNewVial) window.vlNewVial(pre);
   });
 }
@@ -2215,7 +2200,7 @@ function renderStatus(P){
       return '<li>' + esc(src.text) + (src.url ? ' <a href="' + esc(src.url) + '" target="_blank" rel="noopener">' + esc(host || 'link') + '</a>' : '') + '</li>';
     }).join('') + '</ol></div></details>';
   }
-  h += '<footer>Educational summary of published evidence. App version 102, built 21 Nov 2026. Not medical advice and not a guide to using any product. Talk to a doctor about any treatment decision.</footer>';
+  h += '<footer>Educational summary of published evidence. App version 103, built 21 Nov 2026. Not medical advice and not a guide to using any product. Talk to a doctor about any treatment decision.</footer>';
   return h;
 }
 
@@ -2228,30 +2213,30 @@ function renderPeptide(P){
   document.querySelector('[data-panel="trials"]').innerHTML = renderTrials(P);
   document.querySelector('[data-panel="status"]').innerHTML = renderStatus(P);
   document.querySelector('[data-panel="dosing"]').innerHTML = renderDosing(P); wireDosing(P);
+  if (window.qbTiles) window.qbTiles();   /* sub-tiles, and the Learn reading placed under each tab */
   var pill = document.getElementById('pill');
   pill.textContent = P.pill; pill.className = 'pill ' + (P.group === 'approved' ? 'ok' : (P.group === 'trials' ? 'soon' : 'no'));
   var sel = document.getElementById('pep'); if (sel.value !== P.id) sel.value = P.id;
   Array.prototype.slice.call(document.querySelectorAll('.hl li')).forEach(function(li){ li.classList.toggle('now', li.getAttribute('data-id') === P.id); });
   initSim(P.levels.pk);
-  if (window.qbTiles) window.qbTiles();
 }
 
-/* ===== Learn section: inject shared content ===== */
+/* ===== Learn blocks (placed under the Peptides tabs by part_fx.js): inject shared content ===== */
 (function(){
-  var st = document.getElementById('learn-steps'); if (st) st.innerHTML = PARTICIPANT_STEPS.map(function(s){ return '<li><b>' + esc(s[0]) + '</b><span>' + esc(s[1]) + '</span></li>'; }).join('');
   var hl = document.getElementById('learn-hl'); if (hl) hl.innerHTML = HL_TABLE;
-  var un = document.getElementById('learn-units-body'); if (un) un.innerHTML = UNITS_NOTE.replace('<details>', '<details open>');
-  var lw = document.getElementById('learn-protocol'); if (lw) lw.innerHTML = renderProtocol();
   var vh = document.getElementById('vl-howto'); if (vh) vh.innerHTML = renderProtocol();
 })();
 
-/* ===== Modes (Peptides / Learn / Track), sub-tabs and router ===== */
+/* ===== Modes (Peptides / Dosing / Shop / Track), sub-tabs and router ===== */
 (function(){
   var $ = function(s){ return document.querySelector(s); }, $$ = function(s){ return Array.prototype.slice.call(document.querySelectorAll(s)); };
   var PTABS = ['overview', 'results', 'effects', 'levels', 'trials', 'status', 'dosing'];
   var PLABEL = { overview: 'Overview', results: 'Results', effects: 'Effects', levels: 'Levels', trials: 'Trials', status: 'Status', dosing: 'Dosing' };
-  var TTABS = { track: 'Vitals', levels: 'Levels', mix: 'Mix a vial', vials: 'Vial tracker' };
-  var LEARN = [['learn-trials', 'Trials'], ['learn-results', 'Results'], ['learn-levels', 'Levels'], ['learn-effects', 'Side effects'], ['learn-status', 'Status'], ['learn-units', 'Units'], ['learn-weigh', 'Weighing']];
+  var DTABS = { vials: 'Vial tracker', mix: 'Mix a vial', levels: 'Levels' };   /* Dosing: the app's home */
+  var TTABS = { track: 'Vitals' };
+  /* the old Learn topics now sit under the matching Peptides tab; #learn.x and #coa links land there */
+  var LEARN_TAB = { 'learn-trials': 'trials', 'learn-results': 'results', 'learn-levels': 'levels', 'learn-effects': 'effects', 'learn-status': 'status', 'learn-coa': 'status', 'learn-units': 'dosing', 'learn-weigh': 'dosing' };
+  var LEARN_ANCHOR = { 'learn-units': 'do-protocol', 'learn-weigh': 'do-protocol' };   /* the Dosing tab already carries the protocol and the units warning */
   var modeBtns = $$('nav.tabs [data-mode]'), panels = $$('section[data-panel]'), sel = $('#pep'), pepWrap = $('.pep-wrap'), pill = $('#pill'), title = $('#mode-title'), sub = $('#sub-in');
   var BADGE = (function(){ var m = document.querySelector('.pep-wrap .brandmark'); return m ? m.outerHTML : ''; })();
   var groups = { approved: 'Approved medicines', trials: 'In clinical trials', research: 'Sold as "research chemicals"' };
@@ -2300,30 +2285,35 @@ function renderPeptide(P){
     }).catch(function(){});
   })();
   buildSelect();
-  var mode = 'pep', tab = 'overview', ttab = 'track';
+  var mode = 'dose', tab = 'overview', ttab = 'track', dtab = 'vials';
   function showPanel(id){ panels.forEach(function(p){ p.hidden = p.getAttribute('data-panel') !== id; }); }
   function renderSub(){
     if (mode === 'pep') sub.innerHTML = PTABS.map(function(t){ return '<button type="button" role="tab" data-tab="' + t + '" aria-selected="' + (t === tab) + '">' + PLABEL[t] + '</button>'; }).join('');
+    else if (mode === 'dose') sub.innerHTML = Object.keys(DTABS).map(function(t){ return '<button type="button" role="tab" data-dtab="' + t + '" aria-selected="' + (t === dtab) + '">' + DTABS[t] + '</button>'; }).join('');
     else if (mode === 'track') sub.innerHTML = Object.keys(TTABS).map(function(t){ return '<button type="button" role="tab" data-ttab="' + t + '" aria-selected="' + (t === ttab) + '">' + TTABS[t] + '</button>'; }).join('');
-    else if (mode === 'shop') sub.innerHTML = '';
-    else sub.innerHTML = LEARN.map(function(l){ return '<button type="button" data-anchor="' + l[0] + '">' + l[1] + '</button>'; }).join('');
+    else sub.innerHTML = '';
     var on = sub.querySelector('[aria-selected="true"]'); if (on && on.scrollIntoView) { try { on.scrollIntoView({ block: 'nearest', inline: 'center' }); } catch (e) {} }
   }
   function apply(){
     modeBtns.forEach(function(b){ b.setAttribute('aria-selected', b.getAttribute('data-mode') === mode ? 'true' : 'false'); });
     pepWrap.hidden = mode !== 'pep'; pill.hidden = mode !== 'pep'; title.hidden = mode === 'pep'; paintFav();
-    var subNav = sub.closest('nav'); if (subNav) subNav.hidden = mode === 'shop';
-    if (mode !== 'pep') title.innerHTML = (mode === 'learn' ? 'Learn' : mode === 'shop' ? 'Shop' : 'Track') + '<small class="brandline">' + BADGE + 'Quadra Bio Tech' + (window.qbAcctHtml ? window.qbAcctHtml() : '') + '</small>';
-    if (mode === 'pep') showPanel(tab); else if (mode === 'learn') showPanel('learn'); else if (mode === 'shop') { showPanel('shop'); if (window.qbShopRender) window.qbShopRender(); } else { showPanel(ttab === 'mix' ? 'vials' : ttab === 'levels' ? 'live' : ttab); if (ttab === 'mix') { if (window.vtMix) window.vtMix(); else window.__wantMix = true; } else if (ttab === 'vials' && window.vtLeaveMix) window.vtLeaveMix(); else if (ttab === 'levels' && window.lvRender) window.lvRender(); }
+    var subNav = sub.closest('nav'); if (subNav) subNav.hidden = (mode === 'shop' || mode === 'track');
+    if (mode !== 'pep') title.innerHTML = (mode === 'dose' ? 'Dosing' : mode === 'shop' ? 'Shop' : 'Track') + '<small class="brandline">' + BADGE + 'Quadra Bio Tech' + (window.qbAcctHtml ? window.qbAcctHtml() : '') + '</small>';
+    if (mode === 'pep') showPanel(tab);
+    else if (mode === 'shop') { showPanel('shop'); if (window.qbShopRender) window.qbShopRender(); }
+    else if (mode === 'dose') { showPanel(dtab === 'levels' ? 'live' : 'vials'); if (dtab === 'mix') { if (window.vtMix) window.vtMix(); else window.__wantMix = true; } else if (dtab === 'vials' && window.vtLeaveMix) window.vtLeaveMix(); else if (dtab === 'levels' && window.lvRender) window.lvRender(); }
+    else showPanel('track');
     renderSub();
   }
-  function setHash(){ var h = mode === 'pep' ? (CURRENT ? CURRENT.id : 'retatrutide') + '.' + tab : (mode === 'learn' ? 'learn' : mode === 'shop' ? 'shop' : (ttab === 'vials' ? 'track.vials' : ttab === 'mix' ? 'track.mix' : ttab === 'levels' ? 'track.levels' : 'track')); try { history.replaceState(null, '', '#' + h); } catch (e) {} }
+  function setHash(){ var h = mode === 'pep' ? (CURRENT ? CURRENT.id : 'retatrutide') + '.' + tab : (mode === 'dose' ? 'dose.' + dtab : mode === 'shop' ? 'shop' : 'track'); try { history.replaceState(null, '', '#' + h); } catch (e) {} }
   function parse(h){
     h = (h || '').replace('#', ''); if (!h) return {};
-    if (h === 'coa') return { mode: 'learn', anchor: 'learn-coa', coa: true };
+    if (h === 'coa') return { mode: 'pep', tab: 'status', anchor: 'learn-coa', coa: true };
     if (h === 'shop' || h.indexOf('shop.') === 0) return { mode: 'shop' };
-    if (h === 'learn' || h.indexOf('learn.') === 0) return { mode: 'learn', anchor: h.indexOf('learn.') === 0 ? 'learn-' + h.slice(6) : '' };
-    if (h === 'track' || h.indexOf('track.') === 0) return { mode: 'track', ttab: h === 'track.vials' ? 'vials' : h === 'track.mix' ? 'mix' : h === 'track.levels' ? 'levels' : 'track' };
+    if (h === 'learn' || h.indexOf('learn.') === 0) { var la = h.indexOf('learn.') === 0 ? 'learn-' + h.slice(6) : ''; return LEARN_TAB[la] ? { mode: 'pep', tab: LEARN_TAB[la], anchor: LEARN_ANCHOR[la] || la } : { mode: 'pep' }; }
+    if (h === 'dose' || h.indexOf('dose.') === 0) return { mode: 'dose', dtab: DTABS[h.slice(5)] ? h.slice(5) : 'vials' };
+    if (h === 'track.vials' || h === 'track.mix' || h === 'track.levels') return { mode: 'dose', dtab: h.slice(6) };   /* old bookmarks */
+    if (h === 'track' || h.indexOf('track.') === 0) return { mode: 'track', ttab: 'track' };
     var i = h.indexOf('.'), out = { mode: 'pep' };
     if (i >= 0){ out.pep = h.slice(0, i); out.tab = h.slice(i + 1); if (out.tab === 'track') { out.mode = 'track'; out.ttab = 'track'; delete out.tab; } }  /* old #pep.track bookmarks */
     else if (BY[h]) out.pep = h; else out.tab = h;
@@ -2334,26 +2324,30 @@ function renderPeptide(P){
     if (o.pep || !CURRENT){ var P = BY[o.pep] || CURRENT || BY.retatrutide || PEPTIDES[0]; if (!CURRENT || CURRENT.id !== P.id) renderPeptide(P); }
     if (o.tab && PTABS.indexOf(o.tab) >= 0) tab = o.tab;
     if (o.ttab && TTABS[o.ttab]) ttab = o.ttab;
+    if (o.dtab && DTABS[o.dtab]) dtab = o.dtab;
     apply(); setHash();
     if (o.coa) setTimeout(function(){ if (window.qbCOA) window.qbCOA.open(); }, 80);
-    if (o.anchor){ var an = document.getElementById(o.anchor); if (an){ if (an.tagName === 'DETAILS') an.open = true; setTimeout(function(){ window.scrollTo(0, an.getBoundingClientRect().top + window.pageYOffset - 120); }, 30); scroll = false; } }
-    try { localStorage.setItem('mp-mode', mode); localStorage.setItem('mp-pep', CURRENT.id); localStorage.setItem('mp-tab', tab); localStorage.setItem('mp-ttab', ttab); } catch (e) {}
+    if (o.anchor){ scroll = false; setTimeout(function(){ var an = document.getElementById(o.anchor); if (!an) return; if (an.tagName === 'DETAILS') an.open = true; window.scrollTo(0, an.getBoundingClientRect().top + window.pageYOffset - 120); }, 60); }
+    try { localStorage.setItem('mp-mode', mode); localStorage.setItem('mp-pep', CURRENT.id); localStorage.setItem('mp-tab', tab); localStorage.setItem('mp-ttab', ttab); localStorage.setItem('mp-dtab', dtab); } catch (e) {}
     if (scroll) window.scrollTo(0, 0);
   }
   var h0 = parse(location.hash);
+  /* a fresh start opens on Dosing (the vial tracker); within a session the page keeps the hash it was on */
+  var cold = true; try { cold = !sessionStorage.getItem('qb-open'); sessionStorage.setItem('qb-open', '1'); } catch (e) {}
+  if (cold && (!h0.mode || (h0.mode === 'pep' && !h0.anchor && !h0.coa))) h0 = { mode: 'dose', dtab: 'vials' };
   try {
-    if (!h0.mode) { var m = localStorage.getItem('mp-mode'); if (m === 'learn' || m === 'track' || m === 'shop') h0.mode = m; var tt = localStorage.getItem('mp-ttab'); if (tt && !h0.ttab) h0.ttab = tt; }
+    if (!h0.mode) { var m = localStorage.getItem('mp-mode'); if (m === 'track' || m === 'shop' || m === 'dose') h0.mode = m; else if (m === 'pep' || m === 'learn') h0.mode = 'pep'; var dt = localStorage.getItem('mp-dtab'); if (dt && !h0.dtab && DTABS[dt]) h0.dtab = dt; }
     if (!h0.pep) h0.pep = localStorage.getItem('mp-pep') || 'retatrutide';
     if (!h0.tab) h0.tab = localStorage.getItem('mp-tab') || 'overview';
   } catch (e) { h0.pep = h0.pep || 'retatrutide'; }
-  if (!h0.mode) h0.mode = 'pep';
+  if (!h0.mode) h0.mode = 'dose';
   go(h0, false);
   modeBtns.forEach(function(b){ b.addEventListener('click', function(){ go({ mode: b.getAttribute('data-mode') }, true); }); });
   sub.addEventListener('click', function(e){
     var b = e.target.closest('button'); if (!b) return;
     if (b.hasAttribute('data-tab')) go({ mode: 'pep', tab: b.getAttribute('data-tab') }, true);
     else if (b.hasAttribute('data-ttab')) go({ mode: 'track', ttab: b.getAttribute('data-ttab') }, true);
-    else if (b.hasAttribute('data-anchor')) { var el = document.getElementById(b.getAttribute('data-anchor')); if (el) { if (el.tagName === 'DETAILS') el.open = true; var y = el.getBoundingClientRect().top + window.pageYOffset - 120; window.scrollTo({ top: y, behavior: 'smooth' }); } }
+    else if (b.hasAttribute('data-dtab')) go({ mode: 'dose', dtab: b.getAttribute('data-dtab') }, true);
   });
   sel.addEventListener('change', function(){ go({ mode: 'pep', pep: sel.value }, true); });
   /* searchable picker: the <select> keeps the value and the change event; a button opens a sheet with a search box and the groups A to Z */
@@ -3409,9 +3403,9 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
     $$('[data-w]',box).forEach(function(b){ b.addEventListener('click',function(){ var a=b.getAttribute('data-w');
       if(a==='back'){ if(W.step>0){W.step--; wSave(); wRender(); window.scrollTo(0,0)} }
       else if(a==='next'){ if(!wReady(key)) return; if(key==='syr'){ d.newSyringe=false; if(d.returnTo){ var idx=wSteps().indexOf(d.returnTo); d.returnTo=''; W.step=idx>=0?idx:W.step+1 } else W.step++ } else W.step++; wSave(); wRender(); window.scrollTo(0,0) }
-      else if(a==='cancel'){ if(b.getAttribute('data-armed')){ wClear(); vgo(''); if(location.hash==='#track.mix') location.hash='#track.vials' } else { b.setAttribute('data-armed','1'); b.textContent='Tap again to discard this vial'; setTimeout(function(){b.removeAttribute('data-armed'); b.textContent='Cancel'},3000) } }
+      else if(a==='cancel'){ if(b.getAttribute('data-armed')){ wClear(); vgo(''); if(location.hash==='#dose.mix') location.hash='#dose.vials' } else { b.setAttribute('data-armed','1'); b.textContent='Tap again to discard this vial'; setTimeout(function(){b.removeAttribute('data-armed'); b.textContent='Cancel'},3000) } }
       else if(a==='save'){ ['check','zero','dry','full'].concat(d.nofilter?[]:['fdry','ffull']).concat(Object.keys(d.draws).map(function(k){return 'draw'+k})).forEach(function(k){ if(!d.photos[k]) d.photos[k]={kind:kindOf(k), t:new Date().toISOString(), g:null, checked:false, ok:false, issues:[], seen:'', saved:false, nophoto:true} });
-        var v=wVial(); if(!(v.label_mg>0)||!(v.full_g>v.dry_g)){ toast('Weights are missing'); return } v.created=new Date().toISOString(); v.bw_no=(+d.bw>0)?Math.round(+d.bw):null; if(v.bw_no&&v.status!=='rejected') bwLog(v.bw_no,v.mixed_on||dstr(today()),v.id); v.weights=[{t:v.created, g:v.filtered?v.filtered.full_g:v.full_g}]; state.vials.push(v); var id=W.id; var rej=v.status==='rejected'; W=null; wSave(); VIEW='vial-'+id; commit(); if(location.hash==='#track.mix') location.hash='#track.vials'; window.scrollTo(0,0); toast(rej?'Recorded as rejected':'Vial saved') }
+        var v=wVial(); if(!(v.label_mg>0)||!(v.full_g>v.dry_g)){ toast('Weights are missing'); return } v.created=new Date().toISOString(); v.bw_no=(+d.bw>0)?Math.round(+d.bw):null; if(v.bw_no&&v.status!=='rejected') bwLog(v.bw_no,v.mixed_on||dstr(today()),v.id); v.weights=[{t:v.created, g:v.filtered?v.filtered.full_g:v.full_g}]; state.vials.push(v); var id=W.id; var rej=v.status==='rejected'; W=null; wSave(); VIEW='vial-'+id; commit(); if(location.hash==='#dose.mix') location.hash='#dose.vials'; window.scrollTo(0,0); toast(rej?'Recorded as rejected':'Vial saved') }
     }) });
   }
   function wReady(key){ var d=W.d;
@@ -3431,14 +3425,14 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
     if(h.indexOf('vial-')===0) renderVial(h.slice(5)); if(h==='new'){ newCalc(); var nm=$('#n-mixed'); if(nm&&!nm.value) nm.value=dstr(today()); var nbw=$('#n-bw'); if(nbw) nbw.innerHTML=bwOptions(nbw.value); var nd=$('#n-dil'); if(nd&&!nd.__dil){ nd.__dil=1; nd.addEventListener('change',function(){ var ne=$('#n-exp'), note=$('#n-dil-note'); if(nd.value==='Sterile water'){ if(ne&&(!ne.value||+ne.value===28)) ne.value=1 } else if(ne&&+ne.value===1) ne.value=28; if(note) note.innerHTML=dilNote(nd.value) }) } } if(h==='wiz'){ if(!W) wInit(); wRender() } }
   var VIEW='';
   function vgo(v){ VIEW=v||''; render(); var s=document.getElementById('vials'); if(s&&!s.closest('section').hidden) window.scrollTo(0,0); }
-  // the mixing guide is its own page (#track.mix); the tracker page (#track.vials) never shows it
+  // the mixing guide is its own page (#dose.mix); the tracker page (#dose.vials) never shows it
   window.vtMix=function(){ if(!W) wStart(); else vgo('wiz'); };
   if(window.__wantMix){ window.__wantMix=false; setTimeout(function(){ window.vtMix() },0); }
   window.vlVials=function(){ return state.vials };
   window.vtLeaveMix=function(){ if(VIEW==='wiz') vgo(''); };
   document.addEventListener('click',function(e){ var el=e.target.closest('[data-vgo]'); if(!el||!document.getElementById('vials').contains(el)) return; e.preventDefault(); var t=el.getAttribute('data-vgo');
-    if(t==='wiz'){ location.hash='#track.mix'; return } if(t===''||t==='list'){ if(location.hash==='#track.mix'){ location.hash='#track.vials'; return } }
-    if(location.hash==='#track.mix'){ vgo(t); location.hash='#track.vials'; return }
+    if(t==='wiz'){ location.hash='#dose.mix'; return } if(t===''||t==='list'){ if(location.hash==='#dose.mix'){ location.hash='#dose.vials'; return } }
+    if(location.hash==='#dose.mix'){ vgo(t); location.hash='#dose.vials'; return }
     vgo(t); });
   document.addEventListener('keydown',function(e){ if(e.key!=='Enter') return; var el=e.target.closest('[data-vgo][role="link"]'); if(el){ e.preventDefault(); vgo(el.getAttribute('data-vgo')); } });
   window.vlNewVial=function(pre){ wStart(pre||null) };
@@ -3559,18 +3553,18 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
   var sec = document.querySelector('[data-panel="live"]'); if (sec && !sec.hidden) render();   // app.js may have shown the panel before this module loaded
 })();
 
-/* ===== First-run walkthrough: "Read this before mixing or dosing". Shown once per account after sign-in (or first open); reopenable from Learn. ===== */
+/* ===== First-run walkthrough: "Read this before mixing or dosing". Shown once per account after sign-in (or first open); reopenable from the vial tracker. ===== */
 (function(){
   'use strict';
   var esc = function(s){ return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){ return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); };
   var PAGES = [
     { k: 'Before you start', h: 'Read this before mixing or dosing.', p: ['Five minutes now saves a vial later.', 'This app explains the published research on each peptide and keeps your records straight. It is an educational tool: not medical advice, and it sells nothing.'] },
     { k: 'The peptide', h: 'NO 3RD PARTY COA. NO DOSE.', warn: 'If your supply does not have a current third-party Certificate of Analysis (COA) naming the brand, the batch number, and the product contained inside the vial, you have an untested product, and you should not use it.', p: ['A COA is the independent lab\u2019s report for your exact lot: purity and identity, not a generic sheet from the seller.', 'A pre-filled pen sold as a research product cannot be matched to a COA.'] },
-    { k: 'The method', h: 'Everything is weighed.', p: ['Syringe marks lie; a 0.001 g scale does not. The water going in, every draw and what is left in the vial are all weighed, and the app does the arithmetic.', 'Say milligrams, never units. The kit you need is under Learn, with one-click ordering.'] },
+    { k: 'The method', h: 'Everything is weighed.', p: ['Syringe marks lie; a 0.001 g scale does not. The water going in, every draw and what is left in the vial are all weighed, and the app does the arithmetic.', 'Say milligrams, never units. The kit you need is under Shop, with one-click ordering.'] },
     { k: 'Mixing', h: 'Water, filter, look.', p: ['Bacteriostatic water only; plain sterile water makes a single-session vial.', 'Push the finished solution through a 0.22 µm filter into a new sterile vial, then hold it up to the light: perfectly clear, no floating particles, all powder dissolved. If not, do not use that vial.', 'The Mix a vial wizard walks you through it one step at a time.'] },
-    { k: 'Dosing', h: 'Low, slow, logged.', p: ['Start at the lowest step and stay there until your weekly weigh-in plateaus. Whether you can feel the drug is not the signal; the scale is.', 'Log each dose right after you draw it. Track → Levels then shows how much is in your blood at any moment.'] },
+    { k: 'Dosing', h: 'Low, slow, logged.', p: ['Start at the lowest step and stay there until your weekly weigh-in plateaus. Whether you can feel the drug is not the signal; the scale is.', 'Log each dose right after you draw it. Dosing → Levels then shows how much is in your blood at any moment.'] },
     { k: 'Safety', h: 'Know the warning signs first.', p: ['Side effects cluster in the days after a dose step and usually ease. Each peptide page lists its own warning signs under Effects, with what to do and when to stop. Read it before the first dose.', 'If something feels seriously wrong, stop and get medical care. This app cannot judge that for you.'] },
-    { k: 'Where things live', h: 'Three tabs.', p: ['Peptides: the evidence, dose by dose.', 'Learn: setting up the scale, mixing, dosing, what to order.', 'Track: vitals, live levels, your vials and the mixing wizard.', 'You can read this again any time from Learn.'] }
+    { k: 'Where things live', h: 'Four tabs.', p: ['Dosing: your vials, the mixing wizard and live levels. The app opens here.', 'Peptides: the evidence, dose by dose, with the background reading under each tab.', 'Shop: the kit, with one-click ordering.', 'Track: blood pressure, blood sugar, weight.', 'You can read this again any time from Dosing → Vial tracker.'] }
   ];
   var box = null, i = 0, done = false, doc = null;
 
@@ -3769,7 +3763,7 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
         var a = b.getAttribute('data-ck');
         if (a === 'close') close();
         else if (a === 'save') { save(); var t = document.createElement('div'); t.className = 'qb-toast'; t.textContent = 'Saved under Checked vials'; document.body.appendChild(t); setTimeout(function(){ t.remove(); }, 1800); }
-        else if (a === 'mix') { var en = save(); close(); location.hash = '#track.vials'; setTimeout(function(){ if (window.vlNewVial) window.vlNewVial({ name: en.pep, mg: num(en.mg), src: (en.sup ? en.sup + ' · ' : '') + 'lot ' + en.lot + ' · COA checked' }); }, 60); }
+        else if (a === 'mix') { var en = save(); close(); location.hash = '#dose.mix'; setTimeout(function(){ if (window.vlNewVial) window.vlNewVial({ name: en.pep, mg: num(en.mg), src: (en.sup ? en.sup + ' · ' : '') + 'lot ' + en.lot + ' · COA checked' }); }, 60); }
       });
     }
     box.innerHTML = html(); paintChecks(); paintSaved(); box.scrollTop = 0;
@@ -3963,7 +3957,7 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
      Open/closed state is remembered per summary while the app is open, so a re-render does not fold what the reader opened. ===== */
   var esc = function(t){ return String(t == null ? '' : t).replace(/[&<>"']/g, function(c){ return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); };
   var TEASE = {
-    'learn-trials': 'Phases 1–4, placebo and randomization, what a participant goes through',
+    'learn-trials': 'Phases 1–4, placebo and randomization',
     'learn-results': 'Percent vs pounds, points vs percent, dropouts, unpublished results',
     'learn-levels': 'Half-life, steady state, saturation, half-lives across the family',
     'learn-effects': 'What the trials saw, when to stop and be seen, what they monitored',
@@ -3997,11 +3991,15 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
     Array.prototype.forEach.call(root.querySelectorAll('.card'), function(c){ if (c.closest('.subs, details.sub')) return; splitCard(c, scope); });
     Array.prototype.forEach.call(root.querySelectorAll('details:not(.tile):not(.sub):not([data-tiled])'), function(d){ d.classList.add('sub'); d.removeAttribute('open'); d.setAttribute('data-tiled', '1'); });
   }
+  /* Learn lives under the Peptides tabs (v103): each topic is a collapsed tile at the foot of the tab it explains */
+  var LEARN_HOME = { results: ['learn-results'], effects: ['learn-effects'], levels: ['learn-levels'], trials: ['learn-trials'], status: ['learn-status', 'learn-coa'] };
+  var LEARN_NODES = {};
   function tileLearn(){
-    var sec = document.querySelector('section[data-panel="learn"]'); if (!sec || sec.getAttribute('data-tiled')) return; sec.setAttribute('data-tiled', '1');
+    var sec = document.getElementById('learn-pool'); if (!sec || sec.getAttribute('data-tiled')) return; sec.setAttribute('data-tiled', '1');
+    Array.prototype.forEach.call(sec.querySelectorAll(':scope > [id^="learn-"]'), function(n){ LEARN_NODES[n.id] = n; });
     Array.prototype.forEach.call(sec.querySelectorAll(':scope > div[id^="learn-"]'), function(div){
       var h2 = div.querySelector('h2'); if (!h2) return; var id = div.id;
-      var d = mkDetails('tile', 'learn', h2.textContent, TEASE[id] || ''); d.id = id; div.removeAttribute('id');
+      var d = mkDetails('tile', 'learn', h2.textContent, TEASE[id] || ''); d.id = id; div.removeAttribute('id'); LEARN_NODES[id] = d;
       var wrap = h2.parentNode; h2.remove(); if (wrap !== div && !wrap.children.length && !wrap.textContent.trim()) wrap.remove();
       var body = d.lastChild; while (div.firstChild) body.appendChild(div.firstChild);
       /* a second h2 inside the topic (e.g. "What a participant experiences") becomes a sub-tile holding what follows it */
@@ -4013,7 +4011,17 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
   function tilePeptide(){
     ['trials', 'effects', 'status', 'dosing'].forEach(function(id){ var p = document.querySelector('section[data-panel="' + id + '"]'); if (p) subTiles(p, id); });
   }
-  function tiles(){ try { tileLearn(); tilePeptide(); } catch (e) {} }
+  function placeLearn(){
+    Object.keys(LEARN_HOME).forEach(function(panel){
+      var sec = document.querySelector('section[data-panel="' + panel + '"]'); if (!sec) return;
+      var wrap = sec.querySelector(':scope > .learn-more');
+      if (!wrap) { wrap = document.createElement('div'); wrap.className = 'learn-more'; wrap.innerHTML = '<div class="eyebrow">Learn \u00b7 the background</div>'; var ft = sec.querySelector(':scope > footer'); if (ft) sec.insertBefore(wrap, ft); else sec.appendChild(wrap); }
+      LEARN_HOME[panel].forEach(function(id){ var n = LEARN_NODES[id]; if (n && n.parentNode !== wrap) wrap.appendChild(n); });
+      /* the half-life table is shown once: the tab's own copy wins when it has one */
+      if (panel === 'levels') { var hl = document.getElementById('learn-hl'); if (hl) hl.hidden = Array.prototype.some.call(sec.querySelectorAll('.hl'), function(e){ return !e.closest('.learn-more'); }); }
+    });
+  }
+  function tiles(){ try { tileLearn(); tilePeptide(); placeLearn(); } catch (e) {} }
   window.qbTiles = tiles;
   tiles();
 })();

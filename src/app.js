@@ -76,7 +76,7 @@ function renderOverview(P){
       (o.mechanism.parts || []).map(function(m){ return '<div class="hormone"><b>' + esc(m.name) + '</b><span>' + esc(m.text) + '</span></div>'; }).join('') + '</div>';
   }
   if (o.more) h += detailsList([o.more]);
-  h += '<div class="card"><h3>Dosing and vial tracking, by weight</h3><p style="font-size:14px;color:var(--ink-2)">What the trials dosed, what a vial of ' + esc(P.name) + ' makes at a given amount of water, the grams to draw for a dose, how many doses are left and when to reorder. Measured with a scale, not syringe marks.</p><div class="btn-row"><a class="btn" href="#' + P.id + '.dosing">Dosing</a><a class="btn ghost" href="#track.vials">Vial tracker</a></div></div>';
+  h += '<div class="card"><h3>Dosing and vial tracking, by weight</h3><p style="font-size:14px;color:var(--ink-2)">What the trials dosed, what a vial of ' + esc(P.name) + ' makes at a given amount of water, the grams to draw for a dose, how many doses are left and when to reorder. Measured with a scale, not syringe marks.</p><div class="btn-row"><a class="btn" href="#' + P.id + '.dosing">Dosing</a><a class="btn ghost" href="#dose.vials">Vial tracker</a></div></div>';
   return h;
 }
 function renderResults(P){
@@ -191,7 +191,7 @@ function renderDosing(P){
     '<div class="btn-row"><button type="button" class="btn" id="do-track">Track this vial</button><a class="btn ghost" href="#learn.weigh">How to weigh</a></div>' +
     '<div id="do-animwrap" hidden style="margin-top:14px;border-top:1px solid var(--line);padding-top:12px"><h3 style="margin:0">What the draw looks like</h3><p style="font-size:13px;color:var(--ink-2);margin-top:4px">The syringe fills to the dose you typed. Marks are the guide; the scale is the measurement.</p><div id="do-anim" class="syr-slot"></div></div></div>';
   h += renderTitration(P);
-  h += '<div style="margin-top:6px"><h2>The weighing protocol</h2><p class="lede" style="font-size:15px;margin-top:4px">Every step, in order, every time. The same text is under Learn \u2192 Weighing and inside the Vial tracker.</p></div>' + renderProtocol();
+  h += '<div id="do-protocol" style="margin-top:6px"><h2>The weighing protocol</h2><p class="lede" style="font-size:15px;margin-top:4px">Every step, in order, every time. The same text is inside the Vial tracker.</p></div>' + renderProtocol();
   h += UNITS_NOTE;
   return h;
 }
@@ -232,7 +232,7 @@ function wireDosing(P){
   calc();
   document.getElementById('do-track').addEventListener('click', function(){
     var pre = { name: P.name, mg: num('do-mg'), water: num('do-water'), dose: num('do-dose'), perWeek: num('do-pw'), lead: num('do-lead') };
-    location.hash = '#track.vials';
+    location.hash = '#dose.mix';
     if (window.vlNewVial) window.vlNewVial(pre);
   });
 }
@@ -263,30 +263,30 @@ function renderPeptide(P){
   document.querySelector('[data-panel="trials"]').innerHTML = renderTrials(P);
   document.querySelector('[data-panel="status"]').innerHTML = renderStatus(P);
   document.querySelector('[data-panel="dosing"]').innerHTML = renderDosing(P); wireDosing(P);
+  if (window.qbTiles) window.qbTiles();   /* sub-tiles, and the Learn reading placed under each tab */
   var pill = document.getElementById('pill');
   pill.textContent = P.pill; pill.className = 'pill ' + (P.group === 'approved' ? 'ok' : (P.group === 'trials' ? 'soon' : 'no'));
   var sel = document.getElementById('pep'); if (sel.value !== P.id) sel.value = P.id;
   Array.prototype.slice.call(document.querySelectorAll('.hl li')).forEach(function(li){ li.classList.toggle('now', li.getAttribute('data-id') === P.id); });
   initSim(P.levels.pk);
-  if (window.qbTiles) window.qbTiles();
 }
 
-/* ===== Learn section: inject shared content ===== */
+/* ===== Learn blocks (placed under the Peptides tabs by part_fx.js): inject shared content ===== */
 (function(){
-  var st = document.getElementById('learn-steps'); if (st) st.innerHTML = PARTICIPANT_STEPS.map(function(s){ return '<li><b>' + esc(s[0]) + '</b><span>' + esc(s[1]) + '</span></li>'; }).join('');
   var hl = document.getElementById('learn-hl'); if (hl) hl.innerHTML = HL_TABLE;
-  var un = document.getElementById('learn-units-body'); if (un) un.innerHTML = UNITS_NOTE.replace('<details>', '<details open>');
-  var lw = document.getElementById('learn-protocol'); if (lw) lw.innerHTML = renderProtocol();
   var vh = document.getElementById('vl-howto'); if (vh) vh.innerHTML = renderProtocol();
 })();
 
-/* ===== Modes (Peptides / Learn / Track), sub-tabs and router ===== */
+/* ===== Modes (Peptides / Dosing / Shop / Track), sub-tabs and router ===== */
 (function(){
   var $ = function(s){ return document.querySelector(s); }, $$ = function(s){ return Array.prototype.slice.call(document.querySelectorAll(s)); };
   var PTABS = ['overview', 'results', 'effects', 'levels', 'trials', 'status', 'dosing'];
   var PLABEL = { overview: 'Overview', results: 'Results', effects: 'Effects', levels: 'Levels', trials: 'Trials', status: 'Status', dosing: 'Dosing' };
-  var TTABS = { track: 'Vitals', levels: 'Levels', mix: 'Mix a vial', vials: 'Vial tracker' };
-  var LEARN = [['learn-trials', 'Trials'], ['learn-results', 'Results'], ['learn-levels', 'Levels'], ['learn-effects', 'Side effects'], ['learn-status', 'Status'], ['learn-units', 'Units'], ['learn-weigh', 'Weighing']];
+  var DTABS = { vials: 'Vial tracker', mix: 'Mix a vial', levels: 'Levels' };   /* Dosing: the app's home */
+  var TTABS = { track: 'Vitals' };
+  /* the old Learn topics now sit under the matching Peptides tab; #learn.x and #coa links land there */
+  var LEARN_TAB = { 'learn-trials': 'trials', 'learn-results': 'results', 'learn-levels': 'levels', 'learn-effects': 'effects', 'learn-status': 'status', 'learn-coa': 'status', 'learn-units': 'dosing', 'learn-weigh': 'dosing' };
+  var LEARN_ANCHOR = { 'learn-units': 'do-protocol', 'learn-weigh': 'do-protocol' };   /* the Dosing tab already carries the protocol and the units warning */
   var modeBtns = $$('nav.tabs [data-mode]'), panels = $$('section[data-panel]'), sel = $('#pep'), pepWrap = $('.pep-wrap'), pill = $('#pill'), title = $('#mode-title'), sub = $('#sub-in');
   var BADGE = (function(){ var m = document.querySelector('.pep-wrap .brandmark'); return m ? m.outerHTML : ''; })();
   var groups = { approved: 'Approved medicines', trials: 'In clinical trials', research: 'Sold as "research chemicals"' };
@@ -335,30 +335,35 @@ function renderPeptide(P){
     }).catch(function(){});
   })();
   buildSelect();
-  var mode = 'pep', tab = 'overview', ttab = 'track';
+  var mode = 'dose', tab = 'overview', ttab = 'track', dtab = 'vials';
   function showPanel(id){ panels.forEach(function(p){ p.hidden = p.getAttribute('data-panel') !== id; }); }
   function renderSub(){
     if (mode === 'pep') sub.innerHTML = PTABS.map(function(t){ return '<button type="button" role="tab" data-tab="' + t + '" aria-selected="' + (t === tab) + '">' + PLABEL[t] + '</button>'; }).join('');
+    else if (mode === 'dose') sub.innerHTML = Object.keys(DTABS).map(function(t){ return '<button type="button" role="tab" data-dtab="' + t + '" aria-selected="' + (t === dtab) + '">' + DTABS[t] + '</button>'; }).join('');
     else if (mode === 'track') sub.innerHTML = Object.keys(TTABS).map(function(t){ return '<button type="button" role="tab" data-ttab="' + t + '" aria-selected="' + (t === ttab) + '">' + TTABS[t] + '</button>'; }).join('');
-    else if (mode === 'shop') sub.innerHTML = '';
-    else sub.innerHTML = LEARN.map(function(l){ return '<button type="button" data-anchor="' + l[0] + '">' + l[1] + '</button>'; }).join('');
+    else sub.innerHTML = '';
     var on = sub.querySelector('[aria-selected="true"]'); if (on && on.scrollIntoView) { try { on.scrollIntoView({ block: 'nearest', inline: 'center' }); } catch (e) {} }
   }
   function apply(){
     modeBtns.forEach(function(b){ b.setAttribute('aria-selected', b.getAttribute('data-mode') === mode ? 'true' : 'false'); });
     pepWrap.hidden = mode !== 'pep'; pill.hidden = mode !== 'pep'; title.hidden = mode === 'pep'; paintFav();
-    var subNav = sub.closest('nav'); if (subNav) subNav.hidden = mode === 'shop';
-    if (mode !== 'pep') title.innerHTML = (mode === 'learn' ? 'Learn' : mode === 'shop' ? 'Shop' : 'Track') + '<small class="brandline">' + BADGE + 'Quadra Bio Tech' + (window.qbAcctHtml ? window.qbAcctHtml() : '') + '</small>';
-    if (mode === 'pep') showPanel(tab); else if (mode === 'learn') showPanel('learn'); else if (mode === 'shop') { showPanel('shop'); if (window.qbShopRender) window.qbShopRender(); } else { showPanel(ttab === 'mix' ? 'vials' : ttab === 'levels' ? 'live' : ttab); if (ttab === 'mix') { if (window.vtMix) window.vtMix(); else window.__wantMix = true; } else if (ttab === 'vials' && window.vtLeaveMix) window.vtLeaveMix(); else if (ttab === 'levels' && window.lvRender) window.lvRender(); }
+    var subNav = sub.closest('nav'); if (subNav) subNav.hidden = (mode === 'shop' || mode === 'track');
+    if (mode !== 'pep') title.innerHTML = (mode === 'dose' ? 'Dosing' : mode === 'shop' ? 'Shop' : 'Track') + '<small class="brandline">' + BADGE + 'Quadra Bio Tech' + (window.qbAcctHtml ? window.qbAcctHtml() : '') + '</small>';
+    if (mode === 'pep') showPanel(tab);
+    else if (mode === 'shop') { showPanel('shop'); if (window.qbShopRender) window.qbShopRender(); }
+    else if (mode === 'dose') { showPanel(dtab === 'levels' ? 'live' : 'vials'); if (dtab === 'mix') { if (window.vtMix) window.vtMix(); else window.__wantMix = true; } else if (dtab === 'vials' && window.vtLeaveMix) window.vtLeaveMix(); else if (dtab === 'levels' && window.lvRender) window.lvRender(); }
+    else showPanel('track');
     renderSub();
   }
-  function setHash(){ var h = mode === 'pep' ? (CURRENT ? CURRENT.id : 'retatrutide') + '.' + tab : (mode === 'learn' ? 'learn' : mode === 'shop' ? 'shop' : (ttab === 'vials' ? 'track.vials' : ttab === 'mix' ? 'track.mix' : ttab === 'levels' ? 'track.levels' : 'track')); try { history.replaceState(null, '', '#' + h); } catch (e) {} }
+  function setHash(){ var h = mode === 'pep' ? (CURRENT ? CURRENT.id : 'retatrutide') + '.' + tab : (mode === 'dose' ? 'dose.' + dtab : mode === 'shop' ? 'shop' : 'track'); try { history.replaceState(null, '', '#' + h); } catch (e) {} }
   function parse(h){
     h = (h || '').replace('#', ''); if (!h) return {};
-    if (h === 'coa') return { mode: 'learn', anchor: 'learn-coa', coa: true };
+    if (h === 'coa') return { mode: 'pep', tab: 'status', anchor: 'learn-coa', coa: true };
     if (h === 'shop' || h.indexOf('shop.') === 0) return { mode: 'shop' };
-    if (h === 'learn' || h.indexOf('learn.') === 0) return { mode: 'learn', anchor: h.indexOf('learn.') === 0 ? 'learn-' + h.slice(6) : '' };
-    if (h === 'track' || h.indexOf('track.') === 0) return { mode: 'track', ttab: h === 'track.vials' ? 'vials' : h === 'track.mix' ? 'mix' : h === 'track.levels' ? 'levels' : 'track' };
+    if (h === 'learn' || h.indexOf('learn.') === 0) { var la = h.indexOf('learn.') === 0 ? 'learn-' + h.slice(6) : ''; return LEARN_TAB[la] ? { mode: 'pep', tab: LEARN_TAB[la], anchor: LEARN_ANCHOR[la] || la } : { mode: 'pep' }; }
+    if (h === 'dose' || h.indexOf('dose.') === 0) return { mode: 'dose', dtab: DTABS[h.slice(5)] ? h.slice(5) : 'vials' };
+    if (h === 'track.vials' || h === 'track.mix' || h === 'track.levels') return { mode: 'dose', dtab: h.slice(6) };   /* old bookmarks */
+    if (h === 'track' || h.indexOf('track.') === 0) return { mode: 'track', ttab: 'track' };
     var i = h.indexOf('.'), out = { mode: 'pep' };
     if (i >= 0){ out.pep = h.slice(0, i); out.tab = h.slice(i + 1); if (out.tab === 'track') { out.mode = 'track'; out.ttab = 'track'; delete out.tab; } }  /* old #pep.track bookmarks */
     else if (BY[h]) out.pep = h; else out.tab = h;
@@ -369,26 +374,30 @@ function renderPeptide(P){
     if (o.pep || !CURRENT){ var P = BY[o.pep] || CURRENT || BY.retatrutide || PEPTIDES[0]; if (!CURRENT || CURRENT.id !== P.id) renderPeptide(P); }
     if (o.tab && PTABS.indexOf(o.tab) >= 0) tab = o.tab;
     if (o.ttab && TTABS[o.ttab]) ttab = o.ttab;
+    if (o.dtab && DTABS[o.dtab]) dtab = o.dtab;
     apply(); setHash();
     if (o.coa) setTimeout(function(){ if (window.qbCOA) window.qbCOA.open(); }, 80);
-    if (o.anchor){ var an = document.getElementById(o.anchor); if (an){ if (an.tagName === 'DETAILS') an.open = true; setTimeout(function(){ window.scrollTo(0, an.getBoundingClientRect().top + window.pageYOffset - 120); }, 30); scroll = false; } }
-    try { localStorage.setItem('mp-mode', mode); localStorage.setItem('mp-pep', CURRENT.id); localStorage.setItem('mp-tab', tab); localStorage.setItem('mp-ttab', ttab); } catch (e) {}
+    if (o.anchor){ scroll = false; setTimeout(function(){ var an = document.getElementById(o.anchor); if (!an) return; if (an.tagName === 'DETAILS') an.open = true; window.scrollTo(0, an.getBoundingClientRect().top + window.pageYOffset - 120); }, 60); }
+    try { localStorage.setItem('mp-mode', mode); localStorage.setItem('mp-pep', CURRENT.id); localStorage.setItem('mp-tab', tab); localStorage.setItem('mp-ttab', ttab); localStorage.setItem('mp-dtab', dtab); } catch (e) {}
     if (scroll) window.scrollTo(0, 0);
   }
   var h0 = parse(location.hash);
+  /* a fresh start opens on Dosing (the vial tracker); within a session the page keeps the hash it was on */
+  var cold = true; try { cold = !sessionStorage.getItem('qb-open'); sessionStorage.setItem('qb-open', '1'); } catch (e) {}
+  if (cold && (!h0.mode || (h0.mode === 'pep' && !h0.anchor && !h0.coa))) h0 = { mode: 'dose', dtab: 'vials' };
   try {
-    if (!h0.mode) { var m = localStorage.getItem('mp-mode'); if (m === 'learn' || m === 'track' || m === 'shop') h0.mode = m; var tt = localStorage.getItem('mp-ttab'); if (tt && !h0.ttab) h0.ttab = tt; }
+    if (!h0.mode) { var m = localStorage.getItem('mp-mode'); if (m === 'track' || m === 'shop' || m === 'dose') h0.mode = m; else if (m === 'pep' || m === 'learn') h0.mode = 'pep'; var dt = localStorage.getItem('mp-dtab'); if (dt && !h0.dtab && DTABS[dt]) h0.dtab = dt; }
     if (!h0.pep) h0.pep = localStorage.getItem('mp-pep') || 'retatrutide';
     if (!h0.tab) h0.tab = localStorage.getItem('mp-tab') || 'overview';
   } catch (e) { h0.pep = h0.pep || 'retatrutide'; }
-  if (!h0.mode) h0.mode = 'pep';
+  if (!h0.mode) h0.mode = 'dose';
   go(h0, false);
   modeBtns.forEach(function(b){ b.addEventListener('click', function(){ go({ mode: b.getAttribute('data-mode') }, true); }); });
   sub.addEventListener('click', function(e){
     var b = e.target.closest('button'); if (!b) return;
     if (b.hasAttribute('data-tab')) go({ mode: 'pep', tab: b.getAttribute('data-tab') }, true);
     else if (b.hasAttribute('data-ttab')) go({ mode: 'track', ttab: b.getAttribute('data-ttab') }, true);
-    else if (b.hasAttribute('data-anchor')) { var el = document.getElementById(b.getAttribute('data-anchor')); if (el) { if (el.tagName === 'DETAILS') el.open = true; var y = el.getBoundingClientRect().top + window.pageYOffset - 120; window.scrollTo({ top: y, behavior: 'smooth' }); } }
+    else if (b.hasAttribute('data-dtab')) go({ mode: 'dose', dtab: b.getAttribute('data-dtab') }, true);
   });
   sel.addEventListener('change', function(){ go({ mode: 'pep', pep: sel.value }, true); });
   /* searchable picker: the <select> keeps the value and the change event; a button opens a sheet with a search box and the groups A to Z */
