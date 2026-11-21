@@ -2216,7 +2216,7 @@ function renderStatus(P){
       return '<li>' + esc(src.text) + (src.url ? ' <a href="' + esc(src.url) + '" target="_blank" rel="noopener">' + esc(host || 'link') + '</a>' : '') + '</li>';
     }).join('') + '</ol></div></details>';
   }
-  h += '<footer>Educational summary of published evidence. App version 100, built 21 Nov 2026. Not medical advice and not a guide to using any product. Talk to a doctor about any treatment decision.</footer>';
+  h += '<footer>Educational summary of published evidence. App version 101, built 20 Nov 2026. Not medical advice and not a guide to using any product. Talk to a doctor about any treatment decision.</footer>';
   return h;
 }
 
@@ -3625,7 +3625,7 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
     /* front and centre, and blocking: the app cannot be used until OK (or Check COA) is tapped; shown on every launch */
     push = document.createElement('div'); push.className = 'qb-pushwrap';
     var ic = window.QB_MARK || (function(){ var m = document.querySelector('.pep-wrap .brandmark, .brandmark'); return m ? m.outerHTML : ''; })();
-    push.innerHTML = '<div class="qb-push" role="alertdialog" aria-modal="true" aria-labelledby="qb-push-h">' + (ic ? '<span class="qb-push-i">' + ic + '</span>' : '') + '<div class="qb-push-t"><div class="eyebrow">Before anything else</div><b id="qb-push-h"><span class="l1">NO 3RD PARTY COA</span><span class="l2">NO DOSE.</span></b><span>Only use a peptide with a current third-party Certificate of Analysis naming the brand, the batch number, and the product contained inside the vial. Anything else is untested. Do not use it.</span></div><div class="qb-push-b"><button type="button" class="qb-push-go">Check COA</button><button type="button" class="qb-push-x">OK, understood</button><button type="button" class="qb-push-never">Don\u2019t show this again</button></div></div>';
+    push.innerHTML = '<div class="qb-push" role="alertdialog" aria-modal="true" aria-labelledby="qb-push-h">' + (ic ? '<span class="qb-push-i">' + ic + '</span>' : '') + '<div class="qb-push-t"><div class="eyebrow">Before anything else</div><b id="qb-push-h"><span class="l1">NO 3RD PARTY COA</span><span class="l2">NO DOSE.</span></b><span>Only use a peptide for research with a current third-party Certificate of Analysis naming the brand, the batch number, and the purity of the product contained inside the vial. Anything else is untested. <b>Do not use it.</b></span></div><div class="qb-push-b"><button type="button" class="qb-push-go">Check COA</button><button type="button" class="qb-push-x">OK, understood</button><button type="button" class="qb-push-never">Don\u2019t show this again</button></div></div>';
     document.body.appendChild(push); document.body.classList.add('wk-locked');
     function off(){ if (!push) return; var el = push; push = null; el.classList.add('out'); setTimeout(function(){ el.remove(); }, 260); if (!box && !document.querySelector('.ck')) document.body.classList.remove('wk-locked'); if (then) then(); }
     push.querySelector('.qb-push-x').addEventListener('click', off);
