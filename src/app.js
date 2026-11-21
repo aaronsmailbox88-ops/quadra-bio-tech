@@ -401,7 +401,9 @@ function renderPeptide(P){
     var inp = sheet.querySelector('.pepsearch'), list = sheet.querySelector('.peplist');
     function hay(p){ return (p.name + ' ' + (p.brands || '') + ' ' + (p.maker || '') + ' ' + p.id).toLowerCase(); }
     function row(p){ return '<button type="button" role="option" class="peprow' + (p.id === sel.value ? ' on' : '') + '" data-pick="' + esc(p.id) + '" aria-selected="' + (p.id === sel.value) + '">' + esc(p.name) + (p.brands ? '<small>' + esc(p.brands) + '</small>' : '') + '</button>'; }
-    function rank(p, q){ var nm = p.name.toLowerCase(); if (nm.indexOf(q) === 0) return 0; if (nm.split(/[\s(\-]+/).some(function(w){ return w.indexOf(q) === 0; })) return 1; if (nm.indexOf(q) >= 0) return 2; if (hay(p).indexOf(q) >= 0) return 3; return -1; }
+    /* narrowing: the name starts with what was typed, then a later word of the name, then a brand or maker name; nothing matches on letters buried mid-word */
+    function starts(txt, q){ return String(txt || '').toLowerCase().split(/[\s(),\/\-]+/).some(function(w){ return w && w.indexOf(q) === 0; }); }
+    function rank(p, q){ var nm = p.name.toLowerCase(); if (nm.indexOf(q) === 0) return 0; if (starts(nm, q)) return 1; if (starts(p.brands, q)) return 2; return -1; }
     function rows(q){ q = (q || '').trim().toLowerCase(); var h = '', n = 0;
       if (q){ var hits = PEPTIDES.map(function(p){ return { p: p, r: rank(p, q) }; }).filter(function(x){ return x.r >= 0; }).sort(function(a, b){ return a.r - b.r || byName(a.p, b.p); });
         n = hits.length; h = hits.length ? '<div class="pepgrp">Matches</div>' + hits.map(function(x){ return row(x.p); }).join('') : ''; }
@@ -409,11 +411,14 @@ function renderPeptide(P){
         grp('\u2605 Favourites', FAVS.map(function(id){ return BY[id]; }).filter(Boolean));
         ['approved', 'trials', 'research'].forEach(function(g){ grp(groups[g], PEPTIDES.filter(function(p){ return p.group === g; }).slice().sort(byName)); }); }
       list.innerHTML = n ? h : '<p class="pepnone">Nothing matches \u201c' + esc(q) + '\u201d.</p>'; }
-    function open(){ sheet.hidden = false; document.body.classList.add('pep-open'); inp.value = ''; rows(''); var on = list.querySelector('.peprow.on'); if (on) on.scrollIntoView({ block: 'center' }); setTimeout(function(){ inp.focus(); }, 60); }
+    var card = sheet.querySelector('.pepsheet-card');
+    function fit(){ if (sheet.hidden) return; var vv = window.visualViewport; var h = vv ? vv.height : window.innerHeight; card.style.maxHeight = Math.max(200, h - 8) + 'px'; if (vv) card.style.transform = 'translateY(' + Math.max(0, vv.offsetTop) + 'px)'; }
+    if (window.visualViewport){ window.visualViewport.addEventListener('resize', fit); window.visualViewport.addEventListener('scroll', fit); }
+    function open(){ sheet.hidden = false; document.body.classList.add('pep-open'); inp.value = ''; rows(''); fit(); var on = list.querySelector('.peprow.on'); if (on) on.scrollIntoView({ block: 'center' }); setTimeout(function(){ inp.focus(); fit(); }, 60); }
     function close(){ sheet.hidden = true; document.body.classList.remove('pep-open'); }
     btn.addEventListener('click', open);
     sheet.addEventListener('click', function(e){ if (e.target.closest('[data-close]')) { close(); return; } var r = e.target.closest('[data-pick]'); if (r){ sel.value = r.getAttribute('data-pick'); sel.dispatchEvent(new Event('change', { bubbles: true })); close(); } });
-    inp.addEventListener('input', function(){ rows(inp.value); });
+    inp.addEventListener('input', function(){ rows(inp.value); list.scrollTop = 0; });
     sheet.addEventListener('keydown', function(e){ if (e.key === 'Escape') close(); else if (e.key === 'Enter' && e.target === inp){ var f = list.querySelector('[data-pick]'); if (f) f.click(); } });
     sel.addEventListener('change', label); window.__pepLabel = label; label();
   })();
