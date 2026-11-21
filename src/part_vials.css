@@ -172,3 +172,17 @@
 #vials .pickfield::after{content:"";width:8px;height:8px;border-right:2px solid var(--ink-3);border-bottom:2px solid var(--ink-3);transform:translateY(-2px) rotate(45deg);flex:none;margin-right:4px}
 #vials .pickfield:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 #vials select.pick-hidden{position:absolute;opacity:0;pointer-events:none;width:1px;height:1px;bottom:0;left:0}
+
+/* Enter a dose (v106) */
+#vials .btn.big.quick{display:flex;flex-direction:column;align-items:flex-start;gap:2px;width:100%;text-align:left;padding:14px 16px}
+#vials .btn.big.quick small{font-weight:500;opacity:.85;font-size:.85rem}
+#vials .dsteps li .cmt{margin-top:8px}
+#vials .dsteps li .cmt input{font:inherit}
+#vials .pcs{display:inline-flex;flex-wrap:wrap;gap:4px 10px;margin-top:4px}
+#vials .pcs .pc{white-space:nowrap}
+#vials .pstrip figcaption small{display:block;color:var(--ink-2);font-style:italic;margin-top:2px}
+#vials .steps li i.n{font-style:normal;font-weight:700;color:var(--ink)}
+#vials .steps li .uin{display:flex}
+#vials .steps li .uin .uin-in{display:block}
+#vials .steps li .uin .uin-u{display:inline-block}
+#vials .wf .uin .uin-in input{width:11ch}
