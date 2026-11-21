@@ -256,8 +256,8 @@
       +'<div class="card" style="margin-top:12px"><h3>Log a dose — in this order</h3>'+(c.nextG?'<p class="small" style="margin-top:4px"><b>Target on the scale: '+c.nextG.toFixed(3)+' g</b> for '+fmtMg(c.nextMg)+' (≈ '+units(c.nextG)+' units: pull past it to about '+Math.min(100,Math.ceil((units(c.nextG)+15)/10)*10)+', then push back).</p>':'')
       +'<form id="f-dose" style="margin-top:10px"><ol class="steps dsteps">'
       +'<li><b>Weigh the vial before you start</b><span>Cap off, outside dry. Photograph it, or enter the number manually.'+(c.expectNow!==null?' It should read <b>'+c.expectNow.toFixed(3)+' g</b>.':'')+'</span>'+weighField('d-b','The scale reads, with the vial on it',v.id+':tmp-before',c.expectNow!==null?c.expectNow.toFixed(3):'')+'</li>'
-      +'<li><b>Tare the scale on a new syringe, vent the vial, draw past the mark, push back to the mark</b><span>Bare syringe laid across the pan, resting on nothing else, press TARE (0.000). Plungerless syringe through the edge of the stopper as the vent. Draw slowly 10–20 units past your mark; tap the bubbles up; push back until the liquid sits exactly on the mark. If the plunger creeps back on its own, the vial is under vacuum — fix the vent first.</span></li>'
-      +'<li><b>Weigh the filled syringe</b><span>Lay it across the tared pan exactly as before, resting on nothing but the pan. Photograph it, or enter the number manually.</span><div class="f2" style="margin-top:6px"><label class="fl">Syringe empty (g)<input id="d-se" class="mono" type="number" step="0.001" inputmode="decimal" value="0" placeholder="Enter the number from the scale"></label>'+weighField('d-sf','The scale reads, with the filled syringe on it',v.id+':tmp-syr',c.nextG?c.nextG.toFixed(3):'0.300')+'</div></li>'
+      +'<li><b>Tare the scale on a new syringe, vent the vial, draw past the mark, push back to the mark</b><span>New syringe, needle on, caps off, laid across the pan resting on nothing else; press TARE (0.000). Plungerless syringe through the edge of the stopper as the vent. Draw slowly 10–20 units past your mark; tap the bubbles up; push back until the liquid sits exactly on the mark. If the plunger creeps back on its own, the vial is under vacuum — fix the vent first.</span></li>'
+      +'<li><b>Weigh the filled syringe</b><span>Lay it across the tared pan exactly as before, resting on nothing but the pan. The scale reads the liquid alone. Photograph it, or enter the number manually.</span>'+weighField('d-sf','The scale reads, with the filled syringe on it',v.id+':tmp-syr',c.nextG?c.nextG.toFixed(3):'0.300')+'</li>'
       +'<li><b>Weigh the vial after the draw</b><span>Vent needle out. Cap off, outside dry. Photograph it, or enter the number manually. This weight is what the vial must read before your next dose.</span>'+weighField('d-a','The scale reads, with the vial on it',v.id+':tmp-vial',c.nextG&&c.expectNow!==null?(c.expectNow-c.nextG).toFixed(3):'')+'</li>'
       +'<li><b>Check the numbers, log the dose, then inject</b><span>Nothing is injected until the box below says the dose matches.</span><div class="f2" style="margin-top:6px"><label class="fl">When<input id="d-t" type="datetime-local"></label><label class="fl">Note (optional)<input id="d-note" placeholder="e.g. second attempt, first draw frothed"></label></div></li></ol>'
       +'<div class="calc" id="d-calc">Enter the weights to see the dose.</div><p class="err" id="d-err" hidden></p><div class="row"><button class="btn" type="submit">Log this dose</button></div></form></div>'
@@ -304,9 +304,9 @@
   function fmtDose0(x){ return (Math.round(x*100)/100).toString() }
   function animOpen(){ try{ return localStorage.getItem('vt-anim')!=='0' }catch(e){ return true } }
   function wireVial(v){ var c=calc(v);
-    var tg=$('#vl-animtg'), an=$('#vl-anim'); if(tg&&an){ var showAnim=function(){ if(!an.hidden&&window.syringeAnim) window.syringeAnim(an,{g:r3(c.nextG), syringe:1, liquid:'dose', name:v.name, doseTxt:fmtMg(c.nextMg)}) }; showAnim(); tg.addEventListener('click',function(){ an.hidden=!an.hidden; try{ localStorage.setItem('vt-anim',an.hidden?'0':'1') }catch(e){} tg.textContent=an.hidden?'Show me the draw':'Hide the draw'; showAnim() }) }
+    var tg=$('#vl-animtg'), an=$('#vl-anim'); if(tg&&an){ var showAnim=function(){ if(!an.hidden&&window.syringeAnim){ if(c.nextG>0&&isFinite(c.nextMg)) window.syringeAnim(an,{g:r3(c.nextG), syringe:1, liquid:'dose', name:v.name, doseTxt:fmtMg(c.nextMg)}); else an.innerHTML='<p class="small muted">Enter today’s dose to see the draw.</p>' } }; showAnim(); tg.addEventListener('click',function(){ an.hidden=!an.hidden; try{ localStorage.setItem('vt-anim',an.hidden?'0':'1') }catch(e){} tg.textContent=an.hidden?'Show me the draw':'Hide the draw'; showAnim() }) }
     var tEl=$('#d-t'); var now=new Date(); now.setMinutes(now.getMinutes()-now.getTimezoneOffset()); tEl.value=now.toISOString().slice(0,16);
-    function doseNums(){ var se=num('d-se'), sf=num('d-sf'), b=num('d-b'), a=num('d-a'); var sm=isFinite(sf)?r3(sf-(isFinite(se)?se:0)):NaN; var ref=isFinite(b)?b:(c.expectNow!==null?c.expectNow:NaN); var vm=(isFinite(ref)&&isFinite(a))?r3(ref-a):NaN; return {sm:sm, vm:vm, b:b, a:a, ref:ref} }
+    function doseNums(){ var se=0, sf=num('d-sf'), b=num('d-b'), a=num('d-a'); var sm=isFinite(sf)?r3(sf-(isFinite(se)?se:0)):NaN; var ref=isFinite(b)?b:(c.expectNow!==null?c.expectNow:NaN); var vm=(isFinite(ref)&&isFinite(a))?r3(ref-a):NaN; return {sm:sm, vm:vm, b:b, a:a, ref:ref} }
     function doseCalc(){ var n=doseNums(); var el=$('#d-calc'); var html='';
       if(isFinite(n.b)&&c.expectNow!==null){ var db=r3(n.b-c.expectNow); html+='<span class="'+(Math.abs(db)>0.010?'err':'ok')+'">Vial before: '+n.b.toFixed(3)+' g'+(Math.abs(db)>0.010?' — '+Math.abs(db*1000).toFixed(0)+' mg '+(db<0?'less':'more')+' than the '+c.expectNow.toFixed(3)+' g recorded after the last dose. Something is off: a leak, an unlogged dose, or a different weighing set-up. Work it out before you draw.':' — matches the recorded weight.')+'</span>' }
       if(!isFinite(n.sm)||!isFinite(c.conc)){ el.innerHTML=html||'Enter the weights to see the dose.'; return }
@@ -316,7 +316,7 @@
       if(isFinite(n.vm)){ var d=r3(n.vm-ml); html+='<span class="'+(Math.abs(d)>0.010?'err':'ok')+'">Vial after: '+n.a.toFixed(3)+' g — the vial lost '+n.vm.toFixed(3)+' g'+(Math.abs(d)>0.010?', '+Math.abs(d*1000).toFixed(0)+' mg '+(d>0?'more than the syringe holds (a drop lost, or the before weight is off)':'less than the syringe holds (air in the syringe, or a reading is off)')+'. Weigh both again before you log.':', which agrees with the syringe.')+'</span>' }
       else if(isFinite(n.a)) html+='<span class="muted">Vial after: '+n.a.toFixed(3)+' g (no earlier vial weight to compare with).</span>';
       el.innerHTML=html }
-    ['d-se','d-sf','d-b','d-a'].forEach(function(id){$('#'+id).addEventListener('input',doseCalc)});
+    ['d-sf','d-b','d-a'].forEach(function(id){$('#'+id).addEventListener('input',doseCalc)});
     var dosePhotos={}; $('#f-dose').addEventListener('vt-photo',function(e){ var id=e.target&&e.target.id; if(id) dosePhotos[id]=JSON.parse(JSON.stringify(e.detail||{})) });
     $('#f-dose').addEventListener('submit',function(e){ e.preventDefault(); var err=$('#d-err'); err.hidden=true; var n=doseNums(); var ml=n.sm;
       if(!isFinite(ml)||ml<=0){err.textContent='Weigh the filled syringe first; the amount drawn must be greater than zero.';err.hidden=false;return}
@@ -329,7 +329,7 @@
       if(!ps) ps=mkNo('dose'); if(!pv) pv=mkNo('vial');
       var t=tEl.value?new Date(tEl.value).toISOString():new Date().toISOString(); var idx=v.doses.length;
       if(isFinite(n.b)) v.weights.push({t:new Date(new Date(t).getTime()-60000).toISOString(), g:n.b});
-      v.doses.push({t:t, ml:ml, mg:r3(ml*c.conc), method:'both', before_g:isFinite(n.b)?n.b:null, after_g:n.a, syr_empty_g:isFinite(num('d-se'))?num('d-se'):null, syr_full_g:num('d-sf'), note:$('#d-note').value.trim(), photo:ps, photo_vial:pv});
+      v.doses.push({t:t, ml:ml, mg:r3(ml*c.conc), method:'both', before_g:isFinite(n.b)?n.b:null, after_g:n.a, syr_empty_g:null, syr_full_g:num('d-sf'), note:$('#d-note').value.trim(), photo:ps, photo_vial:pv});
       v.weights.push({t:t, g:n.a});
       Promise.all([photoMove(v.id+':tmp-syr',v.id+':dose'+idx+'-syr'), photoMove(v.id+':tmp-vial',v.id+':dose'+idx+'-vial'), photoMove(v.id+':tmp-before',v.id+':dose'+idx+'-before')]).then(function(){ if(VIEW==='vial-'+v.id) renderPhotos(v) });
       toast('Dose logged: '+fmtMg(ml*c.conc)); commit() });
@@ -350,22 +350,22 @@
   }
 
   // ---------- classic new-vial form (numbers already in hand)
-  function newCalc(){ var dry=num('n-dry'), full=num('n-full'), mg=num('n-mg'), se=num('n-se'), sf=num('n-sf'); var el=$('#n-calc');
+  function newCalc(){ var dry=num('n-dry'), full=num('n-full'), mg=num('n-mg'), se=0, sf=num('n-sf'); var el=$('#n-calc');
     if(!isFinite(dry)||!isFinite(full)){el.innerHTML='Enter the dry and after-water weights to see the measured volume and concentration.';return}
     var water=r3(full-dry); var html='<span>Water in the vial: <b>'+water.toFixed(3)+' g = '+water.toFixed(3)+' mL</b></span>';
     if(isFinite(sf)&&isFinite(se)){var sw=r3(sf-se); var d=r3(sw-water); html+='<span class="'+(Math.abs(d)>Math.max(0.02,0.05*sw)?'err':'muted')+'">Syringe delivered '+sw.toFixed(3)+' mL'+(Math.abs(d)>Math.max(0.02,0.05*sw)?' — '+Math.abs(d).toFixed(3)+' mL '+(d>0?'never reached the vial (pushed back under pressure or leaked). The vial figure is used.':'more in the vial than the syringe shows — check the weights.'):' — matches.')+'</span>'}
     if(isFinite(mg)&&water>0) html+='<span>Concentration: <b>'+(mg/water).toFixed(2)+' mg/mL</b> (label '+mg+' mg ÷ '+water.toFixed(3)+' mL)</span>';
     if(water<=0) html+='<span class="err">The after-water weight must be higher than the dry weight.</span>';
     el.innerHTML=html }
-  ['n-dry','n-full','n-mg','n-se','n-sf'].forEach(function(id){$('#'+id).addEventListener('input',newCalc)});
+  ['n-dry','n-full','n-mg','n-sf'].forEach(function(id){$('#'+id).addEventListener('input',newCalc)});
   $('#f-new').addEventListener('submit',function(e){ e.preventDefault(); var err=$('#n-err'); err.hidden=true;
     var name=$('#n-name').value.trim(), mg=num('n-mg'), dry=num('n-dry'), full=num('n-full');
-    var se=num('n-se'), sf=num('n-sf');
-    if(!name||!isFinite(mg)||mg<=0||!isFinite(dry)||!isFinite(full)||!isFinite(se)||!isFinite(sf)){err.textContent='Name, label amount and all four weights are required — the syringe is weighed empty and with the water in it.';err.hidden=false;return}
+    var se=0, sf=num('n-sf');
+    if(!name||!isFinite(mg)||mg<=0||!isFinite(dry)||!isFinite(full)||!isFinite(sf)){err.textContent='Name, label amount and all three weights are required — the vial dry, the water in the tared syringe, and the vial after.';err.hidden=false;return}
     if(full<=dry){err.textContent='The after-water weight must be higher than the dry weight.';err.hidden=false;return}
-    if(sf<=se){err.textContent='The syringe with water must weigh more than the empty syringe.';err.hidden=false;return}
+    if(sf<=0){err.textContent='The water in the syringe must be more than zero.';err.hidden=false;return}
     var d=num('n-dose'), pw=num('n-pw'), ld=NaN, nx=NaN, af=NaN;
-    var v={id:uid(), name:name, src:$('#n-src').value.trim(), label_mg:mg, diluent:$('#n-dil').value, dry_g:dry, full_g:full, syr_water_g:r3(sf-se), syr_tare_g:(se>0.2?r3(se):null), filtered:(num('n-fdry')>0&&num('n-ffull')>num('n-fdry'))?{dry_g:r3(num('n-fdry')), full_g:r3(num('n-ffull')), t:new Date().toISOString()}:null, scale_check_g:null, scale_zero_g:null, draws:[], checks:{}, planned_mg:isFinite(d)&&d>0?d:null, next_mg:isFinite(nx)&&nx>0?nx:null, step_after:isFinite(af)&&af>=0?Math.round(af):4, per_week:isFinite(pw)&&pw>=0?pw:1, lead_days:isFinite(ld)&&ld>=0?Math.round(ld):10, status:'active', ordered_on:null, created:new Date().toISOString(), mixed_on:(/^\d{4}-\d{2}-\d{2}$/.test($('#n-mixed').value)?$('#n-mixed').value:dstr(today())), expiry_days:(isFinite(num('n-exp'))&&num('n-exp')>0?Math.round(num('n-exp')):28), notes:'', doses:[], weights:[{t:new Date().toISOString(), g:(num('n-fdry')>0&&num('n-ffull')>num('n-fdry'))?r3(num('n-ffull')):full}]};
+    var v={id:uid(), name:name, src:$('#n-src').value.trim(), label_mg:mg, diluent:$('#n-dil').value, dry_g:dry, full_g:full, syr_water_g:r3(sf), syr_tare_g:null, filtered:(num('n-fdry')>0&&num('n-ffull')>num('n-fdry'))?{dry_g:r3(num('n-fdry')), full_g:r3(num('n-ffull')), t:new Date().toISOString()}:null, scale_check_g:null, scale_zero_g:null, draws:[], checks:{}, planned_mg:isFinite(d)&&d>0?d:null, next_mg:isFinite(nx)&&nx>0?nx:null, step_after:isFinite(af)&&af>=0?Math.round(af):4, per_week:isFinite(pw)&&pw>=0?pw:1, lead_days:isFinite(ld)&&ld>=0?Math.round(ld):10, status:'active', ordered_on:null, created:new Date().toISOString(), mixed_on:(/^\d{4}-\d{2}-\d{2}$/.test($('#n-mixed').value)?$('#n-mixed').value:dstr(today())), expiry_days:(isFinite(num('n-exp'))&&num('n-exp')>0?Math.round(num('n-exp')):28), notes:'', doses:[], weights:[{t:new Date().toISOString(), g:(num('n-fdry')>0&&num('n-ffull')>num('n-fdry'))?r3(num('n-ffull')):full}]};
     var nbwv=+($('#n-bw')&&$('#n-bw').value)||0; if(nbwv>0){ v.bw_no=nbwv; bwLog(nbwv,v.mixed_on||dstr(today()),v.id) }
     state.vials.push(v); $('#f-new').reset(); $('#n-pw').value='1'; $('#n-exp').value='28'; newCalc(); commit(); vgo('vial-'+v.id); toast('Vial saved') });
   window.PEP_LABEL=window.PEP_LABEL||{Retatrutide:'GLP3 (Retatrutide)'};
@@ -451,7 +451,7 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
     /* what has been entered so far, one chip per step; tap a chip to go back to that step */
     var sumChips=function(){ var out=[]; var g=function(x){ var v=f(x); return isFinite(v)?v.toFixed(3)+' g':'' };
       var lab={ vial:function(){ return d.name?(window.PEP_LABEL&&window.PEP_LABEL[d.name]||d.name)+(d.mg?' '+d.mg+' mg':''):'' }, check:function(){ return d.check?'Scale '+g(d.check)+(d.zero?' \u00b7 zero '+g(d.zero):''):'' },
-        dry:function(){ return d.dry?'Dry vial '+g(d.dry):'' }, syr:function(){ return d.tare?'Syringe '+g(d.tare)+(d.tared?' \u00b7 tared \u2713':''):'' }, plan:function(){ return d.dose?d.dose+' mg \u00d7 '+(d.pw||1)+'/wk':'' },
+        dry:function(){ return d.dry?'Dry vial '+g(d.dry):'' }, syr:function(){ return d.tared?'Syringe tared \u2713':'' }, plan:function(){ return d.dose?d.dose+' mg \u00d7 '+(d.pw||1)+'/wk':'' },
         full:function(){ return d.full?'Full vial '+g(d.full)+(d.clear?' \u00b7 clear \u2713':''):'' }, filter:function(){ return d.ffull?'Filtered '+g(d.ffull):(d.fdry?'New vial '+g(d.fdry):'') },
         water:function(){ return d.water?'BAC water '+ml(d.water)+(+d.bw>0?' · vial #'+d.bw:'')+(allDrawsDone()?' in \u2713':''):'' } };
       for(var i=0;i<W.step&&i<steps.length;i++){ var k=steps[i], t=''; if(lab[k]) t=lab[k]();
@@ -472,10 +472,9 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
         +weighField('wz-zero','The scale reads, with the weight off',W.id+':zero','0.000')+'<div id="wz-zeronote">'+zeroNote()+'</div></div>'+wNav(true,true,done,!wReady(key)) }
     else if(key==='dry'){ h=head('Weigh the dry vial','Plastic cap off (stopper and ring stay). Vial in the middle of the pan; wait for it to settle. Then vial off and press TARE so it reads 0.000 for the next weigh.')
         +weighField('wz-dry','The scale reads, with the dry vial on it',W.id+':dry','5.622')+wNav(true,true,done,!wReady(key)) }
-    else if(key==='syr'){ h=head('Weigh the empty syringe','New insulin syringe. Needle cover off, plunger cap off. Lay it across the pan, touching nothing but the pan.')
-        +(d.newSyringe?'<div class="notice bad" style="margin-bottom:12px"><b>The syringe that fell is not sterile.</b> Sharps bin. Weigh a NEW one.</div>':'')
-        +weighField('wz-tare','The scale reads, with the empty syringe on it',W.id+':syr','2.438')
-        +'<div class="tarebox"><b>Syringe still on the pan: press TARE.</b><span>It should read 0.000 with the syringe on it. Every draw is weighed against this tare.</span>'
+    else if(key==='syr'){ h=head('Tare the scale on the syringe','New insulin syringe, needle on. Needle cover off, plunger cap off. Lay it across the pan, touching nothing but the pan.')
+        +(d.newSyringe?'<div class="notice bad" style="margin-bottom:12px"><b>The syringe that fell is not sterile.</b> Sharps bin. Use a NEW one.</div>':'')
+        +'<div class="tarebox"><b>Syringe on the pan: press TARE.</b><span>It should read 0.000 with the syringe on it. If not, press TARE again. Every draw is weighed against this.</span>'
         +'<button type="button" class="btn big'+(d.tared?' ok':'')+'" data-tared="1">'+(d.tared?'✓ It reads 0.000':'It reads 0.000')+'</button></div>'+fellOff(key)+wNav(true,true,done,!wReady(key)) }
     else if(key==='plan'){ h=head('Your dose today','What you take now, and how many times a week. Change it any time on the vial page.')+'<div class="f2"><label class="fl">Dose you take now'+unitWrap('<input id="wz-dose" class="mono big-in" type="number" step="any" min="0" inputmode="decimal" value="'+esc(d.dose)+'" placeholder="3">','mg')+'</label><label class="fl">How often'+unitWrap('<input id="wz-pw" class="mono big-in" type="number" step="any" min="0" inputmode="decimal" value="'+esc(d.pw)+'">','× per week')+'</label></div>'
         +'<div id="wz-plancard">'+planCard(v,true)+'</div>'+wNav(true,true,'Next',!wReady(key)) }
@@ -549,14 +548,14 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
       if(a==='back'){ if(W.step>0){W.step--; wSave(); wRender(); window.scrollTo(0,0)} }
       else if(a==='next'){ if(!wReady(key)) return; if(key==='syr'){ d.newSyringe=false; if(d.returnTo){ var idx=wSteps().indexOf(d.returnTo); d.returnTo=''; W.step=idx>=0?idx:W.step+1 } else W.step++ } else W.step++; wSave(); wRender(); window.scrollTo(0,0) }
       else if(a==='cancel'){ if(b.getAttribute('data-armed')){ wClear(); vgo(''); if(location.hash==='#track.mix') location.hash='#track.vials' } else { b.setAttribute('data-armed','1'); b.textContent='Tap again to discard this vial'; setTimeout(function(){b.removeAttribute('data-armed'); b.textContent='Cancel'},3000) } }
-      else if(a==='save'){ ['check','zero','dry','syr','full'].concat(d.nofilter?[]:['fdry','ffull']).concat(Object.keys(d.draws).map(function(k){return 'draw'+k})).forEach(function(k){ if(!d.photos[k]) d.photos[k]={kind:kindOf(k), t:new Date().toISOString(), g:null, checked:false, ok:false, issues:[], seen:'', saved:false, nophoto:true} });
+      else if(a==='save'){ ['check','zero','dry','full'].concat(d.nofilter?[]:['fdry','ffull']).concat(Object.keys(d.draws).map(function(k){return 'draw'+k})).forEach(function(k){ if(!d.photos[k]) d.photos[k]={kind:kindOf(k), t:new Date().toISOString(), g:null, checked:false, ok:false, issues:[], seen:'', saved:false, nophoto:true} });
         var v=wVial(); if(!(v.label_mg>0)||!(v.full_g>v.dry_g)){ toast('Weights are missing'); return } v.created=new Date().toISOString(); v.bw_no=(+d.bw>0)?Math.round(+d.bw):null; if(v.bw_no&&v.status!=='rejected') bwLog(v.bw_no,v.mixed_on||dstr(today()),v.id); v.weights=[{t:v.created, g:v.filtered?v.filtered.full_g:v.full_g}]; state.vials.push(v); var id=W.id; var rej=v.status==='rejected'; W=null; wSave(); VIEW='vial-'+id; commit(); if(location.hash==='#track.mix') location.hash='#track.vials'; window.scrollTo(0,0); toast(rej?'Recorded as rejected':'Vial saved') }
     }) });
   }
   function wReady(key){ var d=W.d;
     if(key==='vial') return !!d.name&&f(d.mg)>0;
     if(key==='check'){ var ck=f(d.check), z=f(d.zero); return isFinite(ck)&&Math.abs(ck-20)<=0.010&&photoOK('check')&&isFinite(z)&&Math.abs(z)<=0.002&&photoOK('zero') }
-    if(key==='dry') return f(d.dry)>0&&photoOK('dry'); if(key==='syr') return f(d.tare)>0&&photoOK('syr')&&!!d.tared;
+    if(key==='dry') return f(d.dry)>0&&photoOK('dry'); if(key==='syr') return !!d.tared;
     if(key==='plan') return f(d.dose)>0;
     if(key==='water') return f(d.water)>0&&allDrawsDone();
     if(key==='full') return f(d.full)>f(d.dry)&&photoOK('full')&&d.clear===true;
