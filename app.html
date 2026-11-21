@@ -970,6 +970,15 @@ body.pep-open{overflow:hidden}
 #vials .bwlist{margin-top:10px}
 #vials .bwform{margin-top:12px;padding:12px;border:1px solid var(--line);border-radius:12px}
 
+/* peptide field in the mixing wizard: a button that opens the searchable picker sheet (v104) */
+#vials label.fl{position:relative}
+#vials .pickfield{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;min-width:0;text-align:left;font:inherit;font-weight:400;font-size:1rem;color:var(--ink);padding:9px 11px;border:1px solid var(--line);border-radius:8px;background:var(--bg);cursor:pointer;min-height:42px}
+#vials .pickfield>span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#vials .pickfield.empty{color:var(--ink-3)}
+#vials .pickfield::after{content:"";width:8px;height:8px;border-right:2px solid var(--ink-3);border-bottom:2px solid var(--ink-3);transform:translateY(-2px) rotate(45deg);flex:none;margin-right:4px}
+#vials .pickfield:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+#vials select.pick-hidden{position:absolute;opacity:0;pointer-events:none;width:1px;height:1px;bottom:0;left:0}
+
 </style>
 
 
@@ -2200,7 +2209,7 @@ function renderStatus(P){
       return '<li>' + esc(src.text) + (src.url ? ' <a href="' + esc(src.url) + '" target="_blank" rel="noopener">' + esc(host || 'link') + '</a>' : '') + '</li>';
     }).join('') + '</ol></div></details>';
   }
-  h += '<footer>Educational summary of published evidence. App version 103, built 21 Nov 2026. Not medical advice and not a guide to using any product. Talk to a doctor about any treatment decision.</footer>';
+  h += '<footer>Educational summary of published evidence. App version 104, built 21 Nov 2026. Not medical advice and not a guide to using any product. Talk to a doctor about any treatment decision.</footer>';
   return h;
 }
 
@@ -2350,35 +2359,44 @@ function renderPeptide(P){
     else if (b.hasAttribute('data-dtab')) go({ mode: 'dose', dtab: b.getAttribute('data-dtab') }, true);
   });
   sel.addEventListener('change', function(){ go({ mode: 'pep', pep: sel.value }, true); });
-  /* searchable picker: the <select> keeps the value and the change event; a button opens a sheet with a search box and the groups A to Z */
+  /* searchable picker sheet, shared (v104): one sheet; open it with a list of items and a callback. The header peptide
+     <select> and the mixing wizard's peptide field both use it; the <select> keeps the value and the change event. */
+  var PICK = (function(){
+    var sheet = document.createElement('div'); sheet.className = 'pepsheet'; sheet.hidden = true;
+    sheet.innerHTML = '<div class="pepsheet-bg" data-close></div><div class="pepsheet-card" role="dialog" aria-modal="true" aria-label="Choose a peptide"><div class="pepsheet-top"><input type="search" class="pepsearch" placeholder="Type a peptide name…" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" aria-label="Search peptides"><button type="button" class="pepsheet-x" data-close aria-label="Close">✕</button></div><div class="peplist" role="listbox"></div></div>';
+    document.body.appendChild(sheet);
+    var inp = sheet.querySelector('.pepsearch'), list = sheet.querySelector('.peplist'), card = sheet.querySelector('.pepsheet-card'); var cfg = null;
+    function row(it){ var on = it.id === cfg.current; return '<button type="button" role="option" class="peprow' + (on ? ' on' : '') + '" data-pick="' + esc(it.id) + '" aria-selected="' + on + '">' + esc(it.label) + (it.sub ? '<small>' + esc(it.sub) + '</small>' : '') + '</button>'; }
+    /* narrowing: the name starts with what was typed, then a later word of the name, then a brand or maker name; nothing matches on letters buried mid-word */
+    function starts(txt, q){ return String(txt || '').toLowerCase().split(/[\s(),\/\-]+/).some(function(w){ return w && w.indexOf(q) === 0; }); }
+    function rank(it, q){ var nm = it.label.toLowerCase(), alt = String(it.alt || '').toLowerCase(); if (nm.indexOf(q) === 0 || (alt && alt.indexOf(q) === 0)) return 0; if (starts(nm, q) || starts(alt, q)) return 1; if (starts(it.sub, q)) return 2; return -1; }
+    function byLabel(a, b){ return a.label.localeCompare(b.label, undefined, { sensitivity: 'base' }); }
+    function rows(q){ q = (q || '').trim().toLowerCase(); var h = '', n = 0, items = cfg.items;
+      if (q){ var seen = {}; var hits = items.filter(function(it){ if (it.always || seen[it.id]) return false; seen[it.id] = 1; return true; }).map(function(it){ return { it: it, r: rank(it, q) }; }).filter(function(x){ return x.r >= 0; }).sort(function(a, b){ return a.r - b.r || byLabel(a.it, b.it); });
+        n = hits.length; h = n ? '<div class="pepgrp">Matches</div>' + hits.map(function(x){ return row(x.it); }).join('') : ''; }
+      else { (cfg.groups || []).forEach(function(g){ var ps = items.filter(function(it){ return it.group === g && !it.always; }); if (!ps.length) return; n += ps.length; h += '<div class="pepgrp">' + esc(g) + '</div>' + ps.map(row).join(''); }); }
+      var tail = items.filter(function(it){ return it.always; }); if (tail.length){ h = (n ? h : '<p class="pepnone">Nothing matches “' + esc(q) + '”.</p>') + '<div class="pepgrp">' + esc(tail[0].group || 'Other') + '</div>' + tail.map(row).join(''); n += tail.length; }
+      list.innerHTML = n ? h : '<p class="pepnone">Nothing matches “' + esc(q) + '”.</p>'; }
+    function fit(){ if (sheet.hidden) return; var vv = window.visualViewport; var h = vv ? vv.height : window.innerHeight; card.style.maxHeight = Math.max(200, h - 8) + 'px'; if (vv) card.style.transform = 'translateY(' + Math.max(0, vv.offsetTop) + 'px)'; }
+    if (window.visualViewport){ window.visualViewport.addEventListener('resize', fit); window.visualViewport.addEventListener('scroll', fit); }
+    function open(c){ cfg = c; inp.placeholder = c.placeholder || 'Type a peptide name…'; sheet.hidden = false; document.body.classList.add('pep-open'); inp.value = ''; rows(''); fit(); var on = list.querySelector('.peprow.on'); if (on) on.scrollIntoView({ block: 'center' }); setTimeout(function(){ inp.focus(); fit(); }, 60); }
+    function close(){ sheet.hidden = true; document.body.classList.remove('pep-open'); }
+    sheet.addEventListener('click', function(e){ if (e.target.closest('[data-close]')) { close(); return; } var r = e.target.closest('[data-pick]'); if (r && cfg){ var id = r.getAttribute('data-pick'); close(); cfg.onPick(id); } });
+    inp.addEventListener('input', function(){ rows(inp.value); list.scrollTop = 0; });
+    sheet.addEventListener('keydown', function(e){ if (e.key === 'Escape') close(); else if (e.key === 'Enter' && e.target === inp){ var f = list.querySelector('[data-pick]'); if (f) f.click(); } });
+    return { open: open, close: close };
+  })();
+  window.qbPick = PICK.open;
+  window.qbPepGroups = groups;
+  /* the header peptide field: a button in place of the <select>, favourites first, then the three groups A to Z */
   (function(){
     var wrap = sel.parentNode; var btn = document.createElement('button'); btn.type = 'button'; btn.id = 'pep-btn'; btn.className = 'pepbtn'; btn.setAttribute('aria-haspopup', 'dialog'); btn.setAttribute('aria-label', 'Choose a peptide'); wrap.insertBefore(btn, sel); wrap.classList.add('has-btn');
     function label(){ var o = sel.options[sel.selectedIndex]; btn.innerHTML = '<span class="pepbtn-t">' + (o ? esc(o.textContent) : 'Choose a peptide') + '</span>'; }
-    var sheet = document.createElement('div'); sheet.className = 'pepsheet'; sheet.hidden = true;
-    sheet.innerHTML = '<div class="pepsheet-bg" data-close></div><div class="pepsheet-card" role="dialog" aria-modal="true" aria-label="Choose a peptide"><div class="pepsheet-top"><input type="search" class="pepsearch" placeholder="Type a peptide name\u2026" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" aria-label="Search peptides"><button type="button" class="pepsheet-x" data-close aria-label="Close">\u2715</button></div><div class="peplist" role="listbox"></div></div>';
-    document.body.appendChild(sheet);
-    var inp = sheet.querySelector('.pepsearch'), list = sheet.querySelector('.peplist');
-    function hay(p){ return (p.name + ' ' + (p.brands || '') + ' ' + (p.maker || '') + ' ' + p.id).toLowerCase(); }
-    function row(p){ return '<button type="button" role="option" class="peprow' + (p.id === sel.value ? ' on' : '') + '" data-pick="' + esc(p.id) + '" aria-selected="' + (p.id === sel.value) + '">' + esc(p.name) + (p.brands ? '<small>' + esc(p.brands) + '</small>' : '') + '</button>'; }
-    /* narrowing: the name starts with what was typed, then a later word of the name, then a brand or maker name; nothing matches on letters buried mid-word */
-    function starts(txt, q){ return String(txt || '').toLowerCase().split(/[\s(),\/\-]+/).some(function(w){ return w && w.indexOf(q) === 0; }); }
-    function rank(p, q){ var nm = p.name.toLowerCase(); if (nm.indexOf(q) === 0) return 0; if (starts(nm, q)) return 1; if (starts(p.brands, q)) return 2; return -1; }
-    function rows(q){ q = (q || '').trim().toLowerCase(); var h = '', n = 0;
-      if (q){ var hits = PEPTIDES.map(function(p){ return { p: p, r: rank(p, q) }; }).filter(function(x){ return x.r >= 0; }).sort(function(a, b){ return a.r - b.r || byName(a.p, b.p); });
-        n = hits.length; h = hits.length ? '<div class="pepgrp">Matches</div>' + hits.map(function(x){ return row(x.p); }).join('') : ''; }
-      else { function grp(lab, ps){ if (!ps.length) return; n += ps.length; h += '<div class="pepgrp">' + esc(lab) + '</div>' + ps.map(row).join(''); }
-        grp('\u2605 Favourites', FAVS.map(function(id){ return BY[id]; }).filter(Boolean));
-        ['approved', 'trials', 'research'].forEach(function(g){ grp(groups[g], PEPTIDES.filter(function(p){ return p.group === g; }).slice().sort(byName)); }); }
-      list.innerHTML = n ? h : '<p class="pepnone">Nothing matches \u201c' + esc(q) + '\u201d.</p>'; }
-    var card = sheet.querySelector('.pepsheet-card');
-    function fit(){ if (sheet.hidden) return; var vv = window.visualViewport; var h = vv ? vv.height : window.innerHeight; card.style.maxHeight = Math.max(200, h - 8) + 'px'; if (vv) card.style.transform = 'translateY(' + Math.max(0, vv.offsetTop) + 'px)'; }
-    if (window.visualViewport){ window.visualViewport.addEventListener('resize', fit); window.visualViewport.addEventListener('scroll', fit); }
-    function open(){ sheet.hidden = false; document.body.classList.add('pep-open'); inp.value = ''; rows(''); fit(); var on = list.querySelector('.peprow.on'); if (on) on.scrollIntoView({ block: 'center' }); setTimeout(function(){ inp.focus(); fit(); }, 60); }
-    function close(){ sheet.hidden = true; document.body.classList.remove('pep-open'); }
-    btn.addEventListener('click', open);
-    sheet.addEventListener('click', function(e){ if (e.target.closest('[data-close]')) { close(); return; } var r = e.target.closest('[data-pick]'); if (r){ sel.value = r.getAttribute('data-pick'); sel.dispatchEvent(new Event('change', { bubbles: true })); close(); } });
-    inp.addEventListener('input', function(){ rows(inp.value); list.scrollTop = 0; });
-    sheet.addEventListener('keydown', function(e){ if (e.key === 'Escape') close(); else if (e.key === 'Enter' && e.target === inp){ var f = list.querySelector('[data-pick]'); if (f) f.click(); } });
+    function items(){ var out = []; var add = function(p, g){ out.push({ id: p.id, label: p.name, sub: p.brands || '', group: g }); };
+      FAVS.map(function(id){ return BY[id]; }).filter(Boolean).forEach(function(p){ add(p, '★ Favourites'); });
+      ['approved', 'trials', 'research'].forEach(function(g){ PEPTIDES.filter(function(p){ return p.group === g; }).slice().sort(byName).forEach(function(p){ add(p, groups[g]); }); });
+      return out; }
+    btn.addEventListener('click', function(){ PICK.open({ items: items(), groups: ['★ Favourites', groups.approved, groups.trials, groups.research], current: sel.value, onPick: function(id){ sel.value = id; sel.dispatchEvent(new Event('change', { bubbles: true })); } }); });
     sel.addEventListener('change', label); window.__pepLabel = label; label();
   })();
   window.addEventListener('hashchange', function(){ var h = parse(location.hash); if (h.mode) go(h, true); });
@@ -3233,6 +3251,12 @@ function renderPeptide(P){
   function wSave(){ try{ if(W){ try{ W.key=wSteps()[W.step]||W.key }catch(e){} localStorage.setItem(LSW,JSON.stringify(W)) } else localStorage.removeItem(LSW) }catch(e){} }
   function wInit(pre){ W={id:uid(), step:0, d:{name:'', mg:'', src:'', dil:'Bacteriostatic water', dose:'', next:'', after:4, pw:1, lead:10, water:'', waterAuto:true, syr:1, check:'', zero:'', dry:'', tare:'', tared:false, stepChoice:'', draws:{}, full:'', photos:{}}}; if(pre){ if(pre.name) W.d.name=pre.name; if(pre.src) W.d.src=pre.src; if(isFinite(pre.mg)&&pre.mg>0) W.d.mg=pre.mg; if(isFinite(pre.dose)&&pre.dose>0) W.d.dose=pre.dose; if(isFinite(pre.perWeek)&&pre.perWeek>=0) W.d.pw=pre.perWeek; if(isFinite(pre.lead)&&pre.lead>=0) W.d.lead=pre.lead; if(isFinite(pre.water)&&pre.water>0){ W.d.water=pre.water; W.d.waterAuto=false } } wSave() }
   function wStart(pre){ wInit(pre); vgo('wiz') }
+  /* items for the searchable picker: every peptide in the app (label as shown, real name as an alias), then "Other" */
+  function pepGroupOrder(){ var G=window.qbPepGroups||{}; return [G.approved||'Approved medicines', G.trials||'In clinical trials', G.research||'Sold as "research chemicals"', 'Other peptides', 'Not listed'] }
+  function pepItems(){ var by={}; (window.PEPTIDES||[]).forEach(function(p){ if(p&&p.name) by[p.name]=p }); var G=window.qbPepGroups||{}; var order=pepGroupOrder();
+    var out=PEPS.map(function(n){ var p=by[n]; var lab=window.PEP_LABEL&&window.PEP_LABEL[n]||n; return {id:n, label:lab, alt:lab!==n?n:'', sub:p&&p.brands||'', group:p?(G[p.group]||order[3]):order[3]} });
+    out.sort(function(a,b){ return a.label.localeCompare(b.label,undefined,{sensitivity:'base'}) });
+    out.push({id:'__other', label:'Other (type it)', sub:'A peptide that is not in the list', group:'Not listed', always:true}); return out }
   function coaLast(){ var e=window.qbCOA&&window.qbCOA.last&&window.qbCOA.last(); if(!e) return ''; var d=new Date(e.t); return '<span class="coa-last">\u2713 Last passed check: '+esc(e.pep||'')+(e.mg?' '+esc(e.mg)+' mg':'')+' \u00b7 lot '+esc(e.lot||'')+(isNaN(d)?'':' \u00b7 '+d.toLocaleDateString(undefined,{day:'numeric',month:'short'}))+'</span>' }
   window.vtWizDraft=function(){ return W?{name:W.d.name, mg:W.d.mg, src:W.d.src}:null };
   function wClear(){ if(W){ var id=W.id; photoKeys(id+':').then(function(ks){ks.forEach(photoDel)}) } W=null; wSave() }
@@ -3396,7 +3420,10 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
     if(box.__onTick) box.removeEventListener('click',box.__onTick); box.__onTick=function(e){ if(e.target.closest('button, a, input, select, label')) return; var li=e.target&&e.target.closest&&e.target.closest('li.tick'); if(!li||!box.contains(li)) return; var id=li.getAttribute('data-tick'); if(!d.ticks) d.ticks={}; if(d.ticks[id]) delete d.ticks[id]; else d.ticks[id]=1; li.classList.toggle('done',!!d.ticks[id]); wSave() }; box.addEventListener('click',box.__onTick);
     if(box.__onDrawDone) box.removeEventListener('click',box.__onDrawDone); box.__onDrawDone=function(e){ var pb=e.target&&e.target.closest&&e.target.closest('[data-animdraw]'); if(pb&&box.contains(pb)){ d.animDraw=+pb.getAttribute('data-animdraw'); wSave(); re(); return } var b=e.target&&e.target.closest&&e.target.closest('[data-drawdone]'); if(!b||!box.contains(b)) return; var i=+b.getAttribute('data-drawdone'); if(!d.drawDone) d.drawDone={}; d.drawDone[i]=true; d.animDraw=null; d.waterin=allDrawsDone(); wSave(); re(); window.scrollTo({top:window.scrollY,behavior:'auto'}) }; box.addEventListener('click',box.__onDrawDone);
     var fb=$('[data-fell]',box); if(fb) fb.addEventListener('click',function(){ var from=fb.getAttribute('data-fell'); var m=/^draw(\d+)$/.exec(from); if(m){ delete d.draws[m[1]]; delete d.photos['draw'+m[1]]; photoDel(W.id+':draw'+m[1]) } d.tare=''; d.tared=false; delete d.photos.syr; photoDel(W.id+':syr'); d.newSyringe=true; d.returnTo=m?'water':(from==='water'?'water':''); W.step=wSteps().indexOf('syr'); wSave(); wRender(); window.scrollTo(0,0) });
-    var pep=$('#wz-pep',box); if(pep){ pep.addEventListener('change',function(){ var o=$('#wz-otherwrap',box); if(pep.value==='__other'){ o.hidden=false; d.name=$('#wz-other',box).value.trim(); $('#wz-other',box).focus() } else { o.hidden=true; d.name=pep.value } wSave(); re() }); $('#wz-other',box).addEventListener('input',function(e){ d.name=e.target.value.trim(); wSave(); re() }) }
+    var pep=$('#wz-pep',box); if(pep){ pep.addEventListener('change',function(){ var o=$('#wz-otherwrap',box); if(pep.value==='__other'){ o.hidden=false; d.name=$('#wz-other',box).value.trim(); $('#wz-other',box).focus() } else { o.hidden=true; d.name=pep.value } wSave(); re() }); $('#wz-other',box).addEventListener('input',function(e){ d.name=e.target.value.trim(); wSave(); re() });
+      if(window.qbPick){ var pb=document.createElement('button'); pb.type='button'; pb.className='pickfield'; pb.id='wz-pepbtn'; pb.setAttribute('aria-haspopup','dialog'); pep.parentNode.insertBefore(pb,pep); pep.classList.add('pick-hidden');
+        var plab=function(){ var o=pep.options[pep.selectedIndex]; var has=!!(o&&o.value); pb.innerHTML='<span>'+esc(has?o.textContent:'Choose a peptide…')+'</span>'; pb.classList.toggle('empty',!has) }; plab(); pep.addEventListener('change',plab);
+        pb.addEventListener('click',function(){ window.qbPick({ items:pepItems(), groups:pepGroupOrder(), current:pep.value, placeholder:'Type the peptide name…', onPick:function(id){ pep.value=id; pep.dispatchEvent(new Event('change',{bubbles:true})); if(id!=='__other'){ var mg=$('#wz-mg',box); if(mg&&!mg.value){ try{ mg.focus({preventScroll:true}) }catch(e){} } } } }) }) } }
     wireDraws();
     if(box.__onPhoto) box.removeEventListener('vt-photo',box.__onPhoto); box.__onPhoto=function(e){ var id=e.target&&e.target.id; var pk=photoKindOfId(id); if(!pk) return; var meta=JSON.parse(JSON.stringify(e.detail||{})); W.d.photos[pk]=meta; wSave(); re() }; box.addEventListener('vt-photo',box.__onPhoto);
     if(box.__onNoPhoto) box.removeEventListener('click',box.__onNoPhoto); box.__onNoPhoto=function(e){ var b=e.target&&e.target.closest&&e.target.closest('[data-nophoto]'); if(!b||!box.contains(b)) return; var id=b.getAttribute('data-nophoto'); var pk=photoKindOfId(id); if(!pk) return; setMeta(id,{kind:kindOf(pk), t:new Date().toISOString(), g:null, checked:false, ok:false, issues:[], seen:'', saved:false, nophoto:true}); var inp=$('#'+id,box); if(inp){ try{ inp.focus() }catch(e){} } }; box.addEventListener('click',box.__onNoPhoto);

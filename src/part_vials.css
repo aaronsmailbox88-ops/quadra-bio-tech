@@ -163,3 +163,12 @@
 #vials .bwrow>div:first-child{flex:1 1 12em;min-width:0}
 #vials .bwlist{margin-top:10px}
 #vials .bwform{margin-top:12px;padding:12px;border:1px solid var(--line);border-radius:12px}
+
+/* peptide field in the mixing wizard: a button that opens the searchable picker sheet (v104) */
+#vials label.fl{position:relative}
+#vials .pickfield{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;min-width:0;text-align:left;font:inherit;font-weight:400;font-size:1rem;color:var(--ink);padding:9px 11px;border:1px solid var(--line);border-radius:8px;background:var(--bg);cursor:pointer;min-height:42px}
+#vials .pickfield>span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#vials .pickfield.empty{color:var(--ink-3)}
+#vials .pickfield::after{content:"";width:8px;height:8px;border-right:2px solid var(--ink-3);border-bottom:2px solid var(--ink-3);transform:translateY(-2px) rotate(45deg);flex:none;margin-right:4px}
+#vials .pickfield:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+#vials select.pick-hidden{position:absolute;opacity:0;pointer-events:none;width:1px;height:1px;bottom:0;left:0}
