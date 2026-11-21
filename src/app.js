@@ -381,6 +381,8 @@ function renderPeptide(P){
     try { localStorage.setItem('mp-mode', mode); localStorage.setItem('mp-pep', CURRENT.id); localStorage.setItem('mp-tab', tab); localStorage.setItem('mp-ttab', ttab); localStorage.setItem('mp-dtab', dtab); } catch (e) {}
     if (scroll) window.scrollTo(0, 0);
   }
+  /* #import=<base64 json>: a record handed over by link (Claude, or another device); the tracker offers to import it */
+  try { var mi = /^#import=([A-Za-z0-9+\/_=-]+)$/.exec(location.hash || ''); if (mi) { var b64 = mi[1].replace(/-/g, '+').replace(/_/g, '/'); window.QB_IMPORT = decodeURIComponent(escape(atob(b64))); history.replaceState(null, '', '#dose.vials'); } } catch (e) { window.QB_IMPORT = null; }
   var h0 = parse(location.hash);
   /* a fresh start opens on Dosing (the vial tracker); within a session the page keeps the hash it was on */
   var cold = true; try { cold = !sessionStorage.getItem('qb-open'); sessionStorage.setItem('qb-open', '1'); } catch (e) {}

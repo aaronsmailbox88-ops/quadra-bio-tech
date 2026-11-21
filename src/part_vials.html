@@ -12,6 +12,7 @@
 
   <!-- Supply list -->
   <div id="vl-list">
+    <div id="vl-import" hidden style="margin-bottom:12px"></div>
     <div id="vl-quick-wrap"></div>
     <div class="row between" style="margin-bottom:10px">
       <span class="eyebrow">Supply at a glance</span>
@@ -33,6 +34,7 @@
     <p class="small"><button type="button" class="linkish" data-vgo="">← Supply</button></p>
     <h2 style="margin:8px 0 12px">New vial — numbers in hand</h2>
     <p class="small muted" style="margin:-6px 0 10px">Mixing right now? <button type="button" class="linkish" data-vgo="wiz">Use the step-by-step guide</button> instead; it weighs and photographs each step.</p>
+    <p class="small muted" style="margin:0 0 12px">Have a record file from another device or from Claude? <label class="linkish" style="cursor:pointer">Import it<input id="n-import" type="file" accept="application/json,.json" hidden></label></p>
     <form id="f-new" novalidate>
       <fieldset><legend>What it is</legend>
         <div class="f2">
