@@ -158,3 +158,8 @@
 #vials ul.wlist>li.tick.done::before{background:linear-gradient(180deg,#8ef5c0,#4ade80);border-color:rgba(74,222,128,.8)}
 #vials ul.wlist>li.tick.done::after{content:'\2713';position:absolute;left:5.5px;top:.15em;font-size:12px;font-weight:800;color:#0b1a12}
 #vials ul.wlist{padding-left:0}
+/* BAC water card */
+#vials .bwrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:10px 0;border-top:1px solid var(--line)}
+#vials .bwrow>div:first-child{flex:1 1 12em;min-width:0}
+#vials .bwlist{margin-top:10px}
+#vials .bwform{margin-top:12px;padding:12px;border:1px solid var(--line);border-radius:12px}

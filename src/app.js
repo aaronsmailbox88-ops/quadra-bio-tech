@@ -294,15 +294,16 @@ function renderPeptide(P){
   var FAVS = []; var favDoc = null, favWriting = false;
   try { FAVS = JSON.parse(localStorage.getItem('mp-favs') || '[]').filter(function(id){ return BY[id]; }); } catch (e) { FAVS = []; }
   var favBtn = $('#fav');
+  function byName(a, b){ return a.name.localeCompare(b.name, undefined, { sensitivity: 'base' }); }
   function buildSelect(){
     var cur = sel.value; sel.innerHTML = '';
     function addGroup(label, ps){ if (!ps.length) return; var og = document.createElement('optgroup'); og.label = label; ps.forEach(function(p){ var o = document.createElement('option'); o.value = p.id; o.textContent = p.name; og.appendChild(o); }); sel.appendChild(og); }
     addGroup('\u2605 Favourites', FAVS.map(function(id){ return BY[id]; }).filter(Boolean));
-    ['approved', 'trials', 'research'].forEach(function(g){ addGroup(groups[g], PEPTIDES.filter(function(p){ return p.group === g; })); });
+    ['approved', 'trials', 'research'].forEach(function(g){ addGroup(groups[g], PEPTIDES.filter(function(p){ return p.group === g; }).slice().sort(byName)); });
     if (cur) sel.value = cur;
   }
   var meas = document.createElement('span'); meas.className = 'meas'; meas.setAttribute('aria-hidden', 'true'); sel.parentNode.appendChild(meas);
-  function sizeSelect(){ var o = sel.options[sel.selectedIndex]; if (!o) return; meas.textContent = o.textContent; var max = Math.max(80, pepWrap.clientWidth - 44); sel.style.width = Math.min(meas.offsetWidth + 30, max) + 'px'; }
+  function sizeSelect(){ if (window.__pepLabel) window.__pepLabel(); var o = sel.options[sel.selectedIndex]; if (!o) return; meas.textContent = o.textContent; var max = Math.max(80, pepWrap.clientWidth - 44); sel.style.width = Math.min(meas.offsetWidth + 30, max) + 'px'; }
   window.addEventListener('resize', sizeSelect);
   function paintFav(){ sizeSelect(); var on = !!(CURRENT && FAVS.indexOf(CURRENT.id) >= 0); favBtn.setAttribute('aria-pressed', on ? 'true' : 'false'); favBtn.setAttribute('aria-label', on ? 'Remove from favourites' : 'Save as a favourite'); favBtn.title = favBtn.getAttribute('aria-label'); }
   function saveFavs(){
@@ -390,5 +391,31 @@ function renderPeptide(P){
     else if (b.hasAttribute('data-anchor')) { var el = document.getElementById(b.getAttribute('data-anchor')); if (el) { if (el.tagName === 'DETAILS') el.open = true; var y = el.getBoundingClientRect().top + window.pageYOffset - 120; window.scrollTo({ top: y, behavior: 'smooth' }); } }
   });
   sel.addEventListener('change', function(){ go({ mode: 'pep', pep: sel.value }, true); });
+  /* searchable picker: the <select> keeps the value and the change event; a button opens a sheet with a search box and the groups A to Z */
+  (function(){
+    var wrap = sel.parentNode; var btn = document.createElement('button'); btn.type = 'button'; btn.id = 'pep-btn'; btn.className = 'pepbtn'; btn.setAttribute('aria-haspopup', 'dialog'); btn.setAttribute('aria-label', 'Choose a peptide'); wrap.insertBefore(btn, sel); wrap.classList.add('has-btn');
+    function label(){ var o = sel.options[sel.selectedIndex]; btn.innerHTML = '<span class="pepbtn-t">' + (o ? esc(o.textContent) : 'Choose a peptide') + '</span>'; }
+    var sheet = document.createElement('div'); sheet.className = 'pepsheet'; sheet.hidden = true;
+    sheet.innerHTML = '<div class="pepsheet-bg" data-close></div><div class="pepsheet-card" role="dialog" aria-modal="true" aria-label="Choose a peptide"><div class="pepsheet-top"><input type="search" class="pepsearch" placeholder="Type a peptide name\u2026" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" aria-label="Search peptides"><button type="button" class="pepsheet-x" data-close aria-label="Close">\u2715</button></div><div class="peplist" role="listbox"></div></div>';
+    document.body.appendChild(sheet);
+    var inp = sheet.querySelector('.pepsearch'), list = sheet.querySelector('.peplist');
+    function hay(p){ return (p.name + ' ' + (p.brands || '') + ' ' + (p.maker || '') + ' ' + p.id).toLowerCase(); }
+    function row(p){ return '<button type="button" role="option" class="peprow' + (p.id === sel.value ? ' on' : '') + '" data-pick="' + esc(p.id) + '" aria-selected="' + (p.id === sel.value) + '">' + esc(p.name) + (p.brands ? '<small>' + esc(p.brands) + '</small>' : '') + '</button>'; }
+    function rank(p, q){ var nm = p.name.toLowerCase(); if (nm.indexOf(q) === 0) return 0; if (nm.split(/[\s(\-]+/).some(function(w){ return w.indexOf(q) === 0; })) return 1; if (nm.indexOf(q) >= 0) return 2; if (hay(p).indexOf(q) >= 0) return 3; return -1; }
+    function rows(q){ q = (q || '').trim().toLowerCase(); var h = '', n = 0;
+      if (q){ var hits = PEPTIDES.map(function(p){ return { p: p, r: rank(p, q) }; }).filter(function(x){ return x.r >= 0; }).sort(function(a, b){ return a.r - b.r || byName(a.p, b.p); });
+        n = hits.length; h = hits.length ? '<div class="pepgrp">Matches</div>' + hits.map(function(x){ return row(x.p); }).join('') : ''; }
+      else { function grp(lab, ps){ if (!ps.length) return; n += ps.length; h += '<div class="pepgrp">' + esc(lab) + '</div>' + ps.map(row).join(''); }
+        grp('\u2605 Favourites', FAVS.map(function(id){ return BY[id]; }).filter(Boolean));
+        ['approved', 'trials', 'research'].forEach(function(g){ grp(groups[g], PEPTIDES.filter(function(p){ return p.group === g; }).slice().sort(byName)); }); }
+      list.innerHTML = n ? h : '<p class="pepnone">Nothing matches \u201c' + esc(q) + '\u201d.</p>'; }
+    function open(){ sheet.hidden = false; document.body.classList.add('pep-open'); inp.value = ''; rows(''); var on = list.querySelector('.peprow.on'); if (on) on.scrollIntoView({ block: 'center' }); setTimeout(function(){ inp.focus(); }, 60); }
+    function close(){ sheet.hidden = true; document.body.classList.remove('pep-open'); }
+    btn.addEventListener('click', open);
+    sheet.addEventListener('click', function(e){ if (e.target.closest('[data-close]')) { close(); return; } var r = e.target.closest('[data-pick]'); if (r){ sel.value = r.getAttribute('data-pick'); sel.dispatchEvent(new Event('change', { bubbles: true })); close(); } });
+    inp.addEventListener('input', function(){ rows(inp.value); });
+    sheet.addEventListener('keydown', function(e){ if (e.key === 'Escape') close(); else if (e.key === 'Enter' && e.target === inp){ var f = list.querySelector('[data-pick]'); if (f) f.click(); } });
+    sel.addEventListener('change', label); window.__pepLabel = label; label();
+  })();
   window.addEventListener('hashchange', function(){ var h = parse(location.hash); if (h.mode) go(h, true); });
 })();

@@ -17,6 +17,7 @@
       <span class="row" style="gap:8px"><button type="button" class="btn sm" data-vgo="wiz">+ Mix a vial, step by step</button><button type="button" class="btn sm ghost" data-vgo="new">Enter numbers</button></span>
     </div>
     <div id="vl-cards" class="stack"></div>
+    <div id="vl-water" style="margin-top:12px"></div>
     <div id="vl-empty" class="card" hidden>
       <h2>No vials yet</h2>
       <p class="muted" style="margin-top:6px">The guided mix walks you through it one weigh at a time — scale check, the dry vial, the empty syringe, the water, the full vial — with a photo of the display at each step. From there the tracker keeps the ledger: concentration, every dose by weight, what's left, and when to reorder.</p>
@@ -37,7 +38,7 @@
           <label class="fl">Label amount (mg)<input id="n-mg" class="mono" type="number" step="any" min="0" inputmode="decimal" required placeholder="15"></label>
           <label class="fl">Source / brand (optional)<input id="n-src" placeholder="Vendor or lot"></label>
           <label class="fl">Mixed with<select id="n-dil"><option>Bacteriostatic water</option><option>Sterile water</option><option>Acetic acid 0.6%</option><option>Other</option></select></label>
-        </div><div id="n-dil-note"></div></fieldset>
+        </div><div id="n-dil-note"></div><label class="fl" style="margin-top:10px">BAC water vial number <span class="muted">(the number on the vial)</span><select id="n-bw"></select></label></fieldset>
       <fieldset><legend>Weights (grams, from the scale)</legend>
         <div class="f3">
           <label class="fl">Vial dry, cap off<span class="uin u1"><span class="uin-in"><input id="n-dry" class="mono" type="number" step="0.001" inputmode="decimal" required placeholder="5.622"></span><span class="uin-u">g</span></span></label>
