@@ -1,5 +1,5 @@
-const C='qbt-20261121-0840';const SCOPE=new URL('./',self.location).pathname;
+const C='qbt-20261121-0144';const SCOPE=new URL('./',self.location).pathname;
 self.addEventListener('install',e=>{self.skipWaiting();e.waitUntil(caches.open(C).then(c=>c.addAll(['./app.html','./icon-192.png','./manifest.webmanifest'])).catch(()=>{}))});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==C).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
 self.addEventListener('fetch',e=>{const r=e.request;if(r.method!=='GET')return;const u=new URL(r.url);if(u.origin!==location.origin||!u.pathname.startsWith(SCOPE))return;
-const fresh=r.mode==='navigate'||/\.(html|webmanifest|js)$/.test(u.pathname);e.respondWith((fresh?fetch(r.url,{cache:'no-cache',credentials:'same-origin'}):fetch(r)).then(res=>{if(res.ok){const cp=res.clone();caches.open(C).then(c=>c.put(r,cp))}return res}).catch(()=>caches.match(r).then(m=>m||(r.mode==='navigate'?caches.match('./app.html'):undefined)).then(m=>m||new Response('Offline',{status:503}))))});
+const fresh=r.mode==='navigate'||/\.(html|webmanifest|js)$/.test(u.pathname);e.respondWith((fresh?fetch(r.url,{cache:'no-cache',credentials:'same-origin'}):fetch(r)).then(res=>{if(res.ok&&!u.search){const cp=res.clone();caches.open(C).then(c=>c.put(r,cp))}return res}).catch(()=>caches.match(r).then(m=>m||(r.mode==='navigate'?caches.match('./app.html'):undefined)).then(m=>m||new Response('Offline',{status:503}))))});

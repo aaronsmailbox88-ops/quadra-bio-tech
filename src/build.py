@@ -6,7 +6,7 @@
 import json, glob, os, sys, re
 
 BASE = os.path.dirname(os.path.abspath(__file__))
-APP_VER='104'  # bump before each artifact publish; shown in the app footer
+APP_VER='105'  # bump before each artifact publish; shown in the app footer
 
 PACKS = os.path.join(BASE, 'packs')
 ORDER = ['retatrutide', 'semaglutide', 'tirzepatide', 'liraglutide', 'dulaglutide', 'cagrisema', 'survodutide', 'mazdutide', 'amycretin',
@@ -112,6 +112,9 @@ def main():
     MARK_SVG = '<svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="24" fill="#0B1F1E"/><g transform="translate(13 13) scale(0.74)">' + _mark + '</g></svg>'
     SB_URL = 'https://uyznyapwnjfodemsgoso.supabase.co'; SB_KEY = 'sb_publishable_TRk5MDDg9jKL88DIap6LHw_5g37N94G'
     def hosted_head(base, api, with_auth):
+        # an open app notices a new release: it compares ./VERSION with the build it is running whenever it comes to the front, and offers a one-tap reload
+        upd = ('(function(){var cur=window.QB_VER;if(!cur)return;var shown=false;function check(){fetch(base+"/VERSION?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.ok?r.text():""}).then(function(t){t=(t||"").trim();if(!t||t===cur||shown)return;shown=true;var b=document.createElement("button");b.type="button";b.className="qb-update";b.textContent="New version ready \u2014 tap to update";b.onclick=function(){b.disabled=true;b.textContent="Updating\u2026";var go=function(){location.reload()};if(navigator.serviceWorker&&navigator.serviceWorker.getRegistration){navigator.serviceWorker.getRegistration().then(function(r){return r?r.update():null}).catch(function(){}).then(go)}else go()};document.body.appendChild(b)}).catch(function(){})}'
+               'document.addEventListener("visibilitychange",function(){if(!document.hidden)check()});addEventListener("focus",check);setInterval(check,300000);setTimeout(check,5000)})();').replace('base+', _json.dumps(base) + '+')
         h = ('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">\n<title>Quadra Bio Tech</title>\n'
             '<link rel="manifest" href="' + base + '/manifest.webmanifest">\n'
             '<link rel="apple-touch-icon" sizes="180x180" href="' + base + '/icon-180.png">\n'
@@ -122,26 +125,26 @@ def main():
             '<meta name="theme-color" content="#070e24">\n'
             '<meta name="description" content="Quadra Bio Tech — peptide research evidence, the weighing method and a vial tracker.">\n'
             '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;0,800;1,700;1,800&display=swap">\n'
-            '<script>window.QB_API=' + _json.dumps(api) + ';window.QB_BASE=' + _json.dumps(base) + ';window.QB_MARK=' + _json.dumps(MARK_SVG) + ';'
+            '<script>window.QB_API=' + _json.dumps(api) + ';window.QB_BASE=' + _json.dumps(base) + ';window.QB_VER=' + _json.dumps(ver) + ';window.QB_MARK=' + _json.dumps(MARK_SVG) + ';'
             + ('window.QB_SB=' + _json.dumps({'url': SB_URL, 'key': SB_KEY}) + ';' if with_auth else '')
-            + 'if("serviceWorker" in navigator){addEventListener("load",function(){navigator.serviceWorker.register(' + _json.dumps(base + '/sw.js') + ').catch(function(){})})}</script>\n')
+            + 'if("serviceWorker" in navigator){addEventListener("load",function(){navigator.serviceWorker.register(' + _json.dumps(base + '/sw.js') + ').catch(function(){})})}' + upd + '</script>\n')
         if with_auth: h += '<script>\n' + open(os.path.join(BASE, 'part_auth.js')).read() + '\n</script>\n'
         return h + '</head><body>'
     # static site: app.html (gated by sign-in), index.html (landing), manifest, service worker, icons
     SITE = os.path.abspath(sys.argv[sys.argv.index('--site') + 1]) if '--site' in sys.argv else os.path.join(BASE, 'site'); os.makedirs(SITE, exist_ok=True)
+    ver = __import__('time').strftime('%Y%m%d-%H%M')
     open(os.path.join(SITE, 'app.html'), 'w').write(hosted_head('.', SB_URL + '/functions/v1', True) + hosted_body + '</body></html>')
     def durl(p, mt): return 'data:' + mt + ';base64,' + _b64.b64encode(open(os.path.join(BASE, p), 'rb').read()).decode()
     land = ('<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Quadra Bio Tech</title><meta name="viewport" content="width=device-width,initial-scale=1">'
             '<meta name="robots" content="noindex"><meta http-equiv="refresh" content="0; url=app.html"><style>html,body{margin:0;height:100%;background:#070e24}</style>'
             '<script>location.replace("app.html" + location.hash)</script></head><body></body></html>')   # the landing is the sign-in card in app.html
     open(os.path.join(SITE, 'index.html'), 'w').write(land)
-    ver = __import__('time').strftime('%Y%m%d-%H%M')
     open(os.path.join(SITE, 'manifest.webmanifest'), 'w').write(_json.dumps({'name': 'Quadra Bio Tech', 'short_name': 'Quadra Bio', 'id': './app.html', 'start_url': './app.html', 'scope': './', 'display': 'standalone', 'orientation': 'portrait', 'background_color': '#070e24', 'theme_color': '#070e24', 'description': 'Peptide research evidence, the weighing method and a vial tracker.', 'icons': [{'src': 'icon-192.png', 'sizes': '192x192', 'type': 'image/png', 'purpose': 'any'}, {'src': 'icon-512.png', 'sizes': '512x512', 'type': 'image/png', 'purpose': 'any'}]}, indent=1))
     open(os.path.join(SITE, 'sw.js'), 'w').write("const C='qbt-" + ver + "';const SCOPE=new URL('./',self.location).pathname;\n"
         "self.addEventListener('install',e=>{self.skipWaiting();e.waitUntil(caches.open(C).then(c=>c.addAll(['./app.html','./icon-192.png','./manifest.webmanifest'])).catch(()=>{}))});\n"
         "self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==C).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});\n"
         "self.addEventListener('fetch',e=>{const r=e.request;if(r.method!=='GET')return;const u=new URL(r.url);if(u.origin!==location.origin||!u.pathname.startsWith(SCOPE))return;\n"
-        "const fresh=r.mode==='navigate'||/\\.(html|webmanifest|js)$/.test(u.pathname);e.respondWith((fresh?fetch(r.url,{cache:'no-cache',credentials:'same-origin'}):fetch(r)).then(res=>{if(res.ok){const cp=res.clone();caches.open(C).then(c=>c.put(r,cp))}return res}).catch(()=>caches.match(r).then(m=>m||(r.mode==='navigate'?caches.match('./app.html'):undefined)).then(m=>m||new Response('Offline',{status:503}))))});\n")
+        "const fresh=r.mode==='navigate'||/\\.(html|webmanifest|js)$/.test(u.pathname);e.respondWith((fresh?fetch(r.url,{cache:'no-cache',credentials:'same-origin'}):fetch(r)).then(res=>{if(res.ok&&!u.search){const cp=res.clone();caches.open(C).then(c=>c.put(r,cp))}return res}).catch(()=>caches.match(r).then(m=>m||(r.mode==='navigate'?caches.match('./app.html'):undefined)).then(m=>m||new Response('Offline',{status:503}))))});\n")
     for n in ('icon-180.png', 'icon-192.png', 'icon-512.png'): _sh.copy(os.path.join(BASE, 'brand', n), os.path.join(SITE, n))
     _sh.copy(os.path.join(BASE, 'brand', 'icon.svg'), os.path.join(SITE, 'icon.svg'))
     open(os.path.join(SITE, 'VERSION'), 'w').write(ver)
