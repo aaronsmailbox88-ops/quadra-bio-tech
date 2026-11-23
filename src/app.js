@@ -282,7 +282,7 @@ function renderPeptide(P){
   var $ = function(s){ return document.querySelector(s); }, $$ = function(s){ return Array.prototype.slice.call(document.querySelectorAll(s)); };
   var PTABS = ['overview', 'results', 'effects', 'levels', 'trials', 'status', 'dosing'];
   var PLABEL = { overview: 'Overview', results: 'Results', effects: 'Effects', levels: 'Levels', trials: 'Trials', status: 'Status', dosing: 'Dosing' };
-  var DTABS = { vials: 'Dose tracker', mix: 'Mix a vial', levels: 'Levels' };   /* Dosing: the app's home */
+  var DTABS = { vials: 'Dose tracker', mix: 'Mix a vial', stock: 'Stock', levels: 'Levels' };   /* Dosing: the app's home */
   var TTABS = { track: 'Vitals' };
   /* the old Learn topics now sit under the matching Peptides tab; #learn.x and #coa links land there */
   var LEARN_TAB = { 'learn-trials': 'trials', 'learn-results': 'results', 'learn-levels': 'levels', 'learn-effects': 'effects', 'learn-status': 'status', 'learn-coa': 'status', 'learn-units': 'dosing', 'learn-weigh': 'dosing' };
@@ -351,7 +351,7 @@ function renderPeptide(P){
     if (mode !== 'pep') title.innerHTML = (mode === 'dose' ? 'Dosing' : mode === 'shop' ? 'Shop' : 'Track') + '<small class="brandline">' + BADGE + 'Quadra Bio Tech' + (window.qbAcctHtml ? window.qbAcctHtml() : '') + '</small>';
     if (mode === 'pep') showPanel(tab);
     else if (mode === 'shop') { showPanel('shop'); if (window.qbShopRender) window.qbShopRender(); }
-    else if (mode === 'dose') { showPanel(dtab === 'levels' ? 'live' : 'vials'); if (dtab === 'mix') { if (window.vtMix) window.vtMix(); else window.__wantMix = true; } else if (dtab === 'vials' && window.vtLeaveMix) window.vtLeaveMix(); else if (dtab === 'levels' && window.lvRender) window.lvRender(); }
+    else if (mode === 'dose') { showPanel(dtab === 'levels' ? 'live' : 'vials'); if (dtab === 'mix') { if (window.vtMix) window.vtMix(); else window.__wantMix = true; } else if (dtab === 'vials' && window.vtLeaveMix) window.vtLeaveMix(); else if (dtab === 'stock') { if (window.vtStock) window.vtStock(); else window.__wantStock = true; } else if (dtab === 'levels' && window.lvRender) window.lvRender(); }
     else showPanel('track');
     renderSub();
   }

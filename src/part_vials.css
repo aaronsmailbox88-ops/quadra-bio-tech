@@ -199,3 +199,12 @@
 #vials .lastd td{padding:6px 6px 6px 0;vertical-align:top;border-top:1px solid var(--line);white-space:nowrap}
 #vials .lastd td .muted{font-size:.72rem}
 #vials .lastd td.num,#vials .lastd th.num{text-align:left;font-family:var(--mono,ui-monospace,monospace)}
+
+/* Stock (v119) */
+#vials .stk-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:8px 0;border-top:1px solid var(--line)}
+#vials .stk-row>div:first-child{flex:1 1 10rem;min-width:0}
+#vials .stk-q{display:inline-flex;align-items:center;gap:6px}
+#vials .stk-q b{min-width:2.2ch;text-align:center;font-size:1.05rem}
+#vials .stk-q .btn.sm{padding:4px 10px;font-size:1rem;line-height:1}
+#vials .stk-form{margin-top:12px;display:flex;flex-direction:column;gap:10px}
+#vials .stk-form .btn{align-self:flex-start}
