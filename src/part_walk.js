@@ -1,4 +1,4 @@
-/* ===== First-run walkthrough: "Read this before mixing or dosing". Shown once per account after sign-in (or first open); reopenable from the vial tracker. ===== */
+/* ===== First-run walkthrough: "Read this before mixing or dosing". Shown once per account after sign-in (or first open); reopenable from Peptides → Status (Learn). ===== */
 (function(){
   'use strict';
   var esc = function(s){ return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){ return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); };
@@ -9,7 +9,7 @@
     { k: 'Mixing', h: 'Mix with BAC water.', p: ['Bacteriostatic water only; plain sterile water makes a single-session vial.', 'The Mix a vial wizard walks you through it one step at a time, and keeps track of your vials, your doses and your blood levels.'] },
     { k: 'Dosing', h: 'Low, slow, logged.', p: ['Log each dose as you draw it. Dosing → Levels then shows how much is in your blood at any moment.'] },
     { k: 'Safety', h: 'Know the warning signs first.', p: ['Side effects cluster in the days after a dose step and usually ease. Each peptide page lists its own warning signs under Effects, with what to do and when to stop. Read it before the first dose.', 'If something feels seriously wrong, stop and get medical care. This app cannot judge that for you.'] },
-    { k: 'Where things live', h: 'Four tabs.', p: ['Dosing: your vials, the mixing wizard and live levels. The app opens here.', 'Peptides: the evidence, dose by dose, with the background reading under each tab.', 'Shop: the kit, with one-click ordering.', 'Track: blood pressure, blood sugar, weight.', 'You can read this again any time from Dosing → Vial tracker.'] }
+    { k: 'Where things live', h: 'Four tabs.', p: ['Dosing: your vials, the mixing wizard and live levels. The app opens here.', 'Peptides: the evidence, dose by dose, with the background reading under each tab.', 'Shop: the kit, with one-click ordering.', 'Track: blood pressure, blood sugar, weight.', 'You can read this again any time under Peptides → Status.'] }
   ];
   var box = null, i = 0, done = false, doc = null;
 

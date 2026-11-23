@@ -85,7 +85,7 @@
     Array.prototype.forEach.call(root.querySelectorAll('details:not(.tile):not(.sub):not([data-tiled])'), function(d){ d.classList.add('sub'); d.removeAttribute('open'); d.setAttribute('data-tiled', '1'); });
   }
   /* Learn lives under the Peptides tabs (v103): each topic is a collapsed tile at the foot of the tab it explains */
-  var LEARN_HOME = { results: ['learn-results'], effects: ['learn-effects'], levels: ['learn-levels'], trials: ['learn-trials'], status: ['learn-status', 'learn-coa'] };
+  var LEARN_HOME = { results: ['learn-results'], effects: ['learn-effects'], levels: ['learn-levels'], trials: ['learn-trials'], status: ['learn-status', 'learn-coa', 'learn-start'] };
   var LEARN_NODES = {};
   function tileLearn(){
     var sec = document.getElementById('learn-pool'); if (!sec || sec.getAttribute('data-tiled')) return; sec.setAttribute('data-tiled', '1');
