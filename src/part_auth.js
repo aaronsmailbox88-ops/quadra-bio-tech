@@ -62,7 +62,7 @@ var RT = '?redirect_to=' + encodeURIComponent(location.origin + location.pathnam
       '<p class="qb-msg" id="qb-msg" hidden></p>' +
       '<button type="submit" class="btn qb-primary" id="qb-go">' + (recovery ? 'Save password' : (up ? 'Create account' : 'Sign in')) + '</button>' +
       (recovery || up ? '' : '<div class="qb-links"><a href="#" data-act="forgot">Forgot password?</a></div>') +
-      '</form></div><p class="qb-foot">Educational tool · not medical advice · sells nothing</p></div>';
+      '</form></div><p class="qb-foot">Educational tool · not medical advice</p></div>';
   }
   function msg(t, kind){ var m = document.getElementById('qb-msg'); if (!m) return; m.textContent = t || ''; m.hidden = !t; m.className = 'qb-msg' + (kind ? ' ' + kind : ''); }
   function showGate(){ if (gate) gate.remove(); gate = el(gateHtml()); document.body.appendChild(gate); document.body.classList.add('qb-locked');
