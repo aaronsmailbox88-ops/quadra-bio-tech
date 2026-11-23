@@ -224,3 +224,8 @@
 #vials .sevrow .sev.none.on{background:linear-gradient(135deg,#1f7a4d,#2fbf71);box-shadow:0 8px 22px rgba(47,191,113,.3)}
 #vials .fx-heavy{color:#ff8f8f;font-weight:600}
 @media (max-width:380px){#vials .sevrow{grid-template-columns:1fr}}
+/* v122: a dose drawn from two vials */
+#vials .splitrows{display:flex;flex-direction:column;gap:8px;margin-top:10px}
+#vials .srow{display:flex;gap:10px;align-items:flex-start}
+#vials .srow i.n{flex:none;width:22px;height:22px;border-radius:50%;background:var(--grad);color:#fff;font-style:normal;font-weight:700;font-size:.8rem;display:inline-flex;align-items:center;justify-content:center;margin-top:2px}
+#vials .srow b.mono{font-size:1.25rem}

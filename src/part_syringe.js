@@ -22,7 +22,7 @@
   function phases(st){ var n=0; var over=st.overU>st.units+2.5; var ph=[];
     var SLOW=2.4; var step=function(d,zoom,capFn){ ph.push({d:d*SLOW, zoom:zoom, cap:capFn}) };
     var plain=function(d,zoom,capFn){ ph.push({d:d*SLOW, zoom:zoom, cap:capFn}) };
-    plain(1.0,1,function(s){ return (s.liquid==='water'?'Water to draw: ':'Your dose: ')+(s.doseTxt?s.doseTxt+' = ':'')+s.uTxt+' units = '+s.gTxt+'.' }); ph[ph.length-1].k='intro';
+    plain(1.0,1,function(s){ return s.intro||((s.liquid==='water'?'Water to draw: ':'Your dose: ')+(s.doseTxt?s.doseTxt+' = ':'')+s.uTxt+' units = '+s.gTxt+'.') }); ph[ph.length-1].k='intro';
     if(st.liquid==='water'){
       step(1.6,1,function(s){ return 'Air first: pull the plunger back to the '+s.uTxt+' mark.' }); ph[ph.length-1].k='air';
       step(2.0,1,function(){ return 'Needle through the water vial’s stopper. Push the air in: it replaces the water you take, so no vacuum forms.' }); ph[ph.length-1].k='in-air';
@@ -134,11 +134,11 @@
     var roT=ht({x:181,y:365,'text-anchor':'middle','font-size':'14','font-weight':'700',fill:'#9BE8DF','font-family':'var(--mono, ui-monospace, monospace)'},ro,'0.000 g');
     ht({x:168,y:365,'text-anchor':'middle','font-size':'7',fill:'#a9b8c6'},ro,'scale, tared on the bare syringe');
     var cap=document.createElement('p'); cap.className='syr-cap'; el.appendChild(cap);
-    var row=document.createElement('div'); row.className='syr-row'; row.innerHTML='<button type="button" class="syr-step syr-prev" aria-label="Previous step">\u2039</button><span class="syr-steplab">Step 1</span><button type="button" class="syr-step syr-next" aria-label="Next step">\u203a</button><button type="button" class="syr-replay">Replay</button><span class="syr-note"></span>'; el.appendChild(row);
+    var row=document.createElement('div'); row.className='syr-row'; row.innerHTML='<button type="button" class="syr-step syr-prev" aria-label="Previous step">\u2039</button><span class="syr-steplab">Step 1</span><button type="button" class="syr-step syr-next" aria-label="Next step">\u203a</button><button type="button" class="syr-replay">\u25b6 Play</button><span class="syr-note"></span>'; el.appendChild(row);
     var st={el:el, svg:svg, U:U, pxu:pxu, vLiq:vLiq, syr:syr, vent:vent, liq:liq, men:men, stop:stop, stopTip:stopTip, stopHi:stopHi, rod:rod, rodL:rodL, thumb:thumb, bubble:bubble, bubble2:bubble2, tLine:tLine, tG:tG, tU:tU, ring:ring, ro:ro, roT:roT, cap:cap, note:row.querySelector('.syr-note'), stepLab:row.querySelector('.syr-steplab'), raf:0, pi:0, n:1};
     row.querySelector('.syr-replay').addEventListener('click',function(){ play(st,0) });
-    row.querySelector('.syr-prev').addEventListener('click',function(){ play(st,Math.max(0,(st.pi||0)-1)) });
-    row.querySelector('.syr-next').addEventListener('click',function(){ play(st,Math.min((st.n||1)-1,(st.pi||0)+1)) });
+    row.querySelector('.syr-prev').addEventListener('click',function(){ play(st,Math.max(0,(st.pi||0)-1),true) });
+    row.querySelector('.syr-next').addEventListener('click',function(){ play(st,Math.min((st.n||1)-1,(st.pi||0)+1),true) });
     el.__syr=st; return st;
   }
   function setPlunger(st,px){ var y=L0+px; st.stop.setAttribute('y',y); st.stopHi.setAttribute('y',y+1.5); st.stopTip.setAttribute('d',''); st.rod.setAttribute('y',y+10); st.rodL.setAttribute('y1',y+10); st.rodL.setAttribute('y2',y+10+ROD); st.thumb.setAttribute('y',y+10+ROD-4) }
@@ -148,22 +148,21 @@
     if(z<=1.001){ st.svg.setAttribute('viewBox','0 '+y0.toFixed(2)+' '+w0.toFixed(2)+' '+h0.toFixed(2)); return }
     var w=w0/z, h=h0/z; var x=Math.max(0,Math.min(w0-w,cy-w/2)); var y=Math.max(y0,Math.min(y0+h0-h,(VW-CX+15)-h*0.5)); st.svg.setAttribute('viewBox',x.toFixed(2)+' '+y.toFixed(2)+' '+w.toFixed(2)+' '+h.toFixed(2)) }
   function apply(st,o){
-    st.g=o.g; st.units=o.g*100; st.gTxt=st.liquid==='water'?o.g.toFixed(2).replace(/0$/,'')+' mL':o.g.toFixed(3)+' g'; st.uTxt=(Math.round(st.units*10)/10).toString().replace(/\.0$/,''); st.doseTxt=o.doseTxt||'';
+    st.g=o.g; st.units=o.g*100; st.gTxt=st.liquid==='water'?o.g.toFixed(2).replace(/0$/,'')+' mL':o.g.toFixed(3)+' g'; st.uTxt=(Math.round(st.units*10)/10).toString().replace(/\.0$/,''); st.doseTxt=o.doseTxt||''; st.intro=o.intro||'';
+    st.start=o.start>0?o.start:0; st.spx=Math.min(st.U,st.start*100)*st.pxu;   /* liquid already in the syringe (the first part of a split dose) */
     st.over=st.units>st.U+1e-6; var px=Math.min(st.U,st.units)*st.pxu; st.tpx=px;
     var step=st.U>=100?10:5; st.overU=Math.min(st.U, Math.ceil((st.units+15)/step)*step); st.overTxt=String(st.overU); st.opx=Math.min(st.U,st.overU)*st.pxu;
     st.tLine.setAttribute('y1',L0+px); st.tLine.setAttribute('y2',L0+px); tpos(st.tG,88,L0+px); tpos(st.tU,80,L0+px); st.ring.setAttribute('cy',L0+px);
     st.tG.textContent=st.gTxt; st.tU.textContent=st.uTxt+' units';
     st.note.textContent=st.over?'More than this syringe holds ('+st.U+' units = '+(st.U/100).toFixed(1)+' mL). Use a bigger syringe or less water next time.':(st.liquid==='water'?'':'Pull to the mark, then let the scale decide.');
-    play(st) }
-  function play(st,from){
-    if(st.raf) cancelAnimationFrame(st.raf); st.raf=0;
-    var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    var PH=phases(st); var tp=st.tpx, op=st.opx; var total=0, starts=PH.map(function(p){ var s=total; total+=p.d; return s });
+    still(st) }
+  function scene(st){ // the phases and a frame(t) renderer for this dose; nothing moves until play() is asked for
+    var PH=phases(st); var tp=st.tpx, op=st.opx, sp=st.spx||0; var total=0, starts=PH.map(function(p){ var s=total; total+=p.d; return s });
     var IN=28; // how far the syringe sits below the stopper before the needle goes in
     function frame(t){
       var pi=PH.length-1; for(var i=0;i<PH.length;i++){ if(t<starts[i]+PH[i].d){ pi=i; break } }
       var ph=PH[pi], k=ph.k, p=clamp((t-starts[pi])/ph.d); st.pi=pi; st.n=PH.length; if(st.stepLab) st.stepLab.textContent='Step '+(pi+1)+' of '+PH.length;
-      var plunger=0, liquid=0, shift=IN, ventOp=0, ventY=-40, bub=0, bub2=0, bubY=L0, bub2Y=L0, roOp=0, roVal=0, vialLevel=44, zoom=1, ringOp=0;
+      var plunger=sp, liquid=sp, shift=IN, ventOp=0, ventY=-40, bub=0, bub2=0, bubY=L0, bub2Y=L0, roOp=0, roVal=0, vialLevel=44, zoom=1, ringOp=0;
       var vented=false; // vent stays in once placed, until the weigh phase
       for(var j=0;j<pi;j++) if(PH[j].k==='vent') vented=true;
       var filled=false; for(var j2=0;j2<pi;j2++) if(PH[j2].k==='pushback'||PH[j2].k==='fill') filled=true;
@@ -174,10 +173,10 @@
       else if(k==='air'){ plunger=tp*easeIO(p/0.85) }
       else if(k==='in-air'){ var a=easeIO(p/0.32), b=easeIO((p-0.42)/0.5); shift=IN*(1-a); plunger=tp*(1-b) }
       else if(k==='in'){ shift=IN*(1-easeIO(p/0.7)) }
-      else if(k==='overdraw'){ shift=0; var f=easeIO(p/0.92); plunger=op*f; liquid=op*f; vialLevel=44-6*f*(op/Math.max(op,1)) ; bub=f>0.3?1:0; bubY=L0+op*f-6; bub2=f>0.5?1:0; bub2Y=L0+op*f-14 }
+      else if(k==='overdraw'){ shift=0; var f=easeIO(p/0.92); plunger=sp+(op-sp)*f; liquid=plunger; vialLevel=44-6*f*(op/Math.max(op,1)) ; bub=f>0.3?1:0; bubY=L0+op*f-6; bub2=f>0.5?1:0; bub2Y=L0+op*f-14 }
       else if(k==='hold'){ shift=0; plunger=op; liquid=op; vialLevel=38; bub=1; bubY=L0+op-6-3*easeOut(p); bub2=1; bub2Y=L0+op-14-8*easeOut(p) }
       else if(k==='pushback'){ shift=0; var g=easeIO(p/0.85); plunger=op-(op-tp)*g; liquid=plunger; vialLevel=38+6*0.3*g; var q=clamp(p/0.6); bub=q<0.95?1:0; bubY=L0+op-9-(op-14)*easeOut(q); bub2=q<0.85?1:0; bub2Y=L0+op-22-(op-26)*easeOut(q) }
-      else if(k==='fill'){ shift=0; var f2=easeIO(p/0.92); plunger=tp*f2; liquid=tp*f2; vialLevel=44-6*f2 }
+      else if(k==='fill'){ shift=0; var f2=easeIO(p/0.92); plunger=sp+(tp-sp)*f2; liquid=plunger; vialLevel=44-6*f2 }
       else if(k==='zoom'){ zoom=1+(ph.zoom-1)*easeIO(p/0.3); ringOp=0.35+0.65*Math.abs(Math.sin(p*Math.PI*3)) }
       else if(k==='unzoom'){ zoom=2.2-(2.2-1)*easeIO(p); ringOp=1-p }
       else if(k==='weigh'){ var c=easeIO(p/0.3); shift=IN*c; ventOp=1-easeIO(p/0.3); ventY=-40*easeIO(p/0.3); roOp=1; roVal=st.g*easeOut(clamp((p-0.3)/0.5)) }
@@ -193,13 +192,20 @@
       setView(st,zoom,L0+tp+shift,L0+plunger+10+ROD+4+shift);
       st.cap.textContent=ph.cap(st);
     }
-    if(reduce||st.over){ frame(total-0.01); st.cap.textContent=st.over?'This draw does not fit in one syringe.':(st.liquid==='water'?'Pull past the '+st.uTxt+' mark, push back to it: '+st.gTxt+'.':'Pull past the '+st.uTxt+' mark, push back to it; the scale must read '+st.gTxt+'.'); return }
-    var tStart=starts[Math.max(0,Math.min(PH.length-1,from||0))]||0; var t0=null; function tick(ts){ if(t0===null) t0=ts; var t=tStart+(ts-t0)/1000; frame(Math.min(t,total-0.001)); if(t<total) st.raf=requestAnimationFrame(tick); else st.raf=0 }
-    st.raf=requestAnimationFrame(tick);
-  }
-  /* opts: {g: grams to draw, syringe: 1|0.5|0.3 (mL), liquid: 'dose'|'water', name: vial label, doseTxt: e.g. '4 mg'} */
+    return {PH:PH, starts:starts, total:total, frame:frame} }
+  function stop(st){ if(st.raf) cancelAnimationFrame(st.raf); st.raf=0 }
+  function noMotion(st){ return (window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)||st.over }
+  function finalStill(st,sc){ sc.frame(sc.total-0.01); st.cap.textContent=st.over?'This draw does not fit in one syringe.':(st.liquid==='water'?'Pull past the '+st.uTxt+' mark, push back to it: '+st.gTxt+'.':'Pull past the '+st.uTxt+' mark, push back to it; the scale must read '+st.gTxt+'.') }
+  /* a still of the start: the picture waits for Play or the step arrows (no autoplay, v122) */
+  function still(st){ stop(st); var sc=scene(st); if(noMotion(st)){ finalStill(st,sc); return } sc.frame(0) }
+  /* play from phase `from`; with `only` just that one phase, then hold */
+  function play(st,from,only){ stop(st); var sc=scene(st); if(noMotion(st)){ finalStill(st,sc); return }
+    var i=Math.max(0,Math.min(sc.PH.length-1,from||0)); var tStart=sc.starts[i], tEnd=only?tStart+sc.PH[i].d:sc.total; var t0=null;
+    function tick(ts){ if(t0===null) t0=ts; var t=tStart+(ts-t0)/1000; sc.frame(Math.min(t,tEnd-0.001)); if(t<tEnd) st.raf=requestAnimationFrame(tick); else st.raf=0 }
+    st.raf=requestAnimationFrame(tick) }
+  /* opts: {g: grams in the syringe at the end, start: grams already in it (0), syringe: 1|0.5|0.3 (mL), liquid: 'dose'|'water', name: vial label, doseTxt: e.g. '4 mg', intro: first caption} */
   window.syringeAnim=function(el,opts){ if(!el) return null; var o=opts||{}; if(!(o.g>0)){ el.innerHTML=''; el.__syr=null; return null }
     var st=el.__syr; var U=Math.round((o.syringe||1)*100);
     if(!st||st.U!==U||st.liquid!==(o.liquid||'dose')||st.name!==(o.name||'')||st.mg!==(o.mg||'')){ st=build(el,o); st.liquid=o.liquid||'dose'; st.name=o.name||''; st.mg=o.mg||'' }
-    if(st.g!==o.g||st.doseTxt!==(o.doseTxt||'')) apply(st,o); return st };
+    if(st.g!==o.g||st.doseTxt!==(o.doseTxt||'')||(st.start||0)!==(o.start>0?o.start:0)||(st.intro||'')!==(o.intro||'')) apply(st,o); return st };
 })();
