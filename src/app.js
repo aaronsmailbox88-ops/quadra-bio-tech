@@ -76,7 +76,7 @@ function renderOverview(P){
       (o.mechanism.parts || []).map(function(m){ return '<div class="hormone"><b>' + esc(m.name) + '</b><span>' + esc(m.text) + '</span></div>'; }).join('') + '</div>';
   }
   if (o.more) h += detailsList([o.more]);
-  h += '<div class="card"><h3>Dosing and vial tracking, by weight</h3><p style="font-size:14px;color:var(--ink-2)">What the trials dosed, what a vial of ' + esc(P.name) + ' makes at a given amount of water, the grams to draw for a dose, how many doses are left and when to reorder. Measured with a scale, not syringe marks.</p><div class="btn-row"><a class="btn" href="#' + P.id + '.dosing">Dosing</a><a class="btn ghost" href="#dose.vials">Vial tracker</a></div></div>';
+  h += '<div class="card"><h3>Dosing and vial tracking, by weight</h3><p style="font-size:14px;color:var(--ink-2)">What the trials dosed, what a vial of ' + esc(P.name) + ' makes at a given amount of water, the grams to draw for a dose, how many doses are left and when to reorder. Measured with a scale, not syringe marks.</p><div class="btn-row"><a class="btn" href="#' + P.id + '.dosing">Dosing</a><a class="btn ghost" href="#dose.vials">Dose tracker</a></div></div>';
   return h;
 }
 function renderResults(P){
@@ -153,7 +153,7 @@ function renderTrials(P){
 var UNITS_NOTE = '<details><summary>Units are not milligrams: the dosing-error warning</summary><div class="body">' +
   '<p>Insulin syringes are marked in "units" for U-100 insulin: 100 units per millilitre, so one unit is one hundredth of a millilitre of whatever liquid is in the syringe. The marks measure volume, not drug. How much drug a unit holds depends entirely on the concentration in the vial, and for an unapproved product nobody has verified what that is.</p>' +
   '<p>On July 26, 2024 the U.S. FDA warned that dosing errors with compounded semaglutide sold in vials were sending people to hospital. In most reports, patients drew up 5 to 20 times the prescribed dose; in others, clinicians miscalculated the conversion from milligrams to units and prescribed 5 to 10 times too much. Reported harms included vomiting, fainting, dehydration, acute pancreatitis and gallstones. Approved semaglutide and tirzepatide come as pens or labelled vials dosed in milligrams, with the manufacturer\'s own instructions for use in the box.</p>' +
-  '<p>That is why the Dosing tab and the Vial tracker in this app work from scale readings rather than syringe marks, and why neither prints a unit chart. A chart only works if the label on the vial is true, and the products sold as "research" peptides carry no such guarantee. If you use a prescribed product, the instructions that come with it, and your pharmacist, are the reference.</p>' +
+  '<p>That is why the Dosing tab and the Dose tracker in this app work from scale readings rather than syringe marks, and why neither prints a unit chart. A chart only works if the label on the vial is true, and the products sold as "research" peptides carry no such guarantee. If you use a prescribed product, the instructions that come with it, and your pharmacist, are the reference.</p>' +
   '<p class="note">Sources: <a href="https://www.healio.com/news/endocrinology/20240909/fda-warns-of-adverse-events-due-to-overdosing-of-compounded-semaglutide" target="_blank" rel="noopener">FDA alert as reported by Healio, July 2024</a> · <a href="https://www.fda.gov/safety/medwatch-fda-safety-information-and-adverse-event-reporting-program" target="_blank" rel="noopener">FDA MedWatch</a> · <a href="https://www.canada.ca/en/health-canada/services/drugs-health-products/medeffect-canada.html" target="_blank" rel="noopener">MedEffect Canada</a></p>' +
   '</div></details>';
 
@@ -191,7 +191,7 @@ function renderDosing(P){
     '<div class="btn-row"><button type="button" class="btn" id="do-track">Track this vial</button><a class="btn ghost" href="#learn.weigh">How to weigh</a></div>' +
     '<div id="do-animwrap" hidden style="margin-top:14px;border-top:1px solid var(--line);padding-top:12px"><h3 style="margin:0">What the draw looks like</h3><p style="font-size:13px;color:var(--ink-2);margin-top:4px">The syringe fills to the dose you typed. Marks are the guide; the scale is the measurement.</p><div id="do-anim" class="syr-slot"></div></div></div>';
   h += renderTitration(P);
-  h += '<div id="do-protocol" style="margin-top:6px"><h2>The weighing protocol</h2><p class="lede" style="font-size:15px;margin-top:4px">Every step, in order, every time. The same text is inside the Vial tracker.</p></div>' + renderProtocol();
+  h += '<div id="do-protocol" style="margin-top:6px"><h2>The weighing protocol</h2><p class="lede" style="font-size:15px;margin-top:4px">Every step, in order, every time. The same text is inside the Dose tracker.</p></div>' + renderProtocol();
   h += UNITS_NOTE;
   return h;
 }
@@ -282,7 +282,7 @@ function renderPeptide(P){
   var $ = function(s){ return document.querySelector(s); }, $$ = function(s){ return Array.prototype.slice.call(document.querySelectorAll(s)); };
   var PTABS = ['overview', 'results', 'effects', 'levels', 'trials', 'status', 'dosing'];
   var PLABEL = { overview: 'Overview', results: 'Results', effects: 'Effects', levels: 'Levels', trials: 'Trials', status: 'Status', dosing: 'Dosing' };
-  var DTABS = { vials: 'Vial tracker', mix: 'Mix a vial', levels: 'Levels' };   /* Dosing: the app's home */
+  var DTABS = { vials: 'Dose tracker', mix: 'Mix a vial', levels: 'Levels' };   /* Dosing: the app's home */
   var TTABS = { track: 'Vitals' };
   /* the old Learn topics now sit under the matching Peptides tab; #learn.x and #coa links land there */
   var LEARN_TAB = { 'learn-trials': 'trials', 'learn-results': 'results', 'learn-levels': 'levels', 'learn-effects': 'effects', 'learn-status': 'status', 'learn-coa': 'status', 'learn-units': 'dosing', 'learn-weigh': 'dosing' };

@@ -95,8 +95,8 @@
     var box = document.getElementById('levels'); if (!box) return;
     var ss = series();
     var head = '<div><div class="eyebrow">Live levels</div><h1 id="lv-h">How much is in your blood right now.</h1></div>' +
-      '<p class="lede">Built from the doses you logged in the vial tracker. The curve climbs after each dose and falls before the next; the number is where you are at this moment.</p>';
-    if (!ss.length) { box.innerHTML = head + '<section class="card lv-card"><p class="note" style="font-size:14px;max-width:none">Nothing to draw yet. Log a dose in the vial tracker and your curve appears here.</p><div class="btn-row"><a class="btn" href="#track.vials">Open the vial tracker</a></div></section>'; return; }
+      '<p class="lede">Built from the doses you logged in the Dose tracker. The curve climbs after each dose and falls before the next; the number is where you are at this moment.</p>';
+    if (!ss.length) { box.innerHTML = head + '<section class="card lv-card"><p class="note" style="font-size:14px;max-width:none">Nothing to draw yet. Log a dose in the Dose tracker and your curve appears here.</p><div class="btn-row"><a class="btn" href="#track.vials">Open the vial tracker</a></div></section>'; return; }
     box.innerHTML = head + ss.map(cardHtml).join('');
     box.querySelectorAll('.lv-svg').forEach(function(svg, i){
       var s = ss[i]; if (!s || !s.pk) return; var r = compute(s), tip = document.getElementById('lv-tip-' + i);
