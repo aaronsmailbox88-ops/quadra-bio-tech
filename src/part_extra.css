@@ -372,3 +372,5 @@ body.pep-open{overflow:hidden}
 /* "new version ready" pill (hosted app) */
 .qb-update{position:fixed;left:50%;bottom:calc(84px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:1250;appearance:none;border:1px solid rgba(142,245,192,.55);background:linear-gradient(180deg,#123b35,#0b2724);color:#8ef5c0;font:inherit;font-weight:700;font-size:14px;padding:11px 16px;border-radius:999px;box-shadow:0 12px 34px rgba(0,0,0,.45);cursor:pointer;white-space:nowrap;max-width:calc(100vw - 32px);overflow:hidden;text-overflow:ellipsis}
 .qb-update:disabled{opacity:.7}
+
+.wk-warn .wk-warn2{display:block;margin-top:8px;color:#ff5c5c;font-size:1.3em;line-height:1.2;font-weight:800;font-family:var(--display)}
