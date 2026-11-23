@@ -19,8 +19,9 @@
 #vials .chip.plain{background:transparent;border-color:var(--line);color:var(--ink-2)}
 #vials .bar{height:10px;border-radius:999px;background:var(--surface-2);overflow:hidden;margin:10px 0 8px}
 #vials .bar i{display:block;height:100%;background:linear-gradient(90deg,#4d8bff,#49d6c8);border-radius:999px;transition:width .3s}
-#vials .bar.low i{background:var(--warn)}
-#vials .bar.empty i{background:var(--crit)}
+#vials .bar.g i{background:linear-gradient(90deg,#1f9d5c,#2fbf71)}
+#vials .bar.y i{background:linear-gradient(90deg,#d9a21b,#f5c542)}
+#vials .bar.r i{background:linear-gradient(90deg,#b3261e,#ff5c5c)}
 #vials .dates{font-size:.76rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);font-weight:600}
 #vials .big{font-family:var(--mono);font-size:1.45rem;font-weight:600;letter-spacing:-.01em}
 #vials .kv{display:grid;grid-template-columns:1fr auto;gap:6px 14px;font-size:.92rem}
