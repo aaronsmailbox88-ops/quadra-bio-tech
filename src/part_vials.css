@@ -208,3 +208,18 @@
 #vials .stk-q .btn.sm{padding:4px 10px;font-size:1rem;line-height:1}
 #vials .stk-form{margin-top:12px;display:flex;flex-direction:column;gap:10px}
 #vials .stk-form .btn{align-self:flex-start}
+/* v120: the check-in before a dose */
+#vials .ci-w{display:flex;align-items:flex-end;gap:10px;flex-wrap:wrap;margin-top:8px}
+#vials .ci-w .fl{flex:1 1 12rem;margin:0}
+#vials .ci-w .seg{margin-bottom:6px}
+#vials .fxchips{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+#vials .fxchips .btn.sm{padding:7px 11px;font-size:.82rem;border-radius:999px}
+#vials .sevrow{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}
+#vials .sevrow .sev{appearance:none;font:inherit;text-align:left;display:flex;flex-direction:column;gap:3px;padding:10px 11px;border-radius:12px;border:1px solid rgba(132,165,255,.35);background:rgba(61,125,255,.08);color:var(--ink-2);cursor:pointer;min-height:0}
+#vials .sevrow .sev b{font-family:var(--display);font-size:.95rem;color:#fff}
+#vials .sevrow .sev small{font-size:.72rem;line-height:1.3;opacity:.85}
+#vials .sevrow .sev.on{background:var(--grad);border-color:transparent;color:#fff;box-shadow:0 8px 22px rgba(61,125,255,.35)}
+#vials .sevrow .sev.heavy.on{background:linear-gradient(135deg,#b3261e,#e5484d);box-shadow:0 8px 22px rgba(229,72,77,.35)}
+#vials .sevrow .sev.none.on{background:linear-gradient(135deg,#1f7a4d,#2fbf71);box-shadow:0 8px 22px rgba(47,191,113,.3)}
+#vials .fx-heavy{color:#ff8f8f;font-weight:600}
+@media (max-width:380px){#vials .sevrow{grid-template-columns:1fr}}

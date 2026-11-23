@@ -465,6 +465,15 @@
   if (ro){ ro.observe($('bp-chart')); } else { window.addEventListener('resize', renderAll); }
   [$('bp-chart'), $('gl-chart'), $('wt-chart'), $('hr-chart')].forEach(wireHover);
 
-  window.mpWeights = function(){ return { unit: state.wunit, list: state.wt.slice().sort(function(a, b){ return (a.d + (a.t || '')).localeCompare(b.d + (b.t || '')); }).map(function(r){ return { d: r.d, t: r.t, kg: r.kg }; }) }; };
+  window.mpWeights = function(){ return { unit: state.wunit, list: state.wt.slice().sort(function(a, b){ return (a.d + (a.t || '')).localeCompare(b.d + (b.t || '')); }).map(function(r){ return { d: r.d, t: r.t, kg: r.kg, src: r.src || '' }; }) }; };
+  /* the dose check-in (Dosing → Add a dose) logs the weigh-in here, so the Vitals chart and the plateau rule see one record; one check-in weight per day */
+  window.mpAddWeight = function(kg, d, t){ kg = +kg; if (!(kg >= 20 && kg <= 400)) return false; d = /^\d{4}-\d{2}-\d{2}$/.test(d || '') ? d : todayStr(); t = /^\d{2}:\d{2}$/.test(t || '') ? t : nowStr();
+    var at = -1; state.wt.forEach(function(r, i){ if (r.d === d && r.src === 'dose') at = i; });
+    var rec = { id: at >= 0 ? state.wt[at].id : uid(), d: d, t: t, kg: Math.round(kg * 100) / 100, src: 'dose' };
+    if (at >= 0) state.wt[at] = rec; else state.wt.push(rec);
+    if (state.wt.length > 4000) state.wt.splice(0, state.wt.length - 4000);
+    commit(); return true; };
+  window.mpWeightUnit = function(){ return state.wunit; };
+  window.mpSetWeightUnit = function(u){ var nu = u === 'lb' ? 'lb' : 'kg'; if (nu !== state.wunit){ state.wunit = nu; commit(); } };
   loadLocal(); freshDates(); renderAll(); initDb();
 })();
