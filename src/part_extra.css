@@ -374,3 +374,5 @@ body.pep-open{overflow:hidden}
 .qb-update:disabled{opacity:.7}
 
 .wk-warn .wk-warn2{display:block;margin-top:8px;color:#ff5c5c;font-size:1.3em;line-height:1.2;font-weight:800;font-family:var(--display)}
+
+.qb-push-t span b.qb-push-no{display:block;margin-top:8px;color:#ff5c5c;font-size:22px;line-height:1.1;letter-spacing:.01em;font-family:var(--display);font-weight:800}
