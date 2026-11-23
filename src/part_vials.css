@@ -186,3 +186,11 @@
 #vials .steps li .uin .uin-in{display:block}
 #vials .steps li .uin .uin-u{display:inline-block}
 #vials .wf .uin .uin-in input{width:11ch}
+
+/* Dosing home (v108) */
+#vials .homegrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px}
+#vials .btn.big.home{grid-column:1 / -1;display:flex;flex-direction:column;align-items:flex-start;gap:3px;width:100%;text-align:left;padding:14px 16px;min-height:0}
+#vials .btn.big.home.half{grid-column:auto;padding:12px 14px}
+#vials .btn.big.home b{font-size:1.08rem;font-weight:700}
+#vials .btn.big.home small{font-weight:500;opacity:.82;font-size:.8rem;line-height:1.3;white-space:normal}
+#vials .dose-row b{font-size:1.1rem}

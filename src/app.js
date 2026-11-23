@@ -384,15 +384,14 @@ function renderPeptide(P){
   /* #import=<base64 json>: a record handed over by link (Claude, or another device); the tracker offers to import it */
   try { var mi = /^#import=([A-Za-z0-9+\/_=-]+)$/.exec(location.hash || ''); if (mi) { var b64 = mi[1].replace(/-/g, '+').replace(/_/g, '/'); window.QB_IMPORT = decodeURIComponent(escape(atob(b64))); history.replaceState(null, '', '#dose.vials'); } } catch (e) { window.QB_IMPORT = null; }
   var h0 = parse(location.hash);
-  /* a fresh start opens on Dosing (the vial tracker); within a session the page keeps the hash it was on */
-  var cold = true; try { cold = !sessionStorage.getItem('qb-open'); sessionStorage.setItem('qb-open', '1'); } catch (e) {}
-  if (cold && (!h0.mode || (h0.mode === 'pep' && !h0.anchor && !h0.coa))) h0 = { mode: 'dose', dtab: 'vials' };
+  /* the app opens on Dosing (the vial tracker) every time it starts. Only an explicit deep link to somewhere else
+     (#dose.*, #track, #shop, #coa, #learn.*, an import link) is honoured; a peptide page left in the URL last time is not. */
+  var deep = !!(h0.mode && (h0.mode !== 'pep' || h0.anchor || h0.coa)); window.QB_DEEP = deep;
+  if (!deep) h0 = { mode: 'dose', dtab: 'vials' };
   try {
-    if (!h0.mode) { var m = localStorage.getItem('mp-mode'); if (m === 'track' || m === 'shop' || m === 'dose') h0.mode = m; else if (m === 'pep' || m === 'learn') h0.mode = 'pep'; var dt = localStorage.getItem('mp-dtab'); if (dt && !h0.dtab && DTABS[dt]) h0.dtab = dt; }
     if (!h0.pep) h0.pep = localStorage.getItem('mp-pep') || 'retatrutide';
     if (!h0.tab) h0.tab = localStorage.getItem('mp-tab') || 'overview';
   } catch (e) { h0.pep = h0.pep || 'retatrutide'; }
-  if (!h0.mode) h0.mode = 'dose';
   go(h0, false);
   modeBtns.forEach(function(b){ b.addEventListener('click', function(){ go({ mode: b.getAttribute('data-mode') }, true); }); });
   sub.addEventListener('click', function(e){

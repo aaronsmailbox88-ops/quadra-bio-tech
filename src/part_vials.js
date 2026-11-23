@@ -19,22 +19,23 @@
   function dlabel(d){return d?d.toLocaleDateString(undefined,{month:'short',day:'numeric'}):'—'}
   function dtlabel(iso){var d=new Date(iso); return isNaN(d)?iso:d.toLocaleString(undefined,{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'})}
   function uid(){return 'v'+Date.now().toString(36)+Math.random().toString(36).slice(2,6)}
+  function nn(x){ return (x===null||x===undefined||x===''||!isFinite(+x))?null:+x }   // a number, or null — never 0 for a missing value
   function clean(s){
     s=(s&&typeof s==='object')?s:{}; var out={v:1, scale:{res:0.001, acc:0.005}, vials:[], water:[]};
     (Array.isArray(s.water)?s.water:[]).forEach(function(w){ if(!w||!w.id) return; out.water.push({id:String(w.id), no:isFinite(+w.no)&&+w.no>0?Math.round(+w.no):0, opened:(w.opened&&/^\d{4}-\d{2}-\d{2}$/.test(w.opened))?w.opened:String(w.created||new Date().toISOString()).slice(0,10), days:isFinite(+w.days)&&+w.days>0?Math.round(+w.days):28, status:w.status==='done'?'done':'open', vials:(Array.isArray(w.vials)?w.vials:[]).map(String), note:String(w.note||'')}) });
     if(s.scale&&isFinite(+s.scale.acc)) out.scale.acc=+s.scale.acc; if(s.scale&&isFinite(+s.scale.res)) out.scale.res=+s.scale.res;
     (Array.isArray(s.vials)?s.vials:[]).forEach(function(v){ if(!v||!v.id) return; var c={id:String(v.id), name:String(v.name||'Vial'), src:String(v.src||''), label_mg:+v.label_mg||0, diluent:String(v.diluent||'Bacteriostatic water'),
-      dry_g:+v.dry_g||0, full_g:+v.full_g||0, syr_water_g:isFinite(+v.syr_water_g)?+v.syr_water_g:null, syr_tare_g:isFinite(+v.syr_tare_g)?+v.syr_tare_g:null, scale_check_g:isFinite(+v.scale_check_g)?+v.scale_check_g:null, scale_zero_g:isFinite(+v.scale_zero_g)?+v.scale_zero_g:null, draws:[],
+      dry_g:+v.dry_g||0, full_g:+v.full_g||0, syr_water_g:nn(v.syr_water_g), syr_tare_g:nn(v.syr_tare_g), scale_check_g:nn(v.scale_check_g), scale_zero_g:nn(v.scale_zero_g), draws:[],
       planned_mg:isFinite(+v.planned_mg)&&+v.planned_mg>0?+v.planned_mg:null, next_mg:isFinite(+v.next_mg)&&+v.next_mg>0?+v.next_mg:null, step_after:isFinite(+v.step_after)&&+v.step_after>=0?Math.round(+v.step_after):4, per_week:isFinite(+v.per_week)?+v.per_week:1, lead_days:isFinite(+v.lead_days)?+v.lead_days:10,
       status:['active','ordered','out','archived','rejected'].indexOf(v.status)>=0?v.status:'active', ordered_on:v.ordered_on||null, created:v.created||new Date().toISOString(), mixed_on:(v.mixed_on&&/^\d{4}-\d{2}-\d{2}$/.test(v.mixed_on))?v.mixed_on:String(v.created||new Date().toISOString()).slice(0,10), expiry_days:isFinite(+v.expiry_days)&&+v.expiry_days>0?Math.round(+v.expiry_days):28, bw_no:isFinite(+v.bw_no)&&+v.bw_no>0?Math.round(+v.bw_no):null, notes:String(v.notes||''), checks:cleanChecks(v.checks), filtered:cleanFiltered(v.filtered), doses:[], weights:[]};
       (Array.isArray(v.draws)?v.draws:[]).forEach(function(g){ if(isFinite(+g)&&+g>0) c.draws.push(+g) });
-      (Array.isArray(v.doses)?v.doses:[]).forEach(function(d){ if(!d||!isFinite(+d.mg)) return; c.doses.push({t:String(d.t||''), ml:+d.ml||0, mg:+d.mg, method:String(d.method||'manual'), before_g:isFinite(+d.before_g)?+d.before_g:null, after_g:isFinite(+d.after_g)?+d.after_g:null, syr_empty_g:isFinite(+d.syr_empty_g)?+d.syr_empty_g:null, syr_full_g:isFinite(+d.syr_full_g)?+d.syr_full_g:null, tare_g:isFinite(+d.tare_g)?+d.tare_g:null, note:String(d.note||''), photo:cleanMeta(d.photo), photo_vial:cleanMeta(d.photo_vial), photo_before:cleanMeta(d.photo_before), photo_tare:cleanMeta(d.photo_tare)}) });
+      (Array.isArray(v.doses)?v.doses:[]).forEach(function(d){ if(!d||!isFinite(+d.mg)) return; c.doses.push({t:String(d.t||''), ml:+d.ml||0, mg:+d.mg, method:String(d.method||'manual'), before_g:nn(d.before_g), after_g:nn(d.after_g), syr_empty_g:nn(d.syr_empty_g), syr_full_g:nn(d.syr_full_g), tare_g:nn(d.tare_g), note:String(d.note||''), photo:cleanMeta(d.photo), photo_vial:cleanMeta(d.photo_vial), photo_before:cleanMeta(d.photo_before), photo_tare:cleanMeta(d.photo_tare)}) });
       (Array.isArray(v.weights)?v.weights:[]).forEach(function(w){ if(!w||!isFinite(+w.g)) return; c.weights.push({t:String(w.t||''), g:+w.g}) });
       out.vials.push(c) });
     return out;
   }
   function cleanFiltered(f){ if(!f||typeof f!=='object') return null; var d=+f.dry_g, u=+f.full_g; if(!(d>0)||!(u>d)) return null; return {dry_g:r3(d), full_g:r3(u), t:String(f.t||'')} }
-  function cleanMeta(m){ if(!m||typeof m!=='object') return null; return {kind:String(m.kind||''), t:String(m.t||''), g:isFinite(+m.g)&&m.g!==null?+m.g:null, checked:!!m.checked, ok:!!m.ok, readable:m.readable!==false, issues:(Array.isArray(m.issues)?m.issues:[]).map(String).slice(0,4), seen:String(m.seen||'').slice(0,160), override:!!m.override, nophoto:!!m.nophoto, saved:!!m.saved, comment:String(m.comment||'').slice(0,240)} }
+  function cleanMeta(m){ if(!m||typeof m!=='object') return null; return {kind:String(m.kind||''), t:String(m.t||''), g:nn(m.g), checked:!!m.checked, ok:!!m.ok, readable:m.readable!==false, issues:(Array.isArray(m.issues)?m.issues:[]).map(String).slice(0,4), seen:String(m.seen||'').slice(0,160), override:!!m.override, nophoto:!!m.nophoto, saved:!!m.saved, comment:String(m.comment||'').slice(0,240)} }
   function cleanChecks(c){ var out={}; if(!c||typeof c!=='object') return out; Object.keys(c).forEach(function(k){ if(/^[a-z]+\d*$/.test(k)){ var m=cleanMeta(c[k]); if(m) out[k]=m } }); return out }
   function loadLocal(){try{var s=JSON.parse(localStorage.getItem(LS)||'null'); if(s) state=clean(s)}catch(e){}}
   function saveLocal(){try{localStorage.setItem(LS,JSON.stringify(state))}catch(e){}}
@@ -200,9 +201,26 @@
     state.water.forEach(function(w){ if(w.status!=='open') return; var c=bwCalc(w); if(c.expired) items.push('<div class="notice bad"><b>'+bwLabel(w)+':</b> opened '+dlabel(c.opened)+', past 28 days. Discard it; do not draw from it.</div>'); else if(c.soon) items.push('<div class="notice"><b>'+bwLabel(w)+':</b> discard by '+dlabel(c.discard)+(c.left===0?' (today)':' ('+c.left+' day'+(c.left===1?'':'s')+')')+'.</div>') });
     a.innerHTML=items.join(''); }
   function dosable(v){ return v.status!=='archived'&&v.status!=='rejected'&&isFinite(calc(v).conc) }
-  function quickDoseHtml(){ var vs=state.vials.filter(dosable); if(!vs.length) return ''; return '<div class="stack" id="vl-quick" style="margin-bottom:14px">'+vs.map(function(v){ var c=calc(v); var n=v.doses.length+1; return '<button type="button" class="btn big quick" data-vgo="dose-'+esc(v.id)+'"><span>Enter a dose \u00b7 '+esc(v.name)+'</span><small>Dose '+n+(c.nextG?' \u00b7 '+fmtMg(c.nextMg)+' = '+c.nextG.toFixed(3)+' g on the scale':' \u00b7 set today\u2019s dose')+'</small></button>' }).join('')+'</div>' }
+  // ---------- the Dosing home: four buttons
+  function allDoses(){ var out=[]; state.vials.forEach(function(v){ v.doses.forEach(function(d,i){ out.push({v:v, d:d, i:i}) }) }); out.sort(function(a,b){ return String(b.d.t).localeCompare(String(a.d.t)) }); return out }
+  function homeHtml(){ var vs=state.vials.filter(dosable); var n=allDoses().length; var last=allDoses()[0];
+    var dose; if(vs.length===1){ var c=calc(vs[0]); dose='<button type="button" class="btn big home" data-vgo="dose-'+esc(vs[0].id)+'"><b>Add a dose</b><small>'+esc(vs[0].name)+' \u00b7 dose '+(vs[0].doses.length+1)+(c.nextG?' \u00b7 '+fmtMg(c.nextMg)+' = '+c.nextG.toFixed(3)+' g':'')+'</small></button>' }
+    else if(vs.length>1) dose='<button type="button" class="btn big home" data-home="pick"><b>Add a dose</b><small>'+vs.length+' vials \u2014 choose which</small></button>';
+    else dose='<button type="button" class="btn big home" data-home="none"><b>Add a dose</b><small>Mix a vial or add one first</small></button>';
+    return '<div class="homegrid" id="vl-home">'+dose
+      +'<button type="button" class="btn big home ghost" data-vgo="doses"><b>My recent doses</b><small>'+(n?n+' logged'+(last?' \u00b7 last '+esc(dlabel(new Date(last.d.t))):''):'Nothing logged yet')+'</small></button>'
+      +'<button type="button" class="btn big home ghost half" data-vgo="wiz"><b>Mix a vial</b><small>Step by step. Starts the BAC water and vial clocks.</small></button>'
+      +'<button type="button" class="btn big home ghost half" data-vgo="new"><b>Add a vial</b><small>Already mixed: enter its numbers.</small></button>'
+      +'</div><div id="vl-pick" hidden></div>' }
+  function renderDoses(){ var sec=$('#vl-doses'); var rows=allDoses().slice(0,40);
+    sec.innerHTML='<p class="small"><button type="button" class="linkish" data-vgo="">\u2190 Dosing</button></p><h2 style="margin:8px 0 10px">My recent doses</h2>'
+      +(rows.length?'<div class="stack">'+rows.map(function(r){ var d=r.d, v=r.v; var cm=[]; DOSE_PICS.forEach(function(p){ var m=d[p.key]; if(m&&m.comment) cm.push(p.label+': '+m.comment) }); var pics=DOSE_PICS.filter(function(p){ var m=d[p.key]; return m&&!m.nophoto&&(m.saved||m.checked) }).length;
+          return '<div class="card tap dose-row" data-vgo="vial-'+esc(v.id)+'" role="link" tabindex="0"><div class="row between"><div><b>'+fmtMg(d.mg)+'</b> <span class="muted">'+esc(v.name)+' \u00b7 dose '+(r.i+1)+'</span></div><span class="small muted">'+esc(dtlabel(d.t))+'</span></div>'
+            +'<div class="small muted" style="margin-top:3px">'+(d.ml?d.ml.toFixed(3)+' g drawn':'')+(d.after_g!==null?' \u00b7 vial after '+d.after_g.toFixed(3)+' g':'')+(pics?' \u00b7 '+pics+' photo'+(pics===1?'':'s'):'')+'</div>'
+            +(cm.length?'<div class="small" style="margin-top:4px">'+esc(cm.join(' \u00b7 '))+'</div>':'')+(d.note?'<div class="small muted" style="margin-top:2px">'+esc(d.note)+'</div>':'')+'</div>' }).join('')+'</div>'+(allDoses().length>40?'<p class="small muted" style="margin-top:8px">Showing the last 40. Each vial\u2019s page has its full log.</p>':'')
+        :'<div class="card"><p class="muted">No doses logged yet. Tap <b>Add a dose</b> on the Dosing page after you draw one.</p></div>') }
   function renderList(){ var active=state.vials.filter(function(v){return v.status!=='archived'}); var arch=state.vials.filter(function(v){return v.status==='archived'});
-    renderImport(); var q=$('#vl-quick-wrap'); if(q) q.innerHTML=quickDoseHtml();
+    renderImport(); var q=$('#vl-quick-wrap'); if(q) q.innerHTML=homeHtml();
     $('#vl-cards').innerHTML=active.map(cardHtml).join('')+(arch.length?'<details style="margin-top:6px"><summary class="muted small" style="cursor:pointer">'+arch.length+' archived</summary><div class="stack" style="margin-top:10px">'+arch.map(cardHtml).join('')+'</div></details>':'');
     $('#vl-empty').hidden=state.vials.length>0; renderWater() }
   function renderWater(){ var el=$('#vl-water'); if(!el) return; var open=state.water.filter(function(w){return w.status==='open'}).sort(function(a,b){return a.no-b.no});
@@ -520,7 +538,7 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
         +'<div id="wz-plancard">'+planCard(v,true)+'</div>'+wNav(true,true,'Next',!wReady(key)) }
     else if(key==='water'){ syncWater(); var sw=stdWater(); var isStd=isFinite(sw)&&Math.abs(f(d.water)-sw)<0.0005; var nd=drawCount(), sz=f(d.syr)||1;
       h=head('Add BAC water to peptide vial','This is the standard dilution of the powder. Your dose is based on the dilution rate.')
-        +'<label class="fl">BAC water vial number <span class="muted">(the number on the vial)</span><select id="wz-bw">'+bwOptions(d.bw)+'</select></label>'
+        +'<label class="fl">BAC water vial number <span class="muted">(the 1, 2, 3\u2026 on its label \u2014 starts its 28-day clock)</span><select id="wz-bw">'+bwOptions(d.bw)+'</select></label>'
         +'<div class="f2 stack"><label class="fl">Water to add'+unitWrap('<input id="wz-water" class="mono big-in" type="number" step="0.1" min="0" inputmode="decimal" value="'+esc(d.water)+'" placeholder="mL">','mL')+'</label><label class="fl">Syringe size<select id="wz-syr">'+[[1,'1 mL (100 units)'],[0.5,'0.5 mL (50 units)'],[0.3,'0.3 mL (30 units)']].map(function(o){return '<option value="'+o[0]+'"'+(sz===o[0]?' selected':'')+'>'+o[1]+'</option>'}).join('')+'</select></label></div>'
         +(isFinite(sw)&&!isStd?'<p class="small muted">Standard for this vial: '+ml(sw)+'. <button type="button" class="linkish" data-stdwater="1">Use it</button></p>':'')
         +'<div id="wz-watercard">'+waterCard(v)+'</div>'
@@ -550,11 +568,12 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
         +wNav(true,true,done,!wReady(key))+'<p class="small muted" style="margin-top:14px">No filter kit? <button type="button" class="linkish" data-nofilter="1">Skip filtering</button> — the vial is dosed as mixed.</p>' }
     else if(key==='done'){ var c=calc(v); var exp=c.expires; var lines=[];
       lines.push('<dt>Peptide</dt><dd>'+esc(v.name)+' · '+fmtMg(v.label_mg)+'</dd><dt>Water in the vial</dt><dd>'+ml(c.water)+'</dd><dt>Concentration</dt><dd>'+c.conc.toFixed(2)+' mg per g</dd>');
-      if(+d.bw>0){ var bwo=bwOpen(+d.bw); lines.push('<dt>BAC water</dt><dd>vial #'+(+d.bw)+(bwo?' · opened '+dlabel(new Date(bwo.opened+'T00:00:00'))+' · discard by '+dlabel(bwCalc(bwo).discard):' · its 28-day clock starts today')+'</dd>') }
+      if(+d.bw>0){ var bwo=bwOpen(+d.bw); lines.push('<dt>BAC water #'+(+d.bw)+'</dt><dd>'+(bwo?'opened '+dlabel(new Date(bwo.opened+'T00:00:00'))+' · discard by '+dlabel(bwCalc(bwo).discard):'opened today · discard by '+dlabel(new Date(today().getTime()+BW_DAYS*86400000)))+'</dd>') }
+      else lines.push('<dt>BAC water</dt><dd class="muted">not numbered \u2014 no clock started (go back to the water step to set it)</dd>');
       if(v.planned_mg) lines.push('<dt>Dose now '+fmtMg(v.planned_mg)+'</dt><dd>'+(v.planned_mg/c.conc).toFixed(3)+' g (≈ '+units(v.planned_mg/c.conc)+' u)</dd>');
       if(v.next_mg&&v.next_mg!==v.planned_mg) lines.push('<dt>Next dose '+fmtMg(v.next_mg)+' (after '+v.step_after+')</dt><dd>'+(v.next_mg/c.conc).toFixed(3)+' g (≈ '+units(v.next_mg/c.conc)+' u)</dd>');
       if(c.dosesLeft!==null) lines.push('<dt>Draws at today’s dose</dt><dd>'+c.dosesLeft+'</dd>');
-      if(exp) lines.push('<dt>Use by</dt><dd>'+dlabel(exp)+'</dd>');
+      if(exp) lines.push('<dt>This vial</dt><dd>mixed '+dlabel(today())+' · use by '+dlabel(exp)+' ('+v.expiry_days+' days)</dd>');
       var tape=esc(v.name)+' · '+c.conc.toFixed(2)+' mg/g · mixed '+dlabel(today())+' · use by '+dlabel(exp)+(v.planned_mg?' · '+fmtMg(v.planned_mg)+' = '+(v.planned_mg/c.conc).toFixed(3)+' g':'')+(v.next_mg&&v.next_mg!==v.planned_mg?' · '+fmtMg(v.next_mg)+' = '+(v.next_mg/c.conc).toFixed(3)+' g':'');
       h=head('Done — label it, fridge it','A measured vial.')+'<div class="card"><dl class="kv">'+lines.join('')+'</dl>'+'</div>'
         +'<div class="card" style="margin-top:12px"><h3>Write this on tape and stick it on the vial</h3><p class="mono tape">'+tape+'</p><p class="small muted" style="margin-top:8px">Fridge, upright, out of the light. Never freeze it. Syringes in the sharps bin.</p></div>'
@@ -607,9 +626,9 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
   // ---------- router
   function renderResume(){ var r=$('#vl-resume'); if(!r) return; if(W&&VIEW!=='wiz'){ r.hidden=false; r.innerHTML='<div class="notice info"><b>A vial is half mixed</b> ('+esc(W.d.name||'unnamed')+', step '+(W.step+1)+'). <button type="button" class="linkish" data-vgo="wiz">Continue</button> · <button type="button" class="linkish" data-wdiscard="1">Discard</button></div>' } else { r.hidden=true; r.innerHTML='' } }
   function render(){ renderAlerts(); renderList(); renderResume(); var h=VIEW;
-    $('#vl-head').hidden=(h==='wiz'||h.indexOf('vial-')===0||h.indexOf('dose-')===0||((h===''||h==='list')&&state.vials.length>0));
-    $('#vl-list').hidden=!(h===''||h==='list'); $('#vl-new').hidden=h!=='new'; $('#vl-wiz').hidden=h!=='wiz'; $('#vl-vial').hidden=h.indexOf('vial-')!==0; $('#vl-dose').hidden=h.indexOf('dose-')!==0;
-    if(h.indexOf('vial-')===0) renderVial(h.slice(5)); if(h.indexOf('dose-')===0) renderDose(h.slice(5)); if(h==='new'){ newCalc(); var nm=$('#n-mixed'); if(nm&&!nm.value) nm.value=dstr(today()); var nbw=$('#n-bw'); if(nbw) nbw.innerHTML=bwOptions(nbw.value); var nd=$('#n-dil'); if(nd&&!nd.__dil){ nd.__dil=1; nd.addEventListener('change',function(){ var ne=$('#n-exp'), note=$('#n-dil-note'); if(nd.value==='Sterile water'){ if(ne&&(!ne.value||+ne.value===28)) ne.value=1 } else if(ne&&+ne.value===1) ne.value=28; if(note) note.innerHTML=dilNote(nd.value) }) } } if(h==='wiz'){ if(!W) wInit(); wRender() } }
+    $('#vl-head').hidden=true;
+    $('#vl-list').hidden=!(h===''||h==='list'); $('#vl-new').hidden=h!=='new'; $('#vl-wiz').hidden=h!=='wiz'; $('#vl-vial').hidden=h.indexOf('vial-')!==0; $('#vl-dose').hidden=h.indexOf('dose-')!==0; $('#vl-doses').hidden=h!=='doses';
+    if(h.indexOf('vial-')===0) renderVial(h.slice(5)); if(h.indexOf('dose-')===0) renderDose(h.slice(5)); if(h==='doses') renderDoses(); if(h==='new'){ newCalc(); var nm=$('#n-mixed'); if(nm&&!nm.value) nm.value=dstr(today()); var nbw=$('#n-bw'); if(nbw) nbw.innerHTML=bwOptions(nbw.value); var nd=$('#n-dil'); if(nd&&!nd.__dil){ nd.__dil=1; nd.addEventListener('change',function(){ var ne=$('#n-exp'), note=$('#n-dil-note'); if(nd.value==='Sterile water'){ if(ne&&(!ne.value||+ne.value===28)) ne.value=1 } else if(ne&&+ne.value===1) ne.value=28; if(note) note.innerHTML=dilNote(nd.value) }) } } if(h==='wiz'){ if(!W) wInit(); wRender() } }
   var VIEW='';
   function vgo(v){ VIEW=v||''; render(); var s=document.getElementById('vials'); if(s&&!s.closest('section').hidden) window.scrollTo(0,0); }
   // the mixing guide is its own page (#dose.mix); the tracker page (#dose.vials) never shows it
@@ -621,6 +640,9 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav"><button t
     if(t==='wiz'){ location.hash='#dose.mix'; return } if(t===''||t==='list'){ if(location.hash==='#dose.mix'){ location.hash='#dose.vials'; return } }
     if(location.hash==='#dose.mix'){ vgo(t); location.hash='#dose.vials'; return }
     vgo(t); });
+  document.addEventListener('click',function(e){ var b=e.target.closest('[data-home]'); if(!b) return; var a=b.getAttribute('data-home'); var pick=$('#vl-pick'); if(!pick) return;
+    if(a==='none'){ toast('Mix a vial, or add one that is already mixed'); return }
+    if(a==='pick'){ if(!pick.hidden){ pick.hidden=true; pick.innerHTML=''; return } var vs=state.vials.filter(dosable); pick.hidden=false; pick.innerHTML='<div class="card" style="margin:-4px 0 12px"><div class="eyebrow">Which vial?</div><div class="stack" style="margin-top:8px">'+vs.map(function(v){ var c=calc(v); return '<button type="button" class="btn ghost" style="justify-content:space-between;width:100%" data-vgo="dose-'+esc(v.id)+'"><span>'+esc(v.name)+'</span><span class="small muted">dose '+(v.doses.length+1)+(c.nextG?' \u00b7 '+c.nextG.toFixed(3)+' g':'')+'</span></button>' }).join('')+'</div></div>' } });
   document.addEventListener('keydown',function(e){ if(e.key!=='Enter') return; var el=e.target.closest('[data-vgo][role="link"]'); if(el){ e.preventDefault(); vgo(el.getAttribute('data-vgo')); } });
   window.vlNewVial=function(pre){ wStart(pre||null) };
   window.vlResume=function(){ return !!W };
