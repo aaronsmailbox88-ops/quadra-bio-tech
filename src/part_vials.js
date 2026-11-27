@@ -726,7 +726,7 @@ function wNav(back,next,nextLabel,disabled){ return '<div class="wnav">'+window.
         +weighField('wz-check','The scale reads, with the 20 g weight on it',W.id+':check','20.000')+'<div id="wz-checknote">'+checkNote()+'</div>'
         +'<div class="tarebox"><b>Lift the weight off and press TARE.</b><span>It should read 0.000 (if not, TARE again). Leave the scale on; do not move it from now on.</span>'
         +weighField('wz-zero','The scale reads, with the weight off',W.id+':zero','0.000')+'<div id="wz-zeronote">'+zeroNote()+'</div></div>'+wNav(true,true,done,!wReady(key)) }
-    else if(key==='dry'){ h=head('Weigh the dry vial','Plastic cap off (stopper and ring stay). Vial in the middle of the pan; wait for it to settle. Then vial off and press TARE so it reads 0.000 for the next weigh.')
+    else if(key==='dry'){ h=head('Weigh the dry vial','A vial from the fridge or freezer sits out first until it is at room temperature (10–15 minutes): cold glass sweats, and the water on it weighs. Plastic cap off (stopper and ring stay), outside dry. Vial in the middle of the pan; wait for it to settle. Then vial off and press TARE so it reads 0.000 for the next weigh.')
         +weighField('wz-dry','The scale reads, with the dry vial on it',W.id+':dry','5.622')+wNav(true,true,done,!wReady(key)) }
     else if(key==='syr'){ h=head('Tare the scale on the syringe','New insulin syringe, needle on. Needle cover off, plunger cap off. Lay it across the pan, touching nothing but the pan.')
         +(d.newSyringe?'<div class="notice bad" style="margin-bottom:12px"><b>The syringe that fell is not sterile.</b> Sharps bin. Use a NEW one.</div>':'')
