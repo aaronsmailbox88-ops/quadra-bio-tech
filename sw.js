@@ -1,4 +1,4 @@
-const C='qbt-20261127-1556';const SCOPE=new URL('./',self.location).pathname;
+const C='qbt-20261127-2256';const SCOPE=new URL('./',self.location).pathname;
 self.addEventListener('install',e=>{self.skipWaiting();e.waitUntil(caches.open(C).then(c=>c.addAll(['./app.html','./icon-192.png','./manifest.webmanifest'])).catch(()=>{}))});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==C).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
 self.addEventListener('fetch',e=>{const r=e.request;if(r.method!=='GET')return;const u=new URL(r.url);if(u.origin!==location.origin||!u.pathname.startsWith(SCOPE))return;
