@@ -29,7 +29,7 @@
     return '<div class="ct-bar"><span>Reading a COA</span><button type="button" class="ct-x" data-ct="close" aria-label="Close">\u2715</button></div>' +
       '<div class="ct-stage"><div class="ct-img"><img src="' + COA_IMG + '" alt="Example certificate of analysis"><div class="ct-hl" style="left:' + b[0] + '%;top:' + b[1] + '%;width:' + b[2] + '%;height:' + b[3] + '%"></div></div></div>' +
       '<div class="ct-card"><div class="ct-n">' + (ci + 1) + ' of ' + COA_STEPS.length + '</div><h3>' + esc(st.t) + '</h3><p>' + esc(st.p) + '</p>' +
-      '<div class="ct-nav">' + (ci > 0 ? '<button type="button" class="btn ghost" data-ct="back">Back</button>' : '<span></span>') + (last ? '<button type="button" class="btn ghost" data-ct="close">Done</button><button type="button" class="btn ct-next" data-ct="check">Check mine</button>' : '<button type="button" class="btn ct-next" data-ct="next">Next</button>') + '</div></div>';
+      '<div class="ct-nav">' + (ci > 0 ? window.qbBack(COA_STEPS[ci - 1].t, 'data-ct="back"') : '<span></span>') + (last ? '<button type="button" class="btn ghost" data-ct="close">Done</button><button type="button" class="btn ct-next" data-ct="check">Check mine</button>' : '<button type="button" class="btn ct-next" data-ct="next">Next</button>') + '</div></div>';
   }
   function ctPaint(){ if (!ct) return; ct.innerHTML = ctHtml(); var hl = ct.querySelector('.ct-hl'); if (hl) setTimeout(function(){ try { hl.scrollIntoView({ block: 'center', inline: 'center', behavior: 'smooth' }); } catch (e) {} }, 60); }
   function coaTour(start){ ci = (typeof start === 'number' && start >= 0 && start < COA_STEPS.length) ? start : 0; if (!ct) { ct = document.createElement('div'); ct.className = 'ct'; document.body.appendChild(ct); document.body.classList.add('wk-locked');
@@ -43,7 +43,7 @@
     return '<div class="wk-card" role="dialog" aria-modal="true" aria-labelledby="wk-h"><div class="wk-top"><span class="wk-k">' + esc(pg.k) + '</span><span class="wk-n">' + (i + 1) + ' / ' + PAGES.length + '</span></div>' +
       '<h2 id="wk-h">' + esc(pg.h) + '</h2>' + (pg.warn ? '<p class="wk-warn">' + esc(pg.warn) + (pg.warn2 ? '<b class="wk-warn2">' + esc(pg.warn2) + '</b>' : '') + '</p>' : '') + pg.p.map(function(t){ return '<p>' + esc(t) + '</p>'; }).join('') + (pg.k === 'The peptide' ? '<div class="btn-row wk-coa"><button type="button" class="btn" data-wk="coa">Check my COA</button><button type="button" class="btn ghost" data-wk="tour">See an example</button></div>' : '') +
       '<div class="wk-dots">' + PAGES.map(function(_, j){ return '<i class="' + (j === i ? 'on' : '') + (j < i ? ' past' : '') + '"></i>'; }).join('') + '</div>' +
-      '<div class="wk-nav">' + (i > 0 ? '<button type="button" class="btn ghost" data-wk="back">Back</button>' : '<button type="button" class="btn ghost" data-wk="skip">Not now</button>') +
+      '<div class="wk-nav">' + (i > 0 ? window.qbBack(PAGES[i - 1].k, 'data-wk="back"') : '<button type="button" class="btn ghost" data-wk="skip">Not now</button>') +
       '<button type="button" class="btn wk-next" data-wk="' + (last ? 'done' : 'next') + '">' + (last ? 'I have read it' : 'Next') + '</button></div></div>';
   }
   function paint(){ if (box) { box.innerHTML = html(); box.scrollTop = 0; var n = box.querySelector('.wk-next'); if (n) try { n.focus({ preventScroll: true }); } catch (e) {} } }

@@ -1,3 +1,6 @@
+/* one back button for the whole app (v124): a block arrow and where it goes. Defined here because this is the first script that uses it. */
+window.QB_BACK_SVG='<svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M11 3 2 12l9 9v-5.5h11v-7H11z" fill="currentColor"/></svg>';
+window.qbBack=function(label,attrs,cls){ var e=function(x){ return String(x==null?'':x).replace(/[&<>"]/g,function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c] }) }; return '<button type="button" class="backbtn'+(cls?' '+cls:'')+'" '+(attrs||'')+'>'+window.QB_BACK_SVG+'<span>Back'+(label?' to <b>'+e(label)+'</b>':'')+'</span></button>' };
 /* ===== Weighing protocol, storage rules and titration content (shared by Dosing, Learn and the Vial tracker) ===== */
 var PROTOCOL = [
   { id: 'scale', h: 'A. Set up and check the scale — every session', intro: 'Two minutes, every time, before anything touches the pan. A scale that is wrong by 10 mg is wrong on every dose.', steps: [
@@ -139,7 +142,7 @@ function protocolCard(sec, pos){
     var st = sec.steps[i - 1];
     h += '<span class="eyebrow">' + esc(letter) + ' \u00b7 Step ' + i + ' of ' + n + '</span><h3>' + esc(st[0]) + '</h3><p style="font-size:15px;line-height:1.5;margin-top:8px">' + esc(st[1]) + '</p>' +
       '<div class="ps-bar"><i style="width:' + Math.round(100 * i / n) + '%"></i></div>' +
-      '<div class="btn-row" style="margin-top:12px"><button type="button" class="btn ghost" data-ps="back">Back</button><button type="button" class="btn" data-ps="next">' + (i === n ? 'Done \u2014 finish' : 'Done \u2014 continue') + '</button></div>';
+      '<div class="btn-row" style="margin-top:12px">' + window.qbBack(i > 1 ? 'step ' + (i - 1) : 'the start', 'data-ps="back"') + '<button type="button" class="btn" data-ps="next">' + (i === n ? 'Done \u2014 finish' : 'Done \u2014 continue') + '</button></div>';
   }
   return h + '</div>';
 }
