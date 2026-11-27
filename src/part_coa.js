@@ -6,7 +6,19 @@
   var esc = function(s){ return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){ return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); };
   var KEY = 'qb-coa', LIST = [], doc = null, box = null;
   var F = blank();
-  function blank(){ return { v_pep: '', v_mg: '', v_lot: '', v_sup: '', c_client: '', c_pep: '', c_lot: '', c_date: '', c_pur: '', c_id: false, c_lab: '', c_ver: false }; }
+  function blank(){ return { v_pep: '', v_mg: '', v_lot: '', v_sup: '', c_client: '', c_pep: '', c_lot: '', c_date: '', c_pur: '', c_id: false, c_lab: '', c_ver: false, v_qr: '', c_qr: '' }; }
+  var CAM = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M9 3 7.2 5H4a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-3.2L15 3H9zm3 5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/></svg>';
+  function scanBtn(kind){ return '<button type="button" class="ck-scan" data-scan="' + kind + '">' + CAM + ' Scan QR</button>'; }
+  /* what the camera read, shown under the group it filled */
+  function scannedHtml(kind){ var raw = kind === 'vial' ? F.v_qr : F.c_qr; if (!raw) return ''; var q = window.qbParseQR ? window.qbParseQR(raw) : { raw: raw };
+    var what = q.url ? '<b>' + esc(q.host) + '</b>' + (q.report || q.lot ? ' · ' + esc(q.report || q.lot) : '') : '<b>' + esc(raw.length > 60 ? raw.slice(0, 60) + '…' : raw) + '</b>';
+    return '<p class="ck-scanned">' + (kind === 'vial' ? 'From the vial’s code: ' : 'From the certificate’s code: ') + what + (q.url ? ' <a href="' + esc(q.url) + '" target="_blank" rel="noopener">' + (kind === 'vial' ? 'Open ↗' : 'Open the lab’s page ↗') + '</a>' : '') + (kind === 'cert' && q.url ? ' — if this report is there, tick <b>Verified at the source</b>.' : '') + '<button type="button" class="ck-unscan" data-unscan="' + kind + '" aria-label="Clear">✕</button></p>'; }
+  function applyScan(kind, txt){ var q = window.qbParseQR ? window.qbParseQR(txt) : null; if (!q) return;
+    if (kind === 'vial') { F.v_qr = q.raw; if (q.pep) F.v_pep = q.pep; if (q.mg) F.v_mg = q.mg; if (q.lot) F.v_lot = q.lot; if (q.host && !F.v_sup) F.v_sup = q.host; }
+    else { F.c_qr = q.raw; if (q.lot && !F.c_lot) F.c_lot = q.lot; if (q.pep && !F.c_pep) F.c_pep = q.pep; if (q.host && !F.c_lab) F.c_lab = q.host; }
+    try { localStorage.setItem(KEY + '-draft', JSON.stringify(F)); } catch (e) {}
+    var sc = box.scrollTop; box.innerHTML = html(); paintChecks(); paintSaved(); box.scrollTop = sc;
+    var t = document.createElement('div'); t.className = 'qb-toast'; t.textContent = kind === 'vial' ? (q.lot ? 'Vial read: lot ' + q.lot : 'Code read') : (q.url ? 'Certificate code read' : 'Code read'); document.body.appendChild(t); setTimeout(function(){ t.remove(); }, 1800); }
   try { LIST = JSON.parse(localStorage.getItem(KEY) || '[]'); if (!Array.isArray(LIST)) LIST = []; } catch (e) { LIST = []; }
   function persist(){ try { localStorage.setItem(KEY, JSON.stringify(LIST)); } catch (e) {} if (doc) doc.set({ v: 1, list: LIST.slice(0, 50), updated: new Date().toISOString() }).catch(function(){}); }
   if (window.qbUserDoc) window.qbUserDoc('coa').then(function(d){ if (!d) return; doc = d; return d.get().then(function(snap){
@@ -60,12 +72,12 @@
     return '<div class="ck-bar"><span>COA Checker</span><button type="button" class="ct-x" data-ck="close" aria-label="Close">✕</button></div>' +
       '<div class="ck-in">' +
       '<div class="ck-hero"><div class="kick"><div class="eyebrow">Tool · COA</div><span class="tag2">Interactive</span></div><h1>Does this certificate cover this vial?</h1><p>Type what is printed on your vial, then what the certificate of analysis says. Six checks, one verdict. NO COA, NO DOSE.</p></div>' +
-      '<div class="card ck-grp"><h3><i>1</i>Your vial</h3><div class="ck-two">' +
+      '<div class="card ck-grp"><h3><i>1</i>Your vial' + scanBtn('vial') + '</h3>' + scannedHtml('vial') + '<div class="ck-two">' +
         f('ck-v_pep', 'Peptide on the label', 'list="ck-peps" autocomplete="off" placeholder="Retatrutide"') + pepList() +
         f('ck-v_mg', 'Amount on the label (mg), for your vial record', 'type="number" inputmode="decimal" step="any" min="0" placeholder="15"', 'mono') +
         f('ck-v_lot', 'Lot / batch on the vial', 'autocomplete="off" autocapitalize="characters" placeholder="QB-2401"', 'mono') +
         f('ck-v_sup', 'Who you bought it from', 'autocomplete="off" placeholder="Supplier name"') + '</div></div>' +
-      '<div class="card ck-grp"><h3><i>2</i>The certificate</h3><div class="ck-two">' +
+      '<div class="card ck-grp"><h3><i>2</i>The certificate' + scanBtn('cert') + '</h3>' + scannedHtml('cert') + '<div class="ck-two">' +
         f('ck-c_client', 'Issued to (client / customer)', 'autocomplete="off" placeholder="Name on the certificate"') +
         f('ck-c_pep', 'Compound tested', 'list="ck-peps" autocomplete="off" placeholder="Retatrutide"') +
         f('ck-c_lot', 'Lot / batch on the certificate', 'autocomplete="off" autocapitalize="characters" placeholder="QB-2401"', 'mono') +
@@ -77,7 +89,7 @@
       '</div>' +
       '<div class="card ck-grp"><h3><i>3</i>The six checks</h3><ul class="ck-list" id="ck-checks"></ul><div id="ck-verdict"></div></div>' +
       '<div class="card ck-grp" id="ck-savedwrap"' + (LIST.length ? '' : ' hidden') + '><h3><i>✓</i>Checked vials</h3><ul class="ck-saved" id="ck-saved"></ul></div>' +
-      '<p class="note">An example certificate with each field lit up is behind every “Show me”. This checker reads only what you type; it cannot see the certificate itself. Keep the PDF with your vial record.</p>' +
+      '<p class="note">An example certificate with each field lit up is behind every “Show me”. Scan QR reads the code on a vial or a certificate and fills in what it carries; everything else is what you type. Keep the PDF with your vial record.</p>' +
       '</div>';
   }
   var lastSig = '';
@@ -122,7 +134,11 @@
       box.addEventListener('input', upd);
       box.addEventListener('change', upd);
       box.addEventListener('click', function(e){
-        var b = e.target.closest('[data-ck],[data-tour],[data-load],[data-del]'); if (!b) return;
+        var b = e.target.closest('[data-ck],[data-tour],[data-load],[data-del],[data-scan],[data-unscan]'); if (!b) return;
+        if (b.hasAttribute('data-scan')) { var kind = b.getAttribute('data-scan'); if (!window.qbScan) return; read();
+          window.qbScan(kind === 'vial' ? { title: 'Scan the code on the vial', hint: 'Hold the vial’s QR code inside the frame. The label fills in by itself.' } : { title: 'Scan the code on the certificate', hint: 'The lab’s “scan to verify” code. Then open the lab’s page and tick Verified at the source if the report is there.' }).then(function(txt){ if (txt) applyScan(kind, txt); });
+          return; }
+        if (b.hasAttribute('data-unscan')) { read(); if (b.getAttribute('data-unscan') === 'vial') F.v_qr = ''; else F.c_qr = ''; var sc2 = box.scrollTop; box.innerHTML = html(); paintChecks(); paintSaved(); box.scrollTop = sc2; return; }
         if (b.hasAttribute('data-tour')) { if (window.qbWalk && window.qbWalk.coa) window.qbWalk.coa(+b.getAttribute('data-tour')); return; }
         if (b.hasAttribute('data-load')) { var e2 = LIST.filter(function(x){ return x.id === b.getAttribute('data-load'); })[0]; if (e2 && e2.f) { F = Object.assign(blank(), e2.f); var sc = box.scrollTop; box.innerHTML = html(); paintChecks(); paintSaved(); box.scrollTop = 0; } return; }
         if (b.hasAttribute('data-del')) { LIST = LIST.filter(function(x){ return x.id !== b.getAttribute('data-del'); }); persist(); paintSaved(); return; }
