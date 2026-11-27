@@ -207,6 +207,8 @@
 
   // ---------- rendering
   function chip(c){return '<span class="chip '+c.st+'">'+esc(c.label)+'</span>'}
+  var BACK_SVG='<svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M11 3 2 12l9 9v-5.5h11v-7H11z" fill="currentColor"/></svg>';
+  function backBtn(target,label){ return '<p class="backrow"><button type="button" class="backbtn" data-vgo="'+esc(target)+'">'+BACK_SVG+'<span>Back to <b>'+esc(label)+'</b></span></button></p>' }   /* big block arrow + where it goes (v123) */
   function takenBar(pct){ var taken=Math.max(0,Math.min(100,100-pct)); var cls=taken>80?'r':taken>70?'y':'g'; return '<div class="bar '+cls+'" role="img" aria-label="'+taken+'% taken"><i style="width:'+taken+'%"></i></div>' }   /* the fill is what has been drawn out of the vial (v121) */
   function cardHtml(v){ var c=calc(v); if(v.status==='rejected') return '<button type="button" class="vcard" data-vgo="vial-'+v.id+'"><div class="row between"><div><h3>'+esc(v.name)+'</h3><p class="muted small" style="margin-top:4px">'+esc(v.label_mg+' mg label')+(v.mixed_on?' · mixed '+esc(dlabel(new Date(v.mixed_on+'T00:00:00'))):'')+' · failed the clarity check</p></div>'+chip(c)+'</div></button>'; var pct=Math.round(c.pct*100);
     var dates=(100-pct)+'% taken · '+(c.dosesLeft!==null?c.dosesLeft+' dose'+(c.dosesLeft===1?'':'s')+' left at '+fmtMg(c.nextMg):'Set today’s dose on the vial page')+(c.expires?' · '+(c.daysToExp<0?'Expired '+dlabel(c.expires):'Use by '+dlabel(c.expires)):'');
@@ -234,14 +236,14 @@
       +((d.wt_kg>0||d.fx)?'<div class="small" style="margin-top:3px">'+(d.wt_kg>0?'<b>'+esc(kgTxt(d.wt_kg,wUnit()))+'</b>':'')+(d.wt_kg>0&&d.fx?' · ':'')+(d.fx?'<span class="'+(d.fx.sev==='heavy'?'fx-heavy':'muted')+'">'+esc(fxText(d))+'</span>':'')+'</div>':'')
       +(cm.length?'<div class="small" style="margin-top:4px">'+esc(cm.join(' · '))+'</div>':'')+(d.note?'<div class="small muted" style="margin-top:2px">'+esc(d.note)+'</div>':'')+'</div>' }
   function renderDoses(vialId){ var sec=$('#vl-doses'); var v=vialId?state.vials.filter(function(x){return x.id===vialId})[0]:null;
-    if(vialId&&!v){ sec.innerHTML='<p class="small"><button type="button" class="linkish" data-vgo="">← Dosing</button></p><p style="margin-top:10px">That vial isn’t here.</p>'; return }
+    if(vialId&&!v){ sec.innerHTML=''+backBtn('','Dosing')+'<p style="margin-top:10px">That vial isn’t here.</p>'; return }
     var rows=allDoses().filter(function(r){ return !v||r.v.id===v.id });
     var head;
-    if(v){ var c=calc(v); head='<p class="small"><button type="button" class="linkish" data-vgo="">← Dosing</button></p>'
+    if(v){ var c=calc(v); head=''+backBtn('','Dosing')+''
         +'<div class="row between" style="margin:8px 0 4px"><h2>'+esc(v.name)+'</h2>'+chip(c)+'</div>'
         +'<p class="muted small">'+rows.length+' dose'+(rows.length===1?'':'s')+' · '+fmtMg(c.remaining)+' of '+fmtMg(v.label_mg)+' left'+(c.expires?' · use by '+dlabel(c.expires):'')+(isFinite(c.conc)?' · '+c.conc.toFixed(2)+' mg per g':'')+'</p>'
         +'<div class="row" style="gap:8px;margin:10px 0 14px;flex-wrap:wrap">'+(dosable(v)?'<button type="button" class="btn" data-vgo="dose-'+esc(v.id)+'">Add a dose</button>':'')+'<button type="button" class="btn ghost" data-vgo="vial-'+esc(v.id)+'">Vial details</button></div>' }
-    else head='<p class="small"><button type="button" class="linkish" data-vgo="">← Dosing</button></p><h2 style="margin:8px 0 2px">All doses</h2><p class="muted small" style="margin-bottom:12px">'+rows.length+' dose'+(rows.length===1?'':'s')+' across '+state.vials.length+' vial'+(state.vials.length===1?'':'s')+', newest first.</p>';
+    else head=''+backBtn('','Dosing')+'<h2 style="margin:8px 0 2px">All doses</h2><p class="muted small" style="margin-bottom:12px">'+rows.length+' dose'+(rows.length===1?'':'s')+' across '+state.vials.length+' vial'+(state.vials.length===1?'':'s')+', newest first.</p>';
     sec.innerHTML=head+(rows.length?'<div class="stack">'+rows.map(doseRowHtml).join('')+'</div>':'<div class="card"><p class="muted">No doses logged yet'+(v?' from this vial':'')+'. Tap <b>Add a dose</b> after you draw one.</p></div>') }
   function stepper(k){ return '<span class="stk-q"><button type="button" class="btn sm ghost" data-stk="'+esc(k.id)+':-1" aria-label="one fewer">−</button><b class="mono">'+k.qty+'</b><button type="button" class="btn sm ghost" data-stk="'+esc(k.id)+':1" aria-label="one more">+</button></span>' }
   function renderStock(){ var sec=$('#vl-stock'); if(!sec) return; var L=stockLines(); var peps=L.filter(function(k){ return k.kind==='peptide' }); var others=L.filter(function(k){ return k.kind==='other' });
@@ -324,20 +326,20 @@
       keys.sort().forEach(function(k){ photoGet(k).then(function(d){ if(!d) return; var row=$('tr[data-pk="'+k.replace(/"/g,'')+'"] .pth',box);
         if(row){ var im=document.createElement('img'); im.src=d; im.alt=photoLabel(k); im.addEventListener('click',function(){lightbox(d)}); row.appendChild(im) }
         else { var fig=document.createElement('figure'); var im2=document.createElement('img'); im2.src=d; im2.alt=photoLabel(k); im2.addEventListener('click',function(){lightbox(d)}); var cap=document.createElement('figcaption'); cap.textContent=photoLabel(k); var cm=photoComment(v,k); if(cm){ var q=document.createElement('small'); q.textContent=cm; cap.appendChild(q) } fig.appendChild(im2); fig.appendChild(cap); strip.appendChild(fig) } }) }) }) }
-  function renderVial(id){ var v=state.vials.filter(function(x){return x.id===id})[0]; var sec=$('#vl-vial'); if(!v){sec.innerHTML='<p class="small"><button type="button" class="linkish" data-vgo="">← Supply</button></p><p style="margin-top:10px">That vial isn’t here.</p>';return}
+  function renderVial(id){ var v=state.vials.filter(function(x){return x.id===id})[0]; var sec=$('#vl-vial'); if(!v){sec.innerHTML=''+backBtn('','Dosing')+'<p style="margin-top:10px">That vial isn’t here.</p>';return}
     var c=calc(v); var pct=Math.round(c.pct*100);
     var wdiff=(v.syr_water_g!==null&&c.water>0)?r3(v.syr_water_g-c.water):null;
     var bw=c.byWeight?('<dt>By last vial weight ('+esc(dtlabel(c.byWeight.t))+')</dt><dd>'+fmtMg(c.byWeight.mg)+' · '+c.byWeight.ml.toFixed(3)+' mL</dd>'):'';
     var ledgerVsWeight=(c.byWeight&&Math.abs(c.byWeight.mg-c.remaining)>Math.max(0.3,0.05*v.label_mg))?'<div class="notice" style="margin-top:10px"><b>Ledger and scale disagree</b> by '+fmtMg(Math.abs(c.byWeight.mg-c.remaining))+'. Either a dose went unlogged, liquid was lost, or the weighing conditions changed. The vial weight is the physical truth; the ledger is what you recorded.</div>':'';
     var expectNow=c.expectNow!==null?c.expectNow:v.full_g; var nextIdx=v.doses.length+1; var pl=splitPlan(v,c);   /* the last weight minus every dose logged since */
     if(v.status==='rejected'){
-      sec.innerHTML='<p class="small"><button type="button" class="linkish" data-vgo="">← Supply</button></p>'
+      sec.innerHTML=''+backBtn('','Dosing')+''
         +'<div class="row between" style="margin:8px 0 10px"><div><h2>'+esc(v.name)+'</h2><p class="muted small">'+esc(v.label_mg+' mg label')+(v.src?' · '+esc(v.src):'')+(v.mixed_on?' · mixed '+esc(dlabel(new Date(v.mixed_on+'T00:00:00'))):'')+'</p></div>'+chip(c)+'</div>'
         +'<div class="notice bad"><b>Rejected at mixing — do not use.</b> It did not pass the clarity check (haze, floating particles or undissolved powder). Nothing from this vial is filtered or dosed. Keep it capped and marked until the supplier has answered; send them the lot number and what you saw.</div>'
         +'<div class="card" id="vl-photos" style="margin-top:12px" hidden></div>'
         +'<div class="card" style="margin-top:12px"><div class="row" style="gap:8px;flex-wrap:wrap">'+(v.notes?'<p class="small" style="width:100%">'+esc(v.notes)+'</p>':'')+'<button class="btn sm ghost" type="button" data-act="archive">Archive</button><button class="btn sm danger" type="button" data-act="delete">Delete vial</button></div></div>';
       wireVial(v); renderPhotos(v); return }
-    sec.innerHTML='<p class="small"><button type="button" class="linkish" data-vgo="doses-'+esc(v.id)+'">← '+esc(v.name)+' doses</button></p>'
+    sec.innerHTML=backBtn('doses-'+v.id, v.name)
       +shortNotice(v,c)
       +'<div class="row between" style="margin:8px 0 10px"><div><h2>'+esc(v.name)+'</h2><p class="muted small">'+esc(v.label_mg+' mg label')+(v.src?' · '+esc(v.src):'')+' · '+esc(v.diluent)+'</p></div>'+chip(c)+'</div>'
       +carryNotice(v)
@@ -390,7 +392,7 @@
       var syrTxt=g3(syr);
       return '<tr><td><b>'+(i+1)+'</b><br><span class="muted">'+esc(dlabel(new Date(d.t)))+'</span></td><td class="num"><b>'+fmtMg(d.mg)+'</b></td><td class="num">'+syrTxt+'</td><td class="num">'+g3(d.before_g)+'</td><td class="num">'+g3(d.after_g)+'</td></tr>' }).join('');
     return '<div class="card lastd" style="margin-top:12px"><div class="eyebrow">Last doses from this vial</div><table class="tbl"><thead><tr><th>Dose</th><th>mg</th><th>Syringe</th><th>Vial before</th><th>Vial after</th></tr></thead><tbody>'+rows+'</tbody></table>'+(n>6?'<p class="small muted" style="margin-top:6px">Last 6 of '+n+'; the vial page has them all.</p>':'')+'</div>' }
-  function renderDose(id){ var v=state.vials.filter(function(x){return x.id===id})[0]; var sec=$('#vl-dose'); if(!v){ sec.innerHTML='<p class="small"><button type="button" class="linkish" data-vgo="">← Supply</button></p><p style="margin-top:10px">That vial isn’t here.</p>'; return }
+  function renderDose(id){ var v=state.vials.filter(function(x){return x.id===id})[0]; var sec=$('#vl-dose'); if(!v){ sec.innerHTML=''+backBtn('','Dosing')+'<p style="margin-top:10px">That vial isn’t here.</p>'; return }
     var k=carryFor(v); var ci=ciFor(v);
     if(k&&ci.carry!==k.id){ ci=CI={vial:v.id, live:false, carry:k.id, base:k.total_mg, dose:carryBal(k), kg:k.kg, sev:k.fx?k.fx.sev:'none', items:k.fx?k.fx.items.slice():[], pick:null} }   /* part 2 of a split dose: the check-in was done with part 1 */
     if(!k&&ci.carry){ ci=CI={vial:null}; ci=ciFor(v) }
@@ -399,7 +401,7 @@
     if(pl){ tg=pl.firstG.toFixed(3); after=c.expectNow!==null?Math.max(0,c.expectNow-pl.firstG).toFixed(3):'' }
     var tot=k?r3(k.g_done+(c.nextG||0)):null;
     var title=k?'Dose '+k.n+' · balance · '+esc(v.name):'Dose '+n+' · '+esc(v.name);
-    sec.innerHTML='<p class="small"><button type="button" class="linkish" data-vgo="doses-'+esc(v.id)+'">← '+esc(v.name)+'</button></p>'
+    sec.innerHTML=backBtn('doses-'+v.id, v.name)
       +(k?'':shortNotice(v,c))
       +'<div class="row between" style="margin:8px 0 10px"><div><h2>'+title+'</h2><p class="muted small">'+(isFinite(c.conc)?c.conc.toFixed(2)+' mg per g':'')+(c.expires?' · use by '+dlabel(c.expires):'')+'</p></div>'+chip(c)+'</div>'
       +(k?'<div class="notice info" style="margin-bottom:12px"><b>Checked in with part 1'+(k.kg>0?' · '+esc(kgTxt(k.kg,wUnit())):'')+(k.fx?' · '+esc(fxText({fx:k.fx})):'')+'.</b> This is the balance of dose '+k.n+': '+fmtMg(carryBal(k))+' of '+fmtMg(k.total_mg)+'. '+k.g_done.toFixed(3)+' g ('+fmtMg(k.done_mg)+') is already in the syringe from the old vial.</div>':checkinHtml(v))   /* weight and side effects first: today's dose comes out of them (v120) */
