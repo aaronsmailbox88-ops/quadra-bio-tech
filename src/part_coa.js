@@ -12,13 +12,16 @@
   /* what the camera read, shown under the group it filled */
   function scannedHtml(kind){ var raw = kind === 'vial' ? F.v_qr : F.c_qr; if (!raw) return ''; var q = window.qbParseQR ? window.qbParseQR(raw) : { raw: raw };
     var what = q.url ? '<b>' + esc(q.host) + '</b>' + (q.report || q.lot ? ' · ' + esc(q.report || q.lot) : '') : '<b>' + esc(raw.length > 60 ? raw.slice(0, 60) + '…' : raw) + '</b>';
-    return '<p class="ck-scanned">' + (kind === 'vial' ? 'From the vial’s code: ' : 'From the certificate’s code: ') + what + (q.url ? ' <a href="' + esc(q.url) + '" target="_blank" rel="noopener">' + (kind === 'vial' ? 'Open ↗' : 'Open the lab’s page ↗') + '</a>' : '') + (kind === 'cert' && q.url ? ' — if this report is there, tick <b>Verified at the source</b>.' : '') + '<button type="button" class="ck-unscan" data-unscan="' + kind + '" aria-label="Clear">✕</button></p>'; }
+    return '<p class="ck-scanned">' + (kind === 'vial' ? 'From the vial’s code: ' : 'The code points at the lab’s report: ') + what + (q.url ? ' <a href="' + esc(q.url) + '" target="_blank" rel="noopener">' + (kind === 'vial' ? 'Open ↗' : 'Open the lab’s page ↗') + '</a>' : '') + (kind === 'cert' && q.url ? ' — copy the lot, compound and purity from there, and if the report is on the lab’s own site tick <b>Verified at the source</b>.' : '') + '<button type="button" class="ck-unscan" data-unscan="' + kind + '" aria-label="Clear">✕</button></p>'; }
   function applyScan(kind, txt){ var q = window.qbParseQR ? window.qbParseQR(txt) : null; if (!q) return;
-    if (kind === 'vial') { F.v_qr = q.raw; if (q.pep) F.v_pep = q.pep; if (q.mg) F.v_mg = q.mg; if (q.lot) F.v_lot = q.lot; if (q.host && !F.v_sup) F.v_sup = q.host; }
-    else { F.c_qr = q.raw; if (q.lot && !F.c_lot) F.c_lot = q.lot; if (q.pep && !F.c_pep) F.c_pep = q.pep; if (q.host && !F.c_lab) F.c_lab = q.host; }
+    var labLink = !!q.url && !q.lot && !q.pep && !q.mg;   /* a bare link = the lab's verification page for the report; a code that carries lot / peptide / mg is label data */
+    if (kind === 'vial' && !labLink) { F.v_qr = q.raw; if (q.pep) F.v_pep = q.pep; if (q.mg) F.v_mg = q.mg; if (q.lot) F.v_lot = q.lot; }
+    else { F.c_qr = q.raw; if (q.lot && !F.c_lot) F.c_lot = q.lot; if (q.pep && !F.c_pep) F.c_pep = q.pep; if (q.host && !F.c_lab) F.c_lab = q.host; if (kind === 'vial') F.v_qr = ''; }
+    kind = (kind === 'vial' && !labLink) ? 'vial' : 'cert';
     try { localStorage.setItem(KEY + '-draft', JSON.stringify(F)); } catch (e) {}
     var sc = box.scrollTop; box.innerHTML = html(); paintChecks(); paintSaved(); box.scrollTop = sc;
-    var t = document.createElement('div'); t.className = 'qb-toast'; t.textContent = kind === 'vial' ? (q.lot ? 'Vial read: lot ' + q.lot : 'Code read') : (q.url ? 'Certificate code read' : 'Code read'); document.body.appendChild(t); setTimeout(function(){ t.remove(); }, 1800); }
+    var t = document.createElement('div'); t.className = 'qb-toast'; t.textContent = kind === 'vial' ? (q.lot ? 'Vial read: lot ' + q.lot : 'Code read') : (q.url ? 'The lab’s report link — open it' : 'Code read'); document.body.appendChild(t); setTimeout(function(){ t.remove(); }, 1800);
+    if (kind === 'cert' && q.url) { var el = box.querySelector('.ck-scanned a'); if (el) el.scrollIntoView({ block: 'center', behavior: 'smooth' }); } }
   try { LIST = JSON.parse(localStorage.getItem(KEY) || '[]'); if (!Array.isArray(LIST)) LIST = []; } catch (e) { LIST = []; }
   function persist(){ try { localStorage.setItem(KEY, JSON.stringify(LIST)); } catch (e) {} if (doc) doc.set({ v: 1, list: LIST.slice(0, 50), updated: new Date().toISOString() }).catch(function(){}); }
   if (window.qbUserDoc) window.qbUserDoc('coa').then(function(d){ if (!d) return; doc = d; return d.get().then(function(snap){
@@ -136,7 +139,7 @@
       box.addEventListener('click', function(e){
         var b = e.target.closest('[data-ck],[data-tour],[data-load],[data-del],[data-scan],[data-unscan]'); if (!b) return;
         if (b.hasAttribute('data-scan')) { var kind = b.getAttribute('data-scan'); if (!window.qbScan) return; read();
-          window.qbScan(kind === 'vial' ? { title: 'Scan the code on the vial', hint: 'Hold the vial’s QR code inside the frame. The label fills in by itself.' } : { title: 'Scan the code on the certificate', hint: 'The lab’s “scan to verify” code. Then open the lab’s page and tick Verified at the source if the report is there.' }).then(function(txt){ if (txt) applyScan(kind, txt); });
+          window.qbScan(kind === 'vial' ? { title: 'Scan the code on the vial', hint: 'Hold the vial’s QR code inside the frame. It links to the lab that tested this lot.' } : { title: 'Scan the code on the certificate', hint: 'The lab’s “scan to verify” code. Then open the lab’s page and tick Verified at the source if the report is there.' }).then(function(txt){ if (txt) applyScan(kind, txt); });
           return; }
         if (b.hasAttribute('data-unscan')) { read(); if (b.getAttribute('data-unscan') === 'vial') F.v_qr = ''; else F.c_qr = ''; var sc2 = box.scrollTop; box.innerHTML = html(); paintChecks(); paintSaved(); box.scrollTop = sc2; return; }
         if (b.hasAttribute('data-tour')) { if (window.qbWalk && window.qbWalk.coa) window.qbWalk.coa(+b.getAttribute('data-tour')); return; }
